@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom'; // Заменили BrowserRouter на HashRouter
 import App from '@/App';
 import '@/index.css';
 import './i18n'; // Import i18n configuration
@@ -13,10 +13,10 @@ const LoadingSpinner = () => (
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<LoadingSpinner />}>
         <App />
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
