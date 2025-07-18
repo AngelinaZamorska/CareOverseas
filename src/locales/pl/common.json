@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Strona główna",
+    "treatments": "Zabiegi",
+    "process": "Jak to działa",
+    "news": "Aktualności",
+    "contact": "Kontakt",
+    "freeConsultation": "Bezpłatna konsultacja",
+    "tagline": "Koordynator leczenia za granicą"
+  },
+  "contact": {},
+  "treatments": {
+    "oncology": "Onkologia",
+    "lu177": "Terapia Lutetem-177 PSMA",
+    "neurosurgery": "Neurochirurgia",
+    "bloodDiseases": "Choroby krwi",
+    "rheumatology": "Reumatologia",
+    "epilepsy": "Epilepsja",
+    "dendritic": "Terapia komórkami dendrytycznymi",
+    "ivf": "In vitro",
+    "cardiac": "Kardiochirurgia",
+    "endometriosis": "Endometrioza",
+    "joint": "Wymiana stawów",
+    "plasticSurgery": "Chirurgia plastyczna"
+  },
+  "footer": {
+    "tagline": "Twój zaufany partner w leczeniu za granicą.",
+    "navigation": "Nawigacja",
+    "home": "Strona główna",
+    "contactUs": "Skontaktuj się z nami",
+    "partnerCountries": "Kraje partnerskie",
+    "germany": "Niemcy",
+    "turkey": "Turcja",
+    "hiszpania": "Hiszpania",
+    "izrael": "Izrael",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności"
+  }
+}

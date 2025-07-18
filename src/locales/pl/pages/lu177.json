@@ -1,0 +1,102 @@
+{
+  "lu177Page": {
+    "meta": {
+      "title": "Terapia Lutetem-177 PSMA w zaawansowanym raku prostaty",
+      "description": "Dowiedz się o terapii Lu-177-PSMA w przerzutowym raku prostaty w Niemczech, Turcji i Izraelu. Znajdź koszty, najlepsze kliniki i jak uzyskać bezpłatną ocenę przypadku.",
+      "keywords": "Terapia Lu-177 w Niemczech, leczenie raka prostaty Lutetem-177 za granicą, koszt terapii radioligandowej PSMA, terapia zaawansowanego raka prostaty w Europie, kliniki Lu-PSMA, terapia radionuklidowa mCRPC"
+    },
+    "hero": {
+      "title": "Terapia Lutetem-177 PSMA w zaawansowanym raku prostaty",
+      "subtitle": "Przełomowe leczenie przerzutowego raka prostaty w Europie. Oferowana w Niemczech, Turcji i Izraelu, ta celowana terapia dostarcza promieniowanie bezpośrednio do komórek nowotworowych, oszczędzając zdrowe tkanki.",
+      "cta": "Uzyskaj bezpłatną ocenę przypadku"
+    },
+    "why": {
+      "title": "Dlaczego warto wybrać terapię Lu-177-PSMA za granicą?",
+      "points": [
+        "Wysoko wyspecjalizowane kliniki onkologiczne w Niemczech, Turcji i Izraelu",
+        "Dostęp do najnowocześniejszych oddziałów medycyny nuklearnej",
+        "Kompleksowa diagnostyka i obrazowanie przed terapią",
+        "Krótki czas oczekiwania i wsparcie osobistego koordynatora medycznego",
+        "Możliwość połączenia z PSMA PET-CT dla precyzyjnego celowania"
+      ]
+    },
+    "how": {
+      "title": "Jak działa terapia Lu-177-PSMA",
+      "description": "W leczeniu tym wykorzystuje się cząsteczkę, która wiąże się z PSMA (antygenem błonowym specyficznym dla prostaty) — białkiem o wysokiej ekspresji w komórkach raka prostaty. Cząsteczka jest połączona z radioaktywnym Lutetem-177, który emituje promieniowanie beta, niszcząc komórki nowotworowe od wewnątrz.",
+      "effectiveIn": "Ta terapia jest szczególnie skuteczna w:",
+      "conditions": [
+        "Przerzutowym raku prostaty opornym na kastrację (mCRPC)",
+        "Nowotworach PSMA-pozytywnych (potwierdzonych za pomocą PSMA PET-CT)"
+      ]
+    },
+    "benefits": {
+      "title": "Korzyści z terapii Lu-177-PSMA",
+      "list": [
+        {
+          "title": "Poprawia przeżywalność i jakość życia",
+          "description": "Pacjenci często doświadczają znacznej poprawy swojego stanu i ogólnego samopoczucia."
+        },
+        {
+          "title": "Minimalne skutki uboczne w porównaniu z chemioterapią",
+          "description": "Celowany charakter terapii zmniejsza uszkodzenia zdrowych komórek, co prowadzi do mniejszej liczby skutków ubocznych."
+        },
+        {
+          "title": "Precyzyjnie celuje w nowotwór",
+          "description": "Terapia specyficznie atakuje komórki PSMA-pozytywne, nie uszkadzając zdrowych narządów."
+        },
+        {
+          "title": "Wygodny schemat dawkowania",
+          "description": "Zazwyczaj podawana w 3–6 cyklach co 6–8 tygodni, co czyni ją łatwą do opanowania dla pacjentów."
+        }
+      ]
+    },
+    "costs": {
+      "title": "Koszty terapii Lu-177",
+      "countries": [
+        { "name": "Niemcy", "price": "od €9,000", "flag": "🇩🇪" },
+        { "name": "Turcja", "price": "od $7,500", "flag": "🇹🇷" },
+        { "name": "Izrael", "price": "od $8,000", "flag": "🇮🇱" }
+      ],
+      "price_per_cycle": "Cena za cykl (w przybliżeniu)",
+      "dependsOnTitle": "Pełny koszt leczenia zależy od:",
+      "dependsOn": [
+        "Liczby cykli (zwykle 3–6)",
+        "Diagnostyki (PSMA PET-CT, MRI, badania krwi)",
+        "Pobytu w szpitalu i opłat lekarskich"
+      ]
+    },
+    "process": {
+      "title": "Proces krok po kroku",
+      "steps": [
+        "Wyślij raporty medyczne i skan PSMA PET-CT",
+        "Uzyskaj ocenę eksperta medycyny nuklearnej",
+        "Otrzymaj kosztorys i plan leczenia",
+        "Podróż do kliniki i rozpoczęcie terapii"
+      ],
+      "support": "Pomagamy na każdym kroku — od tłumaczeń i podróży po opiekę po leczeniu."
+    },
+    "clinics": {
+      "title": "Wiodące kliniki terapii Lu-177 PSMA",
+      "list": [
+        { "name": "Helios Klinikum Berlin-Buch", "location": "Niemcy" },
+        { "name": "Memorial Bahçelievler", "location": "Turcja" },
+        { "name": "Hadassah Medical Center", "location": "Izrael" }
+      ],
+      "guidelines": "Wszystkie ośrodki działają zgodnie z surowymi unijnymi lub krajowymi wytycznymi dotyczącymi bezpieczeństwa radiologicznego i zatrudniają doświadczonych lekarzy medycyny nuklearnej i onkologów."
+    },
+    "cta": {
+      "title": "Uzyskaj bezpłatną ocenę przypadku",
+      "subtitle": "Możemy przejrzeć Twoje dokumenty medyczne w ciągu 24 godzin i skontaktować Cię z najlepszymi specjalistami.",
+      "sendDocs": "Po prostu wyślij nam swoje ostatnie:",
+      "requiredDocs": [
+        "PSMA PET-CT",
+        "Poziomy PSA",
+        "Raport histopatologiczny"
+      ],
+      "features": [
+        "Skierowanie nie jest potrzebne",
+        "Wsparcie w wielu językach"
+      ]
+    }
+  }
+}

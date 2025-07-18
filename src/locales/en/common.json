@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Home",
+    "treatments": "Treatments", 
+    "process": "How it Works",
+    "news": "News",
+    "contact": "Contact",
+    "freeConsultation": "Free Consultation",
+    "tagline": "Medical Treatment Coordinator"
+  },
+  "contact": {},
+  "treatments": {
+    "oncology": "Oncology",
+    "lu177": "Lu-177 PSMA Therapy",
+    "neurosurgery": "Neurosurgery",
+    "bloodDiseases": "Blood Diseases",
+    "rheumatology": "Rheumatology",
+    "epilepsy": "Epilepsy",
+    "dendritic": "Dendritic Cell Therapy",
+    "ivf": "IVF",
+    "cardiac": "Cardiac Surgery",
+    "endometriosis": "Endometriosis",
+    "joint": "Joint Replacement",
+    "plasticSurgery": "Plastic Surgery"
+  },
+  "footer": {
+    "tagline": "Your trusted partner for medical treatment abroad.",
+    "navigation": "Navigation",
+    "home": "Home",
+    "contactUs": "Contact Us",
+    "partnerCountries": "Partner Countries",
+    "germany": "Germany",
+    "turkey": "Turkey",
+    "spain": "Spain",
+    "israel": "Israel",
+    "rights": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy"
+  }
+}

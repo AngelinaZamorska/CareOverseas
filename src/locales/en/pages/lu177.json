@@ -1,0 +1,102 @@
+{
+  "lu177Page": {
+    "meta": {
+      "title": "Lutetium-177 PSMA Therapy for Advanced Prostate Cancer",
+      "description": "Learn about Lu-177 PSMA therapy for metastatic prostate cancer in Germany, Turkey, and Israel. Find costs, top clinics, and how to get a free case review.",
+      "keywords": "Lu-177 therapy Germany, Lutetium-177 prostate cancer treatment abroad, PSMA radioligand therapy cost, advanced prostate cancer therapy in Europe, Lu-PSMA clinics, radionuclide therapy for mCRPC"
+    },
+    "hero": {
+      "title": "Lutetium-177 PSMA Therapy for Advanced Prostate Cancer",
+      "subtitle": "Breakthrough Treatment for Metastatic Prostate Cancer in Europe. Offered in Germany, Turkey, and Israel, this targeted therapy delivers radiation directly to cancer cells while sparing healthy tissues.",
+      "cta": "Get a Free Case Review"
+    },
+    "why": {
+      "title": "Why Choose Lu-177-PSMA Therapy Abroad?",
+      "points": [
+        "Highly specialized oncology clinics in Germany, Turkey, and Israel",
+        "Access to cutting-edge nuclear medicine units",
+        "Comprehensive diagnosis and imaging before therapy",
+        "Short waiting times and personal medical coordinator support",
+        "Option to combine with PSMA PET-CT for precise targeting"
+      ]
+    },
+    "how": {
+      "title": "How Lu-177-PSMA Therapy Works",
+      "description": "This treatment uses a molecule that binds to PSMA (Prostate-Specific Membrane Antigen) — a protein highly expressed in prostate cancer cells. The molecule is combined with radioactive Lutetium-177, which releases beta radiation, destroying cancer cells from the inside.",
+      "effectiveIn": "This therapy is particularly effective in:",
+      "conditions": [
+        "Metastatic castration-resistant prostate cancer (mCRPC)",
+        "PSMA-positive tumors (confirmed via PSMA PET-CT)"
+      ]
+    },
+    "benefits": {
+      "title": "Benefits of Lu-177-PSMA Therapy",
+      "list": [
+        {
+          "title": "Improves survival and quality of life",
+          "description": "Patients often experience significant improvement in their condition and overall well-being."
+        },
+        {
+          "title": "Minimal side effects compared to chemotherapy",
+          "description": "Targeted nature of the therapy reduces harm to healthy cells, leading to fewer side effects."
+        },
+        {
+          "title": "Targets cancer precisely",
+          "description": "The therapy specifically attacks PSMA-positive cells, ensuring no damage to healthy organs."
+        },
+        {
+          "title": "Convenient Dosing Schedule",
+          "description": "Usually administered as 3–6 cycles every 6–8 weeks, making it manageable for patients."
+        }
+      ]
+    },
+    "costs": {
+      "title": "Lu-177 Therapy Costs",
+      "countries": [
+        { "name": "Germany", "price": "from €9,000", "flag": "🇩🇪" },
+        { "name": "Turkey", "price": "from $7,500", "flag": "🇹🇷" },
+        { "name": "Israel", "price": "from $8,000", "flag": "🇮🇱" }
+      ],
+      "price_per_cycle": "Price per cycle (approx.)",
+      "dependsOnTitle": "Full treatment cost depends on:",
+      "dependsOn": [
+        "Number of cycles (usually 3–6)",
+        "Diagnostics (PSMA PET-CT, MRI, bloodwork)",
+        "Hospital stay and doctor’s fees"
+      ]
+    },
+    "process": {
+      "title": "Step-by-Step Process",
+      "steps": [
+        "Send medical reports & PSMA PET-CT scan",
+        "Get reviewed by nuclear medicine expert",
+        "Receive cost estimate and treatment plan",
+        "Travel to clinic and begin therapy"
+      ],
+      "support": "We assist you through every step — from translations and travel to post-treatment follow-up."
+    },
+    "clinics": {
+      "title": "Leading Clinics for Lu-177 PSMA Therapy",
+      "list": [
+        { "name": "Helios Klinikum Berlin-Buch", "location": "Germany" },
+        { "name": "Memorial Bahçelievler", "location": "Turkey" },
+        { "name": "Hadassah Medical Center", "location": "Israel" }
+      ],
+      "guidelines": "All centers operate under strict EU or national radiation safety guidelines and have experienced nuclear medicine physicians and oncologists."
+    },
+    "cta": {
+      "title": "Get a Free Case Review",
+      "subtitle": "We can review your medical documents within 24 hours and connect you with top specialists.",
+      "sendDocs": "Just send us your recent:",
+      "requiredDocs": [
+        "PSMA PET-CT",
+        "PSA levels",
+        "Histopathology report"
+      ],
+      "features": [
+        "No referral needed",
+        "Support in multiple languages"
+      ]
+    }
+  }
+}

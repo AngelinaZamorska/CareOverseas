@@ -1,0 +1,12 @@
+{
+  "diseasesPage": {
+    "title": "Disease Database (ICD-10) | CareOverseas",
+    "description": "Find treatment for complex and rare diseases abroad. Browse our ICD-10 database for information on advanced therapies in Germany, Turkey, and Israel.",
+    "header": "Search Disease by ICD-10 Code",
+    "subtitle": "Enter the name of the disease or the classification code",
+    "searchPlaceholder": "Start typing a name or code...",
+    "categoryHeader": "Category: ",
+    "requestQuote": "Request Quote",
+    "noResults": "No diseases found matching your query."
+  }
+}

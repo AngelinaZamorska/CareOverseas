@@ -1,0 +1,29 @@
+{
+  "neurosurgeryPage": {
+    "title": "Advanced Neurosurgery | Glioblastoma, Malformations",
+    "description": "Get a second opinion from top neurosurgeons from $800. We specialize in treating glioblastoma, brain malformations, and other complex tumors.",
+    "header": "Advanced Neurosurgery",
+    "subtitle": "Access to world-class neurosurgeons and innovative therapies for glioblastoma, malformations, and other brain tumors. Second opinion from $800.",
+    "getQuote": "Get a Second Opinion",
+    "whyUsTitle": "Why Choose Us for Neurosurgery?",
+    "whyUsSubtitle": "We provide access to leading specialists and cutting-edge technologies for the most complex neurological cases.",
+    "feature1Title": "Top Neurosurgeons",
+    "feature1Desc": "Consultations and treatment from world-renowned experts in neuro-oncology.",
+    "feature2Title": "Complex Cases",
+    "feature2Desc": "Specializing in hard-to-treat tumors like glioblastoma and vascular malformations.",
+    "feature3Title": "Innovative Therapies",
+    "feature3Desc": "Access to Gamma Knife, proton therapy, and the latest targeted drug therapies.",
+    "feature4Title": "Affordable Second Opinion",
+    "feature4Desc": "Get a comprehensive second opinion and treatment plan from a leading expert, starting at just $800.",
+    "conditionsTitle": "Conditions We Treat",
+    "condition1": "Glioblastoma Multiforme",
+    "condition2": "Meningioma",
+    "condition3": "Astrocytoma",
+    "condition4": "Arteriovenous Malformations (AVM)",
+    "condition5": "Cavernomas",
+    "condition6": "Pituitary Tumors",
+    "ctaTitle": "Get Expert Insight on Your Case",
+    "ctaSubtitle": "Don't face a difficult diagnosis alone. Get a second opinion from a world-class neurosurgeon to explore all your treatment options.",
+    "ctaButton": "Request a Second Opinion"
+  }
+}

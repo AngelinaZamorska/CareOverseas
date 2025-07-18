@@ -1,0 +1,32 @@
+{
+  "dendriticCellPage": {
+    "title": "Terapia komórkami dendrytycznymi w Niemczech | CareOverseas",
+    "description": "Pionierska immunoterapia komórkami dendrytycznymi w Niemczech w leczeniu raka. Spersonalizowane szczepionki aktywujące układ odpornościowy przeciwko nowotworom. Ceny od 7000 €.",
+    "header": "Immunoterapia komórkami dendrytycznymi w Niemczech",
+    "subtitle": "Wykorzystaj moc własnego układu odpornościowego. Uzyskaj dostęp do spersonalizowanych szczepionek z komórek dendrytycznych — przełomowego podejścia w leczeniu raka.",
+    "inquire": "Zapytaj o terapię",
+    "whyGermanyTitle": "Dlaczego terapia komórkami dendrytycznymi w Niemczech?",
+    "whyGermanySubtitle": "Niemieckie kliniki są liderem w badaniach i stosowaniu immunoterapii, oferując wysoce spersonalizowane i precyzyjne leczenie.",
+    "feature1Title": "Spersonalizowane szczepionki",
+    "feature1Desc": "Terapia jest tworzona z Twoich własnych komórek odpornościowych dla maksymalnej skuteczności i minimalnych skutków ubocznych.",
+    "feature2Title": "Działanie celowane",
+    "feature2Desc": "Komórki dendrytyczne są uczone rozpoznawania i atakowania komórek nowotworowych, oszczędzając zdrowe tkanki.",
+    "feature3Title": "Zaawansowane laboratoria",
+    "feature3Desc": "Szczepionki są produkowane w certyfikowanych, najnowocześniejszych laboratoriach, przestrzegających najsurowszych standardów jakości.",
+    "feature4Title": "Holistyczna opieka onkologiczna",
+    "feature4Desc": "Immunoterapia jest często integrowana z innymi metodami leczenia w celu kompleksowego podejścia.",
+    "pricingTitle": "Przejrzyste ceny",
+    "pricingSubtitle": "Jasna i przejrzysta struktura kosztów Twojego planu leczenia.",
+    "dcVaccineTitle": "Szczepionka z komórek dendrytycznych (DC)",
+    "dcVaccinePrice": "od 7 000 €",
+    "dcVaccinePer": "za szczepionkę",
+    "dcVaccineDesc": "Podstawa leczenia, ta spersonalizowana szczepionka jest tworzona w celu aktywacji Twojej odpowiedzi immunologicznej. Zazwyczaj wymagane jest podanie kilku dawek.",
+    "lpTitle": "Leukafereza (LP)",
+    "lpPrice": "od 4 000 €",
+    "lpPer": "jednorazowa procedura",
+    "lpDesc": "Niezbędny początkowy krok w celu zebrania komórek odpornościowych (monocytów) z Twojej krwi, które są następnie wykorzystywane do tworzenia wszystkich kolejnych szczepionek.",
+    "ctaTitle": "Czy terapia komórkami dendrytycznymi jest dla Ciebie?",
+    "ctaSubtitle": "Ta terapia jest odpowiednia dla różnych guzów litych. Skontaktuj się z nami w celu bezpłatnej, poufnej oceny medycznej, aby określić Twoją kwalifikację.",
+    "ctaButton": "Uzyskaj bezpłatną ocenę medyczną"
+  }
+}

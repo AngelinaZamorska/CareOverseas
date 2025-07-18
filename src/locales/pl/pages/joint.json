@@ -1,0 +1,30 @@
+{
+  "jointReplacementPage": {
+    "title": "Wymiana stawów | CareOverseas",
+    "description": "Odzyskaj sprawność dzięki zaawansowanej operacji wymiany stawu (biodrowego, kolanowego, barkowego). Dostęp do najlepszych chirurgów ortopedów i najnowocześniejszej technologii protetycznej.",
+    "header": "Zaawansowana chirurgia wymiany stawów",
+    "subtitle": "Przywróć swoją mobilność i żyj bez bólu dzięki wiodącym ośrodkom ortopedycznym specjalizującym się w wymianie stawu biodrowego, kolanowego i barkowego.",
+    "regainMobility": "Odzyskaj swoją mobilność",
+    "whyUsTitle": "Doskonałość w opiece ortopedycznej",
+    "whyUsSubtitle": "Nasze partnerskie kliniki są liderem w chirurgii ortopedycznej, zapewniając trwałe rezultaty i szybki powrót do aktywnego stylu życia.",
+    "feature1Title": "Trwałe protezy",
+    "feature1Desc": "Dostęp do najnowszych, najwyższej jakości implantów zapewniających długowieczność i naturalny ruch.",
+    "feature2Title": "Eksperci ortopedzi",
+    "feature2Desc": "Konsultacje z chirurgami, którzy są pionierami w wymianie stawów i chirurgii rewizyjnej.",
+    "feature3Title": "Precyzja z asystą robota",
+    "feature3Desc": "Korzystaj z systemów nawigacji komputerowej i robotyki dla idealnego umieszczenia implantu.",
+    "feature4Title": "Protokoły szybkiej rekonwalescencji",
+    "feature4Desc": "Nowoczesne programy rehabilitacyjne zaprojektowane, aby szybciej postawić Cię na nogi.",
+    "typesTitle": "Rodzaje wymiany stawów",
+    "typesSubtitle": "Oferujemy kompleksowe rozwiązania dla wszystkich głównych stawów, dostosowane do Twojej anatomii i stylu życia.",
+    "proceduresTitle": "Popularne zabiegi",
+    "procedure1": "<strong>Całkowita wymiana stawu biodrowego (THR):</strong> Z wykorzystaniem dostępu przedniego, bocznego lub tylnego.",
+    "procedure2": "<strong>Całkowita wymiana stawu kolanowego (TKR):</strong> W tym instrumentarium dostosowane do pacjenta.",
+    "procedure3": "<strong>Częściowa wymiana stawu kolanowego:</strong> Mniej inwazyjna opcja dla zlokalizowanego zapalenia stawów.",
+    "procedure4": "<strong>Wymiana stawu barkowego:</strong> Zarówno anatomiczna, jak i odwrócona artroplastyka barku.",
+    "procedure5": "<strong>Złożona chirurgia rewizyjna:</strong> Eksperckie rozwiązania dla nieudanych lub bolesnych endoprotez.",
+    "ctaTitle": "Zrób pierwszy krok w kierunku życia bez bólu",
+    "ctaSubtitle": "Skontaktuj się z nami już dziś w celu bezpłatnej oceny Twojego przypadku. Skontaktujemy Cię z czołowym specjalistą ortopedą, aby omówić najlepsze opcje leczenia.",
+    "ctaButton": "Umów się na bezpłatną ocenę"
+  }
+}

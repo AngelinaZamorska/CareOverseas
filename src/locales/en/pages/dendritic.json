@@ -1,0 +1,32 @@
+{
+  "dendriticCellPage": {
+    "title": "Dendritic Cell Therapy in Germany | CareOverseas",
+    "description": "Pioneering dendritic cell immunotherapy in Germany for cancer treatment. Personalized vaccines to activate your immune system against tumors. Starting from €7000.",
+    "header": "Dendritic Cell Immunotherapy in Germany",
+    "subtitle": "Harness the power of your own immune system. Access personalized dendritic cell vaccines—a groundbreaking approach to cancer treatment.",
+    "inquire": "Inquire About Therapy",
+    "whyGermanyTitle": "Why Dendritic Cell Therapy in Germany?",
+    "whyGermanySubtitle": "German clinics are at the forefront of immunotherapy research and application, offering highly personalized and precise treatments.",
+    "feature1Title": "Personalized Vaccines",
+    "feature1Desc": "Therapy is created from your own immune cells for maximum effectiveness and minimal side effects.",
+    "feature2Title": "Targeted Action",
+    "feature2Desc": "Dendritic cells are trained to recognize and attack cancer cells specifically, sparing healthy tissue.",
+    "feature3Title": "Advanced Laboratories",
+    "feature3Desc": "Vaccines are produced in certified, state-of-the-art labs adhering to the strictest quality standards.",
+    "feature4Title": "Holistic Cancer Care",
+    "feature4Desc": "Immunotherapy is often integrated with other treatments for a comprehensive approach.",
+    "pricingTitle": "Transparent Pricing",
+    "pricingSubtitle": "Clear and upfront cost structure for your treatment plan.",
+    "dcVaccineTitle": "Dendritic Cell Vaccine (DC)",
+    "dcVaccinePrice": "from 7,000€",
+    "dcVaccinePer": "per vaccine",
+    "dcVaccineDesc": "The core of the treatment, this personalized vaccine is created to activate your immune response. Multiple doses are typically required.",
+    "lpTitle": "Leukapheresis (LP)",
+    "lpPrice": "from 4,000€",
+    "lpPer": "one-time procedure",
+    "lpDesc": "A necessary initial step to collect the immune cells (monocytes) from your blood, which are then used to create all subsequent vaccines.",
+    "ctaTitle": "Is Dendritic Cell Therapy Right for You?",
+    "ctaSubtitle": "This therapy is suitable for various solid tumors. Contact us for a free, confidential medical evaluation to determine your eligibility.",
+    "ctaButton": "Get a Free Medical Evaluation"
+  }
+}

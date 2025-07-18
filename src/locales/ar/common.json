@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "الرئيسية",
+    "treatments": "العلاجات",
+    "process": "كيف نعمل",
+    "news": "الأخبار",
+    "contact": "اتصل بنا",
+    "freeConsultation": "استشارة مجانية",
+    "tagline": "منسق العلاج الطبي"
+  },
+  "contact": {},
+  "treatments": {
+    "oncology": "علم الأورام",
+    "lu177": "علاج اللوتيتيوم-177 PSMA",
+    "neurosurgery": "جراحة الأعصاب",
+    "bloodDiseases": "أمراض الدم",
+    "rheumatology": "أمراض الروماتيزم",
+    "epilepsy": "الصرع",
+    "dendritic": "علاج الخلايا المتغصنة",
+    "ivf": "أطفال الأنابيب",
+    "cardiac": "جراحة القلب",
+    "endometriosis": "بطانة الرحم المهاجرة",
+    "joint": "استبدال المفاصل",
+    "plasticSurgery": "الجراحة التجميلية"
+  },
+  "footer": {
+    "tagline": "شريكك الموثوق للعلاج الطبي في الخارج.",
+    "navigation": "التنقل",
+    "home": "الرئيسية",
+    "contactUs": "اتصل بنا",
+    "partnerCountries": "الدول الشريكة",
+    "germany": "ألمانيا",
+    "turkey": "تركيا",
+    "spain": "إسبانيا",
+    "israel": "إسرائيل",
+    "rights": "جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية"
+  }
+}

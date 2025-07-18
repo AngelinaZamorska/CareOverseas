@@ -1,0 +1,33 @@
+{
+  "ivfTurkeyPage": {
+    "title": "IVF Treatment in Turkey | CareOverseas",
+    "description": "Affordable, high-quality IVF treatment in Turkey. Access world-class fertility clinics with high success rates. IVF packages start from $3000.",
+    "header": "Your IVF Journey in Turkey",
+    "subtitle": "Realize your dream of parenthood with Turkey's leading fertility centers, combining advanced technology with compassionate care at an affordable cost.",
+    "startJourney": "Start Your Journey",
+    "whyTurkeyTitle": "Why Choose Turkey for IVF?",
+    "whyTurkeySubtitle": "Turkey has become a top destination for fertility treatment due to its unique combination of quality, cost, and care.",
+    "feature1Title": "High Success Rates",
+    "feature1Desc": "Clinics boast success rates comparable to or exceeding global averages, using the latest techniques.",
+    "feature2Title": "Affordable Costs",
+    "feature2Desc": "Receive top-tier medical care at a fraction of the cost in Europe or the US.",
+    "feature3Title": "Advanced Technology",
+    "feature3Desc": "Access to modern embryology labs with technologies like PGT, IMSI, and time-lapse incubators.",
+    "feature4Title": "Experienced Specialists",
+    "feature4Desc": "Highly skilled fertility experts and embryologists dedicated to personalized patient care.",
+    "pricingTitle": "IVF Package Pricing",
+    "pricingSubtitle": "Transparent and accessible pricing for your peace of mind.",
+    "ivfPackageTitle": "IVF Package (First Attempt)",
+    "ivfPackagePrice": "from $3,000",
+    "ivfPackagePer": "Medications not included",
+    "ivfPackageDesc": "Includes all standard procedures: consultations, egg retrieval, fertilization (ICSI), and embryo transfer.",
+    "microTeseTitle": "Micro-TESE Procedure",
+    "microTesePrice": "from $1,500",
+    "microTesePer": "For male infertility",
+    "microTeseDesc": "A surgical sperm retrieval technique for cases of non-obstructive azoospermia, performed by expert urologists.",
+    "note": "Note: Final costs may vary based on individual medical needs and required medications. We provide a detailed cost estimate after your initial consultation.",
+    "ctaTitle": "Begin Your Path to Parenthood",
+    "ctaSubtitle": "Let our experienced team guide you. We offer a free, confidential consultation to discuss your options and answer all your questions.",
+    "ctaButton": "Book a Free Consultation"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "bloodDiseasesPage": {
+    "title": "Zaawansowane leczenie chorób krwi i raka krwi",
+    "description": "Specjalistyczne leczenie białaczki, chłoniaka, szpiczaka i innych złożonych chorób krwi. Dostęp do przeszczepów szpiku kostnego i innowacyjnych terapii.",
+    "header": "Leczenie złożonych chorób krwi",
+    "subtitle": "Kompleksowa opieka w zakresie nowotworów krwi i zaburzeń hematologicznych, od diagnozy po innowacyjne terapie i przeszczep szpiku kostnego.",
+    "getQuote": "Uzyskaj bezpłatną wycenę",
+    "whyUsTitle": "Dlaczego warto nas wybrać w hematologii?",
+    "whyUsSubtitle": "Łączymy Cię z wiodącymi ośrodkami hematologiczno-onkologicznymi specjalizującymi się w złożonych i rzadkich chorobach krwi.",
+    "feature1Title": "Wiodący specjaliści",
+    "feature1Desc": "Dostęp do najlepszych hematologów i onkologów z doświadczeniem w leczeniu rzadkich nowotworów krwi.",
+    "feature2Title": "Zaawansowana diagnostyka",
+    "feature2Desc": "Precyzyjna diagnoza za pomocą testów genetycznych, cytometrii przepływowej i zaawansowanego obrazowania.",
+    "feature3Title": "Innowacyjne leczenie",
+    "feature3Desc": "Dostęp do terapii komórkami CAR-T, terapii celowanych i przeszczepów szpiku kostnego.",
+    "feature4Title": "Kompleksowa opieka",
+    "feature4Desc": "Multidyscyplinarne podejście do leczenia pełnego spektrum chorób krwi.",
+    "conditionsTitle": "Schorzenia, które leczymy",
+    "condition1": "Białaczka (ALL, AML, CLL, CML)",
+    "condition2": "Chłoniak (Hodgkina i nie-Hodgkina)",
+    "condition3": "Szpiczak mnogi",
+    "condition4": "Zespoły mielodysplastyczne (MDS)",
+    "condition5": "Anemia aplastyczna",
+    "condition6": "Talasemia i anemia sierpowata",
+    "ctaTitle": "Znajdź najlepszą ścieżkę leczenia",
+    "ctaSubtitle": "Skontaktuj się z nami w celu uzyskania spersonalizowanej konsultacji i poznaj dostępne zaawansowane opcje leczenia Twojego schorzenia.",
+    "ctaButton": "Poproś o konsultację"
+  }
+}
