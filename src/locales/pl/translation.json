@@ -3,7 +3,6 @@
     "treatments": "Zabiegi",
     "process": "Proces",
     "countries": "Kraje",
-    "diseases": "Choroby (ICD-10)",
     "contact": "Kontakt",
     "tagline": "Leczenie za granicą",
     "freeConsultation": "Bezpłatna konsultacja",
@@ -124,16 +123,7 @@
     "testimonial3Treatment": "Rehabilitacja neurologiczna - Hiszpania",
     "testimonial3Text": "Wsparcie 24/7 i spersonalizowane podejście. Czułam się bezpiecznie podczas całego skomplikowanego leczenia i rekonwalescencji."
   },
-  "diseasesPage": {
-    "title": "Baza chorób (ICD-10) | CareOverseas",
-    "description": "Znajdź leczenie skomplikowanych i rzadkich chorób za granicą. Przeglądaj naszą bazę ICD-10, aby uzyskać informacje o zaawansowanych terapiach w Niemczech, Turcji i Izraelu.",
-    "header": "Baza chorób <1>ICD-10</1>",
-    "subtitle": "Podejmujemy się nawet najtrudniejszych przypadków. Wyszukaj chorobę, aby dowiedzieć się o zaawansowanych protokołach leczenia i opcjach terapii za granicą.",
-    "searchPlaceholder": "Szukaj po nazwie choroby, kodzie ICD-10, np. 'onkologia' lub 'C50'...",
-    "categoryHeader": "Kategoria: ",
-    "requestQuote": "Poproś o wycenę",
-    "noResults": "Nie znaleziono chorób pasujących do Twojego zapytania."
-  },
+  
   "cardiacPage": {
     "title": "Zaawansowana kardiochirurgia w Niemczech | Złożone choroby serca",
     "description": "Światowej klasy kardiochirurgia dla złożonych schorzeń w Niemczech. Leczenie rzadkich chorób serca, chirurgia małoinwazyjna i dostęp do najlepszych chirurgów.",

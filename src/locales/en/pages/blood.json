@@ -5,16 +5,22 @@
     "header": "Treatment for Complex Blood Diseases",
     "subtitle": "Comprehensive care for blood cancers and hematological disorders, from diagnosis to innovative therapies and bone marrow transplantation.",
     "getQuote": "Get a Free Quote",
+
     "whyUsTitle": "Why Choose Us for Hematology?",
     "whyUsSubtitle": "We connect you with leading hematology-oncology centers specializing in complex and rare blood disorders.",
+
     "feature1Title": "Leading Specialists",
     "feature1Desc": "Access to top hematologists and oncologists with experience in treating rare blood cancers.",
+
     "feature2Title": "Advanced Diagnostics",
     "feature2Desc": "Precise diagnosis using genetic testing, flow cytometry, and advanced imaging.",
+
     "feature3Title": "Innovative Treatments",
     "feature3Desc": "Access to CAR-T cell therapy, targeted therapies, and bone marrow transplants.",
+
     "feature4Title": "Comprehensive Care",
     "feature4Desc": "A multidisciplinary approach to treating the full spectrum of blood diseases.",
+
     "conditionsTitle": "Conditions We Treat",
     "condition1": "Leukemia (ALL, AML, CLL, CML)",
     "condition2": "Lymphoma (Hodgkin's and Non-Hodgkin's)",
@@ -22,6 +28,7 @@
     "condition4": "Myelodysplastic Syndromes (MDS)",
     "condition5": "Aplastic Anemia",
     "condition6": "Thalassemia and Sickle Cell Anemia",
+
     "ctaTitle": "Find the Best Path for Your Treatment",
     "ctaSubtitle": "Contact us for a personalized consultation and learn about the advanced treatment options available for your condition.",
     "ctaButton": "Request a Consultation"

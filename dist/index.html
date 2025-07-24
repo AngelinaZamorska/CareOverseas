@@ -1,154 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%231d4ed8' d='M50,0A50,50,0,1,0,100,50,50,50,0,0,0,50,0Zm0,90A40,40,0,1,1,90,50,40,40,0,0,1,50,90Z'/%3E%3Cpath fill='%23f0f9ff' d='M65,30a15,15,0,0,0-15-15,5,5,0,0,0,0,10,5,5,0,0,1,5,5,5,5,0,0,0,10,0A15,15,0,0,0,65,30Zm-15,40a15,15,0,0,0,0,30,15,15,0,0,0,15-15,5,5,0,0,0-10,0,5,5,0,0,1-5,5,5,5,0,0,0,0-10,15,15,0,0,0-5-20Z'/%3E%3C/svg%3E" />
-		<meta name="generator" content="Hostinger Horizons" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="robots" content="index, follow" />
-		<title>CareOverseas - Medical Treatment Abroad</title>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL6H4MF6RX"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			gtag('config', 'G-SL6H4MF6RX');
-		</script>
-		<script type="module" crossorigin src="/CareOverseas/assets/index-9c9559b8.js"></script>
-		<link rel="stylesheet" href="/CareOverseas/assets/index-20ec6add.css">
-		<script type="module">
-window.onerror = (message, source, lineno, colno, errorObj) => {
-	const errorDetails = errorObj ? JSON.stringify({
-		name: errorObj.name,
-		message: errorObj.message,
-		stack: errorObj.stack,
-		source,
-		lineno,
-		colno,
-	}) : null;
+    <!-- ✅ SEO -->
+    <title>CareOverseas - Medical Treatment Abroad</title>
+    <meta name="description" content="Medical treatment abroad with CareOverseas. Find top doctors and clinics worldwide." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="medical treatment, clinics abroad, health tourism, international healthcare, CareOverseas" />
 
-	window.parent.postMessage({
-		type: 'horizons-runtime-error',
-		message,
-		error: errorDetails
-	}, '*');
-};
-</script>
-		<script type="module">
-const observer = new MutationObserver((mutations) => {
-	for (const mutation of mutations) {
-		for (const addedNode of mutation.addedNodes) {
-			if (
-				addedNode.nodeType === Node.ELEMENT_NODE &&
-				(
-					addedNode.tagName?.toLowerCase() === 'vite-error-overlay' ||
-					addedNode.classList?.contains('backdrop')
-				)
-			) {
-				handleViteOverlay(addedNode);
-			}
-		}
-	}
-});
+    <!-- ✅ Open Graph (for social sharing) -->
+    <meta property="og:title" content="CareOverseas - Medical Treatment Abroad" />
+    <meta property="og:description" content="Find top doctors and clinics worldwide with CareOverseas." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:url" content="https://careoverseas.space/" />
+    <meta property="og:type" content="website" />
 
-observer.observe(document.documentElement, {
-	childList: true,
-	subtree: true
-});
+    <!-- ✅ Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-function handleViteOverlay(node) {
-	if (!node.shadowRoot) {
-		return;
-	}
+    <!-- ✅ Mobile Enhancements -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-	const backdrop = node.shadowRoot.querySelector('.backdrop');
+    <!-- ✅ Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL6H4MF6RX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-SL6H4MF6RX');
+    </script>
+    <script type="module" crossorigin src="/assets/index-461da564.js"></script>
+    <link rel="stylesheet" href="/assets/index-7878b276.css">
+  </head>
 
-	if (backdrop) {
-		const overlayHtml = backdrop.outerHTML;
-		const parser = new DOMParser();
-		const doc = parser.parseFromString(overlayHtml, 'text/html');
-		const messageBodyElement = doc.querySelector('.message-body');
-		const fileElement = doc.querySelector('.file');
-		const messageText = messageBodyElement ? messageBodyElement.textContent.trim() : '';
-		const fileText = fileElement ? fileElement.textContent.trim() : '';
-		const error = messageText + (fileText ? ' File:' + fileText : '');
-
-		window.parent.postMessage({
-			type: 'horizons-vite-error',
-			error,
-		}, '*');
-	}
-}
-</script>
-		<script type="module">
-const originalConsoleError = console.error;
-console.error = function(...args) {
-	originalConsoleError.apply(console, args);
-
-	let errorString = '';
-
-	for (let i = 0; i < args.length; i++) {
-		const arg = args[i];
-		if (arg instanceof Error) {
-			errorString = arg.stack || `${arg.name}: ${arg.message}`;
-			break;
-		}
-	}
-
-	if (!errorString) {
-		errorString = args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' ');
-	}
-
-	window.parent.postMessage({
-		type: 'horizons-console-error',
-		error: errorString
-	}, '*');
-};
-</script>
-		<script type="module">
-const originalFetch = window.fetch;
-
-window.fetch = function(...args) {
-	const url = args[0] instanceof Request ? args[0].url : args[0];
-
-	// Skip WebSocket URLs
-	if (url.startsWith('ws:') || url.startsWith('wss:')) {
-		return originalFetch.apply(this, args);
-	}
-
-	return originalFetch.apply(this, args)
-		.then(async response => {
-			const contentType = response.headers.get('Content-Type') || '';
-
-			// Exclude HTML document responses
-			const isDocumentResponse =
-				contentType.includes('text/html') ||
-				contentType.includes('application/xhtml+xml');
-
-			if (!response.ok && !isDocumentResponse) {
-					const responseClone = response.clone();
-					const errorFromRes = await responseClone.text();
-					const requestUrl = response.url;
-					console.error(`Fetch error from ${requestUrl}: ${errorFromRes}`);
-			}
-
-			return response;
-		})
-		.catch(error => {
-			if (!url.match(/.html?$/i)) {
-				console.error(error);
-			}
-
-			throw error;
-		});
-};
-</script>
-	</head>
-	<body>
-		<div id="root"></div>
-		
-		<script src="//code.tidio.co/be2qv1thvj24irec91neg1guks1yainz.js" async></script>
-	</body>
+  <body>
+    <div id="root"></div>
+    
+  </body>
 </html>

@@ -1,29 +1,36 @@
 {
   "bloodDiseasesPage": {
-    "title": "Zaawansowane leczenie chorób krwi i raka krwi",
-    "description": "Specjalistyczne leczenie białaczki, chłoniaka, szpiczaka i innych złożonych chorób krwi. Dostęp do przeszczepów szpiku kostnego i innowacyjnych terapii.",
+    "title": "Zaawansowane leczenie chorób krwi i nowotworów hematologicznych",
+    "description": "Specjalistyczne leczenie białaczki, chłoniaka, szpiczaka mnogiego i innych złożonych schorzeń hematologicznych. Dostęp do przeszczepów szpiku kostnego i nowoczesnych terapii.",
     "header": "Leczenie złożonych chorób krwi",
-    "subtitle": "Kompleksowa opieka w zakresie nowotworów krwi i zaburzeń hematologicznych, od diagnozy po innowacyjne terapie i przeszczep szpiku kostnego.",
+    "subtitle": "Kompleksowa opieka nad pacjentami z nowotworami krwi i chorobami hematologicznymi – od diagnozy po innowacyjne terapie i przeszczepy.",
     "getQuote": "Uzyskaj bezpłatną wycenę",
-    "whyUsTitle": "Dlaczego warto nas wybrać w hematologii?",
-    "whyUsSubtitle": "Łączymy Cię z wiodącymi ośrodkami hematologiczno-onkologicznymi specjalizującymi się w złożonych i rzadkich chorobach krwi.",
+
+    "whyUsTitle": "Dlaczego warto wybrać nas w hematologii?",
+    "whyUsSubtitle": "Współpracujemy z najlepszymi ośrodkami hematologiczno-onkologicznymi specjalizującymi się w rzadkich i złożonych chorobach krwi.",
+
     "feature1Title": "Wiodący specjaliści",
-    "feature1Desc": "Dostęp do najlepszych hematologów i onkologów z doświadczeniem w leczeniu rzadkich nowotworów krwi.",
+    "feature1Desc": "Dostęp do renomowanych hematologów i onkologów z doświadczeniem w leczeniu rzadkich nowotworów krwi.",
+
     "feature2Title": "Zaawansowana diagnostyka",
-    "feature2Desc": "Precyzyjna diagnoza za pomocą testów genetycznych, cytometrii przepływowej i zaawansowanego obrazowania.",
-    "feature3Title": "Innowacyjne leczenie",
-    "feature3Desc": "Dostęp do terapii komórkami CAR-T, terapii celowanych i przeszczepów szpiku kostnego.",
+    "feature2Desc": "Precyzyjna diagnostyka z użyciem badań genetycznych, cytometrii przepływowej i nowoczesnych metod obrazowania.",
+
+    "feature3Title": "Innowacyjne terapie",
+    "feature3Desc": "Terapie komórkowe (CAR-T), terapie celowane oraz możliwość przeszczepów szpiku kostnego.",
+
     "feature4Title": "Kompleksowa opieka",
-    "feature4Desc": "Multidyscyplinarne podejście do leczenia pełnego spektrum chorób krwi.",
-    "conditionsTitle": "Schorzenia, które leczymy",
+    "feature4Desc": "Zespół interdyscyplinarny opiekuje się pacjentem na każdym etapie leczenia.",
+
+    "conditionsTitle": "Leczone schorzenia",
     "condition1": "Białaczka (ALL, AML, CLL, CML)",
-    "condition2": "Chłoniak (Hodgkina i nie-Hodgkina)",
+    "condition2": "Chłoniaki (Hodgkina i nieziarnicze)",
     "condition3": "Szpiczak mnogi",
     "condition4": "Zespoły mielodysplastyczne (MDS)",
     "condition5": "Anemia aplastyczna",
     "condition6": "Talasemia i anemia sierpowata",
-    "ctaTitle": "Znajdź najlepszą ścieżkę leczenia",
-    "ctaSubtitle": "Skontaktuj się z nami w celu uzyskania spersonalizowanej konsultacji i poznaj dostępne zaawansowane opcje leczenia Twojego schorzenia.",
-    "ctaButton": "Poproś o konsultację"
+
+    "ctaTitle": "Odkryj najlepszą ścieżkę leczenia",
+    "ctaSubtitle": "Skontaktuj się z nami w celu uzyskania indywidualnej konsultacji i poznaj dostępne opcje leczenia.",
+    "ctaButton": "Zamów konsultację"
   }
 }

@@ -1,7 +1,9 @@
-#!/usr/bin/env node
-
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const CLEAN_CONTENT_REGEX = {
   comments: /\/\*[\s\S]*?\*\/|\/\/.*$/gm,
@@ -36,7 +38,6 @@ function cleanContent(content) {
 
 function cleanText(text) {
   if (!text) return text;
-  
   return text
     .replace(CLEAN_CONTENT_REGEX.jsxExpressions, '')
     .replace(CLEAN_CONTENT_REGEX.htmlEntities.quot, '"')
@@ -76,7 +77,7 @@ function extractRoutes(appJsxPath) {
     }
 
     return routes;
-  } catch (error) {
+  } catch {
     return new Map();
   }
 }
@@ -87,26 +88,21 @@ function findReactFiles(dir) {
 
 function extractHelmetData(content, filePath, routes) {
   const cleanedContent = cleanContent(content);
-  
-  if (!EXTRACTION_REGEX.helmetTest.test(cleanedContent)) {
-    return null;
-  }
-  
+  if (!EXTRACTION_REGEX.helmetTest.test(cleanedContent)) return null;
+
   const helmetMatch = content.match(EXTRACTION_REGEX.helmet);
   if (!helmetMatch) return null;
-  
+
   const helmetContent = helmetMatch[1];
   const titleMatch = helmetContent.match(EXTRACTION_REGEX.title);
   const descMatch = helmetContent.match(EXTRACTION_REGEX.description);
-  
+
   const title = cleanText(titleMatch?.[1]);
   const description = cleanText(descMatch?.[1]);
-  
+
   const fileName = path.basename(filePath, path.extname(filePath));
-  const url = routes.length && routes.has(fileName) 
-    ? routes.get(fileName) 
-    : generateFallbackUrl(fileName);
-  
+  const url = routes?.has(fileName) ? routes.get(fileName) : generateFallbackUrl(fileName);
+
   return {
     url,
     title: title || 'Untitled Page',
@@ -121,17 +117,11 @@ function generateFallbackUrl(fileName) {
 
 function generateLlmsTxt(pages) {
   const sortedPages = pages.sort((a, b) => a.title.localeCompare(b.title));
-  const pageEntries = sortedPages.map(page => 
-    `- [${page.title}](${page.url}): ${page.description}`
-  ).join('\n');
-  
-  return `## Pages\n${pageEntries}`;
+  return `## Pages\n${sortedPages.map(p => `- [${p.title}](${p.url}): ${p.description}`).join('\n')}`;
 }
 
 function ensureDirectoryExists(dirPath) {
-  if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true });
-  }
+  if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
 }
 
 function processPageFile(filePath, routes) {
@@ -145,37 +135,28 @@ function processPageFile(filePath, routes) {
 }
 
 function main() {
-  const pagesDir = path.join(process.cwd(), 'src', 'pages');
-  const appJsxPath = path.join(process.cwd(), 'src', 'App.jsx');
+  const pagesDir = path.join(__dirname, '..', 'src', 'pages');
+  const appJsxPath = path.join(__dirname, '..', 'src', 'App.jsx');
 
   let pages = [];
-  
-  if (!fs.existsSync(pagesDir)) {
-    pages.push(processPageFile(appJsxPath, []));
-  } else {
-    const routes = extractRoutes(appJsxPath);
-    const reactFiles = findReactFiles(pagesDir);
+  const routes = extractRoutes(appJsxPath);
 
-    pages = reactFiles
-      .map(filePath => processPageFile(filePath, routes))
-      .filter(Boolean);
-    
+  if (!fs.existsSync(pagesDir)) {
+    pages.push(processPageFile(appJsxPath, routes));
+  } else {
+    const reactFiles = findReactFiles(pagesDir);
+    pages = reactFiles.map(f => processPageFile(f, routes)).filter(Boolean);
     if (pages.length === 0) {
       console.error('❌ No pages with Helmet components found!');
       process.exit(1);
     }
   }
 
-
   const llmsTxtContent = generateLlmsTxt(pages);
-  const outputPath = path.join(process.cwd(), 'public', 'llms.txt');
-  
+  const outputPath = path.join(__dirname, '..', 'public', 'llms.txt');
   ensureDirectoryExists(path.dirname(outputPath));
   fs.writeFileSync(outputPath, llmsTxtContent, 'utf8');
 }
 
 const isMainModule = import.meta.url === `file://${process.argv[1]}`;
-
-if (isMainModule) {
-  main();
-}
+if (isMainModule) main();

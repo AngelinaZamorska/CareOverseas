@@ -62,16 +62,7 @@
     "testimonial3Treatment": "Neurological Rehabilitation - Spain",
     "testimonial3Text": "24/7 support and a personalized approach. I felt safe throughout my complex treatment and recovery."
   },
-  "diseasesPage": {
-    "title": "Disease Database (ICD-10) | CareOverseas",
-    "description": "Find treatment for complex and rare diseases abroad. Browse our ICD-10 database for information on advanced therapies in Germany, Turkey, and Israel.",
-    "header": "Search Disease by ICD-10 Code",
-    "subtitle": "Enter the name of the disease or the classification code",
-    "searchPlaceholder": "Start typing a name or code...",
-    "categoryHeader": "Category: ",
-    "requestQuote": "Request Quote",
-    "noResults": "No diseases found matching your query."
-  },
+ 
   "cardiacPage": {
     "title": "Advanced Cardiac Surgery in Germany | Complex Heart Conditions",
     "description": "World-class cardiac surgery for complex conditions in Germany. Treatment of rare heart diseases, minimally invasive surgery, and access to top surgeons.",

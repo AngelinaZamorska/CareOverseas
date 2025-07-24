@@ -4,9 +4,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translations
 import translationEN from './locales/en/common.json';
-import icd10EN from './locales/en/icd10.json';
 import homeEN from './locales/en/pages/home.json';
-import diseasesEN from './locales/en/pages/diseases.json';
+
 import cardiacEN from './locales/en/pages/cardiac.json';
 import epilepsyEN from './locales/en/pages/epilepsy.json';
 import neurosurgeryEN from './locales/en/pages/neurosurgery.json';
@@ -23,9 +22,8 @@ import newsEN from './locales/en/pages/news.json';
 import safeTreatmentAbroadEN from './locales/en/pages/news/safe-treatment-abroad.json';
 
 import translationRU from './locales/ru/common.json';
-import icd10RU from './locales/ru/icd10.json';
 import homeRU from './locales/ru/pages/home.json';
-import diseasesRU from './locales/ru/pages/diseases.json';
+
 import cardiacRU from './locales/ru/pages/cardiac.json';
 import epilepsyRU from './locales/ru/pages/epilepsy.json';
 import neurosurgeryRU from './locales/ru/pages/neurosurgery.json';
@@ -42,9 +40,7 @@ import newsRU from './locales/ru/pages/news.json';
 import safeTreatmentAbroadRU from './locales/ru/pages/news/safe-treatment-abroad.json';
 
 import translationPL from './locales/pl/common.json';
-import icd10PL from './locales/pl/icd10.json';
 import homePL from './locales/pl/pages/home.json';
-import diseasesPL from './locales/pl/pages/diseases.json';
 import cardiacPL from './locales/pl/pages/cardiac.json';
 import epilepsyPL from './locales/pl/pages/epilepsy.json';
 import neurosurgeryPL from './locales/pl/pages/neurosurgery.json';
@@ -81,9 +77,9 @@ const resources = {
   en: {
     translation: {
       ...translationEN,
-      ...icd10EN,
+      
       ...homeEN,
-      ...diseasesEN,
+      
       ...cardiacEN,
       ...epilepsyEN,
       ...neurosurgeryEN,

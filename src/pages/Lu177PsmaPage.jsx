@@ -97,8 +97,11 @@ const Lu177PsmaPage = () => {
                             viewport={{ once: true }}
                         >
                             <div className="bg-white p-8 rounded-xl shadow-lg">
-                                <img  alt="Diagram of Lu-177 PSMA therapy targeting a cancer cell" class="w-full h-auto rounded-lg" src="https://images.unsplash.com/photo-1659959103859-317b78edb1fc" />
-                            </div>
+<img
+                  src="/lu177-treatment.jpg"
+                  alt="Lu-177 PSMA treatment on medical imaging"
+                  className="w-full h-auto rounded-lg"
+                />                            </div>
                         </motion.div>
                     </div>
                 </section>

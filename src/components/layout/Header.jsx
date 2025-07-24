@@ -122,7 +122,11 @@ const Header = () => {
             className="flex items-center space-x-3"
           >
             <Link to="/" className="flex items-center space-x-3">
-              <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/a37c75ca-3289-43e6-a1b3-17edfced284f/f687617b139e68b935823bd42bb7a0fa.png" alt="CareOverseasSpace Logo" className="h-12 w-12" />
+              <img
+  src="/android-chrome-192x192.png"
+  alt="CareOverseasSpace Logo"
+  className="h-12 w-12 rounded-xl"
+/>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                   CareOverseasSpace

@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter } from 'react-router-dom'; // Заменили BrowserRouter на HashRouter
+import { BrowserRouter } from 'react-router-dom'; // ✅ Используем BrowserRouter
 import App from '@/App';
 import '@/index.css';
-import './i18n'; // Import i18n configuration
+import './i18n'; // i18n конфигурация
 
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center h-screen w-screen">
@@ -13,10 +13,10 @@ const LoadingSpinner = () => (
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Suspense fallback={<LoadingSpinner />}>
         <App />
       </Suspense>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
