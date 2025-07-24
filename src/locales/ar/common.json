@@ -1,31 +1,31 @@
 {
   "header": {
     "home": "الرئيسية",
-    "treatments": "العلاجات",
+    "treatments": "العلاج في الخارج",
     "process": "كيف نعمل",
-    "news": "الأخبار",
+    "news": "الأخبار والتحديثات",
     "contact": "اتصل بنا",
-    "freeConsultation": "استشارة مجانية",
-    "tagline": "منسق العلاج الطبي"
+    "freeConsultation": "استشارة طبية مجانية",
+    "tagline": "منسقك للعلاج الطبي في الخارج"
   },
   "contact": {},
   "treatments": {
-    "oncology": "علم الأورام",
-    "lu177": "علاج اللوتيتيوم-177 PSMA",
+    "oncology": "علاج السرطان",
+    "lu177": "علاج لوتيتيوم-177 بي إس إم إيه",
     "neurosurgery": "جراحة الأعصاب",
     "bloodDiseases": "أمراض الدم",
-    "rheumatology": "أمراض الروماتيزم",
-    "epilepsy": "الصرع",
-    "dendritic": "علاج الخلايا المتغصنة",
-    "ivf": "أطفال الأنابيب",
+    "rheumatology": "الروماتيزم",
+    "epilepsy": "علاج الصرع",
+    "dendritic": "علاج بالخلايا الشجيرية",
+    "ivf": "أطفال الأنابيب وعلاج العقم",
     "cardiac": "جراحة القلب",
-    "endometriosis": "بطانة الرحم المهاجرة",
+    "endometriosis": "علاج الانتباذ البطاني الرحمي",
     "joint": "استبدال المفاصل",
-    "plasticSurgery": "الجراحة التجميلية"
+    "plasticSurgery": "الجراحة التجميلية والوظيفية"
   },
   "footer": {
-    "tagline": "شريكك الموثوق للعلاج الطبي في الخارج.",
-    "navigation": "التنقل",
+    "tagline": "شريكك الموثوق لتنظيم العلاج بالخارج.",
+    "navigation": "روابط مهمة",
     "home": "الرئيسية",
     "contactUs": "اتصل بنا",
     "partnerCountries": "الدول الشريكة",

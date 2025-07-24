@@ -1,38 +1,38 @@
 {
   "header": {
     "home": "Strona główna",
-    "treatments": "Zabiegi",
+    "treatments": "Leczenie za granicą",
     "process": "Jak to działa",
     "news": "Aktualności",
     "contact": "Kontakt",
-    "freeConsultation": "Bezpłatna konsultacja",
+    "freeConsultation": "Darmowa konsultacja medyczna",
     "tagline": "Koordynator leczenia za granicą"
   },
   "contact": {},
   "treatments": {
-    "oncology": "Onkologia",
+    "oncology": "Leczenie nowotworów",
     "lu177": "Terapia Lutetem-177 PSMA",
     "neurosurgery": "Neurochirurgia",
     "bloodDiseases": "Choroby krwi",
     "rheumatology": "Reumatologia",
-    "epilepsy": "Epilepsja",
+    "epilepsy": "Leczenie padaczki",
     "dendritic": "Terapia komórkami dendrytycznymi",
-    "ivf": "In vitro",
-    "cardiac": "Kardiochirurgia",
-    "endometriosis": "Endometrioza",
+    "ivf": "In vitro i leczenie niepłodności",
+    "cardiac": "Chirurgia serca",
+    "endometriosis": "Leczenie endometriozy",
     "joint": "Wymiana stawów",
-    "plasticSurgery": "Chirurgia plastyczna"
+    "plasticSurgery": "Chirurgia plastyczna i estetyczna"
   },
   "footer": {
-    "tagline": "Twój zaufany partner w leczeniu za granicą.",
+    "tagline": "Twój zaufany partner w organizacji leczenia za granicą.",
     "navigation": "Nawigacja",
     "home": "Strona główna",
     "contactUs": "Skontaktuj się z nami",
     "partnerCountries": "Kraje partnerskie",
     "germany": "Niemcy",
     "turkey": "Turcja",
-    "hiszpania": "Hiszpania",
-    "izrael": "Izrael",
+    "spain": "Hiszpania",
+    "israel": "Izrael",
     "rights": "Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności"
   }
