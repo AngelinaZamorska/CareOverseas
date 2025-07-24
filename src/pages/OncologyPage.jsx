@@ -42,7 +42,6 @@ const OncologyPage = () => {
                             </div>
                             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-4">{t('oncologyPage.header')}</h1>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">{t('oncologyPage.subtitle')}</p>
-                            <img src="/oncology-cover.jpg" alt="Oncology clinic cover" className="rounded-xl mx-auto mb-8 w-full max-w-4xl shadow-lg" />
                             <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white text-lg px-8 py-4">
                                 <Link to="/#contact">{t('oncologyPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5" /></Link>
                             </Button>
@@ -52,14 +51,30 @@ const OncologyPage = () => {
 
                 {/* Diagnostics */}
                 <section className="py-20">
-                    <div className="container mx-auto px-6">
-                        <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('oncologyPage.diagnosticsTitle')}</h2>
-                            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('oncologyPage.diagnosticsSubtitle')}</p>
-                            <img src="/oncology-diagnostics.jpg" alt="Cancer diagnostics process" className="rounded-xl mx-auto mt-10 shadow-lg w-full max-w-4xl" />
-                        </motion.div>
-                    </div>
-                </section>
+    <div className="container mx-auto px-6">
+        <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 items-center gap-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+        >
+            {/* Image Left */}
+            <div className="flex justify-center">
+                <img
+                    src="/oncology-diagnostics.jpg"
+                    alt="Cancer diagnostics process"
+                    className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]"
+                />
+            </div>
+
+            {/* Text Right */}
+            <div>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('oncologyPage.diagnosticsTitle')}</h2>
+                <p className="text-lg text-gray-600">{t('oncologyPage.diagnosticsSubtitle')}</p>
+            </div>
+        </motion.div>
+    </div>
+</section>
 
                 {/* Conditions */}
                 <section className="py-20 bg-gray-50">
