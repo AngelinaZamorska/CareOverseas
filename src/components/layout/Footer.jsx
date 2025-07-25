@@ -167,7 +167,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500">
+        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500 space-y-4">
           <p className="text-sm">&copy; {new Date().getFullYear()} CareOverseasSpace. {t('footer.rights')}</p>
           <div className="mt-4 md:mt-0">
             <button

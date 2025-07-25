@@ -112,7 +112,7 @@ const EpilepsySpainPage = () => {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div className="relative h-96 md:h-auto rounded-lg overflow-hidden shadow-lg" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="Modern epilepsy treatment clinic in Spain" className="w-full h-full object-cover" src="/images/epilepsy-clinic-cover.jpg" />
+                <img alt="Modern epilepsy treatment clinic in Spain" className="w-full h-full object-cover" src="/images/epilepsy-spain-hero.jpg" />
               </motion.div>
               <motion.div className="space-y-6" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h3 className="text-3xl font-bold text-gray-900">{t('epilepsySpainPage.feature4Title')}</h3>
