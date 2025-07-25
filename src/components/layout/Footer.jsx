@@ -63,21 +63,71 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-xl mb-4">{t('footer.navigation')}</h3>
             <ul className="space-y-2">
-              {['/', '/oncology', '/lu-177-psma-therapy', '/dendritic-cell-therapy-germany', '/ivf-in-turkey', '/cardiac-surgery-germany', '/endometriosis-leomyoma-treatment', '/joint-replacement'].map((path, idx) => (
-                <li key={idx}>
-                  <button
-                    onClick={() => path === '/#contact' ? handleContactClick() : navigate(path)}
-                    className="hover:text-white transition"
-                  >
-                    {t(`treatments.${path.includes('oncology') ? 'oncology' : path.split('/')[1] || 'home'}`)}
-                  </button>
-                </li>
-              ))}
               <li>
-                <button onClick={handleContactClick} className="hover:text-white transition">
-                  {t('header.contact')}
+                <button
+                  onClick={() => navigate('/')}
+                  className="hover:text-white transition"
+                >
+                  {t('footer.home')}
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => navigate('/oncology')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.oncology')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/lu-177-psma-therapy')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.lu177')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/dendritic-cell-therapy-germany')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.dendritic')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/ivf-in-turkey')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.ivf')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/cardiac-surgery-germany')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.cardiac')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/endometriosis-leomyoma-treatment')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.endometriosis')}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate('/joint-replacement')}
+                  className="hover:text-white transition"
+                >
+                  {t('treatments.joint')}
+                </button>
+              </li>
+            
             </ul>
           </div>
 
