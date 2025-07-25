@@ -106,9 +106,9 @@ const Header = () => {
           { to: "/plastic-surgery-turkey", label: t('treatments.plasticSurgery') },
         ]}
       />
-      <NavLink href="#process">{t('header.process')}</NavLink>
+      <NavLink href="/process">{t('header.process')}</NavLink>
       <NavLink to="/news">{t('header.news')}</NavLink>
-      <NavLink href="#contact">{t('header.contact')}</NavLink>
+      <NavLink href="/contact">{t('header.contact')}</NavLink>
     </>
   );
 
