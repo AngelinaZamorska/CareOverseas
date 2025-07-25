@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Baby, TestTube, Gem, DollarSign, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const IvfTurkeyPage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Smooth scroll to #contact on home
+  const scrollToContact = () => {
+    const el = document.getElementById('contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleContactClick = () => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(scrollToContact, 150);
+    } else {
+      scrollToContact();
+    }
+  };
 
   return (
     <>
@@ -31,11 +53,7 @@ const IvfTurkeyPage = () => {
         {/* Hero Section */}
         <section className="relative py-24 bg-gradient-to-br from-rose-600/10 to-amber-600/10 overflow-hidden">
           <div className="container mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <div className="inline-block bg-white p-4 rounded-2xl shadow-md mb-6">
                 <Baby className="h-12 w-12 text-rose-500" />
               </div>
@@ -45,8 +63,12 @@ const IvfTurkeyPage = () => {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                 {t('ivfTurkeyPage.subtitle')}
               </p>
-              <Button asChild size="lg" className="bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 text-white text-lg px-8 py-4">
-                <Link to="/#contact">{t('ivfTurkeyPage.startJourney')} <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 text-white text-lg px-8 py-4"
+                onClick={handleContactClick}
+              >
+                {t('ivfTurkeyPage.startJourney')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>
           </div>
@@ -55,12 +77,7 @@ const IvfTurkeyPage = () => {
         {/* Why Turkey Section */}
         <section className="py-20">
           <div className="container mx-auto px-6">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
+            <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('ivfTurkeyPage.whyTurkeyTitle')}</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t('ivfTurkeyPage.whyTurkeySubtitle')}</p>
             </motion.div>
@@ -94,12 +111,7 @@ const IvfTurkeyPage = () => {
         {/* Pricing Section */}
         <section className="py-20 bg-gradient-to-br from-rose-50 to-amber-50">
           <div className="container mx-auto px-6">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
+            <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('ivfTurkeyPage.pricingTitle')}</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t('ivfTurkeyPage.pricingSubtitle')}</p>
             </motion.div>
@@ -137,16 +149,11 @@ const IvfTurkeyPage = () => {
         {/* CTA Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-r from-rose-600 to-amber-600 text-white p-12 rounded-2xl shadow-xl"
-            >
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="bg-gradient-to-r from-rose-600 to-amber-600 text-white p-12 rounded-2xl shadow-xl">
               <h2 className="text-3xl font-bold mb-4">{t('ivfTurkeyPage.ctaTitle')}</h2>
               <p className="text-lg mb-8 max-w-2xl mx-auto">{t('ivfTurkeyPage.ctaSubtitle')}</p>
-              <Button asChild size="lg" variant="secondary" className="bg-white text-rose-600 hover:bg-gray-100 text-lg px-8 py-4">
-                <Link to="/#contact">{t('ivfTurkeyPage.ctaButton')}</Link>
+              <Button size="lg" variant="secondary" className="bg-white text-rose-600 hover:bg-gray-100 text-lg px-8 py-4" onClick={handleContactClick}>
+                {t('ivfTurkeyPage.ctaButton')}
               </Button>
             </motion.div>
           </div>
