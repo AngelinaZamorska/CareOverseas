@@ -174,7 +174,24 @@ const Header = () => {
             className="md:hidden bg-white/90 backdrop-blur p-6 space-y-3 shadow-xl"
           >
             <NavLink scrollTo="top">{t('header.home')}</NavLink>
-            <NavLink to="/treatments">{t('header.treatments')}</NavLink>
+            <NavLink
+            isDropdown
+            children={t('header.treatments')}
+            sublinks={[
+              { to: '/oncology', label: t('treatments.oncology') },
+              { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
+              { to: '/neurosurgery', label: t('treatments.neurosurgery') },
+              { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
+              { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
+              { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
+              { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
+              { to: '/ivf-in-turkey', label: t('treatments.ivf') },
+              { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
+              { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
+              { to: '/joint-replacement', label: t('treatments.joint') },
+              { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
+            ]}
+          />
             <NavLink scrollTo="process">{t('header.process')}</NavLink>
             <NavLink to="/news">{t('header.news')}</NavLink>
             <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
