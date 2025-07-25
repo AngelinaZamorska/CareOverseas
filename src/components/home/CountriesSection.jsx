@@ -10,40 +10,24 @@ const CountriesSection = () => {
   const countriesData = [
     {
       country: t('homePage.countryGermany'),
-      image: '/images/germany.jpg',
-      specialties: [
-        t('homePage.specialtyCardiology'),
-        t('homePage.specialtyOncology'),
-        t('homePage.specialtyNeurology'),
-      ],
+      image: '/germany.jpg',
+      specialties: [t('homePage.specialtyCardiology'), t('homePage.specialtyOncology'), t('homePage.specialtyNeurology')],
     },
     {
       country: t('homePage.countryTurkey'),
-      image: '/images/turkey.jpg',
-      specialties: [
-        t('homePage.specialtyPlasticSurgery'),
-        t('homePage.specialtyHairTransplants'),
-        t('homePage.specialtyDentistry'),
-      ],
+      image: '/turkey.jpg',
+      specialties: [t('homePage.specialtyPlasticSurgery'), t('homePage.specialtyHairTransplants'), t('homePage.specialtyDentistry')],
     },
     {
       country: t('homePage.countrySpain'),
-      image: '/images/spain.jpg',
-      specialties: [
-        t('homePage.specialtyOrthopedics'),
-        t('homePage.specialtyRehabilitation'),
-        t('homePage.specialtyAestheticMedicine'),
-      ],
+      image: '/spain.jpg',
+      specialties: [t('homePage.specialtyOrthopedics'), t('homePage.specialtyRehabilitation'), t('homePage.specialtyAestheticMedicine')],
     },
     {
       country: t('homePage.countryIsrael'),
-      image: '/images/israel.jpg',
-      specialties: [
-        t('homePage.specialtyOncology'),
-        t('homePage.specialtyInnovativeTherapies'),
-        t('homePage.specialtyClinicalTrials'),
-      ],
-    },
+      image: '/israel.jpg',
+      specialties: [t('homePage.specialtyOncology'), t('homePage.specialtyInnovativeTherapies'), t('homePage.specialtyClinicalTrials')],
+    }
   ];
 
   return (
@@ -55,9 +39,7 @@ const CountriesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            {t('homePage.countriesTitle')}
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('homePage.countriesTitle')}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('homePage.countriesSubtitle')}
           </p>
@@ -74,29 +56,25 @@ const CountriesSection = () => {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
             >
               <div className="relative h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
-                <img
-                  src={country.image}
-                  alt={country.country}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                {country.image ? (
+                  <img src={country.image} alt={country.country} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                ) : (
+                  <div className="text-8xl">{country.flag}</div>
+                )}
               </div>
-
+              
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {country.country}
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">{country.country}</h3>
                 <div className="space-y-2">
-                  {country.specialties.map((spec, idx) => (
+                  {country.specialties.map((specialty, idx) => (
                     <div key={idx} className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-gray-600">{spec}</span>
+                      <span className="text-gray-600">{specialty}</span>
                     </div>
                   ))}
                 </div>
-                <Button
-                  onClick={() =>
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                  }
+                <Button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className="w-full mt-6 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
                 >
                   {t('homePage.learnMore')}
