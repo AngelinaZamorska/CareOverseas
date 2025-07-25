@@ -104,7 +104,7 @@ const BrainCancerPage = () => {
               >
                 {/* 👇 Замени src на свою картинку */}
                 <img 
-                  alt="Пациент с МРТ головного мозга" 
+                  alt="Patient with MRI of the brain" 
                   className="w-full h-full object-cover" 
                   src="https://careoverseas.space/brain-surgery.jpg" 
                 />
