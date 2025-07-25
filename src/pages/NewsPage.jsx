@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -8,6 +8,11 @@ import { Button } from '@/components/ui/button';
 
 const NewsPage = () => {
   const { t } = useTranslation();
+
+  // Прокрутка наверх при открытии страницы
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const articles = [
     {
@@ -54,9 +59,10 @@ const NewsPage = () => {
             >
               <div className="md:w-1/3">
                 <img 
-                  class="h-64 w-full object-cover" 
+                  className="h-64 w-full object-cover" 
                   alt={article.imageAlt}
-                 src="https://images.unsplash.com/photo-1599154835218-8bce9b84d5f0" />
+                  src="/images/news-war.jpg"
+                />
               </div>
               <div className="p-8 flex flex-col justify-between md:w-2/3">
                 <div>
