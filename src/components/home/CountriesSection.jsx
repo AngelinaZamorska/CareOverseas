@@ -10,7 +10,7 @@ const CountriesSection = () => {
   const countriesData = [
     {
       country: t('homePage.countryGermany'),
-      image: '/images/germany.webp',
+      image: '/images/germany.jpg',
       specialties: [
         t('homePage.specialtyCardiology'),
         t('homePage.specialtyOncology'),
@@ -19,7 +19,7 @@ const CountriesSection = () => {
     },
     {
       country: t('homePage.countryTurkey'),
-      image: '/images/turkey.webp',
+      image: '/images/turkey.jpg',
       specialties: [
         t('homePage.specialtyPlasticSurgery'),
         t('homePage.specialtyHairTransplants'),
@@ -28,7 +28,7 @@ const CountriesSection = () => {
     },
     {
       country: t('homePage.countrySpain'),
-      image: '/images/spain.webp',
+      image: '/images/spain.jpg',
       specialties: [
         t('homePage.specialtyOrthopedics'),
         t('homePage.specialtyRehabilitation'),
@@ -37,7 +37,7 @@ const CountriesSection = () => {
     },
     {
       country: t('homePage.countryIsrael'),
-      image: '/images/israel.webp',
+      image: '/images/israel.jpg',
       specialties: [
         t('homePage.specialtyOncology'),
         t('homePage.specialtyInnovativeTherapies'),
@@ -74,15 +74,11 @@ const CountriesSection = () => {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
             >
               <div className="relative h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
-                {country.image ? (
-                  <img
-                    src={country.image}
-                    alt={country.country}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                ) : (
-                  <div className="text-8xl">{country.flag}</div>
-                )}
+                <img
+                  src={country.image}
+                  alt={country.country}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
               <div className="p-6">
@@ -90,10 +86,10 @@ const CountriesSection = () => {
                   {country.country}
                 </h3>
                 <div className="space-y-2">
-                  {country.specialties.map((specialty, idx) => (
+                  {country.specialties.map((spec, idx) => (
                     <div key={idx} className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-gray-600">{specialty}</span>
+                      <span className="text-gray-600">{spec}</span>
                     </div>
                   ))}
                 </div>
