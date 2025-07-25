@@ -30,7 +30,6 @@ const Header = () => {
     }
   };
 
-  // ⭐️ Обновленные стили для навигации
   const linkBase = 'text-gray-800 px-4 py-2 font-semibold rounded-lg transition-all ease-out duration-200';
   const linkHover = 'hover:bg-blue-50 hover:text-blue-600';
   const buttonPrimary = 'bg-gradient-to-r from-blue-500 to-purple-500 text-white';
@@ -130,15 +129,15 @@ const Header = () => {
               { to: '/oncology', label: t('treatments.oncology') },
               { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
               { to: '/neurosurgery', label: t('treatments.neurosurgery') },
-          { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
-          { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
-          { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
-          { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
-          { to: '/ivf-in-turkey', label: t('treatments.ivf') },
-          { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
-          { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
-          { to: '/joint-replacement', label: t('treatments.joint') },
-          { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
+              { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
+              { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
+              { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
+              { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
+              { to: '/ivf-in-turkey', label: t('treatments.ivf') },
+              { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
+              { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
+              { to: '/joint-replacement', label: t('treatments.joint') },
+              { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
             ]}
           />
           <NavLink scrollTo="process">{t('header.process')}</NavLink>
@@ -156,7 +155,7 @@ const Header = () => {
           </motion.button>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu toggle */}
         <div className="md:hidden flex items-center space-x-3">
           <LanguageSwitcher />
           <button onClick={() => setMenuOpen(prev => !prev)}>
@@ -175,6 +174,7 @@ const Header = () => {
             className="md:hidden bg-white/90 backdrop-blur p-6 space-y-3 shadow-xl"
           >
             <NavLink scrollTo="top">{t('header.home')}</NavLink>
+            <NavLink to="/treatments">{t('header.treatments')}</NavLink>
             <NavLink scrollTo="process">{t('header.process')}</NavLink>
             <NavLink to="/news">{t('header.news')}</NavLink>
             <NavLink scrollTo="contact">{t('header.contact')}</NavLink>

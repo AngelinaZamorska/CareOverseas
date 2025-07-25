@@ -1,9 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Brain, Microscope, Zap, UserCheck, CheckCircle, ArrowRight } from 'lucide-react';
+import {
+  Brain,
+  Microscope,
+  Zap,
+  UserCheck,
+  CheckCircle,
+  ArrowRight
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const BrainCancerPage = () => {
@@ -18,12 +24,20 @@ const BrainCancerPage = () => {
     t('neurosurgeryPage.condition6'),
   ];
 
+  const scrollToContact = () => {
+    const el = document.getElementById('contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <Helmet>
         <title>{t('neurosurgeryPage.title')}</title>
         <meta name="description" content={t('neurosurgeryPage.description')} />
-        <meta name="keywords" content="нейрохирургия, опухоль головного мозга, глиобластома, менингиома, микрохирургия, протонная терапия, лечение в Германии, CareOverseas" />
+        <meta
+          name="keywords"
+          content="нейрохирургия, опухоль головного мозга, глиобластома, менингиома, микрохирургия, протонная терапия, лечение в Германии, CareOverseas"
+        />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
@@ -45,10 +59,13 @@ const BrainCancerPage = () => {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                 {t('neurosurgeryPage.subtitle')}
               </p>
-              <Button asChild size="lg" className="bg-gradient-to-r from-slate-800 to-gray-700 hover:from-slate-900 hover:to-gray-800 text-lg px-8 py-4">
-                <Link to="/#contact">
-                  {t('neurosurgeryPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-slate-800 to-gray-700 hover:from-slate-900 hover:to-gray-800 text-lg px-8 py-4 flex items-center justify-center"
+                onClick={scrollToContact}
+              >
+                {t('neurosurgeryPage.getQuote')}
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>
           </div>
@@ -57,23 +74,43 @@ const BrainCancerPage = () => {
         {/* Why Us Section */}
         <section className="py-20">
           <div className="container mx-auto px-6">
-            <motion.div 
+            <motion.div
               className="text-center mb-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('neurosurgeryPage.whyUsTitle')}</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t('neurosurgeryPage.whyUsSubtitle')}</p>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                {t('neurosurgeryPage.whyUsTitle')}
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                {t('neurosurgeryPage.whyUsSubtitle')}
+              </p>
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: UserCheck, title: t('neurosurgeryPage.feature1Title'), description: t('neurosurgeryPage.feature1Desc') },
-                { icon: Brain, title: t('neurosurgeryPage.feature2Title'), description: t('neurosurgeryPage.feature2Desc') },
-                { icon: Zap, title: t('neurosurgeryPage.feature3Title'), description: t('neurosurgeryPage.feature3Desc') },
-                { icon: Microscope, title: t('neurosurgeryPage.feature4Title'), description: t('neurosurgeryPage.feature4Desc') },
+                {
+                  icon: UserCheck,
+                  title: t('neurosurgeryPage.feature1Title'),
+                  description: t('neurosurgeryPage.feature1Desc'),
+                },
+                {
+                  icon: Brain,
+                  title: t('neurosurgeryPage.feature2Title'),
+                  description: t('neurosurgeryPage.feature2Desc'),
+                },
+                {
+                  icon: Zap,
+                  title: t('neurosurgeryPage.feature3Title'),
+                  description: t('neurosurgeryPage.feature3Desc'),
+                },
+                {
+                  icon: Microscope,
+                  title: t('neurosurgeryPage.feature4Title'),
+                  description: t('neurosurgeryPage.feature4Desc'),
+                },
               ].map((item, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="text-center p-8 bg-gray-50 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
                   initial={{ opacity: 0, y: 20 }}
@@ -96,28 +133,30 @@ const BrainCancerPage = () => {
         <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-stretch">
-              <motion.div 
+              <motion.div
                 className="rounded-lg overflow-hidden shadow-lg"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <img 
-                  alt="Patient with MRI of the brain" 
+                <img
+                  alt="Patient with MRI of the brain"
                   className="w-full h-full object-cover"
-                  src="https://careoverseas.space/brain-surgery.jpg" 
+                  src="https://careoverseas.space/brain-surgery.jpg"
                 />
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="space-y-6"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-3xl font-bold text-gray-900">{t('neurosurgeryPage.conditionsTitle')}</h3>
+                <h3 className="text-3xl font-bold text-gray-900">
+                  {t('neurosurgeryPage.conditionsTitle')}
+                </h3>
                 <ul className="space-y-3">
-                  {conditions.map((condition, index) => (
-                    <li key={index} className="flex items-center">
+                  {conditions.map((condition, idx) => (
+                    <li key={idx} className="flex items-center">
                       <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
                       <span className="text-lg text-gray-700">{condition}</span>
                     </li>
@@ -128,6 +167,7 @@ const BrainCancerPage = () => {
           </div>
         </section>
 
+        {/* Call-to-Action Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 text-center">
             <motion.div
@@ -136,10 +176,20 @@ const BrainCancerPage = () => {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-slate-800 to-gray-700 text-white p-12 rounded-2xl shadow-xl"
             >
-              <h2 className="text-3xl font-bold mb-4">{t('neurosurgeryPage.ctaTitle')}</h2>
-              <p className="text-lg mb-8 max-w-2xl mx-auto">{t('neurosurgeryPage.ctaSubtitle')}</p>
-              <Button asChild size="lg" variant="secondary" className="bg-white text-slate-800 hover:bg-gray-100 text-lg px-8 py-4">
-                <Link to="/#contact">{t('neurosurgeryPage.ctaButton')}</Link>
+              <h2 className="text-3xl font-bold mb-4">
+                {t('neurosurgeryPage.ctaTitle')}
+              </h2>
+              <p className="text-lg mb-8 max-w-2xl mx-auto">
+                {t('neurosurgeryPage.ctaSubtitle')}
+              </p>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="bg-white text-slate-800 hover:bg-gray-100 text-lg px-8 py-4 flex items-center justify-center"
+                onClick={scrollToContact}
+              >
+                {t('neurosurgeryPage.ctaButton')}
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>
           </div>

@@ -134,7 +134,75 @@ const HomePage = () => {
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
-        {/* …service section content… */}
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('homePage.servicesTitle')}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('homePage.servicesSubtitle')}
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Stethoscope,
+                title: t('homePage.service1Title'),
+                description: t('homePage.service1Desc'),
+                color: "from-blue-500 to-blue-600"
+              },
+              {
+                icon: Globe,
+                title: t('homePage.service2Title'),
+                description: t('homePage.service2Desc'),
+                color: "from-green-500 to-green-600"
+              },
+              {
+                icon: Shield,
+                title: t('homePage.service3Title'),
+                description: t('homePage.service3Desc'),
+                color: "from-purple-500 to-purple-600"
+              },
+              {
+                icon: Users,
+                title: t('homePage.service4Title'),
+                description: t('homePage.service4Desc'),
+                color: "from-orange-500 to-orange-600"
+              },
+              {
+                icon: Clock,
+                title: t('homePage.service5Title'),
+                description: t('homePage.service5Desc'),
+                color: "from-red-500 to-red-600"
+              },
+              {
+                icon: Award,
+                title: t('homePage.service6Title'),
+                description: t('homePage.service6Desc'),
+                color: "from-teal-500 to-teal-600"
+              }
+            ].map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+              >
+                <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${service.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Countries Section */}
