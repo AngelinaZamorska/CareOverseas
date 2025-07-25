@@ -95,17 +95,16 @@ const BrainCancerPage = () => {
         {/* Conditions Section */}
         <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch">
               <motion.div 
-                className="relative h-96 md:h-auto rounded-lg overflow-hidden shadow-lg"
+                className="rounded-lg overflow-hidden shadow-lg"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                {/* 👇 Замени src на свою картинку */}
                 <img 
                   alt="Patient with MRI of the brain" 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover"
                   src="https://careoverseas.space/brain-surgery.jpg" 
                 />
               </motion.div>
@@ -129,7 +128,6 @@ const BrainCancerPage = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 text-center">
             <motion.div

@@ -19,7 +19,7 @@ const NewsPage = () => {
       slug: '/news/safe-treatment-abroad',
       titleKey: 'newsPage.articlePreviewTitle',
       descriptionKey: 'newsPage.articlePreviewDescription',
-      imageAlt: 'A doctor consulting with a patient in a modern, safe clinic environment',
+      imageAlt: 'Patient fleeing war',
       imageText: 'Doctor and patient discussing treatment options'
     }
   ];
@@ -61,7 +61,7 @@ const NewsPage = () => {
                 <img 
                   className="h-64 w-full object-cover" 
                   alt={article.imageAlt}
-                  src="/images/news-war.jpg"
+                  src="https://careoverseas.space/news-war.jpg"
                 />
               </div>
               <div className="p-8 flex flex-col justify-between md:w-2/3">
