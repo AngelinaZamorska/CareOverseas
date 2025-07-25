@@ -238,13 +238,51 @@ const HomePage = () => {
   </div>
 </section>
 
-      {/* Testimonials Section */}
       <section
-        id="testimonials"
-        className="py-20 bg-gradient-to-br from-blue-50 to-green-50"
-      >
-        {/* …testimonials content… */}
-      </section>
+  id="testimonials"
+  className="py-20 bg-gradient-to-br from-blue-50 to-green-50"
+>
+  <div className="container mx-auto px-6">
+    {/* Заголовок */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="mb-12 text-center"
+    >
+      <h2 className="text-4xl font-bold text-gray-900">
+        {t('homePage.testimonialsTitle')}
+      </h2>
+      <p className="mt-4 text-lg text-gray-600">
+        {t('homePage.testimonialsSubtitle')}
+      </p>
+    </motion.div>
+
+    {/* Карточки отзывов */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[1, 2, 3].map((i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 * i }}
+          className="flex flex-col items-start bg-white rounded-2xl p-6 shadow-lg space-y-4"
+        >
+          <Star className="h-6 w-6 text-yellow-400" />
+          <p className="text-gray-700 italic">
+            “{t(`homePage.testimonial${i}Text`)}”
+          </p>
+          <h4 className="text-lg font-semibold text-gray-900">
+            {t(`homePage.testimonial${i}Name`)}
+          </h4>
+          <span className="text-sm text-gray-600">
+            {t(`homePage.testimonial${i}Treatment`)}
+          </span>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <ContactSection />
