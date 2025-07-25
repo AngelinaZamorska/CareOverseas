@@ -181,8 +181,7 @@ const PrivacyPolicyPage = () => {
             <section id="contact" className="mb-6">
               <h2 className="text-2xl font-semibold mb-2">14. Contact</h2>
               <p>
-                For inquiries or data requests, email us at 
-                <a href="mailto:info.careoverseas@gmail.com" className="text-blue-600 hover:underline">
+                For inquiries or data requests, email us at <a href="mailto:info.careoverseas@gmail.com" className="text-blue-600 hover:underline">
                   info.careoverseas@gmail.com
                 </a>.
               </p>
