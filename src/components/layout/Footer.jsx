@@ -1,8 +1,9 @@
 import React from 'react';
-import { HeartHandshake, Phone, Mail, MapPin } from 'lucide-react';
+import { User, HeartHandshake, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
+import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -14,8 +15,12 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="bg-gradient-to-r from-blue-600 to-green-600 p-2 rounded-xl">
-                <HeartHandshake className="h-6 w-6 text-white" />
-              </div>
+  <img 
+    src="/android-chrome-192x192.png" 
+    alt="Clinic logo" 
+    className="h-6 w-6 object-contain" 
+  />
+</div>
               <span className="text-xl font-bold">CareOverseasSpace</span>
             </div>
             <p className="text-gray-400">
@@ -51,21 +56,36 @@ const Footer = () => {
           <div>
             <span className="font-semibold text-lg mb-4 block">{t('footer.contactUs')}</span>
             <ul className="space-y-2 text-gray-400">
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <span>+380984998555</span>
-              </li>
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <span>info.careoverseas@gmail.com</span>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <span>
-                  Wagnerstraße 13<br />40212 Düsseldorf, Germany
-                </span>
-              </li>
-            </ul>
+  <li className="flex items-start">
+    <User className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
+    <span>Zamorska Angelina</span>
+  </li>
+  <li className="flex items-start">
+  <div className="flex items-center mr-3 mt-1 space-x-2 text-gray-300">
+    <Phone className="h-5 w-5" />
+    <a href="https://t.me/ZamorskaAngelina" target="_blank" rel="noopener noreferrer">
+      <FaTelegramPlane className="h-5 w-5 hover:text-blue-400" />
+    </a>
+    <a href="viber://chat?number=%2B380984998555" target="_blank" rel="noopener noreferrer">
+      <FaViber className="h-5 w-5 hover:text-purple-400" />
+    </a>
+    <a href="https://wa.me/380984998555" target="_blank" rel="noopener noreferrer">
+      <FaWhatsapp className="h-5 w-5 hover:text-green-400" />
+    </a>
+  </div>
+  <span className="ml-2 text-white">+380984998555</span>
+</li>
+  <li className="flex items-start">
+    <Mail className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
+    <span>info.careoverseas@gmail.com</span>
+  </li>
+  <li className="flex items-start">
+    <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
+    <span>
+      Kiev<br />01001 Ukraine
+    </span>
+  </li>
+</ul>
           </div>
         </div>
         
