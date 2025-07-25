@@ -186,15 +186,21 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  {t('contact.treatmentTypeLabel')}
-                </label>
-                <select
-                  name="treatment_type"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
+                <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.treatmentTypeLabel')}</label>
+                <select name="treatment_type" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                   <option>{t('contact.treatmentTypeSelect')}</option>
-                  {/* и т.д. */}
+                  <option>{t('treatments.oncology')}</option>
+                  <option>{t('treatments.lu177')}</option>
+                  <option>{t('treatments.neurosurgery')}</option>
+                  <option>{t('treatments.bloodDiseases')}</option>
+                  <option>{t('treatments.rheumatology')}</option>
+                  <option>{t('treatments.epilepsy')}</option>
+                  <option>{t('treatments.dendritic')}</option>
+                  <option>{t('treatments.ivf')}</option>
+                  <option>{t('treatments.cardiac')}</option>
+                  <option>{t('treatments.endometriosis')}</option>
+                  <option>{t('treatments.joint')}</option>
+                  <option>{t('treatments.plasticSurgery')}</option>
                   <option>{t('contact.other')}</option>
                 </select>
               </div>
