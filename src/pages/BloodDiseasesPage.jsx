@@ -59,35 +59,34 @@ const BloodDiseasesPage = () => {
 
       {/* Hero */}
       <section className="relative bg-red-50 py-20 md:py-28 lg:py-32">
-        <div className="inline-block bg-white p-4 rounded-2xl shadow-md mb-6">
-  <Droplet className="h-12 w-12 text-red-500" />
-</div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-700 mb-4"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            {t('bloodDiseasesPage.header')}
-          </motion.h1>
-          <motion.p
-            className="text-md sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            {t('bloodDiseasesPage.subtitle')}
-          </motion.p>
-          <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.5 }}>
-            <Button
-              size="lg"
-              className="bg-red-600 hover:bg-red-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
-              onClick={handleContactClick}
-            >
-              {t('bloodDiseasesPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5 inline" />
-            </Button>
-          </motion.div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="inline-block bg-white p-4 rounded-2xl shadow-md mb-6">
+        <Droplet className="h-12 w-12 text-red-500" />
+      </div>
+
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-700 mb-4">
+        {t('bloodDiseasesPage.header')}
+      </h1>
+
+      <p className="text-md sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        {t('bloodDiseasesPage.subtitle')}
+      </p>
+
+      <Button
+        size="lg"
+        className="bg-red-600 hover:bg-red-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+        onClick={handleContactClick}
+      >
+        {t('bloodDiseasesPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+      </Button>
+    </motion.div>
+  </div>
+</section>
 
       {/* Why Us */}
       <section className="py-16 md:py-20 lg:py-24 bg-white">
