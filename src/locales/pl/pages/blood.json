@@ -1,36 +1,36 @@
 {
   "bloodDiseasesPage": {
-    "title": "Zaawansowane leczenie chorób krwi i nowotworów hematologicznych",
-    "description": "Specjalistyczne leczenie białaczki, chłoniaka, szpiczaka mnogiego i innych złożonych schorzeń hematologicznych. Dostęp do przeszczepów szpiku kostnego i nowoczesnych terapii.",
-    "header": "Leczenie złożonych chorób krwi",
-    "subtitle": "Kompleksowa opieka nad pacjentami z nowotworami krwi i chorobami hematologicznymi – od diagnozy po innowacyjne terapie i przeszczepy.",
-    "getQuote": "Uzyskaj bezpłatną wycenę",
+    "title": "Leczenie raka krwi i chorób krwi za granicą",
+    "description": "Specjalistyczna diagnostyka i leczenie białaczki, chłoniaka, szpiczaka, MDS i anemii. Nowoczesne terapie: przeszczep szpiku, terapia CAR-T, leczenie celowane w najlepszych klinikach w Europie.",
+    "header": "Nowoczesne leczenie chorób krwi za granicą",
+    "subtitle": "Kompleksowa opieka medyczna przy białaczce, chłoniaku, szpiczaku mnogim i innych chorobach hematologicznych — od precyzyjnej diagnostyki po innowacyjne leczenie i przeszczep szpiku kostnego.",
+    "getQuote": "Uzyskaj indywidualną wycenę",
 
-    "whyUsTitle": "Dlaczego warto wybrać nas w hematologii?",
-    "whyUsSubtitle": "Współpracujemy z najlepszymi ośrodkami hematologiczno-onkologicznymi specjalizującymi się w rzadkich i złożonych chorobach krwi.",
+    "whyUsTitle": "Dlaczego warto leczyć choroby krwi z nami?",
+    "whyUsSubtitle": "Współpracujemy z czołowymi ośrodkami hematologii i onkohematologii w Europie, specjalizującymi się w leczeniu rzadkich i trudnych przypadków.",
 
-    "feature1Title": "Wiodący specjaliści",
-    "feature1Desc": "Dostęp do renomowanych hematologów i onkologów z doświadczeniem w leczeniu rzadkich nowotworów krwi.",
+    "feature1Title": "Najlepsi hematolodzy i onkolodzy",
+    "feature1Desc": "Dostęp do uznanych specjalistów w leczeniu białaczek, chłoniaków i innych nowotworów krwi.",
 
     "feature2Title": "Zaawansowana diagnostyka",
-    "feature2Desc": "Precyzyjna diagnostyka z użyciem badań genetycznych, cytometrii przepływowej i nowoczesnych metod obrazowania.",
+    "feature2Desc": "Badania genetyczne, cytometria przepływowa, PET-CT, rezonans magnetyczny – wszystko w jednym miejscu.",
 
-    "feature3Title": "Innowacyjne terapie",
-    "feature3Desc": "Terapie komórkowe (CAR-T), terapie celowane oraz możliwość przeszczepów szpiku kostnego.",
+    "feature3Title": "Nowoczesne terapie",
+    "feature3Desc": "Terapia CAR-T, leczenie celowane, immunoterapia, chemioterapia i przeszczep szpiku kostnego (autologiczny i allogeniczny).",
 
-    "feature4Title": "Kompleksowa opieka",
-    "feature4Desc": "Zespół interdyscyplinarny opiekuje się pacjentem na każdym etapie leczenia.",
+    "feature4Title": "Zintegrowane podejście do leczenia",
+    "feature4Desc": "Zespół ekspertów: hematolodzy, transplantolodzy, radiolodzy i specjaliści terapii wspomagającej.",
 
-    "conditionsTitle": "Leczone schorzenia",
-    "condition1": "Białaczka (ALL, AML, CLL, CML)",
-    "condition2": "Chłoniaki (Hodgkina i nieziarnicze)",
+    "conditionsTitle": "Jakie choroby leczymy",
+    "condition1": "Białaczka (ostra i przewlekła: ALL, AML, CLL, CML)",
+    "condition2": "Chłoniaki (ziarnicze i nieziarnicze)",
     "condition3": "Szpiczak mnogi",
     "condition4": "Zespoły mielodysplastyczne (MDS)",
-    "condition5": "Anemia aplastyczna",
+    "condition5": "Aplazja szpiku (niedokrwistość aplastyczna)",
     "condition6": "Talasemia i anemia sierpowata",
 
-    "ctaTitle": "Odkryj najlepszą ścieżkę leczenia",
-    "ctaSubtitle": "Skontaktuj się z nami w celu uzyskania indywidualnej konsultacji i poznaj dostępne opcje leczenia.",
-    "ctaButton": "Zamów konsultację"
+    "ctaTitle": "Znajdź najlepszą ścieżkę leczenia",
+    "ctaSubtitle": "Skontaktuj się z nami, aby uzyskać indywidualną konsultację i poznać aktualne metody leczenia swojej choroby.",
+    "ctaButton": "Zgłoś się na konsultację"
   }
 }

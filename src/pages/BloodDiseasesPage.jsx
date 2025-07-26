@@ -160,35 +160,44 @@ const BloodDiseasesPage = () => {
 
       {/* Conditions */}
       <section className="py-20 bg-red-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Conditions We Treat</h2>
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="space-y-4">
-              {conditions.map((cond, idx) => (
-                <motion.div
-                  key={idx}
-                  className="flex items-center text-gray-800"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                >
-                  <CheckCircle className="h-6 w-6 text-red-600 mr-3" />
-                  <span className="text-lg">{cond}</span>
-                </motion.div>
-              ))}
-            </div>
-            <motion.div
-              className="rounded-lg overflow-hidden shadow-lg"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <img src="/blood.jpg" alt="Microscopic blood analysis" className="w-full h-auto object-cover" />
-            </motion.div>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-12">
+      {t('bloodDiseasesPage.conditionsTitle')}
+    </h2>
+    <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+      {/* Text column */}
+      <div className="space-y-4 flex flex-col justify-between">
+        {conditions.map((cond, idx) => (
+          <motion.div
+            key={idx}
+            className="flex items-center text-gray-800"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.1 }}
+          >
+            <CheckCircle className="h-6 w-6 text-red-600 mr-3" />
+            <span className="text-lg">{cond}</span>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Image column */}
+      <motion.div
+        className="rounded-lg overflow-hidden shadow-lg h-full"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <img
+          src="/blood.jpg"
+          alt="Microscopic blood analysis"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-rose-600 text-white">
