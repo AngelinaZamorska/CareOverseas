@@ -112,7 +112,7 @@ const Lu177PsmaPage = () => {
             viewport={{ once: true }}
           >
             <img
-              src="/images/lu177-treatment.jpg"
+              src="/lu177-treatment.jpg"
               alt={t('lu177Page.process.title')}
               className="w-full h-auto object-cover"
             />
