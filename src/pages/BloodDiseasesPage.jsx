@@ -40,7 +40,7 @@ const BloodDiseasesPage = () => {
   ];
 
   return (
-    <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="text-base leading-relaxed">
+    <div className="text-base leading-relaxed">
       <Helmet>
         <title>{t('bloodDiseasesPage.title')}</title>
         <meta name="description" content={t('bloodDiseasesPage.description')} />

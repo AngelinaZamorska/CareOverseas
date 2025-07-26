@@ -5,7 +5,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import translations
 import translationEN from './locales/en/common.json';
 import homeEN from './locales/en/pages/home.json';
-
 import cardiacEN from './locales/en/pages/cardiac.json';
 import epilepsyEN from './locales/en/pages/epilepsy.json';
 import neurosurgeryEN from './locales/en/pages/neurosurgery.json';
@@ -23,7 +22,6 @@ import safeTreatmentAbroadEN from './locales/en/pages/news/safe-treatment-abroad
 
 import translationRU from './locales/ru/common.json';
 import homeRU from './locales/ru/pages/home.json';
-
 import cardiacRU from './locales/ru/pages/cardiac.json';
 import epilepsyRU from './locales/ru/pages/epilepsy.json';
 import neurosurgeryRU from './locales/ru/pages/neurosurgery.json';
@@ -77,9 +75,7 @@ const resources = {
   en: {
     translation: {
       ...translationEN,
-      
       ...homeEN,
-      
       ...cardiacEN,
       ...epilepsyEN,
       ...neurosurgeryEN,
@@ -158,6 +154,8 @@ const resources = {
   },
 };
 
+const rtlLanguages = ['ar'];
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -166,12 +164,21 @@ i18n
     fallbackLng: 'en',
     debug: true,
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false, // react already safes from xss
     },
     detection: {
       order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
       caches: ['cookie'],
     },
+  })
+  .then(() => {
+    // При первой загрузке выставляем направление документа
+    document.documentElement.dir = rtlLanguages.includes(i18n.language) ? 'rtl' : 'ltr';
   });
+
+// Подписываемся на смену языка в рантайме
+i18n.on('languageChanged', (lng) => {
+  document.documentElement.dir = rtlLanguages.includes(lng) ? 'rtl' : 'ltr';
+});
 
 export default i18n;
