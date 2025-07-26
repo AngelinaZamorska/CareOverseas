@@ -126,23 +126,26 @@ const EndometriosisPage = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
-              className="bg-white p-6 md:p-8 rounded-xl shadow-lg"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-                {t('endometriosisPage.modalitiesTitle')}
-              </h3>
-              <ul className="space-y-3 text-gray-700">
-                {modalities.map(i => (
-                  <li key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                    <Trans i18nKey={`endometriosisPage.modality${i}`} components={{ strong: <strong /> }} />
-                  </li>
-                ))}
-              </ul>
+              className="overflow-x-auto">
+              <table className="min-w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">#</th>
+                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">{t('endometriosisPage.tableHeader')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {modalities.map((i) => (
+                    <tr key={i} className="border-b even:bg-gray-50">
+                      <td className="px-6 py-4 text-gray-800 whitespace-nowrap">{i}</td>
+                      <td className="px-6 py-4 text-gray-700 whitespace-normal">
+                        <Trans i18nKey={`endometriosisPage.modality${i}`} components={{ strong: <strong className="font-semibold text-gray-900" /> }} />
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            
             </motion.div>
             <motion.div
               className="relative"
