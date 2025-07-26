@@ -41,8 +41,8 @@ const EndometriosisPage = () => {
         <meta name="description" content={t('endometriosisPage.description')} />
         <meta property="og:title" content={t('endometriosisPage.title')} />
         <meta property="og:description" content={t('endometriosisPage.description')} />
-        <meta property="og:image" content="/images/endometriosis-treatment-microscopic.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/endometriosis-leomyoma-treatment" />
+        <meta property="og:image" content="/endometriosis-treatment-microscopic.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/endometriosis-treatment-microscopic" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Droplets, Dna, TestTube, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import { Droplet, Droplets, Dna, TestTube, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -45,10 +45,23 @@ const BloodDiseasesPage = () => {
         <title>{t('bloodDiseasesPage.title')}</title>
         <meta name="description" content={t('bloodDiseasesPage.description')} />
         {/* Additional SEO tags */}
+          <meta property="og:title" content={t('bloodDiseasesPage.title')} />
+  <meta property="og:description" content={t('bloodDiseasesPage.description')} />
+  <meta property="og:image" content="https://careoverseas/blood.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://careoverseas/blood-diseases-treatment" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={t('bloodDiseasesPage.title')} />
+  <meta name="twitter:description" content={t('bloodDiseasesPage.description')} />
+  <meta name="twitter:image" content="https://careoverseas/blood.jpg" />
       </Helmet>
 
       {/* Hero */}
       <section className="relative bg-red-50 py-20 md:py-28 lg:py-32">
+        <div className="inline-block bg-white p-4 rounded-2xl shadow-md mb-6">
+  <Droplet className="h-12 w-12 text-red-500" />
+</div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-700 mb-4"
             initial={{ opacity: 0, y: -20 }}
