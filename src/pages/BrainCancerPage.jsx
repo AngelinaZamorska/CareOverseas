@@ -128,7 +128,7 @@ const BrainCancerPage = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <img
-                  src="/images/brain-surgery.jpg"
+                  src="/brain-surgery.jpg"
                   alt="Brain surgery in Germany"
                   className="rounded-lg shadow-md w-full h-auto md:h-96 object-cover"
                 />
