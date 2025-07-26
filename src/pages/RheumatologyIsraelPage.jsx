@@ -102,9 +102,18 @@ const RheumatologyIsraelPage = () => {
         <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <motion.div className="relative h-96 md:h-auto rounded-lg overflow-hidden shadow-lg" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="Joint pain" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" src="/joint-pain" />
-              </motion.div>
+              <motion.div
+            className="rounded-lg overflow-hidden shadow-md max-w-md mx-auto"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <img
+              src="/joint-pain.jpg"
+              alt="Joint pain"
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
               <motion.div className="space-y-6" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h3 className="text-3xl font-bold text-gray-900">{t('rheumatologyIsraelPage.conditionsTitle')}</h3>
                 <ul className="space-y-3">
