@@ -163,7 +163,7 @@ const JointReplacementPage = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/joint-replacement-or.jpg"
+                src="/joint-replacement-cover.jpg"
                 alt={t('jointReplacementPage.proceduresTitle')}
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
               />

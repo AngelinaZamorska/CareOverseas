@@ -144,7 +144,7 @@ const CardiacSurgeryPage = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/modern-cardiac-room.jpg"
+                src="/modern-cardiac-room.jpg"
                 alt="State-of-the-art cardiac patient room"
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
               />

@@ -152,7 +152,7 @@ const EndometriosisPage = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/endometriosis-treatment-microscopic.jpg"
+                src="/endometriosis-treatment-microscopic.jpg"
                 alt="Endometriosis cells under microscope"
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
               />
