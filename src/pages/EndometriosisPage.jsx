@@ -131,7 +131,7 @@ const EndometriosisPage = () => {
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="px-6 py-3 text-left text-gray-700 font-semibold">#</th>
-                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">{t('endometriosisPage.tableHeader')}</th>
+                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">{t('endometriosisPage.modalitiesTitle')}</th>
                   </tr>
                 </thead>
                 <tbody>
