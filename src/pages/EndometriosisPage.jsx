@@ -107,7 +107,7 @@ const EndometriosisPage = () => {
             </motion.div>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <motion.div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-lg order-last md:order-first" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="Endometriosis cells illustration under microscope" className="w-full h-full object-cover" src="/images/endometriosis-treatment-microscopic.jpg" />
+                <img alt="Endometriosis cells illustration under microscope" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" src="/endometriosis-treatment-microscopic.jpg" />
               </motion.div>
               <motion.div className="bg-white p-8 rounded-lg shadow-lg" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h3 className="text-2xl font-bold mb-4">{t('endometriosisPage.modalitiesTitle')}</h3>

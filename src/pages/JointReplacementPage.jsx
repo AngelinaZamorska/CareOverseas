@@ -116,7 +116,7 @@ const JointReplacementPage = () => {
                 </ul>
               </motion.div>
               <motion.div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-lg" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="Joint replacement operating room – modern setup" className="w-full h-full object-cover" src="/joint-replacement-cover.jpg" />
+                <img alt="Joint replacement operating room – modern setup" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" src="/joint-replacement-cover.jpg" />
               </motion.div>
             </div>
           </div>

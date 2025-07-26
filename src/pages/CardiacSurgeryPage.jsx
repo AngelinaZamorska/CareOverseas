@@ -116,7 +116,7 @@ const CardiacSurgeryPage = () => {
                 </ul>
               </motion.div>
               <motion.div className="relative h-64 md:h-auto rounded-lg overflow-hidden shadow-lg" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="State-of-the-art cardiac patient room" className="w-full h-full object-cover" src="/modern-cardiac-room.jpg" />
+                <img alt="State-of-the-art cardiac patient room" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" src="/modern-cardiac-room.jpg" />
               </motion.div>
             </div>
           </div>

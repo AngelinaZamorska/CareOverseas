@@ -124,8 +124,8 @@ const BrainCancerPage = () => {
               >
                 <img
                   alt="Patient with MRI of the brain"
-                  className="w-full h-full object-cover"
-                  src="https://careoverseas.space/brain-surgery.jpg"
+                  className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]"
+                  src="/brain-surgery.jpg"
                 />
               </motion.div>
               <motion.div

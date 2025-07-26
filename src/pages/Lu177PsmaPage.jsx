@@ -107,7 +107,7 @@ const Lu177PsmaPage = () => {
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
               <div className="bg-white p-8 rounded-xl shadow-lg">
-                <img src="/lu177-treatment.jpg" alt="Lu-177 PSMA treatment" className="w-full h-auto rounded-lg" />
+                <img src="/lu177-treatment.jpg" alt="Lu-177 PSMA treatment" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" />
               </div>
             </motion.div>
           </div>

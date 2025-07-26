@@ -103,7 +103,7 @@ const RheumatologyIsraelPage = () => {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div className="relative h-96 md:h-auto rounded-lg overflow-hidden shadow-lg" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img alt="Doctor examining a patient's joint mobility" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1550831107-89dd61004334" />
+                <img alt="Joint pain" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" src="/joint-pain" />
               </motion.div>
               <motion.div className="space-y-6" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h3 className="text-3xl font-bold text-gray-900">{t('rheumatologyIsraelPage.conditionsTitle')}</h3>

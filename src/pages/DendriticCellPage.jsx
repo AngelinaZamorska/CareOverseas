@@ -127,7 +127,7 @@ const DendriticCellPage = () => {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <motion.div className="rounded-xl overflow-hidden shadow-xl" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-              <img src="/dendritic-cell-vaccine-germany.jpg" alt="Scientist preparing dendritic cell cancer vaccine in lab" className="w-full h-[500px] object-cover" />
+              <img src="/dendritic-cell-vaccine-germany.jpg" alt="Scientist preparing dendritic cell cancer vaccine in lab" className="rounded-xl shadow-lg w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]" />
             </motion.div>
           </div>
         </section>
