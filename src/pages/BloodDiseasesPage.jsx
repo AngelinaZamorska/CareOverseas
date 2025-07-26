@@ -1,6 +1,3 @@
-// This code refines layout spacing, scaling, and sizing to be responsive and user-friendly.
-// Ensure Tailwind CSS is properly configured in your project for this to work.
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
