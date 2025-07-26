@@ -134,7 +134,7 @@ const BloodDiseasesPage = () => {
               ))}
             </div>
             <motion.div
-              className="rounded-lg overflow-hidden shadow-md"
+              className="rounded-lg overflow-hidden shadow-md max-w-md mx-auto"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -142,7 +142,7 @@ const BloodDiseasesPage = () => {
               <img
                 src="/blood.jpg"
                 alt="Microscopic blood analysis"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </motion.div>
           </div>
