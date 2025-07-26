@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import {
-  Atom,
   ShieldCheck,
   CheckCircle,
   ArrowRight,
@@ -115,12 +114,18 @@ const Lu177PsmaPage = () => {
               ))}
             </ul>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img
-              src="/lu177-treatment.jpg"
-              alt="Lu-177 PSMA treatment"
-              className="w-full h-auto rounded-xl shadow-md"
-            />
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="overflow-hidden rounded-xl mx-auto max-w-xl">
+              <img
+                src="/lu177-treatment.jpg"
+                alt="Lu-177 PSMA treatment"
+                className="w-full h-64 sm:h-80 object-cover shadow-md"
+              />
+            </div>
           </motion.div>
         </div>
       </section>
