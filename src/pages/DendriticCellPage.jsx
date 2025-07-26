@@ -160,7 +160,7 @@ const DendriticCellPage = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="rounded-xl overflow-hidden shadow-xl w-full max-w-screen-lg"
+      className="rounded-xl overflow-hidden shadow-xl w-full max-w-4xl"
     >
       <img
         src="/dendritic-cell-vaccine-germany.jpg"
