@@ -155,7 +155,7 @@ const DendriticCellPage = () => {
 
       {/* Lab Image Section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} className="rounded-xl overflow-hidden shadow-xl inline-block">
             <img
               src="/dendritic-cell-vaccine-germany.jpg"
@@ -163,7 +163,7 @@ const DendriticCellPage = () => {
               className="rounded-xl w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%]"
             />
           </motion.div>
-        </div>
+        
       </section>
 
       {/* CTA Section */}
