@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+/* ============================= */
+/*          CSS VARIABLES        */
+/* ============================= */
+
 :root {
   --primary: 220 100% 50%;
   --primary-foreground: 0 0% 100%;
@@ -27,8 +31,12 @@
   --radius: 0.5rem;
 }
 
-* {
-  border-color: hsl(var(--border));
+/* ============================= */
+/*          BASE STYLES          */
+/* ============================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,11 +46,15 @@ body {
   line-height: 1.6;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  border-color: hsl(var(--border));
+  transition: all 0.2s ease-in-out;
 }
 
-/* Custom scrollbar */
+/* ============================= */
+/*      SCROLLBAR STYLING        */
+/* ============================= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -60,23 +72,19 @@ html {
   background: linear-gradient(to bottom, #2563eb, #059669);
 }
 
-/* Smooth animations */
-* {
-  transition: all 0.2s ease-in-out;
-}
+/* ============================= */
+/*          FOCUS STYLES         */
+/* ============================= */
 
-/* Focus styles */
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
+:focus-visible {
   outline: none;
-  ring: 2px;
-  ring-color: hsl(var(--ring));
-  ring-offset: 2px;
+  box-shadow: 0 0 0 2px hsl(var(--ring));
 }
 
-/* Gradient text utilities */
+/* ============================= */
+/*         TEXT UTILITIES        */
+/* ============================= */
+
 .gradient-text {
   background: linear-gradient(135deg, #3b82f6, #10b981);
   -webkit-background-clip: text;
@@ -84,59 +92,24 @@ select:focus {
   background-clip: text;
 }
 
-/* Custom animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.text-balance {
+  text-wrap: balance;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
+/* ============================= */
+/*        CARD + BUTTONS         */
+/* ============================= */
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.animate-pulse-slow {
-  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* Medical theme colors */
-.medical-blue {
-  color: #1e40af;
-}
-
-.medical-green {
-  color: #059669;
-}
-
-.medical-gradient {
-  background: linear-gradient(135deg, #1e40af, #059669);
-}
-
-/* Card hover effects */
 .card-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Button animations */
 .btn-animate {
   position: relative;
   overflow: hidden;
@@ -149,7 +122,7 @@ select:focus {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   transition: left 0.5s;
 }
 
@@ -157,7 +130,37 @@ select:focus {
   left: 100%;
 }
 
-/* Loading spinner */
+/* ============================= */
+/*         ANIMATIONS            */
+/* ============================= */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ============================= */
+/*         COMPONENTS            */
+/* ============================= */
+
 .spinner {
   border: 2px solid #f3f4f6;
   border-top: 2px solid #3b82f6;
@@ -167,35 +170,26 @@ select:focus {
   animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Medical icons styling */
 .medical-icon {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-/* Responsive typography */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-  
-  h2 {
-    font-size: 1.75rem;
-    line-height: 1.3;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
+.medical-blue {
+  color: #1e40af;
 }
 
-/* Form styling */
+.medical-green {
+  color: #059669;
+}
+
+.medical-gradient {
+  background: linear-gradient(135deg, #1e40af, #059669);
+}
+
+/* ============================= */
+/*       FORM + INPUT STYLES     */
+/* ============================= */
+
 input, textarea, select {
   transition: all 0.2s ease-in-out;
 }
@@ -205,16 +199,19 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
 }
 
-/* Toast styling */
-[data-sonner-toast] {
-  border-radius: 12px !important;
-  border: 1px solid hsl(var(--border)) !important;
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; line-height: 1.2; }
+  h2 { font-size: 1.75rem; line-height: 1.3; }
+  h3 { font-size: 1.5rem; line-height: 1.4; }
 }
 
-/* Custom utilities */
-.text-balance {
-  text-wrap: balance;
-}
+/* ============================= */
+/*     PADDING CONTAINER         */
+/* ============================= */
 
 .container-padding {
   padding-left: 1.5rem;
@@ -233,4 +230,13 @@ input:focus, textarea:focus, select:focus {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+}
+
+/* ============================= */
+/*          TOAST STYLES         */
+/* ============================= */
+
+[data-sonner-toast] {
+  border-radius: 12px !important;
+  border: 1px solid hsl(var(--border)) !important;
 }

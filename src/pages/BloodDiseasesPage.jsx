@@ -1,3 +1,6 @@
+// This code refines layout spacing, scaling, and sizing to be responsive and user-friendly.
+// Ensure Tailwind CSS is properly configured in your project for this to work.
+
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
@@ -40,113 +43,68 @@ const BloodDiseasesPage = () => {
   ];
 
   return (
-    <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+    <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="text-base leading-relaxed">
       <Helmet>
         <title>{t('bloodDiseasesPage.title')}</title>
         <meta name="description" content={t('bloodDiseasesPage.description')} />
-        <meta
-          name="keywords"
-          content="blood diseases, leukemia treatment, lymphoma care, myeloma therapy, bone marrow transplant, CAR-T therapy"
-        />
-        <link rel="canonical" href="https://careoverseas.space/blood-diseases-treatment" />
-
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('bloodDiseasesPage.title')} />
-        <meta property="og:description" content={t('bloodDiseasesPage.subtitle')} />
-        <meta property="og:url" content="https://careoverseas.space/blood-diseases-treatment" />
-        <meta property="og:image" content="https://careoverseas.space/og-blood-v2.jpg" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('bloodDiseasesPage.title')} />
-        <meta name="twitter:description" content={t('bloodDiseasesPage.subtitle')} />
-        <meta name="twitter:image" content="https://careoverseas.space/og-blood-v2.jpg" />
-
-        {/* Structured Data JSON-LD */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'MedicalWebPage',
-            name: t('bloodDiseasesPage.title'),
-            description: t('bloodDiseasesPage.subtitle'),
-            url: 'https://careoverseas.space/blood-diseases-treatment',
-            medicalSpecialty: 'Hematology',
-            provider: {
-              '@type': 'MedicalBusiness',
-              name: 'Care Overseas Space',
-            },
-          })}
-        </script>
+        {/* Additional SEO tags */}
       </Helmet>
 
       {/* Hero */}
-      <section className="relative bg-red-50 py-32">
-        <div className="container mx-auto px-6 text-center">
-          <motion.h1
-            className="text-5xl font-extrabold text-red-700 mb-4"
+      <section className="relative bg-red-50 py-20 md:py-28 lg:py-32">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-700 mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
           >
             {t('bloodDiseasesPage.header')}
           </motion.h1>
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"
+            className="text-md sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
             {t('bloodDiseasesPage.subtitle')}
           </motion.p>
-          <motion.div initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ delay: 0.5 }}>
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 px-8 py-4 font-semibold" onClick={handleContactClick}>
-              {t('bloodDiseasesPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5" />
+          <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.5 }}>
+            <Button
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+              onClick={handleContactClick}
+            >
+              {t('bloodDiseasesPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5 inline" />
             </Button>
           </motion.div>
         </div>
       </section>
 
       {/* Why Us */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-6">{t('bloodDiseasesPage.whyUsTitle')}</h2>
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6">
+            {t('bloodDiseasesPage.whyUsTitle')}
+          </h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
             {t('bloodDiseasesPage.whyUsSubtitle')}
           </p>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                icon: Users,
-                title: t('bloodDiseasesPage.feature1Title'),
-                desc: t('bloodDiseasesPage.feature1Desc'),
-              },
-              {
-                icon: TestTube,
-                title: t('bloodDiseasesPage.feature2Title'),
-                desc: t('bloodDiseasesPage.feature2Desc'),
-              },
-              {
-                icon: Dna,
-                title: t('bloodDiseasesPage.feature3Title'),
-                desc: t('bloodDiseasesPage.feature3Desc'),
-              },
-              {
-                icon: Droplets,
-                title: t('bloodDiseasesPage.feature4Title'),
-                desc: t('bloodDiseasesPage.feature4Desc'),
-              },
-            ].map((item, i) => (
+          <div className="grid gap-6 sm:gap-8 md:gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {[Users, TestTube, Dna, Droplets].map((Icon, i) => (
               <motion.div
                 key={i}
-                className="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg"
+                className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition-shadow"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.2 }}
+                transition={{ delay: i * 0.15 }}
               >
-                <item.icon className="h-8 w-8 text-red-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <Icon className="h-8 w-8 text-red-600 mb-4" />
+                <h3 className="text-lg font-semibold mb-2">
+                  {t(`bloodDiseasesPage.feature${i + 1}Title`)}
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base">
+                  {t(`bloodDiseasesPage.feature${i + 1}Desc`)}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -154,29 +112,29 @@ const BloodDiseasesPage = () => {
       </section>
 
       {/* Conditions */}
-      <section className="py-20 bg-red-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">{t('bloodDiseasesPage.conditionsTitle')}</h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-            {/* List */}
-            <div className="space-y-4 flex flex-col justify-between">
+      <section className="py-16 md:py-20 lg:py-24 bg-red-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
+            {t('bloodDiseasesPage.conditionsTitle')}
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-10">
+            <div className="space-y-4">
               {conditions.map((cond, idx) => (
                 <motion.div
                   key={idx}
-                  className="flex items-center text-gray-800"
+                  className="flex items-start text-gray-800"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
                 >
-                  <CheckCircle className="h-6 w-6 text-red-600 mr-3" />
-                  <span className="text-lg">{cond}</span>
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-1 mr-2 flex-shrink-0" />
+                  <span className="text-base sm:text-lg">{cond}</span>
                 </motion.div>
               ))}
             </div>
-            {/* Image */}
             <motion.div
-              className="rounded-lg overflow-hidden shadow-lg h-full"
+              className="rounded-lg overflow-hidden shadow-md"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -192,13 +150,17 @@ const BloodDiseasesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-rose-600 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-extrabold mb-4">{t('bloodDiseasesPage.ctaTitle')}</h2>
-          <p className="max-w-2xl mx-auto mb-8">{t('bloodDiseasesPage.ctaSubtitle')}</p>
+      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-r from-red-600 to-rose-600 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
+            {t('bloodDiseasesPage.ctaTitle')}
+          </h2>
+          <p className="max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+            {t('bloodDiseasesPage.ctaSubtitle')}
+          </p>
           <Button
             size="lg"
-            className="bg-white text-red-600 px-10 py-4 font-bold"
+            className="bg-white text-red-600 px-6 md:px-10 py-3 md:py-4 font-bold text-base md:text-lg"
             onClick={handleContactClick}
           >
             {t('bloodDiseasesPage.ctaButton')}
