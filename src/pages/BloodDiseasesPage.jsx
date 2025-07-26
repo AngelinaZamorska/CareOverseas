@@ -5,6 +5,7 @@ import { Droplets, Dna, TestTube, Users, CheckCircle, ArrowRight } from 'lucide-
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
+import i18n from '@/i18n';
 
 const BloodDiseasesPage = () => {
   const { t } = useTranslation();
@@ -30,42 +31,36 @@ const BloodDiseasesPage = () => {
   };
 
   const conditions = [
-    'Leukemia (ALL, AML, CLL, CML)',
-    'Lymphoma (Hodgkin\'s and Non-Hodgkin\'s)',
-    'Multiple Myeloma',
-    'Myelodysplastic Syndromes (MDS)',
-    'Aplastic Anemia',
-    'Thalassemia and Sickle Cell Anemia',
+    t('bloodDiseasesPage.condition1'),
+    t('bloodDiseasesPage.condition2'),
+    t('bloodDiseasesPage.condition3'),
+    t('bloodDiseasesPage.condition4'),
+    t('bloodDiseasesPage.condition5'),
+    t('bloodDiseasesPage.condition6'),
   ];
 
   return (
-    <>
+    <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
       <Helmet>
-        <title>Advanced Treatment for Blood Diseases & Blood Cancer</title>
+        <title>{t('bloodDiseasesPage.title')}</title>
+        <meta name="description" content={t('bloodDiseasesPage.description')} />
         <meta
-          name="description"
-          content="Specialized treatment for leukemia, lymphoma, myeloma, and other complex blood disorders. Access to bone marrow transplants and innovative therapies."
+          name="keywords"
+          content="blood diseases, leukemia treatment, lymphoma care, myeloma therapy, bone marrow transplant, CAR-T therapy"
         />
-        <meta name="keywords" content="blood diseases, leukemia treatment, lymphoma care, myeloma therapy, bone marrow transplant" />
         <link rel="canonical" href="https://careoverseas.space/blood-diseases-treatment" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Advanced Treatment for Blood Diseases & Blood Cancer" />
-        <meta
-          property="og:description"
-          content="Comprehensive care for blood cancers and hematological disorders, from diagnosis to innovative therapies and bone marrow transplantation."
-        />
+        <meta property="og:title" content={t('bloodDiseasesPage.title')} />
+        <meta property="og:description" content={t('bloodDiseasesPage.subtitle')} />
         <meta property="og:url" content="https://careoverseas.space/blood-diseases-treatment" />
         <meta property="og:image" content="https://careoverseas.space/og-blood-v2.jpg" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Advanced Treatment for Blood Diseases & Blood Cancer" />
-        <meta
-          name="twitter:description"
-          content="Comprehensive care for blood cancers and hematological disorders, from diagnosis to innovative therapies and bone marrow transplantation."
-        />
+        <meta name="twitter:title" content={t('bloodDiseasesPage.title')} />
+        <meta name="twitter:description" content={t('bloodDiseasesPage.subtitle')} />
         <meta name="twitter:image" content="https://careoverseas.space/og-blood-v2.jpg" />
 
         {/* Structured Data JSON-LD */}
@@ -73,8 +68,8 @@ const BloodDiseasesPage = () => {
           {JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'MedicalWebPage',
-            name: 'Advanced Treatment for Blood Diseases & Blood Cancer',
-            description: 'Comprehensive care for blood cancers and hematological disorders, from diagnosis to innovative therapies and bone marrow transplantation.',
+            name: t('bloodDiseasesPage.title'),
+            description: t('bloodDiseasesPage.subtitle'),
             url: 'https://careoverseas.space/blood-diseases-treatment',
             medicalSpecialty: 'Hematology',
             provider: {
@@ -114,31 +109,31 @@ const BloodDiseasesPage = () => {
       {/* Why Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-6">Why Choose Us for Hematology?</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">{t('bloodDiseasesPage.whyUsTitle')}</h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            We connect you with leading hematology-oncology centers specializing in complex and rare blood disorders.
+            {t('bloodDiseasesPage.whyUsSubtitle')}
           </p>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 icon: Users,
-                title: 'Leading Specialists',
-                desc: 'Access to top hematologists and oncologists with experience in treating rare blood cancers.',
+                title: t('bloodDiseasesPage.feature1Title'),
+                desc: t('bloodDiseasesPage.feature1Desc'),
               },
               {
                 icon: TestTube,
-                title: 'Advanced Diagnostics',
-                desc: 'Precise diagnosis using genetic testing, flow cytometry, and advanced imaging.',
+                title: t('bloodDiseasesPage.feature2Title'),
+                desc: t('bloodDiseasesPage.feature2Desc'),
               },
               {
                 icon: Dna,
-                title: 'Innovative Treatments',
-                desc: 'Access to CAR-T cell therapy, targeted therapies, and bone marrow transplants.',
+                title: t('bloodDiseasesPage.feature3Title'),
+                desc: t('bloodDiseasesPage.feature3Desc'),
               },
               {
                 icon: Droplets,
-                title: 'Comprehensive Care',
-                desc: 'A multidisciplinary approach to treating the full spectrum of blood diseases.',
+                title: t('bloodDiseasesPage.feature4Title'),
+                desc: t('bloodDiseasesPage.feature4Desc'),
               },
             ].map((item, i) => (
               <motion.div
@@ -160,58 +155,57 @@ const BloodDiseasesPage = () => {
 
       {/* Conditions */}
       <section className="py-20 bg-red-50">
-  <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center mb-12">
-      {t('bloodDiseasesPage.conditionsTitle')}
-    </h2>
-    <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-      {/* Text column */}
-      <div className="space-y-4 flex flex-col justify-between">
-        {conditions.map((cond, idx) => (
-          <motion.div
-            key={idx}
-            className="flex items-center text-gray-800"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: idx * 0.1 }}
-          >
-            <CheckCircle className="h-6 w-6 text-red-600 mr-3" />
-            <span className="text-lg">{cond}</span>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Image column */}
-      <motion.div
-        className="rounded-lg overflow-hidden shadow-lg h-full"
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-      >
-        <img
-          src="/blood.jpg"
-          alt="Microscopic blood analysis"
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
-    </div>
-  </div>
-</section>
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">{t('bloodDiseasesPage.conditionsTitle')}</h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* List */}
+            <div className="space-y-4 flex flex-col justify-between">
+              {conditions.map((cond, idx) => (
+                <motion.div
+                  key={idx}
+                  className="flex items-center text-gray-800"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <CheckCircle className="h-6 w-6 text-red-600 mr-3" />
+                  <span className="text-lg">{cond}</span>
+                </motion.div>
+              ))}
+            </div>
+            {/* Image */}
+            <motion.div
+              className="rounded-lg overflow-hidden shadow-lg h-full"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src="/blood.jpg"
+                alt="Microscopic blood analysis"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-rose-600 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-extrabold mb-4">Find the Best Path for Your Treatment</h2>
-          <p className="max-w-2xl mx-auto mb-8">
-            Contact us for a personalized consultation and learn about the advanced treatment options available for your condition.
-          </p>
-          <Button size="lg" className="bg-white text-red-600 px-10 py-4 font-bold" onClick={handleContactClick}>
-            Request a Consultation
+          <h2 className="text-3xl font-extrabold mb-4">{t('bloodDiseasesPage.ctaTitle')}</h2>
+          <p className="max-w-2xl mx-auto mb-8">{t('bloodDiseasesPage.ctaSubtitle')}</p>
+          <Button
+            size="lg"
+            className="bg-white text-red-600 px-10 py-4 font-bold"
+            onClick={handleContactClick}
+          >
+            {t('bloodDiseasesPage.ctaButton')}
           </Button>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
