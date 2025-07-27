@@ -68,19 +68,19 @@ import lu177AR from './locales/ar/pages/lu177.json';
 // Переводы раздела «Новости»
 import newsEN from './locales/en/pages/news.json';
 import safeTreatmentAbroadEN from './locales/en/pages/news/safe-treatment-abroad.json';
-import duchenneEN from './locales/en/pages/duchenne.json';
+import duchenneEN from './locales/en/pages/news/duchenne.json';
 
 import newsRU from './locales/ru/pages/news.json';
 import safeTreatmentAbroadRU from './locales/ru/pages/news/safe-treatment-abroad.json';
-import duchenneRU from './locales/ru/pages/duchenne.json';
+import duchenneRU from './locales/ru/pages/news/duchenne.json';
 
 import newsPL from './locales/pl/pages/news.json';
 import safeTreatmentAbroadPL from './locales/pl/pages/news/safe-treatment-abroad.json';
-import duchennePL from './locales/pl/pages/duchenne.json';
+import duchennePL from './locales/pl/pages/news/duchenne.json';
 
 import newsAR from './locales/ar/pages/news.json';
 import safeTreatmentAbroadAR from './locales/ar/pages/news/safe-treatment-abroad.json';
-import duchenneAR from './locales/ar/pages/duchenne.json';
+import duchenneAR from './locales/ar/pages/news/duchenne.json';
 
 const resources = {
   en: {
@@ -102,7 +102,7 @@ const resources = {
       // Новости
       ...newsEN,
       ...safeTreatmentAbroadEN,
-      ...duchenneEN,
+      //...duchenneEN,
     },
   },
   ru: {
