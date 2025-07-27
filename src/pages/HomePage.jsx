@@ -37,11 +37,47 @@ const HomePage = () => {
       className="text-base leading-relaxed"
     >
       <Helmet>
+        {/* Primary Meta Tags */}
         <title>CareOverseas – Trusted Medical Care Abroad</title>
-        <meta
-          name="description"
-          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
-        />
+        <meta name="description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
+        <link rel="canonical" href="https://careoverseas.space/" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://careoverseas.space/" />
+        <meta property="og:title" content="CareOverseas – Trusted Medical Care Abroad" />
+        <meta property="og:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
+        <meta property="og:image" content="https://careoverseas.space/og-image-v2.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://careoverseas.space/" />
+        <meta name="twitter:title" content="CareOverseas – Trusted Medical Care Abroad" />
+        <meta name="twitter:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
+        <meta name="twitter:image" content="https://careoverseas.space/og-image-v2.jpg" />
+
+        {/* Preload & Preconnect */}
+        <link rel="preconnect" href="https://careoverseas.space" />
+        <link rel="preload" as="image" href="/home-hero.jpg" />
+
+        {/* Structured Data */}
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    name: "CareOverseas",
+    url: "https://careoverseas.space",
+    logo: "https://careoverseas.space/apple-touch-icon.png",
+    description: t('homePage.heroSubtitle'),
+    // вместо конкретного адреса указываем зону обслуживания
+    areaServed: "Worldwide",
+    telephone: "+380984998555",
+    sameAs: [
+      "https://www.facebook.com/share/1LqwJfEtum/",
+      "https://x.com/AngelinaCureDE"
+    ]
+  })}
+</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -116,9 +152,13 @@ const HomePage = () => {
             <div className="relative bg-gradient-to-br from-blue-100 to-green-100 rounded-3xl p-6 md:p-8 shadow-2xl">
               <img
                 src="/home-hero.jpg"
+                srcSet="/home-hero-small.jpg 600w, /home-hero.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Trusted international healthcare illustration"
+                loading="eager"
                 className="w-full h-auto md:h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg"
               />
+              {/* Icons */}
               <div className="absolute -top-4 -right-4 bg-white rounded-full p-3 md:p-4 shadow-lg">
                 <Heart className="h-7 w-7 md:h-8 md:w-8 text-red-500" />
               </div>
@@ -129,6 +169,7 @@ const HomePage = () => {
           </motion.div>
         </div>
       </section>
+
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
