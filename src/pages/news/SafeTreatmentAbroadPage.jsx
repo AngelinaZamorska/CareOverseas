@@ -32,7 +32,7 @@ const SafeTreatmentAbroadPage = () => {
         <meta name="keywords" content={content.keywords} />
       </Helmet>
       <div className="bg-white">
-        <div className="relative h-[24rem] md:h-[28rem] lg:h-[32rem]">
+        <div className="relative h-96">
           <img  className="absolute inset-0 w-full h-full object-cover" alt="Patient looking out a window towards a peaceful landscape" src="https://images.unsplash.com/photo-1671194763322-01e489e6f674" />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <motion.h1 
@@ -43,11 +43,6 @@ const SafeTreatmentAbroadPage = () => {
             >
               {content.title}
             </motion.h1>
-          </div>
-        </div>
-        <div className="py-12 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-            <p className="text-gray-700">{content.introduction}</p>
           </div>
         </div>
 
