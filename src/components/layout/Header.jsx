@@ -36,16 +36,20 @@ const Header = () => {
 
   const NavLink = ({ scrollTo, to, children, isDropdown = false, sublinks = [] }) => {
     const [open, setOpen] = useState(false);
-
     if (isDropdown) {
       return (
-        <div className="relative">
+        <div
+          className="relative"
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+        >
           <motion.button
             whileHover={{ scale: 1.1 }}
-            className={`${navItem} ${navHover} px-3 py-2 inline-flex items-center`}
-            onClick={() => setOpen(o => !o)}
+            className={`${navItem} ${navHover} px-3 py-2 inline-flex items-center w-full justify-center`}
+            onClick={() => setOpen(prev => !prev)}
           >
-            {children} <ChevronDown className="ml-1 h-4 w-4" />
+            {children}
+            <ChevronDown className="ml-1 h-4 w-4" />
           </motion.button>
           <AnimatePresence>
             {open && (
@@ -54,7 +58,6 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl p-4 z-50 max-h-64 overflow-y-auto"
-                onMouseLeave={() => setOpen(false)}
               >
                 {sublinks.map(({ to: linkTo, label }) => (
                   <Link
@@ -75,7 +78,6 @@ const Header = () => {
         </div>
       );
     }
-
     if (scrollTo) {
       return (
         <motion.button
@@ -87,7 +89,6 @@ const Header = () => {
         </motion.button>
       );
     }
-
     return (
       <Link
         to={to}
@@ -118,13 +119,11 @@ const Header = () => {
           </div>
         </motion.div>
 
-        {/* Desktop Nav as equal-sized block */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex items-center bg-gray-100 rounded-full overflow-hidden">
-          {/** Home **/}
           <div className="flex-1 text-center">
             <NavLink scrollTo="top">{t('header.home')}</NavLink>
           </div>
-          {/** Treatments **/}
           <div className="flex-1 text-center">
             <NavLink
               isDropdown
@@ -145,15 +144,12 @@ const Header = () => {
               ]}
             />
           </div>
-          {/** How It Works **/}
           <div className="flex-1 text-center">
             <NavLink scrollTo="process">{t('header.process')}</NavLink>
           </div>
-          {/** News **/}
           <div className="flex-1 text-center">
             <NavLink to="/news">{t('header.news')}</NavLink>
           </div>
-          {/** Contact **/}
           <div className="flex-1 text-center">
             <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
           </div>
@@ -171,7 +167,7 @@ const Header = () => {
           </motion.button>
           <button
             className="md:hidden p-2 rounded-md hover:bg-gray-100"
-            onClick={() => setMenuOpen(o => !o)}
+            onClick={() => setMenuOpen(prev => !prev)}
           >
             {menuOpen ? (
               <X className="h-6 w-6 text-gray-800" />
