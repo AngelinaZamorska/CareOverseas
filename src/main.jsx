@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // ✅ Используем BrowserRouter
+import { BrowserRouter } from 'react-router-dom';
 import App from '@/App';
 import '@/index.css';
 import './i18n'; // i18n конфигурация
@@ -11,7 +11,8 @@ const LoadingSpinner = () => (
   </div>
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Suspense fallback={<LoadingSpinner />}>
@@ -20,3 +21,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+// ---------------------------------------------------
+// Регистрация Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then(reg => console.log('SW registered:', reg.scope))
+      .catch(err => console.error('SW registration failed:', err));
+  });
+}
