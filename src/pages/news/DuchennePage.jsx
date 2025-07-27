@@ -203,39 +203,80 @@ const DuchennePage = () => {
           </motion.section>
 
           {/* Section 4: Влияние на качество жизни */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={4}
-            variants={sectionVariants}
-            className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg"
-          >
-            <h2 className="text-2xl font-bold mb-4 flex items-center text-purple-600">
-              <Brain className="mr-2" />
-              {content.sections.impact.title}
-            </h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.impact.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          </motion.section>
+<motion.section
+  initial="hidden"
+  animate="visible"
+  custom={4}
+  variants={sectionVariants}
+  className="mt-12"
+>
+  <h2 className="text-3xl font-extrabold mb-6 flex items-center text-purple-600">
+    <Brain className="mr-3 w-6 h-6" />
+    {content.sections.impact.title}
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {content.sections.impact.table.rows.map((row, idx) => (
+      <Card key={idx} className="p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+        <CardHeader>
+          <h3 className="text-xl font-semibold mb-2">{row.aspect}</h3>
+        </CardHeader>
+        <CardContent className="space-y-2 text-gray-700">
+          <p>
+            <strong>Детям:</strong> {row["impactOnChildren"] || row["Влияние на ребёнка"]}
+          </p>
+          <p>
+            <strong>Семьям:</strong> {row["impactOnFamilies"] || row["Влияние на семью"]}
+          </p>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+  <div className="mt-8 prose prose-purple max-w-none">
+    {content.sections.impact.paragraphs.map((p, i) => (
+      <p key={i}>{p}</p>
+    ))}
+  </div>
+</motion.section>
 
-          {/* Section 5: Медицинский туризм */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={5}
-            variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
-          >
-            <h2 className="text-2xl font-bold mb-4">{content.sections.tourism.title}</h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.tourism.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          </motion.section>
+{/* Section 5: Медицинский туризм */}
+<motion.section
+  initial="hidden"
+  animate="visible"
+  custom={5}
+  variants={sectionVariants}
+  className="mt-16 bg-gradient-to-r from-blue-50 to-teal-50 p-8 rounded-2xl"
+>
+  <h2 className="text-3xl font-extrabold mb-6 text-center text-blue-700">
+    {content.sections.tourism.title}
+  </h2>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+    {/* Лонгрид */}
+    <div className="space-y-4 text-gray-800">
+      {content.sections.tourism.paragraphs.map((p, i) => (
+        <p key={i} className="leading-relaxed">{p}</p>
+      ))}
+      <Link to="/#contact">
+        <Button size="lg" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white">
+          {t('header.freeConsultation')}
+        </Button>
+      </Link>
+    </div>
+    {/* Иконки-фичи */}
+    <ul className="space-y-6">
+      {[
+       { icon: <ShieldCheck size={24} />, text: "Access to leading neurologists and specialists" },
+  { icon: <Map size={24} />, text: "Cutting-edge clinical trials and therapies" },
+  { icon: <HeartPulse size={24} />, text: "Comprehensive rehabilitation and support" },
+  { icon: <Brain size={24} />, text: "24/7 psychological and cardiac support" },
+      ].map((f, i) => (
+        <li key={i} className="flex items-start space-x-3">
+          <div className="text-blue-600">{f.icon}</div>
+          <p className="text-gray-700">{f.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</motion.section>
 
           {/* Conclusion & CTA */}
           <motion.section
