@@ -1,29 +1,54 @@
 {
   "safeTreatmentAbroad": {
-    "metaTitle": "Safe Treatment Abroad: Why Europe and Turkey Are the Best Choices in 2025",
-    "metaDescription": "Discover why Germany, Turkey, and Spain lead medical tourism in 2025, offering advanced technology, high-quality care, and serene environments for your safe and stress-free recovery.",
-    "keywords": "medical tourism, safe treatment abroad, treatment in Germany, treatment in Turkey, treatment in Spain, stress and recovery, advanced clinics",
-    "title": "Safe Treatment Abroad: Why Europe and Turkey Are the Best Choices in 2025",
-    "summary": {
-      "conflictGrowth": "Growing demand as patients seek stability and systematic safety measures in times of geopolitical uncertainty.",
-      "safeDestinations": "Choosing safe destinations like Germany, Turkey, and Spain with rigorous infection control and transparent pricing.",
-      "stressImpact": "Understanding how chronic stress affects healing and the benefits of a calm recovery environment.",
-      "optimizedSolution": "Leveraging advanced technologies and personalized support for optimal treatment outcomes."
+    "metaTitle": "Safe & Stress-Free Medical Tourism in 2025 | Germany, Turkey, Spain",
+    "metaDescription": "Experience top-quality, secure medical care in Germany, Turkey, and Spain. From advanced diagnostics to comprehensive support—discover why 2025 is the year for safe treatment abroad.",
+    "keywords": "medical tourism 2025, safe treatment abroad, Germany medical tourism, Turkey healthcare travel, Spain rehab tourism, stress-free recovery, advanced medical travel",
+    "title": "Safe & Stress-Free Treatment Abroad in 2025",
+    "introduction": "With global instability rising, patients are seeking reliable, high-quality medical care in stable environments. In 2025, Germany, Turkey, and Spain stand out for combining cutting-edge technology, patient-focused service, and tranquil settings—ensuring both safety and comfort.",
+    "highlights": [
+      { "icon": "ShieldCheck", "text": "Stable environments with rigorous safety and infection control protocols." },
+      { "icon": "Map", "text": "Access to world-class specialists in cardiology, oncology, orthopedics, and more." },
+      { "icon": "HeartPulse", "text": "Environment designed to reduce stress and boost recovery outcomes." },
+      { "icon": "Brain", "text": "Personalized treatment plans leveraging AI and advanced medical technologies." }
+    ],
+    "benefits": {
+      "title": "Why Choose Our Top Destinations",
+      "table": {
+        "headers": ["Country", "Specializations", "Safety & Comfort", "Unique Features"],
+        "rows": [
+          {
+            "Country": "Germany 🇩🇪",
+            "Specializations": "Cardiology, Oncology, Neurology",
+            "Safety & Comfort": "Low crime rate, transparent pricing, accredited facilities",
+            "Unique Features": "Robot-assisted surgeries, AI-driven diagnostics"
+          },
+          {
+            "Country": "Turkey 🇹🇷",
+            "Specializations": "Cosmetic Surgery, Dentistry, IVF",
+            "Safety & Comfort": "24/7 concierge services, bundled clinic+hotel packages",
+            "Unique Features": "Competitive pricing, multilingual support"
+          },
+          {
+            "Country": "Spain 🇪🇸",
+            "Specializations": "Orthopedics, Rehabilitation, Aesthetic Medicine",
+            "Safety & Comfort": "Mild Mediterranean climate, spa-based recovery",
+            "Unique Features": "Holistic wellness programs, scenic recovery retreats"
+          }
+        ]
+      }
     },
-    "section1": {
-      "title": "The Rise of Safe Treatment Abroad",
-      "paragraph": "Medical tourism is booming, with experts predicting the global market will surpass $200 billion by 2030, driven largely by patients from conflict zones seeking stability and top-tier care."
-    },
-    "section2": {
-      "title": "Advantages of Top Destinations",
-      "paragraph": "Germany leads in cardiology, oncology, and neurology with low crime rates and clear protocols; Turkey excels in cosmetic surgery, dentistry, and IVF with flexible pricing; Spain offers top orthopedics, rehabilitation, and aesthetic medicine in a warm climate and friendly service.",
-      "germany": "Germany 🇩🇪 — Cardiology, oncology, neurology with robot-assisted surgeries and AI integration in state-of-the-art clinics.",
-      "turkey": "Turkey 🇹🇷 — Cosmetic surgery, dentistry, IVF with all-inclusive clinic-and-hotel packages and 24/7 guest services.",
-      "spain": "Spain 🇪🇸 — Orthopedics, rehabilitation, aesthetic medicine with spa therapies for enhanced recovery in a sunny climate."
+    "howItWorks": {
+      "title": "How Our Process Works",
+      "steps": [
+        { "title": "1. Online Consultation", "description": "Upload your medical records for a specialist review and personalized assessment." },
+        { "title": "2. Clinic & Doctor Matching", "description": "We select accredited clinics and top-rated physicians based on your needs." },
+        { "title": "3. Travel & Stay", "description": "We handle flights, transfers, accommodations, and interpreter services." },
+        { "title": "4. Ongoing Support", "description": "Your dedicated coordinator provides 24/7 assistance throughout your journey." }
+      ]
     },
     "cta": {
-      "title": "Ready to Start Your Safe Treatment Journey?",
-      "paragraph": "Leave a request on our website, and within 24 hours we'll provide a personalized solution for your case."
+      "title": "Ready to Plan Your Safe Treatment?",
+      "paragraph": "Submit a request on our website, and within 24 hours we’ll send you a tailored treatment proposal."
     },
     "backToNews": "Back to News"
   },
