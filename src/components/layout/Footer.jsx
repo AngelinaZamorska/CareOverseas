@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 flex-wrap">
               <div className="bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-full animate-pulse">
                 <img
                   src="/android-chrome-192x192.png"
@@ -41,7 +41,9 @@ const Footer = () => {
                   className="h-8 w-8 object-cover"
                 />
               </div>
-              <span className="text-2xl font-extrabold tracking-wide">CareOverseasSpace</span>
+              <span className="text-xl md:text-2xl font-extrabold tracking-wide break-words">
+                CareOverseasSpace
+              </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               {t('footer.tagline')}
@@ -166,7 +168,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500 space-y-4">
           <p className="text-sm">&copy; {new Date().getFullYear()} CareOverseasSpace. {t('footer.rights')}</p>
           <div className="mt-4 md:mt-0">
