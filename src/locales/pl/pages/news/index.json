@@ -8,7 +8,194 @@
     "articlePreviewTitle": "Bezpieczne leczenie za granicą: Dlaczego Europa i Turcja to najlepszy wybór",
     "articlePreviewDescription": "Wzrost konfliktów sprawił, że pacjenci szukają bezpiecznych miejsc do leczenia. Niemcy, Turcja i Hiszpania oferują stabilność i wysokiej jakości opiekę medyczną.",
     "readMore": "Czytaj więcej",
-  "duchenneTitle": "Nowa nadzieja dla dzieci z dystrofią mięśniową Duchenne’a",
+    "duchenneTitle": "Nowa nadzieja dla dzieci z dystrofią mięśniową Duchenne’a",
     "duchenneDescription": "Poznaj najnowsze terapie, w tym terapie genowe i eksperymentalne, w leczeniu DMD za granicą."
+  },
+  "safeTreatmentAbroad": {
+    "title": "Bezpieczne leczenie za granicą – turystyka medyczna w Europie i Turcji 2025",
+    "subtitle": "Doświadcz światowej klasy leczenia w Niemczech, Turcji i Hiszpanii dzięki bezpiecznej turystyce medycznej w 2025 roku.",
+    "cta_primary": "Uzyskaj bezpłatną konsultację",
+    "backToNews": "Powrót do aktualności",
+    "sections": {
+      "1": {
+        "heading": "1. Rośnie popyt na bezpieczne leczenie za granicą",
+        "points": [
+          "Rynek medycznej turystyki przekroczy 200 mld USD do 2030 roku",
+          "Pacjenci oczekują stabilności: od kontroli zakażeń po przejrzyste koszty",
+          "Najpopularniejsze kierunki: Niemcy, Turcja, Hiszpania"
+        ]
+      },
+      "2": {
+        "heading": "2. Jak stres wpływa na wyniki terapii",
+        "points": [
+          "Stres przewlekły i układ odpornościowy: niepokój opóźnia gojenie i zwiększa ryzyko powikłań.",
+          "Efekty psychosomatyczne: obniżenie poziomu stresu o 30% może zwiększyć skuteczność chemioterapii i przyspieszyć rehabilitację po zabiegach.",
+          "Środowisko sprzyjające leczeniu: ciepły klimat Hiszpanii, malownicze krajobrazy Turcji i dobrze zorganizowane niemieckie kliniki wspierają szybszy powrót do zdrowia."
+        ]
+      },
+      "3": {
+        "heading": "3. Najlepsze kierunki w pigułce",
+        "table": {
+          "headers": ["Kraj", "Specjalizacje", "Bezpieczeństwo i komfort", "Najważniejsze cechy"],
+          "rows": [
+            ["Niemcy 🇩🇪", "Kardiologia, Onkologia, Neurologia", "Niskie wskaźniki przestępczości, rygorystyczne procedury", "Operacje wspomagane robotami, integracja AI"],
+            ["Turcja 🇹🇷", "Chirurgia estetyczna, stomatologia, in vitro", "Rozwinięta infrastruktura, elastyczne ceny", "Pakiety klinika+hotel, całodobowa obsługa"],
+            ["Hiszpania 🇪🇸", "Ortopedia, Rehabilitacja, Medycyna estetyczna", "Korzystny klimat, przyjazna obsługa", "Lokalne zabiegi spa dla szybszego powrotu do formy"]
+          ]
+        }
+      },
+      "4": {
+        "heading": "4. Jak rozpocząć swoją podróż medyczną",
+        "points": [
+          "Konsultacja online: wstępna ocena na podstawie Twoich dokumentów medycznych",
+          "Wybór kliniki i lekarza: na podstawie ocen, opinii i wyników poprzednich pacjentów",
+          "Logistyka i wsparcie: rezerwacja lotu, transferu, zakwaterowania i tłumacza",
+          "Całodobowa koordynacja: dedykowany opiekun medyczny dostępny 24/7"
+        ]
+      },
+      "conclusion": {
+        "heading": "Gotowi, aby zacząć?",
+        "text": "Złóż zgłoszenie, a my w ciągu 24 godzin przygotujemy dla Ciebie spersonalizowany plan leczenia.",
+        "cta": "Złóż zgłoszenie"
+      }
+    }
+  },
+  "duchenne": {
+    "title": "Nadzieja dla dzieci z dystrofią mięśniową Duchenne’a (DMD)",
+    "subtitle": "Dystrofia mięśniowa Duchenne’a (DMD) to rzadka choroba genetyczna powodująca postępujące osłabienie i degenerację mięśni, głównie u chłopców. Choć obecnie nie istnieje całkowite wyleczenie, nowoczesne metody leczenia – takie jak terapia genowa, farmakoterapia i fizjoterapia – dają realną nadzieję na poprawę jakości życia. Turystyka medyczna otwiera dostęp do najlepszych światowych klinik i zaawansowanych terapii, które często nie są dostępne w kraju pacjenta. Na tej stronie znajdziesz szczegółowe informacje o DMD, nowoczesnych możliwościach leczenia oraz wsparciu, jakie oferujemy rodzinom poszukującym pomocy za granicą.",
+    "sections": {
+      "about": {
+        "title": "Czym jest dystrofia mięśniowa Duchenne’a (DMD)?",
+        "paragraphs": [
+          "Dystrofia mięśniowa Duchenne’a (DMD) to rzadka choroba genetyczna wywołana mutacjami w genie DMD, który odpowiada za produkcję dystrofiny – białka niezbędnego do prawidłowego funkcjonowania komórek mięśniowych.",
+          "Brak dystrofiny prowadzi do stopniowego niszczenia komórek mięśniowych, co skutkuje utratą siły i sprawności ruchowej. Choroba dotyka głównie chłopców, a pierwsze objawy pojawiają się zazwyczaj między 2. a 5. rokiem życia.",
+          "Wczesne symptomy to opóźniony rozwój chodu, częste upadki, trudności wchodzenia po schodach oraz powiększenie mięśni łydek (pseudohipertrofia) z powodu odkładania się tkanki tłuszczowej."
+        ]
+      },
+      "characteristics": {
+        "title": "Najważniejsze cechy DMD",
+        "table": {
+          "headers": ["Cecha", "Opis"],
+          "rows": [
+            { "Cecha": "Przyczyna", "Opis": "Mutacje w genie DMD prowadzące do braku dystrofiny" },
+            { "Cecha": "Kogo dotyczy", "Opis": "Głównie chłopcy (1 na 3500–5000 noworodków płci męskiej)" },
+            { "Cecha": "Początek objawów", "Opis": "Zwykle między 2. a 5. rokiem życia" },
+            { "Cecha": "Postęp choroby", "Opis": "Stopniowa utrata sprawności, konieczność używania wózka inwalidzkiego około 12. roku życia" },
+            { "Cecha": "Powikłania", "Opis": "Kardiomiopatia, niewydolność oddechowa" }
+          ]
+        }
+      },
+      "treatments": {
+        "title": "Nowoczesne metody leczenia i rehabilitacji",
+        "geneTherapy": {
+          "title": "Terapia genowa",
+          "items": [
+            {
+              "name": "Elevidys (delandistrogene moxeparvovec)",
+              "description": "Pierwsza terapia genowa zatwierdzona przez FDA w 2023 roku dla dzieci w wieku 4–5 lat z potwierdzoną mutacją genu DMD. W 2024 roku zakres stosowania rozszerzono na pacjentów poruszających się i nieporuszających się samodzielnie w wieku od 4 lat. Elevidys wprowadza skróconą wersję dystrofiny (mikrodystrofina) do komórek mięśniowych. W 2025 roku wprowadzono jednak ograniczenia dawkowania dla pacjentów nieporuszających się z powodu przypadków ostrej niewydolności wątroby (Roche, 2025)."
+            },
+            {
+              "name": "Del-zota (delpacibart zotadirsen)",
+              "description": "Eksperymentalna terapia od Avidity Biosciences, przeznaczona dla pacjentów z mutacjami podatnymi na pominięcie eksonu 44. W badaniu klinicznym EXPLORE44 (faza 1/2) wykazano wzrost produkcji dystrofiny do 25% normy i obniżenie poziomu kinazy kreatynowej do prawie normalnych wartości. Firma planuje złożyć wniosek o zatwierdzenie FDA do końca 2025 roku."
+            }
+          ]
+        },
+        "medications": {
+          "title": "Leczenie farmakologiczne",
+          "items": [
+            { "name": "Kortykosteroidy", "description": "Leki takie jak prednizon i deflazacort spowalniają postęp osłabienia mięśni i opóźniają konieczność używania wózka inwalidzkiego." },
+            { "name": "Leki eksperymentalne", "description": "Badania koncentrują się na redukcji stanu zapalnego, włóknienia oraz stymulacji regeneracji mięśni (Frontiers, 2021)." },
+            { "name": "Duvyzat (givinostat)", "description": "Pierwszy niesteroidowy lek zatwierdzony przez FDA w 2024 roku dla pacjentów od 6. roku życia, niezależnie od typu genetycznego DMD (FDA, 2024)." }
+          ]
+        },
+        "rehabilitation": {
+          "title": "Rehabilitacja i fizjoterapia",
+          "items": [
+            { "name": "Ćwiczenia i rozciąganie", "description": "Pomagają zapobiegać przykurczom i utrzymać mobilność." },
+            { "name": "Sprzęt wspomagający", "description": "Ortezy i wózki inwalidzkie poprawiają niezależność i komfort życia." },
+            { "name": "Podejście interdyscyplinarne", "description": "Współpraca neurologów, fizjoterapeutów i kardiologów zapewnia kompleksową opiekę (Mayo Clinic, 2025)." }
+          ]
+        },
+        "experimental": {
+          "title": "Terapie eksperymentalne",
+          "items": [
+            { "description": "Terapie ukierunkowane na regenerację tkanek mięśniowych." },
+            { "description": "Leki wspierające funkcję serca i przepony." },
+            { "description": "Terapie komórkowe i białkowe poprawiające funkcję mięśni (Muscular Dystrophy Association, 2023)." }
+          ]
+        },
+        "comparisonTable": {
+          "headers": ["Rodzaj terapii", "Opis", "Zalety", "Ograniczenia"],
+          "rows": [
+            {
+              "Rodzaj terapii": "Terapia genowa",
+              "Opis": "Wprowadzenie funkcjonalnego genu dystrofiny",
+              "Zalety": "Możliwość spowolnienia postępu choroby",
+              "Ograniczenia": "Ograniczona dostępność, potencjalne skutki uboczne (np. toksyczność wątroby)"
+            },
+            {
+              "Rodzaj terapii": "Kortykosteroidy",
+              "Opis": "Spowolnienie degradacji mięśni",
+              "Zalety": "Szeroko dostępne, potwierdzona skuteczność",
+              "Ograniczenia": "Efekty uboczne przy długotrwałym stosowaniu"
+            },
+            {
+              "Rodzaj terapii": "Fizjoterapia",
+              "Opis": "Utrzymanie sprawności mięśniowej",
+              "Zalety": "Poprawia mobilność i jakość życia",
+              "Ograniczenia": "Wymaga regularności i profesjonalnego wsparcia"
+            },
+            {
+              "Rodzaj terapii": "Terapie eksperymentalne",
+              "Opis": "Nowe leki w fazie badań (np. Del-zota)",
+              "Zalety": "Nowe nadzieje terapeutyczne",
+              "Ograniczenia": "Ograniczone dane, dostępność tylko w ramach badań klinicznych"
+            }
+          ]
+        }
+      },
+      "impact": {
+        "title": "Wpływ DMD na jakość życia dzieci i ich rodzin",
+        "paragraphs": [
+          "DMD ma głęboki wpływ zarówno na dzieci, jak i na ich rodziny:",
+          "Ograniczenia fizyczne: Postępujące osłabienie mięśni ogranicza udział dzieci w codziennych aktywnościach. W wieku nastoletnim większość dzieci wymaga już wózka inwalidzkiego (Cleveland Clinic, 2025).",
+          "Wpływ emocjonalny i społeczny: Dzieci z DMD często doświadczają izolacji społecznej i obniżonej samooceny (ScienceDirect, 2016).",
+          "Obciążenie rodzin: Opieka nad dzieckiem z DMD wiąże się z dużym stresem emocjonalnym, fizycznym i finansowym (ResearchGate, 2011)."
+        ],
+        "table": {
+          "headers": ["Aspekt", "Wpływ na dziecko", "Wpływ na rodzinę"],
+          "rows": [
+            {
+              "Aspekt": "Fizyczny",
+              "Wpływ na dziecko": "Utrata mobilności, konieczność używania wózka",
+              "Wpływ na rodzinę": "Fizyczne obciążenie opieką"
+            },
+            {
+              "Aspekt": "Emocjonalny",
+              "Wpływ na dziecko": "Izolacja, niska samoocena",
+              "Wpływ na rodzinę": "Stres emocjonalny, niepokój o przyszłość"
+            },
+            {
+              "Aspekt": "Społeczny",
+              "Wpływ na dziecko": "Ograniczony udział w zabawie i życiu społecznym",
+              "Wpływ na rodzinę": "Izolacja społeczna, presja finansowa"
+            }
+          ]
+        }
+      },
+      "tourism": {
+        "title": "Dlaczego warto rozważyć leczenie DMD za granicą?",
+        "paragraphs": [
+          "Turystyka medyczna daje nowe możliwości rodzinom dzieci z DMD:",
+          "Dostęp do najlepszych specjalistów: Współpracujemy z uznanymi neurologami i ekspertami od chorób nerwowo-mięśniowych w renomowanych klinikach na całym świecie.",
+          "Nowoczesne terapie: Uzyskaj dostęp do terapii genowej, badań klinicznych i innowacyjnych metod leczenia niedostępnych w Twoim kraju.",
+          "Kompleksowa rehabilitacja: Programy obejmujące fizjoterapię, wsparcie psychologiczne, opiekę kardiologiczną i pulmonologiczną.",
+          "Wsparcie dla rodzin: Oferujemy zasoby informacyjne i społeczności wsparcia, abyś nie był sam w tej walce."
+        ]
+      },
+      "note": {
+        "text": "Rozumiemy, że wybór leczenia to trudna decyzja. Nasi eksperci medyczni są gotowi, by udzielić pełnej informacji i pomóc Ci znaleźć najlepszą opcję leczenia za granicą."
+      }
+    }
   }
 }

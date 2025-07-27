@@ -10,5 +10,160 @@
     "readMore": "Read More",
     "duchenneTitle": "New Hope for Children with Duchenne Muscular Dystrophy",
     "duchenneDescription": "Explore the latest therapies, including gene and experimental approaches, for treating DMD abroad."
+  },
+  "safeTreatmentAbroad": {
+    "title": "Safe Treatment Abroad: Why Europe & Turkey Are Your Top Choices in 2025",
+    "subtitle": "Experience world-class medical care with peace of mind in Germany, Turkey, and Spain.",
+    "cta_primary": "Get Your Free Consultation",
+    "backToNews": "Back to News",
+    "sections": {
+      "1": {
+        "heading": "1. Rising Demand for Safe Treatment Abroad",
+        "points": [
+          "Global medical tourism market to exceed $200B by 2030",
+          "Patients seek stability: from infection control to transparent pricing",
+          "Key destinations: Germany, Turkey, Spain"
+        ]
+      },
+      "2": {
+        "heading": "2. How Stress Impacts Recovery",
+        "points": [
+          "Chronic Stress & Immunity: Anxiety slows healing & raises complication risks.",
+          "Psychosomatic Effects: Reducing stress by 30% can improve chemo efficacy and speed up post-op rehab.",
+          "Healing Environments: Warm climates in Spain, serene landscapes in Turkey, and organized German clinics foster faster recovery."
+        ]
+      },
+      "3": {
+        "heading": "3. Leading Destinations at a Glance",
+        "table": {
+          "headers": ["Country", "Specialties", "Safety & Comfort", "Highlights"],
+          "rows": [
+            ["Germany 🇩🇪", "Cardiology, Oncology, Neurology", "Low crime, strict protocols", "Robot-assisted surgeries, AI integration"],
+            ["Turkey 🇹🇷", "Cosmetic Surgery, Dentistry, IVF", "Robust infrastructure, flexible pricing", "Clinic+Hotel packages, 24/7 service"],
+            ["Spain 🇪🇸", "Orthopedics, Rehabilitation, Aesthetic Medicine", "Excellent climate, hospitable service", "Local spa therapies for recovery"]
+          ]
+        }
+      },
+      "4": {
+        "heading": "4. How to Begin Your Journey",
+        "points": [
+          "Online Consultation: Initial case review via your medical records",
+          "Clinic & Doctor Selection: Based on ratings, reviews, and success rates",
+          "Logistics & Support: Flight, transfer, accommodation, interpreter services",
+          "24/7 Coordination: Dedicated medical coordinator available round-the-clock"
+        ]
+      },
+      "conclusion": {
+        "heading": "Ready to Get Started?",
+        "text": "Submit your request, and we'll propose a personalized plan within 24 hours.",
+        "cta": "Submit Your Request"
+      }
+    }
+  },
+  "duchenne": {
+    "title": "Hope for Children with Duchenne Muscular Dystrophy (DMD)",
+    "subtitle": "Duchenne Muscular Dystrophy (DMD) is a rare genetic condition that causes progressive muscle weakness and degeneration, primarily in boys. While there is currently no cure, advances in gene therapy, medications, and physical rehabilitation offer new hope for improving quality of life. Through medical tourism, families gain access to leading international hospitals and cutting-edge treatments that may not be available in their home country. On this page, you will find essential information about DMD, the latest therapeutic options, and how we support families seeking world-class medical care abroad.",
+    "sections": {
+      "about": {
+        "title": "What is Duchenne Muscular Dystrophy (DMD)?",
+        "paragraphs": [
+          "Duchenne Muscular Dystrophy (DMD) is a rare genetic disorder caused by mutations in the DMD gene, which is responsible for producing dystrophin — a protein essential for muscle cell integrity.",
+          "Without dystrophin, muscle cells gradually deteriorate, leading to progressive loss of strength and mobility. DMD primarily affects boys, with symptoms typically appearing between ages 2 and 5.",
+          "Early signs include delayed walking milestones, frequent falls, difficulty climbing stairs, and calf muscle enlargement due to fat accumulation (pseudohypertrophy)."
+        ]
+      },
+      "characteristics": {
+        "title": "Key Characteristics of DMD",
+        "table": {
+          "headers": ["Feature", "Description"],
+          "rows": [
+            { "Feature": "Cause", "Description": "Mutations in the DMD gene leading to absence of dystrophin" },
+            { "Feature": "Who Is Affected", "Description": "Primarily boys (1 in 3,500–5,000 male births)" },
+            { "Feature": "Symptom Onset", "Description": "Usually between ages 2 and 5" },
+            { "Feature": "Progression", "Description": "Gradual loss of muscle function; wheelchair use typically by age 12" },
+            { "Feature": "Complications", "Description": "Cardiomyopathy, respiratory failure" }
+          ]
+        }
+      },
+      "treatments": {
+        "title": "Innovative Treatments and Rehabilitation Options",
+        "geneTherapy": {
+          "title": "Gene Therapy",
+          "items": [
+            {
+              "name": "Elevidys (delandistrogene moxeparvovec)",
+              "description": "Approved by the FDA in 2023 for children aged 4–5 with confirmed DMD gene mutations. In 2024, approval was extended to ambulatory and non-ambulatory patients aged 4 and older. Elevidys delivers a shortened version of dystrophin (micro-dystrophin) to muscle cells. However, in 2025, dosage limitations were introduced for non-ambulatory patients due to cases of acute liver failure, requiring careful evaluation with specialists (Roche, 2025)."
+            },
+            {
+              "name": "Del-zota (delpacibart zotadirsen)",
+              "description": "An experimental treatment by Avidity Biosciences for patients with exon 44-skippable mutations. In the EXPLORE44 phase 1/2 trial, Del-zota increased dystrophin production up to 25% of normal and reduced creatine kinase levels to near-normal. FDA approval submission expected by end of 2025 (Avidity Biosciences, 2025)."
+            }
+          ]
+        },
+        "medications": {
+          "title": "Pharmaceutical Treatments",
+          "items": [
+            { "name": "Corticosteroids", "description": "Medications like prednisone and deflazacort help slow muscle degeneration and delay wheelchair dependence." },
+            { "name": "Experimental Drugs", "description": "Research focuses on reducing inflammation and fibrosis, and enhancing muscle regeneration (Frontiers, 2021)." },
+            { "name": "Duvyzat (givinostat)", "description": "The first non-steroidal treatment approved by the FDA in 2024 for patients aged 6 and up. Suitable for all genetic DMD types (FDA, 2024)." }
+          ]
+        },
+        "rehabilitation": {
+          "title": "Physical Therapy and Rehabilitation",
+          "items": [
+            { "name": "Stretching and Exercise", "description": "Helps prevent contractures and maintain mobility." },
+            { "name": "Assistive Devices", "description": "Braces and wheelchairs enhance mobility and independence." },
+            { "name": "Multidisciplinary Care", "description": "Involves neurologists, physiotherapists, and cardiologists to provide comprehensive treatment (Mayo Clinic, 2025)." }
+          ]
+        },
+        "experimental": {
+          "title": "Emerging and Experimental Therapies",
+          "items": [
+            { "description": "Therapies aimed at regenerating muscle tissue." },
+            { "description": "Medications to support heart and diaphragm function." },
+            { "description": "Cellular and protein therapies for improving muscular performance (Muscular Dystrophy Association, 2023)." }
+          ]
+        },
+        "comparisonTable": {
+          "headers": ["Treatment Type", "Description", "Benefits", "Limitations"],
+          "rows": [
+            { "Treatment Type": "Gene Therapy",        "Description": "Delivers a functional dystrophin gene",            "Benefits": "May slow disease progression",                          "Limitations": "Limited availability, potential side effects" },
+            { "Treatment Type": "Corticosteroids",      "Description": "Delays muscle degeneration",                       "Benefits": "Widely available, clinically proven",                 "Limitations": "Long-term use causes side effects" },
+            { "Treatment Type": "Physical Therapy",     "Description": "Maintains muscle strength",                        "Benefits": "Improves mobility and quality of life",              "Limitations": "Requires consistency and expert supervision" },
+            { "Treatment Type": "Experimental Therapies","Description": "New drugs under development (e.g., Del-zota)",     "Benefits": "Hope for future solutions",                          "Limitations": "Limited data, access only via clinical trials" }
+          ]
+        }
+      },
+      "impact": {
+        "title": "How DMD Affects Quality of Life for Children and Families",
+        "paragraphs": [
+          "DMD profoundly impacts both patients and their loved ones:",
+          "Physical challenges: Muscle weakness restricts children's ability to participate in everyday activities. By adolescence, most require a wheelchair, reducing independence (Cleveland Clinic, 2025).",
+          "Emotional and social impact: Studies show children with DMD often face social isolation and emotional distress, affecting self-esteem and mental well-being (ScienceDirect, 2016).",
+          "Family burden: Caring for a child with DMD demands emotional, physical, and financial resources, including healthcare costs and time commitment (ResearchGate, 2011)."
+        ],
+        "table": {
+          "headers": ["Aspect", "Impact on Children", "Impact on Families"],
+          "rows": [
+            { "Aspect": "Physical",   "Impact on Children": "Loss of mobility, wheelchair dependence", "Impact on Families": "Physical strain of caregiving" },
+            { "Aspect": "Emotional",  "Impact on Children": "Isolation, low self-esteem",           "Impact on Families": "Emotional stress, concerns about future" },
+            { "Aspect": "Social",     "Impact on Children": "Limited participation in activities",  "Impact on Families": "Social isolation, financial pressure" }
+          ]
+        }
+      },
+      "tourism": {
+        "title": "Why Choose Medical Tourism for DMD Treatment?",
+        "paragraphs": [
+          "Medical tourism offers unique advantages for families seeking advanced treatment for Duchenne Muscular Dystrophy:",
+          "Access to top experts: We collaborate with world-renowned neurologists and specialists in neuromuscular disorders.",
+          "Advanced treatment options: Benefit from gene therapy, clinical trials, and modern therapies unavailable in many countries.",
+          "Comprehensive rehabilitation: Multimodal programs include physiotherapy, emotional support, cardiac and respiratory care to enhance life quality.",
+          "Family support: We provide resources, counseling, and global support networks to help families feel empowered and connected."
+        ]
+      },
+      "note": {
+        "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
+      }
+    }
   }
 }
