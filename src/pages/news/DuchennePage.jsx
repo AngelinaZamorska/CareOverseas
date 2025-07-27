@@ -110,8 +110,8 @@ const DuchennePage = () => {
                           : 'bg-white'
                       }
                     >
-                      <td className="px-6 py-4 text-gray-700">{row.Characteristic}</td>
-                      <td className="px-6 py-4 text-gray-700">{row.Description}</td>
+                      <td className="px-6 py-4 text-gray-700">{row.characteristic}</td>
+                      <td className="px-6 py-4 text-gray-700">{row.description}</td>
                     </tr>
                   ))}
                 </tbody>
