@@ -59,7 +59,7 @@ const Header = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg p-2 z-50"
+                className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg p-2 z-50 max-h-64 overflow-y-auto"
               >
                 {sublinks.map(({ to: linkTo, label }) => (
                   <Link
@@ -105,32 +105,27 @@ const Header = () => {
 
   return (
     <header className="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center space-x-3 min-w-0"
+          className="flex-shrink-0"
         >
-          <Link to="/" className="flex items-center space-x-3 min-w-0">
+          <Link to="/" className="flex items-center space-x-3">
             <img
               src="/android-chrome-192x192.png"
               alt="CareOverseasSpace"
-              className="h-12 w-12 rounded-xl flex-shrink-0"
+              className="h-10 w-10 md:h-12 md:w-12 rounded-xl"
             />
-            <div className="min-w-0">
-              <span className="block truncate text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                CareOverseasSpace
-              </span>
-              <p className="text-sm text-gray-500 truncate">
-                {t('header.tagline')}
-              </p>
-            </div>
+            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent whitespace-nowrap">
+              CareOverseasSpace
+            </span>
           </Link>
         </motion.div>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex flex-wrap items-center flex-1 gap-4 justify-end">
           <NavLink scrollTo="top">{t('header.home')}</NavLink>
           <NavLink
             isDropdown
@@ -153,9 +148,7 @@ const Header = () => {
           <NavLink scrollTo="process">{t('header.process')}</NavLink>
           <NavLink to="/news">{t('header.news')}</NavLink>
           <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
-
           <LanguageSwitcher />
-
           <motion.button
             whileHover={{ scale: 1.05 }}
             className={`${linkBase} ${buttonPrimary}`}
@@ -169,7 +162,7 @@ const Header = () => {
         <div className="md:hidden flex items-center space-x-3">
           <LanguageSwitcher />
           <button onClick={() => setMenuOpen(prev => !prev)}>
-            {menuOpen ? <X className="h-6 w-6 text-gray-800" /> : <Menu className="h-6 w-6 text-gray-800" />}        
+            {menuOpen ? <X className="h-6 w-6 text-gray-800" /> : <Menu className="h-6 w-6 text-gray-800" />}
           </button>
         </div>
       </nav>
