@@ -17,6 +17,7 @@ const SafeTreatmentAbroadPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+
   const content = t('safeTreatmentAbroad', { returnObjects: true });
 
   useEffect(() => {
@@ -38,22 +39,10 @@ const SafeTreatmentAbroadPage = () => {
   };
 
   const summaryPoints = [
-    {
-      icon: <ShieldCheck className="h-6 w-6 text-red-500" />,
-      text: content.summary.conflictGrowth
-    },
-    {
-      icon: <Map className="h-6 w-6 text-green-500" />,
-      text: content.summary.safeDestinations
-    },
-    {
-      icon: <HeartPulse className="h-6 w-6 text-yellow-500" />,
-      text: content.summary.stressImpact
-    },
-    {
-      icon: <Brain className="h-6 w-6 text-blue-500" />,
-      text: content.summary.optimizedSolution
-    },
+    { text: content.summary.conflictGrowth, icon: <ShieldCheck className="h-6 w-6 text-red-500" /> },
+    { text: content.summary.safeDestinations, icon: <Map className="h-6 w-6 text-green-500" /> },
+    { text: content.summary.stressImpact, icon: <HeartPulse className="h-6 w-6 text-yellow-500" /> },
+    { text: content.summary.optimizedSolution, icon: <Brain className="h-6 w-6 text-blue-500" /> },
   ];
 
   const destinations = [
@@ -71,7 +60,7 @@ const SafeTreatmentAbroadPage = () => {
       text: content.section2.spain,
       image: 'https://images.unsplash.com/photo-1583237925560-9a6bdaa24895',
       alt: 'Rehabilitation center in Spain'
-    },
+    }
   ];
 
   return (
@@ -80,10 +69,6 @@ const SafeTreatmentAbroadPage = () => {
         <title>{content.metaTitle}</title>
         <meta name="description" content={content.metaDescription} />
         <meta name="keywords" content={content.keywords} />
-        <link
-          rel="canonical"
-          href="https://careoverseas.space/news/safe-treatment-abroad"
-        />
       </Helmet>
 
       {/* Hero */}
@@ -118,9 +103,7 @@ const SafeTreatmentAbroadPage = () => {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
               >
-                <div className="bg-gray-100 p-3 rounded-full">
-                  {point.icon}
-                </div>
+                <div className="bg-gray-100 p-3 rounded-full">{point.icon}</div>
                 <p className="text-gray-700">{point.text}</p>
               </motion.div>
             ))}
@@ -141,7 +124,7 @@ const SafeTreatmentAbroadPage = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: 0.1 * idx }}
               >
                 <img
                   src={d.image}
@@ -171,8 +154,7 @@ const SafeTreatmentAbroadPage = () => {
             className="bg-white text-blue-600 px-6 md:px-10 py-3 md:py-4 font-bold text-base md:text-lg"
             onClick={handleContactClick}
           >
-            {t('header.freeConsultation')}
-            <ArrowRight className="ml-2 h-5 w-5 inline" />
+            {t('header.freeConsultation')} <ArrowRight className="ml-2 h-5 w-5 inline" />
           </Button>
         </div>
       </section>
@@ -181,7 +163,7 @@ const SafeTreatmentAbroadPage = () => {
       <section className="py-12 bg-white text-center">
         <Button asChild variant="outline">
           <Link to="/news">
-            <ArrowLeft className="mr-2 h-4 w-4 inline" />
+            <ArrowLeft className="mr-2 h-4 w-4" />
             {content.backToNews}
           </Link>
         </Button>

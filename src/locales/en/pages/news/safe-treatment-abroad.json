@@ -1,25 +1,14 @@
-
 {
   "safeTreatmentAbroad": {
-    "metaTitle": "Safe Medical Tourism: Germany, Turkey, Spain",
-    "metaDescription": "Discover why Germany, Turkey, and Spain are the safest choices for medical tourism, offering certified clinics, expert doctors, and tailored care.",
-    "keywords": [
-      "medical tourism",
-      "safe treatment abroad",
-      "treatment in Germany",
-      "medical tourism in Turkey",
-      "treatment in Spain",
-      "stress and health",
-      "advanced medicine"
-    ],
+    "metaTitle": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
+    "metaDescription": "Learn why Germany, Turkey, and Spain are top destinations for medical tourism, offering stability and advanced healthcare amidst global conflicts. Keywords: medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine.",
+    "keywords": "medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine",
     "title": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
-    "heroAlt": "Patient looking out a clinic window",
-    "summaryTitle": "Risk Management & Guarantees",
     "summary": {
-      "avoidScams": "Avoid uncertified clinics and potential scams.",
-      "licensedClinics": "Work only with licensed, accredited medical centers.",
-      "localSupport": "Get on-site assistance including translation, transport, and accommodation.",
-      "personalizedPlan": "Receive an individualized treatment plan tailored to your needs."
+      "conflictGrowth": "Rising Conflicts: Military actions worldwide have increased, forcing patients to seek safe places for treatment.",
+      "safeDestinations": "Safe Destinations: Germany, Turkey, and Spain offer stability and high-quality medicine.",
+      "stressImpact": "Impact of Stress: Research shows that stress worsens treatment outcomes.",
+      "optimizedSolution": "Optimized Solution: Submit a request to find a suitable clinic and doctor."
     },
     "section1": {
       "title": "Why Choose Safe Countries for Treatment?",
@@ -32,32 +21,10 @@
       "spain": "Spain: Specializes in orthopedics, rehabilitation, and aesthetic medicine.",
       "paragraph": "These countries offer certified clinics with advanced equipment for accurate diagnosis and effective treatment."
     },
-    "destinations": {
-      "germany": "Germany: A leader in cardiology, oncology, and neurology with modern technologies.",
-      "turkey": "Turkey: Known for cosmetic surgery, dentistry, and hair transplantation at affordable prices.",
-      "spain": "Spain: Specializes in orthopedics, rehabilitation, and aesthetic medicine."
-    },
-    "testimonialsTitle": "What Our Patients Say",
-    "testimonials": [
-      "I felt safe every step of the way and returned home healthy.",
-      "Professional support throughout my treatment abroad."
-    ],
-    "faqTitle": "Frequently Asked Questions",
-    "faqs": [
-      {
-        "q": "How long does the consultation take?",
-        "a": "Our online consultations last 30–45 minutes, including translation and initial review of your documents."
-      },
-      {
-        "q": "What is the typical treatment duration?",
-        "a": "Most treatments are completed within 5–7 days, depending on the procedure and your individual plan."
-      }
-    ],
     "cta": {
       "title": "Start Your Journey to Health",
       "paragraph": "Looking for safe and high-quality treatment abroad? Leave a request on our website, and we will contact you within 24 hours to find the best clinic and doctor for your needs."
     },
-    "backToNews": "Back to News"
+     "backToNews": "Back to News"
   }
 }
-
