@@ -5,8 +5,11 @@ import { motion } from 'framer-motion';
 import {
   ShieldCheck,
   Map,
+  AlertTriangle,
   HeartPulse,
   Brain,
+  Users,
+  Star,
   ArrowLeft,
   ArrowRight
 } from 'lucide-react';
@@ -17,7 +20,6 @@ const SafeTreatmentAbroadPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-
   const content = t('safeTreatmentAbroad', { returnObjects: true });
 
   useEffect(() => {
@@ -38,29 +40,24 @@ const SafeTreatmentAbroadPage = () => {
     }
   };
 
+  // Key benefits & risk mitigation
   const summaryPoints = [
-    { text: content.summary.conflictGrowth, icon: <ShieldCheck className="h-6 w-6 text-red-500" /> },
-    { text: content.summary.safeDestinations, icon: <Map className="h-6 w-6 text-green-500" /> },
-    { text: content.summary.stressImpact, icon: <HeartPulse className="h-6 w-6 text-yellow-500" /> },
-    { text: content.summary.optimizedSolution, icon: <Brain className="h-6 w-6 text-blue-500" /> },
+    { icon: <AlertTriangle className="h-6 w-6 text-red-600" />, text: content.summary.avoidScams },
+    { icon: <ShieldCheck className="h-6 w-6 text-blue-600" />, text: content.summary.licensedClinics },
+    { icon: <Users className="h-6 w-6 text-green-600" />, text: content.summary.localSupport },
+    { icon: <Brain className="h-6 w-6 text-purple-600" />, text: content.summary.personalizedPlan }
+  ];
+
+  // Customer testimonials
+  const testimonials = [
+    { name: 'Anna K.', feedback: content.testimonials[0] },
+    { name: 'Michael S.', feedback: content.testimonials[1] },
   ];
 
   const destinations = [
-    {
-      text: content.section2.germany,
-      image: 'https://images.unsplash.com/photo-1556817643-9b9d1f182599',
-      alt: 'Modern hospital building in Germany'
-    },
-    {
-      text: content.section2.turkey,
-      image: 'https://images.unsplash.com/photo-1583237925560-9a6bdaa24895',
-      alt: 'Surgical room in a Turkish clinic'
-    },
-    {
-      text: content.section2.spain,
-      image: 'https://images.unsplash.com/photo-1583237925560-9a6bdaa24895',
-      alt: 'Rehabilitation center in Spain'
-    }
+    { text: content.destinations.germany, image: '/images/germany-clinic.jpg', alt: 'Germany clinic exterior' },
+    { text: content.destinations.turkey, image: '/images/turkey-operating-room.jpg', alt: 'Turkey operating room' },
+    { text: content.destinations.spain, image: '/images/spain-rehab.jpg', alt: 'Spain rehabilitation center' },
   ];
 
   return (
@@ -68,20 +65,31 @@ const SafeTreatmentAbroadPage = () => {
       <Helmet>
         <title>{content.metaTitle}</title>
         <meta name="description" content={content.metaDescription} />
-        <meta name="keywords" content={content.keywords} />
+        <meta name="keywords" content={content.keywords.join(', ')} />
+        <link rel="canonical" href="https://careoverseas.space/news/safe-treatment-abroad" />
+        {/* FAQ Schema for SEO */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": content.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+          }))
+        })}</script>
       </Helmet>
 
-      {/* Hero */}
-      <section className="relative h-[24rem] md:h-[28rem] lg:h-[32rem]">
+      {/* Hero with urgent tone */}
+      <section className="relative h-96 md:h-[28rem] lg:h-[32rem]">
         <img
-          src="https://images.unsplash.com/photo-1671194763322-01e489e6f674"
-          alt="Patient looking out a window"
+          src="/images/hero-safe-treatment.jpg"
+          alt={content.heroAlt}
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center px-4">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center text-center px-4">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white max-w-4xl"
-            initial={{ opacity: 0, y: 20 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white max-w-3xl"
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
@@ -90,81 +98,104 @@ const SafeTreatmentAbroadPage = () => {
         </div>
       </section>
 
-      {/* Summary */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-10 mb-12">
-            {summaryPoints.map((point, idx) => (
+      {/* Summary & Risk Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8">{content.summaryTitle}</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {summaryPoints.map((pt, i) => (
               <motion.div
-                key={idx}
-                className="flex items-start space-x-4"
+                key={i}
+                className="flex items-start space-x-3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: i * 0.1 }}
               >
-                <div className="bg-gray-100 p-3 rounded-full">{point.icon}</div>
-                <p className="text-gray-700">{point.text}</p>
+                <div className="bg-white p-3 rounded-full shadow-md">{pt.icon}</div>
+                <p className="text-gray-700">{pt.text}</p>
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <article className="prose prose-lg max-w-none text-gray-800">
-            <h2>{content.section1.title}</h2>
-            <p>{content.section1.paragraph}</p>
-
-            <h2 className="mt-12">{content.section2.title}</h2>
-          </article>
-
-          <div className="grid md:grid-cols-3 gap-8 my-8">
+      {/* Services & Destinations */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">{content.section2.title}</h2>
+          <div className="grid md:grid-cols-3 gap-8">
             {destinations.map((d, idx) => (
               <motion.div
                 key={idx}
-                className="flex flex-col items-center text-center"
+                className="overflow-hidden rounded-lg shadow-lg"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 * idx }}
               >
-                <img
-                  src={d.image}
-                  alt={d.alt}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <p className="font-semibold">{d.text}</p>
+                <img src={d.image} alt={d.alt} className="w-full h-48 object-cover" />
+                <div className="p-4">
+                  <h3 className="font-semibold text-lg">{d.text}</h3>
+                </div>
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <p className="text-gray-700">{content.section2.paragraph}</p>
+      {/* Testimonials */}
+      <section className="py-16 bg-gradient-to-r from-green-100 to-blue-50">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-2xl font-bold mb-6">{content.testimonialsTitle}</h2>
+          <div className="space-y-8">
+            {testimonials.map((t, i) => (
+              <motion.div
+                key={i}
+                className="bg-white p-6 rounded-lg shadow-md"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.2 }}
+              >
+                <Star className="mx-auto mb-4 h-8 w-8 text-yellow-500" />
+                <blockquote className="text-gray-800 italic mb-4">“{t.feedback}”</blockquote>
+                <cite className="block font-semibold">— {t.name}</cite>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-r from-blue-600 to-green-600 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
-            {content.cta.title}
-          </h2>
-          <p className="max-w-2xl mx-auto mb-8 text-base sm:text-lg">
-            {content.cta.paragraph}
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-blue-600 px-6 md:px-10 py-3 md:py-4 font-bold text-base md:text-lg"
-            onClick={handleContactClick}
-          >
-            {t('header.freeConsultation')} <ArrowRight className="ml-2 h-5 w-5 inline" />
-          </Button>
+      <section className="py-20 bg-blue-600 text-white text-center">
+        <h2 className="text-3xl font-extrabold mb-4">{content.cta.title}</h2>
+        <p className="mb-8 max-w-2xl mx-auto">{content.cta.paragraph}</p>
+        <Button onClick={handleContactClick} size="lg" className="bg-white text-blue-600 px-8 py-4 font-bold">
+          {t('header.freeConsultation')} <ArrowRight className="ml-2 inline h-5 w-5" />
+        </Button>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">{content.faqTitle}</h2>
+          <div className="space-y-4">
+            {content.faqs.map((faq, idx) => (
+              <details key={idx} className="p-4 border rounded-lg">
+                <summary className="font-semibold cursor-pointer">{faq.q}</summary>
+                <p className="mt-2 text-gray-700">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Back to News */}
-      <section className="py-12 bg-white text-center">
+      <section className="py-12 bg-gray-50 text-center">
         <Button asChild variant="outline">
           <Link to="/news">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {content.backToNews}
+            <ArrowLeft className="mr-2 inline h-4 w-4" /> {content.backToNews}
           </Link>
         </Button>
       </section>
