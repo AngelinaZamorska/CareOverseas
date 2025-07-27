@@ -30,71 +30,53 @@ const DuchennePage = () => {
       <div className="bg-gray-50 min-h-screen">
         <div className="container mx-auto px-6 py-12">
 
-          {/* Hero */}
+          {/* Header Hero */}
           <motion.div
             initial="hidden"
             animate="visible"
-            custom={0}
             variants={sectionVariants}
-            className="bg-gradient-to-r from-blue-600 to-teal-400 rounded-2xl p-10 text-center shadow-xl"
+            custom={0}
+            className="text-center max-w-2xl mx-auto"
           >
-            <Brain className="mx-auto mb-4 w-12 h-12 text-white" />
-            <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-              {content.title}
-            </h1>
-            <p className="text-lg lg:text-xl text-white mb-8">
-              {content.subtitle}
-            </p>
-            <Link to="/#contact">
-              <Button
-                className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600"
-                size="lg"
-              >
-                {t('header.freeConsultation')}
-              </Button>
-            </Link>
+            <h1 className="text-4xl font-bold">{content.title}</h1>
+            <p className="mt-4 text-lg text-gray-700">{content.subtitle}</p>
           </motion.div>
 
-          {/* Section 1: Что такое МДД? */}
+          {/* Что такое МДД? */}
           <motion.section
             initial="hidden"
             animate="visible"
-            custom={1}
             variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
+            custom={1}
+            className="mt-16"
           >
-            <h2 className="text-2xl font-bold mb-4 flex items-center text-blue-600">
-              <ShieldCheck className="mr-2" />
-              {content.sections.about.title}
-            </h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.about.paragraphs.map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
+            <div className="flex items-center mb-4">
+              <ShieldCheck className="w-6 h-6 text-blue-500 mr-2" />
+              <h2 className="text-2xl font-semibold">{content.sections.about.title}</h2>
             </div>
+            {content.sections.about.paragraphs.map((p, idx) => (
+              <p key={idx} className="mb-3 text-gray-600">{p}</p>
+            ))}
           </motion.section>
 
-          {/* Section 2: Основные характеристики */}
+          {/* Основные характеристики */}
           <motion.section
             initial="hidden"
             animate="visible"
-            custom={2}
             variants={sectionVariants}
-            className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg"
+            custom={2}
+            className="mt-12"
           >
-            <h2 className="text-2xl font-bold mb-4 flex items-center text-green-600">
-              <Map className="mr-2" />
-              {content.sections.characteristics.title}
-            </h2>
+            <div className="flex items-center mb-4">
+              <Map className="w-6 h-6 text-green-500 mr-2" />
+              <h2 className="text-2xl font-semibold">{content.sections.characteristics.title}</h2>
+            </div>
             <div className="overflow-x-auto">
-              <table className="min-w-full bg-white rounded-lg overflow-hidden">
-                <thead className="bg-green-200">
-                  <tr>
+              <table className="min-w-full bg-white shadow rounded-lg">
+                <thead>
+                  <tr className="bg-gray-100">
                     {content.sections.characteristics.table.headers.map((h, i) => (
-                      <th
-                        key={i}
-                        className="px-6 py-3 text-left text-gray-800 uppercase font-medium"
-                      >
+                      <th key={i} className="px-4 py-2 text-left text-sm font-medium text-gray-700">
                         {h}
                       </th>
                     ))}
@@ -102,16 +84,9 @@ const DuchennePage = () => {
                 </thead>
                 <tbody>
                   {content.sections.characteristics.table.rows.map((row, i) => (
-                    <tr
-                      key={i}
-                      className={
-                        i % 2
-                          ? 'bg-gray-50'
-                          : 'bg-white'
-                      }
-                    >
-                      <td className="px-6 py-4 text-gray-700">{row.Characteristic}</td>
-                      <td className="px-6 py-4 text-gray-700">{row.Description}</td>
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="px-4 py-2 text-gray-800">{row.Characteristic}</td>
+                      <td className="px-4 py-2 text-gray-800">{row.Description}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -119,24 +94,24 @@ const DuchennePage = () => {
             </div>
           </motion.section>
 
-          {/* Section 3: Методы лечения и реабилитация */}
+          {/* Новейшие методы лечения и реабилитации */}
           <motion.section
             initial="hidden"
             animate="visible"
-            custom={3}
             variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
+            custom={3}
+            className="mt-16"
           >
-            <h2 className="text-2xl font-bold mb-6 flex items-center text-red-600">
-              <HeartPulse className="mr-2" />
-              {content.sections.treatments.title}
-            </h2>
+            <div className="flex items-center mb-4">
+              <HeartPulse className="w-6 h-6 text-red-500 mr-2" />
+              <h2 className="text-2xl font-semibold">{content.sections.treatments.title}</h2>
+            </div>
 
             {/* Генная терапия */}
-            <h3 className="text-xl font-semibold mt-4">{content.sections.treatments.geneTherapy.title}</h3>
-            <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+            <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.geneTherapy.title}</h3>
+            <ul className="list-disc list-inside mt-2 space-y-2">
               {content.sections.treatments.geneTherapy.items.map((item, i) => (
-                <li key={i}>
+                <li key={i} className="text-gray-700">
                   <strong>{item.name}:</strong> {item.description}
                 </li>
               ))}
@@ -144,57 +119,49 @@ const DuchennePage = () => {
 
             {/* Медикаментозное лечение */}
             <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.medications.title}</h3>
-            <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+            <ul className="list-disc list-inside mt-2 space-y-2">
               {content.sections.treatments.medications.items.map((item, i) => (
-                <li key={i}>
+                <li key={i} className="text-gray-700">
                   <strong>{item.name}:</strong> {item.description}
                 </li>
               ))}
             </ul>
 
-            {/* Реабилитация */}
+            {/* Реабилитация и физиотерапия */}
             <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.rehabilitation.title}</h3>
-            <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+            <ul className="list-disc list-inside mt-2 space-y-2">
               {content.sections.treatments.rehabilitation.items.map((item, i) => (
-                <li key={i}>
+                <li key={i} className="text-gray-700">
                   <strong>{item.name}:</strong> {item.description}
                 </li>
               ))}
             </ul>
 
-            {/* Экспериментальные */}
+            {/* Экспериментальные подходы */}
             <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.experimental.title}</h3>
-            <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+            <ul className="list-disc list-inside mt-2 space-y-2">
               {content.sections.treatments.experimental.items.map((item, i) => (
-                <li key={i}>{item.description}</li>
+                <li key={i} className="text-gray-700">{item.description}</li>
               ))}
             </ul>
 
-            {/* Таблица сравнения */}
+            {/* Таблица сравнения методов */}
             <div className="overflow-x-auto mt-8">
-              <table className="min-w-full bg-white rounded-lg overflow-hidden">
-                <thead className="bg-red-200">
-                  <tr>
+              <table className="min-w-full bg-white shadow rounded-lg">
+                <thead>
+                  <tr className="bg-gray-100">
                     {content.sections.treatments.comparisonTable.headers.map((h, i) => (
-                      <th
-                        key={i}
-                        className="px-6 py-3 text-left text-gray-800 uppercase font-medium"
-                      >
-                        {h}
-                      </th>
+                      <th key={i} className="px-4 py-2 text-left text-sm font-medium text-gray-700">{h}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   {content.sections.treatments.comparisonTable.rows.map((row, idx) => (
-                    <tr
-                      key={idx}
-                      className={idx % 2 ? 'bg-gray-50' : 'bg-white'}
-                    >
-                      <td className="px-6 py-4 text-gray-700">{row['Метод лечения']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Описание']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Преимущества']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Ограничения']}</td>
+                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="px-4 py-2 text-gray-800">{row["Метод лечения"]}</td>
+                      <td className="px-4 py-2 text-gray-800">{row["Описание"]}</td>
+                      <td className="px-4 py-2 text-gray-800">{row["Преимущества"]}</td>
+                      <td className="px-4 py-2 text-gray-800">{row["Ограничения"]}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -202,65 +169,70 @@ const DuchennePage = () => {
             </div>
           </motion.section>
 
-          {/* Section 4: Влияние на качество жизни */}
+          {/* Влияние на качество жизни */}
           <motion.section
             initial="hidden"
             animate="visible"
+            variants={sectionVariants}
             custom={4}
-            variants={sectionVariants}
-            className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg"
+            className="mt-16"
           >
-            <h2 className="text-2xl font-bold mb-4 flex items-center text-purple-600">
-              <Brain className="mr-2" />
-              {content.sections.impact.title}
-            </h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.impact.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+            <div className="flex items-center mb-4">
+              <Brain className="w-6 h-6 text-purple-500 mr-2" />
+              <h2 className="text-2xl font-semibold">{content.sections.impact.title}</h2>
+            </div>
+            {content.sections.impact.paragraphs.map((p, i) => (
+              <p key={i} className="mb-3 text-gray-600">{p}</p>
+            ))}
+            <div className="overflow-x-auto mt-6">
+              <table className="min-w-full bg-white shadow rounded-lg">
+                <thead>
+                  <tr className="bg-gray-100">
+                    {content.sections.impact.table.headers.map((h, i) => (
+                      <th key={i} className="px-4 py-2 text-left text-sm font-medium text-gray-700">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {content.sections.impact.table.rows.map((row, idx) => (
+                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="px-4 py-2 text-gray-800">{row.Аспект}</td>
+                      <td className="px-4 py-2 text-gray-800">{row["Воздействие на детей"]}</td>
+                      <td className="px-4 py-2 text-gray-800">{row["Воздействие на семьи"]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </motion.section>
 
-          {/* Section 5: Медицинский туризм */}
+          {/* Медицинский туризм */}
           <motion.section
             initial="hidden"
             animate="visible"
+            variants={sectionVariants}
             custom={5}
-            variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
+            className="mt-16"
           >
-            <h2 className="text-2xl font-bold mb-4">{content.sections.tourism.title}</h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.tourism.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+            <h2 className="text-2xl font-semibold mb-4">{content.sections.tourism.title}</h2>
+            {content.sections.tourism.paragraphs.map((p, i) => (
+              <p key={i} className="mb-3 text-gray-600">{p}</p>
+            ))}
           </motion.section>
 
-          {/* Conclusion & CTA */}
+          {/* Примечание */}
           <motion.section
             initial="hidden"
             animate="visible"
-            custom={6}
             variants={sectionVariants}
+            custom={6}
             className="mt-12 text-center"
           >
-            <p className="italic text-gray-600 mb-6">{content.sections.note.text}</p>
-            <div className="flex flex-col items-center space-y-4">
-              <Link to="/#contact">
-                <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-5 text-lg">
-                  {t('header.freeConsultation')}
-                </Button>
-              </Link>
-              <Button asChild variant="link">
-                <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
-                  <ArrowLeft className="mr-2 w-5 h-5" />
-                  {t('newsPage.backToNews')}
-                </Link>
-              </Button>
-            </div>
+            <p className="italic text-gray-600">{content.sections.note.text}</p>
+            <Button as={Link} to="/contact" className="mt-6">
+              Связаться с нами
+            </Button>
           </motion.section>
-
         </div>
       </div>
     </>
