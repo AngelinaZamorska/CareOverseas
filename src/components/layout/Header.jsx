@@ -1,272 +1,212 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
-const Header = () => {
+export default function Header() {
   const { t } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [treatmentsOpen, setTreatmentsOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const dropdownRef = useRef(null);
 
-  // Закрытие дропдауна по клику вне его
+  // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handleOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setTreatmentsOpen(false);
+        setDropdownOpen(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleOutside);
+    return () => document.removeEventListener('mousedown', handleOutside);
   }, []);
 
-  const handleScrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleNavClick = ({ scrollTo, to }) => {
+  // Smooth scroll or navigate
+  const handleNavigation = ({ scrollTo, path }) => {
     setMenuOpen(false);
     if (scrollTo) {
       if (location.pathname !== '/') {
         navigate('/');
-        setTimeout(() => handleScrollTo(scrollTo), 150);
+        setTimeout(() => document.getElementById(scrollTo)?.scrollIntoView({ behavior: 'smooth' }), 200);
       } else {
-        handleScrollTo(scrollTo);
+        document.getElementById(scrollTo)?.scrollIntoView({ behavior: 'smooth' });
       }
-    } else if (to) {
-      navigate(to);
+    } else if (path) {
+      navigate(path);
     }
   };
 
-  // Базовые классы для ссылок
-  const linkBase = 'block text-center border border-gray-300 px-4 py-2 font-medium rounded-lg transition-colors duration-200';
-  const linkHover = 'hover:border-blue-500 hover:text-blue-600';
+  const navItems = [
+    { label: t('header.home'), scrollTo: 'top' },
+    { label: t('header.process'), scrollTo: 'process' },
+    { label: t('header.news'), path: '/news' },
+    { label: t('header.contact'), scrollTo: 'contact' }
+  ];
+
+  const treatments = [
+    { label: t('treatments.oncology'), path: '/oncology' },
+    { label: t('treatments.lu177'), path: '/lu-177-psma-therapy' },
+    { label: t('treatments.neurosurgery'), path: '/neurosurgery' },
+    { label: t('treatments.bloodDiseases'), path: '/blood-diseases-treatment' },
+    { label: t('treatments.rheumatology'), path: '/rheumatology-israel' },
+    { label: t('treatments.epilepsy'), path: '/epilepsy-treatment-spain' },
+    { label: t('treatments.dendritic'), path: '/dendritic-cell-therapy-germany' },
+    { label: t('treatments.ivf'), path: '/ivf-in-turkey' },
+    { label: t('treatments.cardiac'), path: '/cardiac-surgery-germany' },
+    { label: t('treatments.endometriosis'), path: '/endometriosis-leomyoma-treatment' },
+    { label: t('treatments.joint'), path: '/joint-replacement' },
+    { label: t('treatments.plasticSurgery'), path: '/plastic-surgery-turkey' }
+  ];
+
+  // Link styles
+  const baseLink = 'px-4 py-2 rounded-lg font-medium transition-colors';
+  const activeLink = 'text-blue-600 border-blue-600';
+  const defaultLink = 'text-gray-700 border-transparent hover:text-blue-500 hover:border-blue-200';
 
   return (
-    <header className="bg-white/90 backdrop-blur sticky top-0 z-50 shadow-sm">
-      <nav className="max-w-7xl mx-auto px-6 py-4 grid grid-cols-[auto_1fr_auto] items-center">
-        {/* Логотип */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="flex-shrink-0"
-        >
-          <Link to="/" className="flex items-center space-x-2">
-            <img src="/android-chrome-192x192.png" alt="Logo" className="h-12 w-12 rounded-xl" />
-            <div className="flex flex-col justify-center h-12">
-              {['Care', 'Overseas', 'Space'].map((word) => (
-                <span
-                  key={word}
-                  className="text-sm md:text-base font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent leading-tight"
-                >
-                  {word}
-                </span>
-              ))}
-            </div>
-          </Link>
-        </motion.div>
+    <header className="fixed w-full top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-900/80 shadow-md">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        {/* Logo */}
+        <Link to="/" className="flex items-center space-x-2">
+          <motion.img
+            src="/android-chrome-192x192.png"
+            alt="Care Overseas Space"
+            className="h-10 w-10 rounded-2xl"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4 }}
+          />
+          <div className="flex flex-col leading-none">
+            <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+              {t('brand.name')}
+            </span>
+          </div>
+        </Link>
 
-        {/* Десктоп-меню: равные ячейки grid-cols-5 */}
-        <div className="hidden md:grid flex-1 grid-cols-5 gap-4">
-          {/* Home */}
-          <button
-            onClick={() => handleNavClick({ scrollTo: 'top' })}
-            className={`${linkBase} ${linkHover}`}
-          >
-            {t('header.home')}
-          </button>
-
-          {/* Treatments Abroad */}
-          <div
-            ref={dropdownRef}
-            className="relative"
-            onMouseEnter={() => setTreatmentsOpen(true)}
-            onMouseLeave={() => setTreatmentsOpen(false)}
-          >
+        {/* Desktop Links */}
+        <div className="hidden md:flex md:items-center md:space-x-4">
+          {navItems.map(({ label, scrollTo, path }) => (
             <button
-              onClick={() => setTreatmentsOpen((o) => !o)}
-              className={`${linkBase} ${linkHover} inline-flex items-center justify-center`}
+              key={label}
+              onClick={() => handleNavigation({ scrollTo, path })}
+              className={`${baseLink} border-b-2 ${location.pathname === path ? activeLink : defaultLink}`}
+            >
+              {label}
+            </button>
+          ))}
+
+          {/* Treatments Dropdown */}
+          <div ref={dropdownRef} className="relative">
+            <button
+              onClick={() => setDropdownOpen(!isDropdownOpen)}
+              className={`${baseLink} inline-flex items-center border-b-2 ${isDropdownOpen ? activeLink : defaultLink}`}
+              aria-expanded={isDropdownOpen}
             >
               {t('header.treatments')}
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
             <AnimatePresence>
-              {treatmentsOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
+              {isDropdownOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg p-2 z-50 max-h-64 overflow-y-auto"
+                  exit={{ opacity: 0, y: -10 }}
+                  className="absolute mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
                 >
-                  {[
-                    { to: '/oncology', label: t('treatments.oncology') },
-                    { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
-                    { to: '/neurosurgery', label: t('treatments.neurosurgery') },
-                    { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
-                    { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
-                    { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
-                    { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
-                    { to: '/ivf-in-turkey', label: t('treatments.ivf') },
-                    { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
-                    { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
-                    { to: '/joint-replacement', label: t('treatments.joint') },
-                    { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
-                  ].map(({ to: linkTo, label }) => (
+                  {treatments.map(({ label, path }) => (
+                    <li key={path}>
+                      <Link
+                        to={path}
+                        onClick={() => setDropdownOpen(false)}
+                        className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <LanguageSwitcher />
+          <button
+            onClick={() => handleNavigation({ scrollTo: 'contact' })}
+            className="ml-4 px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
+          >
+            {t('header.freeConsultation')}
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X className="h-6 w-6 text-gray-800 dark:text-gray-200" /> : <Menu className="h-6 w-6 text-gray-800 dark:text-gray-200" />}
+        </button>
+      </nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden overflow-hidden bg-white dark:bg-gray-900"
+          >
+            <div className="px-4 pt-2 pb-4 space-y-1">
+              {navItems.map(({ label, scrollTo, path }) => (
+                <button
+                  key={label}
+                  onClick={() => handleNavigation({ scrollTo, path })}
+                  className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                >
+                  {label}
+                </button>
+              ))}
+              <button
+                onClick={() => setDropdownOpen(!isDropdownOpen)}
+                className="flex items-center justify-between w-full px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              >
+                <span>{t('header.treatments')}</span>
+                <ChevronDown className="h-4 w-4" />
+              </button>
+              {isDropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="pl-4 space-y-1"
+                >
+                  {treatments.map(({ label, path }) => (
                     <Link
-                      key={linkTo}
-                      to={linkTo}
-                      className="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100 transition"
-                      onClick={() => {
-                        setTreatmentsOpen(false);
-                        setMenuOpen(false);
-                      }}
+                      key={path}
+                      to={path}
+                      onClick={() => { setMenuOpen(false); setDropdownOpen(false); }}
+                      className="block px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
                     >
                       {label}
                     </Link>
                   ))}
                 </motion.div>
               )}
-            </AnimatePresence>
-          </div>
-
-          {/* How It Works */}
-          <button
-            onClick={() => handleNavClick({ scrollTo: 'process' })}
-            className={`${linkBase} ${linkHover}`}
-          >
-            {t('header.process')}
-          </button>
-
-          {/* News & Updates */}
-          <Link to="/news" className={`${linkBase} ${linkHover}`}>
-            {t('header.news')}
-          </Link>
-
-          {/* Contact Us */}
-          <button
-            onClick={() => handleNavClick({ scrollTo: 'contact' })}
-            className={`${linkBase} ${linkHover}`}
-          >
-            {t('header.contact')}
-          </button>
-        </div>
-
-        {/* Действия и моб. меню */}
-        <div className="flex items-center space-x-4">
-          <LanguageSwitcher />
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white whitespace-nowrap shadow-lg hover:shadow-xl transition-transform"
-            onClick={() => handleNavClick({ scrollTo: 'contact' })}
-          >
-            {t('header.freeConsultation')}
-          </motion.button>
-          <button
-            className="md:hidden p-2 rounded-md hover:bg-gray-100"
-            onClick={() => setMenuOpen((o) => !o)}
-          >
-            {menuOpen ? <X className="h-6 w-6 text-gray-800" /> : <Menu className="h-6 w-6 text-gray-800" />}
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Dropdown */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-white/90 backdrop-blur p-6 space-y-4 shadow-lg"
-          >
-            <button
-              onClick={() => {
-                handleNavClick({ scrollTo: 'top' });
-                setMenuOpen(false);
-              }}
-              className={`${linkBase} ${linkHover} w-full`}
-            >
-              {t('header.home')}
-            </button>
-
-            {/* Моб. дропдаун Treatments */}
-            <div className="relative">
+              <LanguageSwitcher />
               <button
-                onClick={() => setTreatmentsOpen((o) => !o)}
-                className={`${linkBase} ${linkHover} inline-flex items-center justify-center w-full`}
+                onClick={() => handleNavigation({ scrollTo: 'contact' })}
+                className="mt-2 w-full px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
               >
-                {t('header.treatments')} <ChevronDown className="ml-1 h-4 w-4" />
+                {t('header.freeConsultation')}
               </button>
-              <AnimatePresence>
-                {treatmentsOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="mt-2 bg-white rounded-lg shadow p-2 max-h-60 overflow-y-auto"
-                  >
-                    {[
-                      { to: '/oncology', label: t('treatments.oncology') },
-                      /* …остальные пункты… */
-                    ].map(({ to: linkTo, label }) => (
-                      <Link
-                        key={linkTo}
-                        to={linkTo}
-                        className="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100"
-                        onClick={() => {
-                          setTreatmentsOpen(false);
-                          setMenuOpen(false);
-                        }}
-                      >
-                        {label}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
             </div>
-
-            <button
-              onClick={() => {
-                handleNavClick({ scrollTo: 'process' });
-                setMenuOpen(false);
-              }}
-              className={`${linkBase} ${linkHover} w-full`}
-            >
-              {t('header.process')}
-            </button>
-            <Link to="/news" className={`${linkBase} ${linkHover} w-full`} onClick={() => setMenuOpen(false)}>
-              {t('header.news')}
-            </Link>
-            <button
-              onClick={() => {
-                handleNavClick({ scrollTo: 'contact' });
-                setMenuOpen(false);
-              }}
-              className={`${linkBase} ${linkHover} w-full`}
-            >
-              {t('header.contact')}
-            </button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white whitespace-nowrap shadow-lg hover:shadow-xl w-full text-center"
-              onClick={() => {
-                handleNavClick({ scrollTo: 'contact' });
-                setMenuOpen(false);
-              }}
-            >
-              {t('header.freeConsultation')}
-            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
     </header>
   );
-};
-
-export default Header;
+}
