@@ -116,11 +116,14 @@ const Header = () => {
           </div>
         </motion.div>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
-          <NavLink scrollTo="top">{t('header.home')}</NavLink>
-          <NavLink isDropdown children={t('header.treatments')} sublinks={[
-            { to: '/oncology', label: t('treatments.oncology') },
+        {/* Desktop Nav as equal-sized block */}
+        <div className="hidden md:flex items-center bg-gray-100 rounded-full overflow-hidden">
+          <div className="flex-1 text-center">
+            <NavLink scrollTo="top">{t('header.home')}</NavLink>
+          </div>
+          <div className="flex-1 text-center">
+            <NavLink isDropdown children={t('header.treatments')} sublinks={[
+              { to: '/oncology', label: t('treatments.oncology') },
               { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
               { to: '/neurosurgery', label: t('treatments.neurosurgery') },
               { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
@@ -132,11 +135,17 @@ const Header = () => {
               { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
               { to: '/joint-replacement', label: t('treatments.joint') },
               { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
-            ]}
-          />
-           <NavLink scrollTo="process">{t('header.process')}</NavLink>
-          <NavLink to="/news">{t('header.news')}</NavLink>
-          <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
+            ]} />
+          </div>
+          <div className="flex-1 text-center">
+            <NavLink scrollTo="process">{t('header.process')}</NavLink>
+          </div>
+          <div className="flex-1 text-center">
+            <NavLink to="/news">{t('header.news')}</NavLink>
+          </div>
+          <div className="flex-1 text-center">
+            <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
+          </div>
         </div>
 
         {/* Actions */}
@@ -176,7 +185,7 @@ const Header = () => {
                 { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
               ]}
             />
-            <NavLink scrollTo="process">{t('header.process')}</NavLink>
+             <NavLink scrollTo="process">{t('header.process')}</NavLink>
             <NavLink to="/news">{t('header.news')}</NavLink>
             <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
             <motion.button whileHover={{ scale: 1.05 }} className={`${btnPrimary} w-full`} onClick={() => handleNavClick({ scrollTo: 'contact' })}>
