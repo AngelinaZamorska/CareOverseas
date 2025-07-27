@@ -30,10 +30,11 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-100 py-16">
       <div className="container mx-auto px-6 space-y-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Responsive grid: 1 col on mobile, 2 on small tablets, 4 on desktops */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3 flex-wrap">
+            <div className="flex items-center space-x-3 flex-wrap min-w-0">
               <div className="bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-full animate-pulse">
                 <img
                   src="/android-chrome-192x192.png"
@@ -41,7 +42,7 @@ const Footer = () => {
                   className="h-8 w-8 object-cover"
                 />
               </div>
-              <span className="text-xl md:text-2xl font-extrabold tracking-wide break-words">
+              <span className="text-xl md:text-2xl font-extrabold tracking-wide break-words min-w-0">
                 CareOverseasSpace
               </span>
             </div>
@@ -49,13 +50,28 @@ const Footer = () => {
               {t('footer.tagline')}
             </p>
             <div className="flex space-x-4">
-              <a href="https://t.me/ZamorskaAngelina" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition">
+              <a
+                href="https://t.me/ZamorskaAngelina"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition"
+              >
                 <FaTelegramPlane size={24} />
               </a>
-              <a href="viber://chat?number=%2B380984998555" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
+              <a
+                href="viber://chat?number=%2B380984998555"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-purple-400 transition"
+              >
                 <FaViber size={24} />
               </a>
-              <a href="https://wa.me/380984998555" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition">
+              <a
+                href="https://wa.me/380984998555"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-green-400 transition"
+              >
                 <FaWhatsapp size={24} />
               </a>
             </div>
@@ -63,7 +79,9 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">{t('footer.navigation')}</h3>
+            <h3 className="font-semibold text-xl mb-4">
+              {t('footer.navigation')}
+            </h3>
             <ul className="space-y-2">
               <li>
                 <button
@@ -91,7 +109,9 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('/dendritic-cell-therapy-germany')}
+                  onClick={() =>
+                    navigate('/dendritic-cell-therapy-germany')
+                  }
                   className="hover:text-white transition"
                 >
                   {t('treatments.dendritic')}
@@ -107,7 +127,9 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('/cardiac-surgery-germany')}
+                  onClick={() =>
+                    navigate('/cardiac-surgery-germany')
+                  }
                   className="hover:text-white transition"
                 >
                   {t('treatments.cardiac')}
@@ -115,7 +137,9 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('/endometriosis-leomyoma-treatment')}
+                  onClick={() =>
+                    navigate('/endometriosis-leomyoma-treatment')
+                  }
                   className="hover:text-white transition"
                 >
                   {t('treatments.endometriosis')}
@@ -129,13 +153,14 @@ const Footer = () => {
                   {t('treatments.joint')}
                 </button>
               </li>
-            
             </ul>
           </div>
 
           {/* Countries */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">{t('footer.partnerCountries')}</h3>
+            <h3 className="font-semibold text-xl mb-4">
+              {t('footer.partnerCountries')}
+            </h3>
             <ul className="space-y-2 text-gray-400">
               <li>{t('footer.germany')}</li>
               <li>{t('footer.turkey')}</li>
@@ -146,7 +171,9 @@ const Footer = () => {
 
           {/* Contact Details */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">{t('footer.contactUs')}</h3>
+            <h3 className="font-semibold text-xl mb-4">
+              {t('footer.contactUs')}
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <User className="h-6 w-6 text-green-400 mt-1" />
@@ -168,9 +195,13 @@ const Footer = () => {
           </div>
         </div>
 
-         {/* Footer Bottom */}
+        {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500 space-y-4">
-          <p className="text-sm">&copy; {new Date().getFullYear()} CareOverseasSpace. {t('footer.rights')}</p>
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} CareOverseasSpace. {t(
+              'footer.rights'
+            )}
+          </p>
           <div className="mt-4 md:mt-0">
             <button
               onClick={() => navigate('/privacy-policy')}
