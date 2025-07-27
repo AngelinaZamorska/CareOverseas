@@ -191,10 +191,10 @@ const DuchennePage = () => {
                       key={idx}
                       className={idx % 2 ? 'bg-gray-50' : 'bg-white'}
                     >
-                      <td className="px-6 py-4 text-gray-700">{row['Метод лечения']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Описание']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Преимущества']}</td>
-                      <td className="px-6 py-4 text-gray-700">{row['Ограничения']}</td>
+                       <td className="px-6 py-4 text-gray-700">{row.method}</td>
+      <td className="px-6 py-4 text-gray-700">{row.description}</td>
+      <td className="px-6 py-4 text-gray-700">{row.advantages}</td>
+      <td className="px-6 py-4 text-gray-700">{row.limitations}</td>
                     </tr>
                   ))}
                 </tbody>

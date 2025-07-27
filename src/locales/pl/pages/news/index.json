@@ -60,7 +60,7 @@
       }
     }
   },
-  "duchenne": {
+   "duchenne": {
     "title": "Nadzieja dla dzieci z dystrofią mięśniową Duchenne’a (DMD)",
     "subtitle": "Dystrofia mięśniowa Duchenne’a (DMD) to rzadka choroba genetyczna powodująca postępujące osłabienie i degenerację mięśni, głównie u chłopców. Choć obecnie nie istnieje całkowite wyleczenie, nowoczesne metody leczenia – takie jak terapia genowa, farmakoterapia i fizjoterapia – dają realną nadzieję na poprawę jakości życia. Turystyka medyczna otwiera dostęp do najlepszych światowych klinik i zaawansowanych terapii, które często nie są dostępne w kraju pacjenta. Na tej stronie znajdziesz szczegółowe informacje o DMD, nowoczesnych możliwościach leczenia oraz wsparciu, jakie oferujemy rodzinom poszukującym pomocy za granicą.",
     "sections": {
@@ -77,11 +77,11 @@
         "table": {
           "headers": ["Cecha", "Opis"],
           "rows": [
-            { "Cecha": "Przyczyna", "Opis": "Mutacje w genie DMD prowadzące do braku dystrofiny" },
-            { "Cecha": "Kogo dotyczy", "Opis": "Głównie chłopcy (1 na 3500–5000 noworodków płci męskiej)" },
-            { "Cecha": "Początek objawów", "Opis": "Zwykle między 2. a 5. rokiem życia" },
-            { "Cecha": "Postęp choroby", "Opis": "Stopniowa utrata sprawności, konieczność używania wózka inwalidzkiego około 12. roku życia" },
-            { "Cecha": "Powikłania", "Opis": "Kardiomiopatia, niewydolność oddechowa" }
+            { "characteristic": "Przyczyna", "description": "Mutacje w genie DMD prowadzące do braku dystrofiny" },
+            { "characteristic": "Kogo dotyczy", "description": "Głównie chłopcy (1 na 3500–5000 noworodków płci męskiej)" },
+            { "characteristic": "Początek objawów", "description": "Zwykle między 2. a 5. rokiem życia" },
+            { "characteristic": "Postęp choroby", "description": "Stopniowa utrata sprawności, konieczność używania wózka inwalidzkiego około 12. roku życia" },
+            { "characteristic": "Powikłania", "description": "Kardiomiopatia, niewydolność oddechowa" }
           ]
         }
       },
@@ -125,31 +125,31 @@
           ]
         },
         "comparisonTable": {
-          "headers": ["Rodzaj terapii", "Opis", "Zalety", "Ograniczenia"],
+          "headers": ["Metoda leczenia", "Opis", "Zalety", "Ograniczenia"],
           "rows": [
             {
-              "Rodzaj terapii": "Terapia genowa",
-              "Opis": "Wprowadzenie funkcjonalnego genu dystrofiny",
-              "Zalety": "Możliwość spowolnienia postępu choroby",
-              "Ograniczenia": "Ograniczona dostępność, potencjalne skutki uboczne (np. toksyczność wątroby)"
+              "method": "Terapia genowa",
+              "description": "Wprowadzenie funkcjonalnego genu dystrofiny",
+              "advantages": "Potencjalnie spowalnia postęp choroby",
+              "limitations": "Ograniczona dostępność, ryzyko działań niepożądanych"
             },
             {
-              "Rodzaj terapii": "Kortykosteroidy",
-              "Opis": "Spowolnienie degradacji mięśni",
-              "Zalety": "Szeroko dostępne, potwierdzona skuteczność",
-              "Ograniczenia": "Efekty uboczne przy długotrwałym stosowaniu"
+              "method": "Kortykosteroidy",
+              "description": "Spowalniają degenerację mięśni",
+              "advantages": "Szeroko dostępne, potwierdzona skuteczność",
+              "limitations": "Skutki uboczne przy długotrwałym stosowaniu"
             },
             {
-              "Rodzaj terapii": "Fizjoterapia",
-              "Opis": "Utrzymanie sprawności mięśniowej",
-              "Zalety": "Poprawia mobilność i jakość życia",
-              "Ograniczenia": "Wymaga regularności i profesjonalnego wsparcia"
+              "method": "Fizjoterapia",
+              "description": "Utrzymanie funkcji mięśni",
+              "advantages": "Poprawia mobilność i jakość życia",
+              "limitations": "Wymaga regularności i profesjonalnego podejścia"
             },
             {
-              "Rodzaj terapii": "Terapie eksperymentalne",
-              "Opis": "Nowe leki w fazie badań (np. Del-zota)",
-              "Zalety": "Nowe nadzieje terapeutyczne",
-              "Ograniczenia": "Ograniczone dane, dostępność tylko w ramach badań klinicznych"
+              "method": "Terapie eksperymentalne",
+              "description": "Nowe leki w fazie badań (np. Del-zota)",
+              "advantages": "Obiecujące na przyszłość",
+              "limitations": "Ograniczone dane, dostępne tylko w badaniach klinicznych"
             }
           ]
         }
@@ -165,21 +165,9 @@
         "table": {
           "headers": ["Aspekt", "Wpływ na dziecko", "Wpływ na rodzinę"],
           "rows": [
-            {
-              "Aspekt": "Fizyczny",
-              "Wpływ na dziecko": "Utrata mobilności, konieczność używania wózka",
-              "Wpływ na rodzinę": "Fizyczne obciążenie opieką"
-            },
-            {
-              "Aspekt": "Emocjonalny",
-              "Wpływ na dziecko": "Izolacja, niska samoocena",
-              "Wpływ na rodzinę": "Stres emocjonalny, niepokój o przyszłość"
-            },
-            {
-              "Aspekt": "Społeczny",
-              "Wpływ na dziecko": "Ograniczony udział w zabawie i życiu społecznym",
-              "Wpływ na rodzinę": "Izolacja społeczna, presja finansowa"
-            }
+            { "aspect": "Fizyczny", "impactOnChild": "Utrata mobilności", "impactOnFamily": "Fizyczne obciążenie opieką" },
+            { "aspect": "Emocjonalny", "impactOnChild": "Izolacja", "impactOnFamily": "Stres emocjonalny, niepokój o przyszłość" },
+            { "aspect": "Społeczny", "impactOnChild": "Ograniczony udział w zabawie i życiu społecznym", "impactOnFamily": "Izolacja społeczna, presja finansowa" }
           ]
         }
       },
@@ -196,6 +184,7 @@
       "note": {
         "text": "Rozumiemy, że wybór leczenia to trudna decyzja. Nasi eksperci medyczni są gotowi, by udzielić pełnej informacji i pomóc Ci znaleźć najlepszą opcję leczenia za granicą."
       }
-    }
+    },
+    "backToNews": "Powrót do aktualności"
   }
 }

@@ -60,6 +60,7 @@
       }
     }
   },
+  
   "duchenne": {
     "title": "Hope for Children with Duchenne Muscular Dystrophy (DMD)",
     "subtitle": "Duchenne Muscular Dystrophy (DMD) is a rare genetic condition that causes progressive muscle weakness and degeneration, primarily in boys. While there is currently no cure, advances in gene therapy, medications, and physical rehabilitation offer new hope for improving quality of life. Through medical tourism, families gain access to leading international hospitals and cutting-edge treatments that may not be available in their home country. On this page, you will find essential information about DMD, the latest therapeutic options, and how we support families seeking world-class medical care abroad.",
@@ -77,11 +78,11 @@
         "table": {
           "headers": ["Feature", "Description"],
           "rows": [
-            { "Feature": "Cause", "Description": "Mutations in the DMD gene leading to absence of dystrophin" },
-            { "Feature": "Who Is Affected", "Description": "Primarily boys (1 in 3,500–5,000 male births)" },
-            { "Feature": "Symptom Onset", "Description": "Usually between ages 2 and 5" },
-            { "Feature": "Progression", "Description": "Gradual loss of muscle function; wheelchair use typically by age 12" },
-            { "Feature": "Complications", "Description": "Cardiomyopathy, respiratory failure" }
+            { "characteristic": "Cause", "description": "Mutations in the DMD gene leading to absence of dystrophin" },
+            { "characteristic": "Who Is Affected", "description": "Primarily boys (1 in 3,500–5,000 male births)" },
+            { "characteristic": "Symptom Onset", "description": "Usually between ages 2 and 5" },
+            { "characteristic": "Progression", "description": "Gradual loss of muscle function; wheelchair use typically by age 12" },
+            { "characteristic": "Complications", "description": "Cardiomyopathy, respiratory failure" }
           ]
         }
       },
@@ -125,12 +126,32 @@
           ]
         },
         "comparisonTable": {
-          "headers": ["Treatment Type", "Description", "Benefits", "Limitations"],
+          "headers": ["Treatment Method", "Description", "Advantages", "Limitations"],
           "rows": [
-            { "Treatment Type": "Gene Therapy",        "Description": "Delivers a functional dystrophin gene",            "Benefits": "May slow disease progression",                          "Limitations": "Limited availability, potential side effects" },
-            { "Treatment Type": "Corticosteroids",      "Description": "Delays muscle degeneration",                       "Benefits": "Widely available, clinically proven",                 "Limitations": "Long-term use causes side effects" },
-            { "Treatment Type": "Physical Therapy",     "Description": "Maintains muscle strength",                        "Benefits": "Improves mobility and quality of life",              "Limitations": "Requires consistency and expert supervision" },
-            { "Treatment Type": "Experimental Therapies","Description": "New drugs under development (e.g., Del-zota)",     "Benefits": "Hope for future solutions",                          "Limitations": "Limited data, access only via clinical trials" }
+            {
+              "method": "Gene therapy",
+              "description": "Introduction of a functional dystrophin gene",
+              "advantages": "Potentially slows disease progression",
+              "limitations": "Limited availability, risk of side effects"
+            },
+            {
+              "method": "Corticosteroids",
+              "description": "Slows down muscle degeneration",
+              "advantages": "Widely available, proven effectiveness",
+              "limitations": "Side effects with long-term use"
+            },
+            {
+              "method": "Physiotherapy",
+              "description": "Maintaining muscle function",
+              "advantages": "Improves mobility and quality of life",
+              "limitations": "Requires consistency and professional guidance"
+            },
+            {
+              "method": "Experimental therapies",
+              "description": "New drugs in research (e.g., Del-zota)",
+              "advantages": "Promising for the future",
+              "limitations": "Limited data, available only through clinical trials"
+            }
           ]
         }
       },
@@ -145,9 +166,9 @@
         "table": {
           "headers": ["Aspect", "Impact on Children", "Impact on Families"],
           "rows": [
-            { "Aspect": "Physical",   "Impact on Children": "Loss of mobility, wheelchair dependence", "Impact on Families": "Physical strain of caregiving" },
-            { "Aspect": "Emotional",  "Impact on Children": "Isolation, low self-esteem",           "Impact on Families": "Emotional stress, concerns about future" },
-            { "Aspect": "Social",     "Impact on Children": "Limited participation in activities",  "Impact on Families": "Social isolation, financial pressure" }
+            { "aspect": "Physical", "impactOnChildren": "Loss of mobility, wheelchair dependence", "impactOnFamilies": "Physical strain of caregiving" },
+            { "aspect": "Emotional", "impactOnChildren": "Isolation, low self-esteem", "impactOnFamilies": "Emotional stress, concerns about future" },
+            { "aspect": "Social", "impactOnChildren": "Limited participation in activities", "impactOnFamilies": "Social isolation, financial pressure" }
           ]
         }
       },
@@ -164,6 +185,7 @@
       "note": {
         "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
       }
-    }
+    },
+    "backToNews": "Back to news"
   }
 }
