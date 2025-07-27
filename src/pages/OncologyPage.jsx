@@ -37,18 +37,18 @@ const OncologyPage = () => {
   return (
     <>
       <Helmet>
-        <title>{t('oncologyPage.meta.title')}</title>
-        <meta name="description" content={t('oncologyPage.meta.description')} />
-        <meta name="keywords" content={t('oncologyPage.meta.keywords')} />
+        <title>{t('oncologyPage.title')}</title>
+        <meta name="description" content={t('oncologyPage.description')} />
+        <meta name="keywords" content={t('oncologyPage.keywords')} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={t('oncologyPage.meta.title')} />
-        <meta property="og:description" content={t('oncologyPage.meta.description')} />
+        <meta property="og:title" content={t('oncologyPage.title')} />
+        <meta property="og:description" content={t('oncologyPage.description')} />
         <meta property="og:image" content="https://careoverseas.space/oncology-cover.jpg" />
         <meta property="og:url" content="https://careoverseas.space/oncology-treatment" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('oncologyPage.meta.title')} />
-        <meta name="twitter:description" content={t('oncologyPage.meta.description')} />
+        <meta name="twitter:title" content={t('oncologyPage.title')} />
+        <meta name="twitter:description" content={t('oncologyPage.description')} />
         <meta name="twitter:image" content="https://careoverseas.space/oncology-cover.jpg" />
       </Helmet>
 
