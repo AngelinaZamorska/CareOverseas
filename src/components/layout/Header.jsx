@@ -45,11 +45,10 @@ const Header = () => {
         >
           <motion.button
             whileHover={{ scale: 1.1 }}
-            className={`${navItem} ${navHover} px-3 py-2 inline-flex items-center w-full justify-center`}
-            onClick={() => setOpen(prev => !prev)}
+            className={`${navItem} ${navHover} inline-flex items-center px-3 py-2`}
+            onClick={() => setOpen(o => !o)}
           >
-            {children}
-            <ChevronDown className="ml-1 h-4 w-4" />
+            {children} <ChevronDown className="ml-1 h-4 w-4" />
           </motion.button>
           <AnimatePresence>
             {open && (
@@ -64,10 +63,7 @@ const Header = () => {
                     key={linkTo}
                     to={linkTo}
                     className="block px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100 transition"
-                    onClick={() => {
-                      setOpen(false);
-                      setMenuOpen(false);
-                    }}
+                    onClick={() => setMenuOpen(false)}
                   >
                     {label}
                   </Link>
@@ -86,6 +82,7 @@ const Header = () => {
           onClick={() => handleNavClick({ scrollTo })}
         >
           {children}
+          <span className="absolute left-0 bottom-0 w-0 h-1 bg-blue-500 transition-all group-hover:w-full"></span>
         </motion.button>
       );
     }
@@ -120,73 +117,48 @@ const Header = () => {
         </motion.div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center bg-gray-100 rounded-full overflow-hidden">
-          <div className="flex-1 text-center">
-            <NavLink scrollTo="top">{t('header.home')}</NavLink>
-          </div>
-          <div className="flex-1 text-center">
-            <NavLink
-              isDropdown
-              children={t('header.treatments')}
-              sublinks={[
-                { to: '/oncology', label: t('treatments.oncology') },
-                { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
-                { to: '/neurosurgery', label: t('treatments.neurosurgery') },
-                { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
-                { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
-                { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
-                { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
-                { to: '/ivf-in-turkey', label: t('treatments.ivf') },
-                { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
-                { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
-                { to: '/joint-replacement', label: t('treatments.joint') },
-                { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
-              ]}
-            />
-          </div>
-          <div className="flex-1 text-center">
-            <NavLink scrollTo="process">{t('header.process')}</NavLink>
-          </div>
-          <div className="flex-1 text-center">
-            <NavLink to="/news">{t('header.news')}</NavLink>
-          </div>
-          <div className="flex-1 text-center">
-            <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
-          </div>
+        <div className="hidden md:flex items-center space-x-8">
+          <NavLink scrollTo="top">{t('header.home')}</NavLink>
+          <NavLink isDropdown children={t('header.treatments')} sublinks={[
+            { to: '/oncology', label: t('treatments.oncology') },
+              { to: '/lu-177-psma-therapy', label: t('treatments.lu177') },
+              { to: '/neurosurgery', label: t('treatments.neurosurgery') },
+              { to: '/blood-diseases-treatment', label: t('treatments.bloodDiseases') },
+              { to: '/rheumatology-israel', label: t('treatments.rheumatology') },
+              { to: '/epilepsy-treatment-spain', label: t('treatments.epilepsy') },
+              { to: '/dendritic-cell-therapy-germany', label: t('treatments.dendritic') },
+              { to: '/ivf-in-turkey', label: t('treatments.ivf') },
+              { to: '/cardiac-surgery-germany', label: t('treatments.cardiac') },
+              { to: '/endometriosis-leomyoma-treatment', label: t('treatments.endometriosis') },
+              { to: '/joint-replacement', label: t('treatments.joint') },
+              { to: '/plastic-surgery-turkey', label: t('treatments.plasticSurgery') },
+            ]}
+          />
+          <NavLink scrollTo="process">{t('header.process')}</NavLink>
+          <NavLink to="/news">{t('header.news')}</NavLink>
+          <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
         </div>
 
-        {/* Actions */}
+        {/* Right Actions */}
         <div className="flex items-center space-x-4">
           <LanguageSwitcher />
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className={btnPrimary}
+            className={buttonPrimary}
             onClick={() => handleNavClick({ scrollTo: 'contact' })}
           >
             {t('header.freeConsultation')}
           </motion.button>
-          <button
-            className="md:hidden p-2 rounded-md hover:bg-gray-100"
-            onClick={() => setMenuOpen(prev => !prev)}
-          >
-            {menuOpen ? (
-              <X className="h-6 w-6 text-gray-800" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-800" />
-            )}
+          <button className="md:hidden" onClick={() => setMenuOpen(o => !o)}>
+            {menuOpen ? <X className="h-6 w-6 text-gray-800" /> : <Menu className="h-6 w-6 text-gray-800" />}
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile dropdown */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-white/90 backdrop-blur p-6 space-y-4 shadow-lg"
-          >
+          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="md:hidden bg-white/90 backdrop-blur p-6 space-y-3 shadow-xl">
             <NavLink scrollTo="top">{t('header.home')}</NavLink>
             <NavLink
               isDropdown
@@ -209,11 +181,7 @@ const Header = () => {
             <NavLink scrollTo="process">{t('header.process')}</NavLink>
             <NavLink to="/news">{t('header.news')}</NavLink>
             <NavLink scrollTo="contact">{t('header.contact')}</NavLink>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className={`${btnPrimary} w-full`}
-              onClick={() => handleNavClick({ scrollTo: 'contact' })}
-            >
+            <motion.button whileHover={{ scale: 1.05 }} className={`${buttonPrimary} w-full text-center`} onClick={() => handleNavClick({ scrollTo: 'contact' })}>
               {t('header.freeConsultation')}
             </motion.button>
           </motion.div>
