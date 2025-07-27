@@ -9,11 +9,12 @@ export default function Header() {
   const { t } = useTranslation();
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const dropdownRef = useRef(null);
 
-  // Close dropdown when clicking outside
+  // Close desktop dropdown when clicking outside
   useEffect(() => {
     const handleOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -24,9 +25,10 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handleOutside);
   }, []);
 
-  // Smooth scroll or navigate
+  // Navigation handler
   const handleNavigation = ({ scrollTo, path }) => {
     setMenuOpen(false);
+    setMobileDropdownOpen(false);
     if (scrollTo) {
       if (location.pathname !== '/') {
         navigate('/');
@@ -81,7 +83,7 @@ export default function Header() {
           />
           <div className="flex flex-col leading-none">
             <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
-              {t('brand.name')}
+              CareOverseasSpace
             </span>
           </div>
         </Link>
@@ -114,7 +116,7 @@ export default function Header() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="absolute mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+                  className="absolute mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-64 overflow-y-auto"
                 >
                   {treatments.map(({ label, path }) => (
                     <li key={path}>
@@ -171,24 +173,24 @@ export default function Header() {
                 </button>
               ))}
               <button
-                onClick={() => setDropdownOpen(!isDropdownOpen)}
+                onClick={() => setMobileDropdownOpen(!isMobileDropdownOpen)}
                 className="flex items-center justify-between w-full px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               >
                 <span>{t('header.treatments')}</span>
                 <ChevronDown className="h-4 w-4" />
               </button>
-              {isDropdownOpen && (
+              {isMobileDropdownOpen && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="pl-4 space-y-1"
+                  className="pl-4 max-h-60 overflow-y-auto space-y-1"
                 >
                   {treatments.map(({ label, path }) => (
                     <Link
                       key={path}
                       to={path}
-                      onClick={() => { setMenuOpen(false); setDropdownOpen(false); }}
+                      onClick={() => handleNavigation({ path })}
                       className="block px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
                     >
                       {label}
