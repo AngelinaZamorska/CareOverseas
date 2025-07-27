@@ -72,7 +72,7 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-900/80 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2 flex-shrink-0 mr-8">
           <motion.img
             src="/android-chrome-192x192.png"
             alt="Care Overseas Space"
@@ -80,6 +80,7 @@ export default function Header() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.4 }}
+        
           />
           <div className="flex flex-col leading-none">
             <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
