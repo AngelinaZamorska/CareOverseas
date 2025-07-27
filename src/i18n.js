@@ -168,7 +168,7 @@ i18n
       escapeValue: false, // React уже защищён от XSS
     },
     detection: {
-      order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
+      order: ['cookie', 'htmlTag', 'localStorage', 'subdomain'],
       caches: ['cookie'],
     },
   })
