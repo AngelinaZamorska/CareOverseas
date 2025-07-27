@@ -20,6 +20,7 @@ import Lu177PsmaPage from '@/pages/Lu177PsmaPage';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
 import NewsPage from '@/pages/NewsPage';
 import SafeTreatmentAbroadPage from '@/pages/news/SafeTreatmentAbroadPage';
+import DuchennePage from '@/pages/DuchennePage'; // ✅ Новый импорт
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <title>Care Overseas Space - Your Trusted Medical Treatment Coordinator Abroad | Germany, Turkey, Spain, Israel</title>
         <meta name="description" content="Care Overseas Space is your trusted coordinator for medical treatment abroad. We help patients from all over the world get access to renowned clinics in Germany, Turkey, Spain, and Israel." />
       </Helmet>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 flex flex-col">
         <Toaster />
         <Header />
@@ -50,6 +51,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/news/safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
+            <Route path="/duchenne-muscular-dystrophy" element={<DuchennePage />} /> {/* ✅ Новый маршрут */}
           </Routes>
         </main>
         <Footer />

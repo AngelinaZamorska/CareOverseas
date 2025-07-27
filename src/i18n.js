@@ -19,6 +19,7 @@ import oncologyEN from './locales/en/pages/oncology.json';
 import lu177EN from './locales/en/pages/lu177.json';
 import newsEN from './locales/en/pages/news.json';
 import safeTreatmentAbroadEN from './locales/en/pages/news/safe-treatment-abroad.json';
+import duchenneEN from './locales/en/pages/duchenne.json';
 
 import translationRU from './locales/ru/common.json';
 import homeRU from './locales/ru/pages/home.json';
@@ -36,6 +37,7 @@ import oncologyRU from './locales/ru/pages/oncology.json';
 import lu177RU from './locales/ru/pages/lu177.json';
 import newsRU from './locales/ru/pages/news.json';
 import safeTreatmentAbroadRU from './locales/ru/pages/news/safe-treatment-abroad.json';
+import duchenneRU from './locales/ru/pages/duchenne.json';
 
 import translationPL from './locales/pl/common.json';
 import homePL from './locales/pl/pages/home.json';
@@ -53,6 +55,7 @@ import oncologyPL from './locales/pl/pages/oncology.json';
 import lu177PL from './locales/pl/pages/lu177.json';
 import newsPL from './locales/pl/pages/news.json';
 import safeTreatmentAbroadPL from './locales/pl/pages/news/safe-treatment-abroad.json';
+import duchennePL from './locales/pl/pages/duchenne.json';
 
 import translationAR from './locales/ar/common.json';
 import homeAR from './locales/ar/pages/home.json';
@@ -70,6 +73,7 @@ import oncologyAR from './locales/ar/pages/oncology.json';
 import lu177AR from './locales/ar/pages/lu177.json';
 import newsAR from './locales/ar/pages/news.json';
 import safeTreatmentAbroadAR from './locales/ar/pages/news/safe-treatment-abroad.json';
+import duchenneAR from './locales/ar/pages/duchenne.json';
 
 const resources = {
   en: {
@@ -90,6 +94,7 @@ const resources = {
       ...lu177EN,
       ...newsEN,
       ...safeTreatmentAbroadEN,
+      ...duchenneEN,
     },
   },
   ru: {
@@ -110,6 +115,7 @@ const resources = {
       ...lu177RU,
       ...newsRU,
       ...safeTreatmentAbroadRU,
+      ...duchenneRU,
     },
   },
   pl: {
@@ -130,6 +136,7 @@ const resources = {
       ...lu177PL,
       ...newsPL,
       ...safeTreatmentAbroadPL,
+      ...duchennePL,
     },
   },
   ar: {
@@ -150,6 +157,7 @@ const resources = {
       ...lu177AR,
       ...newsAR,
       ...safeTreatmentAbroadAR,
+      ...duchenneAR,
     },
   },
 };
@@ -164,7 +172,7 @@ i18n
     fallbackLng: 'en',
     debug: true,
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
     },
     detection: {
       order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
@@ -172,11 +180,9 @@ i18n
     },
   })
   .then(() => {
-    // При первой загрузке выставляем направление документа
     document.documentElement.dir = rtlLanguages.includes(i18n.language) ? 'rtl' : 'ltr';
   });
 
-// Подписываемся на смену языка в рантайме
 i18n.on('languageChanged', (lng) => {
   document.documentElement.dir = rtlLanguages.includes(lng) ? 'rtl' : 'ltr';
 });
