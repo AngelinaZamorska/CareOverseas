@@ -45,11 +45,11 @@ const SafeTreatmentAbroadPage = () => {
             </motion.h1>
           </div>
         </div>
-        <section className="py-12 bg-white">
+        <div className="py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
             <p className="text-gray-700">{content.introduction}</p>
           </div>
-        </section>
+        </div>
 
         <div className="container mx-auto px-6 py-16">
           <motion.div 
