@@ -102,7 +102,7 @@ const resources = {
       // Новости
       ...newsEN,
       ...safeTreatmentAbroadEN,
-      //...duchenneEN,
+      ...duchenneEN,
     },
   },
   ru: {
