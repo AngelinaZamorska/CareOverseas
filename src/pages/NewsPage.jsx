@@ -5,12 +5,7 @@ import { motion } from 'framer-motion';
 import { Newspaper, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-console.log("📰 Articles array:", articles);
-articles.forEach((a, i) => {
-  console.log(`  [${i}] slug=${a.slug}`, 
-              "titleKey=", a.titleKey, "→", t(a.titleKey),
-              "descriptionKey=", a.descriptionKey, "→", t(a.descriptionKey));
-});
+
 const NewsPage = () => {
   const { t } = useTranslation();
 
