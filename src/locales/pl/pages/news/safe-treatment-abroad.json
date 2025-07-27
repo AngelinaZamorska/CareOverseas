@@ -1,30 +1,66 @@
 {
   "safeTreatmentAbroad": {
-    "metaTitle": "Bezpieczne leczenie za granicą: Dlaczego Europa i Turcja to najlepszy wybór",
-    "metaDescription": "Dowiedz się, dlaczego Niemcy, Turcja i Hiszpania są najlepszymi kierunkami turystyki medycznej, oferując stabilność i zaawansowaną opiekę zdrowotną w obliczu globalnych konfliktów. Słowa kluczowe: turystyka medyczna, bezpieczne leczenie za granicą, leczenie w Niemczech, turystyka medyczna w Turcji, leczenie w Hiszpanii, stres a zdrowie, zaawansowana medycyna.",
-    "keywords": "turystyka medyczna, bezpieczne leczenie za granicą, leczenie w Niemczech, turystyka medyczna w Turcji, leczenie w Hiszpanii, stres a zdrowie, zaawansowana medycyna",
-    "title": "Bezpieczne leczenie za granicą: Dlaczego Europa i Turcja to najlepszy wybór",
-    "summary": {
-      "conflictGrowth": "Wzrost konfliktów: Działania wojenne na świecie nasiliły się, zmuszając pacjentów do szukania bezpiecznych miejsc do leczenia.",
-      "safeDestinations": "Bezpieczne kierunki: Niemcy, Turcja i Hiszpania oferują stabilność i wysokiej jakości medycynę.",
-      "stressImpact": "Wpływ stresu: Badania pokazują, że stres pogarsza wyniki leczenia.",
-      "optimizedSolution": "Zoptymalizowane rozwiązanie: Złóż wniosek, aby znaleźć odpowiednią klinikę i lekarza."
-    },
-    "section1": {
-      "title": "Dlaczego warto wybierać bezpieczne kraje do leczenia?",
-      "paragraph": "W obliczu narastających konfliktów zbrojnych pacjenci szukają spokojnych regionów do leczenia. Niemcy, Turcja i Hiszpania zapewniają bezpieczeństwo i zaawansowane usługi medyczne, pomagając skupić się na powrocie do zdrowia. Przewlekły stres spowodowany niestabilnością może spowolnić rekonwalescencję. Według Journal of Psychosomatic Research (2023) stres osłabia układ odpornościowy, spowalnia gojenie się ran i zaostrza choroby przewlekłe, takie jak rak czy choroby serca."
-    },
-    "section2": {
-      "title": "Najlepsze kierunki turystyki medycznej",
-      "germany": "Niemcy: Lider w kardiologii, onkologii i neurologii z nowoczesnymi technologiami.",
-      "turkey": "Turcja: Znana z chirurgii kosmetycznej, stomatologii i przeszczepów włosów w przystępnych cenach.",
-      "spain": "Hiszpania: Specjalizuje się w ortopedii, rehabilitacji i medycynie estetycznej.",
-      "paragraph": "Te kraje oferują certyfikowane kliniki z zaawansowanym sprzętem do dokładnej diagnostyki i skutecznego leczenia."
-    },
-    "cta": {
-      "title": "Rozpocznij swoją drogę do zdrowia",
-      "paragraph": "Szukasz bezpiecznego i wysokiej jakości leczenia za granicą? Zostaw zapytanie na naszej stronie, a my skontaktujemy się z Tobą w ciągu 24 godzin, aby znaleźć najlepszą klinikę i lekarza dla Twoich potrzeb."
-    },
-    "backToNews": "Powrót do aktualności"
+    "title": "Bezpieczne leczenie za granicą – turystyka medyczna w Europie i Turcji 2025",
+    "subtitle": "Doświadcz światowej klasy leczenia w Niemczech, Turcji i Hiszpanii dzięki bezpiecznej turystyce medycznej w 2025 roku.",
+    "cta_primary": "Uzyskaj bezpłatną konsultację",
+    "backToNews": "Powrót do aktualności",
+    "sections": {
+      "1": {
+        "heading": "1. Rośnie popyt na bezpieczne leczenie za granicą",
+        "points": [
+          "Rynek medycznej turystyki przekroczy 200 mld USD do 2030 roku",
+          "Pacjenci oczekują stabilności: od kontroli zakażeń po przejrzyste koszty",
+          "Najpopularniejsze kierunki: Niemcy, Turcja, Hiszpania"
+        ]
+      },
+      "2": {
+        "heading": "2. Jak stres wpływa na wyniki terapii",
+        "points": [
+          "Stres przewlekły i układ odpornościowy: niepokój opóźnia gojenie i zwiększa ryzyko powikłań.",
+          "Efekty psychosomatyczne: obniżenie poziomu stresu o 30% może zwiększyć skuteczność chemioterapii i przyspieszyć rehabilitację po zabiegach.",
+          "Środowisko sprzyjające leczeniu: ciepły klimat Hiszpanii, malownicze krajobrazy Turcji i dobrze zorganizowane niemieckie kliniki wspierają szybszy powrót do zdrowia."
+        ]
+      },
+      "3": {
+        "heading": "3. Najlepsze kierunki w pigułce",
+        "table": {
+          "headers": ["Kraj", "Specjalizacje", "Bezpieczeństwo i komfort", "Najważniejsze cechy"],
+          "rows": [
+            [
+              "Niemcy 🇩🇪",
+              "Kardiologia, Onkologia, Neurologia",
+              "Niskie wskaźniki przestępczości, rygorystyczne procedury",
+              "Operacje wspomagane robotami, integracja AI"
+            ],
+            [
+              "Turcja 🇹🇷",
+              "Chirurgia estetyczna, stomatologia, in vitro",
+              "Rozwinięta infrastruktura, elastyczne ceny",
+              "Pakiety klinika+hotel, całodobowa obsługa"
+            ],
+            [
+              "Hiszpania 🇪🇸",
+              "Ortopedia, Rehabilitacja, Medycyna estetyczna",
+              "Korzystny klimat, przyjazna obsługa",
+              "Lokalne zabiegi spa dla szybszego powrotu do formy"
+            ]
+          ]
+        }
+      },
+      "4": {
+        "heading": "4. Jak rozpocząć swoją podróż medyczną",
+        "points": [
+          "Konsultacja online: wstępna ocena na podstawie Twoich dokumentów medycznych",
+          "Wybór kliniki i lekarza: na podstawie ocen, opinii i wyników poprzednich pacjentów",
+          "Logistyka i wsparcie: rezerwacja lotu, transferu, zakwaterowania i tłumacza",
+          "Całodobowa koordynacja: dedykowany opiekun medyczny dostępny 24/7"
+        ]
+      },
+      "conclusion": {
+        "heading": "Gotowi, aby zacząć?",
+        "text": "Złóż zgłoszenie, a my w ciągu 24 godzin przygotujemy dla Ciebie spersonalizowany plan leczenia.",
+        "cta": "Złóż zgłoszenie"
+      }
+    }
   }
 }
