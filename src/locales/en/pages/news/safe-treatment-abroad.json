@@ -1,50 +1,25 @@
 {
   "safeTreatmentAbroad": {
-    "metaTitle": "Safe & Stress-Free Medical Tourism in 2025 | Germany, Turkey, Spain",
-    "metaDescription": "Experience top-quality, secure medical care in Germany, Turkey, and Spain. From advanced diagnostics to comprehensive support—discover why 2025 is the year for safe treatment abroad.",
-    "keywords": "medical tourism 2025, safe treatment abroad, Germany medical tourism, Turkey healthcare travel, Spain rehab tourism, stress-free recovery, advanced medical travel",
-    "title": "Safe & Stress-Free Treatment Abroad in 2025",
-    "introduction": "With global instability rising, patients are seeking reliable, high-quality medical care in stable environments. In 2025, Germany, Turkey, and Spain stand out for combining cutting-edge technology, patient-focused service, and tranquil settings—ensuring both safety and comfort.",
-    "highlights": [
-      { "icon": "ShieldCheck", "text": "Stable environments with rigorous safety and infection control protocols." },
-      { "icon": "Map", "text": "Access to world-class specialists in cardiology, oncology, orthopedics, and more." },
-      { "icon": "HeartPulse", "text": "Environment designed to reduce stress and boost recovery outcomes." },
-      { "icon": "Brain", "text": "Personalized treatment plans leveraging AI and advanced medical technologies." }
-    ],
-    "benefits": {
-      "title": "Why Choose Our Top Destinations",
-      "table": {
-        "headers": ["Country", "Specializations", "Safety & Comfort", "Unique Features"],
-        "rows": [
-          {
-            "Country": "Germany 🇩🇪",
-            "Specializations": "Cardiology, Oncology, Neurology",
-            "Safety & Comfort": "Low crime rate, transparent pricing, accredited facilities",
-            "Unique Features": "Robot-assisted surgeries, AI-driven diagnostics"
-          },
-          {
-            "Country": "Turkey 🇹🇷",
-            "Specializations": "Cosmetic Surgery, Dentistry, IVF",
-            "Safety & Comfort": "24/7 concierge services, bundled clinic+hotel packages",
-            "Unique Features": "Competitive pricing, multilingual support"
-          },
-          {
-            "Country": "Spain 🇪🇸",
-            "Specializations": "Orthopedics, Rehabilitation, Aesthetic Medicine",
-            "Safety & Comfort": "Mild Mediterranean climate, spa-based recovery",
-            "Unique Features": "Holistic wellness programs, scenic recovery retreats"
-          }
-        ]
-      }
+    "metaTitle": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
+    "metaDescription": "Learn why Germany, Turkey, and Spain are top destinations for medical tourism, offering stability and advanced healthcare amidst global conflicts. Keywords: medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine.",
+    "keywords": "medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine",
+    "title": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
+    "summary": {
+      "conflictGrowth": "Rising Conflicts: Military actions worldwide have increased, forcing patients to seek safe places for treatment.",
+      "safeDestinations": "Safe Destinations: Germany, Turkey, and Spain offer stability and high-quality medicine.",
+      "stressImpact": "Impact of Stress: Research shows that stress worsens treatment outcomes.",
+      "optimizedSolution": "Optimized Solution: Submit a request to find a suitable clinic and doctor."
     },
-    "howItWorks": {
-      "title": "How Our Process Works",
-      "steps": [
-        { "title": "Online Consultation", "description": "Upload your medical records for a specialist review and personalized assessment." },
-        { "title": "2. Clinic & Doctor Matching", "description": "We select accredited clinics and top-rated physicians based on your needs." },
-        { "title": "Travel & Stay", "description": "We handle flights, transfers, accommodations, and interpreter services." },
-        { "title": "Ongoing Support", "description": "Your dedicated coordinator provides 24/7 assistance throughout your journey." }
-      ]
+    "section1": {
+      "title": "Why Choose Safe Countries for Treatment?",
+      "paragraph": "Amidst growing military conflicts, patients are seeking calm regions for treatment. Germany, Turkey, and Spain provide security and advanced medical services, helping them focus on recovery. Chronic stress from instability can slow down recovery. According to the Journal of Psychosomatic Research (2023), stress weakens the immune system, slows wound healing, and exacerbates chronic conditions like cancer or heart disease."
+    },
+    "section2": {
+      "title": "Top Destinations for Medical Tourism",
+      "germany": "Germany: A leader in cardiology, oncology, and neurology with modern technologies.",
+      "turkey": "Turkey: Known for cosmetic surgery, dentistry, and hair transplantation at affordable prices.",
+      "spain": "Spain: Specializes in orthopedics, rehabilitation, and aesthetic medicine.",
+      "paragraph": "These countries offer certified clinics with advanced equipment for accurate diagnosis and effective treatment."
     },
     "cta": {
       "title": "Start Your Journey to Health",
