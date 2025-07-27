@@ -1,30 +1,33 @@
 {
   "safeTreatmentAbroad": {
-    "metaTitle": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
-    "metaDescription": "Learn why Germany, Turkey, and Spain are top destinations for medical tourism, offering stability and advanced healthcare amidst global conflicts. Keywords: medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine.",
-    "keywords": "medical tourism, safe treatment abroad, treatment in Germany, medical tourism in Turkey, treatment in Spain, stress and health, advanced medicine",
-    "title": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
+    "metaTitle": "Safe Treatment Abroad: Why Europe and Turkey Are the Best Choices in 2025",
+    "metaDescription": "Discover why Germany, Turkey, and Spain lead medical tourism in 2025, offering advanced technology, high-quality care, and serene environments for your safe and stress-free recovery.",
+    "keywords": "medical tourism, safe treatment abroad, treatment in Germany, treatment in Turkey, treatment in Spain, stress and recovery, advanced clinics",
+    "title": "Safe Treatment Abroad: Why Europe and Turkey Are the Best Choices in 2025",
     "summary": {
-      "conflictGrowth": "Rising Conflicts: Military actions worldwide have increased, forcing patients to seek safe places for treatment.",
-      "safeDestinations": "Safe Destinations: Germany, Turkey, and Spain offer stability and high-quality medicine.",
-      "stressImpact": "Impact of Stress: Research shows that stress worsens treatment outcomes.",
-      "optimizedSolution": "Optimized Solution: Submit a request to find a suitable clinic and doctor."
+      "conflictGrowth": "Growing demand as patients seek stability and systematic safety measures in times of geopolitical uncertainty.",
+      "safeDestinations": "Choosing safe destinations like Germany, Turkey, and Spain with rigorous infection control and transparent pricing.",
+      "stressImpact": "Understanding how chronic stress affects healing and the benefits of a calm recovery environment.",
+      "optimizedSolution": "Leveraging advanced technologies and personalized support for optimal treatment outcomes."
     },
     "section1": {
-      "title": "Why Choose Safe Countries for Treatment?",
-      "paragraph": "Amidst growing military conflicts, patients are seeking calm regions for treatment. Germany, Turkey, and Spain provide security and advanced medical services, helping them focus on recovery. Chronic stress from instability can slow down recovery. According to the Journal of Psychosomatic Research (2023), stress weakens the immune system, slows wound healing, and exacerbates chronic conditions like cancer or heart disease."
+      "title": "The Rise of Safe Treatment Abroad",
+      "paragraph": "Medical tourism is booming, with experts predicting the global market will surpass $200 billion by 2030, driven largely by patients from conflict zones seeking stability and top-tier care."
     },
     "section2": {
-      "title": "Top Destinations for Medical Tourism",
-      "germany": "Germany: A leader in cardiology, oncology, and neurology with modern technologies.",
-      "turkey": "Turkey: Known for cosmetic surgery, dentistry, and hair transplantation at affordable prices.",
-      "spain": "Spain: Specializes in orthopedics, rehabilitation, and aesthetic medicine.",
-      "paragraph": "These countries offer certified clinics with advanced equipment for accurate diagnosis and effective treatment."
+      "title": "Advantages of Top Destinations",
+      "paragraph": "Germany leads in cardiology, oncology, and neurology with low crime rates and clear protocols; Turkey excels in cosmetic surgery, dentistry, and IVF with flexible pricing; Spain offers top orthopedics, rehabilitation, and aesthetic medicine in a warm climate and friendly service.",
+      "germany": "Germany 🇩🇪 — Cardiology, oncology, neurology with robot-assisted surgeries and AI integration in state-of-the-art clinics.",
+      "turkey": "Turkey 🇹🇷 — Cosmetic surgery, dentistry, IVF with all-inclusive clinic-and-hotel packages and 24/7 guest services.",
+      "spain": "Spain 🇪🇸 — Orthopedics, rehabilitation, aesthetic medicine with spa therapies for enhanced recovery in a sunny climate."
     },
     "cta": {
-      "title": "Start Your Journey to Health",
-      "paragraph": "Looking for safe and high-quality treatment abroad? Leave a request on our website, and we will contact you within 24 hours to find the best clinic and doctor for your needs."
+      "title": "Ready to Start Your Safe Treatment Journey?",
+      "paragraph": "Leave a request on our website, and within 24 hours we'll provide a personalized solution for your case."
     },
-     "backToNews": "Back to News"
+    "backToNews": "Back to News"
+  },
+  "header": {
+    "freeConsultation": "Get Your Free Consultation"
   }
 }
