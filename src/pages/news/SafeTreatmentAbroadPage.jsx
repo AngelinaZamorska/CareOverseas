@@ -151,29 +151,23 @@ const SafeTreatmentAbroadPage = () => {
             </ol>
           </motion.section>
 
-          {/* Conclusion & CTA */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={5}
-            variants={sectionVariants}
-            className="mt-12 text-center"
-          >
+           {/* Conclusion & CTA */}
+          <motion.section initial="hidden" animate="visible" custom={5} variants={sectionVariants} className="mt-12 text-center">
             <h2 className="text-3xl font-bold mb-4 flex items-center justify-center text-teal-600">
               <ShieldCheck className="mr-2" /> {content.sections.conclusion.heading}
             </h2>
             <p className="text-gray-700 mb-6">{content.sections.conclusion.text}</p>
-            <div className="flex justify-center space-x-4">
+            <div className="flex flex-col items-center">
               <Link to="/#contact">
-                <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600" size="lg">
+                <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600 px-10 py-5 text-2xl" size="xl">
                   {t('header.freeConsultation')}
                 </Button>
               </Link>
               <button
                 onClick={() => window.history.back()}
-                className="inline-flex items-center text-lg text-gray-600 hover:text-gray-800"
+                className="mt-2 inline-flex items-center text-xs text-gray-600 hover:text-gray-800"
               >
-                <ArrowLeft className="mr-2" /> {content.backToNews}
+                <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
               </button>
             </div>
           </motion.section>
