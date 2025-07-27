@@ -39,13 +39,13 @@ const CardiacSurgeryPage = () => {
         <meta name="description" content={t('cardiacPage.description')} />
         <meta property="og:title" content={t('cardiacPage.title')} />
         <meta property="og:description" content={t('cardiacPage.description')} />
-        <meta property="og:image" content="/images/modern-cardiac-room.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/cardiac-surgery" />
+        <meta property="og:image" content="https://careoverseas.space/modern-cardiac-room.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/cardiac-surgery-germany" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('cardiacPage.title')} />
         <meta name="twitter:description" content={t('cardiacPage.description')} />
-        <meta name="twitter:image" content="/images/modern-cardiac-room.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/modern-cardiac-room.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

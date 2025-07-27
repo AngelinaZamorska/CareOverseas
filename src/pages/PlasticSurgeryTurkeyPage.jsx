@@ -80,13 +80,13 @@ const PlasticSurgeryTurkeyPage = () => {
         <meta name="description" content={t('plasticSurgeryPage.description')} />
         <meta property="og:title" content={t('plasticSurgeryPage.title')} />
         <meta property="og:description" content={t('plasticSurgeryPage.description')} />
-        <meta property="og:image" content="/images/plastic-surgery-turkey-cover.jpg" />
+        <meta property="og:image" content="https://careoverseas.space/plastic-surgery-turkey-cover.jpg" />
         <meta property="og:url" content="https://careoverseas.space/plastic-surgery-turkey" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('plasticSurgeryPage.title')} />
         <meta name="twitter:description" content={t('plasticSurgeryPage.description')} />
-        <meta name="twitter:image" content="/images/plastic-surgery-turkey-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/plastic-surgery-turkey-cover.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

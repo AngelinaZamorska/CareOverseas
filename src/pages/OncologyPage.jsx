@@ -43,13 +43,13 @@ const OncologyPage = () => {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={t('oncologyPage.meta.title')} />
         <meta property="og:description" content={t('oncologyPage.meta.description')} />
-        <meta property="og:image" content="/oncology-cover.jpg" />
+        <meta property="og:image" content="https://careoverseas.space/oncology-cover.jpg" />
         <meta property="og:url" content="https://careoverseas.space/oncology-treatment" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('oncologyPage.meta.title')} />
         <meta name="twitter:description" content={t('oncologyPage.meta.description')} />
-        <meta name="twitter:image" content="/oncology-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/oncology-cover.jpg" />
       </Helmet>
 
       <div className="bg-white">

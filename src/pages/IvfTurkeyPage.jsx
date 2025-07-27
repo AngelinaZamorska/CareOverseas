@@ -39,13 +39,13 @@ const IvfTurkeyPage = () => {
         <meta name="description" content={t('ivfTurkeyPage.description')} />
         <meta property="og:title" content={t('ivfTurkeyPage.title')} />
         <meta property="og:description" content={t('ivfTurkeyPage.description')} />
-        <meta property="og:image" content="/images/ivf-clinic-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/ivf-turkey" />
+        <meta property="og:image" content="https://careoverseas.space/ivf-clinic-cover.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/ivf-in-turkey" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('ivfTurkeyPage.title')} />
         <meta name="twitter:description" content={t('ivfTurkeyPage.description')} />
-        <meta name="twitter:image" content="/images/ivf-clinic-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/ivf-clinic-cover.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

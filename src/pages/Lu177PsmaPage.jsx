@@ -42,6 +42,16 @@ const Lu177PsmaPage = () => {
         <title>{t('lu177Page.meta.title')}</title>
         <meta name="description" content={t('lu177Page.meta.description')} />
         <meta name="keywords" content={t('lu177Page.meta.keywords')} />
+        <meta property="og:title" content={t('lu177Page.meta.title')} />
+        <meta property="og:description" content={t('lu177Page.meta.description')} />
+        <meta property="og:image" content="https://careoverseas.space/lu177-treatment.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/lu-177-psma-therapy" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('lu177Page.meta.title')} />
+        <meta name="twitter:description" content={t('lu177Page.meta.description')} />
+        <meta name="twitter:image" content="https://careoverseas.space/lu177-treatment.jpg" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="bg-white">

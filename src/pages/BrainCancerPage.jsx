@@ -51,13 +51,13 @@ const BrainCancerPage = () => {
         <meta name="description" content={t('neurosurgeryPage.description')} />
         <meta property="og:title" content={t('neurosurgeryPage.title')} />
         <meta property="og:description" content={t('neurosurgeryPage.description')} />
-        <meta property="og:image" content="/images/brain-cancer-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/brain-cancer" />
+        <meta property="og:image" content="https://careoverseas.space/brain-surgery.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/neurosurgery" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('neurosurgeryPage.title')} />
         <meta name="twitter:description" content={t('neurosurgeryPage.description')} />
-        <meta name="twitter:image" content="/images/brain-cancer-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/brain-surgery.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

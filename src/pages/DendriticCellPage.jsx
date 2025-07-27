@@ -39,13 +39,13 @@ const DendriticCellPage = () => {
         <meta name="description" content={t('dendriticCellPage.description')} />
         <meta property="og:title" content={t('dendriticCellPage.title')} />
         <meta property="og:description" content={t('dendriticCellPage.ogDescription')} />
-        <meta property="og:image" content="/images/dendritic-cell-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/immunotherapy-dendritic-cell" />
+        <meta property="og:image" content="https://careoverseas.space/dendritic-cell-vaccine-germany.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/dendritic-cell-therapy-germany" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('dendriticCellPage.title')} />
         <meta name="twitter:description" content={t('dendriticCellPage.ogDescription')} />
-        <meta name="twitter:image" content="/images/dendritic-cell-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/dendritic-cell-vaccine-germany.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

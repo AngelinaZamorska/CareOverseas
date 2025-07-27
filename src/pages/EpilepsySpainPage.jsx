@@ -59,13 +59,13 @@ const EpilepsySpainPage = () => {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={t('epilepsySpainPage.title')} />
         <meta property="og:description" content={t('epilepsySpainPage.description')} />
-        <meta property="og:image" content="/images/epilepsy-spain-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/epilepsy-spain" />
+        <meta property="og:image" content="https://careoverseas.space/epilepsy-spain-hero.jpg" />
+        <meta property="og:url" content="https://careoverseas.space/epilepsy-treatment-spain" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('epilepsySpainPage.title')} />
         <meta name="twitter:description" content={t('epilepsySpainPage.description')} />
-        <meta name="twitter:image" content="/images/epilepsy-spain-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/epilepsy-spain-hero.jpg" />
       </Helmet>
 
       <div className="text-base leading-relaxed">

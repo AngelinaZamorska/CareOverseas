@@ -45,6 +45,18 @@ const RheumatologyIsraelPage = () => {
       <Helmet>
         <title>{t('rheumatologyIsraelPage.title')}</title>
         <meta name="description" content={t('rheumatologyIsraelPage.description')} />
+        {/* Open Graph */}
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={t('rheumatologyIsraelPage.title')} />
+  <meta property="og:description" content={t('rheumatologyIsraelPage.description')} />
+  <meta property="og:url" content={`https://careoverseas.space/rheumatology-israel`} />
+  <meta property="og:image" content="https://careoverseas.space/joint-pain.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={t('rheumatologyIsraelPage.title')} />
+  <meta name="twitter:description" content={t('rheumatologyIsraelPage.description')} />
+  <meta name="twitter:image" content="https://careoverseas.space/joint-pain.jpg" />
       </Helmet>
 
       <div className="bg-white">

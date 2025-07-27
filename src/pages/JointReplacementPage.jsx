@@ -39,13 +39,13 @@ const JointReplacementPage = () => {
         <meta name="description" content={t('jointReplacementPage.description')} />
         <meta property="og:title" content={t('jointReplacementPage.title')} />
         <meta property="og:description" content={t('jointReplacementPage.description')} />
-        <meta property="og:image" content="/images/joint-replacement-cover.jpg" />
+        <meta property="og:image" content="https://careoverseas.space/joint-replacement-cover.jpg" />
         <meta property="og:url" content="https://careoverseas.space/joint-replacement" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('jointReplacementPage.title')} />
         <meta name="twitter:description" content={t('jointReplacementPage.description')} />
-        <meta name="twitter:image" content="/images/joint-replacement-cover.jpg" />
+        <meta name="twitter:image" content="https://careoverseas.space/joint-replacement-cover.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
