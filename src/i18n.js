@@ -162,13 +162,12 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
-    debug: process.env.NODE_ENV === 'development',
+    debug: true,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
     detection: {
-      order: ['path', 'querystring', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
-      lookupQuerystring: 'lng',
+      order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
       caches: ['cookie'],
     },
   })
