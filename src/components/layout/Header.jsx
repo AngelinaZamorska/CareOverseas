@@ -32,7 +32,7 @@ const Header = () => {
 
   const linkBase = 'text-gray-800 px-4 py-2 font-semibold rounded-lg transition-all ease-out duration-200';
   const linkHover = 'hover:bg-blue-50 hover:text-blue-600';
-  const buttonPrimary = 'bg-gradient-to-r from-blue-500 to-purple-500 text-white';
+  const buttonPrimary = 'bg-gradient-to-r from-blue-500 to-purple-500 text-white whitespace-nowrap';
 
   const NavLink = ({ scrollTo, to, children, isDropdown = false, sublinks = [] }) => {
     const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ const Header = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             className={`${linkBase} ${linkHover} inline-flex items-center`}
-            onClick={() => setOpen(prev => !prev)}
+            onClick={() => setOpen((prev) => !prev)}
           >
             {children}
             <ChevronDown className="ml-1 h-4 w-4" />
@@ -92,11 +92,7 @@ const Header = () => {
 
     return (
       <motion.button whileHover={{ scale: 1.05 }}>
-        <Link
-          to={to}
-          className={`${linkBase} ${linkHover}`}
-          onClick={() => setMenuOpen(false)}
-        >
+        <Link to={to} className={`${linkBase} ${linkHover}`} onClick={() => setMenuOpen(false)}>
           {children}
         </Link>
       </motion.button>
@@ -105,22 +101,30 @@ const Header = () => {
 
   return (
     <header className="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+      <nav className="max-w-7xl mx-auto px-6 py-4 grid grid-cols-[auto_1fr_auto] items-center">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex-shrink-0"
         >
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-2">
             <img
               src="/android-chrome-192x192.png"
               alt="CareOverseasSpace"
               className="h-10 w-10 md:h-12 md:w-12 rounded-xl"
             />
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent whitespace-nowrap">
-              CareOverseasSpace
-            </span>
+            <div className="h-10 md:h-12 grid grid-rows-3">
+              <span className="text-xs md:text-sm font-bold leading-none bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                Care
+              </span>
+              <span className="text-xs md:text-sm font-bold leading-none bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                Overseas
+              </span>
+              <span className="text-xs md:text-sm font-bold leading-none bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                Space
+              </span>
+            </div>
           </Link>
         </motion.div>
 
@@ -161,7 +165,7 @@ const Header = () => {
         {/* Mobile menu toggle */}
         <div className="md:hidden flex items-center space-x-3">
           <LanguageSwitcher />
-          <button onClick={() => setMenuOpen(prev => !prev)}>
+          <button onClick={() => setMenuOpen((prev) => !prev)}>
             {menuOpen ? <X className="h-6 w-6 text-gray-800" /> : <Menu className="h-6 w-6 text-gray-800" />}
           </button>
         </div>
