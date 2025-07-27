@@ -15,21 +15,22 @@ const NewsPage = () => {
 
   const articles = [
     {
-      slug: '/news/safe-treatment-abroad',
-      titleKey: 'newsPage.articlePreviewTitle',
-      descriptionKey: 'newsPage.articlePreviewDescription',
-      imageAlt: 'Patient fleeing war',
-      image: 'https://careoverseas.space/news-war.jpg',
-      date: '16.07.2025'
-    },
-    {
       slug: '/news/duchenne-muscular-dystrophy',
       titleKey: 'newsPage.duchenneTitle',
       descriptionKey: 'newsPage.duchenneDescription',
       imageAlt: 'Boy in wheelchair with supportive family',
       image: 'https://careoverseas.space/news-duchenne.jpg',
       date: '27.07.2025'
+    },
+    {
+      slug: '/news/safe-treatment-abroad',
+      titleKey: 'newsPage.articlePreviewTitle',
+      descriptionKey: 'newsPage.articlePreviewDescription',
+      imageAlt: 'Patient fleeing war',
+      image: 'https://careoverseas.space/news-war.jpg',
+      date: '16.07.2025'
     }
+    
   ];
 
   return (
