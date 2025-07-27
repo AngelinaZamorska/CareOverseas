@@ -163,6 +163,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
+    lng: 'en',
     debug: true,
     interpolation: {
       escapeValue: false, // React уже защищён от XSS
