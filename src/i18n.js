@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Import translations
+// Import translations for pages
 import translationEN from './locales/en/common.json';
 import homeEN from './locales/en/pages/home.json';
 import cardiacEN from './locales/en/pages/cardiac.json';
@@ -17,10 +17,13 @@ import jointEN from './locales/en/pages/joint.json';
 import plasticEN from './locales/en/pages/plastic.json';
 import oncologyEN from './locales/en/pages/oncology.json';
 import lu177EN from './locales/en/pages/lu177.json';
+
+// News section translations
 import newsEN from './locales/en/pages/news.json';
 import safeTreatmentAbroadEN from './locales/en/pages/news/safe-treatment-abroad.json';
 import duchenneEN from './locales/en/pages/news/duchenne.json';
 
+// Russian translations
 import translationRU from './locales/ru/common.json';
 import homeRU from './locales/ru/pages/home.json';
 import cardiacRU from './locales/ru/pages/cardiac.json';
@@ -35,10 +38,13 @@ import jointRU from './locales/ru/pages/joint.json';
 import plasticRU from './locales/ru/pages/plastic.json';
 import oncologyRU from './locales/ru/pages/oncology.json';
 import lu177RU from './locales/ru/pages/lu177.json';
+
+// News section translations
 import newsRU from './locales/ru/pages/news.json';
 import safeTreatmentAbroadRU from './locales/ru/pages/news/safe-treatment-abroad.json';
 import duchenneRU from './locales/ru/pages/news/duchenne.json';
 
+// Polish translations
 import translationPL from './locales/pl/common.json';
 import homePL from './locales/pl/pages/home.json';
 import cardiacPL from './locales/pl/pages/cardiac.json';
@@ -53,10 +59,13 @@ import jointPL from './locales/pl/pages/joint.json';
 import plasticPL from './locales/pl/pages/plastic.json';
 import oncologyPL from './locales/pl/pages/oncology.json';
 import lu177PL from './locales/pl/pages/lu177.json';
+
+// News section translations
 import newsPL from './locales/pl/pages/news.json';
 import safeTreatmentAbroadPL from './locales/pl/pages/news/safe-treatment-abroad.json';
 import duchennePL from './locales/pl/pages/news/duchenne.json';
 
+// Arabic translations
 import translationAR from './locales/ar/common.json';
 import homeAR from './locales/ar/pages/home.json';
 import cardiacAR from './locales/ar/pages/cardiac.json';
@@ -71,6 +80,8 @@ import jointAR from './locales/ar/pages/joint.json';
 import plasticAR from './locales/ar/pages/plastic.json';
 import oncologyAR from './locales/ar/pages/oncology.json';
 import lu177AR from './locales/ar/pages/lu177.json';
+
+// News section translations
 import newsAR from './locales/ar/pages/news.json';
 import safeTreatmentAbroadAR from './locales/ar/pages/news/safe-treatment-abroad.json';
 import duchenneAR from './locales/ar/pages/news/duchenne.json';
@@ -92,6 +103,7 @@ const resources = {
       ...plasticEN,
       ...oncologyEN,
       ...lu177EN,
+      // News section
       ...newsEN,
       ...safeTreatmentAbroadEN,
       ...duchenneEN,
@@ -113,6 +125,7 @@ const resources = {
       ...plasticRU,
       ...oncologyRU,
       ...lu177RU,
+      // News section
       ...newsRU,
       ...safeTreatmentAbroadRU,
       ...duchenneRU,
@@ -134,6 +147,7 @@ const resources = {
       ...plasticPL,
       ...oncologyPL,
       ...lu177PL,
+      // News section
       ...newsPL,
       ...safeTreatmentAbroadPL,
       ...duchennePL,
@@ -155,6 +169,7 @@ const resources = {
       ...plasticAR,
       ...oncologyAR,
       ...lu177AR,
+      // News section
       ...newsAR,
       ...safeTreatmentAbroadAR,
       ...duchenneAR,
@@ -172,7 +187,7 @@ i18n
     fallbackLng: 'en',
     debug: true,
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // React already protects from XSS
     },
     detection: {
       order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
