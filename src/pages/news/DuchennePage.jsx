@@ -243,11 +243,6 @@ const DuchennePage = () => {
     </table>
   </div>
 
-  <div className="mt-8 space-y-4 text-gray-700 prose prose-purple max-w-none">
-    {content.sections.impact.paragraphs.map((p, i) => (
-      <p key={i}>{p}</p>
-    ))}
-  </div>
 </motion.section>
 
 
