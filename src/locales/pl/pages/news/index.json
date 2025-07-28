@@ -155,32 +155,54 @@
         }
       },
       "impact": {
-        "title": "Wpływ DMD na jakość życia dzieci i ich rodzin",
-        "paragraphs": [
-          "DMD ma głęboki wpływ zarówno na dzieci, jak i na ich rodziny:",
-          "Ograniczenia fizyczne: Postępujące osłabienie mięśni ogranicza udział dzieci w codziennych aktywnościach. W wieku nastoletnim większość dzieci wymaga już wózka inwalidzkiego (Cleveland Clinic, 2025).",
-          "Wpływ emocjonalny i społeczny: Dzieci z DMD często doświadczają izolacji społecznej i obniżonej samooceny (ScienceDirect, 2016).",
-          "Obciążenie rodzin: Opieka nad dzieckiem z DMD wiąże się z dużym stresem emocjonalnym, fizycznym i finansowym (ResearchGate, 2011)."
-        ],
-        "table": {
-          "headers": ["Aspekt", "Wpływ na dziecko", "Wpływ na rodzinę"],
-          "rows": [
-            { "aspect": "Fizyczny", "impactOnChild": "Utrata mobilności", "impactOnFamily": "Fizyczne obciążenie opieką" },
-            { "aspect": "Emocjonalny", "impactOnChild": "Izolacja", "impactOnFamily": "Stres emocjonalny, niepokój o przyszłość" },
-            { "aspect": "Społeczny", "impactOnChild": "Ograniczony udział w zabawie i życiu społecznym", "impactOnFamily": "Izolacja społeczna, presja finansowa" }
-          ]
+    "title": "Jak dystrofia mięśniowa Duchenne’a wpływa na jakość życia dzieci i ich rodzin",
+    "intro": "Dystrofia mięśniowa Duchenne’a znacząco wpływa na pacjentów i ich najbliższych:",
+    "table": {
+      "headers": ["Aspekt", "Wpływ na dzieci", "Wpływ na rodziny"],
+      "rows": [
+        {
+          "aspect": "Fizyczny",
+          "impactOnChildren": "Utrata mobilności, zależność od wózka inwalidzkiego",
+          "impactOnFamilies": "Obciążenie fizyczne związane z opieką"
+        },
+        {
+          "aspect": "Emocjonalny",
+          "impactOnChildren": "Poczucie izolacji, obniżona samoocena",
+          "impactOnFamilies": "Stres emocjonalny, niepokój o przyszłość"
+        },
+        {
+          "aspect": "Społeczny",
+          "impactOnChildren": "Ograniczone uczestnictwo w aktywnościach",
+          "impactOnFamilies": "Izolacja społeczna, presja finansowa"
         }
+      ]
+    }
+  },
+  "tourism": {
+    "title": "Dlaczego warto wybrać turystykę medyczną w leczeniu dystrofii mięśniowej Duchenne’a",
+    "benefits": [
+      {
+        "icon": "Brain",
+        "title": "Dostęp do czołowych ekspertów",
+        "description": "Współpracujemy z uznanymi neurologami i specjalistami ds. zaburzeń nerwowo‑mięśniowych."
       },
-      "tourism": {
-        "title": "Dlaczego warto rozważyć leczenie DMD za granicą?",
-        "paragraphs": [
-          "Turystyka medyczna daje nowe możliwości rodzinom dzieci z DMD:",
-          "Dostęp do najlepszych specjalistów: Współpracujemy z uznanymi neurologami i ekspertami od chorób nerwowo-mięśniowych w renomowanych klinikach na całym świecie.",
-          "Nowoczesne terapie: Uzyskaj dostęp do terapii genowej, badań klinicznych i innowacyjnych metod leczenia niedostępnych w Twoim kraju.",
-          "Kompleksowa rehabilitacja: Programy obejmujące fizjoterapię, wsparcie psychologiczne, opiekę kardiologiczną i pulmonologiczną.",
-          "Wsparcie dla rodzin: Oferujemy zasoby informacyjne i społeczności wsparcia, abyś nie był sam w tej walce."
-        ]
+      {
+        "icon": "ShieldCheck",
+        "title": "Nowoczesne metody leczenia",
+        "description": "Korzystaj z terapii genowej i zaawansowanych procedur niedostępnych w wielu krajach."
       },
+      {
+        "icon": "HeartPulse",
+        "title": "Kompleksowa rehabilitacja",
+        "description": "Programy obejmują fizjoterapię, wsparcie emocjonalne i opiekę kardiopulmonalną."
+      },
+      {
+        "icon": "Map",
+        "title": "Wsparcie dla rodziny",
+        "description": "Oferujemy doradztwo, opiekę i globalne sieci wsparcia dla spokoju Twoich bliskich."
+      }
+    ]
+  },
       "note": {
         "text": "Rozumiemy, że wybór leczenia to trudna decyzja. Nasi eksperci medyczni są gotowi, by udzielić pełnej informacji i pomóc Ci znaleźć najlepszą opcję leczenia za granicą."
       }
