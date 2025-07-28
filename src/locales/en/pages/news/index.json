@@ -66,12 +66,8 @@
     "subtitle": "Duchenne Muscular Dystrophy (DMD) is a rare genetic condition that causes progressive muscle weakness and degeneration, primarily in boys. While there is currently no cure, advances in gene therapy, medications, and physical rehabilitation offer new hope for improving quality of life. Through medical tourism, families gain access to leading international hospitals and cutting-edge treatments that may not be available in their home country. On this page, you will find essential information about DMD, the latest therapeutic options, and how we support families seeking world-class medical care abroad.",
     "sections": {
       "about": {
-        "title": "What is Duchenne Muscular Dystrophy (DMD)?",
-        "paragraphs": [
-          "Duchenne Muscular Dystrophy (DMD) is a rare genetic disorder caused by mutations in the DMD gene, which is responsible for producing dystrophin — a protein essential for muscle cell integrity.",
-          "Without dystrophin, muscle cells gradually deteriorate, leading to progressive loss of strength and mobility. DMD primarily affects boys, with symptoms typically appearing between ages 2 and 5.",
-          "Early signs include delayed walking milestones, frequent falls, difficulty climbing stairs, and calf muscle enlargement due to fat accumulation (pseudohypertrophy)."
-        ]
+        "title": "What is Duchenne Muscular Dystrophy (DMD)?"
+        
       },
       "characteristics": {
         "title": "Key Characteristics of DMD",

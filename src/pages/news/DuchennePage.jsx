@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Map, HeartPulse, Brain, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
 // Framer Motion variants for section reveals
 const sectionVariants = {
@@ -20,18 +20,70 @@ const sectionVariants = {
 const DuchennePage = () => {
   const { t } = useTranslation();
   const content = t('duchenne', { returnObjects: true });
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: content.title,
+    description: content.subtitle,
+    url: currentUrl,
+    inLanguage: "ru-RU",
+  };
 
   return (
     <>
       <Helmet>
         <title>{content.title}</title>
         <meta name="description" content={content.subtitle} />
+        {/* Canonical URL */}
+        <link rel="canonical" href={currentUrl} />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content={content.title} />
+        <meta property="og:description" content={content.subtitle} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content="https://careoverseas.space/news-duchenne.jpg" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={content.title} />
+        <meta name="twitter:description" content={content.subtitle} />
+        <meta name="twitter:image" content="https://careoverseas.space/news-duchenne.jpg" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+
+        {/* Hreflang for Multilingual Versions */}
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/news/duchenne-muscular-dystrophy"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/news/duchenne-muscular-dystrophy/pl"
+          hreflang="pl"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/news/duchenne-muscular-dystrophy/ru"
+          hreflang="ru"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/news/duchenne-muscular-dystrophy/ar"
+          hreflang="ar"
+        />
       </Helmet>
 
       <div className="bg-gray-50 min-h-screen">
         <div className="container mx-auto px-6 py-12">
 
-          {/* Hero */}
+          {/* Hero Section */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -68,11 +120,7 @@ const DuchennePage = () => {
               <ShieldCheck className="mr-2" />
               {content.sections.about.title}
             </h2>
-            <div className="space-y-3 text-gray-700">
-              {content.sections.about.paragraphs.map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
-            </div>
+            
           </motion.section>
 
           {/* Section 2: Основные характеристики */}
