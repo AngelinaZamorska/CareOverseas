@@ -156,37 +156,29 @@
         }
       },
       "impact": {
-        "title": "How DMD Affects Quality of Life for Children and Families",
-        "paragraphs": [
-          "DMD profoundly impacts both patients and their loved ones:",
-          "Physical challenges: Muscle weakness restricts children's ability to participate in everyday activities. By adolescence, most require a wheelchair, reducing independence (Cleveland Clinic, 2025).",
-          "Emotional and social impact: Studies show children with DMD often face social isolation and emotional distress, affecting self-esteem and mental well-being (ScienceDirect, 2016).",
-          "Family burden: Caring for a child with DMD demands emotional, physical, and financial resources, including healthcare costs and time commitment (ResearchGate, 2011)."
-        ],
-        "table": {
-          "headers": ["Aspect", "Impact on Children", "Impact on Families"],
-          "rows": [
-            { "aspect": "Physical", "impactOnChildren": "Loss of mobility, wheelchair dependence", "impactOnFamilies": "Physical strain of caregiving" },
-            { "aspect": "Emotional", "impactOnChildren": "Isolation, low self-esteem", "impactOnFamilies": "Emotional stress, concerns about future" },
-            { "aspect": "Social", "impactOnChildren": "Limited participation in activities", "impactOnFamilies": "Social isolation, financial pressure" }
-          ]
-        }
+  "title": "How DMD Affects Quality of Life for Children and Families",
+  "intro": "DMD profoundly impacts both patients and their loved ones:",
+  "table": {
+    "headers": ["Aspect", "Impact on Children", "Impact on Families"],
+    "rows": [
+      {
+        "aspect": "Physical",
+        "impactOnChildren": "Loss of mobility, wheelchair dependence",
+        "impactOnFamilies": "Physical strain of caregiving"
       },
-      "tourism": {
-        "title": "Why Choose Medical Tourism for DMD Treatment?",
-        "paragraphs": [
-          "Medical tourism offers unique advantages for families seeking advanced treatment for Duchenne Muscular Dystrophy:",
-          "Access to top experts: We collaborate with world-renowned neurologists and specialists in neuromuscular disorders.",
-          "Advanced treatment options: Benefit from gene therapy, clinical trials, and modern therapies unavailable in many countries.",
-          "Comprehensive rehabilitation: Multimodal programs include physiotherapy, emotional support, cardiac and respiratory care to enhance life quality.",
-          "Family support: We provide resources, counseling, and global support networks to help families feel empowered and connected."
-        ]
+      {
+        "aspect": "Emotional",
+        "impactOnChildren": "Isolation, low self-esteem",
+        "impactOnFamilies": "Emotional stress, concerns about future"
       },
-      "note": {
-        "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
+      {
+        "aspect": "Social",
+        "impactOnChildren": "Limited participation in activities",
+        "impactOnFamilies": "Social isolation, financial pressure"
       }
-    },
-  
+    ]
+  }
+},
 "tourism": {
   "title": "Why Choose Medical Tourism for DMD Treatment?",
   "benefits": [
@@ -198,7 +190,7 @@
     {
       "icon": "ShieldCheck",
       "title": "Advanced Treatments",
-      "description": "Benefit from gene therapy and modern therapies unavailable in many countries."
+      "description": "Benefit from gene therapy, clinical trials, and modern therapies unavailable in many countries."
     },
     {
       "icon": "HeartPulse",
@@ -212,7 +204,11 @@
     }
   ]
 },
+      "note": {
+        "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
+      }
+    },
     "backToNews": "Back to news"
   }
-
+  
 }
