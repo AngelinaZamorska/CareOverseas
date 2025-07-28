@@ -186,6 +186,33 @@
         "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
       }
     },
+  
+"tourism": {
+  "title": "Why Choose Medical Tourism for DMD Treatment?",
+  "benefits": [
+    {
+      "icon": "Brain",
+      "title": "Access to Top Experts",
+      "description": "We collaborate with world-renowned neurologists and specialists in neuromuscular disorders."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Advanced Treatments",
+      "description": "Benefit from gene therapy and modern therapies unavailable in many countries."
+    },
+    {
+      "icon": "HeartPulse",
+      "title": "Comprehensive Rehabilitation",
+      "description": "Programs include physiotherapy, emotional support, and cardio-pulmonary care."
+    },
+    {
+      "icon": "Map",
+      "title": "Family Support",
+      "description": "We offer counseling, guidance, and global support networks for your family’s peace of mind."
+    }
+  ]
+},
     "backToNews": "Back to news"
   }
+
 }
