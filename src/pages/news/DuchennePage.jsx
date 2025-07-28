@@ -95,9 +95,7 @@ const DuchennePage = () => {
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
               {content.title}
             </h1>
-            <p className="text-lg lg:text-xl text-white mb-8">
-              {content.subtitle}
-            </p>
+            
             <Link to="/#contact">
               <Button
                 className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600"
@@ -120,7 +118,11 @@ const DuchennePage = () => {
               <ShieldCheck className="mr-2" />
               {content.sections.about.title}
             </h2>
-            
+            <div className="space-y-3 text-gray-700">
+              {content.sections.about.paragraphs.map((p, idx) => (
+                <p key={idx}>{p}</p>
+              ))}
+            </div>
           </motion.section>
 
           {/* Section 2: Основные характеристики */}
