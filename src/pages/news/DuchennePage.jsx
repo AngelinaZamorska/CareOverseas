@@ -45,6 +45,8 @@ const DuchennePage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:image" content="https://careoverseas.space/news-duchenne.jpg" />
+        <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
