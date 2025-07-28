@@ -158,6 +158,11 @@
       "impact": {
   "title": "How DMD Affects Quality of Life for Children and Families",
   "intro": "DMD profoundly impacts both patients and their loved ones:",
+  "paragraphs": [
+    "Physical challenges: Muscle weakness restricts children's ability to participate in everyday activities. By adolescence, most require a wheelchair, reducing independence (Cleveland Clinic, 2025).",
+    "Emotional and social impact: Studies show children with DMD often face social isolation and emotional distress, affecting self-esteem and mental well-being (ScienceDirect, 2016).",
+    "Family burden: Caring for a child with DMD demands emotional, physical, and financial resources, including healthcare costs and time commitment (ResearchGate, 2011)."
+  ],
   "table": {
     "headers": ["Aspect", "Impact on Children", "Impact on Families"],
     "rows": [
