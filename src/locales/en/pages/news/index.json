@@ -190,7 +190,7 @@
     {
       "icon": "ShieldCheck",
       "title": "Advanced Treatments",
-      "description": "Benefit from gene therapy, clinical trials, and modern therapies unavailable in many countries."
+      "description": "Benefit from gene therapy and modern therapies unavailable in many countries."
     },
     {
       "icon": "HeartPulse",
@@ -204,6 +204,7 @@
     }
   ]
 },
+
       "note": {
         "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
       }
