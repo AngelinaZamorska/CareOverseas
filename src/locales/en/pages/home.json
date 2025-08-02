@@ -87,6 +87,14 @@
     "testimonial2Text": "Everything was perfectly organized for a very complex surgery. The results exceeded my wildest expectations!",
     "testimonial3Name": "Maria Wisniewska",
     "testimonial3Treatment": "Neurological Rehabilitation - Spain",
-    "testimonial3Text": "24/7 support and a personalized approach. I felt safe throughout my complex treatment and recovery."
+    "testimonial3Text": "24/7 support and a personalized approach. I felt safe throughout my complex treatment and recovery.",
+    "calculatorTitle": "DRG Cost Estimator",
+    "calculatorSubtitle": "Get an approximate treatment cost based on German DRG rates",
+    "calculatorInfo": "Here you can get an approximate idea of treatment costs using German DRG tariffs. In Turkey many procedures are 20–30% cheaper, in Israel prices are generally higher (but sometimes lower if done on an outpatient basis), and in Spain costs are roughly on par with Germany. We clarify all details and prepare a full offer for you in advance so you know what to expect.",
+    "calculatorGuideTitle": "How to use the DRG calculator:",
+    "calculatorGuide1": "Start typing the DRG code or procedure name and select from suggestions.",
+    "calculatorGuide2": "Enter the hospital base rate (LBFW) in EUR — you can find it on the clinic’s website or ask your coordinator.",
+    "calculatorGuide3": "Specify the length of stay in days (minimum 3).",
+    "calculatorGuide4": "Click “Calculate” to see all cost components included."
   }
 }

@@ -87,6 +87,14 @@
     "testimonial2Text": "Wszystko zostało doskonale zorganizowane przy bardzo skomplikowanej operacji. Wyniki przerosły moje najśmielsze oczekiwania!",
     "testimonial3Name": "Maria Wiśniewska",
     "testimonial3Treatment": "Rehabilitacja neurologiczna - Hiszpania",
-    "testimonial3Text": "Wsparcie 24/7 i spersonalizowane podejście. Czułam się bezpiecznie podczas całego skomplikowanego leczenia i rekonwalescencji."
+    "testimonial3Text": "Wsparcie 24/7 i spersonalizowane podejście. Czułam się bezpiecznie podczas całego skomplikowanego leczenia i rekonwalescencji.",
+    "calculatorTitle": "Kalkulator kosztów DRG",
+    "calculatorSubtitle": "Poznaj przybliżony koszt leczenia według niemieckich stawek DRG",
+    "calculatorInfo": "Tutaj uzyskasz przybliżone informacje o kosztach leczenia według niemieckich taryf DRG. W Turcji wiele procedur jest tańszych o 20–30%, w Izraelu ceny są zazwyczaj wyższe (ale czasem niższe, jeśli zabieg wykonywany jest w trybie ambulatoryjnym), a w Hiszpanii koszty są zbliżone do Niemiec. Wyjaśniamy wszystkie szczegóły i przygotowujemy dla Ciebie pełną ofertę z wyprzedzeniem, abyś wiedział, czego się spodziewać.",
+    "calculatorGuideTitle": "Jak korzystać z kalkulatora DRG:",
+    "calculatorGuide1": "Rozpocznij wpisywanie kodu DRG lub nazwy procedury i wybierz z podpowiedzi.",
+    "calculatorGuide2": "Wprowadź podstawową stawkę (LBFW) w EUR — znajdziesz ją na stronie kliniki lub u koordynatora.",
+    "calculatorGuide3": "Określ długość pobytu w dniach (minimum 3).",
+    "calculatorGuide4": "Kliknij „Oblicz”, aby zobaczyć wszystkie składniki kosztów."
   }
 }

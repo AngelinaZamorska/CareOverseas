@@ -1,0 +1,37 @@
+{
+  "drgCalculator": {
+    "codeLabel": "Nazwa procedury lub kod DRG",
+    "codePlaceholder": "np. Wymiana stawu biodrowego lub 801A",
+    "baseRateLabel": "Stawka bazowa (LBFW, €)",
+    "stayLabel": "Pobyt (dni, ≥3)",
+    "nursingLabel": "Opieka (€ / dzień)",
+    "roomLabel": "Prywatny pokój (€ / dzień)",
+    "chiefLabel": "Honorarium lekarza (€ / dzień)",
+    "supplementLabel": "Dodatek taryfowy (€)",
+    "calculate": "Oblicz",
+    "errorSelectCode": "Wybierz kod DRG.",
+    "errorEnterBaseRate": "Wprowadź poprawną stawkę bazową (LBFW).",
+    "breakdown": {
+      "Nstat": "Koszty personelu",
+      "ITA": "Oddział intensywnej terapii",
+      "Dialyse": "Dializa",
+      "OP": "Sala operacyjna",
+      "Anästh": "Znieczulenie",
+      "Kreissaal": "Sala porodowa",
+      "KardDiag": "Diagnostyka kardiologiczna",
+      "EndoskDiag": "Endoskopia",
+      "Radio": "Radiologia",
+      "Labor": "Laboratorium",
+      "DiagBereich": "Usługi diagnostyczne",
+      "TherBereich": "Usługi terapeutyczne",
+      "PatAufn": "Przyjęcie pacjenta"},
+      "costForDays": "Koszty za {{count}} dni",
+    "drgRevenue": "Koszt leczenia DRG",
+    "nursing": "Opieka pielęgniarska",
+    "room": "Opłata za pokój",
+    "chief": "Honorarium lekarza",
+    "supplement": "Dodatek taryfowy",
+    "totalCost": "Razem"
+    
+  }
+}

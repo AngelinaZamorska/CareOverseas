@@ -1,21 +1,29 @@
 {
   "name": "CareOverseasSpace",
   "short_name": "CareOverseas",
+  "description": "Get world-class medical treatment abroad with CareOverseas: сравните клиники, запишитесь на консультацию и получите поддержку 24/7.",
+  "lang": "en",
+  "start_url": "/?utm_source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1e40af",
+  "background_color": "#ffffff",
+  "categories": ["health", "medical", "telemedicine"],
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#1e40af",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "start_url": "/",
-  "scope": "/"
+  "related_applications": [],
+  "prefer_related_applications": false
 }

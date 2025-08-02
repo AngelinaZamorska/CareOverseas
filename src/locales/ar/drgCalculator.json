@@ -1,0 +1,37 @@
+{
+  "drgCalculator": {
+    "codeLabel": "اسم الإجراء أو رمز DRG",
+    "codePlaceholder": "مثال: استبدال الورك أو 801A",
+    "baseRateLabel": "المعدل الأساسي (LBFW، €)",
+    "stayLabel": "مدة الإقامة (أيام، ≥3)",
+    "nursingLabel": "رعاية (€ / يوم)",
+    "roomLabel": "الغرفة (€ / يوم)",
+    "chiefLabel": "أتعاب الطبيب (€ / يوم)",
+    "supplementLabel": "الرسوم الإضافية (€)",
+    "calculate": "احسب",
+    "errorSelectCode": "الرجاء اختيار رمز DRG.",
+    "errorEnterBaseRate": "الرجاء إدخال المعدل الأساسي الصحيح (LBFW).",
+    "breakdown": {
+      "Nstat": "تكلفة العاملين",
+      "ITA": "تكلفة العناية المركزة",
+      "Dialyse": "غسيل الكلى",
+      "OP": "غرفة العمليات",
+      "Anästh": "التخدير",
+      "Kreissaal": "غرفة الولادة",
+      "KardDiag": "التشخيص القلبي",
+      "EndoskDiag": "التنظير",
+      "Radio": "الأشعة",
+      "Labor": "المختبر",
+      "DiagBereich": "الخدمات التشخيصية",
+      "TherBereich": "الخدمات العلاجية",
+      "PatAufn": "إجراءات القبول"},
+      "costForDays": "تفصيل التكلفة لـ {{count}} أيام",
+    "drgRevenue": "تكلفة العلاج وفق DRG",
+    "nursing": "رعاية",
+    "room": "رسوم الغرفة",
+    "chief": "أتعاب الطبيب",
+    "supplement": "الرسوم الإضافية",
+    "totalCost": "الإجمالي"
+    
+  }
+}

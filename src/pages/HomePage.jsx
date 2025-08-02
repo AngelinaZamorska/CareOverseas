@@ -16,6 +16,7 @@ import {
 import { Button } from '@/components/ui/button';
 import CountriesSection from '@/components/home/CountriesSection';
 import ContactSection from '@/components/home/ContactSection';
+import DRGCalculator from '@/components/DRGCalculator';
 import { useTranslation, Trans } from 'react-i18next';
 
 const HomePage = () => {
@@ -26,9 +27,7 @@ const HomePage = () => {
   }, []);
 
   const handleLearnMoreClick = () => {
-    document
-      .getElementById('services')
-      ?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -308,6 +307,43 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      
+      {/* Calculator Section */}
+<section id="calculator" className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="mb-6 text-center">
+      <h2 className="text-3xl font-bold text-gray-900">
+        {t('homePage.calculatorTitle', 'Расчёт стоимости по системе DRG')}
+      </h2>
+      <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
+        {t('homePage.calculatorSubtitle', 'Узнайте ориентировочную стоимость лечения по немецким тарифам DRG')}
+      </p>
+      <p className="mt-4 text-sm text-gray-700">
+        {t('homePage.calculatorInfo',
+          'Здесь вы можете получить приблизительную информацию о стоимости лечения по тарифам Германии. ' +
+          'В Турции многие процедуры на 20–30 % дешевле, в Израиле цены обычно выше (но бывают и ниже, если процедура выполняется амбулаторно), ' +
+          'а в Испании — примерно на уровне Германии. Мы уточняем все детали и готовим для вас полное предложение заранее, ' +
+          'чтобы вы знали, чего ожидать.'
+        )}
+      </p>
+    </div>
+
+    {/* Instruction block */}
+    <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-400">
+      <p className="font-semibold mb-2">
+        {t('homePage.calculatorGuideTitle', 'Как использовать калькулятор DRG:')}
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>{t('homePage.calculatorGuide1', 'Начните вводить код DRG или название процедуры и выберите из подсказок.')}</li>
+        <li>{t('homePage.calculatorGuide2', 'Введите базовую ставку (LBFW) в EUR — её можно узнать на сайте клиники или у вашего координатора.')}</li>
+        <li>{t('homePage.calculatorGuide3', 'Укажите продолжительность пребывания в днях (минимум 3).')}</li>
+        <li>{t('homePage.calculatorGuide4', 'Нажмите «Рассчитать», чтобы увидеть все включенные в стоимость позиции.')}</li>
+      </ul>
+    </div>
+
+    <DRGCalculator />
+  </div>
+</section>
 
       {/* Testimonials */}
       <section id="testimonials" className="py-20 bg-gradient-to-br from-blue-50 to-green-50">

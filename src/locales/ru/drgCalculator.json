@@ -1,0 +1,37 @@
+{
+  "drgCalculator": {
+    "codeLabel": "Название процедуры или код DRG",
+    "codePlaceholder": "например, Замена тазобедренного или 801A",
+    "baseRateLabel": "Базовая ставка (LBFW, €)",
+    "stayLabel": "Пребывание (дней, ≥3)",
+    "nursingLabel": "Уход (€ / день)",
+    "roomLabel": "Плата за номер (€ / день)",
+    "chiefLabel": "Гонорар врача (€ / день)",
+    "supplementLabel": "Доп. тариф (€)",
+    "calculate": "Рассчитать",
+    "errorSelectCode": "Пожалуйста, выберите код DRG.",
+    "errorEnterBaseRate": "Введите корректную базовую ставку (LBFW).",
+    "breakdown": {
+      "Nstat": "Персонал",
+      "ITA": "Отделение ИТАР",
+      "Dialyse": "Диализ",
+      "OP": "Операционная",
+      "Anästh": "Анестезия",
+      "Kreissaal": "Родильное отделение",
+      "KardDiag": "Кардиологическая диагностика",
+      "EndoskDiag": "Эндоскопия",
+      "Radio": "Рентген/радиология",
+      "Labor": "Лаборатория",
+      "DiagBereich": "Диагностические услуги",
+      "TherBereich": "Терапевтические услуги",
+      "PatAufn": "Прием пациента"},
+      "costForDays": "Разбивка стоимости за {{count}} дней",
+    "drgRevenue": "Стоимость лечения по DRG",
+    "nursing": "Уход",
+    "room": "Плата за номер",
+    "chief": "Гонорар врача",
+    "supplement": "Доп. тариф",
+    "totalCost": "Итого"
+    
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "drgCalculator": {
+    "codeLabel": "Procedure name or DRG code",
+    "codePlaceholder": "e.g., Hip replacement or 801A",
+    "baseRateLabel": "Base Rate (LBFW, €)",
+    "stayLabel": "Stay (days, ≥3)",
+    "nursingLabel": "Nursing (€ / day)",
+    "roomLabel": "Room (€ / day)",
+    "chiefLabel": "Chief Physician (€ / day)",
+    "supplementLabel": "Tariff Supplement (€)",
+    "calculate": "Calculate",
+    "errorSelectCode": "Please select a DRG code.",
+    "errorEnterBaseRate": "Please enter a valid base rate (LBFW).",
+    "breakdown": {
+      "Nstat": "Personnel costs",
+      "ITA": "ICU costs",
+      "Dialyse": "Dialysis",
+      "OP": "Operating room",
+      "Anästh": "Anesthesia",
+      "Kreissaal": "Delivery room",
+      "KardDiag": "Cardiology diagnostics",
+      "EndoskDiag": "Endoscopy",
+      "Radio": "Radiology",
+      "Labor": "Laboratory",
+      "DiagBereich": "Diagnostic services",
+      "TherBereich": "Therapeutic services",
+      "PatAufn": "Admission process"},
+      "costForDays": "Cost breakdown for {{count}} days",
+    "drgRevenue": "DRG treatment cost",
+    "nursing": "Nursing",
+    "room": "Room surcharge",
+    "chief": "Chief Physician fees",
+    "supplement": "Tariff supplement",
+    "totalCost": "Total"
+    
+  }
+}

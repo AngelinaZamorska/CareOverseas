@@ -72,6 +72,12 @@ import newsIndexRU from './locales/ru/pages/news/index.json';
 import newsIndexPL from './locales/pl/pages/news/index.json';
 import newsIndexAR from './locales/ar/pages/news/index.json';
 
+//држ
+import drgCalcEN from './locales/en/drgCalculator.json';
+import drgCalcRU from './locales/ru/drgCalculator.json';
+import drgCalcPL from './locales/pl/drgCalculator.json';
+import drgCalcAR from './locales/ar/drgCalculator.json';
+
 const resources = {
   en: {
     translation: {
@@ -91,6 +97,7 @@ const resources = {
       ...lu177EN,
       // Новости
       ...newsIndexEN,
+      ...drgCalcEN,
     },
   },
   ru: {
@@ -111,6 +118,7 @@ const resources = {
       ...lu177RU,
       // Новости
       ...newsIndexRU,
+      ...drgCalcRU,
     },
   },
   pl: {
@@ -131,6 +139,7 @@ const resources = {
       ...lu177PL,
       // Новости
       ...newsIndexPL,
+      ...drgCalcPL,
     },
   },
   ar: {
@@ -151,6 +160,7 @@ const resources = {
       ...lu177AR,
       // Новости
       ...newsIndexAR,
+      ...drgCalcAR,
     },
   },
 };

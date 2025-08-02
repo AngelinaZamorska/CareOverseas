@@ -5,46 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ✅ SEO -->
-    <title>CareOverseas - Medical Treatment Abroad</title>
-    <meta name="description" content="Medical treatment abroad with CareOverseas. Find top doctors and clinics worldwide." />
+    <!-- Primary SEO -->
+    <title>CareOverseas – Trusted Medical Care Abroad</title>
+    <meta
+      name="description"
+      content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
+    />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="medical treatment, clinics abroad, health tourism, international healthcare, CareOverseas" />
+    <!-- (meta keywords сейчас почти не влияют) -->
+    
+    <!-- Multilingual hreflang -->
+    <link
+      rel="alternate"
+      href="https://careoverseas.space/"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://careoverseas.space/pl/"
+      hreflang="pl"
+    />
+    <link
+      rel="alternate"
+      href="https://careoverseas.space/ru/"
+      hreflang="ru"
+    />
+    <link
+      rel="alternate"
+      href="https://careoverseas.space/"
+      hreflang="x-default"
+    />
 
-    <!-- ✅ Open Graph (for social sharing) -->
-    <meta property="og:title" content="CareOverseas - Medical Treatment Abroad" />
-    <meta property="og:description" content="Find top doctors and clinics worldwide with CareOverseas." />
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="CareOverseas – Trusted Medical Care Abroad"
+    />
+    <meta
+      property="og:description"
+      content="Find top doctors and clinics worldwide with CareOverseas."
+    />
     <meta property="og:image" content="/og-image.jpg" />
     <meta property="og:url" content="https://careoverseas.space/" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CareOverseas – Trusted Medical Care Abroad"
+    />
+    <meta
+      name="twitter:description"
+      content="Find top doctors and clinics worldwide with CareOverseas."
+    />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- PWA Manifest & Theme -->
     <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- ✅ Mobile Enhancements -->
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#1e40af" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-    <!-- ✅ Google Analytics -->
+    <!-- Preconnect & Preload для LCP -->
+    <link rel="preconnect" href="https://careoverseas.space" />
+    <link rel="preload" as="image" href="/home-hero.jpg" />
+    <link rel="preload" as="image" href="/og-image.jpg" />
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "CareOverseas",
+      "url": "https://careoverseas.space/",
+      "logo": "https://careoverseas.space/favicon-32x32.png",
+      "description": "Find your trusted doctor and get world-class treatment abroad.",
+      "areaServed": "Worldwide",
+      "telephone": "+380984998555",
+      "sameAs": [
+        "https://www.facebook.com/share/1LqwJfEtum/",
+        "https://x.com/AngelinaCureDE"
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL6H4MF6RX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-SL6H4MF6RX');
     </script>
-    <script type="module" crossorigin src="/assets/index-461da564.js"></script>
-    <link rel="stylesheet" href="/assets/index-7878b276.css">
-  </head>
 
+    <script type="module" crossorigin src="/assets/index-D-AhzF2f.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-EaAALB4h.css">
+  </head>
   <body>
     <div id="root"></div>
-    
+    <script
+      src="//code.tidio.co/be2qv1thvj24irec91neg1guks1yainz.js"
+      async
+    ></script>
+
+    <!-- Service Worker registration (в main.jsx или внизу index.html) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(() => console.log('Service Worker registered'))
+          .catch(console.error);
+      }
+    </script>
   </body>
 </html>
