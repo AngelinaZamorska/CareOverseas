@@ -30,21 +30,24 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-100 py-16">
       <div className="container mx-auto px-6 space-y-12">
-        {/* Responsive grid: 1 col on mobile, 2 on small tablets, 4 on desktops */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3 flex-wrap min-w-0">
-              <div className="bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-full animate-pulse">
+            <div className="flex items-center space-x-3">
+              {/* Logo */}
+              <div className="bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-full animate-pulse flex-shrink-0">
                 <img
                   src="/android-chrome-192x192.png"
                   alt="CareOverseasSpace"
                   className="h-8 w-8 object-cover"
                 />
               </div>
-              <span className="text-xl md:text-2xl font-extrabold tracking-wide break-words min-w-0">
-                CareOverseasSpace
-              </span>
+              {/* Brand Name in 3 rows, matching icon height */}
+              <div className="flex flex-col justify-center h-12 leading-4 text-white font-extrabold text-xs md:text-sm">
+                <span>Care</span>
+                <span>Overseas</span>
+                <span>Space</span>
+              </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
               {t('footer.tagline')}

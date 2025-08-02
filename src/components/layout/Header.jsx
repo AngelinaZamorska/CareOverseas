@@ -42,8 +42,9 @@ export default function Header() {
   };
 
   const navItems = [
-    { label: t('header.home'), scrollTo: 'top' },
+    
     { label: t('header.process'), scrollTo: 'process' },
+    { label: t('header.drgCalculator'), path: '/drg-calculator' },
     { label: t('header.news'), path: '/news' },
     { label: t('header.contact'), scrollTo: 'contact' }
   ];
@@ -72,7 +73,12 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-900/80 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 flex-shrink-0 mr-8">
+         {/* Logo: скролл к секции top */}
+         <button
+         onClick={() => handleNavigation({ scrollTo: 'top' })}
+         className="flex items-center space-x-2 flex-shrink-0 mr-8 focus:outline-none"
+         >
+
           <motion.img
             src="/android-chrome-192x192.png"
             alt="Care Overseas Space"
@@ -82,12 +88,14 @@ export default function Header() {
             transition={{ duration: 0.4 }}
         
           />
+        
           <div className="flex flex-col leading-none">
             <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
               CareOverseasSpace
             </span>
           </div>
-        </Link>
+       
+        </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex md:items-center md:space-x-4">

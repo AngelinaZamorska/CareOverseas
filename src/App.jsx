@@ -22,6 +22,8 @@ import NewsPage from '@/pages/NewsPage';
 import SafeTreatmentAbroadPage from '@/pages/news/SafeTreatmentAbroadPage';
 import DuchennePage from '@/pages/news/DuchennePage'; // ✅ Новый импорт
 import DRGCalculator from '@/components/DRGCalculator';
+import DRGCalculatorPage from '@/pages/DRGCalculatorPage';
+
 
 function App() {
   return (
@@ -53,8 +55,10 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/news/safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
             <Route path="/news/duchenne-muscular-dystrophy" element={<DuchennePage />} /> {/* ✅ Новый маршрут */}
-            <Route path="/calculator" element={<DRGCalculator />} />
- <Route path="/cardiac-surgery-germany" element={<CardiacSurgeryPage />} />
+            <Route path="/calculator" element={<DRGCalculator />} 
+            />
+            <Route path="/drg-calculator" element={<DRGCalculatorPage />} />
+ 
           </Routes>
         </main>
         <Footer />

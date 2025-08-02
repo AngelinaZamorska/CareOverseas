@@ -6,7 +6,8 @@
     "news": "Новости",
     "contact": "Контакты",
     "freeConsultation": "Бесплатная консультация",
-    "tagline": "Координатор лечения за рубежом"
+    "tagline": "Координатор лечения за рубежом",
+    "drgCalculator": "Калькулятор цен DRG"
   },
   "contact": {},
   "treatments": {
