@@ -105,6 +105,7 @@ export default function DRGCalculatorPage() {
     ))}
   </ul>
 </div>
+</div>
 
           {/* Инструкции и сам калькулятор */}
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
