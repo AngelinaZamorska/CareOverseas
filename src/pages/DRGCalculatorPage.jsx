@@ -63,12 +63,9 @@ export default function DRGCalculatorPage() {
             <p className="text-xl text-gray-700 mb-4">
               {t('homePage.calculatorSubtitle', 'Узнайте ориентировочную стоимость лечения по немецким тарифам DRG')}
             </p>
-            <p className="text-base text-gray-600">
-              {t(
-                'homePage.calculatorInfo',
-                'Введите DRG-код, базовую ставку и продолжительность пребывания, чтобы получить подробный расчет стоимости лечения в Германии.'
-              )}
-            </p>
+            <p className="text-base text-gray-600 whitespace-pre-line">
+  {t('homePage.calculatorInfo')}
+</p>
           </div>
 
           {/* Инструкции и калькулятор */}
