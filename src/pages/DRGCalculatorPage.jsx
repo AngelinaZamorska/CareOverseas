@@ -63,9 +63,25 @@ export default function DRGCalculatorPage() {
             <p className="text-xl text-gray-700 mb-4">
               {t('homePage.calculatorSubtitle', 'Узнайте ориентировочную стоимость лечения по немецким тарифам DRG')}
             </p>
-            <p className="text-base text-gray-600 whitespace-pre-line">
-  {t('homePage.calculatorInfo')}
-</p>
+            <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-lg border-l-4 border-blue-600">
+  <ul className="space-y-4">
+    {[
+      { flag: '🇩🇪', key: 'homePage.calculatorInfo1' },
+      { flag: '🇹🇷', key: 'homePage.calculatorInfo2' },
+      { flag: '🇮🇱', key: 'homePage.calculatorInfo3' },
+      { flag: '🇪🇺', key: 'homePage.calculatorInfo4' },
+      { flag: '🌍', key: 'homePage.calculatorInfo5' },
+    ].map(({ flag, key }) => (
+      <li key={key} className="flex items-start">
+        <span className="mr-3 text-2xl">{flag}</span>
+        <span
+          className="text-gray-700"
+          dangerouslySetInnerHTML={{ __html: t(key) }}
+        />
+      </li>
+    ))}
+  </ul>
+</div>
           </div>
 
           {/* Инструкции и калькулятор */}
