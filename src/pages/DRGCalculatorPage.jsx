@@ -72,13 +72,19 @@ export default function DRGCalculatorPage() {
       { flag: '🇪🇺', key: 'homePage.calculatorInfo4' },
       { flag: '🌍', key: 'homePage.calculatorInfo5' },
     ].map(({ flag, key }) => (
-      <li key={key} className="flex items-start">
-        <span className="mr-3 text-2xl">{flag}</span>
-        <span
-          className="text-gray-700"
-          dangerouslySetInnerHTML={{ __html: t(key) }}
-        />
-      </li>
+      <li key={textKey} className="flex items-start">
+      <span
+        role="img"
+        aria-label={label}
+        className="flag-emoji mr-3 text-2xl"
+      >
+        {emoji}
+      </span>
+      <span
+        className="text-gray-700"
+        dangerouslySetInnerHTML={{ __html: t(textKey) }}
+      />
+    </li>
     ))}
   </ul>
 </div>

@@ -307,3 +307,12 @@ input:focus, textarea:focus, select:focus {
     @apply bg-background text-foreground;
   }
 }
+.flag-emoji {
+  /* Цветные emoji-шрифты для разных платформ */
+  font-family: 'Segoe UI Emoji',    /* Windows */
+               'Apple Color Emoji', /* macOS / iOS */
+               'Noto Color Emoji',  /* Android */
+               'EmojiSymbols',      /* Linux */
+               sans-serif;
+  line-height: 1;
+}
