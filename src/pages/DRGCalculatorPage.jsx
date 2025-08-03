@@ -75,25 +75,36 @@ export default function DRGCalculatorPage() {
 
             {/* Блок регионов с emoji-флагами */}
             <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-lg border-l-4 border-blue-600">
-              <ul className="space-y-4">
-                {infoItems.map(({ emoji, label, textKey }) => (
-                  <li key={textKey} className="flex items-start">
-                    <span
-                      role="img"
-                      aria-label={label}
-                      className="flag-emoji mr-3 text-2xl"
-                    >
-                      {emoji}
-                    </span>
-                    <span
-                      className="text-gray-700"
-                      dangerouslySetInnerHTML={{ __html: t(textKey) }}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+  <ul className="space-y-4">
+    {[
+      { emoji: '🇩🇪', label: 'Germany', textKey: 'homePage.calculatorInfo1' },
+      { emoji: '🇹🇷', label: 'Turkey',  textKey: 'homePage.calculatorInfo2' },
+      { emoji: '🇮🇱', label: 'Israel',  textKey: 'homePage.calculatorInfo3' },
+      { emoji: '🇪🇺', label: 'Europe',  textKey: 'homePage.calculatorInfo4' },
+      { emoji: '🌍', label: 'Global',  textKey: 'homePage.calculatorInfo5' },
+    ].map(({ emoji, label, textKey }) => (
+      <li key={textKey} className="flex items-start">
+        {/* Флаг */}
+        <div className="flex-shrink-0 w-8">
+          <span
+            role="img"
+            aria-label={label}
+            className="flag-emoji text-3xl leading-none block"
+          >
+            {emoji}
+          </span>
+        </div>
+        {/* Текст */}
+        <div className="ml-4 text-gray-700">
+          <div
+            className="text-base"
+            dangerouslySetInnerHTML={{ __html: t(textKey) }}
+          />
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Инструкции и сам калькулятор */}
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
