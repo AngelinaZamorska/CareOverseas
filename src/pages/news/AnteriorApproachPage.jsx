@@ -197,22 +197,33 @@ export default function AnteriorApproachPage() {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <aside className="bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-2xl p-12 text-center">
-          <h3 className="text-2xl font-semibold mb-4">{content.cta.text}</h3>
-          <Button size="lg" className="bg-white text-blue-600 hover:text-teal-500">
-            <Link to="/#contact">{content.cta.button}</Link>
-          </Button>
-        </aside>
-
-        {/* Back to News */}
-        <nav className="text-center">
-<Button asChild variant="link">
-                <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
-                  <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
-                </Link>
-              </Button>
-        </nav>
+        {/* Conclusion & CTA */}
+<motion.section
+  initial="hidden"
+  animate="visible"
+  custom={6}
+  variants={sectionVariants}
+  className="mt-12"
+>
+  <div className="max-w-xl mx-auto text-center">
+    <p className="italic text-gray-600 mb-6">{content.sections.note.text}</p>
+    <div className="flex flex-col items-center space-y-4">
+      <Link to="/#contact">
+        <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-5 text-lg">
+          {t('header.freeConsultation')}
+        </Button>
+      </Link>
+      <Button asChild variant="link">
+        <Link
+          to="/news"
+          className="inline-flex items-center text-gray-600 hover:text-gray-900"
+        >
+          <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
+        </Link>
+      </Button>
+    </div>
+  </div>
+</motion.section>
       </main>
     </>
   );
