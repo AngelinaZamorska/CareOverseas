@@ -14,19 +14,18 @@ const sectionVariants = {
     y: 0,
     transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' }
   }),
+  
 };
 
 export default function AnteriorApproachPage() {
   const { t } = useTranslation();
   const content = t('anteriorApproach', { returnObjects: true });
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-
-  // scroll to top on mount
+ // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // Structured Data (JSON-LD)
+  // Structured Data for MedicalProcedure
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalProcedure",
@@ -36,7 +35,7 @@ export default function AnteriorApproachPage() {
     bodyLocation: "Hip",
     howPerformed: "Anterior surgical approach using specialized retractors and Hana® table",
     procedureType: "Minimally invasive surgery",
-    preparation: content.definition.text.split("\n").slice(0, 3),
+    preparation: content.definition.text.split('\n').slice(0, 3),
     followup: content.journey.steps.map(s => s.description),
     inLanguage: "en"
   };
@@ -44,13 +43,9 @@ export default function AnteriorApproachPage() {
   return (
     <>
       <Helmet>
-        {/* Basic SEO tags */}
         <title>{content.title} | CareOverseasSpace</title>
         <meta name="description" content={content.subtitle} />
         <meta name="keywords" content="hip replacement, anterior approach, minimally invasive, medical tourism, fast recovery" />
-        <link rel="canonical" href={currentUrl} />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={currentUrl} />
@@ -60,20 +55,12 @@ export default function AnteriorApproachPage() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={currentUrl} />
         <meta name="twitter:title" content={content.title} />
         <meta name="twitter:description" content={content.subtitle} />
         <meta name="twitter:image" content={content.ogImage} />
 
-        {/* Hreflang for translations */}
-        <link rel="alternate" href="https://careoverseas.space/news/anterior-approach" hreflang="en" />
-        <link rel="alternate" href="https://careoverseas.space/ru/news/anterior-approach" hreflang="ru" />
-        <link rel="alternate" href="https://careoverseas.space/pl/news/anterior-approach" hreflang="pl" />
-        <link rel="alternate" href="https://careoverseas.space/ar/news/anterior-approach" hreflang="ar" />
-
-        {/* Structured Data JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -111,37 +98,46 @@ export default function AnteriorApproachPage() {
       </header>
 
       <main className="container mx-auto px-6 py-16 space-y-24">
-        {/* Definition Section */}
-        <section aria-labelledby="definition-heading" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            custom={1}
-            variants={sectionVariants}
-            className="max-w-xl"
-          >
-            <h2 id="definition-heading" className="text-2xl font-bold mb-4 flex items-center text-gray-800">
-              <Activity className="mr-2 text-blue-600" /> {content.definition.title}
-            </h2>
-            <p className="text-gray-700 leading-relaxed">{content.definition.text}</p>
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            custom={2}
-            variants={sectionVariants}
-            className="flex justify-center"
-          >
-            <img
-              src={content.ogImage}
-              alt="Schematic of anterior hip replacement approach"
-              className="w-full max-w-md rounded-lg shadow-lg"
-              loading="lazy"
-            />
-          </motion.div>
-        </section>
+        {/* Definition */}
+<section
+  aria-labelledby="definition-heading"
+  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
+>
+  {/* Текстовая колонка */}
+  <motion.div
+    initial="hidden"
+    animate="visible"
+    custom={1}
+    variants={sectionVariants}
+    className="max-w-xl"
+  >
+    <h2
+      id="definition-heading"
+      className="text-2xl font-bold mb-4 flex items-center text-gray-800"
+    >
+      <Activity className="mr-2 text-blue-600" /> {content.definition.title}
+    </h2>
+    <p className="text-gray-700 leading-relaxed">{content.definition.text}</p>
+  </motion.div>
 
-        {/* Benefits Section */}
+  {/* Картинка */}
+  <motion.div
+    initial="hidden"
+    animate="visible"
+    custom={2}
+    variants={sectionVariants}
+    className="flex justify-center"
+  >
+    <img
+      src="https://careoverseas.space/og-image-anterior-hip.jpg"
+      alt="Schematic of anterior hip replacement approach"
+      className="w-full max-w-md rounded-lg shadow-lg"
+      loading="lazy"
+    />
+  </motion.div>
+</section>
+
+        {/* Benefits */}
         <section aria-labelledby="benefits-heading">
           <h2 id="benefits-heading" className="text-3xl font-bold text-center mb-12">
             {content.benefits.title}
@@ -171,7 +167,7 @@ export default function AnteriorApproachPage() {
           </div>
         </section>
 
-        {/* Medical Tourism Section */}
+        {/* Medical Tourism */}
         <section aria-labelledby="tourism-heading" className="bg-gray-50 p-12 rounded-2xl">
           <h2 id="tourism-heading" className="text-2xl font-bold mb-6 flex items-center text-green-700">
             <Globe className="mr-2" /> {content.tourism.title}
@@ -183,52 +179,62 @@ export default function AnteriorApproachPage() {
           </ul>
         </section>
 
-        {/* Journey Steps Section */}
-        <motion.section
+        {/* Journey Steps */}
+<motion.section
+  initial="hidden"
+  animate="visible"
+  custom={4}
+  variants={sectionVariants}
+  className="mt-16"
+>
+  <h2 className="text-3xl font-bold text-center mb-8">
+    {content.journey.title}
+  </h2>
+
+  {/* 1. items-start forces every card to align at the top */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+    {content.journey.steps.map((step, i) => {
+      const isRecovery = step.step === 'Recovery';
+      const lines = isRecovery
+        ? step.description.split('\n').filter(l => l.trim())
+        : [];
+
+      return (
+        <motion.div
+          key={i}
           initial="hidden"
           animate="visible"
-          custom={4}
+          custom={i + 1}
           variants={sectionVariants}
-          className="mt-16"
+          className={`
+            flex flex-col    /* 2. flex-column card */
+            h-full           /*    full height in its grid cell */
+            bg-white rounded-2xl shadow-lg p-6
+            ${isRecovery ? 'lg:col-span-3' : ''}
+          `}
         >
-          <h2 className="text-3xl font-bold text-center mb-8">
-            {content.journey.title}
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-            {content.journey.steps.map((step, i) => {
-              const isRecovery = step.step === 'Recovery';
-              const lines = isRecovery
-                ? step.description.split('\n').filter(l => l.trim())
-                : [];
-              const spanClasses = isRecovery ? 'col-span-full sm:col-span-2 lg:col-span-3' : '';
-              return (
-                <motion.div
-                  key={i}
-                  initial="hidden"
-                  animate="visible"
-                  custom={i + 1}
-                  variants={sectionVariants}
-                  className={`flex flex-col h-full bg-white rounded-2xl shadow-lg p-6 ${spanClasses}`}
-                >
-                  <div className="text-blue-600 text-xl font-semibold mb-4">
-                    {step.step}
-                  </div>
-                  <div className="flex-grow text-gray-700">
-                    {isRecovery ? (
-                      <ul className="list-disc list-inside space-y-2">
-                        {lines.map((line, idx) => (
-                          <li key={idx}>{line.replace(/^•\s*/, '')}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="whitespace-pre-line">{step.description}</p>
-                    )}
-                  </div>
-                </motion.div>
-              );
-            })}
+          {/* Card Header */}
+          <div className="text-blue-600 text-xl font-semibold mb-4">
+            {step.step}
           </div>
-        </motion.section>
+
+          {/* 3. Body grows to fill the space */}
+          <div className="flex-grow text-gray-700">
+            {isRecovery ? (
+              <ul className="list-disc list-inside space-y-2">
+                {lines.map((line, idx) => (
+                  <li key={idx}>{line.replace(/^•\s*/, '')}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="whitespace-pre-line">{step.description}</p>
+            )}
+          </div>
+        </motion.div>
+      );
+    })}
+  </div>
+</motion.section>
 
         {/* Final CTA */}
         <aside className="bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-2xl p-12 text-center">
@@ -240,11 +246,11 @@ export default function AnteriorApproachPage() {
 
         {/* Back to News */}
         <nav className="text-center">
-          <Button asChild variant="link">
-            <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
-              <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
-            </Link>
-          </Button>
+<Button asChild variant="link">
+                <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
+                  <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
+                </Link>
+              </Button>
         </nav>
       </main>
     </>
