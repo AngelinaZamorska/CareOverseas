@@ -7,25 +7,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
-const sectionVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i = 1) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' }
-  }),
-  
-};
-
 export default function AnteriorApproachPage() {
   const { t } = useTranslation();
   const content = t('anteriorApproach', { returnObjects: true });
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
- // Scroll to top on mount
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // Structured Data for MedicalProcedure
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalProcedure",
@@ -33,19 +23,24 @@ export default function AnteriorApproachPage() {
     description: content.subtitle,
     url: currentUrl,
     bodyLocation: "Hip",
-    howPerformed: "Anterior surgical approach using specialized retractors and Hana® table",
+    howPerformed:
+      "Anterior surgical approach using specialized retractors and Hana® table",
     procedureType: "Minimally invasive surgery",
-    preparation: content.definition.text.split('\n').slice(0, 3),
-    followup: content.journey.steps.map(s => s.description),
-    inLanguage: "en"
+    preparation: content.definition.text.split("\n").slice(0, 3),
+    followup: content.journey.steps.map((s) => s.description),
+    inLanguage: "en",
   };
 
   return (
     <>
       <Helmet>
+        {/* Basic tags */}
         <title>{content.title} | CareOverseasSpace</title>
         <meta name="description" content={content.subtitle} />
         <meta name="keywords" content="hip replacement, anterior approach, minimally invasive, medical tourism, fast recovery" />
+        <link rel="canonical" href={currentUrl} />
+
+        {/* Open Graph tags */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={currentUrl} />
@@ -55,12 +50,36 @@ export default function AnteriorApproachPage() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
+        {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={currentUrl} />
         <meta name="twitter:title" content={content.title} />
         <meta name="twitter:description" content={content.subtitle} />
         <meta name="twitter:image" content={content.ogImage} />
 
+        {/* Hreflang for alternate translations (если есть) */}
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/news/anterior-approach"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/ru/news/anterior-approach"
+          hreflang="ru"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/pl/news/anterior-approach"
+          hreflang="pl"
+        />
+        <link
+          rel="alternate"
+          href="https://careoverseas.space/ar/news/anterior-approach"
+          hreflang="ar"
+        />
+
+        {/* Structured data */}
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
