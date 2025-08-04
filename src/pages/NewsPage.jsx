@@ -16,6 +16,15 @@ const NewsPage = () => {
 
   const articles = [
     {
+    slug: '/anterior-approach',
+    titleKey: 'newsPage.anteriorApproachTitle',
+    descriptionKey: 'newsPage.anteriorApproachDescription',
+    imageAlt: 'Illustration of anterior hip replacement approach',
+    image: 'https://careoverseas.space/og-image-anterior-hip.jpg',
+    date: '01.08.2025'
+  },
+
+    {
       slug: '/news/duchenne-muscular-dystrophy',
       titleKey: 'newsPage.duchenneTitle',
       descriptionKey: 'newsPage.duchenneDescription',

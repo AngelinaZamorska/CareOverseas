@@ -23,6 +23,8 @@ import SafeTreatmentAbroadPage from '@/pages/news/SafeTreatmentAbroadPage';
 import DuchennePage from '@/pages/news/DuchennePage'; // ✅ Новый импорт
 import DRGCalculator from '@/components/DRGCalculator';
 import DRGCalculatorPage from '@/pages/DRGCalculatorPage';
+import AnteriorApproachPage from '@/pages/AnteriorApproachPage';
+
 
 
 function App() {
@@ -58,6 +60,7 @@ function App() {
             <Route path="/calculator" element={<DRGCalculator />} 
             />
             <Route path="/drg-calculator" element={<DRGCalculatorPage />} />
+            <Route path="/anterior-approach" element={<AnteriorApproachPage />} />
  
           </Routes>
         </main>

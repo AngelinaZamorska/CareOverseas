@@ -9,7 +9,9 @@
     "articlePreviewDescription": "Wzrost konfliktów sprawił, że pacjenci szukają bezpiecznych miejsc do leczenia. Niemcy, Turcja i Hiszpania oferują stabilność i wysokiej jakości opiekę medyczną.",
     "readMore": "Czytaj więcej",
     "duchenneTitle": "Nowa nadzieja dla dzieci z dystrofią mięśniową Duchenne’a",
-    "duchenneDescription": "Poznaj najnowsze terapie, w tym terapie genowe i eksperymentalne, w leczeniu DMD za granicą."
+    "duchenneDescription": "Poznaj najnowsze terapie, w tym terapie genowe i eksperymentalne, w leczeniu DMD za granicą.",
+    "anteriorApproachTitle": "Dlaczego przednie podejście do endoprotezy stawu biodrowego może być Twoim najlepszym wyborem",
+   "anteriorApproachDescription": "Dowiedz się, jak mniej inwazyjna technika przednia może zmniejszyć ból, przyspieszyć rekonwalescencję i jest idealna dla turystyki medycznej."
   },
   "safeTreatmentAbroad": {
     "title": "Bezpieczne leczenie za granicą – turystyka medyczna w Europie i Turcji 2025",
@@ -207,5 +209,72 @@
       }
     },
     "backToNews": "Powrót do aktualności"
+  },
+  "anteriorApproach": {
+    "title": "Dlaczego przednie podejście do endoprotezoplastyki biodra może być najlepszym wyborem",
+    "subtitle": "Masz dość bólu biodra, który Cię ogranicza? Operacja wymiany stawu biodrowego pozwoli Ci znów się poruszać, a przednie podejście to nowoczesna, mniej inwazyjna opcja z szybszą rekonwalescencją.",
+    "ogImage": "https://careoverseas.space/og-image-anterior-hip.jpg",
+    "definition": {
+      "title": "Czym jest przednie podejście?",
+      "text": "Podczas endoprotezoplastyki biodra chirurg zastępuje zużyty staw sztucznym elementem, aby złagodzić ból i poprawić mobilność. Tradycyjne metody wymagają przecięcia dużych mięśni z tyłu lub boku. Przednie podejście prowadzi od przodu: mięśnie są odsuwane, a nie przecinane, przy użyciu specjalistycznych narzędzi i stołu operacyjnego Hana®. Oznacza to:\n- Mniej uszkodzeń tkanek\n- Mniejsza blizna (ok. 8–10 cm)\n- Szybsze i bardziej komfortowe gojenie"
+    },
+    "benefits": {
+      "title": "Najważniejsze korzyści przedniego podejścia",
+      "items": [
+        {
+          "icon": "CheckCircle",
+          "title": "Mniejszy ból po operacji",
+          "description": "Badanie z 2023 roku (24 publikacje, ponad 2000 pacjentów) wykazało znacznie niższe odczuwanie bólu w pierwszych tygodniach w porównaniu z metodami tradycyjnymi."
+        },
+        {
+          "icon": "Clock",
+          "title": "Szybsza rekonwalescencja i lepsza ruchomość",
+          "description": "Pacjenci chodzili i poruszali się lepiej już po 6 tygodniach, a po 12 tygodniach osiągali lepsze wyniki niż przy bocznym dostępie."
+        },
+        {
+          "icon": "Activity",
+          "title": "Krótszy pobyt w szpitalu",
+          "description": "Pacjenci często opuszczają szpital po 1–2 dniach, a niektórzy nawet tego samego dnia."
+        },
+        {
+          "icon": "Globe",
+          "title": "Mniejsze uszkodzenie mięśni i niższe ryzyko",
+          "description": "Oszczędzenie głównych mięśni zmniejsza uraz tkanek i ryzyko zwichnięcia stawu."
+        }
+      ]
+    },
+    "tourism": {
+      "title": "Dlaczego to idealny wybór dla medycznej turystyki",
+      "points": [
+        "Szybkie gojenie: chodzenie z pomocą tego samego dnia, laska w 1–2 tygodnie.",
+        "Krótsza rekonwalescencja: więcej czasu na zwiedzanie, mniej na regenerację.",
+        "Opieka ekspertów: operację wykonują specjalnie wyszkoleni chirurdzy światowej klasy."
+      ]
+    },
+    "journey": {
+      "title": "Jak wygląda przebieg leczenia",
+      "steps": [
+        {
+          "step": "Konsultacja",
+          "description": "Omówienie zdjęć rentgenowskich i celów leczenia online lub osobiście."
+        },
+        {
+          "step": "Przygotowanie",
+          "description": "Proste testy i ćwiczenia przed wyjazdem w celu wzmocnienia organizmu."
+        },
+        {
+          "step": "Dzień operacji",
+          "description": "Procedura trwa 1–2 godziny, po czym wczesna mobilizacja—często tego samego dnia."
+        },
+        {
+          "step": "Rekonwalescencja",
+          "description": "Dzień 1: chodzenie o kulach; tygodnie 1–2: laska; tygodnie 6–12: terapia i powrót do codziennego życia."
+        }
+      ]
+    },
+    "cta": {
+      "text": "Gotowy pożegnać się z bólem biodra? Skontaktuj się z nami i umów konsultację z najlepszym chirurgiem od przedniego dostępu, aby rozpocząć drogę do lepszej mobilności!",
+      "button": "Uzyskaj bezpłatną konsultację"
+    }
   }
 }
