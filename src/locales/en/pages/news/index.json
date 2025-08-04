@@ -258,18 +258,22 @@
   "title": "What to Expect: Your Surgical Journey",
   "steps": [
     {
+      "id": "consultation",
       "step": "Consultation",
       "description": "Comprehensive preoperative assessment—via telemedicine or in-person—review of medical history, imaging studies (X-ray, MRI/CT), and discussion of the surgical plan, expected outcomes, and patient-specific risk factors."
     },
     {
+      "id": "preparation",
       "step": "Preparation",
       "description": "Targeted prehabilitation including cardiopulmonary evaluation, laboratory testing, and structured physical therapy to optimize muscle strength and joint mobility. Detailed instructions on fasting, medication adjustments, and thromboprophylaxis provided."
     },
     {
+      "id": "surgeryDay",
       "step": "Surgery Day",
       "description": "Under regional or general anesthesia, an 8–10 cm anterior incision is made on a specialized Hana® table. Muscles and neurovascular structures are retracted to expose the hip joint, and the prosthesis is implanted under fluoroscopic guidance. Duration: 60–120 minutes."
     },
     {
+      "id": "recovery",
       "step": "Recovery",
       "description": "• Day 0–1: Patients are transferred to recovery and encouraged to initiate supervised weight-bearing and gait training with assistive devices (walker or crutches) within hours of surgery.\n• Days 2–7: Transition to a cane as tolerated; wound assessment, pain management, and thromboprophylaxis continue under multidisciplinary supervision.\n• Weeks 2–6: Begin progressive strengthening exercises and range-of-motion therapy guided by a physical therapist.\n• Weeks 6–12: Advanced functional training, return to low-impact activities, with clinical follow-ups at 6 weeks and 3 months."
     }
