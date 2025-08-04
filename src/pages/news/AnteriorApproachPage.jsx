@@ -168,16 +168,41 @@ export default function AnteriorApproachPage() {
         </section>
 
         {/* Medical Tourism */}
-        <section aria-labelledby="tourism-heading" className="bg-gray-50 p-12 rounded-2xl">
-          <h2 id="tourism-heading" className="text-2xl font-bold mb-6 flex items-center text-green-700">
-            <Globe className="mr-2" /> {content.tourism.title}
-          </h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-700">
-            {content.tourism.points.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
-        </section>
+<section
+  aria-labelledby="tourism-heading"
+  className="bg-gradient-to-r from-green-50 to-green-100 p-12 rounded-2xl"
+>
+  {/* Section header */}
+  <div className="max-w-2xl mx-auto text-center mb-10">
+    <h2
+      id="tourism-heading"
+      className="text-3xl font-extrabold text-green-800 inline-flex items-center justify-center"
+    >
+      <Globe className="mr-3 w-8 h-8 text-green-600" />
+      {content.tourism.title}
+    </h2>
+  </div>
+
+  {/* Cards grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    {content.tourism.points.map((point, idx) => (
+      <div
+        key={idx}
+        className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
+      >
+        {/* Icon circle */}
+        <div className="w-12 h-12 flex items-center justify-center bg-green-600 rounded-full text-white mx-auto mb-4">
+          <Globe className="w-6 h-6" />
+        </div>
+
+        {/* Text */}
+        <p className="text-gray-700 text-center font-medium leading-relaxed">
+          {point}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
 
         {/* Journey Steps */}
 <motion.section
@@ -248,7 +273,7 @@ export default function AnteriorApproachPage() {
         <nav className="text-center">
 <Button asChild variant="link">
                 <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
-                  <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
+                  <ArrowLeft className="mr-2 w-4 h-4" /> {t('newsPage.backToNews')}
                 </Link>
               </Button>
         </nav>
