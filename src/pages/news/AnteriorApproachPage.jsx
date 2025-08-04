@@ -95,35 +95,43 @@ export default function AnteriorApproachPage() {
 
       <main className="container mx-auto px-6 py-16 space-y-24">
         {/* Definition */}
-        <section
-          aria-labelledby="definition-heading"
-          className="grid lg:grid-cols-2 gap-12 items-center"
-        >
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            custom={1}
-            variants={sectionVariants}
-          >
-            <h2 id="definition-heading" className="text-2xl font-bold mb-4 flex items-center text-gray-800">
-              <Activity className="mr-2 text-blue-600" /> {content.definition.title}
-            </h2>
-            <p className="text-gray-700 leading-relaxed">{content.definition.text}</p>
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            custom={2}
-            variants={sectionVariants}
-          >
-            <img
-              src="https://careoverseas.space/og-image-anterior-hip.jpg"
-              alt="Schematic of anterior hip replacement approach"
-              className="rounded-lg shadow-lg w-full"
-              loading="lazy"
-            />
-          </motion.div>
-        </section>
+<section
+  aria-labelledby="definition-heading"
+  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
+>
+  {/* Текстовая колонка */}
+  <motion.div
+    initial="hidden"
+    animate="visible"
+    custom={1}
+    variants={sectionVariants}
+    className="max-w-xl"
+  >
+    <h2
+      id="definition-heading"
+      className="text-2xl font-bold mb-4 flex items-center text-gray-800"
+    >
+      <Activity className="mr-2 text-blue-600" /> {content.definition.title}
+    </h2>
+    <p className="text-gray-700 leading-relaxed">{content.definition.text}</p>
+  </motion.div>
+
+  {/* Картинка */}
+  <motion.div
+    initial="hidden"
+    animate="visible"
+    custom={2}
+    variants={sectionVariants}
+    className="flex justify-center"
+  >
+    <img
+      src="/images/anterior-approach-diagram.jpg"
+      alt="Schematic of anterior hip replacement approach"
+      className="w-full max-w-md rounded-lg shadow-lg"
+      loading="lazy"
+    />
+  </motion.div>
+</section>
 
         {/* Benefits */}
         <section aria-labelledby="benefits-heading">
