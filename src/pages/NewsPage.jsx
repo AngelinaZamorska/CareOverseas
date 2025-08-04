@@ -6,6 +6,8 @@ import { Newspaper, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import React, { useEffect } from 'react';
+
 
 const NewsPage = () => {
   const { t } = useTranslation();

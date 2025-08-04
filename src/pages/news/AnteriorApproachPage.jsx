@@ -6,6 +6,7 @@ import { CheckCircle, Clock, Activity, Globe, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import React, { useEffect } from 'react';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 20 },
