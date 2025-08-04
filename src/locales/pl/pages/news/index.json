@@ -252,26 +252,26 @@
       ]
     },
     "journey": {
-      "title": "Jak wygląda przebieg leczenia",
-      "steps": [
-        {
-          "step": "Konsultacja",
-          "description": "Omówienie zdjęć rentgenowskich i celów leczenia online lub osobiście."
-        },
-        {
-          "step": "Przygotowanie",
-          "description": "Proste testy i ćwiczenia przed wyjazdem w celu wzmocnienia organizmu."
-        },
-        {
-          "step": "Dzień operacji",
-          "description": "Procedura trwa 1–2 godziny, po czym wczesna mobilizacja—często tego samego dnia."
-        },
-        {
-          "step": "Rekonwalescencja",
-          "description": "Dzień 1: chodzenie o kulach; tygodnie 1–2: laska; tygodnie 6–12: terapia i powrót do codziennego życia."
-        }
-      ]
+  "title": "Czego się spodziewać: Twoja droga chirurgiczna",
+  "steps": [
+    {
+      "step": "Konsultacja",
+      "description": "Kompleksowa ocena przedoperacyjna — zdalnie lub osobiście — obejmuje analizę wywiadu medycznego, badania obrazowe (RTG, MRI/CT) oraz omówienie planu operacji, oczekiwanych rezultatów i indywidualnych czynników ryzyka."
     },
+    {
+      "step": "Przygotowanie",
+      "description": "Ukierunkowane przygotowanie przedoperacyjne: ocena czynności sercowo-płucnej, badania laboratoryjne oraz zorganizowana fizjoterapia w celu optymalizacji siły mięśni i zakresu ruchu. Pacjent otrzymuje szczegółowe zalecenia dotyczące postu, modyfikacji leków i profilaktyki przeciwzakrzepowej."
+    },
+    {
+      "step": "Dzień zabiegu",
+      "description": "W znieczuleniu miejscowym lub ogólnym wykonuje się przedni nacięcie 8–10 cm na specjalistycznym stole Hana®. Mięśnie i struktury naczyniowo-nerwowe są odchylane, by odsłonić staw, a implant wszczepiany pod kontrolą fluoroskopii. Czas trwania: 60–120 minut."
+    },
+    {
+      "step": "Rekonwalescencja",
+      "description": "• Dni 0–1: Pacjenci trafiają na oddział pooperacyjny i są zachęcani do rozpoczęcia kontrolowanego obciążania oraz treningu chodu z chodzikiem lub kulami w ciągu kilku godzin po zabiegu.\n• Dni 2–7: Przejście na laskę w miarę tolerancji; kontynuacja pielęgnacji rany, leczenia bólu i profilaktyki zakrzepowej pod nadzorem interdyscyplinarnego zespołu.\n• Tygodnie 2–6: Rozpoczęcie stopniowych ćwiczeń wzmacniających i zakresu ruchu pod okiem fizjoterapeuty.\n• Tygodnie 6–12: Zaawansowane treningi funkcjonalne, powrót do aktywności o niskiej intensywności oraz wizyty kontrolne po 6 tygodniach i 3 miesiącach."
+    }
+  ]
+},
     "cta": {
       "text": "Gotowy pożegnać się z bólem biodra? Skontaktuj się z nami i umów konsultację z najlepszym chirurgiem od przedniego dostępu, aby rozpocząć drogę do lepszej mobilności!",
       "button": "Uzyskaj bezpłatną konsultację"

@@ -255,14 +255,27 @@
       ]
     },
     "journey": {
-      "title": "What to Expect: Your Surgery Journey",
-      "steps": [
-        { "step": "Consultation", "description": "Online or in-person X-ray review and goal discussion." },
-        { "step": "Preparation", "description": "Simple tests and exercises before your trip to stay strong." },
-        { "step": "Surgery Day", "description": "1–2 hour procedure, then start moving—often the same day!" },
-        { "step": "Recovery", "description": "Day 1: Walk with a walker; Week 1–2: Cane; Weeks 6–12: Therapy and return to normal life." }
-      ]
+  "title": "What to Expect: Your Surgical Journey",
+  "steps": [
+    {
+      "step": "Consultation",
+      "description": "Comprehensive preoperative assessment—via telemedicine or in-person—review of medical history, imaging studies (X-ray, MRI/CT), and discussion of the surgical plan, expected outcomes, and patient-specific risk factors."
     },
+    {
+      "step": "Preparation",
+      "description": "Targeted prehabilitation including cardiopulmonary evaluation, laboratory testing, and structured physical therapy to optimize muscle strength and joint mobility. Detailed instructions on fasting, medication adjustments, and thromboprophylaxis provided."
+    },
+    {
+      "step": "Surgery Day",
+      "description": "Under regional or general anesthesia, an 8–10 cm anterior incision is made on a specialized Hana® table. Muscles and neurovascular structures are retracted to expose the hip joint, and the prosthesis is implanted under fluoroscopic guidance. Duration: 60–120 minutes."
+    },
+    {
+      "step": "Recovery",
+      "description": "• Day 0–1: Patients are transferred to recovery and encouraged to initiate supervised weight-bearing and gait training with assistive devices (walker or crutches) within hours of surgery.\n• Days 2–7: Transition to a cane as tolerated; wound assessment, pain management, and thromboprophylaxis continue under multidisciplinary supervision.\n• Weeks 2–6: Begin progressive strengthening exercises and range-of-motion therapy guided by a physical therapist.\n• Weeks 6–12: Advanced functional training, return to low-impact activities, with clinical follow-ups at 6 weeks and 3 months."
+    }
+  ]
+}
+,
     "cta": {
       "text": "Ready to say goodbye to hip pain? Contact us today to connect with a top surgeon who specializes in the anterior approach. Your journey to better mobility starts now!",
       "button": "Get Your Free Consultation"
