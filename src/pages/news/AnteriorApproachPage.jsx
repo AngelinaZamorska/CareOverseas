@@ -117,7 +117,7 @@ export default function AnteriorApproachPage() {
             variants={sectionVariants}
           >
             <img
-              src="/og-image-anterior-hip.jpg"
+              src="https://careoverseas.space/og-image-anterior-hip.jpg"
               alt="Schematic of anterior hip replacement approach"
               className="rounded-lg shadow-lg w-full"
               loading="lazy"
