@@ -1,289 +1,271 @@
 {
   "newsPage": {
-    "metaTitle": "الأخبار والتحديثات",
-    "metaDescription": "آخر الأخبار والتحديثات من CareOverseasSpace. ابقَ مطَّلعاً على أحدث العلاجات والعيادات الشريكة.",
-    "title": "أخبارنا وتحديثاتنا",
-    "subtitle": "ابقَ على اطلاع بأحدث التطورات في العلاجات الطبية وخدماتنا.",
-    "comingSoon": "مقالات وتحديثات جديدة قادمة قريباً. تابعنا لاحقاً!",
-    "articlePreviewTitle": "العلاج الآمن في الخارج: لماذا تُعَد أوروبا وتركيا الخيار الأفضل",
-    "articlePreviewDescription": "أدى تصاعد الصراعات إلى بحث المرضى عن أماكن آمنة للعلاج. تُوفّر ألمانيا وتركيا وإسبانيا رعاية طبية عالية الجودة واستقراراً.",
-    "readMore": "اقرأ المزيد",
-    "duchenneTitle": "أمل جديد للأطفال المصابين بضمور العضلات دوشين",
-    "duchenneDescription": "اكتشف أحدث العلاجات، بما في ذلك العلاجات الجينية والتجريبية، لعلاج DMD في الخارج.",
-    "anteriorApproachTitle": "لماذا يُعَد النهج الأمامي لاستبدال الورك خيارك الأمثل",
-    "anteriorApproachDescription": "تعرف على كيفية تقليل الألم، وتسريع التعافي، وجعله مثالياً للسياحة العلاجية باستخدام الأسلوب الأمامي الأقل تدخلاً."
+    "metaTitle": "News",
+    "metaDescription": "Latest news and updates from CareOverseasSpace. Stay informed about new treatments and partner clinics.",
+    "title": "Our News & Updates",
+    "subtitle": "Stay up to date with the latest developments in medical treatments and our services.",
+    "comingSoon": "New articles and updates are coming soon. Check back later!",
+    "articlePreviewTitle": "Safe Treatment Abroad: Why Europe and Turkey are the Best Choice",
+    "articlePreviewDescription": "The rise of conflicts has led patients to seek safe places for treatment. Germany, Turkey, and Spain offer stability and quality medical care.",
+    "readMore": "Read More",
+    "duchenneTitle": "New Hope for Children with Duchenne Muscular Dystrophy",
+    "duchenneDescription": "Explore the latest therapies, including gene and experimental approaches, for treating DMD abroad.",
+    "anteriorApproachTitle": "Why the Anterior Approach for Hip Replacement Could Be Your Best Choice",
+    "anteriorApproachDescription": "Learn how the less-invasive anterior technique can reduce pain, speed recovery and is perfect for medical tourism."
   },
   "safeTreatmentAbroad": {
-    "title": "العلاج الآمن في الخارج: لماذا تُعَد أوروبا وتركيا خياراتك الأولى في 2025",
-    "subtitle": "احصل على رعاية طبية عالمية المستوى وراحة البال في ألمانيا وتركيا وإسبانيا.",
-    "cta_primary": "احصل على استشارتك المجانية",
-    "backToNews": "العودة إلى الأخبار",
+    "title": "Safe Treatment Abroad: Why Europe & Turkey Are Your Top Choices in 2025",
+    "subtitle": "Experience world-class medical care with peace of mind in Germany, Turkey, and Spain.",
+    "cta_primary": "Get Your Free Consultation",
+    "backToNews": "Back to News",
     "sections": {
       "1": {
-        "heading": "1. تزايد الطلب على العلاج الآمن في الخارج",
+        "heading": "1. Rising Demand for Safe Treatment Abroad",
         "points": [
-          "من المتوقع أن يتجاوز حجم سوق السياحة العلاجية العالمي 200 مليار دولار بحلول 2030",
-          "يسعى المرضى للاستقرار: من مكافحة العدوى إلى الأسعار الشفافة",
-          "الوجهات الرئيسية: ألمانيا وتركيا وإسبانيا"
+          "Global medical tourism market to exceed $200B by 2030",
+          "Patients seek stability: from infection control to transparent pricing",
+          "Key destinations: Germany, Turkey, Spain"
         ]
       },
       "2": {
-        "heading": "2. كيف يؤثر التوتر على التعافي",
+        "heading": "2. How Stress Impacts Recovery",
         "points": [
-          "التوتر المزمن والمناعة: القلق يبطئ التعافي ويزيد من مخاطر المضاعفات.",
-          "التأثيرات النفسجسدية: خفض التوتر بنسبة 30% يمكن أن يحسّن فعالية العلاج الكيميائي ويسرّع التعافي بعد الجراحة.",
-          "بيئات التعافي: المناخ الدافئ في إسبانيا، والمناظر الهادئة في تركيا، والعيادات المنظمة في ألمانيا تعزّز التعافي السريع."
+          "Chronic Stress & Immunity: Anxiety slows healing & raises complication risks.",
+          "Psychosomatic Effects: Reducing stress by 30% can improve chemo efficacy and speed up post-op rehab.",
+          "Healing Environments: Warm climates in Spain, serene landscapes in Turkey, and organized German clinics foster faster recovery."
         ]
       },
       "3": {
-        "heading": "3. لمحة عن الوجهات الرائدة",
+        "heading": "3. Leading Destinations at a Glance",
         "table": {
-          "headers": ["الدولة", "التخصصات", "السلامة وراحة المرضى", "أبرز المميزات"],
+          "headers": ["Country", "Specialties", "Safety & Comfort", "Highlights"],
           "rows": [
-            ["ألمانيا 🇩🇪", "أمراض القلب، الأورام، الأعصاب", "معدل جريمة منخفض، بروتوكولات صارمة", "جراحات بمساعدة الروبوت ودمج الذكاء الاصطناعي"],
-            ["تركيا 🇹🇷", "جراحة التجميل، طب الأسنان، التلقيح الاصطناعي", "بنية تحتية قوية، أسعار مرنة", "حزم عيادة+فندق، خدمة على مدار الساعة"],
-            ["إسبانيا 🇪🇸", "طب العظام، إعادة التأهيل، الطب التجميلي", "مناخ ممتاز، خدمة مضيافة", "علاجات سبا محلية للتعافي"]
+            ["Germany 🇩🇪", "Cardiology, Oncology, Neurology", "Low crime, strict protocols", "Robot-assisted surgeries, AI integration"],
+            ["Turkey 🇹🇷", "Cosmetic Surgery, Dentistry, IVF", "Robust infrastructure, flexible pricing", "Clinic+Hotel packages, 24/7 service"],
+            ["Spain 🇪🇸", "Orthopedics, Rehabilitation, Aesthetic Medicine", "Excellent climate, hospitable service", "Local spa therapies for recovery"]
           ]
         }
       },
       "4": {
-        "heading": "4. كيف تبدأ رحلتك",
+        "heading": "4. How to Begin Your Journey",
         "points": [
-          "الاستشارة عبر الإنترنت: مراجعة أولية لحالتك بناءً على سجلاتك الطبية",
-          "اختيار العيادة والطبيب: بناءً على التقييمات والمراجعات ومعدلات النجاح",
-          "الدعم اللوجستي: السفر، النقل، الإقامة، وخدمات الترجمة",
-          "التنسيق على مدار الساعة: منسق طبي مخصص متاح طوال اليوم"
+          "Online Consultation: Initial case review via your medical records",
+          "Clinic & Doctor Selection: Based on ratings, reviews, and success rates",
+          "Logistics & Support: Flight, transfer, accommodation, interpreter services",
+          "24/7 Coordination: Dedicated medical coordinator available round-the-clock"
         ]
       },
       "conclusion": {
-        "heading": "مستعد للبدء؟",
-        "text": "قدّم طلبك، وسنقترح خطة مخصصة في غضون 24 ساعة.",
-        "cta": "قدّم طلبك"
+        "heading": "Ready to Get Started?",
+        "text": "Submit your request, and we'll propose a personalized plan within 24 hours.",
+        "cta": "Submit Your Request"
       }
     }
   },
+  
   "duchenne": {
-    "title": "أمل للأطفال المصابين بضمور العضلات دوشين (DMD)",
+    "title": "Hope for Children with Duchenne Muscular Dystrophy (DMD)",
     "sections": {
       "about": {
-        "title": "ما هو ضمور العضلات دوشين (DMD)؟",
+        "title": "What is Duchenne Muscular Dystrophy (DMD)?",
         "paragraphs": [
-          "ضمور العضلات دوشين (DMD) هو مرض وراثي نادر ناتج عن طفرات في جين DMD المسؤول عن إنتاج بروتين الديستروفين الضروري لصحة خلايا العضلات.",
-          "بدون الديستروفين، تتدهور الخلايا العضلية تدريجياً، مما يؤدي إلى فقدان القوة والقدرة على الحركة. يظهر المرض عادة بين 2 و5 سنوات ويصيب الذكور غالباً.",
-          "من العلامات المبكرة: تأخر المشي، السقوط المتكرر، صعوبة صعود الدرج، وتضخم عضلات الساق نتيجة تراكم الدهون (التضخم الكاذب)."
+          "Duchenne Muscular Dystrophy (DMD) is a rare genetic disorder caused by mutations in the DMD gene, which is responsible for producing dystrophin — a protein essential for muscle cell integrity.",
+          "Without dystrophin, muscle cells gradually deteriorate, leading to progressive loss of strength and mobility. DMD primarily affects boys, with symptoms typically appearing between ages 2 and 5.",
+          "Early signs include delayed walking milestones, frequent falls, difficulty climbing stairs, and calf muscle enlargement due to fat accumulation (pseudohypertrophy)."
         ]
       },
       "characteristics": {
-        "title": "الخصائص الرئيسية لـ DMD",
+        "title": "Key Characteristics of DMD",
         "table": {
-          "headers": ["الخاصية", "الوصف"],
+          "headers": ["Feature", "Description"],
           "rows": [
-            { "characteristic": "السبب", "description": "طفرات في جين DMD تؤدي إلى غياب بروتين الديستروفين" },
-            { "characteristic": "المصابون", "description": "غالباً الذكور (1 من كل 3500–5000 مولود ذكر)" },
-            { "characteristic": "بداية الأعراض", "description": "عادة بين 2 و5 سنوات" },
-            { "characteristic": "تطور المرض", "description": "فقدان تدريجي لوظيفة العضلات؛ غالباً كرسي متحرك بحلول 12 سنة" },
-            { "characteristic": "المضاعفات", "description": "اعتلال قلب، فشل تنفسي" }
+            { "characteristic": "Cause", "description": "Mutations in the DMD gene leading to absence of dystrophin" },
+            { "characteristic": "Who Is Affected", "description": "Primarily boys (1 in 3,500–5,000 male births)" },
+            { "characteristic": "Symptom Onset", "description": "Usually between ages 2 and 5" },
+            { "characteristic": "Progression", "description": "Gradual loss of muscle function; wheelchair use typically by age 12" },
+            { "characteristic": "Complications", "description": "Cardiomyopathy, respiratory failure" }
           ]
         }
       },
       "treatments": {
-        "title": "أحدث العلاجات وخيارات التأهيل",
+        "title": "Innovative Treatments and Rehabilitation Options",
         "geneTherapy": {
-          "title": "العلاج الجيني",
+          "title": "Gene Therapy",
           "items": [
             {
               "name": "Elevidys (delandistrogene moxeparvovec)",
-              "description": "أول علاج جيني تمت الموافقة عليه من FDA في 2023 للأطفال من 4–5 سنوات. في 2024 تم توسيعه لجميع الأطفال من 4 سنوات فما فوق. يدخل نسخة مصغرة من جين الديستروفين إلى الخلايا العضلية. في 2025 فرضت قيود جرعة لغير القادرين على المشي بسبب حالات فشل كبدي حاد."
+              "description": "Approved by the FDA in 2023 for children aged 4–5 with confirmed DMD gene mutations. In 2024, approval was extended to ambulatory and non-ambulatory patients aged 4 and older. Elevidys delivers a shortened version of dystrophin (micro-dystrophin) to muscle cells. However, in 2025, dosage limitations were introduced for non-ambulatory patients due to cases of acute liver failure, requiring careful evaluation with specialists (Roche, 2025)."
             },
             {
               "name": "Del-zota (delpacibart zotadirsen)",
-              "description": "علاج تجريبي من Avidity Biosciences لمتحورات قابلة لتجاوز الإكسون 44. في تجربة EXPLORE44 زاد إنتاج الديستروفين إلى 25% وخفض إنزيم CK. يتوقع تقديم طلب FDA نهاية 2025."
+              "description": "An experimental treatment by Avidity Biosciences for patients with exon 44-skippable mutations. In the EXPLORE44 phase 1/2 trial, Del-zota increased dystrophin production up to 25% of normal and reduced creatine kinase levels to near-normal. FDA approval submission expected by end of 2025 (Avidity Biosciences, 2025)."
             }
           ]
         },
         "medications": {
-          "title": "العلاج الدوائي",
+          "title": "Pharmaceutical Treatments",
           "items": [
-            {
-              "name": "الكورتيكوستيرويدات",
-              "description": "مثل بريدنيزون وديفلازاكورت لإبطاء تدهور العضلات وتأخير الاعتماد على الكرسي المتحرك."
-            },
-            {
-              "name": "أدوية تجريبية",
-              "description": "تركز الأبحاث على تقليل الالتهاب والتليف وتحفيز تجديد العضلات."
-            },
-            {
-              "name": "Duvyzat (givinostat)",
-              "description": "أول علاج غير ستيرويدي تمت الموافقة عليه من FDA في 2024 للمرضى من 6 سنوات فما فوق."
-            }
+            { "name": "Corticosteroids", "description": "Medications like prednisone and deflazacort help slow muscle degeneration and delay wheelchair dependence." },
+            { "name": "Experimental Drugs", "description": "Research focuses on reducing inflammation and fibrosis, and enhancing muscle regeneration (Frontiers, 2021)." },
+            { "name": "Duvyzat (givinostat)", "description": "The first non-steroidal treatment approved by the FDA in 2024 for patients aged 6 and up. Suitable for all genetic DMD types (FDA, 2024)." }
           ]
         },
         "rehabilitation": {
-          "title": "إعادة التأهيل والعلاج الطبيعي",
+          "title": "Physical Therapy and Rehabilitation",
           "items": [
-            { "name": "تمارين وتمدد", "description": "يمنع التقلصات ويحافظ على الحركة." },
-            { "name": "أجهزة مساعدة", "description": "دعامات وكراسي متحركة لتعزيز الاستقلالية." },
-            { "name": "رعاية متعددة التخصصات", "description": "تعاون بين أطباء الأعصاب والعلاج الطبيعي وأطباء القلب لنهج شامل." }
+            { "name": "Stretching and Exercise", "description": "Helps prevent contractures and maintain mobility." },
+            { "name": "Assistive Devices", "description": "Braces and wheelchairs enhance mobility and independence." },
+            { "name": "Multidisciplinary Care", "description": "Involves neurologists, physiotherapists, and cardiologists to provide comprehensive treatment (Mayo Clinic, 2025)." }
           ]
         },
         "experimental": {
-          "title": "الأساليب التجريبية",
+          "title": "Emerging and Experimental Therapies",
           "items": [
-            { "description": "علاجات تجديد أنسجة العضلات." },
-            { "description": "أدوية لدعم القلب والحجاب الحاجز." },
-            { "description": "علاجات خلوية وبروتينية لتحسين الأداء العضلي." }
+            { "description": "Therapies aimed at regenerating muscle tissue." },
+            { "description": "Medications to support heart and diaphragm function." },
+            { "description": "Cellular and protein therapies for improving muscular performance (Muscular Dystrophy Association, 2023)." }
           ]
         },
         "comparisonTable": {
-          "headers": ["طريقة العلاج", "الوصف", "الفوائد", "القيود"],
+          "headers": ["Treatment Method", "Description", "Advantages", "Limitations"],
           "rows": [
             {
-              "method": "العلاج الجيني",
-              "description": "إدخال جين ديستروفين وظيفي",
-              "advantages": "يُبطئ تقدم المرض",
-              "limitations": "متوفر فقط في أماكن محدودة وخطر الآثار الجانبية"
+              "method": "Gene therapy",
+              "description": "Introduction of a functional dystrophin gene",
+              "advantages": "Potentially slows disease progression",
+              "limitations": "Limited availability, risk of side effects"
             },
             {
-              "method": "الكورتيكوستيرويدات",
-              "description": "تبطيء تدهور العضلات",
-              "advantages": "متوفر على نطاق واسع، فعالية مثبتة",
-              "limitations": "آثار جانبية على المدى الطويل"
+              "method": "Corticosteroids",
+              "description": "Slows down muscle degeneration",
+              "advantages": "Widely available, proven effectiveness",
+              "limitations": "Side effects with long-term use"
             },
             {
-              "method": "العلاج الطبيعي",
-              "description": "الحفاظ على وظيفة العضلات",
-              "advantages": "يحسن الحركة وجودة الحياة",
-              "limitations": "يتطلب انتظام ومتابعة"
+              "method": "Physiotherapy",
+              "description": "Maintaining muscle function",
+              "advantages": "Improves mobility and quality of life",
+              "limitations": "Requires consistency and professional guidance"
             },
             {
-              "method": "الأساليب التجريبية",
-              "description": "عقاقير جديدة قيد البحث",
-              "advantages": "واعدة",
-              "limitations": "متوفرة فقط عبر التجارب السريرية"
+              "method": "Experimental therapies",
+              "description": "New drugs in research (e.g., Del-zota)",
+              "advantages": "Promising for the future",
+              "limitations": "Limited data, available only through clinical trials"
             }
           ]
         }
       },
       "impact": {
-        "title": "كيف يؤثر DMD على جودة حياة الأطفال والعائلات",
-        "intro": "يؤثر DMD بشكل عميق على المرضى وأحبائهم:",
-        "table": {
-          "headers": ["الجانب", "تأثيره على الأطفال", "تأثيره على العائلات"],
-          "rows": [
-            {
-              "aspect": "جسدي",
-              "impactOnChildren": "فقدان الحركة والاعتماد على الكرسي المتحرك",
-              "impactOnFamilies": "الجهد البدني في الرعاية"
-            },
-            {
-              "aspect": "نفسي",
-              "impactOnChildren": "العزلة وتدني احترام الذات",
-              "impactOnFamilies": "الضغط النفسي والقلق"
-            },
-            {
-              "aspect": "اجتماعي",
-              "impactOnChildren": "مشاركة محدودة في الأنشطة",
-              "impactOnFamilies": "العزلة الاجتماعية والضغوط المالية"
-            }
-          ]
-        }
+  "title": "How DMD Affects Quality of Life for Children and Families",
+  "intro": "DMD profoundly impacts both patients and their loved ones:",
+  
+  "table": {
+    "headers": ["Aspect", "Impact on Children", "Impact on Families"],
+    "rows": [
+      {
+        "aspect": "Physical",
+        "impactOnChildren": "Loss of mobility, wheelchair dependence",
+        "impactOnFamilies": "Physical strain of caregiving"
       },
-      "tourism": {
-        "title": "لماذا تختار السياحة العلاجية لعلاج DMD؟",
-        "benefits": [
-          {
-            "icon": "Brain",
-            "title": "الوصول إلى أفضل الخبراء",
-            "description": "نتعاون مع أطباء أعصاب عالميين ومتخصصين."
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "علاجات متقدمة",
-            "description": "استفد من العلاج الجيني والتجارب السريرية."
-          },
-          {
-            "icon": "HeartPulse",
-            "title": "تأهيل شامل",
-            "description": "يشمل العلاج الطبيعي والدعم النفسي والرعاية القلبية."
-          },
-          {
-            "icon": "Map",
-            "title": "دعم الأسرة",
-            "description": "نوفر الاستشارات والإرشاد وشبكات الدعم."
-          }
-        ]
+      {
+        "aspect": "Emotional",
+        "impactOnChildren": "Isolation, low self-esteem",
+        "impactOnFamilies": "Emotional stress, concerns about future"
       },
+      {
+        "aspect": "Social",
+        "impactOnChildren": "Limited participation in activities",
+        "impactOnFamilies": "Social isolation, financial pressure"
+      }
+    ]
+  }
+},
+"tourism": {
+  "title": "Why Choose Medical Tourism for DMD Treatment?",
+  "benefits": [
+    {
+      "icon": "Brain",
+      "title": "Access to Top Experts",
+      "description": "We collaborate with world-renowned neurologists and specialists in neuromuscular disorders."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Advanced Treatments",
+      "description": "Benefit from gene therapy and modern therapies unavailable in many countries."
+    },
+    {
+      "icon": "HeartPulse",
+      "title": "Comprehensive Rehabilitation",
+      "description": "Programs include physiotherapy, emotional support, and cardio-pulmonary care."
+    },
+    {
+      "icon": "Map",
+      "title": "Family Support",
+      "description": "We offer counseling, guidance, and global support networks for your family’s peace of mind."
+    }
+  ]
+},
+
       "note": {
-        "text": "ندرك أن اختيار العلاج قرار مهم. خبراؤنا جاهزون لدعمك في العثور على أفضل الخيارات حول العالم."
+        "text": "We understand that choosing the right treatment is a major decision. Our medical tourism experts are here to provide full support and guide you to the best options available worldwide."
       }
     },
-    "backToNews": "العودة إلى الأخبار"
+    "backToNews": "Back to news"
   },
   "anteriorApproach": {
-    "title": "لماذا يُعَد النهج الأمامي لاستبدال الورك خيارك الأمثل",
-    "subtitle": "هل تعاني من ألم الورك الذي يقيدك؟ استبدال الورك يعيد لك الحركة، والنهج الأمامي هو خيار حديث وأقل ألماً للتعافي السريع.",
+    "title": "Why the Anterior Approach for Hip Replacement Could Be Your Best Choice",
+    "subtitle": "Are you tired of hip pain holding you back? Hip replacement surgery can get you moving again, and the anterior approach is a modern, less painful option that helps you recover faster.",
     "ogImage": "https://careoverseas.space/og-image-anterior-hip.jpg",
     "definition": {
-      "title": "ما هو النهج الأمامي؟",
-      "text": "في جراحة استبدال الورك، يتم استبدال المفصل التالف بصناعي لتخفيف الألم وتحسين الحركة. يمر النهج الأمامي من الأمام، حيث يحرك الجراح العضلات جانباً بدلاً من قطعها، باستخدام أدوات خاصة وطاولة Hana®. هذا يعني:\n- ضرر أقل للأنسجة\n- ندبة صغيرة (8–10 سم)\n- تعافي أسرع وأكثر راحة"
+      "title": "What Is the Anterior Approach?",
+      "text": "In a hip replacement, a surgeon replaces your worn-out hip joint with an artificial one to ease pain and improve movement. Traditionally, surgeons cut through big muscles in the back or side of your hip. The anterior approach, however, goes through the front. The surgeon moves muscles aside instead of cutting them, using special tools and a high-tech table called Hana®. This means: Less damage to your body, a smaller scar (just 3-4 inches), a smoother, quicker recovery."
     },
     "benefits": {
-      "title": "أهم مزايا النهج الأمامي",
+      "title": "Top Benefits of the Anterior Approach",
       "items": [
         {
           "icon": "CheckCircle",
-          "title": "ألم أقل بعد العملية",
-          "description": "أظهرت دراسات 2023 أقل مستويات ألم في الأسابيع الأولى مقارنة بالطرق التقليدية."
+          "title": "Less Pain After Surgery",
+          "description": "A 2023 study reviewed 24 research papers with over 2,000 patients. It found that people who had the anterior approach felt much less pain in the first few weeks compared to traditional surgery."
         },
         {
           "icon": "Clock",
-          "title": "تعافي أسرع وحركة أفضل",
-          "description": "بعد 6 أسابيع، يمشي المرضى بشكل أفضل، وبعد 12 أسبوعاً يتفوقون على نتيجة النهج الجانبي."
+          "title": "Faster Recovery and Better Movement",
+          "description": "Patients walked and moved better just 6 weeks after surgery. By 12 weeks, they were ahead of those who had side-approach surgery."
         },
         {
           "icon": "Activity",
-          "title": "إقامة قصيرة في المستشفى",
-          "description": "يغادر العديد في 1–2 يوم، وبعضهم في نفس اليوم."
+          "title": "Shorter Hospital Stay",
+          "description": "Anterior approach patients often leave the hospital in 1-2 days, and some even go home the same day."
         },
         {
           "icon": "Globe",
-          "title": "ضرر عضلي أقل وخطر منخفض",
-          "description": "حفظ العضلات الرئيسية يقلل من المخاطر ويعزز الأمان."
+          "title": "Less Muscle Damage and Lower Risk",
+          "description": "Since the surgeon doesn’t cut major muscles, there’s less trauma and a lower risk of dislocation."
         }
       ]
     },
     "tourism": {
-      "title": "مثالي للسياحة الطبية",
+      "title": "Why It’s Perfect for Medical Tourism",
       "points": [
-        "تعافي سريع: المشي في نفس اليوم، والعكاز خلال 1–2 أسبوعين.",
-        "وقت نقاهة أقل: المزيد من الوقت للاستكشاف وأقل للتعافي.",
-        "رعاية خبراء: يجري العملية جراحون مدربون تدريباً خاصاً عالمياً."
+        "Quick Healing: Start walking with help the same day and switch to a cane in a week or two.",
+        "Less Downtime: Spend less time recovering and more time exploring or relaxing.",
+        "Expert Care: Only specially trained surgeons offer this technique, so you’ll get world-class treatment from top professionals."
       ]
     },
     "journey": {
-      "title": "خطوات رحلتك الجراحية",
+      "title": "What to Expect: Your Surgery Journey",
       "steps": [
-        {
-          "step": "الاستشارة",
-          "description": "مراجعة الأشعة ومناقشة الأهداف عبر الإنترنت أو شخصياً."
-        },
-        {
-          "step": "التحضير",
-          "description": "اختبارات بسيطة وتمارين قبل الرحلة لتعزيز القوة."
-        },
-        {
-          "step": "يوم الجراحة",
-          "description": "الإجراء يستغرق 1–2 ساعة، ثم التحرك المبكر غالباً في نفس اليوم."
-        },
-        {
-          "step": "التعافي",
-          "description": "اليوم 1: المشي بمساعدة؛ الأسابيع 1–2: العكاز؛ الأسابيع 6–12: العلاج والعودة للحياة."
-        }
+        { "step": "Consultation", "description": "Online or in-person X-ray review and goal discussion." },
+        { "step": "Preparation", "description": "Simple tests and exercises before your trip to stay strong." },
+        { "step": "Surgery Day", "description": "1–2 hour procedure, then start moving—often the same day!" },
+        { "step": "Recovery", "description": "Day 1: Walk with a walker; Week 1–2: Cane; Weeks 6–12: Therapy and return to normal life." }
       ]
     },
     "cta": {
-      "text": "هل أنت مستعد لتوديع ألم الورك؟ اتصل بنا لحجز استشارة مجانية مع أفضل الجراحين وابدأ رحلتك نحو حرية الحركة!",
-      "button": "احصل على استشارتك المجانية"
+      "text": "Ready to say goodbye to hip pain? Contact us today to connect with a top surgeon who specializes in the anterior approach. Your journey to better mobility starts now!",
+      "button": "Get Your Free Consultation"
     }
   }
 }
