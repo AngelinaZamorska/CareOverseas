@@ -191,7 +191,6 @@ export default function AnteriorApproachPage() {
     {content.journey.title}
   </h2>
 
-  {/* 1. items-start forces every card to align at the top */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
     {content.journey.steps.map((step, i) => {
       const isRecovery = step.step === 'Recovery';
@@ -207,18 +206,18 @@ export default function AnteriorApproachPage() {
           custom={i + 1}
           variants={sectionVariants}
           className={`
-            flex flex-col    /* 2. flex-column card */
-            h-full           /*    full height in its grid cell */
+            flex flex-col    /* 1: карточка — флекс-колонка */
+            h-full           /*    растягивается на всю высоту своего grid-элемента */
             bg-white rounded-2xl shadow-lg p-6
-            ${isRecovery ? 'lg:col-span-3' : ''}
+            ${isRecovery ? 'lg:col-span-3' : ''}  /* 2: recovery-карточка на всю ширину */
           `}
         >
-          {/* Card Header */}
+          {/* Заголовок карточки */}
           <div className="text-blue-600 text-xl font-semibold mb-4">
             {step.step}
           </div>
 
-          {/* 3. Body grows to fill the space */}
+          {/* Тело карточки растягивается, чтобы выровнять все карточки */}
           <div className="flex-grow text-gray-700">
             {isRecovery ? (
               <ul className="list-disc list-inside space-y-2">
