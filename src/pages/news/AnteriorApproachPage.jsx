@@ -191,13 +191,16 @@ export default function AnteriorApproachPage() {
     {content.journey.title}
   </h2>
 
-  {/* 1. items-start forces every card to align at the top */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
     {content.journey.steps.map((step, i) => {
       const isRecovery = step.step === 'Recovery';
       const lines = isRecovery
         ? step.description.split('\n').filter(l => l.trim())
         : [];
+
+      const spanClasses = isRecovery
+        ? 'col-span-full sm:col-span-2 lg:col-span-3'
+        : '';
 
       return (
         <motion.div
@@ -207,18 +210,14 @@ export default function AnteriorApproachPage() {
           custom={i + 1}
           variants={sectionVariants}
           className={`
-            flex flex-col    /* 2. flex-column card */
-            h-full           /*    full height in its grid cell */
-            bg-white rounded-2xl shadow-lg p-6
-            ${isRecovery ? 'lg:col-span-3' : ''}
+            flex flex-col h-full bg-white rounded-2xl shadow-lg p-6
+            ${spanClasses}
           `}
         >
-          {/* Card Header */}
           <div className="text-blue-600 text-xl font-semibold mb-4">
             {step.step}
           </div>
 
-          {/* 3. Body grows to fill the space */}
           <div className="flex-grow text-gray-700">
             {isRecovery ? (
               <ul className="list-disc list-inside space-y-2">
