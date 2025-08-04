@@ -206,7 +206,7 @@ export default function AnteriorApproachPage() {
   className="mt-12"
 >
   <div className="max-w-xl mx-auto text-center">
-    <p className="italic text-gray-600 mb-6">{content.sections.note.text}</p>
+    <p className="italic text-gray-600 mb-6">{content.cta.text}</p>
     <div className="flex flex-col items-center space-y-4">
       <Link to="/#contact">
         <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-5 text-lg">
