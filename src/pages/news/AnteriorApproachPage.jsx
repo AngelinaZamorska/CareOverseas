@@ -172,35 +172,43 @@ export default function AnteriorApproachPage() {
   aria-labelledby="tourism-heading"
   className="bg-gradient-to-r from-green-50 to-green-100 p-12 rounded-2xl"
 >
-  {/* Section header */}
-  <div className="max-w-2xl mx-auto text-center mb-10">
+  {/* Section Header */}
+  <div className="max-w-2xl mx-auto mb-10 text-center">
     <h2
       id="tourism-heading"
-      className="text-3xl font-extrabold text-green-800 inline-flex items-center justify-center"
+      className="inline-flex items-center justify-center text-3xl font-extrabold text-green-800"
     >
       <Globe className="mr-3 w-8 h-8 text-green-600" />
       {content.tourism.title}
     </h2>
   </div>
 
-  {/* Cards grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    {content.tourism.points.map((point, idx) => (
-      <div
-        key={idx}
-        className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300"
-      >
-        {/* Icon circle */}
-        <div className="w-12 h-12 flex items-center justify-center bg-green-600 rounded-full text-white mx-auto mb-4">
-          <Globe className="w-6 h-6" />
-        </div>
+  {/* Cards Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {content.tourism.points.map((point, i) => {
+      // split "Title: Detail"
+      const [title, ...rest] = point.split(':');
+      const detail = rest.join(':').trim();
 
-        {/* Text */}
-        <p className="text-gray-700 text-center font-medium leading-relaxed">
-          {point}
-        </p>
-      </div>
-    ))}
+      // pick an icon per index
+      const icons = [CheckCircle, Clock, Activity];
+      const Icon = icons[i] || Globe;
+
+      return (
+        <div
+          key={i}
+          className="flex flex-col items-center bg-white rounded-xl shadow-lg p-6 h-full transform hover:scale-105 transition-transform duration-300"
+        >
+          <Icon className="w-10 h-10 text-green-600 mb-4" />
+          <h3 className="text-lg font-semibold text-green-800 mb-2 text-center">
+            {title}
+          </h3>
+          <p className="text-gray-700 text-center leading-relaxed">
+            {detail}
+          </p>
+        </div>
+      );
+    })}
   </div>
 </section>
 
