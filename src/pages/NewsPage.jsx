@@ -2,115 +2,251 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Newspaper, ArrowRight } from 'lucide-react';
+import { CheckCircle, Clock, Activity, Globe, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' }
+  }),
+};
 
-
-const NewsPage = () => {
+export default function AnteriorApproachPage() {
   const { t } = useTranslation();
+  const content = t('anteriorApproach', { returnObjects: true });
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
 
+  // scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const articles = [
-    {
-    slug: '/news/anterior-approach',
-    titleKey: 'newsPage.anteriorApproachTitle',
-    descriptionKey: 'newsPage.anteriorApproachDescription',
-    imageAlt: 'Illustration of anterior hip replacement approach',
-    image: 'https://careoverseas.space/og-image-anterior-hip.jpg',
-    date: '01.08.2025'
-  },
-
-    {
-      slug: '/news/duchenne-muscular-dystrophy',
-      titleKey: 'newsPage.duchenneTitle',
-      descriptionKey: 'newsPage.duchenneDescription',
-      imageAlt: 'Boy in wheelchair with supportive family',
-      image: 'https://careoverseas.space/news-duchenne.jpg',
-      date: '27.07.2025'
-    },
-    {
-      slug: '/news/safe-treatment-abroad',
-      titleKey: 'newsPage.articlePreviewTitle',
-      descriptionKey: 'newsPage.articlePreviewDescription',
-      imageAlt: 'Patient fleeing war',
-      image: 'https://careoverseas.space/news-war.jpg',
-      date: '16.07.2025'
-    }
-    
-  ];
+  // Structured Data (JSON-LD)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name: content.title,
+    description: content.subtitle,
+    url: currentUrl,
+    bodyLocation: "Hip",
+    howPerformed: "Anterior surgical approach using specialized retractors and Hana® table",
+    procedureType: "Minimally invasive surgery",
+    preparation: content.definition.text.split("\n").slice(0, 3),
+    followup: content.journey.steps.map(s => s.description),
+    inLanguage: "en"
+  };
 
   return (
     <>
       <Helmet>
-        <title>{t('newsPage.metaTitle')} - CareOverseasSpace</title>
-        <meta name="description" content={t('newsPage.metaDescription')} />
+        {/* Basic SEO tags */}
+        <title>{content.title} | CareOverseasSpace</title>
+        <meta name="description" content={content.subtitle} />
+        <meta name="keywords" content="hip replacement, anterior approach, minimally invasive, medical tourism, fast recovery" />
+        <link rel="canonical" href={currentUrl} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:title" content={content.title} />
+        <meta property="og:description" content={content.subtitle} />
+        <meta property="og:image" content={content.ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={currentUrl} />
+        <meta name="twitter:title" content={content.title} />
+        <meta name="twitter:description" content={content.subtitle} />
+        <meta name="twitter:image" content={content.ogImage} />
+
+        {/* Hreflang for translations */}
+        <link rel="alternate" href="https://careoverseas.space/news/anterior-approach" hreflang="en" />
+        <link rel="alternate" href="https://careoverseas.space/ru/news/anterior-approach" hreflang="ru" />
+        <link rel="alternate" href="https://careoverseas.space/pl/news/anterior-approach" hreflang="pl" />
+        <link rel="alternate" href="https://careoverseas.space/ar/news/anterior-approach" hreflang="ar" />
+
+        {/* Structured Data JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       </Helmet>
 
-      <div className="container mx-auto px-6 py-12">
-        <motion.header
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
-          <div className="inline-block bg-gradient-to-r from-blue-600 to-green-600 p-4 rounded-full mb-6">
-            <Newspaper className="h-12 w-12 text-white" />
-          </div>
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            {t('newsPage.title')}
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t('newsPage.subtitle')}
-          </p>
-        </motion.header>
+      <header className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-20">
+        <div className="container mx-auto text-center px-6">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+          >
+            {content.title}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
+          >
+            {content.subtitle}
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="mt-8"
+          >
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:text-teal-600">
+              <Link to="/#contact">{t('header.freeConsultation')}</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </header>
 
-        <section className="mt-16 grid gap-12 max-w-4xl mx-auto">
-          {articles.map((article, index) => (
-            <motion.article
-              key={article.slug}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row group"
-            >
-              <div className="md:w-1/3">
-                <img
-                  className="h-64 w-full object-cover"
-                  src={article.image}
-                  alt={article.imageAlt}
-                />
-              </div>
-
-              <div className="p-8 flex flex-col justify-between md:w-2/3">
-                <div>
-                  <p className="text-sm text-gray-500 mb-1">{article.date}</p>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    <Link to={article.slug}>
-                      {t(article.titleKey)}
-                    </Link>
-                  </h2>
-                  <p className="text-gray-600 mb-6">
-                    {t(article.descriptionKey)}
-                  </p>
-                </div>
-                <Button asChild className="self-start">
-                  <Link to={article.slug}>
-                    {t('newsPage.readMore')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </motion.article>
-          ))}
+      <main className="container mx-auto px-6 py-16 space-y-24">
+        {/* Definition Section */}
+        <section aria-labelledby="definition-heading" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={sectionVariants}
+            className="max-w-xl"
+          >
+            <h2 id="definition-heading" className="text-2xl font-bold mb-4 flex items-center text-gray-800">
+              <Activity className="mr-2 text-blue-600" /> {content.definition.title}
+            </h2>
+            <p className="text-gray-700 leading-relaxed">{content.definition.text}</p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            custom={2}
+            variants={sectionVariants}
+            className="flex justify-center"
+          >
+            <img
+              src={content.ogImage}
+              alt="Schematic of anterior hip replacement approach"
+              className="w-full max-w-md rounded-lg shadow-lg"
+              loading="lazy"
+            />
+          </motion.div>
         </section>
-      </div>
+
+        {/* Benefits Section */}
+        <section aria-labelledby="benefits-heading">
+          <h2 id="benefits-heading" className="text-3xl font-bold text-center mb-12">
+            {content.benefits.title}
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {content.benefits.items.map((item, i) => {
+              const Icon = { CheckCircle, Clock, Activity, Globe }[item.icon];
+              return (
+                <motion.article
+                  key={i}
+                  initial="hidden"
+                  animate="visible"
+                  custom={i + 1}
+                  variants={sectionVariants}
+                  className="bg-white rounded-2xl shadow-xl overflow-hidden"
+                >
+                  <CardHeader className="flex items-center px-6 py-4 bg-blue-50">
+                    {Icon && <Icon className="w-6 h-6 text-blue-600" />}
+                    <h3 className="ml-3 text-lg font-semibold text-gray-800">{item.title}</h3>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <p className="text-gray-700">{item.description}</p>
+                  </CardContent>
+                </motion.article>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Medical Tourism Section */}
+        <section aria-labelledby="tourism-heading" className="bg-gray-50 p-12 rounded-2xl">
+          <h2 id="tourism-heading" className="text-2xl font-bold mb-6 flex items-center text-green-700">
+            <Globe className="mr-2" /> {content.tourism.title}
+          </h2>
+          <ul className="list-disc list-inside space-y-3 text-gray-700">
+            {content.tourism.points.map((point, idx) => (
+              <li key={idx}>{point}</li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Journey Steps Section */}
+        <motion.section
+          initial="hidden"
+          animate="visible"
+          custom={4}
+          variants={sectionVariants}
+          className="mt-16"
+        >
+          <h2 className="text-3xl font-bold text-center mb-8">
+            {content.journey.title}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+            {content.journey.steps.map((step, i) => {
+              const isRecovery = step.step === 'Recovery';
+              const lines = isRecovery
+                ? step.description.split('\n').filter(l => l.trim())
+                : [];
+              const spanClasses = isRecovery ? 'col-span-full sm:col-span-2 lg:col-span-3' : '';
+              return (
+                <motion.div
+                  key={i}
+                  initial="hidden"
+                  animate="visible"
+                  custom={i + 1}
+                  variants={sectionVariants}
+                  className={`flex flex-col h-full bg-white rounded-2xl shadow-lg p-6 ${spanClasses}`}
+                >
+                  <div className="text-blue-600 text-xl font-semibold mb-4">
+                    {step.step}
+                  </div>
+                  <div className="flex-grow text-gray-700">
+                    {isRecovery ? (
+                      <ul className="list-disc list-inside space-y-2">
+                        {lines.map((line, idx) => (
+                          <li key={idx}>{line.replace(/^•\s*/, '')}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="whitespace-pre-line">{step.description}</p>
+                    )}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.section>
+
+        {/* Final CTA */}
+        <aside className="bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-2xl p-12 text-center">
+          <h3 className="text-2xl font-semibold mb-4">{content.cta.text}</h3>
+          <Button size="lg" className="bg-white text-blue-600 hover:text-teal-500">
+            <Link to="/#contact">{content.cta.button}</Link>
+          </Button>
+        </aside>
+
+        {/* Back to News */}
+        <nav className="text-center">
+          <Button asChild variant="link">
+            <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
+              <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
+            </Link>
+          </Button>
+        </nav>
+      </main>
     </>
   );
-};
-
-export default NewsPage;
+}
