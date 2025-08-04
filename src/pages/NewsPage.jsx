@@ -16,7 +16,7 @@ const NewsPage = () => {
 
   const articles = [
     {
-    slug: '/anterior-approach',
+    slug: '/news/anterior-approach',
     titleKey: 'newsPage.anteriorApproachTitle',
     descriptionKey: 'newsPage.anteriorApproachDescription',
     imageAlt: 'Illustration of anterior hip replacement approach',
