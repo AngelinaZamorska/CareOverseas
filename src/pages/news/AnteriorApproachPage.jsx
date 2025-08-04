@@ -186,10 +186,9 @@ export default function AnteriorApproachPage() {
   <h2 className="text-3xl font-bold text-center mb-8">
     {content.journey.title}
   </h2>
-  <div className="grid md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     {content.journey.steps.map((step, i) => {
       const isRecovery = step.step === 'Recovery';
-      // разбиваем текст Recovery по переносам строк
       const lines = isRecovery
         ? step.description.split('\n').filter(l => l.trim())
         : [];
@@ -201,19 +200,26 @@ export default function AnteriorApproachPage() {
           animate="visible"
           custom={i + 1}
           variants={sectionVariants}
-          className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-lg"
+          // Вот здесь добавляем col-span если это Recovery
+          className={`flex flex-col bg-white rounded-2xl shadow-lg p-6 ${
+            isRecovery ? 'lg:col-span-3' : ''
+          }`}
         >
-          <div className="text-blue-600 text-2xl font-bold">{step.step}</div>
+          <div className="text-blue-600 text-xl font-semibold mb-4">
+            {step.step}
+          </div>
 
-          {isRecovery ? (
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              {lines.map((line, idx) => (
-                <li key={idx}>{line.replace(/^•\s*/, '')}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-gray-700 whitespace-pre-line">{step.description}</p>
-          )}
+          <div className="flex-grow text-gray-700">
+            {isRecovery ? (
+              <ul className="list-disc list-inside space-y-2">
+                {lines.map((line, idx) => (
+                  <li key={idx}>{line.replace(/^•\s*/, '')}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="whitespace-pre-line">{step.description}</p>
+            )}
+          </div>
         </motion.div>
       );
     })}
