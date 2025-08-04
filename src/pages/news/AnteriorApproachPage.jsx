@@ -14,13 +14,17 @@ const sectionVariants = {
     y: 0,
     transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' }
   }),
+  
 };
 
 export default function AnteriorApproachPage() {
   const { t } = useTranslation();
   const content = t('anteriorApproach', { returnObjects: true });
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-
+ // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Structured Data for MedicalProcedure
   const jsonLd = {
     "@context": "https://schema.org",

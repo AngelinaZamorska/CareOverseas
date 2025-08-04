@@ -19,7 +19,10 @@ const sectionVariants = {
 const SafeTreatmentAbroadPage = () => {
   const { t } = useTranslation();
   const content = t('safeTreatmentAbroad', { returnObjects: true });
-
+ // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Helmet>

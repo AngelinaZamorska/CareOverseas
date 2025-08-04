@@ -21,7 +21,10 @@ const DuchennePage = () => {
   const { t } = useTranslation();
   const content = t('duchenne', { returnObjects: true });
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-
+ // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
