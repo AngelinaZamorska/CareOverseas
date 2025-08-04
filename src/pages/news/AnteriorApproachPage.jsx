@@ -125,7 +125,7 @@ export default function AnteriorApproachPage() {
     className="flex justify-center"
   >
     <img
-      src="/images/anterior-approach-diagram.jpg"
+      src="https://careoverseas.space/og-image-anterior-hip.jpg"
       alt="Schematic of anterior hip replacement approach"
       className="w-full max-w-md rounded-lg shadow-lg"
       loading="lazy"
