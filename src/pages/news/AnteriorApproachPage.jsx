@@ -176,26 +176,49 @@ export default function AnteriorApproachPage() {
         </section>
 
         {/* Journey Steps */}
-        <section aria-labelledby="journey-heading">
-          <h2 id="journey-heading" className="text-3xl font-bold text-center mb-12">
-            {content.journey.title}
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {content.journey.steps.map((step, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                animate="visible"
-                custom={i + 1}
-                variants={sectionVariants}
-                className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-lg"
-              >
-                <div className="text-blue-600 text-2xl font-bold">{step.step}</div>
-                <p className="text-gray-700">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
+<motion.section
+  initial="hidden"
+  animate="visible"
+  custom={4}
+  variants={sectionVariants}
+  className="mt-16"
+>
+  <h2 className="text-3xl font-bold text-center mb-8">
+    {content.journey.title}
+  </h2>
+  <div className="grid md:grid-cols-3 gap-8">
+    {content.journey.steps.map((step, i) => {
+      const isRecovery = step.step === 'Recovery';
+      // разбиваем текст Recovery по переносам строк
+      const lines = isRecovery
+        ? step.description.split('\n').filter(l => l.trim())
+        : [];
+
+      return (
+        <motion.div
+          key={i}
+          initial="hidden"
+          animate="visible"
+          custom={i + 1}
+          variants={sectionVariants}
+          className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-lg"
+        >
+          <div className="text-blue-600 text-2xl font-bold">{step.step}</div>
+
+          {isRecovery ? (
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              {lines.map((line, idx) => (
+                <li key={idx}>{line.replace(/^•\s*/, '')}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-gray-700 whitespace-pre-line">{step.description}</p>
+          )}
+        </motion.div>
+      );
+    })}
+  </div>
+</motion.section>
 
         {/* Final CTA */}
         <aside className="bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-2xl p-12 text-center">
