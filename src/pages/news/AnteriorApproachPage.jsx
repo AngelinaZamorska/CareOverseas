@@ -281,7 +281,7 @@ export default function AnteriorApproachPage() {
         <nav className="text-center">
 <Button asChild variant="link">
                 <Link className="inline-flex items-center text-gray-600 hover:text-gray-900" to="/news">
-                  <ArrowLeft className="mr-2 w-4 h-4" /> {t('newsPage.backToNews')}
+                  <ArrowLeft className="mr-2 w-4 h-4" /> {t('safeTreatmentAbroad.backToNews')}
                 </Link>
               </Button>
         </nav>
