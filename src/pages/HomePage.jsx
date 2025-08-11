@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import {
   Heart,
   Globe,
@@ -14,13 +14,17 @@ import {
   Clock,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import CountriesSection from '@/components/home/CountriesSection';
-import ContactSection from '@/components/home/ContactSection';
-import DRGCalculator from '@/components/DRGCalculator';
+import CountriesSectionRaw from '@/components/home/CountriesSection';
+import ContactSectionRaw from '@/components/home/ContactSection';
 import { useTranslation, Trans } from 'react-i18next';
+
+// ленивые версии секций (сохранит initial bundle)
+const CountriesSection = lazy(() => import('@/components/home/CountriesSection'));
+const ContactSection = lazy(() => import('@/components/home/ContactSection'));
 
 const HomePage = () => {
   const { t, i18n } = useTranslation();
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,45 +42,65 @@ const HomePage = () => {
       <Helmet>
         {/* Primary Meta Tags */}
         <title>CareOverseas – Trusted Medical Care Abroad</title>
-        <meta name="description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
+        <meta
+          name="description"
+          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
+        />
         <link rel="canonical" href="https://careoverseas.space/" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://careoverseas.space/" />
-        <meta property="og:title" content="CareOverseas – Trusted Medical Care Abroad" />
-        <meta property="og:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
-        <meta property="og:image" content="https://careoverseas.space/og-image-v2.jpg" />
+        <meta
+          property="og:title"
+          content="CareOverseas – Trusted Medical Care Abroad"
+        />
+        <meta
+          property="og:description"
+          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
+        />
+        <meta
+          property="og:image"
+          content="https://careoverseas.space/og-image-v2.jpg"
+        />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://careoverseas.space/" />
-        <meta name="twitter:title" content="CareOverseas – Trusted Medical Care Abroad" />
-        <meta name="twitter:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
-        <meta name="twitter:image" content="https://careoverseas.space/og-image-v2.jpg" />
+        <meta
+          name="twitter:title"
+          content="CareOverseas – Trusted Medical Care Abroad"
+        />
+        <meta
+          name="twitter:description"
+          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
+        />
+        <meta
+          name="twitter:image"
+          content="https://careoverseas.space/og-image-v2.jpg"
+        />
 
-        {/* Preload & Preconnect */}
-        <link rel="preconnect" href="https://careoverseas.space" />
+        {/* Preload hero */}
         <link rel="preload" as="image" href="/home-hero.jpg" />
 
         {/* Structured Data */}
-<script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    name: "CareOverseas",
-    url: "https://careoverseas.space",
-    logo: "https://careoverseas.space/apple-touch-icon.png",
-    description: t('homePage.heroSubtitle'),
-    // вместо конкретного адреса указываем зону обслуживания
-    areaServed: "Worldwide",
-    telephone: "+380984998555",
-    sameAs: [
-      "https://www.facebook.com/share/1LqwJfEtum/",
-      "https://x.com/AngelinaCureDE"
-    ]
-  })}
-</script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'MedicalOrganization',
+            name: 'CareOverseas',
+            url: 'https://careoverseas.space',
+            logo: 'https://careoverseas.space/apple-touch-icon.png',
+            description: t('homePage.heroSubtitle'),
+            // вместо конкретного адреса указываем зону обслуживания
+            areaServed: 'Worldwide',
+            telephone: '+380984998555',
+            sameAs: [
+              'https://www.facebook.com/share/1LqwJfEtum/',
+              'https://x.com/AngelinaCureDE',
+            ],
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -84,8 +108,8 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-green-600/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 30 }}
+            animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
@@ -130,8 +154,16 @@ const HomePage = () => {
 
             <div className="flex items-center space-x-8 pt-6">
               {[
-                { value: '500+', label: t('homePage.satisfiedPatients'), color: 'text-blue-600' },
-                { value: '4', label: t('homePage.partnerCountries'), color: 'text-green-600' },
+                {
+                  value: '500+',
+                  label: t('homePage.satisfiedPatients'),
+                  color: 'text-blue-600',
+                },
+                {
+                  value: '4',
+                  label: t('homePage.partnerCountries'),
+                  color: 'text-green-600',
+                },
                 { value: '24/7', label: t('homePage.support'), color: 'text-purple-600' },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
@@ -143,8 +175,8 @@ const HomePage = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.9 }}
+            animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
@@ -155,6 +187,10 @@ const HomePage = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Trusted international healthcare illustration"
                 loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                width="1200"
+                height="500"
                 className="w-full h-auto md:h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg"
               />
               {/* Icons */}
@@ -169,12 +205,15 @@ const HomePage = () => {
         </div>
       </section>
 
-
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section
+        id="services"
+        className="py-20 bg-white"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
@@ -228,10 +267,10 @@ const HomePage = () => {
             ].map((svc, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
+                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: prefersReducedMotion ? 0 : idx * 0.1 }}
                 className="group p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 bg-white"
               >
                 <div
@@ -253,21 +292,28 @@ const HomePage = () => {
 
       {/* Countries Section */}
       <motion.section
-        initial={{ opacity: 0, y: 20 }}
+        initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="py-20 bg-gray-50"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <CountriesSection />
+          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />}>
+            <CountriesSection />
+          </Suspense>
         </div>
       </motion.section>
 
       {/* Process Section */}
-      <section id="process" className="py-20 bg-white">
+      <section
+        id="process"
+        className="py-20 bg-white"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
@@ -290,9 +336,9 @@ const HomePage = () => {
             ].map((step, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 10 }}
+                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * (i + 1) }}
+                transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * (i + 1) }}
                 className="flex flex-col items-center	text-center space-y-4 p-6 border rounded-lg"
               >
                 <step.icon className={`h-12 w-12 md:h-14 md:w-14 ${step.color}`} />
@@ -307,14 +353,16 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      
-
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
+      <section
+        id="testimonials"
+        className="py-20 bg-gradient-to-br from-blue-50 to-green-50"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
@@ -329,9 +377,9 @@ const HomePage = () => {
             {[1, 2, 3].map((i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 10 }}
+                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * i }}
+                transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * i }}
                 className="flex	flex-col items-start	bg-white rounded-2xl	p-6 shadow-lg space-y-4"
               >
                 <Star className="h-6 w-6 md:h-8 md:w-8 text-yellow-400" />
@@ -351,9 +399,15 @@ const HomePage = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section
+        id="contact"
+        className="py-20 bg-white"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <ContactSection />
+          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />}>
+            <ContactSection />
+          </Suspense>
         </div>
       </section>
     </div>
