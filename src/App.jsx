@@ -4,6 +4,7 @@ import { Routes, Route, Navigate, useParams, useLocation } from 'react-router-do
 import { Helmet } from 'react-helmet';
 import { I18nextProvider } from 'react-i18next';
 
+
 // поправь путь, если у тебя другой:
 import i18n from './i18n';
 
@@ -116,17 +117,47 @@ function LangLayout() {
   );
 }
 
+// Подбираем язык: сначала сохранённый, потом язык браузера
+function detectPreferredLang() {
+  try {
+    const saved = (localStorage.getItem('i18nextLng') || '').slice(0, 2);
+    if (['en','ru','pl','ar'].includes(saved)) return saved;
+  } catch {}
+  const nav = (navigator.language || 'en').slice(0, 2);
+  return ['en','ru','pl','ar'].includes(nav) ? nav : 'en';
+}
+
+// /  -> /<lang>
+function RootRedirect() {
+  const lang = detectPreferredLang();
+  return <Navigate to={`/${lang}`} replace />;
+}
+
+// /anything (без префикса языка) -> /<lang>/anything
+function PathRedirectPreserve() {
+  const location = useLocation();
+  const lang = detectPreferredLang();
+  return (
+    <Navigate
+      to={`/${lang}${location.pathname}${location.search}${location.hash}`}
+      replace
+    />
+  );
+}
+
+
 export default function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Routes>
-        {/* корень без языка → редирект на en */}
-        <Route path="/" element={<Navigate to="/en" replace />} />
-        {/* все языки */}
+        {/* корень → на предпочтительный язык */}
+        <Route path="/" element={<RootRedirect />} />
+        {/* все языковые маршруты */}
         <Route path="/:lang/*" element={<LangLayout />} />
-        {/* любой другой путь → на en */}
-        <Route path="*" element={<Navigate to="/en" replace />} />
+        {/* любые пути без языка → добавить язык, сохранить хвост */}
+        <Route path="/*" element={<PathRedirectPreserve />} />
       </Routes>
     </I18nextProvider>
   );
 }
+

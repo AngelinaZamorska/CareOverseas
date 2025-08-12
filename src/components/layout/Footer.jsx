@@ -1,29 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { User, Phone, Mail, MapPin } from 'lucide-react';
 import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import useLangPath from '@/lib/useLangPath';
 
-const Footer = () => {
+export default function Footer() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const location = useLocation();
+  const l = useLangPath();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // мы на главной конкретного языка?
+  const isHome = /^\/(en|ru|pl|ar)\/?$/.test(location.pathname);
 
-  const scrollToContact = () => {
-    const el = document.getElementById('contact');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 150);
-    } else {
-      scrollToContact();
+  // плавный скролл по якорю, только если уже на главной
+  const onAnchorClick = (e, hash) => {
+    if (!isHome) return; // на других страницах обычный переход на /<lang>/#hash
+    const id = (hash || '').replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -34,7 +31,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              {/* Logo */}
               <div className="bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-full animate-pulse flex-shrink-0">
                 <img
                   src="/android-chrome-192x192.png"
@@ -42,7 +38,6 @@ const Footer = () => {
                   className="h-8 w-8 object-cover"
                 />
               </div>
-              {/* Brand Name in 3 rows, matching icon height */}
               <div className="flex flex-col justify-center h-12 leading-4 text-white font-extrabold text-xs md:text-sm">
                 <span>Care</span>
                 <span>Overseas</span>
@@ -87,74 +82,59 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => navigate('/')}
-                  className="hover:text-white transition"
-                >
+                <Link to={l('/')} className="hover:text-white transition">
                   {t('footer.home')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => navigate('/oncology')}
-                  className="hover:text-white transition"
-                >
+                <Link to={l('oncology')} className="hover:text-white transition">
                   {t('treatments.oncology')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => navigate('/lu-177-psma-therapy')}
-                  className="hover:text-white transition"
-                >
+                <Link to={l('lu-177-psma-therapy')} className="hover:text-white transition">
                   {t('treatments.lu177')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() =>
-                    navigate('/dendritic-cell-therapy-germany')
-                  }
-                  className="hover:text-white transition"
-                >
+                <Link to={l('dendritic-cell-therapy-germany')} className="hover:text-white transition">
                   {t('treatments.dendritic')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => navigate('/ivf-in-turkey')}
-                  className="hover:text-white transition"
-                >
+                <Link to={l('ivf-in-turkey')} className="hover:text-white transition">
                   {t('treatments.ivf')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() =>
-                    navigate('/cardiac-surgery-germany')
-                  }
-                  className="hover:text-white transition"
-                >
+                <Link to={l('cardiac-surgery-germany')} className="hover:text-white transition">
                   {t('treatments.cardiac')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() =>
-                    navigate('/endometriosis-leomyoma-treatment')
-                  }
-                  className="hover:text-white transition"
-                >
+                <Link to={l('endometriosis-leomyoma-treatment')} className="hover:text-white transition">
                   {t('treatments.endometriosis')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => navigate('/joint-replacement')}
+                <Link to={l('joint-replacement')} className="hover:text-white transition">
+                  {t('treatments.joint')}
+                </Link>
+              </li>
+              <li>
+                <Link to={l('news')} className="hover:text-white transition">
+                  {t('header.news')}
+                </Link>
+              </li>
+              <li>
+                {/* якорь на контакт на главной текущего языка */}
+                <a
+                  href={`${l('/') }#contact`}
+                  onClick={(e) => onAnchorClick(e, '#contact')}
                   className="hover:text-white transition"
                 >
-                  {t('treatments.joint')}
-                </button>
+                  {t('header.contact')}
+                </a>
               </li>
             </ul>
           </div>
@@ -201,22 +181,15 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500 space-y-4">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} CareOverseasSpace. {t(
-              'footer.rights'
-            )}
+            &copy; {new Date().getFullYear()} CareOverseasSpace. {t('footer.rights')}
           </p>
           <div className="mt-4 md:mt-0">
-            <button
-              onClick={() => navigate('/privacy-policy')}
-              className="text-sm hover:text-white underline transition"
-            >
+            <Link to={l('privacy-policy')} className="text-sm hover:text-white underline transition">
               {t('footer.privacyPolicy')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

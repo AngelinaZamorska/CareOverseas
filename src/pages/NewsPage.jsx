@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Newspaper, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import { Button } from '@/components/ui/button';
-
-
+import Seo from '@/components/Seo';
+import useLangPath from '@/lib/useLangPath';
 
 const NewsPage = () => {
   const { t } = useTranslation();
+  const l = useLangPath();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,21 +18,20 @@ const NewsPage = () => {
 
   const articles = [
     {
-    slug: '/news/anterior-approach',
-    titleKey: 'newsPage.anteriorApproachTitle',
-    descriptionKey: 'newsPage.anteriorApproachDescription',
-    imageAlt: 'Illustration of anterior hip replacement approach',
-    image: 'https://careoverseas.space/og-image-anterior-hip.jpg',
-    date: '01.08.2025'
-  },
-
+      slug: '/news/anterior-approach',
+      titleKey: 'newsPage.anteriorApproachTitle',
+      descriptionKey: 'newsPage.anteriorApproachDescription',
+      imageAlt: 'Illustration of anterior hip replacement approach',
+      image: 'https://careoverseas.space/og-image-anterior-hip.jpg',
+      date: '01.08.2025',
+    },
     {
       slug: '/news/duchenne-muscular-dystrophy',
       titleKey: 'newsPage.duchenneTitle',
       descriptionKey: 'newsPage.duchenneDescription',
       imageAlt: 'Boy in wheelchair with supportive family',
       image: 'https://careoverseas.space/news-duchenne.jpg',
-      date: '27.07.2025'
+      date: '27.07.2025',
     },
     {
       slug: '/news/safe-treatment-abroad',
@@ -39,17 +39,17 @@ const NewsPage = () => {
       descriptionKey: 'newsPage.articlePreviewDescription',
       imageAlt: 'Patient fleeing war',
       image: 'https://careoverseas.space/news-war.jpg',
-      date: '16.07.2025'
-    }
-    
+      date: '16.07.2025',
+    },
   ];
 
   return (
     <>
-      <Helmet>
-        <title>{t('newsPage.metaTitle')} - CareOverseasSpace</title>
-        <meta name="description" content={t('newsPage.metaDescription')} />
-      </Helmet>
+      {/* SEO: canonical + hreflang для текущего языка */}
+      <Seo
+        title={`${t('newsPage.metaTitle')} - CareOverseasSpace`}
+        description={t('newsPage.metaDescription')}
+      />
 
       <div className="container mx-auto px-6 py-12">
         <motion.header
@@ -83,6 +83,9 @@ const NewsPage = () => {
                   className="h-64 w-full object-cover"
                   src={article.image}
                   alt={article.imageAlt}
+                  loading="lazy"
+                  width="640"
+                  height="360"
                 />
               </div>
 
@@ -90,7 +93,7 @@ const NewsPage = () => {
                 <div>
                   <p className="text-sm text-gray-500 mb-1">{article.date}</p>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    <Link to={article.slug}>
+                    <Link to={l(article.slug)}>
                       {t(article.titleKey)}
                     </Link>
                   </h2>
@@ -99,7 +102,7 @@ const NewsPage = () => {
                   </p>
                 </div>
                 <Button asChild className="self-start">
-                  <Link to={article.slug}>
+                  <Link to={l(article.slug)}>
                     {t('newsPage.readMore')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

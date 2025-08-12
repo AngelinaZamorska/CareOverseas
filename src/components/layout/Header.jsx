@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import useLangPath from '@/lib/useLangPath';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -12,8 +13,9 @@ export default function Header() {
   const [isMobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const location = useLocation();
   const dropdownRef = useRef(null);
+  const l = useLangPath(); // ← формирует URL с текущим языком
 
-  // Закрываем десктоп-меню при клике вне его
+  // закрытие дропдауна по клику вне
   useEffect(() => {
     const handleOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -24,36 +26,36 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handleOutside);
   }, []);
 
-  // Плавный скролл по якорям, если уже на главной
+  // мы на главной конкретного языка?
+  const isHome = /^\/(en|ru|pl|ar)\/?$/.test(location.pathname);
+
+  // плавный скролл по якорям ТОЛЬКО если уже на главной
   const handleAnchorClick = (e, hash) => {
-    if (location.pathname === '/') {
+    if (isHome) {
       const id = (hash || '').replace('#', '');
       const el = document.getElementById(id);
       if (el) {
         e.preventDefault();
         el.scrollIntoView({ behavior: 'smooth' });
-        setMenuOpen(false);
-        setMobileDropdownOpen(false);
       }
-    } else {
-      // если не на главной — позволяем браузеру перейти по /#hash
-      setMenuOpen(false);
-      setMobileDropdownOpen(false);
     }
+    setMenuOpen(false);
+    setMobileDropdownOpen(false);
   };
 
-  // Классы
-const baseLink = 'inline-flex items-center h-10 px-4 rounded-lg font-medium leading-none whitespace-nowrap transition-colors';  
-const activeLink = 'text-blue-600 border-blue-600';
+  // стили
+  const baseLink = 'inline-flex items-center h-10 px-4 rounded-lg font-medium leading-none whitespace-nowrap transition-colors';
+  const activeLink = 'text-blue-600 border-blue-600';
   const defaultLink = 'text-gray-700 border-transparent hover:text-blue-500 hover:border-blue-200';
 
-  // Хэдер
+  const isActive = (path) => location.pathname === l(path);
+
   return (
     <header className="fixed w-full top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-900/80 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Primary">
-        {/* Лого: ссылка на главную и скролл к top */}
+        {/* Лого → на главную текущего языка, якорь #top */}
         <a
-          href="/#top"
+          href={`${l('/') }#top`}
           onClick={(e) => handleAnchorClick(e, '#top')}
           className="flex items-center space-x-2 flex-shrink-0 mr-8 focus:outline-none"
           aria-label="CareOverseasSpace Home"
@@ -78,46 +80,46 @@ const activeLink = 'text-blue-600 border-blue-600';
           <ul className="flex items-center space-x-2">
             {/* Как мы работаем (якорь) */}
             <li>
-  <a
-    href="/#process"
-    onClick={(e) => handleAnchorClick(e, '#process')}
-    className={`${baseLink} border-b-2 ${location.hash === '#process' ? activeLink : defaultLink}`}
-    aria-current={location.hash === '#process' ? 'true' : undefined}
-  >
-    {t('header.process')}
-  </a>
-</li>
+              <a
+                href={`${l('/') }#process`}
+                onClick={(e) => handleAnchorClick(e, '#process')}
+                className={`${baseLink} border-b-2 ${isHome && location.hash === '#process' ? activeLink : defaultLink}`}
+                aria-current={isHome && location.hash === '#process' ? 'true' : undefined}
+              >
+                {t('header.process')}
+              </a>
+            </li>
 
-<li>
-  <Link
-    to="/drg-calculator"
-    className={`${baseLink} border-b-2 ${location.pathname === '/drg-calculator' ? activeLink : defaultLink}`}
-    aria-current={location.pathname === '/drg-calculator' ? 'page' : undefined}
-  >
-    {t('header.drgCalculator')}
-  </Link>
-</li>
+            <li>
+              <Link
+                to={l('drg-calculator')}
+                className={`${baseLink} border-b-2 ${isActive('drg-calculator') ? activeLink : defaultLink}`}
+                aria-current={isActive('drg-calculator') ? 'page' : undefined}
+              >
+                {t('header.drgCalculator')}
+              </Link>
+            </li>
 
-<li>
-  <Link
-    to="/news"
-    className={`${baseLink} border-b-2 ${location.pathname === '/news' ? activeLink : defaultLink}`}
-    aria-current={location.pathname === '/news' ? 'page' : undefined}
-  >
-    {t('header.news')}
-  </Link>
-</li>
+            <li>
+              <Link
+                to={l('news')}
+                className={`${baseLink} border-b-2 ${isActive('news') ? activeLink : defaultLink}`}
+                aria-current={isActive('news') ? 'page' : undefined}
+              >
+                {t('header.news')}
+              </Link>
+            </li>
 
-<li>
-  <a
-    href="/#contact"
-    onClick={(e) => handleAnchorClick(e, '#contact')}
-    className={`${baseLink} border-b-2 ${location.hash === '#contact' ? activeLink : defaultLink}`}
-    aria-current={location.hash === '#contact' ? 'true' : undefined}
-  >
-    {t('header.contact')}
-  </a>
-</li>
+            <li>
+              <a
+                href={`${l('/') }#contact`}
+                onClick={(e) => handleAnchorClick(e, '#contact')}
+                className={`${baseLink} border-b-2 ${isHome && location.hash === '#contact' ? activeLink : defaultLink}`}
+                aria-current={isHome && location.hash === '#contact' ? 'true' : undefined}
+              >
+                {t('header.contact')}
+              </a>
+            </li>
           </ul>
 
           {/* Выпадающее меню направлений лечения */}
@@ -142,22 +144,22 @@ const activeLink = 'text-blue-600 border-blue-600';
                   role="menu"
                 >
                   {[
-                    { label: t('treatments.oncology'), path: '/oncology' },
-                    { label: t('treatments.lu177'), path: '/lu-177-psma-therapy' },
-                    { label: t('treatments.neurosurgery'), path: '/neurosurgery' },
-                    { label: t('treatments.bloodDiseases'), path: '/blood-diseases-treatment' },
-                    { label: t('treatments.rheumatology'), path: '/rheumatology-israel' },
-                    { label: t('treatments.epilepsy'), path: '/epilepsy-treatment-spain' },
-                    { label: t('treatments.dendritic'), path: '/dendritic-cell-therapy-germany' },
-                    { label: t('treatments.ivf'), path: '/ivf-in-turkey' },
-                    { label: t('treatments.cardiac'), path: '/cardiac-surgery-germany' },
-                    { label: t('treatments.endometriosis'), path: '/endometriosis-leomyoma-treatment' },
-                    { label: t('treatments.joint'), path: '/joint-replacement' },
-                    { label: t('treatments.plasticSurgery'), path: '/plastic-surgery-turkey' },
+                    { label: t('treatments.oncology'), path: 'oncology' },
+                    { label: t('treatments.lu177'), path: 'lu-177-psma-therapy' },
+                    { label: t('treatments.neurosurgery'), path: 'neurosurgery' },
+                    { label: t('treatments.bloodDiseases'), path: 'blood-diseases-treatment' },
+                    { label: t('treatments.rheumatology'), path: 'rheumatology-israel' },
+                    { label: t('treatments.epilepsy'), path: 'epilepsy-treatment-spain' },
+                    { label: t('treatments.dendritic'), path: 'dendritic-cell-therapy-germany' },
+                    { label: t('treatments.ivf'), path: 'ivf-in-turkey' },
+                    { label: t('treatments.cardiac'), path: 'cardiac-surgery-germany' },
+                    { label: t('treatments.endometriosis'), path: 'endometriosis-leomyoma-treatment' },
+                    { label: t('treatments.joint'), path: 'joint-replacement' },
+                    { label: t('treatments.plasticSurgery'), path: 'plastic-surgery-turkey' },
                   ].map(({ label, path }) => (
                     <li key={path} role="none">
                       <Link
-                        to={path}
+                        to={l(path)}
                         onClick={() => setDropdownOpen(false)}
                         className="block px-4 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
                         role="menuitem"
@@ -173,14 +175,14 @@ const activeLink = 'text-blue-600 border-blue-600';
 
           <LanguageSwitcher />
 
-          {/* Кнопка — тоже ссылка на якорь, чтобы бот её «видел» */}
+          {/* CTA-кнопка → якорь на контакт текущего языка */}
           <a
-  href="/#contact"
-  onClick={(e) => handleAnchorClick(e, '#contact')}
-  className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition whitespace-nowrap"
->
-  {t('header.freeConsultation')}
-</a>
+            href={`${l('/') }#contact`}
+            onClick={(e) => handleAnchorClick(e, '#contact')}
+            className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition whitespace-nowrap"
+          >
+            {t('header.freeConsultation')}
+          </a>
         </div>
 
         {/* Мобильная кнопка меню */}
@@ -204,9 +206,8 @@ const activeLink = 'text-blue-600 border-blue-600';
             className="md:hidden overflow-hidden bg-white dark:bg-gray-900"
           >
             <div className="px-4 pt-2 pb-4 space-y-1">
-              {/* Пункты навигации — ссылки */}
               <a
-                href="/#process"
+                href={`${l('/') }#process`}
                 onClick={(e) => handleAnchorClick(e, '#process')}
                 className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               >
@@ -214,7 +215,7 @@ const activeLink = 'text-blue-600 border-blue-600';
               </a>
 
               <Link
-                to="/drg-calculator"
+                to={l('drg-calculator')}
                 onClick={() => setMenuOpen(false)}
                 className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               >
@@ -222,7 +223,7 @@ const activeLink = 'text-blue-600 border-blue-600';
               </Link>
 
               <Link
-                to="/news"
+                to={l('news')}
                 onClick={() => setMenuOpen(false)}
                 className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               >
@@ -230,7 +231,7 @@ const activeLink = 'text-blue-600 border-blue-600';
               </Link>
 
               <a
-                href="/#contact"
+                href={`${l('/') }#contact`}
                 onClick={(e) => handleAnchorClick(e, '#contact')}
                 className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               >
@@ -255,22 +256,22 @@ const activeLink = 'text-blue-600 border-blue-600';
                   className="pl-4 max-h-60 overflow-y-auto space-y-1"
                 >
                   {[
-                    { label: t('treatments.oncology'), path: '/oncology' },
-                    { label: t('treatments.lu177'), path: '/lu-177-psma-therapy' },
-                    { label: t('treatments.neurosurgery'), path: '/neurosurgery' },
-                    { label: t('treatments.bloodDiseases'), path: '/blood-diseases-treatment' },
-                    { label: t('treatments.rheumatology'), path: '/rheumatology-israel' },
-                    { label: t('treatments.epilepsy'), path: '/epilepsy-treatment-spain' },
-                    { label: t('treatments.dendritic'), path: '/dendritic-cell-therapy-germany' },
-                    { label: t('treatments.ivf'), path: '/ivf-in-turkey' },
-                    { label: t('treatments.cardiac'), path: '/cardiac-surgery-germany' },
-                    { label: t('treatments.endometriosis'), path: '/endometriosis-leomyoma-treatment' },
-                    { label: t('treatments.joint'), path: '/joint-replacement' },
-                    { label: t('treatments.plasticSurgery'), path: '/plastic-surgery-turkey' },
+                    { label: t('treatments.oncology'), path: 'oncology' },
+                    { label: t('treatments.lu177'), path: 'lu-177-psma-therapy' },
+                    { label: t('treatments.neurosurgery'), path: 'neurosurgery' },
+                    { label: t('treatments.bloodDiseases'), path: 'blood-diseases-treatment' },
+                    { label: t('treatments.rheumatology'), path: 'rheumatology-israel' },
+                    { label: t('treatments.epilepsy'), path: 'epilepsy-treatment-spain' },
+                    { label: t('treatments.dendritic'), path: 'dendritic-cell-therapy-germany' },
+                    { label: t('treatments.ivf'), path: 'ivf-in-turkey' },
+                    { label: t('treatments.cardiac'), path: 'cardiac-surgery-germany' },
+                    { label: t('treatments.endometriosis'), path: 'endometriosis-leomyoma-treatment' },
+                    { label: t('treatments.joint'), path: 'joint-replacement' },
+                    { label: t('treatments.plasticSurgery'), path: 'plastic-surgery-turkey' },
                   ].map(({ label, path }) => (
                     <Link
                       key={path}
-                      to={path}
+                      to={l(path)}
                       onClick={() => {
                         setMenuOpen(false);
                         setMobileDropdownOpen(false);
@@ -286,7 +287,7 @@ const activeLink = 'text-blue-600 border-blue-600';
               <LanguageSwitcher />
 
               <a
-                href="/#contact"
+                href={`${l('/') }#contact`}
                 onClick={(e) => handleAnchorClick(e, '#contact')}
                 className="mt-2 w-full px-5 py-2 inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
               >
