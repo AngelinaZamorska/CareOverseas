@@ -1,13 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
 export default function Header() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobileDropdownOpen, setMobileDropdownOpen] = useState(false);
@@ -22,47 +24,72 @@ export default function Header() {
   }, []);
 
   const lang = getCurrentLangFromPath();
-  const isHome = new RegExp(`^/(en|ru|pl|ar)/?$`).test(typeof window !== 'undefined' ? window.location.pathname : '/en');
+  const isHome = /^\/(en|ru|pl|ar)\/?$/.test(typeof window !== 'undefined' ? window.location.pathname : '/en');
 
-  const handleAnchorClick = (e, hash) => {
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Единый обработчик ссылок-якорей
+  function handleAnchorClick(e, hash = '#top') {
+    e.preventDefault();
+    const id = (hash || '').replace('#', '');
+
     if (isHome) {
-      const id = (hash || '').replace('#', '');
-      const el = document.getElementById(id);
-      if (el) {
-        e.preventDefault();
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
+      // Уже на главной — просто плавно скроллим
+      scrollToId(id);
+    } else {
+      // Не на главной — навигируем на главную с #, ждём рендер и скроллим
+      navigate(`${home()}#${id}`);
+      // Дать время роутеру и компонентам дорендериться:
+      setTimeout(() => scrollToId(id), 120);
     }
+
     setMenuOpen(false);
     setMobileDropdownOpen(false);
-  };
+  }
 
   const baseLink = 'inline-flex items-center h-10 px-4 rounded-lg font-medium leading-none whitespace-nowrap transition-colors';
   const defaultLink = 'text-gray-700 border-transparent hover:text-blue-500 hover:border-blue-200';
-
-  const go = (p) => langLink(p);          // абсолютный путь с языком
-  const home = () => langLink('/');
 
   return (
     <header className="fixed w-full top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-900/80 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Primary">
         {/* Лого → главная + #top */}
-        <a href={`${home()}#top`} onClick={(e) => handleAnchorClick(e, '#top')} className="flex items-center space-x-2 flex-shrink-0 mr-8" aria-label="CareOverseasSpace Home">
-          <motion.img src="/android-chrome-192x192.png" alt="CareOverseasSpace" className="h-10 w-10 rounded-2xl"
-            initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} />
+        <Link
+          to={`${home()}#top`}
+          onClick={(e) => handleAnchorClick(e, '#top')}
+          className="flex items-center space-x-2 flex-shrink-0 mr-8"
+          aria-label="CareOverseasSpace Home"
+        >
+          <motion.img
+            src="/android-chrome-192x192.png"
+            alt="CareOverseasSpace"
+            className="h-10 w-10 rounded-2xl"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4 }}
+          />
           <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
             CareOverseasSpace
           </span>
-        </a>
+        </Link>
 
         {/* Десктоп-меню */}
         <div className="hidden md:flex md:items-center md:space-x-4">
           <ul className="flex items-center space-x-2">
             <li>
-              <a href={`${home()}#process`} onClick={(e) => handleAnchorClick(e, '#process')}
-                 className={`${baseLink} border-b-2 ${defaultLink}`}>
+              <Link
+                to={`${home()}#process`}
+                onClick={(e) => handleAnchorClick(e, '#process')}
+                className={`${baseLink} border-b-2 ${defaultLink}`}
+              >
                 {t('header.process')}
-              </a>
+              </Link>
             </li>
             <li>
               <Link to={go('drg-calculator')} className={`${baseLink} border-b-2 ${defaultLink}`}>
@@ -75,25 +102,35 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a href={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}
-                 className={`${baseLink} border-b-2 ${defaultLink}`}>
+              <Link
+                to={`${home()}#contact`}
+                onClick={(e) => handleAnchorClick(e, '#contact')}
+                className={`${baseLink} border-b-2 ${defaultLink}`}
+              >
                 {t('header.contact')}
-              </a>
+              </Link>
             </li>
           </ul>
 
           {/* Treatments dropdown */}
           <div ref={dropdownRef} className="relative">
-            <button onClick={() => setDropdownOpen(v => !v)}
-              className={`${baseLink} inline-flex items-center border-b-2 ${defaultLink}`} aria-expanded={isDropdownOpen}>
+            <button
+              onClick={() => setDropdownOpen(v => !v)}
+              className={`${baseLink} inline-flex items-center border-b-2 ${defaultLink}`}
+              aria-expanded={isDropdownOpen}
+            >
               {t('header.treatments')}
               <ChevronDown className="ml-1 h-4 w-4" />
             </button>
 
             <AnimatePresence>
               {isDropdownOpen && (
-                <motion.ul initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
-                  className="absolute mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-80 overflow-y-auto p-1 ring-1 ring-black/5">
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="absolute mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-80 overflow-y-auto p-1 ring-1 ring-black/5"
+                >
                   {[
                     ['oncology', 'treatments.oncology'],
                     ['lu-177-psma-therapy', 'treatments.lu177'],
@@ -109,8 +146,11 @@ export default function Header() {
                     ['plastic-surgery-turkey', 'treatments.plasticSurgery'],
                   ].map(([path, key]) => (
                     <li key={path}>
-                      <Link to={go(path)} onClick={() => setDropdownOpen(false)}
-                        className="block px-4 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <Link
+                        to={go(path)}
+                        onClick={() => setDropdownOpen(false)}
+                        className="block px-4 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      >
                         {t(key)}
                       </Link>
                     </li>
@@ -122,14 +162,22 @@ export default function Header() {
 
           <LanguageSwitcher />
 
-          <a href={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}
-             className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition">
+          {/* CTA */}
+          <Link
+            to={`${home()}#contact`}
+            onClick={(e) => handleAnchorClick(e, '#contact')}
+            className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
+          >
             {t('header.freeConsultation')}
-          </a>
+          </Link>
         </div>
 
         {/* Мобильная кнопка */}
-        <button onClick={() => setMenuOpen(v => !v)} className="md:hidden p-2 rounded-md focus:ring-2 focus:ring-blue-500" aria-label="Toggle menu">
+        <button
+          onClick={() => setMenuOpen(v => !v)}
+          className="md:hidden p-2 rounded-md focus:ring-2 focus:ring-blue-500"
+          aria-label="Toggle menu"
+        >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </nav>
@@ -137,20 +185,43 @@ export default function Header() {
       {/* Мобильное меню */}
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-white dark:bg-gray-900">
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden overflow-hidden bg-white dark:bg-gray-900"
+          >
             <div className="px-4 pt-2 pb-4 space-y-1">
-              <a href={`${home()}#process`} onClick={(e) => handleAnchorClick(e, '#process')}
-                 className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">{t('header.process')}</a>
-              <Link to={go('drg-calculator')} onClick={() => setMenuOpen(false)}
-                 className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">{t('header.drgCalculator')}</Link>
-              <Link to={go('news')} onClick={() => setMenuOpen(false)}
-                 className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">{t('header.news')}</Link>
-              <a href={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}
-                 className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">{t('header.contact')}</a>
+              <Link
+                to={`${home()}#process`}
+                onClick={(e) => handleAnchorClick(e, '#process')}
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                {t('header.process')}
+              </Link>
 
-              <button onClick={() => setMobileDropdownOpen(v => !v)}
-                className="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+              <Link to={go('drg-calculator')} onClick={() => setMenuOpen(false)}
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                {t('header.drgCalculator')}
+              </Link>
+
+              <Link to={go('news')} onClick={() => setMenuOpen(false)}
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                {t('header.news')}
+              </Link>
+
+              <Link
+                to={`${home()}#contact`}
+                onClick={(e) => handleAnchorClick(e, '#contact')}
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                {t('header.contact')}
+              </Link>
+
+              <button
+                onClick={() => setMobileDropdownOpen(v => !v)}
+                className="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
                 <span>{t('header.treatments')}</span>
                 <ChevronDown className="h-4 w-4" />
               </button>
@@ -164,16 +235,22 @@ export default function Header() {
                     'joint-replacement','plastic-surgery-turkey'
                   ].map((p) => (
                     <Link key={p} to={go(p)} onClick={() => setMenuOpen(false)}
-                      className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">{p}</Link>
+                      className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                      {p}
+                    </Link>
                   ))}
                 </div>
               )}
 
               <LanguageSwitcher />
-              <a href={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}
-                 className="mt-2 w-full px-5 py-2 inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
+
+              <Link
+                to={`${home()}#contact`}
+                onClick={(e) => handleAnchorClick(e, '#contact')}
+                className="mt-2 w-full px-5 py-2 inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full"
+              >
                 {t('header.freeConsultation')}
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
