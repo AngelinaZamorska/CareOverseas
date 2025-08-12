@@ -3,7 +3,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// === Твои переводы (как прислал) ===
+// ===== ТВОИ ПЕРЕВОДЫ =====
 // Общие
 import translationEN from './locales/en/common.json';
 import translationRU from './locales/ru/common.json';
@@ -79,7 +79,7 @@ import drgCalcRU from './locales/ru/drgCalculator.json';
 import drgCalcPL from './locales/pl/drgCalculator.json';
 import drgCalcAR from './locales/ar/drgCalculator.json';
 
-// Собираем ресурсы
+// Ресурсы
 const resources = {
   en: { translation: {
     ...translationEN,
@@ -107,53 +107,35 @@ const resources = {
   }},
 };
 
-const rtlLanguages = ['ar'];
+const RTL_LANGS = ['ar'];
 
-/**
- * Инициализируем i18n один раз и синхронизируем язык с Next.js (router.locale).
- * Вызывать из _app.js при изменении router.locale.
- */
-export function ensureI18n(localeFromNext) {
-  const initialLng = localeFromNext || 'en';
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'en',
+    lng: 'en',                 // стартовый язык; потом ты меняешь через URL в App.jsx
+    debug: false,
+    interpolation: { escapeValue: false },
+    detection: {
+      // не трогаем путь — язык приходит из URL и выставляется в App.jsx
+      order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage', 'cookie'],
+    },
+    react: { useSuspense: false },
+    initImmediate: false,
+  })
+  .then(() => {
+    const dir = RTL_LANGS.includes(i18n.language) ? 'rtl' : 'ltr';
+    document.documentElement.dir = dir;
+    document.documentElement.lang = i18n.language;
+  });
 
-  if (!i18n.isInitialized) {
-    i18n
-      .use(LanguageDetector)
-      .use(initReactI18next)
-      .init({
-        resources,
-        initImmediate: false,
-  react: { useSuspense: false },
-        fallbackLng: 'en',
-        lng: initialLng,
-        debug: false,
-        interpolation: { escapeValue: false },
-        detection: {
-          order: ['cookie', 'htmlTag', 'localStorage', 'subdomain'],
-          caches: ['cookie'],
-          
-        },
-      });
-  } else if (i18n.language !== initialLng) {
-    i18n.changeLanguage(initialLng);
-  }
-
-  // Устанавливаем dir/lang на клиенте
-  if (typeof window !== 'undefined') {
-    const applyDir = (lng) => {
-      const dir = rtlLanguages.includes(lng) ? 'rtl' : 'ltr';
-      document.documentElement.dir = dir;
-      document.documentElement.lang = lng;
-    };
-    applyDir(i18n.language);
-    // Следим за сменой языка
-    if (!i18n._dirHookBound) {
-      i18n.on('languageChanged', applyDir);
-      i18n._dirHookBound = true;
-    }
-  }
-
-  return i18n;
-}
+i18n.on('languageChanged', (lng) => {
+  const dir = RTL_LANGS.includes(lng) ? 'rtl' : 'ltr';
+  document.documentElement.dir = dir;
+  document.documentElement.lang = lng;
+});
 
 export default i18n;
