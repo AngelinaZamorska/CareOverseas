@@ -1,9 +1,15 @@
 // src/main.jsx
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from '@/App';
+import '@/index.css';
+import './i18n';
 
 createRoot(document.getElementById('root')).render(
-  <div style={{padding: 24, fontSize: 22, background:'#fff', color:'#111'}}>
-    🔎 Main OK — React монтируется
-  </div>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
