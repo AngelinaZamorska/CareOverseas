@@ -98,10 +98,12 @@ function LangLayout() {
             <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
 
             {/* новости */}
-            <Route path="news" element={<NewsPage />} />
-            <Route path="news/safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
-            <Route path="news/duchenne-muscular-dystrophy" element={<DuchennePage />} />
-            <Route path="news/anterior-approach" element={<AnteriorApproachPage />} />
+<Route path="news">
+  <Route index element={<NewsPage />} />
+  <Route path="anterior-approach" element={<AnteriorApproachPage />} />
+  <Route path="duchenne-muscular-dystrophy" element={<DuchennePage />} />
+  <Route path="safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
+</Route>
 
             {/* калькулятор */}
             <Route path="calculator" element={<DRGCalculator />} />
