@@ -43,8 +43,8 @@ export default function Header() {
   };
 
   // Классы
-  const baseLink = 'px-4 py-2 rounded-lg font-medium transition-colors';
-  const activeLink = 'text-blue-600 border-blue-600';
+const baseLink = 'inline-flex items-center h-10 px-4 rounded-lg font-medium leading-none whitespace-nowrap transition-colors';  
+const activeLink = 'text-blue-600 border-blue-600';
   const defaultLink = 'text-gray-700 border-transparent hover:text-blue-500 hover:border-blue-200';
 
   // Хэдер
@@ -78,45 +78,46 @@ export default function Header() {
           <ul className="flex items-center space-x-2">
             {/* Как мы работаем (якорь) */}
             <li>
-              <a
-                href="/#process"
-                onClick={(e) => handleAnchorClick(e, '#process')}
-                className={`${baseLink} border-b-2 ${location.hash === '#process' ? activeLink : defaultLink}`}
-              >
-                {t('header.process')}
-              </a>
-            </li>
+  <a
+    href="/#process"
+    onClick={(e) => handleAnchorClick(e, '#process')}
+    className={`${baseLink} border-b-2 ${location.hash === '#process' ? activeLink : defaultLink}`}
+    aria-current={location.hash === '#process' ? 'true' : undefined}
+  >
+    {t('header.process')}
+  </a>
+</li>
 
-            {/* Калькулятор DRG (отдельная страница) */}
-            <li>
-              <Link
-                to="/drg-calculator"
-                className={`${baseLink} border-b-2 ${location.pathname === '/drg-calculator' ? activeLink : defaultLink}`}
-              >
-                {t('header.drgCalculator')}
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/drg-calculator"
+    className={`${baseLink} border-b-2 ${location.pathname === '/drg-calculator' ? activeLink : defaultLink}`}
+    aria-current={location.pathname === '/drg-calculator' ? 'page' : undefined}
+  >
+    {t('header.drgCalculator')}
+  </Link>
+</li>
 
-            {/* Новости (страница) */}
-            <li>
-              <Link
-                to="/news"
-                className={`${baseLink} border-b-2 ${location.pathname === '/news' ? activeLink : defaultLink}`}
-              >
-                {t('header.news')}
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/news"
+    className={`${baseLink} border-b-2 ${location.pathname === '/news' ? activeLink : defaultLink}`}
+    aria-current={location.pathname === '/news' ? 'page' : undefined}
+  >
+    {t('header.news')}
+  </Link>
+</li>
 
-            {/* Контакты (якорь) */}
-            <li>
-              <a
-                href="/#contact"
-                onClick={(e) => handleAnchorClick(e, '#contact')}
-                className={`${baseLink} border-b-2 ${location.hash === '#contact' ? activeLink : defaultLink}`}
-              >
-                {t('header.contact')}
-              </a>
-            </li>
+<li>
+  <a
+    href="/#contact"
+    onClick={(e) => handleAnchorClick(e, '#contact')}
+    className={`${baseLink} border-b-2 ${location.hash === '#contact' ? activeLink : defaultLink}`}
+    aria-current={location.hash === '#contact' ? 'true' : undefined}
+  >
+    {t('header.contact')}
+  </a>
+</li>
           </ul>
 
           {/* Выпадающее меню направлений лечения */}
@@ -174,12 +175,12 @@ export default function Header() {
 
           {/* Кнопка — тоже ссылка на якорь, чтобы бот её «видел» */}
           <a
-            href="/#contact"
-            onClick={(e) => handleAnchorClick(e, '#contact')}
-            className="ml-4 px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
-          >
-            {t('header.freeConsultation')}
-          </a>
+  href="/#contact"
+  onClick={(e) => handleAnchorClick(e, '#contact')}
+  className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition whitespace-nowrap"
+>
+  {t('header.freeConsultation')}
+</a>
         </div>
 
         {/* Мобильная кнопка меню */}
