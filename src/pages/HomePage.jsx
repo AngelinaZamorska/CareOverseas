@@ -357,7 +357,7 @@ const HomePage = () => {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-white scroll-mt-24 md:scroll-mt-32"
+        className="py-20 bg-white"
         style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
