@@ -1,7 +1,6 @@
-// src/main.jsx
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as BrowserRouter } from 'react-router-dom'; // <-- ВАЖНО
 import App from '@/App';
 import '@/index.css';
 import './i18n';

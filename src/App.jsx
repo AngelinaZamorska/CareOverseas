@@ -1,14 +1,29 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { HashRouter as BrowserRouter } from 'react-router-dom'; // <-- ВАЖНО
-import App from '@/App';
-import '@/index.css';
-import './i18n';
+import { Routes, Route, Navigate, useParams, Link } from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+function LangLayout() {
+  const { lang } = useParams();
+  return (
+    <div style={{ padding: 24, background: '#fff', color: '#111' }}>
+      ✅ Router OK • lang: <b>{lang}</b>
+      <nav style={{ marginTop: 12 }}>
+        <Link to="">Home</Link> | <Link to="lu-177-psma-therapy">Lu-177</Link>
+      </nav>
+      <Routes>
+        <Route index element={<div style={{ marginTop: 16 }}>🏠 Home minimal OK</div>} />
+        <Route path="lu-177-psma-therapy" element={<div style={{ marginTop: 16 }}>🧪 Lu-177 minimal OK</div>} />
+        <Route path="*" element={<Navigate to="." replace />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/en" replace />} />
+      <Route path="/:lang/*" element={<LangLayout />} />
+      <Route path="*" element={<Navigate to="/en" replace />} />
+    </Routes>
+  );
+}
