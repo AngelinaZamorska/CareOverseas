@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,73 +12,35 @@
       content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
     />
     <meta name="robots" content="index, follow" />
-    <!-- (meta keywords сейчас почти не влияют) -->
-    
-    <!-- Multilingual hreflang -->
-    <link
-      rel="alternate"
-      href="https://careoverseas.space/"
-      hreflang="en"
-    />
-    <link
-      rel="alternate"
-      href="https://careoverseas.space/pl/"
-      hreflang="pl"
-    />
-    <link
-      rel="alternate"
-      href="https://careoverseas.space/ru/"
-      hreflang="ru"
-    />
-    <link
-      rel="alternate"
-      href="https://careoverseas.space/"
-      hreflang="x-default"
-    />
 
-    <!-- Open Graph / Facebook -->
-    <meta
-      property="og:title"
-      content="CareOverseas – Trusted Medical Care Abroad"
-    />
-    <meta
-      property="og:description"
-      content="Find top doctors and clinics worldwide with CareOverseas."
-    />
+    <!-- Multilingual hreflang (каждая языковая версия на своём префиксе) -->
+    <link rel="alternate" href="https://careoverseas.space/en/" hreflang="en" />
+    <link rel="alternate" href="https://careoverseas.space/ru/" hreflang="ru" />
+    <link rel="alternate" href="https://careoverseas.space/pl/" hreflang="pl" />
+    <link rel="alternate" href="https://careoverseas.space/ar/" hreflang="ar" />
+    <link rel="alternate" href="https://careoverseas.space/" hreflang="x-default" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CareOverseas – Trusted Medical Care Abroad" />
+    <meta property="og:description" content="Find top doctors and clinics worldwide with CareOverseas." />
     <meta property="og:image" content="/og-image.jpg" />
     <meta property="og:url" content="https://careoverseas.space/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="ar_AR" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="CareOverseas – Trusted Medical Care Abroad"
-    />
-    <meta
-      name="twitter:description"
-      content="Find top doctors and clinics worldwide with CareOverseas."
-    />
+    <meta name="twitter:title" content="CareOverseas – Trusted Medical Care Abroad" />
+    <meta name="twitter:description" content="Find top doctors and clinics worldwide with CareOverseas." />
     <meta name="twitter:image" content="/og-image.jpg" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- PWA Manifest & Theme -->
@@ -87,7 +49,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-    <!-- Preconnect & Preload для LCP -->
+    <!-- Preconnect & Preload -->
     <link rel="preconnect" href="https://careoverseas.space" />
     <link rel="preload" as="image" href="/home-hero.jpg" />
     <link rel="preload" as="image" href="/og-image.jpg" />
@@ -114,22 +76,21 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL6H4MF6RX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-SL6H4MF6RX');
     </script>
-
-    <script type="module" crossorigin src="/assets/index-D8fVdb9w.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CJboinIj.css">
+    <script type="module" crossorigin src="/assets/index-DfB97z_x.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BC3OC19k.css">
   </head>
+
   <body>
     <div id="root"></div>
-    <script
-      src="//code.tidio.co/be2qv1thvj24irec91neg1guks1yainz.js"
-      async
-    ></script>
 
-    <!-- Service Worker registration (в main.jsx или внизу index.html) -->
+    <!-- Tidio -->
+    <script src="//code.tidio.co/be2qv1thvj24irec91neg1guks1yainz.js" async></script>
+
+    <!-- Service Worker -->
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker

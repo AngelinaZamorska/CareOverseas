@@ -1,34 +1,37 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
+// src/main.jsx
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import App from '@/App';
+
+import App from '@/App';         // если нет алиаса "@", замени на './App'
 import '@/index.css';
-import './i18n'; // i18n конфигурация
+import './i18n';                 // инициализация i18n (должна быть до <App/>)
 
-const LoadingSpinner = () => (
-  <div className="flex justify-center items-center h-screen w-screen">
-    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-600"></div>
-  </div>
-);
+function LoadingSpinner() {
+  return (
+    <div className="flex justify-center items-center h-screen w-screen">
+      <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-600"></div>
+    </div>
+  );
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<LoadingSpinner />}>
+      <React.Suspense fallback={<LoadingSpinner />}>
         <App />
-      </Suspense>
+      </React.Suspense>
     </BrowserRouter>
   </React.StrictMode>
 );
 
 // ---------------------------------------------------
-// Регистрация Service Worker
+// Регистрация Service Worker (необязательно)
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
       .register('/sw.js')
-      .then(reg => console.log('SW registered:', reg.scope))
-      .catch(err => console.error('SW registration failed:', err));
+      .then((reg) => console.log('SW registered:', reg.scope))
+      .catch((err) => console.error('SW registration failed:', err));
   });
 }

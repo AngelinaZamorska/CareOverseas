@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    // говорим редактору: "все абсолютные импорты ищи от папки src"
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }

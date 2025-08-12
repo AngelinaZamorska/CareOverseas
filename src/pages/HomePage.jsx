@@ -1,5 +1,6 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
+import { useParams } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import {
   Heart,
@@ -14,43 +15,59 @@ import {
   Clock,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import CountriesSectionRaw from '@/components/home/CountriesSection';
-import ContactSectionRaw from '@/components/home/ContactSection';
 import { useTranslation, Trans } from 'react-i18next';
 
-// ленивые версии секций (сохранит initial bundle)
+// ленивые версии секций
 const CountriesSection = lazy(() => import('@/components/home/CountriesSection'));
 const ContactSection = lazy(() => import('@/components/home/ContactSection'));
+
+const SUPPORTED = ['en', 'ru', 'pl', 'ar'];
 
 const HomePage = () => {
   const { t, i18n } = useTranslation();
   const prefersReducedMotion = useReducedMotion();
+  const { lang } = useParams();
+  const currentLang = SUPPORTED.includes(lang) ? lang : 'en';
+  const isRTL = currentLang === 'ar';
+
+  // базовый домен для каноникала/og
+  const BASE = 'https://careoverseas.space';
+  const canonical = `${BASE}/${currentLang}/`;
 
   useEffect(() => {
+    // синхронизируем i18n с URL, на случай если где-то не успели
+    if (i18n.language !== currentLang) i18n.changeLanguage(currentLang);
+    // прокрутка вверх при входе на страницу
     window.scrollTo(0, 0);
-  }, []);
+  }, [currentLang]);
 
   const handleLearnMoreClick = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div
-      dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
-      className="text-base leading-relaxed"
-    >
-      <Helmet>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="text-base leading-relaxed">
+      <Helmet
+        htmlAttributes={{ lang: currentLang, dir: isRTL ? 'rtl' : 'ltr' }}
+      >
         {/* Primary Meta Tags */}
         <title>CareOverseas – Trusted Medical Care Abroad</title>
         <meta
           name="description"
           content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
         />
-        <link rel="canonical" href="https://careoverseas.space/" />
+        <link rel="canonical" href={canonical} />
+
+        {/* hreflang для всех языков */}
+        <link rel="alternate" href={`${BASE}/en/`} hreflang="en" />
+        <link rel="alternate" href={`${BASE}/ru/`} hreflang="ru" />
+        <link rel="alternate" href={`${BASE}/pl/`} hreflang="pl" />
+        <link rel="alternate" href={`${BASE}/ar/`} hreflang="ar" />
+        <link rel="alternate" href={`${BASE}/`} hreflang="x-default" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://careoverseas.space/" />
+        <meta property="og:url" content={canonical} />
         <meta
           property="og:title"
           content="CareOverseas – Trusted Medical Care Abroad"
@@ -59,14 +76,11 @@ const HomePage = () => {
           property="og:description"
           content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
         />
-        <meta
-          property="og:image"
-          content="https://careoverseas.space/og-image-v2.jpg"
-        />
+        <meta property="og:image" content={`${BASE}/og-image-v2.jpg`} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://careoverseas.space/" />
+        <meta name="twitter:url" content={canonical} />
         <meta
           name="twitter:title"
           content="CareOverseas – Trusted Medical Care Abroad"
@@ -75,10 +89,7 @@ const HomePage = () => {
           name="twitter:description"
           content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
         />
-        <meta
-          name="twitter:image"
-          content="https://careoverseas.space/og-image-v2.jpg"
-        />
+        <meta name="twitter:image" content={`${BASE}/og-image-v2.jpg`} />
 
         {/* Preload hero */}
         <link rel="preload" as="image" href="/home-hero.jpg" />
@@ -89,10 +100,9 @@ const HomePage = () => {
             '@context': 'https://schema.org',
             '@type': 'MedicalOrganization',
             name: 'CareOverseas',
-            url: 'https://careoverseas.space',
-            logo: 'https://careoverseas.space/apple-touch-icon.png',
+            url: BASE,
+            logo: `${BASE}/apple-touch-icon.png`,
             description: t('homePage.heroSubtitle'),
-            // вместо конкретного адреса указываем зону обслуживания
             areaServed: 'Worldwide',
             telephone: '+380984998555',
             sameAs: [
@@ -154,17 +164,9 @@ const HomePage = () => {
 
             <div className="flex items-center space-x-8 pt-6">
               {[
-                {
-                  value: '500+',
-                  label: t('homePage.satisfiedPatients'),
-                  color: 'text-blue-600',
-                },
-                {
-                  value: '4',
-                  label: t('homePage.partnerCountries'),
-                  color: 'text-green-600',
-                },
-                { value: '24/7', label: t('homePage.support'), color: 'text-purple-600' },
+                { value: '500+', label: t('homePage.satisfiedPatients'), color: 'text-blue-600' },
+                { value: '4',    label: t('homePage.partnerCountries'),  color: 'text-green-600' },
+                { value: '24/7', label: t('homePage.support'),           color: 'text-purple-600' },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className={`text-4xl font-bold ${stat.color}`}>{stat.value}</div>
@@ -228,42 +230,12 @@ const HomePage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                icon: Stethoscope,
-                title: t('homePage.service1Title'),
-                description: t('homePage.service1Desc'),
-                gradient: 'from-blue-500 to-blue-600',
-              },
-              {
-                icon: Globe,
-                title: t('homePage.service2Title'),
-                description: t('homePage.service2Desc'),
-                gradient: 'from-green-500 to-green-600',
-              },
-              {
-                icon: Shield,
-                title: t('homePage.service3Title'),
-                description: t('homePage.service3Desc'),
-                gradient: 'from-purple-500 to-purple-600',
-              },
-              {
-                icon: Users,
-                title: t('homePage.service4Title'),
-                description: t('homePage.service4Desc'),
-                gradient: 'from-orange-500 to-orange-600',
-              },
-              {
-                icon: Clock,
-                title: t('homePage.service5Title'),
-                description: t('homePage.service5Desc'),
-                gradient: 'from-red-500 to-red-600',
-              },
-              {
-                icon: Award,
-                title: t('homePage.service6Title'),
-                description: t('homePage.service6Desc'),
-                gradient: 'from-teal-500 to-teal-600',
-              },
+              { icon: Stethoscope, title: t('homePage.service1Title'), desc: t('homePage.service1Desc'), gradient: 'from-blue-500 to-blue-600' },
+              { icon: Globe,       title: t('homePage.service2Title'), desc: t('homePage.service2Desc'), gradient: 'from-green-500 to-green-600' },
+              { icon: Shield,      title: t('homePage.service3Title'), desc: t('homePage.service3Desc'), gradient: 'from-purple-500 to-purple-600' },
+              { icon: Users,       title: t('homePage.service4Title'), desc: t('homePage.service4Desc'), gradient: 'from-orange-500 to-orange-600' },
+              { icon: Clock,       title: t('homePage.service5Title'), desc: t('homePage.service5Desc'), gradient: 'from-red-500 to-red-600' },
+              { icon: Award,       title: t('homePage.service6Title'), desc: t('homePage.service6Desc'), gradient: 'from-teal-500 to-teal-600' },
             ].map((svc, idx) => (
               <motion.div
                 key={idx}
@@ -273,17 +245,11 @@ const HomePage = () => {
                 transition={{ delay: prefersReducedMotion ? 0 : idx * 0.1 }}
                 className="group p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 bg-white"
               >
-                <div
-                  className={`inline-flex p-4 md:p-5 rounded-xl bg-gradient-to-r ${svc.gradient} mb-6 group-hover:scale-110 transition-transform duration-300`}
-                >
+                <div className={`inline-flex p-4 md:p-5 rounded-xl bg-gradient-to-r ${svc.gradient} mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <svc.icon className="h-8 w-8 md:h-9 md:w-9 text-white" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                  {svc.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  {svc.description}
-                </p>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">{svc.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm md:text-base">{svc.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -299,7 +265,7 @@ const HomePage = () => {
         style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />}>
+          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />} >
             <CountriesSection />
           </Suspense>
         </div>
@@ -318,36 +284,28 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
           >
-            <h2 className="text-4xl font-bold text-gray-900">
-              {t('homePage.processTitle')}
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              {t('homePage.processSubtitle')}
-            </p>
+            <h2 className="text-4xl font-bold text-gray-900">{t('homePage.processTitle')}</h2>
+            <p className="mt-4 text-lg text-gray-600">{t('homePage.processSubtitle')}</p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {[
               { icon: Stethoscope, title: t('homePage.step1Title'), desc: t('homePage.step1Desc'), color: 'text-blue-600' },
-              { icon: Globe, title: t('homePage.step2Title'), desc: t('homePage.step2Desc'), color: 'text-green-600' },
-              { icon: MapPin, title: t('homePage.step3Title'), desc: t('homePage.step3Desc'), color: 'text-purple-600' },
-              { icon: Users, title: t('homePage.step4Title'), desc: t('homePage.step4Desc'), color: 'text-red-600' },
-              { icon: Clock, title: t('homePage.step5Title'), desc: t('homePage.step5Desc'), color: 'text-blue-600' },
+              { icon: Globe,       title: t('homePage.step2Title'), desc: t('homePage.step2Desc'), color: 'text-green-600' },
+              { icon: MapPin,      title: t('homePage.step3Title'), desc: t('homePage.step3Desc'), color: 'text-purple-600' },
+              { icon: Users,       title: t('homePage.step4Title'), desc: t('homePage.step4Desc'), color: 'text-red-600' },
+              { icon: Clock,       title: t('homePage.step5Title'), desc: t('homePage.step5Desc'), color: 'text-blue-600' },
             ].map((step, i) => (
               <motion.div
                 key={i}
                 initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * (i + 1) }}
-                className="flex flex-col items-center	text-center space-y-4 p-6 border rounded-lg"
+                className="flex flex-col items-center text-center space-y-4 p-6 border rounded-lg"
               >
                 <step.icon className={`h-12 w-12 md:h-14 md:w-14 ${step.color}`} />
-                <h3 className="text-xl md:text-2xl	font-semibold">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 text-sm md:text-base">
-                  {step.desc}
-                </p>
+                <h3 className="text-xl md:text-2xl font-semibold">{step.title}</h3>
+                <p className="text-gray-600 text-sm md:text-base">{step.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -367,9 +325,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
           >
-            <h2 className="text-4xl font-bold text-gray-900">
-              {t('homePage.testimonialsTitle')}
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900">{t('homePage.testimonialsTitle')}</h2>
             <p className="mt-4 text-lg text-gray-600">{t('homePage.testimonialsSubtitle')}</p>
           </motion.div>
 
@@ -380,7 +336,7 @@ const HomePage = () => {
                 initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * i }}
-                className="flex	flex-col items-start	bg-white rounded-2xl	p-6 shadow-lg space-y-4"
+                className="flex flex-col items-start bg-white rounded-2xl p-6 shadow-lg space-y-4"
               >
                 <Star className="h-6 w-6 md:h-8 md:w-8 text-yellow-400" />
                 <p className="text-gray-700 italic text-sm md:text-base">

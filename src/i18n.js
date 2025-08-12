@@ -3,13 +3,14 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Общие переводы
+// === Твои переводы (как прислал) ===
+// Общие
 import translationEN from './locales/en/common.json';
 import translationRU from './locales/ru/common.json';
 import translationPL from './locales/pl/common.json';
 import translationAR from './locales/ar/common.json';
 
-// Переводы страниц (без раздела «Новости»)
+// Страницы (без новостей)
 import homeEN from './locales/en/pages/home.json';
 import cardiacEN from './locales/en/pages/cardiac.json';
 import epilepsyEN from './locales/en/pages/epilepsy.json';
@@ -66,129 +67,90 @@ import plasticAR from './locales/ar/pages/plastic.json';
 import oncologyAR from './locales/ar/pages/oncology.json';
 import lu177AR from './locales/ar/pages/lu177.json';
 
-// Единый файл переводов для раздела «Новости»
+// Новости
 import newsIndexEN from './locales/en/pages/news/index.json';
 import newsIndexRU from './locales/ru/pages/news/index.json';
 import newsIndexPL from './locales/pl/pages/news/index.json';
 import newsIndexAR from './locales/ar/pages/news/index.json';
 
-//држ
+// DRG
 import drgCalcEN from './locales/en/drgCalculator.json';
 import drgCalcRU from './locales/ru/drgCalculator.json';
 import drgCalcPL from './locales/pl/drgCalculator.json';
 import drgCalcAR from './locales/ar/drgCalculator.json';
 
+// Собираем ресурсы
 const resources = {
-  en: {
-    translation: {
-      ...translationEN,
-      ...homeEN,
-      ...cardiacEN,
-      ...epilepsyEN,
-      ...neurosurgeryEN,
-      ...bloodEN,
-      ...rheumatologyEN,
-      ...dendriticEN,
-      ...ivfEN,
-      ...endometriosisEN,
-      ...jointEN,
-      ...plasticEN,
-      ...oncologyEN,
-      ...lu177EN,
-      // Новости
-      ...newsIndexEN,
-      ...drgCalcEN,
-    },
-  },
-  ru: {
-    translation: {
-      ...translationRU,
-      ...homeRU,
-      ...cardiacRU,
-      ...epilepsyRU,
-      ...neurosurgeryRU,
-      ...bloodRU,
-      ...rheumatologyRU,
-      ...dendriticRU,
-      ...ivfRU,
-      ...endometriosisRU,
-      ...jointRU,
-      ...plasticRU,
-      ...oncologyRU,
-      ...lu177RU,
-      // Новости
-      ...newsIndexRU,
-      ...drgCalcRU,
-    },
-  },
-  pl: {
-    translation: {
-      ...translationPL,
-      ...homePL,
-      ...cardiacPL,
-      ...epilepsyPL,
-      ...neurosurgeryPL,
-      ...bloodPL,
-      ...rheumatologyPL,
-      ...dendriticPL,
-      ...ivfPL,
-      ...endometriosisPL,
-      ...jointPL,
-      ...plasticPL,
-      ...oncologyPL,
-      ...lu177PL,
-      // Новости
-      ...newsIndexPL,
-      ...drgCalcPL,
-    },
-  },
-  ar: {
-    translation: {
-      ...translationAR,
-      ...homeAR,
-      ...cardiacAR,
-      ...epilepsyAR,
-      ...neurosurgeryAR,
-      ...bloodAR,
-      ...rheumatologyAR,
-      ...dendriticAR,
-      ...ivfAR,
-      ...endometriosisAR,
-      ...jointAR,
-      ...plasticAR,
-      ...oncologyAR,
-      ...lu177AR,
-      // Новости
-      ...newsIndexAR,
-      ...drgCalcAR,
-    },
-  },
+  en: { translation: {
+    ...translationEN,
+    ...homeEN, ...cardiacEN, ...epilepsyEN, ...neurosurgeryEN, ...bloodEN,
+    ...rheumatologyEN, ...dendriticEN, ...ivfEN, ...endometriosisEN, ...jointEN,
+    ...plasticEN, ...oncologyEN, ...lu177EN, ...newsIndexEN, ...drgCalcEN,
+  }},
+  ru: { translation: {
+    ...translationRU,
+    ...homeRU, ...cardiacRU, ...epilepsyRU, ...neurosurgeryRU, ...bloodRU,
+    ...rheumatologyRU, ...dendriticRU, ...ivfRU, ...endometriosisRU, ...jointRU,
+    ...plasticRU, ...oncologyRU, ...lu177RU, ...newsIndexRU, ...drgCalcRU,
+  }},
+  pl: { translation: {
+    ...translationPL,
+    ...homePL, ...cardiacPL, ...epilepsyPL, ...neurosurgeryPL, ...bloodPL,
+    ...rheumatologyPL, ...dendriticPL, ...ivfPL, ...endometriosisPL, ...jointPL,
+    ...plasticPL, ...oncologyPL, ...lu177PL, ...newsIndexPL, ...drgCalcPL,
+  }},
+  ar: { translation: {
+    ...translationAR,
+    ...homeAR, ...cardiacAR, ...epilepsyAR, ...neurosurgeryAR, ...bloodAR,
+    ...rheumatologyAR, ...dendriticAR, ...ivfAR, ...endometriosisAR, ...jointAR,
+    ...plasticAR, ...oncologyAR, ...lu177AR, ...newsIndexAR, ...drgCalcAR,
+  }},
 };
 
 const rtlLanguages = ['ar'];
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources,
-    fallbackLng: 'en',
-    lng: 'en',
-    debug: true,
-    interpolation: {
-      escapeValue: false, // React уже защищён от XSS
-    },
-    detection: {
-      order: ['cookie', 'htmlTag', 'localStorage', 'subdomain'],
-      caches: ['cookie'],
-    },
-  })
-  .then(() => {
-    document.documentElement.dir = rtlLanguages.includes(i18n.language) ? 'rtl' : 'ltr';
-  });
+/**
+ * Инициализируем i18n один раз и синхронизируем язык с Next.js (router.locale).
+ * Вызывать из _app.js при изменении router.locale.
+ */
+export function ensureI18n(localeFromNext) {
+  const initialLng = localeFromNext || 'en';
 
-i18n.on('languageChanged', (lng) => {
-  document.documentElement.dir = rtlLanguages.includes(lng) ? 'rtl' : 'ltr';
-});
+  if (!i18n.isInitialized) {
+    i18n
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        resources,
+        fallbackLng: 'en',
+        lng: initialLng,
+        debug: false,
+        interpolation: { escapeValue: false },
+        detection: {
+          order: ['cookie', 'htmlTag', 'localStorage', 'subdomain'],
+          caches: ['cookie'],
+        },
+      });
+  } else if (i18n.language !== initialLng) {
+    i18n.changeLanguage(initialLng);
+  }
+
+  // Устанавливаем dir/lang на клиенте
+  if (typeof window !== 'undefined') {
+    const applyDir = (lng) => {
+      const dir = rtlLanguages.includes(lng) ? 'rtl' : 'ltr';
+      document.documentElement.dir = dir;
+      document.documentElement.lang = lng;
+    };
+    applyDir(i18n.language);
+    // Следим за сменой языка
+    if (!i18n._dirHookBound) {
+      i18n.on('languageChanged', applyDir);
+      i18n._dirHookBound = true;
+    }
+  }
+
+  return i18n;
+}
 
 export default i18n;
