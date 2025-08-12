@@ -48,7 +48,7 @@
     <!-- PWA Manifest & Theme -->
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#1e40af" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
     <!-- Preconnect & Preload -->
@@ -91,14 +91,6 @@
     <!-- Tidio -->
     <script src="//code.tidio.co/be2qv1thvj24irec91neg1guks1yainz.js" async></script>
 
-    <!-- Service Worker -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-          .register('/sw.js')
-          .then(() => console.log('Service Worker registered'))
-          .catch(console.error);
-      }
-    </script>
+    
   </body>
 </html>

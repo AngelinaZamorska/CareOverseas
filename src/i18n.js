@@ -122,6 +122,8 @@ export function ensureI18n(localeFromNext) {
       .use(initReactI18next)
       .init({
         resources,
+        initImmediate: false,
+  react: { useSuspense: false },
         fallbackLng: 'en',
         lng: initialLng,
         debug: false,
@@ -129,6 +131,7 @@ export function ensureI18n(localeFromNext) {
         detection: {
           order: ['cookie', 'htmlTag', 'localStorage', 'subdomain'],
           caches: ['cookie'],
+          
         },
       });
   } else if (i18n.language !== initialLng) {
