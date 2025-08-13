@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "make:sitemap": "node tools/make-sitemap.js",
-    "build": "node tools/generate-llms.js && vite build",
+    "build": "node tools/generate-llms.js && npm run make:sitemap && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build"
   },

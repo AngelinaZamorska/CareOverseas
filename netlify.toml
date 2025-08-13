@@ -2,7 +2,6 @@
   publish = "dist"
   command = "npm run build"
 
-# Статические файлы (чтобы их не «съел» SPA-фолбэк)
 [[redirects]]
   from = "/sitemap.xml"
   to = "/sitemap.xml"
@@ -13,31 +12,19 @@
   to = "/robots.txt"
   status = 200
 
-[[redirects]]
-  from = "/sw.js"
-  to = "/sw.js"
-  status = 200
-
-[[redirects]]
-  from = "/site.webmanifest"
-  to = "/site.webmanifest"
-  status = 200
-
-[[redirects]]
-  from = "/assets/*"
-  to = "/assets/:splat"
-  status = 200
-
 # SPA fallback — в самом конце
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Заголовки для service worker (как делали раньше)
 [[headers]]
-  for = "/sw.js"
+  for = "/sitemap.xml"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
-    Cache-Control = "no-cache, no-store, must-revalidate"
-    Service-Worker-Allowed = "/"
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
