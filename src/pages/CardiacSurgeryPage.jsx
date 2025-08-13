@@ -4,49 +4,114 @@ import { motion } from 'framer-motion';
 import { Heart, Activity, UserCheck, Microscope, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
-const CardiacSurgeryPage = () => {
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const TAIL = 'cardiac-surgery-germany';
+const SITE = 'https://careoverseas.space';
+
+// ждём появления элемента и только потом скроллим (избавляет от «двойного клика»)
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
+
+export default function CardiacSurgeryPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
+
+  // язык и генераторы ссылок
+  const lang = getCurrentLangFromPath();     // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  // URL для SEO
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${origin}${go(TAIL)}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  async function smoothScrollToId(id) {
+    const el = await waitForEl(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+    const id = 'contact';
+    if (isHome) {
+      await smoothScrollToId(id);
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      await smoothScrollToId(id);
     }
-  };
+  }
 
   const features = [
-    { icon: Activity, title: t('cardiacPage.feature1Title'), desc: t('cardiacPage.feature1Desc') },
+    { icon: Activity,  title: t('cardiacPage.feature1Title'), desc: t('cardiacPage.feature1Desc') },
     { icon: UserCheck, title: t('cardiacPage.feature2Title'), desc: t('cardiacPage.feature2Desc') },
-    { icon: Microscope, title: t('cardiacPage.feature3Title'), desc: t('cardiacPage.feature3Desc') },
-    { icon: CheckCircle, title: t('cardiacPage.feature4Title'), desc: t('cardiacPage.feature4Desc') },
+    { icon: Microscope,title: t('cardiacPage.feature3Title'), desc: t('cardiacPage.feature3Desc') },
+    { icon: CheckCircle,title: t('cardiacPage.feature4Title'), desc: t('cardiacPage.feature4Desc') },
   ];
+
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('cardiacPage.title'),
+    description: t('cardiacPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/modern-cardiac-room.jpg`,
+    about: { '@type': 'MedicalSpecialty', name: 'Cardiovascular' }
+  };
 
   return (
     <div className="text-base leading-relaxed">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('cardiacPage.title')}</title>
         <meta name="description" content={t('cardiacPage.description')} />
+        <meta name="robots" content="index, follow" />
+
+        {/* canonical */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* hreflang */}
+        {LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={`${SITE}/${hl}/${TAIL}`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('cardiacPage.title')} />
         <meta property="og:description" content={t('cardiacPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/modern-cardiac-room.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/cardiac-surgery-germany" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/modern-cardiac-room.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('cardiacPage.title')} />
         <meta name="twitter:description" content={t('cardiacPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/modern-cardiac-room.jpg" />
-        <meta name="robots" content="index, follow" />
+        <meta name="twitter:image" content={`${SITE}/modern-cardiac-room.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -147,6 +212,9 @@ const CardiacSurgeryPage = () => {
                 src="/modern-cardiac-room.jpg"
                 alt="State-of-the-art cardiac patient room"
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
+                loading="lazy"
+                width="1200"
+                height="800"
               />
             </motion.div>
           </div>
@@ -183,7 +251,4 @@ const CardiacSurgeryPage = () => {
       <div id="contact" />
     </div>
   );
-};
-
-export default CardiacSurgeryPage;
-
+}

@@ -1,54 +1,117 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { HeartPulse, UserX as UserMd, FlaskConical, Microscope, CheckCircle, ArrowRight } from 'lucide-react';
+import { HeartPulse, Stethoscope as UserMd, FlaskConical, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation, Trans } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
+
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const SITE = 'https://careoverseas.space';
+const TAIL = 'endometriosis-leomyoma-treatment';
+
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
 
 const EndometriosisPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  const lang = getCurrentLangFromPath(); // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  const canonicalUrl = `${SITE}/${lang}/${TAIL}`;
+  const currentUrl =
+    typeof window !== 'undefined' ? window.location.href : canonicalUrl;
+
+  // smooth scroll к #contact с любой страницы
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(
+      typeof window !== 'undefined' ? window.location.pathname : `/${lang}/`
+    );
+    const id = 'contact';
+    if (isHome) {
+      const el = await waitForEl(id);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      const el = await waitForEl(id);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  };
+  }
 
   const features = [
-    { icon: UserMd, title: t('endometriosisPage.feature1Title'), desc: t('endometriosisPage.feature1Desc') },
+    { icon: UserMd,       title: t('endometriosisPage.feature1Title'), desc: t('endometriosisPage.feature1Desc') },
     { icon: FlaskConical, title: t('endometriosisPage.feature2Title'), desc: t('endometriosisPage.feature2Desc') },
-    { icon: HeartPulse, title: t('endometriosisPage.feature3Title'), desc: t('endometriosisPage.feature3Desc') },
-    { icon: CheckCircle, title: t('endometriosisPage.feature4Title'), desc: t('endometriosisPage.feature4Desc') },
+    { icon: HeartPulse,   title: t('endometriosisPage.feature3Title'), desc: t('endometriosisPage.feature3Desc') },
+    { icon: CheckCircle,  title: t('endometriosisPage.feature4Title'), desc: t('endometriosisPage.feature4Desc') },
   ];
 
-  const modalities = [1,2,3,4,5];
+  const modalities = [1, 2, 3, 4, 5];
+
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('endometriosisPage.title'),
+    description: t('endometriosisPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/endometriosis-treatment-microscopic.jpg`,
+    about: [
+      { '@type': 'MedicalCondition', name: 'Endometriosis' },
+      { '@type': 'MedicalCondition', name: 'Uterine leiomyoma' }
+    ]
+  };
 
   return (
     <div className="text-base leading-relaxed">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('endometriosisPage.title')}</title>
         <meta name="description" content={t('endometriosisPage.description')} />
+        <meta name="robots" content="index, follow" />
+
+        {/* canonical + hreflang */}
+        <link rel="canonical" href={canonicalUrl} />
+        {LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={`${SITE}/${hl}/${TAIL}`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('endometriosisPage.title')} />
         <meta property="og:description" content={t('endometriosisPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/endometriosis-treatment-microscopic.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/endometriosis-leomyoma-treatment" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/endometriosis-treatment-microscopic.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="800" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('endometriosisPage.title')} />
         <meta name="twitter:description" content={t('endometriosisPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/endometriosis-treatment-microscopic.jpg" />
-        <meta name="robots" content="index, follow" />
+        <meta name="twitter:image" content={`${SITE}/endometriosis-treatment-microscopic.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -129,13 +192,14 @@ const EndometriosisPage = () => {
             {t('endometriosisPage.treatmentsSubtitle')}
           </p>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              className="overflow-x-auto">
+            <motion.div className="overflow-x-auto">
               <table className="min-w-full bg-white rounded-xl shadow-lg overflow-hidden">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="px-6 py-3 text-left text-gray-700 font-semibold">#</th>
-                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">{t('endometriosisPage.modalitiesTitle')}</th>
+                    <th className="px-6 py-3 text-left text-gray-700 font-semibold">
+                      {t('endometriosisPage.modalitiesTitle')}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -143,14 +207,17 @@ const EndometriosisPage = () => {
                     <tr key={i} className="border-b even:bg-gray-50">
                       <td className="px-6 py-4 text-gray-800 whitespace-nowrap">{i}</td>
                       <td className="px-6 py-4 text-gray-700 whitespace-normal">
-                        <Trans i18nKey={`endometriosisPage.modality${i}`} components={{ strong: <strong className="font-semibold text-gray-900" /> }} />
+                        <Trans
+                          i18nKey={`endometriosisPage.modality${i}`}
+                          components={{ strong: <strong className="font-semibold text-gray-900" /> }}
+                        />
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-            
             </motion.div>
+
             <motion.div
               className="relative"
               initial={{ opacity: 0, x: 20 }}
@@ -160,8 +227,11 @@ const EndometriosisPage = () => {
             >
               <img
                 src="/endometriosis-treatment-microscopic.jpg"
-                alt="Endometriosis cells under microscope"
+                alt="Endometriosis and leiomyoma cells under microscope"
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
+                loading="lazy"
+                width="1200"
+                height="800"
               />
             </motion.div>
           </div>

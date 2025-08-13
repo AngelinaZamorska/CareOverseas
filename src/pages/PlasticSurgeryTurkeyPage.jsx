@@ -4,26 +4,61 @@ import { motion } from 'framer-motion';
 import { Sparkles, Scissors, Droplet, Smile, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
-const PlasticSurgeryTurkeyPage = () => {
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const TAIL = 'plastic-surgery-turkey';
+const SITE = 'https://careoverseas.space';
+
+// ждать появления элемента и потом скроллить (чтобы не требовалось 2 клика)
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
+
+export default function PlasticSurgeryTurkeyPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
+
+  // язык и генераторы ссылок
+  const lang = getCurrentLangFromPath();          // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  // URL-ы для SEO
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${origin}${go(TAIL)}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  async function smoothScrollToId(id) {
+    const el = await waitForEl(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+    const id = 'contact';
+    if (isHome) {
+      await smoothScrollToId(id);
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      await smoothScrollToId(id);
     }
-  };
+  }
 
   const procedures = [
     {
@@ -73,21 +108,59 @@ const PlasticSurgeryTurkeyPage = () => {
     },
   ];
 
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('plasticSurgeryPage.title'),
+    description: t('plasticSurgeryPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/plastic-surgery-turkey-cover.jpg`,
+    about: {
+      '@type': 'MedicalSpecialty',
+      name: 'Plastic surgery'
+    }
+  };
+
   return (
     <div className="text-base leading-relaxed">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('plasticSurgeryPage.title')}</title>
         <meta name="description" content={t('plasticSurgeryPage.description')} />
+        <meta name="robots" content="index, follow" />
+
+        {/* canonical */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* hreflang */}
+        {LANGS.map((hl) => (
+          <link
+            key={hl}
+            rel="alternate"
+            hrefLang={hl}
+            href={`${SITE}/${hl}/${TAIL}`}
+          />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('plasticSurgeryPage.title')} />
         <meta property="og:description" content={t('plasticSurgeryPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/plastic-surgery-turkey-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/plastic-surgery-turkey" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/plastic-surgery-turkey-cover.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('plasticSurgeryPage.title')} />
         <meta name="twitter:description" content={t('plasticSurgeryPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/plastic-surgery-turkey-cover.jpg" />
-        <meta name="robots" content="index, follow" />
+        <meta name="twitter:image" content={`${SITE}/plastic-surgery-turkey-cover.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -135,7 +208,9 @@ const PlasticSurgeryTurkeyPage = () => {
                   {proc.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex justify-between items-center border-b border-gray-200 pb-3">
                       <span className="text-gray-700">{item.name}</span>
-                      <span className="font-semibold text-gray-900 bg-gray-200 px-3 py-1 rounded-full text-sm">from {item.price}</span>
+                      <span className="font-semibold text-gray-900 bg-gray-200 px-3 py-1 rounded-full text-sm">
+                        from {item.price}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -163,7 +238,7 @@ const PlasticSurgeryTurkeyPage = () => {
             </p>
             <Button
               size="lg"
-              className="bg-white text-pink-600 hover:bg-gray-100 px-6.md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+              className="bg-white text-pink-600 hover:bg-gray-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
               onClick={handleContactClick}
             >
               {t('plasticSurgeryPage.ctaButton')}
@@ -171,10 +246,6 @@ const PlasticSurgeryTurkeyPage = () => {
           </motion.div>
         </div>
       </section>
-
-      <div id="contact" />
     </div>
   );
-};
-
-export default PlasticSurgeryTurkeyPage;
+}

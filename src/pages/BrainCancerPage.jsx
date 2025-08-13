@@ -4,29 +4,61 @@ import { motion } from 'framer-motion';
 import { Brain, Microscope, Zap, UserCheck, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
+
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const SITE = 'https://careoverseas.space';
+const TAIL = 'neurosurgery';
+
+// ждём появления элемента и только потом скроллим (исключает «двойной клик»)
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
 
 const BrainCancerPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
+
+  // язык и генераторы ссылок
+  const lang = getCurrentLangFromPath();      // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  // SEO URL'ы
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${origin}${go(TAIL)}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  async function smoothScrollToId(id) {
+    const el = await waitForEl(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+    const id = 'contact';
+    if (isHome) {
+      await smoothScrollToId(id);
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      await smoothScrollToId(id);
     }
-  };
+  }
 
   const features = [
     { icon: UserCheck, title: t('neurosurgeryPage.feature1Title'), desc: t('neurosurgeryPage.feature1Desc') },
@@ -44,21 +76,54 @@ const BrainCancerPage = () => {
     t('neurosurgeryPage.condition6'),
   ];
 
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('neurosurgeryPage.title'),
+    description: t('neurosurgeryPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/brain-surgery.jpg`,
+    about: {
+      '@type': 'MedicalSpecialty',
+      name: 'Neurosurgery'
+    }
+  };
+
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('neurosurgeryPage.title')}</title>
         <meta name="description" content={t('neurosurgeryPage.description')} />
+        <meta name="robots" content="index, follow" />
+
+        {/* canonical */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* hreflang */}
+        {LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={`${SITE}/${hl}/${TAIL}`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('neurosurgeryPage.title')} />
         <meta property="og:description" content={t('neurosurgeryPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/brain-surgery.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/neurosurgery" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/brain-surgery.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('neurosurgeryPage.title')} />
         <meta name="twitter:description" content={t('neurosurgeryPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/brain-surgery.jpg" />
-        <meta name="robots" content="index, follow" />
+        <meta name="twitter:image" content={`${SITE}/brain-surgery.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       <div className="text-base leading-relaxed">
@@ -77,7 +142,7 @@ const BrainCancerPage = () => {
               </p>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-slate-800 to-gray-700 hover:from-slate-900 hover:to-gray-800 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+                className="bg-gradient-to-r from-slate-800 to-gray-700 hover:from-slate-900 hover:to-gray-800 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
                 onClick={handleContactClick}
               >
                 {t('neurosurgeryPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5 inline" />
@@ -131,6 +196,9 @@ const BrainCancerPage = () => {
                   src="/brain-surgery.jpg"
                   alt="Brain surgery in Germany"
                   className="rounded-lg shadow-md w-full h-auto md:h-96 object-cover"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
                 />
               </motion.div>
               <motion.div className="space-y-6" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -171,8 +239,7 @@ const BrainCancerPage = () => {
           </div>
         </section>
 
-        {/* Contact Anchor */}
-        <div id="contact"></div>
+        <div id="contact" />
       </div>
     </>
   );

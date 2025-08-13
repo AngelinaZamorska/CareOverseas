@@ -1,17 +1,19 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Search, FileText, Send, BookOpen, ChevronDown } from 'lucide-react';
+import { Search, FileText, Send, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
+// --- Data ----------------------------------------------------
 const icd10Codes = [
   { code: 'C50', category: 'Neoplasms' },
   { code: 'I21', category: 'Diseases of the circulatory system' },
@@ -225,40 +227,59 @@ const icd10Codes = [
   { code: 'R95-R99', category: 'Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified' }
 ];
 
-// Helper function to check if a single code is within a range
+// --- Helpers -------------------------------------------------
 const isCodeInRange = (singleCode, range) => {
   if (!range.includes('-')) return false;
-
   const singleCodeMatch = singleCode.match(/^([A-Z])(\d+)/i);
   if (!singleCodeMatch) return false;
 
   const [, singleLetter, singleNumStr] = singleCodeMatch;
-  const singleNum = parseInt(singleNumStr, 10);
-
-  const rangeParts = range.split('-');
-  const startMatch = rangeParts[0].match(/^([A-Z])(\d+)/i);
-  const endMatch = rangeParts[1].match(/^([A-Z])(\d+)/i);
-
-  if (!startMatch || !endMatch) return false;
-
-  const [, startLetter, startNumStr] = startMatch;
-  const [, endLetter, endNumStr] = endMatch;
-  
-  if (singleLetter.toUpperCase() !== startLetter.toUpperCase() || startLetter.toUpperCase() !== endLetter.toUpperCase()) {
-      return false;
-  }
-
-  const startNum = parseInt(startNumStr, 10);
-  const endNum = parseInt(endNumStr, 10);
-
-  return singleNum >= startNum && singleNum <= endNum;
+  const [start, end] = range.split('-');
+  const s = start.match(/^([A-Z])(\d+)/i);
+  const e = end.match(/^([A-Z])(\d+)/i);
+  if (!s || !e) return false;
+  const [, sL, sN] = s;
+  const [, eL, eN] = e;
+  if (singleLetter.toUpperCase() !== sL.toUpperCase() || sL.toUpperCase() !== eL.toUpperCase()) return false;
+  const n = parseInt(singleNumStr, 10);
+  return n >= parseInt(sN, 10) && n <= parseInt(eN, 10);
 };
 
+const SITE = 'https://careoverseas.space';
+const ALT_LANGS = ['en', 'ru', 'pl', 'ar'];
+
+// ждать появления элемента в DOM после навигации
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
+
+// --- Component ----------------------------------------------
 const DiseasesPage = () => {
   const { t, i18n } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [openAccordion, setOpenAccordion] = useState(null);
   const navigate = useNavigate();
+
+  // SEO URLs (canonical + hreflang) из текущего пути
+  const lang = getCurrentLangFromPath(); // 'en' | 'ru' | 'pl' | 'ar'
+  const rawPath = typeof window !== 'undefined' ? window.location.pathname : `/${lang}/diseases`;
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${origin}${rawPath}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
+
+  // хвост пути после языка, чтобы собрать hreflang ссылки
+  const tailAfterLang = rawPath.replace(/^\/(en|ru|pl|ar)\/?/, '');
+  const safeTail = tailAfterLang || 'diseases';
+  const altHref = (hl) => `${SITE}/${hl}/${safeTail}`;
 
   const icd10Data = useMemo(() => {
     return icd10Codes.map(item => ({
@@ -268,58 +289,104 @@ const DiseasesPage = () => {
     }));
   }, [i18n.language, t]);
 
-  const handleRequestQuote = (e) => {
+  const handleRequestQuote = async (e) => {
     e.stopPropagation();
-    navigate('/#contact');
-    setTimeout(() => {
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, 100);
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(
+      typeof window !== 'undefined' ? window.location.pathname : `/${lang}/`
+    );
+    const id = 'contact';
+    if (!isHome) navigate(`${langLink('/') }#${id}`);
+    const el = await waitForEl(id);
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const groupedAndFilteredDiseases = useMemo(() => {
-    const lowerCaseSearchTerm = searchTerm.toLowerCase();
+    const q = searchTerm.trim().toLowerCase();
 
-    const filtered = searchTerm
-      ? icd10Data.filter(disease => {
-          const lowerCaseCode = disease.code.toLowerCase();
-          
-          if ((disease.name && disease.name.toLowerCase().includes(lowerCaseSearchTerm)) ||
-              (disease.description && disease.description.toLowerCase().includes(lowerCaseSearchTerm)) ||
-              lowerCaseCode.includes(lowerCaseSearchTerm)) {
-            return true;
-          }
+    const filtered = q
+      ? icd10Data.filter(d => {
+          const code = d.code.toLowerCase();
+          if (
+            (d.name && d.name.toLowerCase().includes(q)) ||
+            (d.description && d.description.toLowerCase().includes(q)) ||
+            code.includes(q)
+          ) return true;
 
-          if (/^[A-Z]\d+$/i.test(searchTerm.trim())) {
-             if(isCodeInRange(searchTerm.trim(), disease.code)) {
-               return true;
-             }
+          // Поиск точного кода внутри диапазона
+          if (/^[A-Z]\d+$/i.test(q.toUpperCase())) {
+            return isCodeInRange(q.toUpperCase(), d.code);
           }
-          
           return false;
         })
       : icd10Data;
 
-    return filtered.reduce((acc, disease) => {
-      const category = disease.category || 'Other';
-      if (!acc[category]) {
-        acc[category] = [];
-      }
-      acc[category].push(disease);
+    return filtered.reduce((acc, d) => {
+      const cat = d.category || 'Other';
+      (acc[cat] ||= []).push(d);
       return acc;
     }, {});
   }, [searchTerm, icd10Data]);
 
   const categories = Object.keys(groupedAndFilteredDiseases).sort();
 
+  // JSON-LD (страница-сборник с частью списка кодов)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: t('diseasesPage.title'),
+    description: t('diseasesPage.description'),
+    inLanguage: lang,
+    url: canonicalUrl,
+    about: { '@type': 'DefinedTermSet', name: 'ICD-10' },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: icd10Data.slice(0, 50).map((d, i) => ({
+        '@type': 'MedicalCode',
+        codeValue: d.code,
+        codingSystem: 'ICD-10',
+        name: d.name || undefined,
+        position: i + 1
+      }))
+    }
+  };
+
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('diseasesPage.title')}</title>
         <meta name="description" content={t('diseasesPage.description')} />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="ICD-10, diseases, diagnosis codes, hospital coding, DRG, medical categories"
+        />
+
+        {/* canonical + hreflang */}
+        <link rel="canonical" href={canonicalUrl} />
+        {ALT_LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={altHref(hl)} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={altHref('en')} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={t('diseasesPage.title')} />
+        <meta property="og:description" content={t('diseasesPage.description')} />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content="https://careoverseas.space/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('diseasesPage.title')} />
+        <meta name="twitter:description" content={t('diseasesPage.description')} />
+        <meta name="twitter:image" content="https://careoverseas.space/og-default.jpg" />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
+
       <div className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
@@ -336,71 +403,99 @@ const DiseasesPage = () => {
             </p>
           </motion.div>
 
+          {/* Search */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-12 max-w-2xl mx-auto"
+            role="search"
+            aria-label={t('diseasesPage.searchAria') || 'Search ICD-10'}
           >
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" aria-hidden="true" />
+              <label htmlFor="icd-search" className="sr-only">
+                {t('diseasesPage.searchPlaceholder')}
+              </label>
               <input
-                type="text"
+                id="icd-search"
+                type="search"
                 placeholder={t('diseasesPage.searchPlaceholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                autoComplete="off"
               />
             </div>
           </motion.div>
 
+          {/* Categories */}
           <div className="space-y-12">
-            {categories.length > 0 ? categories.map(category => (
-              <motion.div 
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="flex items-center mb-6">
-                  <BookOpen className="h-8 w-8 text-green-600 mr-4" />
-                  <h2 className="text-3xl font-bold text-gray-800">{category}</h2>
-                </div>
-                <Accordion type="single" collapsible value={openAccordion} onValueChange={setOpenAccordion} className="w-full space-y-4">
-                  {groupedAndFilteredDiseases[category].map((disease) => (
-                    <AccordionItem key={disease.code} value={disease.code} className="bg-gradient-to-br from-gray-50 to-white p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                      <AccordionTrigger className="text-left p-4">
-                        <div className="flex items-center">
-                          <FileText className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0" />
-                          <div>
-                            <h3 className="text-lg font-bold text-gray-900">{disease.name}</h3>
-                            <p className="text-sm text-gray-500">ICD-10 Code: <span className="font-semibold text-gray-700">{disease.code}</span></p>
-                          </div>
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent className="px-4">
-                        <div className="border-t border-gray-200 pt-4 mt-2">
-                          <p className="text-gray-600 leading-relaxed mb-4">{disease.description}</p>
-                          <Button
-                            onClick={handleRequestQuote}
-                            className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white"
-                          >
-                            <Send className="mr-2 h-4 w-4" />
-                            {t('diseasesPage.requestQuote')}
-                          </Button>
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </motion.div>
-            )) : (
-              <motion.div
+            {categories.length > 0 ? (
+              categories.map(category => (
+                <motion.section
+                  key={category}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-center py-12"
+                  transition={{ duration: 0.5 }}
+                  aria-labelledby={`cat-${category.replace(/\s+/g, '-')}`}
+                >
+                  <div className="flex items-center mb-6">
+                    <BookOpen className="h-8 w-8 text-green-600 mr-4" aria-hidden="true" />
+                    <h2 id={`cat-${category.replace(/\s+/g, '-')}`} className="text-3xl font-bold text-gray-800">
+                      {category}
+                    </h2>
+                  </div>
+
+                  <Accordion
+                    type="single"
+                    collapsible
+                    value={openAccordion}
+                    onValueChange={setOpenAccordion}
+                    className="w-full space-y-4"
+                  >
+                    {groupedAndFilteredDiseases[category].map((disease) => (
+                      <AccordionItem
+                        key={disease.code}
+                        value={disease.code}
+                        className="bg-gradient-to-br from-gray-50 to-white p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+                      >
+                        <AccordionTrigger className="text-left p-4">
+                          <div className="flex items-center">
+                            <FileText className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                            <div>
+                              <h3 className="text-lg font-bold text-gray-900">{disease.name}</h3>
+                              <p className="text-sm text-gray-500">
+                                ICD-10: <span className="font-semibold text-gray-700">{disease.code}</span>
+                              </p>
+                            </div>
+                          </div>
+                        </AccordionTrigger>
+
+                        <AccordionContent className="px-4">
+                          <div className="border-t border-gray-200 pt-4 mt-2">
+                            <p className="text-gray-600 leading-relaxed mb-4">{disease.description}</p>
+                            <Button
+                              onClick={handleRequestQuote}
+                              className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white"
+                            >
+                              <Send className="mr-2 h-4 w-4" />
+                              {t('diseasesPage.requestQuote')}
+                            </Button>
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </motion.section>
+              ))
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-center py-12"
               >
-                  <p className="text-gray-600 text-lg">{t('diseasesPage.noResults')}</p>
+                <p className="text-gray-600 text-lg">{t('diseasesPage.noResults')}</p>
               </motion.div>
             )}
           </div>

@@ -4,68 +4,111 @@ import { motion } from 'framer-motion';
 import { BrainCircuit, Pill, ShieldCheck, UserCheck, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
+
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const SITE = 'https://careoverseas.space';
+const TAIL = 'epilepsy-treatment-spain';
+
+// ждём появления элемента, затем скроллим (исправляет «двойной клик»)
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
 
 const EpilepsySpainPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // язык и генераторы ссылок
+  const lang = getCurrentLangFromPath();   // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
 
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  // SEO URLs
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${SITE}/${lang}/${TAIL}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
+
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+    const id = 'contact';
+    if (isHome) {
+      const el = await waitForEl(id);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      const el = await waitForEl(id);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  };
+  }
 
   const features = [
-    {
-      icon: ShieldCheck,
-      title: t('epilepsySpainPage.feature1Title'),
-      desc: t('epilepsySpainPage.feature1Desc'),
-    },
-    {
-      icon: Pill,
-      title: t('epilepsySpainPage.feature2Title'),
-      desc: t('epilepsySpainPage.feature2Desc'),
-    },
-    {
-      icon: CheckCircle,
-      title: t('epilepsySpainPage.feature3Title'),
-      desc: t('epilepsySpainPage.feature3Desc'),
-    },
-    {
-      icon: UserCheck,
-      title: t('epilepsySpainPage.feature4Title'),
-      desc: t('epilepsySpainPage.feature4Desc'),
-    },
+    { icon: ShieldCheck, title: t('epilepsySpainPage.feature1Title'), desc: t('epilepsySpainPage.feature1Desc') },
+    { icon: Pill,        title: t('epilepsySpainPage.feature2Title'), desc: t('epilepsySpainPage.feature2Desc') },
+    { icon: CheckCircle, title: t('epilepsySpainPage.feature3Title'), desc: t('epilepsySpainPage.feature3Desc') },
+    { icon: UserCheck,   title: t('epilepsySpainPage.feature4Title'), desc: t('epilepsySpainPage.feature4Desc') },
   ];
+
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('epilepsySpainPage.title'),
+    description: t('epilepsySpainPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/epilepsy-spain-hero.jpg`,
+    about: { '@type': 'MedicalSpecialty', name: 'Neurology' }
+  };
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('epilepsySpainPage.title')}</title>
         <meta name="description" content={t('epilepsySpainPage.description')} />
         <meta name="robots" content="index, follow" />
+
+        {/* canonical */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* hreflang */}
+        {LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={`${SITE}/${hl}/${TAIL}`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('epilepsySpainPage.title')} />
         <meta property="og:description" content={t('epilepsySpainPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/epilepsy-spain-hero.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/epilepsy-treatment-spain" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/epilepsy-spain-hero.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('epilepsySpainPage.title')} />
         <meta name="twitter:description" content={t('epilepsySpainPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/epilepsy-spain-hero.jpg" />
+        <meta name="twitter:image" content={`${SITE}/epilepsy-spain-hero.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       <div className="text-base leading-relaxed">
@@ -84,7 +127,7 @@ const EpilepsySpainPage = () => {
               </p>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
                 onClick={handleContactClick}
               >
                 {t('epilepsySpainPage.getQuote')} <ArrowRight className="ml-2 h-5 w-5 inline" />
@@ -133,19 +176,34 @@ const EpilepsySpainPage = () => {
         <section className="py-20 bg-purple-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
                 <img
                   src="/epilepsy-spain-hero.jpg"
-                  alt="Modern epilepsy diagnosic in Spain" 
+                  alt="Modern epilepsy diagnostic in Spain"
                   className="rounded-lg overflow-hidden shadow-md w-full h-auto md:h-96 object-cover"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
                 />
               </motion.div>
-              <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="space-y-6"
+              >
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                  {t('epilepsySpainPage.feature4Title')}</h3>
-                
+                  {t('epilepsySpainPage.feature4Title')}
+                </h3>
                 <p className="text-gray-700 text-sm md:text-base">
-                  {t('epilepsySpainPage.feature4Desc')}</p>
+                  {t('epilepsySpainPage.feature4Desc')}
+                </p>
               </motion.div>
             </div>
           </div>
@@ -154,7 +212,13 @@ const EpilepsySpainPage = () => {
         {/* CTA */}
         <section className="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <motion.div initial={{ scale: 0.95 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="p-10 rounded-2xl shadow-xl">
+            <motion.div
+              initial={{ scale: 0.95 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-10 rounded-2xl shadow-xl"
+            >
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
                 {t('epilepsySpainPage.ctaTitle')}
               </h2>
@@ -172,8 +236,7 @@ const EpilepsySpainPage = () => {
           </div>
         </section>
 
-        {/* Contact Section Anchor */}
-        <div id="contact"></div>
+        <div id="contact" />
       </div>
     </>
   );

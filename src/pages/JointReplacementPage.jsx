@@ -4,49 +4,119 @@ import { motion } from 'framer-motion';
 import { PersonStanding, Bone, Scan, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation, Trans } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
-const JointReplacementPage = () => {
+const LANGS = ['en', 'ru', 'pl', 'ar'];
+const TAIL = 'joint-replacement';
+const SITE = 'https://careoverseas.space';
+
+// ждём появления элемента и только потом скроллим (исключает «двойной клик»)
+function waitForEl(id, timeout = 3000) {
+  const start = performance.now();
+  return new Promise((resolve) => {
+    const loop = () => {
+      const el = document.getElementById(id);
+      if (el) return resolve(el);
+      if (performance.now() - start > timeout) return resolve(null);
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  });
+}
+
+export default function JointReplacementPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
+
+  // язык и генераторы ссылок
+  const lang = getCurrentLangFromPath();       // en|ru|pl|ar
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  // URL для SEO
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
+  const canonicalUrl = `${origin}${go(TAIL)}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  const handleContactClick = () => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scrollToContact, 200);
+  async function smoothScrollToId(id) {
+    const el = await waitForEl(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  async function handleContactClick(e) {
+    e?.preventDefault?.();
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+    const id = 'contact';
+    if (isHome) {
+      await smoothScrollToId(id);
     } else {
-      scrollToContact();
+      navigate(`${home()}#${id}`);
+      await smoothScrollToId(id);
+    }
+  }
+
+  const features = [
+    { icon: Bone,            title: t('jointReplacementPage.feature1Title'), desc: t('jointReplacementPage.feature1Desc') },
+    { icon: PersonStanding,  title: t('jointReplacementPage.feature2Title'), desc: t('jointReplacementPage.feature2Desc') },
+    { icon: Scan,            title: t('jointReplacementPage.feature3Title'), desc: t('jointReplacementPage.feature3Desc') },
+    { icon: CheckCircle,     title: t('jointReplacementPage.feature4Title'), desc: t('jointReplacementPage.feature4Desc') },
+  ];
+
+  // JSON-LD
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: t('jointReplacementPage.title'),
+    description: t('jointReplacementPage.description'),
+    url: canonicalUrl,
+    inLanguage: lang,
+    primaryImageOfPage: `${SITE}/joint-replacement-cover.jpg`,
+    about: {
+      '@type': 'MedicalProcedure',
+      name: 'Joint Replacement (Arthroplasty)',
+      bodyLocation: 'Hip/Knee',
+      procedureType: 'Surgery'
     }
   };
 
-  const features = [
-    { icon: Bone, title: t('jointReplacementPage.feature1Title'), desc: t('jointReplacementPage.feature1Desc') },
-    { icon: PersonStanding, title: t('jointReplacementPage.feature2Title'), desc: t('jointReplacementPage.feature2Desc') },
-    { icon: Scan, title: t('jointReplacementPage.feature3Title'), desc: t('jointReplacementPage.feature3Desc') },
-    { icon: CheckCircle, title: t('jointReplacementPage.feature4Title'), desc: t('jointReplacementPage.feature4Desc') },
-  ];
-
   return (
     <div className="text-base leading-relaxed">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang }}>
         <title>{t('jointReplacementPage.title')}</title>
         <meta name="description" content={t('jointReplacementPage.description')} />
+        <meta name="robots" content="index, follow" />
+
+        {/* canonical */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* hreflang */}
+        {LANGS.map((hl) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={`${SITE}/${hl}/${TAIL}`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE}/en/${TAIL}`} />
+
+        {/* Open Graph */}
         <meta property="og:title" content={t('jointReplacementPage.title')} />
         <meta property="og:description" content={t('jointReplacementPage.description')} />
-        <meta property="og:image" content="https://careoverseas.space/joint-replacement-cover.jpg" />
-        <meta property="og:url" content="https://careoverseas.space/joint-replacement" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={`${SITE}/joint-replacement-cover.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('jointReplacementPage.title')} />
         <meta name="twitter:description" content={t('jointReplacementPage.description')} />
-        <meta name="twitter:image" content="https://careoverseas.space/joint-replacement-cover.jpg" />
-        <meta name="robots" content="index, follow" />
+        <meta name="twitter:image" content={`${SITE}/joint-replacement-cover.jpg`} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -166,6 +236,9 @@ const JointReplacementPage = () => {
                 src="/joint-replacement-cover.jpg"
                 alt={t('jointReplacementPage.proceduresTitle')}
                 className="rounded-xl shadow-md w-full h-auto md:h-96 object-cover"
+                loading="lazy"
+                width="1200"
+                height="800"
               />
             </motion.div>
           </div>
@@ -202,6 +275,4 @@ const JointReplacementPage = () => {
       <div id="contact" />
     </div>
   );
-};
-
-export default JointReplacementPage;
+}
