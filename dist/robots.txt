@@ -1,0 +1,15 @@
+# robots.txt for careoverseas.space
+
+User-agent: *
+Allow: /
+
+# Закрываем служебное
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Для Яндекса (необязательно, но полезно)
+Host: careoverseas.space
+
+# Карта сайта
+Sitemap: https://careoverseas.space/sitemap.xml

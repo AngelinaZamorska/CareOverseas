@@ -5,7 +5,7 @@ import path from 'path';
 const CANONICAL = 'https://careoverseas.space';
 const LANGS = ['en', 'ru', 'pl', 'ar'];
 
-// Список путей БЕЗ ведущего /:lang (язык добавим автоматически)
+// пути БЕЗ языка
 const PATHS = [
   '', // главная
   'news',
@@ -30,18 +30,21 @@ const PATHS = [
 
 const today = new Date().toISOString().slice(0, 10);
 
+function norm(url) {
+  // убираем двойные слэши, приводим хвост к / (кроме query/hash)
+  return url
+    .replace(/([^:]\/)\/+/g, '$1')
+    .replace(/\/+(?=\?|#|$)/, '/');
+}
+
 function urlEntry(basePath) {
-  // Делаем «группу» URL-ов: <loc> = EN-версия, а внутри — hreflang-альтернативы
-  const enLoc = `${CANONICAL}/en/${basePath}`.replace(/\/+$/, '/')   // нормализуем двойные слэши
-                                                .replace(/\/+(?=\?|\#|$)/, '/');
+  const enLoc = norm(`${CANONICAL}/en/${basePath}`);
 
   const altLinks = LANGS.map(lng => {
-    const href = `${CANONICAL}/${lng}/${basePath}`.replace(/\/+$/, '/')
-                                                  .replace(/\/+(?=\?|\#|$)/, '/');
+    const href = norm(`${CANONICAL}/${lng}/${basePath}`);
     return `    <xhtml:link rel="alternate" hreflang="${lng}" href="${href}"/>`;
   }).join('\n');
 
-  // x-default укажем на EN-версию
   const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${enLoc}"/>`;
 
   return `
@@ -64,7 +67,6 @@ ${urls}
 </urlset>
 `;
 
-// Гарантируем public/, пишем public/sitemap.xml
 const outDir = path.resolve('public');
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
