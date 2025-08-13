@@ -65,30 +65,69 @@ export default function AnteriorApproachPage() {
     followup: content.journey.steps.map((s) => s.description),
     inLanguage: 'en',
   };
+const BASE = 'https://careoverseas.space';
+const PAGE_TAIL = '/news/anterior-approach';
 
+const currentLang = getCurrentLangFromPath(); // en | ru | pl | ar
+const canonicalUrl = `${BASE}/${currentLang}${PAGE_TAIL}`;
+const hreflangs = ['en', 'ru', 'pl', 'ar'];
+
+const ogLocaleMap = { en: 'en_US', ru: 'ru_RU', pl: 'pl_PL', ar: 'ar_AR' };
+const ogLocale = ogLocaleMap[currentLang] || 'en_US';
+
+// Breadcrumbs JSON-LD
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: t('footer.home') || 'Home', item: `${BASE}/${currentLang}/` },
+    { '@type': 'ListItem', position: 2, name: t('newsPage.title') || 'News', item: `${BASE}/${currentLang}/news` },
+    { '@type': 'ListItem', position: 3, name: content.title, item: canonicalUrl },
+  ],
+};
   return (
     <>
       <Helmet>
-        <title>{content.title} | CareOverseasSpace</title>
-        <meta name="description" content={content.subtitle} />
-        <meta name="keywords" content="hip replacement, anterior approach, minimally invasive, medical tourism, fast recovery" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:title" content={content.title} />
-        <meta property="og:description" content={content.subtitle} />
-        <meta property="og:image" content={content.ogImage} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+  {/* Canonical + hreflang */}
+  <link rel="canonical" href={canonicalUrl} />
+  {hreflangs.map((hl) => (
+    <link key={hl} rel="alternate" href={`${BASE}/${hl}${PAGE_TAIL}`} hreflang={hl} />
+  ))}
+  <link rel="alternate" href={`${BASE}/en${PAGE_TAIL}`} hreflang="x-default" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={currentUrl} />
-        <meta name="twitter:title" content={content.title} />
-        <meta name="twitter:description" content={content.subtitle} />
-        <meta name="twitter:image" content={content.ogImage} />
+  {/* Primary */}
+  <title>{content.title} | CareOverseasSpace</title>
+  <meta name="description" content={content.subtitle} />
+  <meta name="keywords" content="hip replacement, anterior approach, minimally invasive, medical tourism, fast recovery" />
+  <meta name="robots" content="index, follow" />
 
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      </Helmet>
+  {/* Open Graph */}
+  <meta property="og:site_name" content="CareOverseasSpace" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:title" content={content.title} />
+  <meta property="og:description" content={content.subtitle} />
+  <meta property="og:image" content={content.ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content={ogLocale} />
+  {Object.entries(ogLocaleMap)
+    .filter(([lng]) => lng !== currentLang)
+    .map(([lng, loc]) => (
+      <meta key={lng} property="og:locale:alternate" content={loc} />
+    ))}
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content={canonicalUrl} />
+  <meta name="twitter:title" content={content.title} />
+  <meta name="twitter:description" content={content.subtitle} />
+  <meta name="twitter:image" content={content.ogImage} />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+  <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
+</Helmet>
 
       <header className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-20">
         <div className="container mx-auto text-center px-6">

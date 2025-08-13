@@ -6,9 +6,9 @@ import { ShieldCheck, Map, HeartPulse, Brain, ArrowLeft } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
-import { langLink } from '@/lib/lang';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
-// Framer Motion variants for section reveals
+// Framer Motion variants
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -23,14 +23,12 @@ const DuchennePage = () => {
   const navigate = useNavigate();
 
   const content = t('duchenne', { returnObjects: true });
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
 
-  // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // ссылки с учётом языка
+  // язык/ссылки
   const go = (p) => langLink(p);
   const home = () => langLink('/');
 
@@ -39,7 +37,6 @@ const DuchennePage = () => {
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // плавный переход к якорю "contact" с любой страницы
   function handleAnchorClick(e, hash = '#contact') {
     e.preventDefault();
     const id = (hash || '').replace('#', '');
@@ -53,44 +50,83 @@ const DuchennePage = () => {
     }
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
+  // ---------- SEO ----------
+  const BASE = 'https://careoverseas.space';
+  const PAGE_TAIL = '/news/duchenne-muscular-dystrophy';
+  const currentLang = getCurrentLangFromPath(); // en | ru | pl | ar
+  const canonicalUrl = `${BASE}/${currentLang}${PAGE_TAIL}`;
+  const hreflangs = ['en', 'ru', 'pl', 'ar'];
+  const ogLocaleMap = { en: 'en_US', ru: 'ru_RU', pl: 'pl_PL', ar: 'ar_AR' };
+  const ogLocale = ogLocaleMap[currentLang] || 'en_US';
+  const bcp47 = { en: 'en-US', ru: 'ru-RU', pl: 'pl-PL', ar: 'ar' }[currentLang] || 'en-US';
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t('footer.home') || 'Home', item: `${BASE}/${currentLang}/` },
+      { '@type': 'ListItem', position: 2, name: t('newsPage.title') || 'News', item: `${BASE}/${currentLang}/news` },
+      { '@type': 'ListItem', position: 3, name: content.title, item: canonicalUrl },
+    ],
+  };
+
+  const pageLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
     name: content.title,
     description: content.subtitle,
-    url: currentUrl,
-    inLanguage: "ru-RU",
+    url: canonicalUrl,
+    inLanguage: bcp47,
+    image: ['https://careoverseas.space/news-duchenne.jpg'],
   };
+  // -------------------------
 
   return (
     <>
       <Helmet>
-        <title>{content.title}</title>
+        {/* canonical + hreflang */}
+        <link rel="canonical" href={canonicalUrl} />
+        {hreflangs.map((hl) => (
+          <link key={hl} rel="alternate" href={`${BASE}/${hl}${PAGE_TAIL}`} hreflang={hl} />
+        ))}
+        <link rel="alternate" href={`${BASE}/en${PAGE_TAIL}`} hreflang="x-default" />
+
+        {/* primary */}
+        <title>{content.title} | CareOverseasSpace</title>
         <meta name="description" content={content.subtitle} />
-        <link rel="canonical" href={currentUrl} />
+        <meta name="robots" content="index, follow" />
 
         {/* Open Graph */}
+        <meta property="og:site_name" content="CareOverseasSpace" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:title" content={content.title} />
         <meta property="og:description" content={content.subtitle} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={currentUrl} />
         <meta property="og:image" content="https://careoverseas.space/news-duchenne.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content={ogLocale} />
+        {Object.entries(ogLocaleMap)
+          .filter(([lng]) => lng !== currentLang)
+          .map(([lng, loc]) => (
+            <meta key={lng} property="og:locale:alternate" content={loc} />
+          ))}
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={canonicalUrl} />
         <meta name="twitter:title" content={content.title} />
         <meta name="twitter:description" content={content.subtitle} />
         <meta name="twitter:image" content="https://careoverseas.space/news-duchenne.jpg" />
 
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(pageLd)}</script>
       </Helmet>
 
       <div className="bg-gray-50 min-h-screen">
         <div className="container mx-auto px-6 py-12">
-
-          {/* Hero Section */}
+          {/* Hero */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -103,25 +139,15 @@ const DuchennePage = () => {
               {content.title}
             </h1>
 
-            <Button
-              className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600"
-              size="lg"
-              asChild
-            >
+            <Button className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600" size="lg" asChild>
               <Link to={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}>
                 {t('header.freeConsultation')}
               </Link>
             </Button>
           </motion.div>
 
-          {/* Section 1: Что такое МДД? */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={1}
-            variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
-          >
+          {/* Section 1 */}
+          <motion.section initial="hidden" animate="visible" custom={1} variants={sectionVariants} className="mt-12 bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-4 flex items-center text-blue-600">
               <ShieldCheck className="mr-2" />
               {content.sections.about.title}
@@ -133,14 +159,8 @@ const DuchennePage = () => {
             </div>
           </motion.section>
 
-          {/* Section 2: Основные характеристики */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={2}
-            variants={sectionVariants}
-            className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg"
-          >
+          {/* Section 2 */}
+          <motion.section initial="hidden" animate="visible" custom={2} variants={sectionVariants} className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-4 flex items-center text-green-600">
               <Map className="mr-2" />
               {content.sections.characteristics.title}
@@ -168,23 +188,14 @@ const DuchennePage = () => {
             </div>
           </motion.section>
 
-          {/* Section 3: Методы лечения и реабилитация */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={3}
-            variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
-          >
+          {/* Section 3 */}
+          <motion.section initial="hidden" animate="visible" custom={3} variants={sectionVariants} className="mt-12 bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-6 flex items-center text-red-600">
               <HeartPulse className="mr-2" />
               {content.sections.treatments.title}
             </h2>
 
-            {/* Генная терапия */}
-            <h3 className="text-xl font-semibold mt-4">
-              {content.sections.treatments.geneTherapy.title}
-            </h3>
+            <h3 className="text-xl font-semibold mt-4">{content.sections.treatments.geneTherapy.title}</h3>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
               {content.sections.treatments.geneTherapy.items.map((item, i) => (
                 <li key={i}>
@@ -193,10 +204,7 @@ const DuchennePage = () => {
               ))}
             </ul>
 
-            {/* Медикаментозное лечение */}
-            <h3 className="text-xl font-semibold mt-6">
-              {content.sections.treatments.medications.title}
-            </h3>
+            <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.medications.title}</h3>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
               {content.sections.treatments.medications.items.map((item, i) => (
                 <li key={i}>
@@ -205,10 +213,7 @@ const DuchennePage = () => {
               ))}
             </ul>
 
-            {/* Реабилитация */}
-            <h3 className="text-xl font-semibold mt-6">
-              {content.sections.treatments.rehabilitation.title}
-            </h3>
+            <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.rehabilitation.title}</h3>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
               {content.sections.treatments.rehabilitation.items.map((item, i) => (
                 <li key={i}>
@@ -217,17 +222,13 @@ const DuchennePage = () => {
               ))}
             </ul>
 
-            {/* Экспериментальные */}
-            <h3 className="text-xl font-semibold mt-6">
-              {content.sections.treatments.experimental.title}
-            </h3>
+            <h3 className="text-xl font-semibold mt-6">{content.sections.treatments.experimental.title}</h3>
             <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
               {content.sections.treatments.experimental.items.map((item, i) => (
                 <li key={i}>{item.description}</li>
               ))}
             </ul>
 
-            {/* Таблица сравнения */}
             <div className="overflow-x-auto mt-8">
               <table className="min-w-full bg-white rounded-lg overflow-hidden">
                 <thead className="bg-red-200">
@@ -253,14 +254,8 @@ const DuchennePage = () => {
             </div>
           </motion.section>
 
-          {/* Section 4: Влияние на качество жизни */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={4}
-            variants={sectionVariants}
-            className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg"
-          >
+          {/* Section 4 */}
+          <motion.section initial="hidden" animate="visible" custom={4} variants={sectionVariants} className="mt-12 bg-gray-100 p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-4 flex items-center text-purple-600">
               <Brain className="mr-2" />
               {content.sections.impact.title}
@@ -292,13 +287,7 @@ const DuchennePage = () => {
           </motion.section>
 
           {/* Section 5: Медицинский туризм */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={5}
-            variants={sectionVariants}
-            className="mt-12 bg-white p-8 rounded-xl shadow-lg"
-          >
+          <motion.section initial="hidden" animate="visible" custom={5} variants={sectionVariants} className="mt-12 bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-8 text-center text-blue-700">
               {content.sections.tourism.title}
             </h2>
@@ -321,13 +310,7 @@ const DuchennePage = () => {
           </motion.section>
 
           {/* Conclusion & CTA */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={6}
-            variants={sectionVariants}
-            className="mt-12 text-center"
-          >
+          <motion.section initial="hidden" animate="visible" custom={6} variants={sectionVariants} className="mt-12 text-center">
             <p className="italic text-gray-600 mb-6">{content.sections.note.text}</p>
             <div className="flex flex-col items-center space-y-4">
               <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-5 text-lg" asChild>
@@ -343,7 +326,6 @@ const DuchennePage = () => {
               </Button>
             </div>
           </motion.section>
-
         </div>
       </div>
     </>

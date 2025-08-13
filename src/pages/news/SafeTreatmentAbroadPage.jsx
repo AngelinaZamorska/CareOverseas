@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Map, HeartPulse, Brain, ArrowLeft } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { langLink } from '@/lib/lang';
+import { langLink, getCurrentLangFromPath } from '@/lib/lang';
 
-// Framer Motion variants for section reveals
+// Анимации секций
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -22,12 +22,12 @@ const SafeTreatmentAbroadPage = () => {
   const navigate = useNavigate();
   const content = t('safeTreatmentAbroad', { returnObjects: true });
 
-  // Scroll to top on mount
+  // Скролл к началу при монтировании
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // ссылки с учётом языка
+  // Языковые ссылки
   const go = (p) => langLink(p);
   const home = () => langLink('/');
 
@@ -36,7 +36,7 @@ const SafeTreatmentAbroadPage = () => {
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // плавный переход к якорю "contact" с любой страницы
+  // Плавный переход к якорю "contact" с любой страницы
   function handleAnchorClick(e, hash = '#contact') {
     e.preventDefault();
     const id = (hash || '').replace('#', '');
@@ -50,16 +50,68 @@ const SafeTreatmentAbroadPage = () => {
     }
   }
 
+  // ---------- SEO ----------
+  const BASE = 'https://careoverseas.space';
+  const PAGE_TAIL = '/news/safe-treatment-abroad';
+  const currentLang = getCurrentLangFromPath(); // en | ru | pl | ar
+  const canonicalUrl = `${BASE}/${currentLang}${PAGE_TAIL}`;
+  const hreflangs = ['en', 'ru', 'pl', 'ar'];
+  const ogLocaleMap = { en: 'en_US', ru: 'ru_RU', pl: 'pl_PL', ar: 'ar_AR' };
+  const ogLocale = ogLocaleMap[currentLang] || 'en_US';
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t('footer.home') || 'Home', item: `${BASE}/${currentLang}/` },
+      { '@type': 'ListItem', position: 2, name: t('newsPage.title') || 'News', item: `${BASE}/${currentLang}/news` },
+      { '@type': 'ListItem', position: 3, name: content.title, item: canonicalUrl },
+    ],
+  };
+  // -------------------------
+
   return (
     <>
       <Helmet>
-        <title>{content.title}</title>
+        {/* Canonical + hreflang */}
+        <link rel="canonical" href={canonicalUrl} />
+        {hreflangs.map((hl) => (
+          <link key={hl} rel="alternate" href={`${BASE}/${hl}${PAGE_TAIL}`} hreflang={hl} />
+        ))}
+        <link rel="alternate" href={`${BASE}/en${PAGE_TAIL}`} hreflang="x-default" />
+
+        {/* Primary */}
+        <title>{content.title} | CareOverseasSpace</title>
         <meta name="description" content={content.subtitle} />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:site_name" content="CareOverseasSpace" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={content.title} />
+        <meta property="og:description" content={content.subtitle} />
+        {/* Если появится обложка для статьи — добавь сюда URL картинки
+            <meta property="og:image" content="https://careoverseas.space/news-safe-treatment.jpg" /> */}
+        <meta property="og:locale" content={ogLocale} />
+        {Object.entries(ogLocaleMap)
+          .filter(([lng]) => lng !== currentLang)
+          .map(([lng, loc]) => (
+            <meta key={lng} property="og:locale:alternate" content={loc} />
+          ))}
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={canonicalUrl} />
+        <meta name="twitter:title" content={content.title} />
+        <meta name="twitter:description" content={content.subtitle} />
+
+        {/* JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       <div className="bg-gray-50 min-h-screen">
         <div className="container mx-auto px-6 py-12">
-
           {/* Header Hero */}
           <motion.div
             initial="hidden"
@@ -72,15 +124,9 @@ const SafeTreatmentAbroadPage = () => {
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
               {content.title}
             </h1>
-            <p className="text-lg lg:text-xl text-white mb-8">
-              {content.subtitle}
-            </p>
+            <p className="text-lg lg:text-xl text-white mb-8">{content.subtitle}</p>
 
-            <Button
-              className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600"
-              size="lg"
-              asChild
-            >
+            <Button className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600" size="lg" asChild>
               <Link to={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}>
                 {t('header.freeConsultation')}
               </Link>
@@ -139,10 +185,7 @@ const SafeTreatmentAbroadPage = () => {
                 <thead className="bg-gradient-to-r from-teal-200 to-blue-200">
                   <tr>
                     {content.sections['3'].table.headers.map((header, idx) => (
-                      <th
-                        key={idx}
-                        className="px-6 py-3 text-left text-gray-800 uppercase tracking-wider font-semibold"
-                      >
+                      <th key={idx} className="px-6 py-3 text-left text-gray-800 uppercase tracking-wider font-semibold">
                         {header}
                       </th>
                     ))}
@@ -152,11 +195,7 @@ const SafeTreatmentAbroadPage = () => {
                   {content.sections['3'].table.rows.map((row, rIdx) => (
                     <tr
                       key={rIdx}
-                      className={
-                        rIdx % 2 !== 0
-                          ? 'bg-gray-50 transition-colors duration-200 hover:bg-teal-50'
-                          : 'transition-colors duration-200 hover:bg-teal-50'
-                      }
+                      className={rIdx % 2 !== 0 ? 'bg-gray-50 transition-colors duration-200 hover:bg-teal-50' : 'transition-colors duration-200 hover:bg-teal-50'}
                     >
                       {row.map((cell, cIdx) => (
                         <td key={cIdx} className="px-6 py-4 text-gray-700">
@@ -189,13 +228,7 @@ const SafeTreatmentAbroadPage = () => {
           </motion.section>
 
           {/* Conclusion & CTA */}
-          <motion.section
-            initial="hidden"
-            animate="visible"
-            custom={5}
-            variants={sectionVariants}
-            className="mt-12 text-center"
-          >
+          <motion.section initial="hidden" animate="visible" custom={5} variants={sectionVariants} className="mt-12 text-center">
             <h2 className="text-3xl font-bold mb-4 flex items-center justify-center text-teal-600">
               <ShieldCheck className="mr-2" /> {content.sections.conclusion.heading}
             </h2>
@@ -203,8 +236,8 @@ const SafeTreatmentAbroadPage = () => {
 
             <div className="flex flex-col items-center">
               <Button
-                className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600 px-10 py-5 text-2xl"
-                size="xl"
+                className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600 px-10 py-5 text-lg"
+                size="lg"
                 asChild
               >
                 <Link to={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}>
@@ -219,7 +252,6 @@ const SafeTreatmentAbroadPage = () => {
               </Button>
             </div>
           </motion.section>
-
         </div>
       </div>
     </>
