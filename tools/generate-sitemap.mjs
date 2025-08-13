@@ -61,7 +61,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 ${body}
 </urlset>`;
 
-const outPath = `${__dirname}/../dist/sitemap.xml`;
-await mkdir(`${__dirname}/../dist`, { recursive: true });
+const outPath = `${__dirname}/../public/sitemap.xml`;
+await mkdir(`${__dirname}/../public`, { recursive: true });
 await writeFile(outPath, xml, 'utf8');
 console.log('✅ sitemap.xml generated at dist/sitemap.xml');
