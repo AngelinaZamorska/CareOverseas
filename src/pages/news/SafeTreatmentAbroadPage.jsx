@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Map, HeartPulse, Brain, ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { langLink } from '@/lib/lang';
 
 // Framer Motion variants for section reveals
 const sectionVariants = {
@@ -18,11 +19,37 @@ const sectionVariants = {
 
 const SafeTreatmentAbroadPage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const content = t('safeTreatmentAbroad', { returnObjects: true });
- // Scroll to top on mount
+
+  // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // ссылки с учётом языка
+  const go = (p) => langLink(p);
+  const home = () => langLink('/');
+
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // плавный переход к якорю "contact" с любой страницы
+  function handleAnchorClick(e, hash = '#contact') {
+    e.preventDefault();
+    const id = (hash || '').replace('#', '');
+    const isHome = /^\/(en|ru|pl|ar)\/?$/.test(window.location.pathname);
+
+    if (isHome) {
+      scrollToId(id);
+    } else {
+      navigate(`${home()}#${id}`);
+      setTimeout(() => scrollToId(id), 120);
+    }
+  }
+
   return (
     <>
       <Helmet>
@@ -48,11 +75,16 @@ const SafeTreatmentAbroadPage = () => {
             <p className="text-lg lg:text-xl text-white mb-8">
               {content.subtitle}
             </p>
-            <Link to="/#contact">
-              <Button className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600" size="lg">
+
+            <Button
+              className="bg-gradient-to-r from-white to-white text-blue-600 hover:text-teal-600"
+              size="lg"
+              asChild
+            >
+              <Link to={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}>
                 {t('header.freeConsultation')}
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </motion.div>
 
           {/* Section 1 */}
@@ -121,7 +153,9 @@ const SafeTreatmentAbroadPage = () => {
                     <tr
                       key={rIdx}
                       className={
-                        rIdx % 2 !== 0 ? 'bg-gray-50 transition-colors duration-200 hover:bg-teal-50' : 'transition-colors duration-200 hover:bg-teal-50'
+                        rIdx % 2 !== 0
+                          ? 'bg-gray-50 transition-colors duration-200 hover:bg-teal-50'
+                          : 'transition-colors duration-200 hover:bg-teal-50'
                       }
                     >
                       {row.map((cell, cIdx) => (
@@ -154,24 +188,35 @@ const SafeTreatmentAbroadPage = () => {
             </ol>
           </motion.section>
 
-           {/* Conclusion & CTA */}
-          <motion.section initial="hidden" animate="visible" custom={5} variants={sectionVariants} className="mt-12 text-center">
+          {/* Conclusion & CTA */}
+          <motion.section
+            initial="hidden"
+            animate="visible"
+            custom={5}
+            variants={sectionVariants}
+            className="mt-12 text-center"
+          >
             <h2 className="text-3xl font-bold mb-4 flex items-center justify-center text-teal-600">
               <ShieldCheck className="mr-2" /> {content.sections.conclusion.heading}
             </h2>
             <p className="text-gray-700 mb-6">{content.sections.conclusion.text}</p>
+
             <div className="flex flex-col items-center">
-              <Link to="/#contact">
-                <Button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600 px-10 py-5 text-2xl" size="xl">
-                  {t('header.freeConsultation')}
-                </Button>
-              </Link>
-              <button
-                onClick={() => window.history.back()}
-                className="mt-2 inline-flex items-center text-xs text-gray-600 hover:text-gray-800"
+              <Button
+                className="bg-gradient-to-r from-blue-600 to-teal-500 text-white hover:from-teal-500 hover:to-blue-600 px-10 py-5 text-2xl"
+                size="xl"
+                asChild
               >
-                <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
-              </button>
+                <Link to={`${home()}#contact`} onClick={(e) => handleAnchorClick(e, '#contact')}>
+                  {t('header.freeConsultation')}
+                </Link>
+              </Button>
+
+              <Button asChild variant="link">
+                <Link className="mt-2 inline-flex items-center text-xs text-gray-600 hover:text-gray-800" to={go('news')}>
+                  <ArrowLeft className="mr-2 w-4 h-4" /> {content.backToNews}
+                </Link>
+              </Button>
             </div>
           </motion.section>
 
