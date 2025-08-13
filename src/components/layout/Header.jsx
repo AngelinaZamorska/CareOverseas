@@ -194,12 +194,12 @@ export default function Header() {
 
           {/* CTA */}
           <Link
-            to={`${home()}#contact`}
-            onClick={(e) => handleAnchorClick(e, '#contact')}
-            className="ml-4 inline-flex items-center h-10 px-5 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition"
-          >
-            {t('header.freeConsultation')}
-          </Link>
+  to={`${home()}#contact`}
+  onClick={(e) => handleAnchorClick(e, '#contact')}
+  className="ml-4 inline-flex flex-wrap items-center justify-center px-5 py-2.5 text-center whitespace-normal leading-tight bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:shadow-xl transition max-w-[14rem] md:max-w-none"
+>
+  {t('header.freeConsultation')}
+</Link>
         </div>
 
         {/* Мобильная кнопка */}
@@ -280,12 +280,12 @@ export default function Header() {
               <LanguageSwitcher />
 
               <Link
-                to={`${home()}#contact`}
-                onClick={(e) => handleAnchorClick(e, '#contact')}
-                className="mt-2 w-full px-5 py-2 inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full"
-              >
-                {t('header.freeConsultation')}
-              </Link>
+  to={`${home()}#contact`}
+  onClick={(e) => handleAnchorClick(e, '#contact')}
+  className="mt-2 w-full px-5 py-3 inline-flex flex-wrap items-center justify-center text-center whitespace-normal leading-tight bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full"
+>
+  {t('header.freeConsultation')}
+</Link>
             </div>
           </motion.div>
         )}
