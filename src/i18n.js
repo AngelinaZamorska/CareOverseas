@@ -3,14 +3,13 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// ===== ТВОИ ПЕРЕВОДЫ =====
 // Общие
 import translationEN from './locales/en/common.json';
 import translationRU from './locales/ru/common.json';
 import translationPL from './locales/pl/common.json';
 import translationAR from './locales/ar/common.json';
 
-// Страницы (без новостей)
+// Страницы
 import homeEN from './locales/en/pages/home.json';
 import cardiacEN from './locales/en/pages/cardiac.json';
 import epilepsyEN from './locales/en/pages/epilepsy.json';
@@ -79,7 +78,6 @@ import drgCalcRU from './locales/ru/drgCalculator.json';
 import drgCalcPL from './locales/pl/drgCalculator.json';
 import drgCalcAR from './locales/ar/drgCalculator.json';
 
-// Ресурсы
 const resources = {
   en: { translation: {
     ...translationEN,
@@ -115,16 +113,19 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
-    lng: 'en',                 // стартовый язык; потом ты меняешь через URL в App.jsx
+    lng: 'en',
     debug: false,
     interpolation: { escapeValue: false },
     detection: {
-      // не трогаем путь — язык приходит из URL и выставляется в App.jsx
       order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage', 'cookie'],
     },
     react: { useSuspense: false },
     initImmediate: false,
+
+    // ВАЖНО: чтобы 'en-US' → 'en', 'ru-RU' → 'ru'
+    load: 'languageOnly',
+    supportedLngs: ['en', 'ru', 'pl', 'ar'],
   })
   .then(() => {
     const dir = RTL_LANGS.includes(i18n.language) ? 'rtl' : 'ltr';
