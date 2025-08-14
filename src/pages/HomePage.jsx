@@ -1,44 +1,79 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect, lazy, Suspense, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
-import { motion, useReducedMotion } from 'framer-motion';
 import {
-  Heart,
-  Globe,
-  Shield,
-  Users,
-  MapPin,
-  Star,
-  ArrowRight,
-  Stethoscope,
-  Award,
-  Clock,
+  Heart, Globe, Shield, Users, MapPin, Star, ArrowRight, Stethoscope, Award, Clock,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation, Trans } from 'react-i18next';
 
-// ленивые версии секций
+// ленивые секции
 const CountriesSection = lazy(() => import('@/components/home/CountriesSection'));
 const ContactSection = lazy(() => import('@/components/home/ContactSection'));
 
+// only these langs
 const SUPPORTED = ['en', 'ru', 'pl', 'ar'];
+
+// лёгкий хук вместо useReducedMotion из framer-motion (чтобы не тянуть либу)
+function usePrefersReducedMotion() {
+  const [prefers, setPrefers] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const onChange = () => setPrefers(mq.matches);
+    onChange();
+    mq.addEventListener?.('change', onChange);
+    return () => mq.removeEventListener?.('change', onChange);
+  }, []);
+  return prefers;
+}
+
+// создаём «ленивый motion»: пока framer не подгрузился — это простые теги
+function useLazyMotion(enable = true) {
+  const [fm, setFm] = useState(null);
+  useEffect(() => {
+    if (!enable) return; // если пользователь просит «reduce», не грузим вовсе
+    const load = () => import('framer-motion').then((m) => setFm(m));
+    // грузим в простое, чтобы не блокировать интерактивность
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(load);
+    } else {
+      setTimeout(load, 0);
+    }
+  }, [enable]);
+  // подменяем motion.* на «no-op» до загрузки
+  const motion = useMemo(() => {
+    const Noop = ({ as: As = 'div', children, ...rest }) => <As {...rest}>{children}</As>;
+    return fm?.motion || {
+      div: (p) => <Noop {...p} as="div" />,
+      section: (p) => <Noop {...p} as="section" />,
+      img: (p) => <Noop {...p} as="img" />,
+    };
+  }, [fm]);
+  return motion;
+}
+
+function isSupportedLang(val) {
+  return typeof val === 'string' && SUPPORTED.includes(val);
+}
 
 const HomePage = () => {
   const { t, i18n } = useTranslation();
-  const prefersReducedMotion = useReducedMotion();
-  const { lang } = useParams();
-  const currentLang = SUPPORTED.includes(lang) ? lang : 'en';
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const motion = useLazyMotion(!prefersReducedMotion);
+
+  // lang из URL
+  const { lang: rawLang } = useParams();
+  const currentLang = isSupportedLang(rawLang) ? rawLang : 'en';
   const isRTL = currentLang === 'ar';
 
-  // базовый домен для каноникала/og
   const BASE = 'https://careoverseas.space';
   const canonical = `${BASE}/${currentLang}/`;
 
   useEffect(() => {
-    // синхронизируем i18n с URL, на случай если где-то не успели
     if (i18n.language !== currentLang) i18n.changeLanguage(currentLang);
-    // прокрутка вверх при входе на страницу
     window.scrollTo(0, 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentLang]);
 
   const handleLearnMoreClick = () => {
@@ -47,54 +82,37 @@ const HomePage = () => {
 
   return (
     <div dir={isRTL ? 'rtl' : 'ltr'} className="text-base leading-relaxed">
-      <Helmet
-        htmlAttributes={{ lang: currentLang, dir: isRTL ? 'rtl' : 'ltr' }}
-      >
-        {/* Primary Meta Tags */}
+      <Helmet htmlAttributes={{ lang: currentLang, dir: isRTL ? 'rtl' : 'ltr' }}>
         <title>CareOverseas – Trusted Medical Care Abroad</title>
-        <meta
-          name="description"
-          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
-        />
+        <meta name="description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
         <link rel="canonical" href={canonical} />
-
-        {/* hreflang для всех языков */}
         <link rel="alternate" href={`${BASE}/en/`} hreflang="en" />
         <link rel="alternate" href={`${BASE}/ru/`} hreflang="ru" />
         <link rel="alternate" href={`${BASE}/pl/`} hreflang="pl" />
         <link rel="alternate" href={`${BASE}/ar/`} hreflang="ar" />
         <link rel="alternate" href={`${BASE}/`} hreflang="x-default" />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
-        <meta
-          property="og:title"
-          content="CareOverseas – Trusted Medical Care Abroad"
-        />
-        <meta
-          property="og:description"
-          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
-        />
+        <meta property="og:title" content="CareOverseas – Trusted Medical Care Abroad" />
+        <meta property="og:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
         <meta property="og:image" content={`${BASE}/og-image-v2.jpg`} />
-
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={canonical} />
-        <meta
-          name="twitter:title"
-          content="CareOverseas – Trusted Medical Care Abroad"
-        />
-        <meta
-          name="twitter:description"
-          content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas."
-        />
+        <meta name="twitter:title" content="CareOverseas – Trusted Medical Care Abroad" />
+        <meta name="twitter:description" content="Find your trusted doctor and get world-class treatment in top international clinics with CareOverseas." />
         <meta name="twitter:image" content={`${BASE}/og-image-v2.jpg`} />
 
-        {/* Preload hero */}
-        <link rel="preload" as="image" href="/home-hero.jpg" />
+        {/* preload правильного источника под экран */}
+        <link
+          rel="preload"
+          as="image"
+          href="/home-hero.avif"
+          imagesrcset="/home-hero-small.avif 600w, /home-hero.avif 1200w"
+          imagesizes="(max-width: 768px) 100vw, 50vw"
+          type="image/avif"
+          fetchpriority="high"
+        />
 
-        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
@@ -113,13 +131,17 @@ const HomePage = () => {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
-      <section id="top" className="relative py-20 overflow-hidden bg-white">
+      {/* Hero */}
+      <motion.section id="top" className="relative py-20 overflow-hidden bg-white"
+        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-green-600/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative">
           <motion.div
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 30 }}
-            animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
+            initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
@@ -134,18 +156,12 @@ const HomePage = () => {
                   }}
                 />
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                {t('homePage.heroSubtitle')}
-              </p>
+              <p className="text-xl text-gray-600 leading-relaxed">{t('homePage.heroSubtitle')}</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={() =>
-                  document
-                    .getElementById('contact')
-                    ?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
               >
@@ -153,7 +169,7 @@ const HomePage = () => {
                 <ArrowRight className="ml-2 h-5 w-5 inline" />
               </Button>
               <Button
-                onClick={handleLearnMoreClick}
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
                 size="lg"
                 className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg"
@@ -177,25 +193,36 @@ const HomePage = () => {
           </motion.div>
 
           <motion.div
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.9 }}
-            animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, scale: 1 }}
+            initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0.92 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
             <div className="relative bg-gradient-to-br from-blue-100 to-green-100 rounded-3xl p-6 md:p-8 shadow-2xl">
-              <img
-                src="/home-hero.jpg"
-                srcSet="/home-hero-small.jpg 600w, /home-hero.jpg 1200w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="Trusted international healthcare illustration"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-                width="1200"
-                height="500"
-                className="w-full h-auto md:h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg"
-              />
-              {/* Icons */}
+              <picture>
+                <source
+                  srcSet="/home-hero-small.avif 600w, /home-hero.avif 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  type="image/avif"
+                />
+                <source
+                  srcSet="/home-hero-small.webp 600w, /home-hero.webp 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  type="image/webp"
+                />
+                <img
+                  src="/home-hero.jpg"
+                  srcSet="/home-hero-small.jpg 600w, /home-hero.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Trusted international healthcare illustration"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                  width="1200"
+                  height="500"
+                  className="w-full h-auto md:h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg"
+                />
+              </picture>
               <div className="absolute -top-4 -right-4 bg-white rounded-full p-3 md:p-4 shadow-lg">
                 <Heart className="h-7 w-7 md:h-8 md:w-8 text-red-500" />
               </div>
@@ -205,27 +232,19 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Services Section */}
-      <section
-        id="services"
-        className="py-20 bg-white"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
-      >
+      {/* Services */}
+      <section id="services" className="py-20 bg-white" style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {t('homePage.servicesTitle')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('homePage.servicesSubtitle')}
-            </p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('homePage.servicesTitle')}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('homePage.servicesSubtitle')}</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -239,7 +258,7 @@ const HomePage = () => {
             ].map((svc, idx) => (
               <motion.div
                 key={idx}
-                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
+                initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: prefersReducedMotion ? 0 : idx * 0.1 }}
@@ -256,30 +275,20 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Countries Section */}
-      <motion.section
-        initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="py-20 bg-gray-50"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
-      >
+      {/* Countries (ленивая) */}
+      <section className="py-20 bg-gray-50" style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />} >
+          <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />}>
             <CountriesSection />
           </Suspense>
         </div>
-      </motion.section>
+      </section>
 
-      {/* Process Section */}
-      <section
-        id="process"
-        className="py-20 bg-white"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
-      >
+      {/* Process */}
+      <section id="process" className="py-20 bg-white" style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
@@ -298,7 +307,7 @@ const HomePage = () => {
             ].map((step, i) => (
               <motion.div
                 key={i}
-                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
+                initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * (i + 1) }}
                 className="flex flex-col items-center text-center space-y-4 p-6 border rounded-lg"
@@ -313,14 +322,10 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section
-        id="testimonials"
-        className="py-20 bg-gradient-to-br from-blue-50 to-green-50"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}
-      >
+      <section id="testimonials" className="py-20 bg-gradient-to-br from-blue-50 to-green-50" style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
@@ -333,33 +338,23 @@ const HomePage = () => {
             {[1, 2, 3].map((i) => (
               <motion.div
                 key={i}
-                initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
+                initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: prefersReducedMotion ? 0 : 0.1 * i }}
                 className="flex flex-col items-start bg-white rounded-2xl p-6 shadow-lg space-y-4"
               >
                 <Star className="h-6 w-6 md:h-8 md:w-8 text-yellow-400" />
-                <p className="text-gray-700 italic text-sm md:text-base">
-                  “{t(`homePage.testimonial${i}Text`)}”
-                </p>
-                <h4 className="text-lg md:text-xl font-semibold text-gray-900">
-                  {t(`homePage.testimonial${i}Name`)}
-                </h4>
-                <span className="text-sm text-gray-600">
-                  {t(`homePage.testimonial${i}Treatment`)}
-                </span>
+                <p className="text-gray-700 italic text-sm md:text-base">“{t(`homePage.testimonial${i}Text`)}”</p>
+                <h4 className="text-lg md:text-xl font-semibold text-gray-900">{t(`homePage.testimonial${i}Name`)}</h4>
+                <span className="text-sm text-gray-600">{t(`homePage.testimonial${i}Treatment`)}</span>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-20 bg-white scroll-mt-24 md:scroll-mt-32"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}
-      >
+      {/* Contact (ленивая) */}
+      <section id="contact" className="py-20 bg-white scroll-mt-24 md:scroll-mt-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={<div className="h-64 rounded-2xl bg-gray-100 animate-pulse" />}>
             <ContactSection />

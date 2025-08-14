@@ -2,140 +2,78 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpBackend from 'i18next-http-backend';
 
-// ===== ТВОИ ПЕРЕВОДЫ =====
-// Общие
-import translationEN from './locales/en/common.json';
-import translationRU from './locales/ru/common.json';
-import translationPL from './locales/pl/common.json';
-import translationAR from './locales/ar/common.json';
+export const SUPPORTED_LANGS = ['en', 'ru', 'pl', 'ar'];
+export const RTL_LANGS = ['ar'];
 
-// Страницы (без новостей)
-import homeEN from './locales/en/pages/home.json';
-import cardiacEN from './locales/en/pages/cardiac.json';
-import epilepsyEN from './locales/en/pages/epilepsy.json';
-import neurosurgeryEN from './locales/en/pages/neurosurgery.json';
-import bloodEN from './locales/en/pages/blood.json';
-import rheumatologyEN from './locales/en/pages/rheumatology.json';
-import dendriticEN from './locales/en/pages/dendritic.json';
-import ivfEN from './locales/en/pages/ivf.json';
-import endometriosisEN from './locales/en/pages/endometriosis.json';
-import jointEN from './locales/en/pages/joint.json';
-import plasticEN from './locales/en/pages/plastic.json';
-import oncologyEN from './locales/en/pages/oncology.json';
-import lu177EN from './locales/en/pages/lu177.json';
-
-import homeRU from './locales/ru/pages/home.json';
-import cardiacRU from './locales/ru/pages/cardiac.json';
-import epilepsyRU from './locales/ru/pages/epilepsy.json';
-import neurosurgeryRU from './locales/ru/pages/neurosurgery.json';
-import bloodRU from './locales/ru/pages/blood.json';
-import rheumatologyRU from './locales/ru/pages/rheumatology.json';
-import dendriticRU from './locales/ru/pages/dendritic.json';
-import ivfRU from './locales/ru/pages/ivf.json';
-import endometriosisRU from './locales/ru/pages/endometriosis.json';
-import jointRU from './locales/ru/pages/joint.json';
-import plasticRU from './locales/ru/pages/plastic.json';
-import oncologyRU from './locales/ru/pages/oncology.json';
-import lu177RU from './locales/ru/pages/lu177.json';
-
-import homePL from './locales/pl/pages/home.json';
-import cardiacPL from './locales/pl/pages/cardiac.json';
-import epilepsyPL from './locales/pl/pages/epilepsy.json';
-import neurosurgeryPL from './locales/pl/pages/neurosurgery.json';
-import bloodPL from './locales/pl/pages/blood.json';
-import rheumatologyPL from './locales/pl/pages/rheumatology.json';
-import dendriticPL from './locales/pl/pages/dendritic.json';
-import ivfPL from './locales/pl/pages/ivf.json';
-import endometriosisPL from './locales/pl/pages/endometriosis.json';
-import jointPL from './locales/pl/pages/joint.json';
-import plasticPL from './locales/pl/pages/plastic.json';
-import oncologyPL from './locales/pl/pages/oncology.json';
-import lu177PL from './locales/pl/pages/lu177.json';
-
-import homeAR from './locales/ar/pages/home.json';
-import cardiacAR from './locales/ar/pages/cardiac.json';
-import epilepsyAR from './locales/ar/pages/epilepsy.json';
-import neurosurgeryAR from './locales/ar/pages/neurosurgery.json';
-import bloodAR from './locales/ar/pages/blood.json';
-import rheumatologyAR from './locales/ar/pages/rheumatology.json';
-import dendriticAR from './locales/ar/pages/dendritic.json';
-import ivfAR from './locales/ar/pages/ivf.json';
-import endometriosisAR from './locales/ar/pages/endometriosis.json';
-import jointAR from './locales/ar/pages/joint.json';
-import plasticAR from './locales/ar/pages/plastic.json';
-import oncologyAR from './locales/ar/pages/oncology.json';
-import lu177AR from './locales/ar/pages/lu177.json';
-
-// Новости
-import newsIndexEN from './locales/en/pages/news/index.json';
-import newsIndexRU from './locales/ru/pages/news/index.json';
-import newsIndexPL from './locales/pl/pages/news/index.json';
-import newsIndexAR from './locales/ar/pages/news/index.json';
-
-// DRG
-import drgCalcEN from './locales/en/drgCalculator.json';
-import drgCalcRU from './locales/ru/drgCalculator.json';
-import drgCalcPL from './locales/pl/drgCalculator.json';
-import drgCalcAR from './locales/ar/drgCalculator.json';
-
-// Ресурсы
-const resources = {
-  en: { translation: {
-    ...translationEN,
-    ...homeEN, ...cardiacEN, ...epilepsyEN, ...neurosurgeryEN, ...bloodEN,
-    ...rheumatologyEN, ...dendriticEN, ...ivfEN, ...endometriosisEN, ...jointEN,
-    ...plasticEN, ...oncologyEN, ...lu177EN, ...newsIndexEN, ...drgCalcEN,
-  }},
-  ru: { translation: {
-    ...translationRU,
-    ...homeRU, ...cardiacRU, ...epilepsyRU, ...neurosurgeryRU, ...bloodRU,
-    ...rheumatologyRU, ...dendriticRU, ...ivfRU, ...endometriosisRU, ...jointRU,
-    ...plasticRU, ...oncologyRU, ...lu177RU, ...newsIndexRU, ...drgCalcRU,
-  }},
-  pl: { translation: {
-    ...translationPL,
-    ...homePL, ...cardiacPL, ...epilepsyPL, ...neurosurgeryPL, ...bloodPL,
-    ...rheumatologyPL, ...dendriticPL, ...ivfPL, ...endometriosisPL, ...jointPL,
-    ...plasticPL, ...oncologyPL, ...lu177PL, ...newsIndexPL, ...drgCalcPL,
-  }},
-  ar: { translation: {
-    ...translationAR,
-    ...homeAR, ...cardiacAR, ...epilepsyAR, ...neurosurgeryAR, ...bloodAR,
-    ...rheumatologyAR, ...dendriticAR, ...ivfAR, ...endometriosisAR, ...jointAR,
-    ...plasticAR, ...oncologyAR, ...lu177AR, ...newsIndexAR, ...drgCalcAR,
-  }},
+// Привяжем dir/lang к <html>
+const applyDir = (lng) => {
+  const dir = RTL_LANGS.includes(lng) ? 'rtl' : 'ltr';
+  if (typeof document !== 'undefined') {
+    document.documentElement.dir = dir;
+    document.documentElement.lang = lng;
+  }
 };
 
-const RTL_LANGS = ['ar'];
-
 i18n
-  .use(LanguageDetector)
+  .use(HttpBackend)        // грузим JSON с /locales/{{lng}}/{{ns}}.json
+  .use(LanguageDetector)   // cookie/localStorage/navigator/html
   .use(initReactI18next)
   .init({
-    resources,
     fallbackLng: 'en',
-    lng: 'en',                 // стартовый язык; потом ты меняешь через URL в App.jsx
-    debug: false,
+    supportedLngs: SUPPORTED_LANGS,
+
+    // Разбей переводы на неймспейсы (файлы). Минимальный набор:
+    ns: [
+      'common',
+      'pages/home',
+      'pages/cardiac',
+      'pages/epilepsy',
+      'pages/neurosurgery',
+      'pages/blood',
+      'pages/rheumatology',
+      'pages/dendritic',
+      'pages/ivf',
+      'pages/endometriosis',
+      'pages/joint',
+      'pages/plastic',
+      'pages/oncology',
+      'pages/lu177',
+      'pages/news/index',
+      'drgCalculator',
+    ],
+    defaultNS: 'common',
+
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      // при желании: addPath для postMissing, если нужно
+    },
+
+    // грузим только «текущий» язык (без регионов типа en-US)
+    load: 'currentOnly',
+
     interpolation: { escapeValue: false },
+
     detection: {
-      // не трогаем путь — язык приходит из URL и выставляется в App.jsx
+      // Язык ты меняешь через URL в роутере — это не мешает:
       order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage', 'cookie'],
     },
+
+    // без suspense, чтобы не трогать существующий код
     react: { useSuspense: false },
+
+    // мгновенная инициализация (чуть быстрее на SPA)
     initImmediate: false,
-  })
-  .then(() => {
-    const dir = RTL_LANGS.includes(i18n.language) ? 'rtl' : 'ltr';
-    document.documentElement.dir = dir;
-    document.documentElement.lang = i18n.language;
+
+    // чтобы пустые строки не считались валидным переводом
+    returnEmptyString: false,
+
+    cleanCode: true, // нормализует коды языков
   });
 
-i18n.on('languageChanged', (lng) => {
-  const dir = RTL_LANGS.includes(lng) ? 'rtl' : 'ltr';
-  document.documentElement.dir = dir;
-  document.documentElement.lang = lng;
-});
+applyDir(i18n.language);
+i18n.on('languageChanged', applyDir);
 
 export default i18n;
