@@ -7,7 +7,11 @@ import HttpBackend from 'i18next-http-backend';
 export const SUPPORTED_LANGS = ['en', 'ru', 'pl', 'ar'];
 export const RTL_LANGS = ['ar'];
 
-// Привяжем dir/lang к <html>
+// если вдруг захочешь менять базовый путь через env:
+const LOCALES_BASE =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_LOCALES_BASE) ||
+  '/s/locales'; // <-- твой префикс
+
 const applyDir = (lng) => {
   const dir = RTL_LANGS.includes(lng) ? 'rtl' : 'ltr';
   if (typeof document !== 'undefined') {
@@ -17,14 +21,19 @@ const applyDir = (lng) => {
 };
 
 i18n
-  .use(HttpBackend)        // грузим JSON с /locales/{{lng}}/{{ns}}.json
-  .use(LanguageDetector)   // cookie/localStorage/navigator/html
+  .use(HttpBackend)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS,
+    load: 'currentOnly',          // грузим только en, без en-US
+    cleanCode: true,
+    returnEmptyString: false,
+    initImmediate: false,
+    react: { useSuspense: false },
 
-    // Разбей переводы на неймспейсы (файлы). Минимальный набор:
+    // разнесено по неймспейсам
     ns: [
       'common',
       'pages/home',
@@ -46,31 +55,19 @@ i18n
     defaultNS: 'common',
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
-      // при желании: addPath для postMissing, если нужно
+      // теперь i18next будет ходить в /s/locales/{{lng}}/{{ns}}.json
+      loadPath: `${LOCALES_BASE}/{{lng}}/{{ns}}.json`,
+      // не включаем allowMultiLoading — статикой common+home.json не отдашь
+      // allowMultiLoading: false,
+      // можно добавить кэш-ключ: queryStringParams: { v: '1' },
     },
 
-    // грузим только «текущий» язык (без регионов типа en-US)
-    load: 'currentOnly',
-
-    interpolation: { escapeValue: false },
-
     detection: {
-      // Язык ты меняешь через URL в роутере — это не мешает:
       order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage', 'cookie'],
     },
 
-    // без suspense, чтобы не трогать существующий код
-    react: { useSuspense: false },
-
-    // мгновенная инициализация (чуть быстрее на SPA)
-    initImmediate: false,
-
-    // чтобы пустые строки не считались валидным переводом
-    returnEmptyString: false,
-
-    cleanCode: true, // нормализует коды языков
+    interpolation: { escapeValue: false },
   });
 
 applyDir(i18n.language);
