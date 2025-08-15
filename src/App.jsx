@@ -101,11 +101,11 @@ function LangLayout() {
 
             {/* новости */}
 <Route path="news">
-  <Route path="/:lang/news" element={<NewsPage />} />
-<Route path="/:lang/news/second-medical-opinion" element={<SecondOpinionPage />} />
-<Route path="/:lang/news/duchenne-muscular-dystrophy" element={<DuchennePage />} />
-<Route path="/:lang/news/anterior-approach" element={<AnteriorApproachPage />} />
-<Route path="/:lang/news/safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
+  <Route index element={<NewsPage />} />
+  <Route path="anterior-approach" element={<AnteriorApproachPage />} />
+  <Route path="duchenne-muscular-dystrophy" element={<DuchennePage />} />
+  <Route path="safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
+  <Route path="second-medical-opinion" element={<SecondOpinionPage />} />
 </Route>
 
             {/* калькулятор */}

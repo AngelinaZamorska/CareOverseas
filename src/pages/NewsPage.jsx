@@ -1,4 +1,3 @@
-// src/pages/news/NewsPage.jsx
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Newspaper, ArrowRight } from 'lucide-react';
@@ -6,7 +5,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import Seo from '@/components/Seo';
-import { langLink } from '@/lib/lang'; // важное дополнение
 
 export default function NewsPage() {
   const { t } = useTranslation();
@@ -16,12 +14,13 @@ export default function NewsPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // slug — относительный (без ведущего "/").
-  // Мы формируем абсолютный путь с учётом языка через langLink('news/<slug>')
+  // slug — ОТНОСИТЕЛЬНЫЙ (без ведущего "/").
+  // Поскольку страница смонтирована на маршруте "/:lang/news",
+  // <Link to="anterior-approach" /> станет "/:lang/news/anterior-approach".
   const articles = [
     {
-      slug: 'second-medical-opinion',
-      titleKey: 'newsPage.secondOpinionTitle',
+     slug: 'second-medical-opinion',
+     titleKey: 'newsPage.secondOpinionTitle',
       descriptionKey: 'newsPage.secondOpinionDescription',
       imageAlt: 'Remote medical second opinion by global experts',
       image: 'https://careoverseas.space/news-second-opinion.jpg',
@@ -69,10 +68,7 @@ export default function NewsPage() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div
-            className="inline-block bg-gradient-to-r from-blue-600 to-green-600 p-4 rounded-full mb-6"
-            aria-hidden="true"
-          >
+          <div className="inline-block bg-gradient-to-r from-blue-600 to-green-600 p-4 rounded-full mb-6" aria-hidden="true">
             <Newspaper className="h-12 w-12 text-white" />
           </div>
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
@@ -83,49 +79,43 @@ export default function NewsPage() {
           </p>
         </motion.header>
 
-        <section
-          className="mt-16 grid gap-12 max-w-4xl mx-auto"
-          aria-label={t('newsPage.title')}
-        >
-          {articles.map((a, i) => {
-            const articleHref = langLink(`news/${a.slug}`);
-            return (
-              <motion.article
-                key={a.slug}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row group"
-              >
-                <div className="md:w-1/3">
-                  <img
-                    className="h-64 w-full object-cover"
-                    src={a.image}
-                    alt={a.imageAlt}
-                    loading="lazy"
-                    width="640"
-                    height="360"
-                  />
-                </div>
+        <section className="mt-16 grid gap-12 max-w-4xl mx-auto" aria-label={t('newsPage.title')}>
+          {articles.map((a, i) => (
+            <motion.article
+              key={a.slug}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row group"
+            >
+              <div className="md:w-1/3">
+                <img
+                  className="h-64 w-full object-cover"
+                  src={a.image}
+                  alt={a.imageAlt}
+                  loading="lazy"
+                  width="640"
+                  height="360"
+                />
+              </div>
 
-                <div className="p-8 flex flex-col justify-between md:w-2/3">
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">{a.date}</p>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                      <Link to={articleHref}>{t(a.titleKey)}</Link>
-                    </h2>
-                    <p className="text-gray-600 mb-6">{t(a.descriptionKey)}</p>
-                  </div>
-                  <Button asChild className="self-start">
-                    <Link to={articleHref}>
-                      {t('newsPage.readMore')}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+              <div className="p-8 flex flex-col justify-between md:w-2/3">
+                <div>
+                  <p className="text-sm text-gray-500 mb-1">{a.date}</p>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    <Link to={a.slug}>{t(a.titleKey)}</Link>
+                  </h2>
+                  <p className="text-gray-600 mb-6">{t(a.descriptionKey)}</p>
                 </div>
-              </motion.article>
-            );
-          })}
+                <Button asChild className="self-start">
+                  <Link to={a.slug}>
+                    {t('newsPage.readMore')}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.article>
+          ))}
         </section>
       </div>
     </>
