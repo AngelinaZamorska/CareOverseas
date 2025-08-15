@@ -19,6 +19,14 @@ export default function NewsPage() {
   // <Link to="anterior-approach" /> станет "/:lang/news/anterior-approach".
   const articles = [
     {
+     slug: 'second-medical-opinion',
+     titleKey: 'newsPage.secondOpinionTitle',
+      descriptionKey: 'newsPage.secondOpinionDescription',
+      imageAlt: 'Remote medical second opinion by global experts',
+      image: 'https://careoverseas.space/news-second-opinion.jpg',
+      date: '15.08.2025',
+    },
+    {
       slug: 'anterior-approach',
       titleKey: 'newsPage.anteriorApproachTitle',
       descriptionKey: 'newsPage.anteriorApproachDescription',

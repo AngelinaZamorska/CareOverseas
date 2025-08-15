@@ -11,7 +11,9 @@
     "duchenneTitle": "Nowa nadzieja dla dzieci z dystrofią mięśniową Duchenne’a",
     "duchenneDescription": "Poznaj najnowsze terapie, w tym terapie genowe i eksperymentalne, w leczeniu DMD za granicą.",
     "anteriorApproachTitle": "Dlaczego przednie podejście do endoprotezy stawu biodrowego może być Twoim najlepszym wyborem",
-   "anteriorApproachDescription": "Dowiedz się, jak mniej inwazyjna technika przednia może zmniejszyć ból, przyspieszyć rekonwalescencję i jest idealna dla turystyki medycznej."
+   "anteriorApproachDescription": "Dowiedz się, jak mniej inwazyjna technika przednia może zmniejszyć ból, przyspieszyć rekonwalescencję i jest idealna dla turystyki medycznej.",
+  "secondOpinionTitle": "Drugie opinie medyczne: dlaczego są tak popularne w 2025 roku",
+    "secondOpinionDescription": "Zdalne konsultacje ekspertów – szybko, dokładnie i bez konieczności podróży."
   },
   "safeTreatmentAbroad": {
     "title": "Bezpieczne leczenie za granicą – turystyka medyczna w Europie i Turcji 2025",
@@ -279,6 +281,102 @@
     "cta": {
       "text": "Gotowy pożegnać się z bólem biodra? Skontaktuj się z nami i umów konsultację z najlepszym chirurgiem od przedniego dostępu, aby rozpocząć drogę do lepszej mobilności!",
       "button": "Uzyskaj bezpłatną konsultację"
+    }
+  },
+ "secondOpinion": {
+    "title": "Drugie opinie medyczne: pewne odpowiedzi, gdy nie możesz podróżować",
+    "subtitle": "Zdalne konsultacje czołowych specjalistów międzynarodowych – uzyskaj jasność co do diagnozy i planu leczenia bez wychodzenia z domu.",
+    "backToNews": "Powrót do aktualności",
+
+    "sections": {
+      "why": {
+        "title": "Dlaczego drugie opinie są teraz tak popularne",
+        "points": [
+          "Udział telemedycyny w pracy lekarzy wzrósł z ~15% (2019) do ~86% (2021), czyniąc konsultacje online standardem.",
+          "Pacjenci szukają potwierdzenia diagnozy i bezpieczniejszych opcji: badanie Mayo Clinic wykazało, że w 21% przypadków diagnoza została całkowicie zmieniona, a w 66% – doprecyzowana.",
+          "Programy wirtualne pozwalają oszczędzić tysiące dolarów, unikając zbędnych zabiegów i hospitalizacji.",
+          "Idealne dla osób z ograniczoną mobilnością, napiętym grafikiem, w regionach objętych konfliktem lub z barierami wizowymi."
+        ],
+        "footnote": "Źródła: CDC/NCHS Data Brief & MMWR (telemedycyna); dane Mayo Clinic; analiza The Clinic by Cleveland Clinic."
+      },
+
+      "stats": {
+        "title": "Fakty i dowody (wybrane)",
+        "table": {
+          "headers": ["Metryka", "Wynik", "Źródło"],
+          "rows": [
+            {
+              "metric": "Udział telemedycyny wśród lekarzy (2019 → 2021)",
+              "value": "15.4% → 86.5%",
+              "source": "CDC NCHS Data Brief / MMWR"
+            },
+            {
+              "metric": "Wyniki drugich opinii",
+              "value": "21% nowa diagnoza; 66% doprecyzowana",
+              "source": "Mayo Clinic"
+            },
+            {
+              "metric": "Średnia oszczędność na pacjenta w przypadku VSO",
+              "value": "≈ $8,700",
+              "source": "Cleveland Clinic"
+            },
+            {
+              "metric": "Zmiana diagnozy/planu leczenia w wyniku VSO",
+              "value": "≈ 67% przypadków",
+              "source": "Cleveland Clinic"
+            }
+          ]
+        }
+      },
+
+      "how": {
+        "title": "Jak przebiega zdalne drugie opinie",
+        "steps": [
+          {
+            "title": "1) Przyjęcie dokumentów",
+            "desc": "Przesyłasz wyniki badań, obrazowania i analiz przez zabezpieczony portal; tłumaczymy i przygotowujemy pakiet dla lekarza."
+          },
+          {
+            "title": "2) Dobór eksperta",
+            "desc": "Dobieramy specjalistę (wg preferencji kraju), potwierdzamy terminy (zwykle 5–10 dni roboczych)."
+          },
+          {
+            "title": "3) Raport pisemny",
+            "desc": "Otrzymujesz raport z analizą diagnozy, zaleceniami badań i opcjami leczenia."
+          },
+          {
+            "title": "4) Opcjonalna wideorozmowa",
+            "desc": "Omówienie raportu z ekspertem; możliwość udziału Twojego lokalnego lekarza. Kolejne kroki: leczenie lokalnie lub wyjazd."
+          }
+        ]
+      },
+
+      "faq": {
+        "title": "Najczęściej zadawane pytania",
+        "items": [
+          {
+            "q": "Czy to jest drogie?",
+            "a": "Zwykle znacznie tańsze niż zbędny zabieg. Programy VSO przynoszą duże oszczędności."
+          },
+          {
+            "q": "Jak długo to trwa?",
+            "a": "Zwykle 5–10 dni roboczych od dostarczenia kompletu dokumentów."
+          },
+          {
+            "q": "Czy lekarz się obrazi?",
+            "a": "Druga opinia to normalna praktyka i jest zalecana przy poważnych diagnozach."
+          },
+          {
+            "q": "Czy muszę podróżować?",
+            "a": "Nie. Cały proces jest zdalny. Wyjazd tylko jeśli chcesz leczyć się za granicą."
+          }
+        ]
+      },
+
+      "conclusion": {
+        "text": "Chcesz otrzymać obiektywne zalecenia od najlepszych ekspertów na świecie?",
+        "cta": "Poproś o drugą opinię"
+      }
     }
   }
 }

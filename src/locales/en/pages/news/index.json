@@ -11,7 +11,10 @@
     "duchenneTitle": "New Hope for Children with Duchenne Muscular Dystrophy",
     "duchenneDescription": "Explore the latest therapies, including gene and experimental approaches, for treating DMD abroad.",
     "anteriorApproachTitle": "Why the Anterior Approach for Hip Replacement Could Be Your Best Choice",
-    "anteriorApproachDescription": "Learn how the less-invasive anterior technique can reduce pain, speed recovery and is perfect for medical tourism."
+    "anteriorApproachDescription": "Learn how the less-invasive anterior technique can reduce pain, speed recovery and is perfect for medical tourism.",
+    "secondOpinionTitle": "Second Medical Opinion: Why It’s Booming in 2025",
+    "secondOpinionDescription": "Remote expert reviews for those who can’t travel — accurate, fast and cost‑effective."
+    
   },
   "safeTreatmentAbroad": {
     "title": "Safe Treatment Abroad: Why Europe & Turkey Are Your Top Choices in 2025",
@@ -283,6 +286,102 @@
     "cta": {
       "text": "Ready to say goodbye to hip pain? Contact us today to connect with a top surgeon who specializes in the anterior approach. Your journey to better mobility starts now!",
       "button": "Get Your Free Consultation"
+    }
+  },
+  "secondOpinion": {
+    "title": "Second Medical Opinion: Trusted Answers When You Can’t Travel",
+    "subtitle": "Remote expert reviews from leading international specialists — get clarity on diagnosis and treatment options without leaving home.",
+    "backToNews": "Back to News",
+
+    "sections": {
+      "why": {
+        "title": "Why Second Opinions Are So Popular Now",
+        "points": [
+          "Telemedicine adoption among physicians jumped from ~15% (2019) to ~86% (2021), making remote reviews mainstream.",
+          "Patients seek confirmation and safer options: a Mayo‑linked study found 21% of second‑opinion cases received a completely new diagnosis and 66% were refined.",
+          "Virtual programs can save thousands by avoiding unnecessary surgeries and hospitalizations.",
+          "Ideal for those with limited mobility, tight schedules, conflict‑affected regions or visa barriers."
+        ],
+        "footnote": "Key sources: CDC/NCHS Data Brief & MMWR (telemedicine uptake); Mayo Clinic–reported second‑opinion reclassification rates; Cleveland Clinic VSO impact data."
+      },
+
+      "stats": {
+        "title": "Evidence & Impact (Selected Data)",
+        "table": {
+          "headers": ["Metric", "Result", "Source"],
+          "rows": [
+            {
+              "metric": "Telemedicine use among physicians (2019 → 2021)",
+              "value": "15.4% → 86.5%",
+              "source": "CDC NCHS Data Brief / MMWR"
+            },
+            {
+              "metric": "Second opinion outcomes",
+              "value": "21% new diagnosis; 66% refined diagnosis",
+              "source": "Mayo Clinic study summary (2017)"
+            },
+            {
+              "metric": "Virtual second opinions — average savings per patient",
+              "value": "≈ $8,700",
+              "source": "Cleveland Clinic VSO analysis (2023–24)"
+            },
+            {
+              "metric": "VSO recommended change in diagnosis/treatment",
+              "value": "≈ 67% of cases",
+              "source": "Cleveland Clinic VSO analysis"
+            }
+          ]
+        }
+      },
+
+      "how": {
+        "title": "How a Remote Second Opinion Works",
+        "steps": [
+          {
+            "title": "1) Secure Case Intake",
+            "desc": "You upload reports, imaging and lab results via encrypted portal; we translate and prepare a physician‑readable summary."
+          },
+          {
+            "title": "2) Expert Matching",
+            "desc": "We assign a top specialist (country based on your preference), confirm availability and expected turnaround (typically 5–10 business days)."
+          },
+          {
+            "title": "3) Written Review & Recommendations",
+            "desc": "You receive a structured report covering differential diagnosis, recommended tests and treatment plan options."
+          },
+          {
+            "title": "4) Optional Video Call",
+            "desc": "Discuss the report live; include your local doctor if desired. Next steps: either continue locally or plan care abroad."
+          }
+        ]
+      },
+
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "q": "Is a second opinion expensive?",
+            "a": "It’s often far cheaper than proceeding with an unnecessary procedure. Many VSO programs report substantial savings per case."
+          },
+          {
+            "q": "How long does it take?",
+            "a": "Most cases complete within 5–10 business days after full document submission."
+          },
+          {
+            "q": "Will it offend my current doctor?",
+            "a": "Seeking another perspective is common and encouraged for important decisions; many guidelines recommend it."
+          },
+          {
+            "q": "Do I have to travel?",
+            "a": "No. Everything — from record collection to video consult — is handled remotely. You travel only if you choose to proceed with treatment abroad."
+          }
+        ]
+      },
+
+      "conclusion": {
+        "text": "Ready to get clear, evidence‑based guidance from world‑class specialists?",
+        "cta": "Request Your Second Opinion"
+      }
     }
   }
 }
