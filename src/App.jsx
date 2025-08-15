@@ -97,14 +97,15 @@ function LangLayout() {
             <Route path="oncology" element={<OncologyPage />} />
             <Route path="lu-177-psma-therapy" element={<Lu177PsmaPage />} />
             <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
-            <Route path="/:lang/news/second-medical-opinion" element={<SecondOpinionPage />} />
+            
 
             {/* новости */}
 <Route path="news">
-  <Route index element={<NewsPage />} />
-  <Route path="anterior-approach" element={<AnteriorApproachPage />} />
-  <Route path="duchenne-muscular-dystrophy" element={<DuchennePage />} />
-  <Route path="safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
+  <Route path="/:lang/news" element={<NewsPage />} />
+<Route path="/:lang/news/second-medical-opinion" element={<SecondOpinionPage />} />
+<Route path="/:lang/news/duchenne-muscular-dystrophy" element={<DuchennePage />} />
+<Route path="/:lang/news/anterior-approach" element={<AnteriorApproachPage />} />
+<Route path="/:lang/news/safe-treatment-abroad" element={<SafeTreatmentAbroadPage />} />
 </Route>
 
             {/* калькулятор */}
