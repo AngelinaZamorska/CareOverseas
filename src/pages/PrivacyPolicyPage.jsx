@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
   const description = 'Understand how CareOverseasSpace collects, uses, and protects your data (GDPR-ready).';
   const ogLocale = LOCALE_MAP[current] || 'en_US';
   const inLang = BCP47[current] || 'en-US';
-  const lastModified = '2025-07-13'; // Effective Date (ISO-8601)
+  const lastModified = '2025-07-13'; // ISO date
 
   const hreflangs = ['en', 'ru', 'pl', 'ar'];
   const breadcrumbLd = {
@@ -81,47 +81,48 @@ export default function PrivacyPolicyPage() {
         <script type="application/ld+json">{JSON.stringify(webPageLd)}</script>
       </Helmet>
 
-      {/* Background as clean document style with watermark */}
-<div className="relative py-20 bg-gray-50">
-  {/* Watermark logo */}
-  <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-    <img
-      src="/android-chrome-192x192.png"   // твой логотип, положи в public
-      alt="CareOverseasSpace watermark"
-      className="w-1/2 opacity-10"
-    />
-  </div>
+      {/* Document-style background with watermark */}
+      <div className="relative py-20 bg-gray-50">
+        {/* Watermark (decorative) */}
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
+          aria-hidden="true"
+        >
+          <img
+            src="/android-chrome-192x192.png"
+            alt=""
+            className="w-[520px] md:w-[640px] opacity-5 blur-[0.3px]"
+          />
+        </div>
 
-  <div className="relative container mx-auto px-6">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="max-w-4xl mx-auto text-gray-800 bg-white p-10 shadow-xl rounded-2xl"
-    >
+        <div className="relative container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl mx-auto text-gray-800 bg-white/95 p-10 md:p-12 shadow-2xl rounded-2xl border border-gray-100 backdrop-blur-sm"
+          >
             {/* Header */}
-            <h1 className="text-4xl font-bold text-center mb-4">Privacy Policy</h1>
-            <p className="text-sm text-gray-600 text-center mb-8">
-              Effective Date: July 13, 2025
-            </p>
+            <h1 className="text-4xl font-extrabold text-center mb-2">Privacy Policy</h1>
+            <p className="text-sm text-gray-600 text-center mb-8">Effective Date: July 13, 2025</p>
 
             {/* Table of Contents */}
             <nav className="mb-8" aria-label="Table of contents">
-              <ul className="list-decimal list-inside space-y-1">
-                <li><a href="#introduction" className="text-blue-600 hover:underline">1. Introduction</a></li>
-                <li><a href="#definitions" className="text-blue-600 hover:underline">2. Definitions</a></li>
-                <li><a href="#collection" className="text-blue-600 hover:underline">3. Information We Collect</a></li>
-                <li><a href="#usage" className="text-blue-600 hover:underline">4. Use of Your Personal Data</a></li>
-                <li><a href="#legalbasis" className="text-blue-600 hover:underline">5. Legal Basis</a></li>
-                <li><a href="#retention" className="text-blue-600 hover:underline">6. Data Retention</a></li>
-                <li><a href="#sharing" className="text-blue-600 hover:underline">7. Sharing Data</a></li>
-                <li><a href="#transfers" className="text-blue-600 hover:underline">8. International Transfers</a></li>
-                <li><a href="#rights" className="text-blue-600 hover:underline">9. Your Rights</a></li>
-                <li><a href="#security" className="text-blue-600 hover:underline">10. Data Security</a></li>
-                <li><a href="#cookies" className="text-blue-600 hover:underline">11. Cookies & Tracking</a></li>
-                <li><a href="#thirdparty" className="text-blue-600 hover:underline">12. Third-Party Links</a></li>
-                <li><a href="#updates" className="text-blue-600 hover:underline">13. Updates</a></li>
-                <li><a href="#contact" className="text-blue-600 hover:underline">14. Contact</a></li>
+              <ul className="list-decimal list-inside space-y-1 text-blue-700">
+                <li><a href="#introduction" className="hover:underline">1. Introduction</a></li>
+                <li><a href="#definitions" className="hover:underline">2. Definitions</a></li>
+                <li><a href="#collection" className="hover:underline">3. Information We Collect</a></li>
+                <li><a href="#usage" className="hover:underline">4. Use of Your Personal Data</a></li>
+                <li><a href="#legalbasis" className="hover:underline">5. Legal Basis</a></li>
+                <li><a href="#retention" className="hover:underline">6. Data Retention</a></li>
+                <li><a href="#sharing" className="hover:underline">7. Sharing Data</a></li>
+                <li><a href="#transfers" className="hover:underline">8. International Transfers</a></li>
+                <li><a href="#rights" className="hover:underline">9. Your Rights</a></li>
+                <li><a href="#security" className="hover:underline">10. Data Security</a></li>
+                <li><a href="#cookies" className="hover:underline">11. Cookies & Tracking</a></li>
+                <li><a href="#thirdparty" className="hover:underline">12. Third-Party Links</a></li>
+                <li><a href="#updates" className="hover:underline">13. Updates</a></li>
+                <li><a href="#contact" className="hover:underline">14. Contact</a></li>
               </ul>
             </nav>
 
@@ -253,7 +254,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-semibold mb-2">Contact</h2>
               <p>
                 For inquiries or data requests, email us at{' '}
-                <a href="mailto:info.careoverseas@gmail.com" className="text-blue-600 hover:underline">
+                <a href="mailto:info.careoverseas@gmail.com" className="text-blue-700 underline underline-offset-2">
                   info.careoverseas@gmail.com
                 </a>.
               </p>
