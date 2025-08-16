@@ -50,7 +50,7 @@ const CountriesSection = () => {
       image: '/ukraine.jpg',
       specialties: [
         t('homePage.specialtyCardiology'),
-        t('homePage.specialtyOncology'),
+        t('homePage.specialtyEndocrinology'),
         t('homePage.specialtyRehabilitation'),
       ],
     },
