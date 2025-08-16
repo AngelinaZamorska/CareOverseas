@@ -11,23 +11,49 @@ const CountriesSection = () => {
     {
       country: t('homePage.countryGermany'),
       image: '/germany.jpg',
-      specialties: [t('homePage.specialtyCardiology'), t('homePage.specialtyOncology'), t('homePage.specialtyNeurology')],
+      specialties: [
+        t('homePage.specialtyCardiology'),
+        t('homePage.specialtyOncology'),
+        t('homePage.specialtyNeurology'),
+      ],
     },
     {
       country: t('homePage.countryTurkey'),
       image: '/turkey.jpg',
-      specialties: [t('homePage.specialtyPlasticSurgery'), t('homePage.specialtyHairTransplants'), t('homePage.specialtyDentistry')],
+      specialties: [
+        t('homePage.specialtyPlasticSurgery'),
+        t('homePage.specialtyHairTransplants'),
+        t('homePage.specialtyDentistry'),
+      ],
     },
     {
       country: t('homePage.countrySpain'),
       image: '/spain.jpg',
-      specialties: [t('homePage.specialtyOrthopedics'), t('homePage.specialtyRehabilitation'), t('homePage.specialtyAestheticMedicine')],
+      specialties: [
+        t('homePage.specialtyOrthopedics'),
+        t('homePage.specialtyRehabilitation'),
+        t('homePage.specialtyAestheticMedicine'),
+      ],
     },
     {
       country: t('homePage.countryIsrael'),
       image: '/israel.jpg',
-      specialties: [t('homePage.specialtyOncology'), t('homePage.specialtyInnovativeTherapies'), t('homePage.specialtyClinicalTrials')],
-    }
+      specialties: [
+        t('homePage.specialtyOncology'),
+        t('homePage.specialtyInnovativeTherapies'),
+        t('homePage.specialtyClinicalTrials'),
+      ],
+    },
+    // ✅ Новая страна — Украина
+    {
+      country: t('homePage.countryUkraine'),
+      image: '/ukraine.jpg',
+      specialties: [
+        t('homePage.specialtyCardiology'),
+        t('homePage.specialtyOncology'),
+        t('homePage.specialtyRehabilitation'),
+      ],
+    },
   ];
 
   return (
@@ -45,24 +71,33 @@ const CountriesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* было lg:grid-cols-4 → стало 5 для новой карточки */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {countriesData.map((country, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.08 }}
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
             >
               <div className="relative h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
                 {country.image ? (
-                  <img src={country.image} alt={country.country} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <img
+                    src={country.image}
+                    alt={country.country}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                    width="640"
+                    height="320"
+                  />
                 ) : (
                   <div className="text-8xl">{country.flag}</div>
                 )}
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{country.country}</h3>
                 <div className="space-y-2">
@@ -73,8 +108,10 @@ const CountriesSection = () => {
                     </div>
                   ))}
                 </div>
-                <Button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                <Button
+                  onClick={() =>
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                  }
                   className="w-full mt-6 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
                 >
                   {t('homePage.learnMore')}

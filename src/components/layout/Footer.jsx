@@ -73,6 +73,7 @@ export default function Footer() {
               <li>{t('footer.turkey')}</li>
               <li>{t('footer.spain')}</li>
               <li>{t('footer.israel')}</li>
+              <li>{t('homePage.countryUkraine')}</li>
             </ul>
           </div>
 
