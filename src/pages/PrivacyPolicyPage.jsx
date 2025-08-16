@@ -109,20 +109,20 @@ export default function PrivacyPolicyPage() {
             {/* Table of Contents */}
             <nav className="mb-8" aria-label="Table of contents">
               <ul className="list-decimal list-inside space-y-1 text-blue-700">
-                <li><a href="#introduction" className="hover:underline">1. Introduction</a></li>
-                <li><a href="#definitions" className="hover:underline">2. Definitions</a></li>
-                <li><a href="#collection" className="hover:underline">3. Information We Collect</a></li>
-                <li><a href="#usage" className="hover:underline">4. Use of Your Personal Data</a></li>
-                <li><a href="#legalbasis" className="hover:underline">5. Legal Basis</a></li>
-                <li><a href="#retention" className="hover:underline">6. Data Retention</a></li>
-                <li><a href="#sharing" className="hover:underline">7. Sharing Data</a></li>
-                <li><a href="#transfers" className="hover:underline">8. International Transfers</a></li>
-                <li><a href="#rights" className="hover:underline">9. Your Rights</a></li>
-                <li><a href="#security" className="hover:underline">10. Data Security</a></li>
-                <li><a href="#cookies" className="hover:underline">11. Cookies & Tracking</a></li>
-                <li><a href="#thirdparty" className="hover:underline">12. Third-Party Links</a></li>
-                <li><a href="#updates" className="hover:underline">13. Updates</a></li>
-                <li><a href="#contact" className="hover:underline">14. Contact</a></li>
+                <li><a href="#introduction" className="hover:underline">Introduction</a></li>
+                <li><a href="#definitions" className="hover:underline">Definitions</a></li>
+                <li><a href="#collection" className="hover:underline">Information We Collect</a></li>
+                <li><a href="#usage" className="hover:underline">Use of Your Personal Data</a></li>
+                <li><a href="#legalbasis" className="hover:underline">Legal Basis</a></li>
+                <li><a href="#retention" className="hover:underline">Data Retention</a></li>
+                <li><a href="#sharing" className="hover:underline">Sharing Data</a></li>
+                <li><a href="#transfers" className="hover:underline">International Transfers</a></li>
+                <li><a href="#rights" className="hover:underline">Your Rights</a></li>
+                <li><a href="#security" className="hover:underline">Data Security</a></li>
+                <li><a href="#cookies" className="hover:underline">Cookies & Tracking</a></li>
+                <li><a href="#thirdparty" className="hover:underline">Third-Party Links</a></li>
+                <li><a href="#updates" className="hover:underline">Updates</a></li>
+                <li><a href="#contact" className="hover:underline">Contact</a></li>
               </ul>
             </nav>
 
