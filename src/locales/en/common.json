@@ -35,6 +35,12 @@
     "spain": "Spain",
     "israel": "Israel",
     "rights": "All rights reserved.",
+    "aboutMe": "About Me",
     "privacyPolicy": "Privacy Policy"
-  }
+  },
+"about": {
+  "title": "About Me",
+  "story": "I am Dr. Angelina Zamorska, a medical coordinator originally from Ukraine. I studied medicine in Poland, lived for some time in Germany, and regularly visited our partner clinics in Turkey. For the last three years, I have been working as a medical coordinator, helping patients find the right treatment abroad. Being a doctor myself, I understand both the medical details and the emotional challenges. My mission is to make sure you receive the best possible care with full trust and transparency.",
+  "cta": "Request Help Now"
+}
 }

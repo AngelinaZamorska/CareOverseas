@@ -35,6 +35,12 @@
     "spain": "Hiszpania",
     "israel": "Izrael",
     "rights": "Wszelkie prawa zastrzeżone.",
+    "aboutMe": "O mnie",
     "privacyPolicy": "Polityka prywatności"
-  }
+  },
+  "about": {
+  "title": "O mnie",
+  "story": "Nazywam się Angelina Zamorska i jestem lekarzem koordynatorem, pochodzę z Ukrainy. Studiowałam medycynę w Polsce, przez pewien czas mieszkałam w Niemczech i odwiedzałam nasze partnerskie kliniki w Turcji. Od ponad trzech lat pracuję jako lekarz koordynator i nadal pomagam ludziom znaleźć odpowiednie leczenie za granicą. Sama będąc lekarzem, rozumiem nie tylko szczegóły medyczne, ale także emocjonalne wyzwania pacjentów. Moją misją jest zapewnienie Państwu najlepszego możliwego leczenia z pełnym zaufaniem i przejrzystością.",
+  "cta": "Poproś o pomoc teraz"
+}
 }

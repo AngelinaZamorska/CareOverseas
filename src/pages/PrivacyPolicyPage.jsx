@@ -55,7 +55,7 @@ const PrivacyPolicyPage = () => {
 
             {/* Sections */}
             <section id="introduction" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">1. Introduction</h2>
+              <h2 className="text-2xl font-semibold mb-2">Introduction</h2>
               <p>
                 Care Overseas Space Ltd. ("Company") values your privacy. This policy explains how we collect, use, and protect your personal data in
                 compliance with GDPR and other laws.
@@ -63,13 +63,13 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="definitions" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">2. Definitions</h2>
+              <h2 className="text-2xl font-semibold mb-2">Definitions</h2>
               <p><strong>Personal Data:</strong> Any information relating to an identified or identifiable individual.</p>
               <p><strong>Processing:</strong> Any operation performed on Personal Data (collection, storage, transfer).</p>
             </section>
 
             <section id="collection" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">3. Information We Collect</h2>
+              <h2 className="text-2xl font-semibold mb-2">Information We Collect</h2>
               <ul className="list-disc list-inside space-y-1">
                 <li><strong>Contact:</strong> Name, email, phone.</li>
                 <li><strong>Location:</strong> Country, city.</li>
@@ -79,7 +79,7 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="usage" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">4. Use of Your Personal Data</h2>
+              <h2 className="text-2xl font-semibold mb-2">Use of Your Personal Data</h2>
               <ul className="list-disc list-inside space-y-1">
                 <li>Provide medical consultations and proposals.</li>
                 <li>Match you with partner clinics and specialists.</li>
@@ -90,7 +90,7 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="legalbasis" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">5. Legal Basis</h2>
+              <h2 className="text-2xl font-semibold mb-2">Legal Basis</h2>
               <ul className="list-disc list-inside space-y-1">
                 <li><strong>Consent:</strong> When provided voluntarily.</li>
                 <li><strong>Contract:</strong> Necessary to deliver services.</li>
@@ -99,7 +99,7 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="retention" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">6. Data Retention</h2>
+              <h2 className="text-2xl font-semibold mb-2">Data Retention</h2>
               <p>We retain data only as long as necessary, then securely delete or anonymize it.</p>
 
               {/* Retention Table */}
@@ -139,17 +139,17 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="sharing" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">7. Sharing Data</h2>
+              <h2 className="text-2xl font-semibold mb-2">Sharing Data</h2>
               <p>Shared only with authorized partners under confidentiality agreements.</p>
             </section>
 
             <section id="transfers" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">8. International Transfers</h2>
+              <h2 className="text-2xl font-semibold mb-2">International Transfers</h2>
               <p>Transfers outside EEA under Standard Contractual Clauses or adequacy decisions.</p>
             </section>
 
             <section id="rights" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">9. Your Rights</h2>
+              <h2 className="text-2xl font-semibold mb-2">Your Rights</h2>
               <ul className="list-disc list-inside space-y-1">
                 <li>Access, rectify, erase, and port your data.</li>
                 <li>Restrict or object to processing.</li>
@@ -159,27 +159,27 @@ const PrivacyPolicyPage = () => {
             </section>
 
             <section id="security" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">10. Data Security</h2>
+              <h2 className="text-2xl font-semibold mb-2">Data Security</h2>
               <p>We employ SSL/TLS, access controls, and regular audits to secure your data.</p>
             </section>
 
             <section id="cookies" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">11. Cookies & Tracking</h2>
+              <h2 className="text-2xl font-semibold mb-2">Cookies & Tracking</h2>
               <p>Necessary and analytics cookies. Disable via browser settings if desired.</p>
             </section>
 
             <section id="thirdparty" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">12. Third-Party Links</h2>
+              <h2 className="text-2xl font-semibold mb-2">Third-Party Links</h2>
               <p>Our site may link to external sites; we are not responsible for their policies.</p>
             </section>
 
             <section id="updates" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">13. Updates</h2>
+              <h2 className="text-2xl font-semibold mb-2">Updates</h2>
               <p>Policy revisions posted here with a new Effective Date.</p>
             </section>
 
             <section id="contact" className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">14. Contact</h2>
+              <h2 className="text-2xl font-semibold mb-2">Contact</h2>
               <p>
                 For inquiries or data requests, email us at <a href="mailto:info.careoverseas@gmail.com" className="text-blue-600 hover:underline">
                   info.careoverseas@gmail.com
