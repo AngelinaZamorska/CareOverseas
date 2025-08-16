@@ -132,9 +132,13 @@ export default function Footer() {
 
               {/* Header */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="h-14 w-14 rounded-full bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center text-white font-bold">
-                  A
-                </div>
+                <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-white shadow-md">
+  <img
+    src="/angelina.jpg"   // положи свою фотографию в public/ с таким именем
+    alt="Angelina Zamorska"
+    className="h-full w-full object-cover"
+  />
+</div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
                     {t('about.title')}
@@ -158,7 +162,7 @@ export default function Footer() {
                     <div className="text-xs text-gray-500 mt-1">Coordinator Experience</div>
                   </div>
                   <div className="rounded-xl border border-gray-200 p-4 text-center">
-                    <div className="text-2xl font-extrabold text-green-600">4</div>
+                    <div className="text-2xl font-extrabold text-green-600">10+</div>
                     <div className="text-xs text-gray-500 mt-1">Partner Countries</div>
                   </div>
                   <div className="rounded-xl border border-gray-200 p-4 text-center">
