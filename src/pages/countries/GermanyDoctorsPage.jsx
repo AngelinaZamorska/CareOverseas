@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { useParams, Link } from 'react-router-dom';
-import { Search, Filter, Building2, MapPin, Stethoscope, X, Sparkles, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { Search, Filter, Building2, MapPin, Stethoscope, X, Sparkles, ShieldCheck, HeartHandshake, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 // данные
@@ -100,42 +100,78 @@ export default function GermanyDoctorsPage() {
 
       {/* Hero: современный градиент + «продающие» бейджи */}
       <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-emerald-500 to-cyan-500 opacity-90" />
-        <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full bg-white/20 blur-3xl" />
-        <div className="absolute -bottom-24 -left-16 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
-        <div className="relative text-white py-14">
-          <div className="container mx-auto px-6">
-            <nav className="mb-4 text-white/80 text-sm">
-              <Link to={`/${lang}`} className="hover:underline">
-                {t('country.germany.breadcrumbHome', { defaultValue: 'Home' })}
-              </Link>
-              <span className="mx-2">/</span>
-              <span>{t('country.germany.title')}</span>
-            </nav>
+  {/* цветной фон с мягкими бликами */}
+  <div className="absolute inset-0 bg-gradient-to-br from-sky-600 via-emerald-500 to-cyan-500" />
+  <div className="absolute -top-24 -right-16 w-80 h-80 rounded-full bg-white/25 blur-3xl" />
+  <div className="absolute -bottom-24 -left-16 w-80 h-80 rounded-full bg-white/15 blur-3xl" />
 
-            <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-sm">
-              {t('country.germany.title')}
-            </h1>
-            <p className="mt-3 md:mt-4 text-white/90 max-w-3xl">{t('country.germany.subtitle')}</p>
+  {/* контент строго по центру, полноэкранный хиро */}
+  <div className="relative text-white min-h-[60vh] flex items-center">
+    <div className="container mx-auto px-6 w-full">
+      {/* крошки по центру */}
+      <nav className="mb-4 text-white/85 text-sm flex items-center justify-center gap-2">
+        <Link
+          to={`/${lang}`}
+          className="rounded-full px-3 py-1 bg-white/15 hover:bg-white/25 transition"
+        >
+          {t('country.germany.breadcrumbHome', { defaultValue: 'Home' })}
+        </Link>
+        <span>/</span>
+        <span className="rounded-full px-3 py-1 bg-white/10">{t('country.germany.title')}</span>
+      </nav>
 
-            {/* Бейджи-статы: считают из данных, подписи — по ключам */}
-            <div className="mt-6 flex flex-wrap gap-3">
-              <div className="backdrop-blur bg-white/15 border border-white/20 text-white px-4 py-2 rounded-full text-sm">
-                {stats.doctors} {t('country.germany.stats.doctorsLabel')}
-              </div>
-              <div className="backdrop-blur bg-white/15 border border-white/20 text-white px-4 py-2 rounded-full text-sm">
-                {stats.clinics} {t('country.germany.stats.clinicsLabel')}
-              </div>
-              <div className="backdrop-blur bg-white/15 border border-white/20 text-white px-4 py-2 rounded-full text-sm">
-                {stats.cities} {t('country.germany.stats.citiesLabel')}
-              </div>
-              <div className="backdrop-blur bg-white/15 border border-white/20 text-white px-4 py-2 rounded-full text-sm">
-                {stats.depts} {t('country.germany.stats.departmentsLabel')}
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-sm">
+          {t('country.germany.title')}
+        </h1>
+        <p className="mt-4 text-white/95 text-lg md:text-xl">
+          {t('country.germany.subtitle')}
+        </p>
+
+        {/* цветные стат-чипы: стекло + градиентная окантовка */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          {[
+            {
+              value: stats.doctors,
+              label: t('country.germany.stats.doctorsLabel'),
+              grad: 'from-sky-400 to-sky-600',
+              icon: <User className="h-4 w-4" />
+            },
+            {
+              value: stats.clinics,
+              label: t('country.germany.stats.clinicsLabel'),
+              grad: 'from-emerald-400 to-emerald-600',
+              icon: <Building2 className="h-4 w-4" />
+            },
+            {
+              value: stats.cities,
+              label: t('country.germany.stats.citiesLabel'),
+              grad: 'from-violet-400 to-fuchsia-600',
+              icon: <MapPin className="h-4 w-4" />
+            },
+            {
+              value: stats.depts,
+              label: t('country.germany.stats.departmentsLabel'),
+              grad: 'from-amber-400 to-orange-600',
+              icon: <Stethoscope className="h-4 w-4" />
+            },
+          ].map((chip, i) => (
+            <div
+              key={i}
+              className={`p-[2px] rounded-full bg-gradient-to-r ${chip.grad} shadow-lg`}
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur ring-1 ring-white/20">
+                <span className="opacity-95">{chip.icon}</span>
+                <span className="font-semibold">{chip.value}</span>
+                <span className="text-white/90">{chip.label}</span>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      </header>
+      </div>
+    </div>
+  </div>
+</header>
 
       {/* Sticky фильтры (с блюром) */}
       <section className="sticky top-0 z-30 border-b bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60">
