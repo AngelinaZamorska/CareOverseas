@@ -1,0 +1,45 @@
+{
+    "country.germany.metaTitle": "ألمانيا — دليل الأطباء | كير أوفرسيز",
+"country.germany.metaDesc": "تصفّح أبرز الأطباء في ألمانيا. فلترة حسب العيادة والقسم والمدينة.",
+"country.germany.title": "ألمانيا — دليل الأطباء",
+"country.germany.subtitle": "صفحة معلومات فقط. نعرض أولاً رؤساء الأقسام في هيليوس ومستشفى جامعة كولونيا.",
+"country.germany.searchPlaceholder": "ابحث بالاسم أو التخصص أو العيادة",
+"country.germany.clear": "مسح",
+"country.germany.filter.department": "القسم",
+"country.germany.filter.clinic": "العيادة",
+"country.germany.filter.city": "المدينة",
+"country.germany.sortBy": "رتّب حسب:",
+"country.germany.sort.name": "الاسم",
+"country.germany.sort.clinic": "العيادة",
+"country.germany.sort.city": "المدينة",
+"country.germany.empty": "لا توجد نتائج. جرّب تغيير الفلاتر أو البحث.",
+"country.germany.backHome": "← العودة للرئيسية",
+"country.germany.contactCta": "الاتصال بالمنسّق",
+
+
+"dict.dept.hem-onc.name": "أمراض الدم والأورام",
+"dict.dept.urology.name": "المسالك البولية",
+"dict.dept.neurosurgery.name": "جراحة الأعصاب",
+
+
+"dict.clinic.helios-krefeld.name": "مستشفى هيليوس كريفيلد",
+"dict.clinic.helios-berlin-buch.name": "مستشفى هيليوس برلين‑بوخ",
+"dict.clinic.uk-koeln.name": "مستشفى جامعة كولونيا",
+
+
+"dict.city.krefeld.name": "كريفيلد",
+"dict.city.berlin.name": "برلين",
+"dict.city.koeln.name": "كولونيا",
+
+
+"people.doctors.helios-krefeld-hunerliturkoglu.title": "الطبيب المسؤول، العيادة الطبية الثانية",
+"people.doctors.helios-krefeld-hunerliturkoglu.bio": "رئيس قسم أمراض الدم والأورام (العيادة الطبية الثانية) في هيليوس كريفيلد.",
+"people.doctors.helios-berlin-buch-schrader.title": "الطبيب المسؤول لقسم المسالك البولية",
+"people.doctors.helios-berlin-buch-schrader.bio": "رئيس قسم المسالك البولية في هيليوس برلين‑بوخ مع تركيز على أورام الجهاز البولي والجراحة طفيفة التوغّل.",
+"people.doctors.helios-berlin-buch-ryang.title": "رئيسة جراحة الأعصاب ومديرة مركز العمود الفقري",
+"people.doctors.helios-berlin-buch-ryang.bio": "تقود جراحة الأعصاب في هيليوس برلين‑بوخ؛ تركيز على أورام الدماغ والجراحات المعقّدة للعمود الفقري.",
+"people.doctors.uk-koeln-hallek.title": "مدير عيادة الأمراض الباطنية الأولى",
+"people.doctors.uk-koeln-hallek.bio": "مدير عيادة I (الأورام/أمراض الدم/الأمراض المعدية) في مستشفى جامعة كولونيا.",
+"people.doctors.uk-koeln-goldbrunner.title": "مدير جراحة الأعصاب العامة",
+"people.doctors.uk-koeln-goldbrunner.bio": "مدير جراحة الأعصاب في مستشفى جامعة كولونيا؛ خبرة في أورام الدماغ وجراحة العمود الفقري."
+}

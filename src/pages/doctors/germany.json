@@ -1,0 +1,59 @@
+{
+  "doctors": [
+    {
+      "id": "helios-krefeld-hunerliturkoglu",
+      "name": "Dr. med. Ali Nuri Hünerlitürkoglu",
+      "deptId": "hem-onc",
+      "clinicId": "helios-krefeld",
+      "cityId": "krefeld",
+      "keywords": ["oncology", "hematology"]
+    },
+    {
+      "id": "helios-berlin-buch-schrader",
+      "name": "Prof. Dr. med. Mark Schrader",
+      "deptId": "urology",
+      "clinicId": "helios-berlin-buch",
+      "cityId": "berlin",
+      "keywords": ["urology", "prostate"]
+    },
+    {
+      "id": "helios-berlin-buch-ryang",
+      "name": "Prof. Dr. med. Yu‑Mi Ryang",
+      "deptId": "neurosurgery",
+      "clinicId": "helios-berlin-buch",
+      "cityId": "berlin",
+      "keywords": ["neurooncology", "spine"]
+    },
+    {
+      "id": "uk-koeln-hallek",
+      "name": "Prof. Dr. med. Michael Hallek",
+      "deptId": "hem-onc",
+      "clinicId": "uk-koeln",
+      "cityId": "koeln",
+      "keywords": ["CLL", "oncology"]
+    },
+    {
+      "id": "uk-koeln-goldbrunner",
+      "name": "Univ.-Prof. Dr. med. Roland Goldbrunner",
+      "deptId": "neurosurgery",
+      "clinicId": "uk-koeln",
+      "cityId": "koeln",
+      "keywords": ["neurosurgery", "brain tumors"]
+    }
+  ],
+  "departments": [
+    { "id": "hem-onc" },
+    { "id": "urology" },
+    { "id": "neurosurgery" }
+  ],
+  "clinics": [
+    { "id": "helios-krefeld", "cityId": "krefeld" },
+    { "id": "helios-berlin-buch", "cityId": "berlin" },
+    { "id": "uk-koeln", "cityId": "koeln" }
+  ],
+  "cities": [
+    { "id": "krefeld" },
+    { "id": "berlin" },
+    { "id": "koeln" }
+  ]
+}

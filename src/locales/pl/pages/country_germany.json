@@ -1,0 +1,46 @@
+
+{
+"country.germany.metaTitle": "Niemcy — Katalog lekarzy | CareOverseas",
+"country.germany.metaDesc": "Wiodący lekarze w Niemczech. Filtruj wg kliniki, oddziału i miasta.",
+"country.germany.title": "Niemcy — Katalog lekarzy",
+"country.germany.subtitle": "Strona informacyjna. Najpierw ordynatorzy Heliosa i Uniwersyteckiego Szpitala w Kolonii.",
+"country.germany.searchPlaceholder": "Szukaj po nazwisku, specjalności lub klinice",
+"country.germany.clear": "Wyczyść",
+"country.germany.filter.department": "Oddział",
+"country.germany.filter.clinic": "Klinika",
+"country.germany.filter.city": "Miasto",
+"country.germany.sortBy": "Sortuj wg:",
+"country.germany.sort.name": "Nazwisko",
+"country.germany.sort.clinic": "Klinika",
+"country.germany.sort.city": "Miasto",
+"country.germany.empty": "Brak wyników. Zmień filtry lub zapytanie.",
+"country.germany.backHome": "← Powrót na stronę główną",
+"country.germany.contactCta": "Skontaktuj się z koordynatorem",
+
+
+"dict.dept.hem-onc.name": "Hematologia i onkologia kliniczna",
+"dict.dept.urology.name": "Urologia",
+"dict.dept.neurosurgery.name": "Neurochirurgia",
+
+
+"dict.clinic.helios-krefeld.name": "Helios Klinikum Krefeld",
+"dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin‑Buch",
+"dict.clinic.uk-koeln.name": "Uniwersytecki Szpital w Kolonii",
+
+
+"dict.city.krefeld.name": "Krefeld",
+"dict.city.berlin.name": "Berlin",
+"dict.city.koeln.name": "Kolonia",
+
+
+"people.doctors.helios-krefeld-hunerliturkoglu.title": "Ordynator, Klinika Chorób Wewnętrznych II",
+"people.doctors.helios-krefeld-hunerliturkoglu.bio": "Kieruje hematologią i onkologią (Klinika II) w Helios Krefeld.",
+"people.doctors.helios-berlin-buch-schrader.title": "Ordynator Urologii",
+"people.doctors.helios-berlin-buch-schrader.bio": "Szef urologii w Helios Berlin‑Buch; onkourologia i chirurgia małoinwazyjna.",
+"people.doctors.helios-berlin-buch-ryang.title": "Ordynator Neurochirurgii i Kierownik Centrum Kręgosłupa",
+"people.doctors.helios-berlin-buch-ryang.bio": "Szefowa neurochirurgii w Helios Berlin‑Buch; neuroonkologia i złożona chirurgia kręgosłupa.",
+"people.doctors.uk-koeln-hallek.title": "Dyrektor Kliniki Chorób Wewnętrznych I",
+"people.doctors.uk-koeln-hallek.bio": "Dyrektor Kliniki I (onkologia/hematologia/choroby zakaźne) w Uniwersyteckim Szpitalu w Kolonii.",
+"people.doctors.uk-koeln-goldbrunner.title": "Dyrektor Neurochirurgii Ogólnej",
+"people.doctors.uk-koeln-goldbrunner.bio": "Dyrektor neurochirurgii w Uniwersyteckim Szpitalu w Kolonii; guzy mózgu i chirurgia kręgosłupa."
+}

@@ -1,0 +1,41 @@
+{
+  "country.germany.metaTitle": "Germany — Doctors Directory | CareOverseas",
+  "country.germany.metaDesc": "Browse leading doctors in Germany. Filter by clinic, department and city.",
+  "country.germany.title": "Germany — Doctors Directory",
+  "country.germany.subtitle": "Information-only catalog. Heads of departments at Helios and University Hospital Cologne.",
+  "country.germany.searchPlaceholder": "Search by name, specialty, or clinic",
+  "country.germany.clear": "Clear",
+  "country.germany.filter.department": "Department",
+  "country.germany.filter.clinic": "Clinic",
+  "country.germany.filter.city": "City",
+  "country.germany.sortBy": "Sort by:",
+  "country.germany.sort.name": "Name",
+  "country.germany.sort.clinic": "Clinic",
+  "country.germany.sort.city": "City",
+  "country.germany.empty": "No matches. Try changing filters or query.",
+  "country.germany.backHome": "← Back to Home",
+  "country.germany.contactCta": "Contact Coordinator",
+
+  "dict.dept.hem-onc.name": "Hematology & Medical Oncology",
+  "dict.dept.urology.name": "Urology",
+  "dict.dept.neurosurgery.name": "Neurosurgery",
+
+  "dict.clinic.helios-krefeld.name": "Helios Klinikum Krefeld",
+  "dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin‑Buch",
+  "dict.clinic.uk-koeln.name": "University Hospital Cologne",
+
+  "dict.city.krefeld.name": "Krefeld",
+  "dict.city.berlin.name": "Berlin",
+  "dict.city.koeln.name": "Cologne",
+
+  "people.doctors.helios-krefeld-hunerliturkoglu.title": "Chief Physician, Medical Clinic II",
+  "people.doctors.helios-krefeld-hunerliturkoglu.bio": "Head of Hematology & Oncology (Medical Clinic II) at Helios Krefeld.",
+  "people.doctors.helios-berlin-buch-schrader.title": "Chief Physician of Urology",
+  "people.doctors.helios-berlin-buch-schrader.bio": "Chief of Urology at Helios Berlin‑Buch, focused on uro‑oncology and minimally invasive surgery.",
+  "people.doctors.helios-berlin-buch-ryang.title": "Chief of Neurosurgery & Head of Spine Center",
+  "people.doctors.helios-berlin-buch-ryang.bio": "Neurosurgery chief at Helios Berlin‑Buch with focus on neuro-oncology and complex spine.",
+  "people.doctors.uk-koeln-hallek.title": "Director, Clinic I of Internal Medicine",
+  "people.doctors.uk-koeln-hallek.bio": "Director of Clinic I (Oncology/Hematology/Infectious Diseases) at University Hospital Cologne.",
+  "people.doctors.uk-koeln-goldbrunner.title": "Director of General Neurosurgery",
+  "people.doctors.uk-koeln-goldbrunner.bio": "Director of Neurosurgery at University Hospital Cologne; expertise in brain tumors and spine surgery."
+}

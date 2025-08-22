@@ -33,6 +33,7 @@ import AnteriorApproachPage from '@/pages/news/AnteriorApproachPage';
 import DRGCalculator from '@/components/DRGCalculator';
 import DRGCalculatorPage from '@/pages/DRGCalculatorPage';
 import SecondOpinionPage from '@/pages/news/SecondOpinionPage';
+import GermanyDoctorsPage from '@/pages/countries/GermanyDoctorsPage';
 
 // поддерживаемые языки
 const SUPPORTED_LANGS = ['en', 'ru', 'pl', 'ar'];
@@ -97,7 +98,8 @@ function LangLayout() {
             <Route path="oncology" element={<OncologyPage />} />
             <Route path="lu-177-psma-therapy" element={<Lu177PsmaPage />} />
             <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
-            
+            {/* врачи */}
+            <Route path="country/germany" element={<GermanyDoctorsPage />} />
 
             {/* новости */}
 <Route path="news">
