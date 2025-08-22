@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 
 // ⬇️ Переезд данных: без папки data. Один файл фактов на страну:
 // src/doctors/germany.json
-import de from '@/doctors/germany.json';
+import de from '@/pages/doctors/germany.json';
 
 const byText = (a, b) => String(a || '').localeCompare(String(b || ''));
 
