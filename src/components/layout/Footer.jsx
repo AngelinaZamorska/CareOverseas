@@ -66,16 +66,21 @@ export default function Footer() {
           </div>
 
           {/* Countries */}
-          <div>
-            <h3 className="font-semibold text-xl mb-4">{t('footer.partnerCountries')}</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>{t('footer.germany')}</li>
-              <li>{t('footer.turkey')}</li>
-              <li>{t('footer.spain')}</li>
-              <li>{t('footer.israel')}</li>
-              <li>{t('homePage.countryUkraine')}</li>
-            </ul>
-          </div>
+<div>
+  <h3 className="font-semibold text-xl mb-4">{t('footer.partnerCountries')}</h3>
+  <ul className="space-y-2 text-gray-400">
+    <li>
+      {/* 🇩🇪 Германия → страница страны */}
+      <Link to={go('country/germany')} className="hover:text-white transition">
+        {t('footer.germany')}
+      </Link>
+    </li>
+    <li>{t('footer.turkey')}</li>
+    <li>{t('footer.spain')}</li>
+    <li>{t('footer.israel')}</li>
+    <li>{t('homePage.countryUkraine')}</li>
+  </ul>
+</div>
 
           {/* Contact Details */}
           <div>
