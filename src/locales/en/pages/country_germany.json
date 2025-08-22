@@ -16,12 +16,35 @@
   "country.germany.backHome": "← Back to Home",
   "country.germany.contactCta": "Contact Coordinator",
 
+  "country.germany.breadcrumbHome": "Home",
+
+  "country.germany.stats.doctorsLabel": "doctors",
+  "country.germany.stats.clinicsLabel": "clinics",
+  "country.germany.stats.citiesLabel": "cities",
+  "country.germany.stats.departmentsLabel": "departments",
+
+  "country.germany.usp.expertsTitle": "Top experts for your case",
+  "country.germany.usp.expertsDesc": "We shortlist heads of departments and leaders of specialized units.",
+  "country.germany.usp.safeTitle": "Transparent & stress-free",
+  "country.germany.usp.safeDesc": "Clear coordination, documents in your language, no marketing contracts.",
+  "country.germany.usp.careTitle": "Human-first support",
+  "country.germany.usp.careDesc": "Personal guidance from the first message to your return home.",
+
+  "country.germany.emptyHint": "Try another city, clinic or specialty.",
+
+  "country.germany.pitch.title": "Not sure which doctor is right for you?",
+  "country.germany.pitch.subtitle": "Tell me about the diagnosis and preferences. I’ll match you with the right department head, prepare the request, and help you get a quick reply from the clinic.",
+  "country.germany.pitch.badge1": "Free initial request",
+  "country.germany.pitch.badge2": "Fast response",
+  "country.germany.pitch.badge3": "Help with documents",
+  "country.germany.pitch.cta": "Contact the coordinator",
+
   "dict.dept.hem-onc.name": "Hematology & Medical Oncology",
   "dict.dept.urology.name": "Urology",
   "dict.dept.neurosurgery.name": "Neurosurgery",
 
   "dict.clinic.helios-krefeld.name": "Helios Klinikum Krefeld",
-  "dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin‑Buch",
+  "dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin-Buch",
   "dict.clinic.uk-koeln.name": "University Hospital Cologne",
 
   "dict.city.krefeld.name": "Krefeld",
@@ -31,9 +54,9 @@
   "people.doctors.helios-krefeld-hunerliturkoglu.title": "Chief Physician, Medical Clinic II",
   "people.doctors.helios-krefeld-hunerliturkoglu.bio": "Head of Hematology & Oncology (Medical Clinic II) at Helios Krefeld.",
   "people.doctors.helios-berlin-buch-schrader.title": "Chief Physician of Urology",
-  "people.doctors.helios-berlin-buch-schrader.bio": "Chief of Urology at Helios Berlin‑Buch, focused on uro‑oncology and minimally invasive surgery.",
+  "people.doctors.helios-berlin-buch-schrader.bio": "Chief of Urology at Helios Berlin-Buch, focused on uro-oncology and minimally invasive surgery.",
   "people.doctors.helios-berlin-buch-ryang.title": "Chief of Neurosurgery & Head of Spine Center",
-  "people.doctors.helios-berlin-buch-ryang.bio": "Neurosurgery chief at Helios Berlin‑Buch with focus on neuro-oncology and complex spine.",
+  "people.doctors.helios-berlin-buch-ryang.bio": "Neurosurgery chief at Helios Berlin-Buch with focus on neuro-oncology and complex spine.",
   "people.doctors.uk-koeln-hallek.title": "Director, Clinic I of Internal Medicine",
   "people.doctors.uk-koeln-hallek.bio": "Director of Clinic I (Oncology/Hematology/Infectious Diseases) at University Hospital Cologne.",
   "people.doctors.uk-koeln-goldbrunner.title": "Director of General Neurosurgery",
