@@ -82,7 +82,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                {/* 🇹🇷 Spain → country page */}
+                {/* 🇪🇸 Spain → country page */}
                 <Link to={go('country/spain')} className="hover:text-white transition">
                   {t('footer.spain')}
                 </Link>
@@ -154,15 +154,12 @@ export default function Footer() {
                     alt="Angelina Zamorska"
                     className="h-full w-full object-cover"
                   />
-                  {/* положи свою фотографию в public/ с именем angelina.jpg */}
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
                     {t('about.title')}
                   </h2>
-                  <p className="text-sm text-gray-500">
-                    CareOverseasSpace
-                  </p>
+                  <p className="text-sm text-gray-500">CareOverseasSpace</p>
                 </div>
               </div>
 
