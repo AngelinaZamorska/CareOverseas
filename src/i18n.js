@@ -100,10 +100,10 @@ import countryIsraelRU from './locales/ru/pages/country_israel.json';
 import countryIsraelPL from './locales/pl/pages/country_israel.json';
 import countryIsraelAR from './locales/ar/pages/country_israel.json';
 
-import countryUkraineEN from './locales/en/pages/country_Ukraine.json';
-import countryUkraineRU from './locales/ru/pages/country_Ukraine.json';
-import countryUkrainePL from './locales/pl/pages/country_Ukraine.json';
-import countryUkraineAR from './locales/ar/pages/country_Ukraine.json';
+import countryUkraineEN from './locales/en/pages/country_ukraine.json';
+import countryUkraineRU from './locales/ru/pages/country_ukraine.json';
+import countryUkrainePL from './locales/pl/pages/country_ukraine.json';
+import countryUkraineAR from './locales/ar/pages/country_ukraine.json';
 
 
 const resources = {
