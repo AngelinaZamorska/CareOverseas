@@ -206,7 +206,7 @@ const resources = {
       ...countryTurkeyAR,
       ...countrySpainAR,
       ...countryIsraelAR,
-      ...countryIsraelAR, // ⬅️ добавлено
+      ...countryUkraineAR, // ⬅️ добавлено
     },
   },
 };
