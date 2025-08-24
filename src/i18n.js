@@ -100,6 +100,11 @@ import countryIsraelRU from './locales/ru/pages/country_israel.json';
 import countryIsraelPL from './locales/pl/pages/country_israel.json';
 import countryIsraelAR from './locales/ar/pages/country_israel.json';
 
+import countryUkraineEN from './locales/en/pages/country_Ukraine.json';
+import countryUkraineRU from './locales/ru/pages/country_Ukraine.json';
+import countryUkrainePL from './locales/pl/pages/country_Ukraine.json';
+import countryUkraineAR from './locales/ar/pages/country_Ukraine.json';
+
 
 const resources = {
   en: {
@@ -123,7 +128,10 @@ const resources = {
       ...countryGermanyEN,
       ...countryTurkeyEN,
       ...countrySpainEN, 
-      ...countryIsraelEN,// ⬅️ добавлено
+      ...countryIsraelEN,
+            ...countryUkraineEN,
+
+      // ⬅️ добавлено
     },
   },
   ru: {
@@ -147,7 +155,8 @@ const resources = {
       ...countryGermanyRU,
       ...countryTurkeyRU,
       ...countrySpainRU,
-      ...countryIsraelRU, // ⬅️ добавлено
+      ...countryIsraelRU,
+      ...countryUkraineRU, // ⬅️ добавлено
     },
   },
   pl: {
@@ -171,6 +180,7 @@ const resources = {
       ...countryGermanyPL,
       ...countryTurkeyPL,
       ...countrySpainPL,
+      ...countryIsraelPL,
       ...countryIsraelPL, // ⬅️ добавлено
     },
   },
@@ -195,6 +205,7 @@ const resources = {
       ...countryGermanyAR,
       ...countryTurkeyAR,
       ...countrySpainAR,
+      ...countryIsraelAR,
       ...countryIsraelAR, // ⬅️ добавлено
     },
   },

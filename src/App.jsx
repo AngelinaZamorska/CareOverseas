@@ -37,6 +37,8 @@ import GermanyDoctorsPage from '@/pages/countries/GermanyDoctorsPage';
 import TurkeyDoctorsPage from '@/pages/countries/TurkeyDoctorsPage';
 import SpainDoctorsPage from '@/pages/countries/SpainDoctorsPage';
 import IsraelDoctorsPage from '@/pages/countries/IsraelDoctorsPage';
+import UkraineDoctorsPage from '@/pages/countries/UkraineDoctorsPage';
+
 
 // поддерживаемые языки
 const SUPPORTED_LANGS = ['en', 'ru', 'pl', 'ar'];
@@ -106,6 +108,7 @@ function LangLayout() {
             <Route path="country/turkey" element={<TurkeyDoctorsPage />} />
             <Route path="country/spain" element={<SpainDoctorsPage />} />
             <Route path="country/israel" element={<IsraelDoctorsPage />} />
+            <Route path="country/ukraine" element={<UkraineDoctorsPage />} />
             
 
             {/* новости */}

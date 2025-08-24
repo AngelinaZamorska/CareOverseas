@@ -92,7 +92,11 @@ export default function Footer() {
     {t('footer.israel')}
   </Link>
 </li>
-              <li>{t('homePage.countryUkraine')}</li>
+              <li>
+  <Link to={go('country/ukraine')} className="hover:text-white transition">
+    {t('footer.ukraine')}
+  </Link>
+</li>
             </ul>
           </div>
 

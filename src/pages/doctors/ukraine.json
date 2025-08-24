@@ -1,0 +1,104 @@
+{
+  "doctors": [
+    {
+      "id": "feofaniya-oncology-slot",
+      "name": "—",
+      "deptId": "oncology",
+      "clinicId": "feofaniya",
+      "cityId": "kyiv",
+      "keywords": ["oncology", "solid tumors"]
+    },
+    {
+      "id": "shalimov-transplant-slot",
+      "name": "—",
+      "deptId": "transplant",
+      "clinicId": "shalimov",
+      "cityId": "kyiv",
+      "keywords": ["transplant", "surgery", "pancreas", "liver"]
+    },
+    {
+      "id": "heart-institute-cardiac-surgery-slot",
+      "name": "—",
+      "deptId": "cardiac-surgery",
+      "clinicId": "heart-institute",
+      "cityId": "kyiv",
+      "keywords": ["cardiac", "surgery", "valves", "bypass"]
+    },
+    {
+      "id": "nci-kyiv-hem-onc-slot",
+      "name": "—",
+      "deptId": "hematology",
+      "clinicId": "nci-kyiv",
+      "cityId": "kyiv",
+      "keywords": ["hematology", "oncology", "chemo"]
+    },
+    {
+      "id": "okhmatdyt-kyiv-pediatrics-slot",
+      "name": "—",
+      "deptId": "pediatrics",
+      "clinicId": "okhmatdyt-kyiv",
+      "cityId": "kyiv",
+      "keywords": ["pediatrics", "children"]
+    },
+    {
+      "id": "okhmatdyt-lviv-pediatrics-slot",
+      "name": "—",
+      "deptId": "pediatrics",
+      "clinicId": "okhmatdyt-lviv",
+      "cityId": "lviv",
+      "keywords": ["pediatrics", "children"]
+    },
+    {
+      "id": "outre-regenerative-slot",
+      "name": "—",
+      "deptId": "regenerative",
+      "clinicId": "outre",
+      "cityId": "kyiv",
+      "keywords": ["stem cells", "PRP", "regenerative"]
+    }
+  ],
+  "departments": [
+    { "id": "oncology" },
+    { "id": "hematology" },
+    { "id": "cardiology" },
+    { "id": "cardiac-surgery" },
+    { "id": "neurosurgery" },
+    { "id": "orthopedics" },
+    { "id": "general-surgery" },
+    { "id": "urology" },
+    { "id": "gynecology" },
+    { "id": "ivf" },
+    { "id": "gastroenterology" },
+    { "id": "hepatology" },
+    { "id": "transplant" },
+    { "id": "radiation-oncology" },
+    { "id": "pediatrics" },
+    { "id": "regenerative" }
+  ],
+  "clinics": [
+    { "id": "feofaniya", "cityId": "kyiv" },
+    { "id": "shalimov", "cityId": "kyiv" },
+    { "id": "heart-institute", "cityId": "kyiv" },
+    { "id": "nci-kyiv", "cityId": "kyiv" },
+    { "id": "okhmatdyt-kyiv", "cityId": "kyiv" },
+    { "id": "okhmatdyt-lviv", "cityId": "lviv" },
+    { "id": "outre", "cityId": "kyiv" },
+
+    { "id": "oleksandrivska", "cityId": "kyiv" },
+    { "id": "kcch-1", "cityId": "kyiv" },
+    { "id": "kcch-2", "cityId": "kyiv" },
+    { "id": "kcch-3", "cityId": "kyiv" },
+    { "id": "kcch-4", "cityId": "kyiv" },
+    { "id": "kcch-5", "cityId": "kyiv" },
+    { "id": "kcch-6", "cityId": "kyiv" },
+    { "id": "kcch-7", "cityId": "kyiv" },
+    { "id": "kcch-8", "cityId": "kyiv" },
+    { "id": "kcch-9", "cityId": "kyiv" },
+    { "id": "kcch-10", "cityId": "kyiv" },
+    { "id": "kcch-emergency", "cityId": "kyiv" }
+  ],
+  "cities": [
+    { "id": "kyiv" },
+    { "id": "lviv" }
+  ]
+}

@@ -53,7 +53,7 @@ const CountriesSection = () => {
       ],
     },
     {
-      slug: null,
+      slug: 'ukraine',
       country: t('homePage.countryUkraine'),
       image: '/ukraine.jpg',
       specialties: [
