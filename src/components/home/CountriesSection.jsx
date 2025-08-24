@@ -33,7 +33,7 @@ const CountriesSection = () => {
       ],
     },
     {
-      slug: null,
+      slug: 'spain',
       country: t('homePage.countrySpain'),
       image: '/spain.jpg',
       specialties: [

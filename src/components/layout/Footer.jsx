@@ -81,7 +81,12 @@ export default function Footer() {
                   {t('footer.turkey')}
                 </Link>
               </li>
-              <li>{t('footer.spain')}</li>
+              <li>
+                {/* 🇹🇷 Spain → country page */}
+                <Link to={go('country/spain')} className="hover:text-white transition">
+                  {t('footer.spain')}
+                </Link>
+              </li>
               <li>{t('footer.israel')}</li>
               <li>{t('homePage.countryUkraine')}</li>
             </ul>

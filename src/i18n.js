@@ -89,6 +89,11 @@ import countryTurkeyEN from './locales/en/pages/country_turkey.json';
 import countryTurkeyRU from './locales/ru/pages/country_turkey.json';
 import countryTurkeyPL from './locales/pl/pages/country_turkey.json';
 import countryTurkeyAR from './locales/ar/pages/country_turkey.json';
+// Страны — Испания
+import countrySpainEN from './locales/en/pages/country_spain.json';
+import countrySpainRU from './locales/ru/pages/country_spain.json';
+import countrySpainPL from './locales/pl/pages/country_spain.json';
+import countrySpainAR from './locales/ar/pages/country_spain.json';
 
 const resources = {
   en: {
@@ -110,7 +115,8 @@ const resources = {
       ...newsIndexEN,
       ...drgCalcEN,
       ...countryGermanyEN,
-      ...countryTurkeyEN, // ⬅️ добавлено
+      ...countryTurkeyEN,
+      ...countrySpainEN, // ⬅️ добавлено
     },
   },
   ru: {
@@ -132,7 +138,8 @@ const resources = {
       ...newsIndexRU,
       ...drgCalcRU,
       ...countryGermanyRU,
-      ...countryTurkeyRU, // ⬅️ добавлено
+      ...countryTurkeyRU,
+      ...countrySpainRU, // ⬅️ добавлено
     },
   },
   pl: {
@@ -154,7 +161,8 @@ const resources = {
       ...newsIndexPL,
       ...drgCalcPL,
       ...countryGermanyPL,
-      ...countryTurkeyPL, // ⬅️ добавлено
+      ...countryTurkeyPL,
+      ...countrySpainPL, // ⬅️ добавлено
     },
   },
   ar: {
@@ -176,7 +184,8 @@ const resources = {
       ...newsIndexAR,
       ...drgCalcAR,
       ...countryGermanyAR,
-      ...countryTurkeyAR, // ⬅️ добавлено
+      ...countryTurkeyAR,
+      ...countrySpainAR, // ⬅️ добавлено
     },
   },
 };

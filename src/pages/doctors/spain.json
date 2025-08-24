@@ -1,0 +1,73 @@
+{
+  "doctors": [
+    {
+      "id": "quironsalud-madrid-cardiology-slot",
+      "name": "—",
+      "deptId": "cardiology",
+      "clinicId": "quironsalud-madrid",
+      "cityId": "madrid",
+      "keywords": ["cardiology", "heart"]
+    },
+    {
+      "id": "quironsalud-barcelona-oncology-slot",
+      "name": "—",
+      "deptId": "oncology",
+      "clinicId": "quironsalud-barcelona",
+      "cityId": "barcelona",
+      "keywords": ["oncology", "chemotherapy"]
+    },
+    {
+      "id": "quironsalud-valencia-orthopedics-slot",
+      "name": "—",
+      "deptId": "orthopedics",
+      "clinicId": "quironsalud-valencia",
+      "cityId": "valencia",
+      "keywords": ["orthopedics", "joint"]
+    },
+    {
+      "id": "quironsalud-malaga-ivf-slot",
+      "name": "—",
+      "deptId": "ivf",
+      "clinicId": "quironsalud-malaga",
+      "cityId": "malaga",
+      "keywords": ["ivf", "fertility"]
+    },
+    {
+      "id": "sant-joan-deu-barcelona-pediatrics-slot",
+      "name": "—",
+      "deptId": "pediatrics",
+      "clinicId": "sant-joan-deu-barcelona",
+      "cityId": "barcelona",
+      "keywords": ["pediatrics", "children"]
+    }
+  ],
+  "departments": [
+    { "id": "cardiology" },
+    { "id": "oncology" },
+    { "id": "neurosurgery" },
+    { "id": "ivf" },
+    { "id": "orthopedics" },
+    { "id": "gastro" },
+    { "id": "endocrinology" },
+    { "id": "general-surgery" },
+    { "id": "transplant" },
+    { "id": "radiology" },
+    { "id": "radiation-oncology" },
+    { "id": "pediatrics" }
+  ],
+  "clinics": [
+    { "id": "quironsalud-madrid",    "cityId": "madrid" },
+    { "id": "quironsalud-barcelona", "cityId": "barcelona" },
+    { "id": "quironsalud-valencia",  "cityId": "valencia" },
+    { "id": "quironsalud-malaga",    "cityId": "malaga" },
+    { "id": "quironsalud-alicante",  "cityId": "alicante" },
+    { "id": "sant-joan-deu-barcelona", "cityId": "barcelona" }
+  ],
+  "cities": [
+    { "id": "madrid" },
+    { "id": "barcelona" },
+    { "id": "valencia" },
+    { "id": "malaga" },
+    { "id": "alicante" }
+  ]
+}

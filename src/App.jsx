@@ -35,6 +35,7 @@ import DRGCalculatorPage from '@/pages/DRGCalculatorPage';
 import SecondOpinionPage from '@/pages/news/SecondOpinionPage';
 import GermanyDoctorsPage from '@/pages/countries/GermanyDoctorsPage';
 import TurkeyDoctorsPage from '@/pages/countries/TurkeyDoctorsPage';
+import SpainDoctorsPage from '@/pages/countries/SpainDoctorsPage';
 
 // поддерживаемые языки
 const SUPPORTED_LANGS = ['en', 'ru', 'pl', 'ar'];
@@ -102,6 +103,7 @@ function LangLayout() {
             {/* врачи */}
             <Route path="country/germany" element={<GermanyDoctorsPage />} />
             <Route path="country/turkey" element={<TurkeyDoctorsPage />} />
+            <Route path="country/spain" element={<SpainDoctorsPage />} />
             
 
             {/* новости */}
