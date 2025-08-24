@@ -66,21 +66,26 @@ export default function Footer() {
           </div>
 
           {/* Countries */}
-<div>
-  <h3 className="font-semibold text-xl mb-4">{t('footer.partnerCountries')}</h3>
-  <ul className="space-y-2 text-gray-400">
-    <li>
-      {/* 🇩🇪 Германия → страница страны */}
-      <Link to={go('country/germany')} className="hover:text-white transition">
-        {t('footer.germany')}
-      </Link>
-    </li>
-    <li>{t('footer.turkey')}</li>
-    <li>{t('footer.spain')}</li>
-    <li>{t('footer.israel')}</li>
-    <li>{t('homePage.countryUkraine')}</li>
-  </ul>
-</div>
+          <div>
+            <h3 className="font-semibold text-xl mb-4">{t('footer.partnerCountries')}</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                {/* 🇩🇪 Germany → country page */}
+                <Link to={go('country/germany')} className="hover:text-white transition">
+                  {t('footer.germany')}
+                </Link>
+              </li>
+              <li>
+                {/* 🇹🇷 Turkey → country page */}
+                <Link to={go('country/turkey')} className="hover:text-white transition">
+                  {t('footer.turkey')}
+                </Link>
+              </li>
+              <li>{t('footer.spain')}</li>
+              <li>{t('footer.israel')}</li>
+              <li>{t('homePage.countryUkraine')}</li>
+            </ul>
+          </div>
 
           {/* Contact Details */}
           <div>
@@ -139,12 +144,13 @@ export default function Footer() {
               {/* Header */}
               <div className="flex items-center gap-4 mb-6">
                 <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-white shadow-md">
-  <img
-    src="/angelina.jpg"   // положи свою фотографию в public/ с таким именем
-    alt="Angelina Zamorska"
-    className="h-full w-full object-cover"
-  />
-</div>
+                  <img
+                    src="/angelina.jpg"
+                    alt="Angelina Zamorska"
+                    className="h-full w-full object-cover"
+                  />
+                  {/* положи свою фотографию в public/ с именем angelina.jpg */}
+                </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
                     {t('about.title')}

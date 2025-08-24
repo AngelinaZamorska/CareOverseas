@@ -1,0 +1,72 @@
+{
+  "doctors": [
+    {
+      "id": "acibadem-istanbul-cardio-slot",
+      "name": "—",
+      "deptId": "cardiology",
+      "clinicId": "acibadem-istanbul",
+      "cityId": "istanbul",
+      "keywords": ["cardiology", "heart"]
+    },
+    {
+      "id": "liv-ankara-oncology-slot",
+      "name": "—",
+      "deptId": "oncology",
+      "clinicId": "liv-ankara",
+      "cityId": "ankara",
+      "keywords": ["oncology", "chemotherapy"]
+    },
+    {
+      "id": "medicana-istanbul-orthopedics-slot",
+      "name": "—",
+      "deptId": "orthopedics",
+      "clinicId": "medicana-istanbul",
+      "cityId": "istanbul",
+      "keywords": ["orthopedics", "joint"]
+    },
+    {
+      "id": "memorial-antalya-ivf-slot",
+      "name": "—",
+      "deptId": "ivf",
+      "clinicId": "memorial-antalya",
+      "cityId": "antalya",
+      "keywords": ["ivf", "fertility"]
+    },
+    {
+      "id": "np-istanbul-brain-neurosurgery-slot",
+      "name": "—",
+      "deptId": "neurosurgery",
+      "clinicId": "np-istanbul-brain",
+      "cityId": "istanbul",
+      "keywords": ["neuro", "spine"]
+    }
+  ],
+  "departments": [
+    { "id": "cardiology" },
+    { "id": "oncology" },
+    { "id": "neurosurgery" },
+    { "id": "ivf" },
+    { "id": "orthopedics" },
+    { "id": "gastro" },
+    { "id": "endocrinology" },
+    { "id": "general-surgery" },
+    { "id": "transplant" },
+    { "id": "radiology" },
+    { "id": "radiation-oncology" },
+    { "id": "pediatrics" }
+  ],
+  "clinics": [
+    { "id": "acibadem-istanbul",      "cityId": "istanbul" },
+    { "id": "liv-ankara",             "cityId": "ankara" },
+    { "id": "medicana-istanbul",      "cityId": "istanbul" },
+    { "id": "medistate-istanbul",     "cityId": "istanbul" },
+    { "id": "np-istanbul-brain",      "cityId": "istanbul" },
+    { "id": "memorial-antalya",       "cityId": "antalya" },
+    { "id": "anadolu-istanbul",       "cityId": "istanbul" }
+  ],
+  "cities": [
+    { "id": "istanbul" },
+    { "id": "antalya" },
+    { "id": "ankara" }
+  ]
+}

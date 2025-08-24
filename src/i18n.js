@@ -78,40 +78,107 @@ import drgCalcRU from './locales/ru/drgCalculator.json';
 import drgCalcPL from './locales/pl/drgCalculator.json';
 import drgCalcAR from './locales/ar/drgCalculator.json';
 
+// Страны — Германия
 import countryGermanyEN from './locales/en/pages/country_germany.json';
 import countryGermanyRU from './locales/ru/pages/country_germany.json';
 import countryGermanyPL from './locales/pl/pages/country_germany.json';
 import countryGermanyAR from './locales/ar/pages/country_germany.json';
 
+// Страны — Турция ✅
+import countryTurkeyEN from './locales/en/pages/country_turkey.json';
+import countryTurkeyRU from './locales/ru/pages/country_turkey.json';
+import countryTurkeyPL from './locales/pl/pages/country_turkey.json';
+import countryTurkeyAR from './locales/ar/pages/country_turkey.json';
+
 const resources = {
-  en: { translation: {
-    ...translationEN,
-    ...homeEN, ...cardiacEN, ...epilepsyEN, ...neurosurgeryEN, ...bloodEN,
-    ...rheumatologyEN, ...dendriticEN, ...ivfEN, ...endometriosisEN, ...jointEN,
-    ...plasticEN, ...oncologyEN, ...lu177EN, ...newsIndexEN, ...drgCalcEN,
-    ...countryGermanyEN,   // ⬅️ добавлено
-  }} ,
-  ru: { translation: {
-    ...translationRU,
-    ...homeRU, ...cardiacRU, ...epilepsyRU, ...neurosurgeryRU, ...bloodRU,
-    ...rheumatologyRU, ...dendriticRU, ...ivfRU, ...endometriosisRU, ...jointRU,
-    ...plasticRU, ...oncologyRU, ...lu177RU, ...newsIndexRU, ...drgCalcRU,
-    ...countryGermanyRU,   // ⬅️ добавлено
-  }} ,
-  pl: { translation: {
-    ...translationPL,
-    ...homePL, ...cardiacPL, ...epilepsyPL, ...neurosurgeryPL, ...bloodPL,
-    ...rheumatologyPL, ...dendriticPL, ...ivfPL, ...endometriosisPL, ...jointPL,
-    ...plasticPL, ...oncologyPL, ...lu177PL, ...newsIndexPL, ...drgCalcPL,
-    ...countryGermanyPL,   // ⬅️ добавлено
-  }} ,
-  ar: { translation: {
-    ...translationAR,
-    ...homeAR, ...cardiacAR, ...epilepsyAR, ...neurosurgeryAR, ...bloodAR,
-    ...rheumatologyAR, ...dendriticAR, ...ivfAR, ...endometriosisAR, ...jointAR,
-    ...plasticAR, ...oncologyAR, ...lu177AR, ...newsIndexAR, ...drgCalcAR,
-    ...countryGermanyAR,   // ⬅️ добавлено
-  }} ,
+  en: {
+    translation: {
+      ...translationEN,
+      ...homeEN,
+      ...cardiacEN,
+      ...epilepsyEN,
+      ...neurosurgeryEN,
+      ...bloodEN,
+      ...rheumatologyEN,
+      ...dendriticEN,
+      ...ivfEN,
+      ...endometriosisEN,
+      ...jointEN,
+      ...plasticEN,
+      ...oncologyEN,
+      ...lu177EN,
+      ...newsIndexEN,
+      ...drgCalcEN,
+      ...countryGermanyEN,
+      ...countryTurkeyEN, // ⬅️ добавлено
+    },
+  },
+  ru: {
+    translation: {
+      ...translationRU,
+      ...homeRU,
+      ...cardiacRU,
+      ...epilepsyRU,
+      ...neurosurgeryRU,
+      ...bloodRU,
+      ...rheumatologyRU,
+      ...dendriticRU,
+      ...ivfRU,
+      ...endometriosisRU,
+      ...jointRU,
+      ...plasticRU,
+      ...oncologyRU,
+      ...lu177RU,
+      ...newsIndexRU,
+      ...drgCalcRU,
+      ...countryGermanyRU,
+      ...countryTurkeyRU, // ⬅️ добавлено
+    },
+  },
+  pl: {
+    translation: {
+      ...translationPL,
+      ...homePL,
+      ...cardiacPL,
+      ...epilepsyPL,
+      ...neurosurgeryPL,
+      ...bloodPL,
+      ...rheumatologyPL,
+      ...dendriticPL,
+      ...ivfPL,
+      ...endometriosisPL,
+      ...jointPL,
+      ...plasticPL,
+      ...oncologyPL,
+      ...lu177PL,
+      ...newsIndexPL,
+      ...drgCalcPL,
+      ...countryGermanyPL,
+      ...countryTurkeyPL, // ⬅️ добавлено
+    },
+  },
+  ar: {
+    translation: {
+      ...translationAR,
+      ...homeAR,
+      ...cardiacAR,
+      ...epilepsyAR,
+      ...neurosurgeryAR,
+      ...bloodAR,
+      ...rheumatologyAR,
+      ...dendriticAR,
+      ...ivfAR,
+      ...endometriosisAR,
+      ...jointAR,
+      ...plasticAR,
+      ...oncologyAR,
+      ...lu177AR,
+      ...newsIndexAR,
+      ...drgCalcAR,
+      ...countryGermanyAR,
+      ...countryTurkeyAR, // ⬅️ добавлено
+    },
+  },
 };
 
 const RTL_LANGS = ['ar'];
@@ -131,9 +198,7 @@ i18n
     },
     react: { useSuspense: false },
     initImmediate: false,
-
-    // ВАЖНО: чтобы 'en-US' → 'en', 'ru-RU' → 'ru'
-    load: 'languageOnly',
+    load: 'languageOnly', // en-US → en, ru-RU → ru
     supportedLngs: ['en', 'ru', 'pl', 'ar'],
   })
   .then(() => {
