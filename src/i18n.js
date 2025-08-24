@@ -94,6 +94,12 @@ import countrySpainEN from './locales/en/pages/country_spain.json';
 import countrySpainRU from './locales/ru/pages/country_spain.json';
 import countrySpainPL from './locales/pl/pages/country_spain.json';
 import countrySpainAR from './locales/ar/pages/country_spain.json';
+// Страны — Израиль
+import countryIsraelEN from './locales/en/pages/country_israel.json';
+import countryIsraelRU from './locales/ru/pages/country_israel.json';
+import countryIsraelPL from './locales/pl/pages/country_israel.json';
+import countryIsraelAR from './locales/ar/pages/country_israel.json';
+
 
 const resources = {
   en: {
@@ -116,7 +122,8 @@ const resources = {
       ...drgCalcEN,
       ...countryGermanyEN,
       ...countryTurkeyEN,
-      ...countrySpainEN, // ⬅️ добавлено
+      ...countrySpainEN, 
+      ...countryIsraelEN,// ⬅️ добавлено
     },
   },
   ru: {
@@ -139,7 +146,8 @@ const resources = {
       ...drgCalcRU,
       ...countryGermanyRU,
       ...countryTurkeyRU,
-      ...countrySpainRU, // ⬅️ добавлено
+      ...countrySpainRU,
+      ...countryIsraelRU, // ⬅️ добавлено
     },
   },
   pl: {
@@ -162,7 +170,8 @@ const resources = {
       ...drgCalcPL,
       ...countryGermanyPL,
       ...countryTurkeyPL,
-      ...countrySpainPL, // ⬅️ добавлено
+      ...countrySpainPL,
+      ...countryIsraelPL, // ⬅️ добавлено
     },
   },
   ar: {
@@ -185,7 +194,8 @@ const resources = {
       ...drgCalcAR,
       ...countryGermanyAR,
       ...countryTurkeyAR,
-      ...countrySpainAR, // ⬅️ добавлено
+      ...countrySpainAR,
+      ...countryIsraelAR, // ⬅️ добавлено
     },
   },
 };

@@ -1,0 +1,63 @@
+{
+  "doctors": [
+    {
+      "id": "ichilov-oncology-slot",
+      "name": "—",
+      "deptId": "oncology",
+      "clinicId": "ichilov",
+      "cityId": "tel-aviv",
+      "keywords": ["oncology", "medical oncology", "solid tumors"]
+    },
+    {
+      "id": "ichilov-neurosurgery-slot",
+      "name": "—",
+      "deptId": "neurosurgery",
+      "clinicId": "ichilov",
+      "cityId": "tel-aviv",
+      "keywords": ["neurosurgery", "brain", "spine"]
+    },
+    {
+      "id": "hadassah-cardiology-slot",
+      "name": "—",
+      "deptId": "cardiology",
+      "clinicId": "hadassah-jerusalem",
+      "cityId": "jerusalem",
+      "keywords": ["cardiology", "heart"]
+    },
+    {
+      "id": "hadassah-ivf-slot",
+      "name": "—",
+      "deptId": "ivf",
+      "clinicId": "hadassah-jerusalem",
+      "cityId": "jerusalem",
+      "keywords": ["ivf", "reproductive"]
+    },
+    {
+      "id": "hadassah-orthopedics-slot",
+      "name": "—",
+      "deptId": "orthopedics",
+      "clinicId": "hadassah-jerusalem",
+      "cityId": "jerusalem",
+      "keywords": ["orthopedics", "joint"]
+    }
+  ],
+  "departments": [
+    { "id": "oncology" },
+    { "id": "neurosurgery" },
+    { "id": "cardiology" },
+    { "id": "ivf" },
+    { "id": "orthopedics" },
+    { "id": "hematology" },
+    { "id": "general-surgery" },
+    { "id": "radiation-oncology" },
+    { "id": "pediatrics" }
+  ],
+  "clinics": [
+    { "id": "ichilov", "cityId": "tel-aviv" },
+    { "id": "hadassah-jerusalem", "cityId": "jerusalem" }
+  ],
+  "cities": [
+    { "id": "tel-aviv" },
+    { "id": "jerusalem" }
+  ]
+}

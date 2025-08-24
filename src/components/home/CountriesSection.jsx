@@ -43,7 +43,7 @@ const CountriesSection = () => {
       ],
     },
     {
-      slug: null,
+      slug: 'israel',
       country: t('homePage.countryIsrael'),
       image: '/israel.jpg',
       specialties: [
