@@ -1,9 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense, useMemo } from 'react';
 import { Helmet } from 'react-helmet';
-import DRGCalculator from '@/components/DRGCalculator';
 import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
 import { getCurrentLangFromPath } from '@/lib/lang';
+
+// ⬇️ Ленивая загрузка калькулятора (с отложенным чанк‑JS)
+const DRGCalculator = lazy(() => import('@/components/DRGCalculator'));
+
+// Очень лёгкий скелетон, чтобы быстро отрендерить LCP
+function CalculatorSkeleton() {
+  return (
+    <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-100 animate-pulse">
+      <div className="h-7 w-2/3 bg-gray-200 rounded mb-3" />
+      <div className="h-5 w-full bg-gray-100 rounded mb-2" />
+      <div className="h-5 w-5/6 bg-gray-100 rounded mb-6" />
+      <div className="grid grid-cols-2 gap-4 mb-6">
+        {[...Array(6)].map((_, i) => (
+          <div key={i}>
+            <div className="h-4 w-2/3 bg-gray-200 rounded mb-2" />
+            <div className="h-10 w-full bg-gray-100 rounded" />
+          </div>
+        ))}
+      </div>
+      <div className="h-12 w-full bg-gray-200 rounded" />
+    </div>
+  );
+}
 
 export default function DRGCalculatorPage() {
   const { t } = useTranslation();
@@ -12,53 +33,52 @@ export default function DRGCalculatorPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Региональные пункты (рендер ниже)
-  const infoItems = [
-    { emoji: '🇩🇪', label: 'Germany', textKey: 'homePage.calculatorInfo1' },
-    { emoji: '🇹🇷', label: 'Turkey',  textKey: 'homePage.calculatorInfo2' },
-    { emoji: '🇮🇱', label: 'Israel',  textKey: 'homePage.calculatorInfo3' },
-    { emoji: '🇪🇺', label: 'Europe',  textKey: 'homePage.calculatorInfo4' },
-    { emoji: '🌍', label: 'Global',   textKey: 'homePage.calculatorInfo5' },
-  ];
-
   // ======== SEO URLs (canonical + hreflang) ========
   const SITE = 'https://careoverseas.space';
   const ALT_LANGS = ['en', 'ru', 'pl', 'ar'];
   const lang = getCurrentLangFromPath(); // 'en' | 'ru' | 'pl' | 'ar'
   const pathname =
     typeof window !== 'undefined' ? window.location.pathname : `/${lang || 'en'}/drg-calculator`;
-  const origin =
-    typeof window !== 'undefined' ? window.location.origin : SITE;
-
-  // если роут без префикса языка — поставим хвост для hreflang
+  const origin = typeof window !== 'undefined' ? window.location.origin : SITE;
   const tail = pathname.replace(/^\/(en|ru|pl|ar)\/?/, '') || 'drg-calculator';
   const canonicalUrl = `${origin}${pathname}`;
   const currentUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
   const altHref = (hl) => `${SITE}/${hl}/${tail}`;
 
-  // ======== JSON-LD ========
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-      { '@type': 'ListItem', position: 2, name: t('drgCalculator.pageTitle', 'DRG Cost Calculator'), item: `${SITE}/drg-calculator` },
-    ],
-  };
+  // ======== JSON-LD (минимизировано) ========
+  const breadcrumbLd = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t('drgCalculator.pageTitle', 'DRG Cost Calculator'),
+          item: `${SITE}/drg-calculator`,
+        },
+      ],
+    }),
+    [t]
+  );
 
-  const webAppLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: t('drgCalculator.pageTitle', 'DRG Cost Calculator'),
-    description: t(
-      'drgCalculator.seoDesc',
-      'Use our DRG Cost Calculator to estimate your medical treatment expenses in Germany based on Diagnosis Related Groups, including stay, nursing, and specialist fees.'
-    ),
-    applicationCategory: 'FinanceApplication',
-    operatingSystem: 'Web',
-    url: `${SITE}/drg-calculator`,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  };
+  const webAppLd = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: t('drgCalculator.pageTitle', 'DRG Cost Calculator'),
+      description: t(
+        'drgCalculator.seoDesc',
+        'Use our DRG Cost Calculator to estimate your medical treatment expenses in Germany based on Diagnosis Related Groups, including stay, nursing, and specialist fees.'
+      ),
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${SITE}/drg-calculator`,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    }),
+    [t]
+  );
 
   return (
     <>
@@ -85,9 +105,16 @@ export default function DRGCalculatorPage() {
         ))}
         <link rel="alternate" hrefLang="x-default" href={altHref('en')} />
 
+        {/* Priority Hints / Preconnect */}
+        <link rel="preconnect" href={origin} crossOrigin="" />
+        <link rel="dns-prefetch" href={origin} />
+
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('drgCalculator.seoTitle', 'DRG Cost Calculator for Treatment in Germany')} />
+        <meta
+          property="og:title"
+          content={t('drgCalculator.seoTitle', 'DRG Cost Calculator for Treatment in Germany')}
+        />
         <meta property="og:description" content={t('drgCalculator.seoDesc')} />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:image" content="https://careoverseas.space/og-default.jpg" />
@@ -96,59 +123,81 @@ export default function DRGCalculatorPage() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('drgCalculator.seoTitle', 'DRG Cost Calculator for Treatment in Germany')} />
+        <meta
+          name="twitter:title"
+          content={t('drgCalculator.seoTitle', 'DRG Cost Calculator for Treatment in Germany')}
+        />
         <meta name="twitter:description" content={t('drgCalculator.seoDesc')} />
         <meta name="twitter:image" content="https://careoverseas.space/og-default.jpg" />
 
-        {/* Structured Data */}
+        {/* Structured Data (минимум запроса, не блокирует LCP контент в body) */}
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         <script type="application/ld+json">{JSON.stringify(webAppLd)}</script>
       </Helmet>
 
-      <section id="calculator" className="py-24 bg-gradient-to-br from-blue-50 to-green-50">
+      {/* Первый экран — лёгкий и быстрый */}
+      <section id="calculator" className="py-16 sm:py-20 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Заголовок и подзаголовок */}
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h1 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">
               {t('homePage.calculatorTitle', 'Калькулятор стоимости по DRG')}
             </h1>
-            <p className="text-xl text-gray-700 mb-4">
-              {t('homePage.calculatorSubtitle', 'Узнайте ориентировочную стоимость лечения по немецким тарифам DRG')}
+            <p className="text-lg sm:text-xl text-gray-700">
+              {t(
+                'homePage.calculatorSubtitle',
+                'Узнайте ориентировочную стоимость лечения по немецким тарифам DRG'
+              )}
             </p>
+          </div>
 
-            {/* Блок регионов */}
-            <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-lg border-l-4 border-blue-600">
-              <ul className="space-y-4">
-                {infoItems.map(({ emoji, label, textKey }) => (
-                  <li key={textKey} className="flex items-start">
-                    <div className="flex-shrink-0 w-8">
-                      <span role="img" aria-label={label} className="flag-emoji text-3xl leading-none block">
+          {/* Инструкции оставляем — легкий контент без тяжёлых списков */}
+          <div
+            className="max-w-2xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 mb-6"
+            aria-labelledby="drg-howto"
+          >
+            <p id="drg-howto" className="text-lg font-semibold text-blue-600 mb-3">
+              {t('homePage.calculatorGuideTitle', 'Как использовать калькулятор DRG:')}
+            </p>
+            <ul className="list-inside list-disc text-gray-700 space-y-2">
+              <li>{t('homePage.calculatorGuide1')}</li>
+              <li>{t('homePage.calculatorGuide2')}</li>
+              <li>{t('homePage.calculatorGuide3')}</li>
+              <li>{t('homePage.calculatorGuide4')}</li>
+            </ul>
+          </div>
+
+          {/* Сам калькулятор — лениво, ради LCP */}
+          <Suspense fallback={<CalculatorSkeleton />}>
+            <DRGCalculator />
+          </Suspense>
+
+          {/* Блок регионов переносим НИЖЕ калькулятора, чтобы не мешать LCP */}
+          <div className="text-center max-w-2xl mx-auto mt-10">
+            <div className="mx-auto bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+              <ul className="space-y-3 text-gray-700">
+                {[
+                  { emoji: '🇩🇪', key: 'homePage.calculatorInfo1', label: 'Germany' },
+                  { emoji: '🇹🇷', key: 'homePage.calculatorInfo2', label: 'Turkey' },
+                  { emoji: '🇮🇱', key: 'homePage.calculatorInfo3', label: 'Israel' },
+                  { emoji: '🇪🇺', key: 'homePage.calculatorInfo4', label: 'Europe' },
+                  { emoji: '🌍', key: 'homePage.calculatorInfo5', label: 'Global' },
+                ].map(({ emoji, key, label }) => (
+                  <li key={key} className="flex items-start">
+                    <div className="w-8 flex-shrink-0">
+                      <span role="img" aria-label={label} className="text-2xl leading-none block">
                         {emoji}
                       </span>
                     </div>
-                    <div className="ml-4 text-gray-700">
-                      <div className="text-base" dangerouslySetInnerHTML={{ __html: t(textKey) }} />
+                    <div className="ml-3 text-left">
+                      <div
+                        className="text-base"
+                        dangerouslySetInnerHTML={{ __html: t(key) }}
+                      />
                     </div>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
-
-          {/* Инструкции и сам калькулятор */}
-          <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg" aria-labelledby="drg-howto">
-            <div className="mb-6">
-              <p id="drg-howto" className="text-lg font-semibold text-blue-600 mb-3">
-                {t('homePage.calculatorGuideTitle', 'Как использовать калькулятор DRG:')}
-              </p>
-              <ul className="list-inside list-disc text-gray-700 space-y-2">
-                <li>{t('homePage.calculatorGuide1')}</li>
-                <li>{t('homePage.calculatorGuide2')}</li>
-                <li>{t('homePage.calculatorGuide3')}</li>
-                <li>{t('homePage.calculatorGuide4')}</li>
-              </ul>
-            </div>
-            <DRGCalculator />
           </div>
         </div>
       </section>

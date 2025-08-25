@@ -4,6 +4,7 @@ import path from 'path';
 
 const CANONICAL = 'https://careoverseas.space';
 const LANGS = ['en', 'ru', 'pl', 'ar'];
+const DEFAULT_LNG = 'en'; // куда вести x-default
 
 // пути БЕЗ языка
 const PATHS = [
@@ -37,28 +38,33 @@ function norm(url) {
     .replace(/\/+(?=\?|#|$)/, '/');
 }
 
+// Генерируем <url> ДЛЯ КАЖДОГО языка по одному блоку
 function urlEntry(basePath) {
-  const enLoc = norm(`${CANONICAL}/en/${basePath}`);
+  return LANGS.map((lng) => {
+    const selfLoc = norm(`${CANONICAL}/${lng}/${basePath}`);
 
-  const altLinks = LANGS.map(lng => {
-    const href = norm(`${CANONICAL}/${lng}/${basePath}`);
-    return `    <xhtml:link rel="alternate" hreflang="${lng}" href="${href}"/>`;
-  }).join('\n');
+    const alternates = LANGS
+      .map((altLng) => {
+        const href = norm(`${CANONICAL}/${altLng}/${basePath}`);
+        return `    <xhtml:link rel="alternate" hreflang="${altLng}" href="${href}"/>`;
+      })
+      .join('\n');
 
-  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${enLoc}"/>`;
+    const xDefaultHref = norm(`${CANONICAL}/${DEFAULT_LNG}/${basePath}`);
 
-  return `
+    return `
   <url>
-    <loc>${enLoc}</loc>
-${altLinks}
-${xDefault}
+    <loc>${selfLoc}</loc>
+${alternates}
+    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultHref}"/>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>`;
+  });
 }
 
-const urls = PATHS.map(p => urlEntry(p)).join('\n');
+const urls = PATHS.flatMap((p) => urlEntry(p)).join('\n');
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
