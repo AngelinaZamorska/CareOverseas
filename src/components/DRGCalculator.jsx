@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Search } from 'lucide-react';
 
 // ⬇️ Импортируем JSON прямо в бандл (без fetch)
-import drgCosts from '@/data/drg-costs.json';
-import drgTextsAll from '@/data/drg-texts.json';
+import { useEffect, useState } from 'react';
 
 export default function DRGCalculator() {
   const { t, i18n } = useTranslation();
@@ -21,6 +20,19 @@ export default function DRGCalculator() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [showSug, setShowSug] = useState(false);
+
+  const [drgCosts, setDrgCosts] = useState([]);
+const [drgTextsAll, setDrgTextsAll] = useState({});
+
+useEffect(() => {
+  Promise.all([
+    fetch('/data/drg-costs.json').then(r => r.json()),
+    fetch('/data/drg-texts.json').then(r => r.json())
+  ]).then(([costs, texts]) => {
+    setDrgCosts(costs);
+    setDrgTextsAll(texts);
+  });
+}, []);
 
   // Быстрый доступ к текстам на текущем языке
   const getTitle = (code) =>
