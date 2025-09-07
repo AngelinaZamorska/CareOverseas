@@ -1,20 +1,1114 @@
 {
-  "doctors": [
+  "departments": [
     {
-      "id": "helios-krefeld-hunerliturkoglu",
-      "name": "Dr. med. Ali Nuri Hünerlitürkoglu",
-      "deptId": "hem-onc",
-      "clinicId": "helios-krefeld",
-      "cityId": "krefeld",
-      "keywords": ["oncology", "hematology"]
+      "id": "general"
     },
     {
-      "id": "helios-berlin-buch-schrader",
-      "name": "Prof. Dr. med. Mark Schrader",
-      "deptId": "urology",
-      "clinicId": "helios-berlin-buch",
+      "id": "ent"
+    },
+    {
+      "id": "trauma-and-reconstructive-surgery"
+    },
+    {
+      "id": "anesthesiology"
+    },
+    {
+      "id": "neurosurgery"
+    },
+    {
+      "id": "urology"
+    },
+    {
+      "id": "physical-and-rehabilitation-medicine"
+    },
+    {
+      "id": "cardiology"
+    },
+    {
+      "id": "gastroenterology"
+    },
+    {
+      "id": "vascular-surgery-and-medicine"
+    },
+    {
+      "id": "gynecology"
+    },
+    {
+      "id": "orthopedics"
+    },
+    {
+      "id": "geriatrics"
+    },
+    {
+      "id": "internal-medicine"
+    },
+    {
+      "id": "spinal-surgery"
+    },
+    {
+      "id": "vascular-surgery"
+    },
+    {
+      "id": "general-and-visceral-surgery"
+    },
+    {
+      "id": "internal-medicine-and-intensive-care"
+    },
+    {
+      "id": "plastic-surgery"
+    },
+    {
+      "id": "thoracic-surgery"
+    },
+    {
+      "id": "gastroenterology-and-diabetology"
+    },
+    {
+      "id": "hematology-oncology"
+    },
+    {
+      "id": "hand-surgery"
+    },
+    {
+      "id": "cardiac-surgery"
+    },
+    {
+      "id": "oncology"
+    },
+    {
+      "id": "psychosomatic-medicine-and-psychotherapy"
+    },
+    {
+      "id": "radiation-oncology"
+    },
+    {
+      "id": "trauma-surgery"
+    },
+    {
+      "id": "psychiatry"
+    },
+    {
+      "id": "emergency-medicine"
+    },
+    {
+      "id": "radiology"
+    },
+    {
+      "id": "general-surgery"
+    },
+    {
+      "id": "ophthalmology"
+    },
+    {
+      "id": "endocrinology"
+    },
+    {
+      "id": "nephrology"
+    },
+    {
+      "id": "university-cardio-center-internal-medicine-ii"
+    },
+    {
+      "id": "pediatrics"
+    },
+    {
+      "id": "administration"
+    },
+    {
+      "id": "dermatology"
+    },
+    {
+      "id": "oral-maxillofacial-surgery"
+    },
+    {
+      "id": "infectious-diseases"
+    },
+    {
+      "id": "pediatric-immunology"
+    },
+    {
+      "id": "maxillofacial-and-plastic-surgery"
+    },
+    {
+      "id": "cardiothoracic-and-vascular-surgery"
+    }
+  ],
+  "clinics": [
+    {
+      "id": "charite-comprehensive-cancer-center-cccc"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbf"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbfcvk"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc12"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc13"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc14"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc15"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc16"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc8"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc9"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-ccm"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cvk"
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-mitte"
+    },
+    {
+      "id": "ethianum-klinik-heidelberg"
+    },
+    {
+      "id": "helios-amper-klinikum-dachau"
+    },
+    {
+      "id": "helios-berlin-buch"
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach"
+    },
+    {
+      "id": "helios-klinik-breisach"
+    },
+    {
+      "id": "helios-klinik-rottweil"
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt"
+    },
+    {
+      "id": "helios-kliniken-schwerin"
+    },
+    {
+      "id": "helios-klinikum-bad-saarow"
+    },
+    {
+      "id": "helios-klinikum-berlinbuch"
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-endoklinik-berlin"
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring"
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn"
+    },
+    {
+      "id": "helios-klinikum-erfurt"
+    },
+    {
+      "id": "helios-klinikum-pforzheim"
+    },
+    {
+      "id": "helios-krefeld"
+    },
+    {
+      "id": "helios-muenchen-west"
+    },
+    {
+      "id": "lmu-klinikum-muenchen"
+    },
+    {
+      "id": "medical-park-bad-feilnbach"
+    },
+    {
+      "id": "medical-park-bad-rodach"
+    },
+    {
+      "id": "medical-park-bad-wiessee"
+    },
+    {
+      "id": "medical-park-berlin-humboldtmuhle"
+    },
+    {
+      "id": "medical-park-bernau-felden-chiemsee"
+    },
+    {
+      "id": "medical-park-chiemseeblick"
+    },
+    {
+      "id": "schlossparkklinik"
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar"
+    },
+    {
+      "id": "uk-koeln"
+    },
+    {
+      "id": "universitaetsklinikum-bernau"
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel"
+    },
+    {
+      "id": "universitaetsklinikum-cottbus"
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf"
+    },
+    {
+      "id": "universitaetsklinikum-erlangen"
+    },
+    {
+      "id": "universitaetsklinikum-regensburg"
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg"
+    },
+    {
+      "id": "universitaetsmedizin-essen"
+    },
+    {
+      "id": "universitaetsmedizin-mainz"
+    },
+    {
+      "id": "universitatsmedizin-rostock"
+    },
+    {
+      "id": "universittsklinikum-freiburg"
+    },
+    {
+      "id": "universittsklinikum-mannheim"
+    },
+    {
+      "id": "universittsklinikum-tbingen"
+    },
+    {
+      "id": "universittsklinikum-ulm"
+    },
+    {
+      "id": "vivantes-humboldtklinikum"
+    },
+    {
+      "id": "vivantes-humboldtklinikum-spandau"
+    },
+    {
+      "id": "vivantes-klinikum-am-urban"
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain"
+    },
+    {
+      "id": "vivantes-klinikum-neukolln"
+    },
+    {
+      "id": "vivantes-klinikum-spandau"
+    }
+  ],
+  "cities": [
+    {
+      "id": "berlin"
+    },
+    {
+      "id": "heidelberg"
+    },
+    {
+      "id": "dachau"
+    },
+    {
+      "id": "kronach"
+    },
+    {
+      "id": "breisach-am-rhein"
+    },
+    {
+      "id": "rottweil"
+    },
+    {
+      "id": "titisee-neustadt"
+    },
+    {
+      "id": "schwerin"
+    },
+    {
+      "id": "bad-saarow"
+    },
+    {
+      "id": "erfurt"
+    },
+    {
+      "id": "pforzheim"
+    },
+    {
+      "id": "krefeld"
+    },
+    {
+      "id": "muenchen"
+    },
+    {
+      "id": "bad-feilnbach"
+    },
+    {
+      "id": "bad-rodach"
+    },
+    {
+      "id": "bad-wiessee"
+    },
+    {
+      "id": "bernau-am-chiemsee"
+    },
+    {
+      "id": "koeln"
+    },
+    {
+      "id": "bernau-bei-berlin"
+    },
+    {
+      "id": "brandenburg-an-der-havel"
+    },
+    {
+      "id": "cottbus"
+    },
+    {
+      "id": "duesseldorf"
+    },
+    {
+      "id": "erlangen"
+    },
+    {
+      "id": "regensburg"
+    },
+    {
+      "id": "wuerzburg"
+    },
+    {
+      "id": "essen"
+    },
+    {
+      "id": "mainz"
+    },
+    {
+      "id": "rostock"
+    },
+    {
+      "id": "freiburg"
+    },
+    {
+      "id": "mannheim"
+    },
+    {
+      "id": "tuebingen"
+    },
+    {
+      "id": "ulm"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz",
+      "name": "Prof. Dr. Ulrich Keilholz",
+      "deptId": "general",
+      "clinicId": "charite-comprehensive-cancer-center-cccc",
       "cityId": "berlin",
-      "keywords": ["urology", "prostate"]
+      "keywords": [
+        "berlin",
+        "cancer",
+        "cccc",
+        "center",
+        "charite",
+        "charite-comprehensive-cancer-center-cccc",
+        "comprehensive",
+        "general",
+        "keilholz",
+        "prof",
+        "specialist",
+        "ulrich"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin-prof-dr-christian-otte",
+      "name": "Prof. Dr. Christian Otte",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin",
+      "cityId": "berlin",
+      "keywords": [
+        "benjamin",
+        "berlin",
+        "campus",
+        "cbf",
+        "charite",
+        "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin",
+        "christian",
+        "franklin",
+        "general",
+        "otte",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbf-prof-dr-max-heiland",
+      "name": "Prof. Dr. Max Heiland",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cbf",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "cbf",
+        "charite",
+        "charite-universitatsmedizin-berlin-cbf",
+        "general",
+        "heiland",
+        "max",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbf-prof-dr-wolfgang-ertel",
+      "name": "Prof. Dr. Wolfgang Ertel",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cbf",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "cbf",
+        "charite",
+        "charite-universitatsmedizin-berlin-cbf",
+        "ertel",
+        "general",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cbfcvk-prof-dr-daniel-zips",
+      "name": "Prof. Dr. Daniel Zips",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cbfcvk",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "cbfcvk",
+        "charite",
+        "charite-universitatsmedizin-berlin-cbfcvk",
+        "daniel",
+        "general",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "zips"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc12-prof-dr-martin-witzenrath",
+      "name": "Prof. Dr. Martin Witzenrath",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc12",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc12",
+        "general",
+        "martin",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "witzenrath"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-britta-siegmund",
+      "name": "Prof. Dr. Britta Siegmund",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "britta",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc13",
+        "general",
+        "prof",
+        "siegmund",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-frank-tacke",
+      "name": "Prof. Dr. Frank Tacke",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc13",
+        "frank",
+        "general",
+        "prof",
+        "specialist",
+        "tacke",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-kaiuwe-eckardt",
+      "name": "Prof. Dr. Kai‑Uwe Eckardt",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc13",
+        "eckardt",
+        "general",
+        "kai",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "uwe"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc14-prof-dr-ulrich-keller",
+      "name": "Prof. Dr. Ulrich Keller",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc14",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc14",
+        "general",
+        "keller",
+        "prof",
+        "specialist",
+        "ulrich",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc15-prof-dr-matthias-endres",
+      "name": "Prof. Dr. Matthias Endres",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc15",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc15",
+        "endres",
+        "general",
+        "matthias",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc15-prof-dr-peter-vajkoczy",
+      "name": "Prof. Dr. Peter Vajkoczy",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc15",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc15",
+        "general",
+        "peter",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "vajkoczy"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc16-prof-dr-antonia-joussen",
+      "name": "Prof. Dr. Antonia Joussen",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc16",
+      "cityId": "berlin",
+      "keywords": [
+        "antonia",
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc16",
+        "general",
+        "joussen",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc16-prof-dr-heidi-olze",
+      "name": "Prof. Dr. Heidi Olze",
+      "deptId": "ent",
+      "clinicId": "charite-universitatsmedizin-berlin-cc16",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc16",
+        "ent",
+        "heidi",
+        "olze",
+        "otorhinolaryngology",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-andreas-greiner",
+      "name": "Prof. Dr. Andreas Greiner",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "cityId": "berlin",
+      "keywords": [
+        "andreas",
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc8",
+        "general",
+        "greiner",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-johann-pratschke",
+      "name": "Prof. Dr. Johann Pratschke",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc8",
+        "general",
+        "johann",
+        "pratschke",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-thorsten-schlomm",
+      "name": "Prof. Dr. Thorsten Schlomm",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc8",
+        "general",
+        "prof",
+        "schlomm",
+        "specialist",
+        "thorsten",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cc9-prof-dr-carsten-perka",
+      "name": "Prof. Dr. Carsten Perka",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cc9",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "carsten",
+        "charite",
+        "charite-universitatsmedizin-berlin-cc9",
+        "general",
+        "perka",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte-prof-dr-sebastian-stintzing",
+      "name": "Prof. Dr. Sebastian Stintzing",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "campus",
+        "ccm",
+        "charite",
+        "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte",
+        "general",
+        "mitte",
+        "prof",
+        "sebastian",
+        "specialist",
+        "stintzing",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-ccm-prof-dr-jensuwe-blohmer",
+      "name": "Prof. Dr. Jens‑Uwe Blohmer",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-ccm",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "blohmer",
+        "ccm",
+        "charite",
+        "charite-universitatsmedizin-berlin-ccm",
+        "general",
+        "jens",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "uwe"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum-prof-dr-lars-bullinger",
+      "name": "Prof. Dr. Lars Bullinger",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "bullinger",
+        "campus",
+        "charite",
+        "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum",
+        "cvk",
+        "general",
+        "klinikum",
+        "lars",
+        "prof",
+        "specialist",
+        "universitatsmedizin",
+        "virchow"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-cvk-prof-dr-jalid-sehouli",
+      "name": "Prof. Dr. Jalid Sehouli",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-cvk",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-cvk",
+        "cvk",
+        "general",
+        "jalid",
+        "prof",
+        "sehouli",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "charite-universitatsmedizin-berlin-mitte-prof-dr-malek-bajbouj",
+      "name": "Prof. Dr. Malek Bajbouj",
+      "deptId": "general",
+      "clinicId": "charite-universitatsmedizin-berlin-mitte",
+      "cityId": "berlin",
+      "keywords": [
+        "bajbouj",
+        "berlin",
+        "charite",
+        "charite-universitatsmedizin-berlin-mitte",
+        "general",
+        "malek",
+        "mitte",
+        "prof",
+        "specialist",
+        "universitatsmedizin"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski",
+      "name": "Prof. Dr. Christoph Michalski",
+      "deptId": "general",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "christoph",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "general",
+        "heidelberg",
+        "klinik",
+        "michalski",
+        "minimally",
+        "oncological",
+        "prof",
+        "specialist",
+        "surgery"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier",
+      "name": "Prof. Dr. Gerhard Schmidmaier",
+      "deptId": "trauma-and-reconstructive-surgery",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "and",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "expert",
+        "gerhard",
+        "heidelberg",
+        "klinik",
+        "orthopedic",
+        "prof",
+        "reconstructive",
+        "schmidmaier",
+        "specialist",
+        "surgery",
+        "trauma",
+        "trauma-and-reconstructive-surgery"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand",
+      "name": "Prof. Dr. Markus A. Weigand",
+      "deptId": "anesthesiology",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "anesthesiology",
+        "care",
+        "emergency",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "expert",
+        "heidelberg",
+        "intensive",
+        "klinik",
+        "markus",
+        "medicine",
+        "prof",
+        "specialist",
+        "weigand"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler",
+      "name": "Prof. Dr. Patrick Schuler",
+      "deptId": "ent",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "clinic",
+        "ent",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "expertise",
+        "head",
+        "heidelberg",
+        "klinik",
+        "otorhinolaryngology",
+        "patrick",
+        "prof",
+        "schuler",
+        "surgical",
+        "with"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg",
+      "name": "Prof. Dr. Sandro Krieg",
+      "deptId": "neurosurgery",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "and",
+        "descri",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "functional",
+        "heidelberg",
+        "klinik",
+        "krieg",
+        "neuro",
+        "neurosurgery",
+        "oncology",
+        "prof",
+        "sandro",
+        "specialist"
+      ]
+    },
+    {
+      "id": "ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick",
+      "name": "Prof. Dr. Wolfgang Wick",
+      "deptId": "urology",
+      "clinicId": "ethianum-klinik-heidelberg",
+      "cityId": "heidelberg",
+      "keywords": [
+        "and",
+        "clinical",
+        "descri",
+        "ethianum",
+        "ethianum-klinik-heidelberg",
+        "expert",
+        "heidelberg",
+        "klinik",
+        "neuroscience",
+        "prof",
+        "renowned",
+        "specialist",
+        "urology",
+        "wick",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "helios-amper-klinikum-dachau-dr.-wolfgang-koedel",
+      "name": "Dr. Wolfgang Ködel",
+      "deptId": "physical-and-rehabilitation-medicine",
+      "clinicId": "helios-amper-klinikum-dachau",
+      "cityId": "dachau",
+      "keywords": [
+        "amper",
+        "ampervital",
+        "and",
+        "center",
+        "dachau",
+        "hea",
+        "head",
+        "helios",
+        "helios-amper-klinikum-dachau",
+        "klinikum",
+        "ködel",
+        "medicine",
+        "physical",
+        "physical-and-rehabilitation-medicine",
+        "rehabilitation",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler",
+      "name": "PD Dr. Bernhard Witzenbichler",
+      "deptId": "cardiology",
+      "clinicId": "helios-amper-klinikum-dachau",
+      "cityId": "dachau",
+      "keywords": [
+        "amper",
+        "and",
+        "bernhard",
+        "cardiology",
+        "dachau",
+        "department",
+        "head",
+        "helios",
+        "helios-amper-klinikum-dachau",
+        "klinikum",
+        "pulmonology",
+        "witzenbichler"
+      ]
+    },
+    {
+      "id": "helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies",
+      "name": "Prof. Dr. Axel Kleespies",
+      "deptId": "general",
+      "clinicId": "helios-amper-klinikum-dachau",
+      "cityId": "dachau",
+      "keywords": [
+        "amper",
+        "axel",
+        "cancer",
+        "center",
+        "dachau",
+        "general",
+        "head",
+        "helios",
+        "helios-amper-klinikum-dachau",
+        "kleespies",
+        "klinikum",
+        "prof"
+      ]
+    },
+    {
+      "id": "helios-amper-klinikum-dachau-prof.-dr.-holger-poppert",
+      "name": "Prof. Dr. Holger Poppert",
+      "deptId": "urology",
+      "clinicId": "helios-amper-klinikum-dachau",
+      "cityId": "dachau",
+      "keywords": [
+        "amper",
+        "cluster",
+        "dachau",
+        "head",
+        "helios",
+        "helios-amper-klinikum-dachau",
+        "holger",
+        "klinikum",
+        "leader",
+        "neurology",
+        "poppert",
+        "prof",
+        "since",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener",
+      "name": "Prof. Dr. Norbert Grüner",
+      "deptId": "gastroenterology",
+      "clinicId": "helios-amper-klinikum-dachau",
+      "cityId": "dachau",
+      "keywords": [
+        "amper",
+        "center",
+        "dachau",
+        "darmzentrum",
+        "gastroenterology",
+        "grüner",
+        "head",
+        "helios",
+        "helios-amper-klinikum-dachau",
+        "intestinal",
+        "klinikum",
+        "norbert",
+        "prof"
+      ]
     },
     {
       "id": "helios-berlin-buch-ryang",
@@ -22,15 +1116,2688 @@
       "deptId": "neurosurgery",
       "clinicId": "helios-berlin-buch",
       "cityId": "berlin",
-      "keywords": ["neurooncology", "spine"]
+      "keywords": [
+        "berlin",
+        "buch",
+        "helios",
+        "helios-berlin-buch",
+        "med",
+        "neurosurgery",
+        "prof",
+        "ryang",
+        "specialist"
+      ]
     },
     {
-      "id": "uk-koeln-hallek",
-      "name": "Prof. Dr. med. Michael Hallek",
-      "deptId": "hem-onc",
-      "clinicId": "uk-koeln",
-      "cityId": "koeln",
-      "keywords": ["CLL", "oncology"]
+      "id": "helios-berlin-buch-schrader",
+      "name": "Prof. Dr. med. Mark Schrader",
+      "deptId": "urology",
+      "clinicId": "helios-berlin-buch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "buch",
+        "helios",
+        "helios-berlin-buch",
+        "mark",
+        "med",
+        "prof",
+        "schrader",
+        "specialist",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach-dr.-hamadneh",
+      "name": "Dr. Hamadneh",
+      "deptId": "gastroenterology",
+      "clinicId": "helios-frankenwald-klinik-kronach",
+      "cityId": "kronach",
+      "keywords": [
+        "center",
+        "frankenwald",
+        "gastroenterology",
+        "hamadneh",
+        "head",
+        "helios",
+        "helios-frankenwald-klinik-kronach",
+        "internal",
+        "klinik",
+        "kronach",
+        "medicine",
+        "since"
+      ]
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach-dr.-michael-moritz",
+      "name": "Dr. Michael Moritz",
+      "deptId": "vascular-surgery-and-medicine",
+      "clinicId": "helios-frankenwald-klinik-kronach",
+      "cityId": "kronach",
+      "keywords": [
+        "and",
+        "angiosurgical",
+        "expert",
+        "frankenwald",
+        "helios",
+        "helios-frankenwald-klinik-kronach",
+        "klinik",
+        "kronach",
+        "medicine",
+        "michael",
+        "moritz",
+        "operations",
+        "since",
+        "specialist",
+        "surgery",
+        "vascular",
+        "vascular-surgery-and-medicine"
+      ]
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach-dr.-milos-popovic",
+      "name": "Dr. Milos Popovic",
+      "deptId": "gynecology",
+      "clinicId": "helios-frankenwald-klinik-kronach",
+      "cityId": "kronach",
+      "keywords": [
+        "and",
+        "descri",
+        "feta",
+        "frankenwald",
+        "gynecology",
+        "helios",
+        "helios-frankenwald-klinik-kronach",
+        "klinik",
+        "kronach",
+        "maternal",
+        "milos",
+        "oncogynecology",
+        "popovic",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach-gennaro-manzo",
+      "name": "Gennaro Manzo",
+      "deptId": "orthopedics",
+      "clinicId": "helios-frankenwald-klinik-kronach",
+      "cityId": "kronach",
+      "keywords": [
+        "and",
+        "expert",
+        "frankenwald",
+        "gennaro",
+        "geriatric",
+        "helios",
+        "helios-frankenwald-klinik-kronach",
+        "joint",
+        "klinik",
+        "kronach",
+        "manzo",
+        "orthopedics",
+        "replacement",
+        "specialist",
+        "trauma"
+      ]
+    },
+    {
+      "id": "helios-frankenwald-klinik-kronach-smajl-marmullaku",
+      "name": "Smajl Marmullaku",
+      "deptId": "geriatrics",
+      "clinicId": "helios-frankenwald-klinik-kronach",
+      "cityId": "kronach",
+      "keywords": [
+        "department",
+        "frankenwald",
+        "geriatrics",
+        "hea",
+        "head",
+        "helios",
+        "helios-frankenwald-klinik-kronach",
+        "klinik",
+        "kronach",
+        "marmullaku",
+        "since",
+        "smajl"
+      ]
+    },
+    {
+      "id": "helios-klinik-breisach-dr.-claus-henning-lppchen",
+      "name": "Dr. Claus Henning Läppchen",
+      "deptId": "urology",
+      "clinicId": "helios-klinik-breisach",
+      "cityId": "breisach-am-rhein",
+      "keywords": [
+        "breisach",
+        "breisach-am-rhein",
+        "claus",
+        "geriatrics",
+        "helios",
+        "helios-klinik-breisach",
+        "henning",
+        "klinik",
+        "läppchen",
+        "neurology",
+        "psychothe",
+        "rhein",
+        "specialist",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-klinik-breisach-dr.-martin-schuster",
+      "name": "Dr. Martin Schuster",
+      "deptId": "internal-medicine",
+      "clinicId": "helios-klinik-breisach",
+      "cityId": "breisach-am-rhein",
+      "keywords": [
+        "breisach",
+        "breisach-am-rhein",
+        "head",
+        "helios",
+        "helios-klinik-breisach",
+        "internal",
+        "internal-medicine",
+        "klinik",
+        "martin",
+        "medicine",
+        "palliati",
+        "rhein",
+        "schuster",
+        "since"
+      ]
+    },
+    {
+      "id": "helios-klinik-breisach-dr.-stefan-kleinert",
+      "name": "Dr. Stefan Kleinert",
+      "deptId": "orthopedics",
+      "clinicId": "helios-klinik-breisach",
+      "cityId": "breisach-am-rhein",
+      "keywords": [
+        "and",
+        "arthroplasty",
+        "breisach",
+        "breisach-am-rhein",
+        "expert",
+        "helios",
+        "helios-klinik-breisach",
+        "kleinert",
+        "klinik",
+        "orthopedics",
+        "rhein",
+        "specialist",
+        "stefan",
+        "surgery",
+        "trauma"
+      ]
+    },
+    {
+      "id": "helios-klinik-breisach-prof.-dr.-stefan-m.-knller",
+      "name": "Prof. Dr. Stefan M. Knöller",
+      "deptId": "spinal-surgery",
+      "clinicId": "helios-klinik-breisach",
+      "cityId": "breisach-am-rhein",
+      "keywords": [
+        "and",
+        "breisach",
+        "breisach-am-rhein",
+        "conservative",
+        "descri",
+        "helios",
+        "helios-klinik-breisach",
+        "klinik",
+        "knöller",
+        "operative",
+        "prof",
+        "rhein",
+        "specialist",
+        "spinal",
+        "spinal-surgery",
+        "spine",
+        "stefan",
+        "surgery"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-dr.-cosmin-curelariu",
+      "name": "Dr. Cosmin Curelariu",
+      "deptId": "geriatrics",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "care",
+        "cosmin",
+        "curelariu",
+        "elderly",
+        "geriatrics",
+        "helios",
+        "helios-klinik-rottweil",
+        "klinik",
+        "rottweil",
+        "since",
+        "specia",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-dr.-kai-mehlhase",
+      "name": "Dr. Kai Mehlhase",
+      "deptId": "vascular-surgery",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "and",
+        "aortic",
+        "endovascular",
+        "expert",
+        "helios",
+        "helios-klinik-rottweil",
+        "kai",
+        "klinik",
+        "mehlhase",
+        "rottweil",
+        "specialist",
+        "surgery",
+        "vascular",
+        "vascular-surgery"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-dr.-markus-zenz",
+      "name": "Dr. Markus Zenz",
+      "deptId": "gynecology",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "gynecology",
+        "helios",
+        "helios-klinik-rottweil",
+        "invasive",
+        "klinik",
+        "markus",
+        "minimally",
+        "rottweil",
+        "specialist",
+        "zenz"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-dr.-ren-hodina",
+      "name": "Dr. René Hodina",
+      "deptId": "general-and-visceral-surgery",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "and",
+        "emergency",
+        "general",
+        "general-and-visceral-surgery",
+        "helios",
+        "helios-klinik-rottweil",
+        "hodina",
+        "klinik",
+        "ren",
+        "rottweil",
+        "specialist",
+        "surgery",
+        "visceral"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-dr.-sandra-brandauer",
+      "name": "Dr. Sandra Brandauer",
+      "deptId": "anesthesiology",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "and",
+        "anesthesiology",
+        "brandauer",
+        "care",
+        "descri",
+        "head",
+        "helios",
+        "helios-klinik-rottweil",
+        "intensive",
+        "klinik",
+        "rottweil",
+        "sandra",
+        "sinc"
+      ]
+    },
+    {
+      "id": "helios-klinik-rottweil-prof.-dr.-markus-krber",
+      "name": "Prof. Dr. Markus Kröber",
+      "deptId": "orthopedics",
+      "clinicId": "helios-klinik-rottweil",
+      "cityId": "rottweil",
+      "keywords": [
+        "and",
+        "expert",
+        "helios",
+        "helios-klinik-rottweil",
+        "klinik",
+        "kröber",
+        "markus",
+        "orthopedics",
+        "prof",
+        "rottweil",
+        "specialist",
+        "spine",
+        "surgery",
+        "tumor"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-claudia-fritz",
+      "name": "Dr. Claudia Fritz",
+      "deptId": "gynecology",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "claudia",
+        "fritz",
+        "gynecologic",
+        "gynecology",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "klinik",
+        "neustadt",
+        "oncology",
+        "specialis",
+        "specialist",
+        "titisee",
+        "titisee-neustadt"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-constanze-vollmer",
+      "name": "Dr. Constanze Vollmer",
+      "deptId": "internal-medicine-and-intensive-care",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "and",
+        "care",
+        "constanze",
+        "head",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "intensive",
+        "internal",
+        "internal-medicine-and-intensive-care",
+        "klinik",
+        "medicine",
+        "neustadt",
+        "titisee",
+        "titisee-neustadt",
+        "vollmer"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-jan-jrgens",
+      "name": "Dr. Jan Jürgens",
+      "deptId": "gynecology",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "experien",
+        "experienced",
+        "gynecologist",
+        "gynecology",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "jan",
+        "jürgens",
+        "klinik",
+        "neustadt",
+        "since",
+        "specialist",
+        "titisee",
+        "titisee-neustadt"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica",
+      "name": "Dr. Lorand-Alin Stoica",
+      "deptId": "orthopedics",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "alin",
+        "center",
+        "chief",
+        "descri",
+        "endoprosthetics",
+        "head",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "klinik",
+        "lorand",
+        "neustadt",
+        "orthopedics",
+        "since",
+        "stoica",
+        "surgeon",
+        "titisee",
+        "titisee-neustadt"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-manfred-schmlders",
+      "name": "Dr. Manfred Schmölders",
+      "deptId": "geriatrics",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "expert",
+        "geriatrics",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "klinik",
+        "manfred",
+        "neustadt",
+        "schmölders",
+        "since",
+        "specialist",
+        "titisee",
+        "titisee-neustadt"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-dr.-thomas-mrotzek",
+      "name": "Dr. Thomas Mrotzek",
+      "deptId": "anesthesiology",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "anesthesiology",
+        "department",
+        "head",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "klinik",
+        "mrotzek",
+        "neustadt",
+        "thomas",
+        "titisee",
+        "titisee-neustadt"
+      ]
+    },
+    {
+      "id": "helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer",
+      "name": "Prof. Dr. Benjamin Sommer",
+      "deptId": "general-and-visceral-surgery",
+      "clinicId": "helios-klinik-titisee-neustadt",
+      "cityId": "titisee-neustadt",
+      "keywords": [
+        "and",
+        "benjamin",
+        "general",
+        "general-and-visceral-surgery",
+        "head",
+        "helios",
+        "helios-klinik-titisee-neustadt",
+        "klinik",
+        "neustadt",
+        "prof",
+        "sommer",
+        "surgery",
+        "titisee",
+        "titisee-neustadt",
+        "visceral"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-daniel-schmitz",
+      "name": "Dr. Daniel Schmitz",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "daniel",
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "schmitz",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-gaston-schley",
+      "name": "Dr. Gaston Schley",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "gaston",
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "schley",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-jana-protzel",
+      "name": "Dr. Jana Protzel",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "jana",
+        "kliniken",
+        "protzel",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-karsten-alfke",
+      "name": "Dr. Karsten Alfke",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "alfke",
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "karsten",
+        "kliniken",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-martin-heinrich",
+      "name": "Dr. Martin Heinrich",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "heinrich",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "martin",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-mu-jan-kolarik",
+      "name": "Dr. MU Jan Kolarik",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "jan",
+        "kliniken",
+        "kolarik",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-raoul-hinze",
+      "name": "Dr. Raoul Hinze",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "hinze",
+        "kliniken",
+        "raoul",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-ruth-kolb-keerl",
+      "name": "Dr. Ruth Kölb-Keerl",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "keerl",
+        "kliniken",
+        "kölb",
+        "ruth",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-dr-stephan-henschen",
+      "name": "Dr. Stephan Henschen",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "henschen",
+        "kliniken",
+        "schwerin",
+        "specialist",
+        "stephan"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-prof-dr-alexander-staudt",
+      "name": "Prof. Dr. Alexander Staudt",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "alexander",
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "prof",
+        "schwerin",
+        "specialist",
+        "staudt"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-prof-dr-habil-stefan-zimny",
+      "name": "Prof. Dr. habil. Stefan Zimny",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "habil",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "prof",
+        "schwerin",
+        "specialist",
+        "stefan",
+        "zimny"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-prof-dr-name-not-provided",
+      "name": "Prof. Dr. (Name not provided)",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "name",
+        "not",
+        "prof",
+        "provided",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-prof-dr-oliver-heese",
+      "name": "Prof. Dr. Oliver Heese",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "general",
+        "heese",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "oliver",
+        "prof",
+        "schwerin",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-kliniken-schwerin-prof-dr-tobias-bartscht",
+      "name": "Prof. Dr. Tobias Bartscht",
+      "deptId": "general",
+      "clinicId": "helios-kliniken-schwerin",
+      "cityId": "schwerin",
+      "keywords": [
+        "bartscht",
+        "general",
+        "helios",
+        "helios-kliniken-schwerin",
+        "kliniken",
+        "prof",
+        "schwerin",
+        "specialist",
+        "tobias"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-dr.-jens-osel-ll.m.",
+      "name": "Dr. Jens Osel, LL.M.",
+      "deptId": "orthopedics",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "bad",
+        "bad-saarow",
+        "heads",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "jens",
+        "klinikum",
+        "leads",
+        "orthopedics",
+        "osel",
+        "regional",
+        "saarow",
+        "specialist",
+        "traumatologyorthopedics"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-dr.-stefan-wirtz",
+      "name": "Dr. Stefan Wirtz",
+      "deptId": "anesthesiology",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "anesthesia",
+        "anesthesiology",
+        "bad",
+        "bad-saarow",
+        "care",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "intensive",
+        "klinikum",
+        "leads",
+        "periopera",
+        "saarow",
+        "specialist",
+        "stefan",
+        "wirtz"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-dr.-walid-ibrahim",
+      "name": "Dr. Walid Ibrahim",
+      "deptId": "vascular-surgery",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-saarow",
+        "expert",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "hybrid",
+        "ibrahim",
+        "klinikum",
+        "oct",
+        "saarow",
+        "since",
+        "specialist",
+        "surgery",
+        "vascular",
+        "vascular-surgery",
+        "walid"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-pd-dr.-erdal-safak",
+      "name": "PD Dr. Erdal Safak",
+      "deptId": "cardiology",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "bad",
+        "bad-saarow",
+        "cardiology",
+        "emergencies",
+        "erdal",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "klinikum",
+        "like",
+        "may",
+        "saarow",
+        "safak",
+        "since",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba",
+      "name": "PD Dr. Konstantin Prass, MBA",
+      "deptId": "urology",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "bad",
+        "bad-saarow",
+        "experienced",
+        "heads",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "klinikum",
+        "konstantin",
+        "mba",
+        "neurologist",
+        "neurology",
+        "prass",
+        "saarow",
+        "specialist",
+        "urology",
+        "with"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-pd-dr.-thomas-schrom",
+      "name": "PD Dr. Thomas Schrom",
+      "deptId": "plastic-surgery",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-saarow",
+        "ent",
+        "head",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "klinikum",
+        "lead",
+        "leads",
+        "neck",
+        "plastic",
+        "plastic-surgery",
+        "saarow",
+        "schrom",
+        "surgery",
+        "thomas"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-pd-dr.-tobias-klatte",
+      "name": "PD Dr. Tobias Klatte",
+      "deptId": "urology",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-saarow",
+        "dec",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "klatte",
+        "klinikum",
+        "laparoscopic",
+        "oncol",
+        "robotic",
+        "saarow",
+        "since",
+        "specialist",
+        "tobias",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel",
+      "name": "Prof. Dr. Florian Hentschel",
+      "deptId": "gastroenterology",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "appointed",
+        "aug",
+        "bad",
+        "bad-saarow",
+        "covers",
+        "diabetology",
+        "florian",
+        "gastroenterology",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "hentschel",
+        "klinikum",
+        "prof",
+        "saarow",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-bad-saarow-prof.-dr.-julius-dengler",
+      "name": "Prof. Dr. Julius Dengler",
+      "deptId": "neurosurgery",
+      "clinicId": "helios-klinikum-bad-saarow",
+      "cityId": "bad-saarow",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-saarow",
+        "center",
+        "dengler",
+        "helios",
+        "helios-klinikum-bad-saarow",
+        "julius",
+        "klinikum",
+        "leads",
+        "neurosurgery",
+        "prof",
+        "saarow",
+        "specialist",
+        "spine"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner",
+      "name": "Dr. Christoph von Sonnleithner",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "christoph",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "sonnleithner",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-dr-david-schwaiberger",
+      "name": "Dr. David Schwaiberger",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "david",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "schwaiberger",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-dr-peter-reichardt",
+      "name": "Dr. Peter Reichardt",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "peter",
+        "reichardt",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff",
+      "name": "Prof. Dr. Daniel Kendoff",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch-endoklinik-berlin",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "daniel",
+        "endoklinik",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch-endoklinik-berlin",
+        "kendoff",
+        "klinikum",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-bertram-glaß",
+      "name": "Prof. Dr. Bertram Glaß",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "bertram",
+        "general",
+        "glaß",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-frank-kolligs",
+      "name": "Prof. Dr. Frank Kolligs",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "frank",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "kolligs",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-georg-hagemann",
+      "name": "Prof. Dr. Georg Hagemann",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "general",
+        "georg",
+        "hagemann",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-henning-t-baberg",
+      "name": "Prof. Dr. Henning T. Baberg",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "baberg",
+        "berlin",
+        "berlinbuch",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "henning",
+        "klinikum",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-marc-bloching",
+      "name": "Prof. Dr. Marc Bloching",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "bloching",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "marc",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-roger-wahba",
+      "name": "Prof. Dr. Roger Wahba",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "prof",
+        "roger",
+        "specialist",
+        "wahba"
+      ]
+    },
+    {
+      "id": "helios-klinikum-berlinbuch-prof-dr-stefan-dresel",
+      "name": "Prof. Dr. Stefan Dresel",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-berlinbuch",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "berlinbuch",
+        "dresel",
+        "general",
+        "helios",
+        "helios-klinikum-berlinbuch",
+        "klinikum",
+        "prof",
+        "specialist",
+        "stefan"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-dr-adam-czerwinski",
+      "name": "Dr. Adam Czerwinski",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "adam",
+        "behring",
+        "berlin",
+        "czerwinski",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-dr-axel-reinhardt",
+      "name": "Dr. Axel Reinhardt",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "axel",
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "reinhardt",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-dr-borge-arndt",
+      "name": "Dr. Börge Arndt",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "arndt",
+        "behring",
+        "berlin",
+        "börge",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-dr-christian-althoff",
+      "name": "Dr. Christian Althoff",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "althoff",
+        "behring",
+        "berlin",
+        "christian",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar",
+      "name": "Dr. Mohamed Zaatar",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "heckeshorn",
+        "helios",
+        "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn",
+        "klinikum",
+        "lungenklinik",
+        "mohamed",
+        "specialist",
+        "von",
+        "zaatar"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik",
+      "name": "Prof. Dr. Cemil Özcelik",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "cemil",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "prof",
+        "specialist",
+        "von",
+        "özcelik"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-eckart-schott",
+      "name": "Prof. Dr. Eckart Schott",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "eckart",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "prof",
+        "schott",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-georg-hagemann",
+      "name": "Prof. Dr. Georg Hagemann",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "georg",
+        "hagemann",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "prof",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-henning-t-baberg",
+      "name": "Prof. Dr. Henning T. Baberg",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "baberg",
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "henning",
+        "klinikum",
+        "prof",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen",
+      "name": "Prof. Dr. Marc H. Jansen",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "jansen",
+        "klinikum",
+        "marc",
+        "prof",
+        "specialist",
+        "von"
+      ]
+    },
+    {
+      "id": "helios-klinikum-emil-von-behring-prof-dr-roger-wahba",
+      "name": "Prof. Dr. Roger Wahba",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-emil-von-behring",
+      "cityId": "berlin",
+      "keywords": [
+        "behring",
+        "berlin",
+        "emil",
+        "general",
+        "helios",
+        "helios-klinikum-emil-von-behring",
+        "klinikum",
+        "prof",
+        "roger",
+        "specialist",
+        "von",
+        "wahba"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-dr-johannes-wikner",
+      "name": "Dr. Dr. Johannes Wikner",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "johannes",
+        "klinikum",
+        "specialist",
+        "wikner"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-med-ali-ezzati",
+      "name": "Dr. med. Ali Ezzati",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "ali",
+        "erfurt",
+        "ezzati",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-med-hendrik-bergert",
+      "name": "Dr. med. Hendrik Bergert",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "bergert",
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "hendrik",
+        "klinikum",
+        "med",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-med-jens-uwe-bauer",
+      "name": "Dr. med. Jens-Uwe Bauer",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "bauer",
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "jens",
+        "klinikum",
+        "med",
+        "specialist",
+        "uwe"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-med-jorg-kluge",
+      "name": "Dr. med. Jörg Kluge",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "jörg",
+        "klinikum",
+        "kluge",
+        "med",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-dr-med-thomas-werner",
+      "name": "Dr. med. Thomas Werner",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "specialist",
+        "thomas",
+        "werner"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-alexander-lauten",
+      "name": "Prof. Dr. med. Alexander Lauten",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "alexander",
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "lauten",
+        "med",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-attila-dubecz",
+      "name": "Prof. Dr. med. Attila Dubecz",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "attila",
+        "dubecz",
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach",
+      "name": "Prof. Dr. med. habil. Rüdiger Gerlach",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "gerlach",
+        "habil",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "prof",
+        "rüdiger",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk",
+      "name": "Prof. Dr. med. Heinrich V. Groesdonk",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "groesdonk",
+        "heinrich",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-holger-kaftan",
+      "name": "Prof. Dr. med. Holger Kaftan",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "holger",
+        "kaftan",
+        "klinikum",
+        "med",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer",
+      "name": "Prof. Dr. med. Wolfgang Neuhofer",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "med",
+        "neuhofer",
+        "prof",
+        "specialist",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "helios-klinikum-erfurt-prof-dr-thomas-steiner",
+      "name": "Prof. Dr. Thomas Steiner",
+      "deptId": "general",
+      "clinicId": "helios-klinikum-erfurt",
+      "cityId": "erfurt",
+      "keywords": [
+        "erfurt",
+        "general",
+        "helios",
+        "helios-klinikum-erfurt",
+        "klinikum",
+        "prof",
+        "specialist",
+        "steiner",
+        "thomas"
+      ]
+    },
+    {
+      "id": "helios-klinikum-pforzheim-dr.-michael-klopp",
+      "name": "Dr. Michael Klopp",
+      "deptId": "thoracic-surgery",
+      "clinicId": "helios-klinikum-pforzheim",
+      "cityId": "pforzheim",
+      "keywords": [
+        "certified",
+        "heidelb",
+        "helios",
+        "helios-klinikum-pforzheim",
+        "klinikum",
+        "klopp",
+        "michael",
+        "partner",
+        "pforzheim",
+        "specialist",
+        "surgeon",
+        "surgery",
+        "thoracic",
+        "thoracic-surgery"
+      ]
+    },
+    {
+      "id": "helios-klinikum-pforzheim-pd-dr.-bernd-maier",
+      "name": "PD Dr. Bernd Maier",
+      "deptId": "orthopedics",
+      "clinicId": "helios-klinikum-pforzheim",
+      "cityId": "pforzheim",
+      "keywords": [
+        "and",
+        "bernd",
+        "head",
+        "helios",
+        "helios-klinikum-pforzheim",
+        "klinikum",
+        "maier",
+        "orthopedic",
+        "orthopedics",
+        "pforzheim",
+        "spine",
+        "surgery",
+        "trauma"
+      ]
+    },
+    {
+      "id": "helios-klinikum-pforzheim-prof.-dr.-benjamin-berger",
+      "name": "Prof. Dr. Benjamin Berger",
+      "deptId": "urology",
+      "clinicId": "helios-klinikum-pforzheim",
+      "cityId": "pforzheim",
+      "keywords": [
+        "benjamin",
+        "berger",
+        "dementia",
+        "epilepsy",
+        "expert",
+        "helios",
+        "helios-klinikum-pforzheim",
+        "klinikum",
+        "parkinsons",
+        "pforzheim",
+        "prof",
+        "specialist",
+        "stroke",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-klinikum-pforzheim-prof.-dr.-christian-rupp",
+      "name": "Prof. Dr. Christian Rupp",
+      "deptId": "gastroenterology-and-diabetology",
+      "clinicId": "helios-klinikum-pforzheim",
+      "cityId": "pforzheim",
+      "keywords": [
+        "and",
+        "christian",
+        "diabetology",
+        "disease",
+        "expert",
+        "gastroenterology",
+        "gastroenterology-and-diabetology",
+        "helios",
+        "helios-klinikum-pforzheim",
+        "infectious",
+        "klinikum",
+        "pforzheim",
+        "prof",
+        "rupp",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna",
+      "name": "Prof. Dr. Shu Fon Muna",
+      "deptId": "urology",
+      "clinicId": "helios-klinikum-pforzheim",
+      "cityId": "pforzheim",
+      "keywords": [
+        "davinci",
+        "fon",
+        "helios",
+        "helios-klinikum-pforzheim",
+        "klinikum",
+        "muna",
+        "pforzheim",
+        "prof",
+        "robotic",
+        "shu",
+        "spe",
+        "specialist",
+        "surgery",
+        "urology"
+      ]
+    },
+    {
+      "id": "helios-krefeld-hunerliturkoglu",
+      "name": "Dr. med. Ali Nuri Hünerlitürkoglu",
+      "deptId": "hematology-oncology",
+      "clinicId": "helios-krefeld",
+      "cityId": "krefeld",
+      "keywords": [
+        "ali",
+        "helios",
+        "helios-krefeld",
+        "hematology",
+        "hematology-oncology",
+        "hünerlitürkoglu",
+        "krefeld",
+        "med",
+        "nuri",
+        "oncology",
+        "specialist"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-dr.-erich-bielesch",
+      "name": "Dr. Erich Bielesch",
+      "deptId": "general-and-visceral-surgery",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "bielesch",
+        "darmz",
+        "darmzentrum",
+        "erich",
+        "general",
+        "general-and-visceral-surgery",
+        "head",
+        "helios",
+        "helios-muenchen-west",
+        "muenchen",
+        "munich",
+        "since",
+        "surgery",
+        "visceral",
+        "west"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-dr.-reza-ghotbi",
+      "name": "Dr. Reza Ghotbi",
+      "deptId": "vascular-surgery",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "ghotbi",
+        "head",
+        "helios",
+        "helios-muenchen-west",
+        "honorary",
+        "muenchen",
+        "munich",
+        "reza",
+        "surgery",
+        "vascular",
+        "vascular-surgery",
+        "visiting",
+        "west"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-pd-dr.-denys-j.-loeffelbein",
+      "name": "PD Dr. Denys J. Loeffelbein",
+      "deptId": "plastic-surgery",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "denys",
+        "descri",
+        "face",
+        "helios",
+        "helios-muenchen-west",
+        "loeffelbein",
+        "muenchen",
+        "munich",
+        "plastic",
+        "plastic-surgery",
+        "reconstructive",
+        "specialist",
+        "surgery",
+        "west"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-pd-dr.-thomas-stark",
+      "name": "PD Dr. Thomas Stark",
+      "deptId": "ent",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "base",
+        "ent",
+        "expert",
+        "helios",
+        "helios-muenchen-west",
+        "implants",
+        "microsurgery",
+        "muenchen",
+        "munich",
+        "otorhinolaryngology",
+        "skull",
+        "specialist",
+        "stark",
+        "thomas",
+        "west"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-prof.-dr.-elias-volkmer",
+      "name": "Prof. Dr. Elias Volkmer",
+      "deptId": "hand-surgery",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "descri",
+        "elias",
+        "hand",
+        "hand-surgery",
+        "helios",
+        "helios-muenchen-west",
+        "muenchen",
+        "munich",
+        "prof",
+        "reconstructive",
+        "specialist",
+        "surgery",
+        "trauma",
+        "volkmer",
+        "west"
+      ]
+    },
+    {
+      "id": "helios-muenchen-west-prof.-dr.-sebastian-kufner",
+      "name": "Prof. Dr. Sebastian Kufner",
+      "deptId": "cardiology",
+      "clinicId": "helios-muenchen-west",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "cardiology",
+        "descri",
+        "expert",
+        "helios",
+        "helios-muenchen-west",
+        "interventional",
+        "kufner",
+        "mechan",
+        "muenchen",
+        "munich",
+        "prof",
+        "sebastian",
+        "specialist",
+        "west"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-bruno-reichart",
+      "name": "Prof. Dr. Bruno Reichart",
+      "deptId": "cardiac-surgery",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "bruno",
+        "cardiac",
+        "cardiac-surgery",
+        "first",
+        "germanys",
+        "heart",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "lung",
+        "muenchen",
+        "munich",
+        "münchen",
+        "performed",
+        "prof",
+        "reichart",
+        "specialist",
+        "surgery"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief",
+      "name": "Prof. Dr. Christian Georg Stief",
+      "deptId": "urology",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "andrology",
+        "christian",
+        "expert",
+        "georg",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "muenchen",
+        "munich",
+        "münchen",
+        "oncology",
+        "prof",
+        "since",
+        "specialist",
+        "stief",
+        "uro",
+        "urology"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-florian-ringel",
+      "name": "Prof. Dr. Florian Ringel",
+      "deptId": "neurosurgery",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "brain",
+        "descri",
+        "expert",
+        "florian",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "muenchen",
+        "munich",
+        "münchen",
+        "neuro",
+        "neurosurgery",
+        "oncology",
+        "prof",
+        "ringel",
+        "sinc",
+        "specialist",
+        "tumors"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-paolo-brenner",
+      "name": "Prof. Dr. Paolo Brenner",
+      "deptId": "cardiac-surgery",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "brenner",
+        "cardiac",
+        "cardiac-surgery",
+        "ecmo",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "muenchen",
+        "munich",
+        "münchen",
+        "paolo",
+        "prof",
+        "specialist",
+        "surgery",
+        "xenotransplantation"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels",
+      "name": "Prof. Dr. Rolf D. Issels",
+      "deptId": "oncology",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "for",
+        "hyperthermia",
+        "introduced",
+        "issels",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "muenchen",
+        "munich",
+        "münchen",
+        "oncology",
+        "prof",
+        "rolf",
+        "sarcomas",
+        "specialist",
+        "treatment"
+      ]
+    },
+    {
+      "id": "lmu-klinikum-muenchen-prof.-dr.-volker-heinemann",
+      "name": "Prof. Dr. Volker Heinemann",
+      "deptId": "oncology",
+      "clinicId": "lmu-klinikum-muenchen",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "descri",
+        "expert",
+        "heinemann",
+        "hematology",
+        "klinikum",
+        "lmu",
+        "lmu-klinikum-muenchen",
+        "muenchen",
+        "munich",
+        "münchen",
+        "oncology",
+        "prof",
+        "recognized",
+        "specialist",
+        "volker"
+      ]
+    },
+    {
+      "id": "medical-park-bad-feilnbach-dr.-andreas-arndt",
+      "name": "Dr. Andreas Arndt",
+      "deptId": "oncology",
+      "clinicId": "medical-park-bad-feilnbach",
+      "cityId": "bad-feilnbach",
+      "keywords": [
+        "andreas",
+        "arndt",
+        "bad",
+        "bad-feilnbach",
+        "feilnbach",
+        "head",
+        "medical",
+        "medical-park-bad-feilnbach",
+        "nutrition",
+        "oncological",
+        "oncology",
+        "park",
+        "rehabilitation"
+      ]
+    },
+    {
+      "id": "medical-park-bad-feilnbach-dr.-rainer-ahrens",
+      "name": "Dr. Rainer Ahrens",
+      "deptId": "geriatrics",
+      "clinicId": "medical-park-bad-feilnbach",
+      "cityId": "bad-feilnbach",
+      "keywords": [
+        "ahrens",
+        "bad",
+        "bad-feilnbach",
+        "clinic",
+        "feilnbach",
+        "geriatric",
+        "geriatrics",
+        "head",
+        "medical",
+        "medical-park-bad-feilnbach",
+        "modern",
+        "park",
+        "rainer",
+        "rehab"
+      ]
+    },
+    {
+      "id": "medical-park-bad-feilnbach-prof.-dr.-peter-young",
+      "name": "Prof. Dr. Peter Young",
+      "deptId": "urology",
+      "clinicId": "medical-park-bad-feilnbach",
+      "cityId": "bad-feilnbach",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-feilnbach",
+        "expert",
+        "feilnbach",
+        "medical",
+        "medical-park-bad-feilnbach",
+        "neurogenetics",
+        "neurophysiology",
+        "park",
+        "peter",
+        "prof",
+        "specialist",
+        "urology",
+        "young"
+      ]
+    },
+    {
+      "id": "medical-park-bad-rodach-dr.-dirk-zauper",
+      "name": "Dr. Dirk Zauper",
+      "deptId": "urology",
+      "clinicId": "medical-park-bad-rodach",
+      "cityId": "bad-rodach",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-rodach",
+        "dirk",
+        "medical",
+        "medical-park-bad-rodach",
+        "neurology",
+        "park",
+        "psychiatry",
+        "psycho",
+        "rodach",
+        "specialist",
+        "urology",
+        "zauper"
+      ]
+    },
+    {
+      "id": "medical-park-bad-rodach-dr.-johannes-juergen-mees",
+      "name": "Dr. Johannes Jürgen Mees",
+      "deptId": "orthopedics",
+      "clinicId": "medical-park-bad-rodach",
+      "cityId": "bad-rodach",
+      "keywords": [
+        "acu",
+        "bad",
+        "bad-rodach",
+        "expert",
+        "johannes",
+        "jürgen",
+        "manual",
+        "medical",
+        "medical-park-bad-rodach",
+        "medicine",
+        "mees",
+        "orthopedics",
+        "park",
+        "rodach",
+        "social",
+        "specialist",
+        "therapy"
+      ]
+    },
+    {
+      "id": "medical-park-bad-wiessee-dr.-nadine-dreyer",
+      "name": "Dr. Nadine Dreyer",
+      "deptId": "orthopedics",
+      "clinicId": "medical-park-bad-wiessee",
+      "cityId": "bad-wiessee",
+      "keywords": [
+        "bad",
+        "bad-wiessee",
+        "chiropractic",
+        "dreyer",
+        "medical",
+        "medical-park-bad-wiessee",
+        "medicine",
+        "nadine",
+        "orthopedics",
+        "park",
+        "specialist",
+        "sports",
+        "wiessee"
+      ]
+    },
+    {
+      "id": "medical-park-bad-wiessee-pd-dr.-andreas-stein",
+      "name": "PD Dr. Andreas Stein",
+      "deptId": "cardiology",
+      "clinicId": "medical-park-bad-wiessee",
+      "cityId": "bad-wiessee",
+      "keywords": [
+        "and",
+        "andreas",
+        "bad",
+        "bad-wiessee",
+        "cardi",
+        "cardiology",
+        "catheter",
+        "descri",
+        "interventions",
+        "medical",
+        "medical-park-bad-wiessee",
+        "park",
+        "specialist",
+        "stein",
+        "wiessee"
+      ]
+    },
+    {
+      "id": "medical-park-bad-wiessee-prof.-dr.-andrea-meurer",
+      "name": "Prof. Dr. Andrea Meurer",
+      "deptId": "orthopedics",
+      "clinicId": "medical-park-bad-wiessee",
+      "cityId": "bad-wiessee",
+      "keywords": [
+        "and",
+        "andrea",
+        "bad",
+        "bad-wiessee",
+        "descri",
+        "expert",
+        "medical",
+        "medical-park-bad-wiessee",
+        "meurer",
+        "orthopedic",
+        "orthopedics",
+        "park",
+        "prof",
+        "rheumatology",
+        "specialist",
+        "surgery",
+        "wiessee"
+      ]
+    },
+    {
+      "id": "medical-park-bad-wiessee-prof.-dr.-christian-firschke",
+      "name": "Prof. Dr. Christian Firschke",
+      "deptId": "internal-medicine",
+      "clinicId": "medical-park-bad-wiessee",
+      "cityId": "bad-wiessee",
+      "keywords": [
+        "and",
+        "bad",
+        "bad-wiessee",
+        "cardiology",
+        "christian",
+        "descri",
+        "ech",
+        "expert",
+        "firschke",
+        "internal",
+        "internal-medicine",
+        "interventional",
+        "medical",
+        "medical-park-bad-wiessee",
+        "medicine",
+        "park",
+        "prof",
+        "specialist",
+        "wiessee"
+      ]
+    },
+    {
+      "id": "medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer",
+      "name": "Prof. Dr. Karsten E. Dreinhöfer",
+      "deptId": "general",
+      "clinicId": "medical-park-berlin-humboldtmuhle",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "dreinhöfer",
+        "general",
+        "humboldtmuhle",
+        "karsten",
+        "medical",
+        "medical-park-berlin-humboldtmuhle",
+        "park",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger",
+      "name": "Prof. Dr. Martin Ebinger",
+      "deptId": "general",
+      "clinicId": "medical-park-berlin-humboldtmuhle",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "ebinger",
+        "general",
+        "humboldtmuhle",
+        "martin",
+        "medical",
+        "medical-park-berlin-humboldtmuhle",
+        "park",
+        "prof",
+        "specialist"
+      ]
+    },
+    {
+      "id": "medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody",
+      "name": "Prof. Dr. Marcus Schmitt-Sody",
+      "deptId": "orthopedics",
+      "clinicId": "medical-park-bernau-felden-chiemsee",
+      "cityId": "bernau-am-chiemsee",
+      "keywords": [
+        "and",
+        "bernau",
+        "bernau-am-chiemsee",
+        "chiemsee",
+        "descri",
+        "expert",
+        "felden",
+        "marcus",
+        "medical",
+        "medical-park-bernau-felden-chiemsee",
+        "medicine",
+        "orthopedics",
+        "park",
+        "prof",
+        "schmitt",
+        "sinc",
+        "sody",
+        "specialist",
+        "sports"
+      ]
+    },
+    {
+      "id": "medical-park-chiemseeblick-prof.-dr.-andreas-menke",
+      "name": "Prof. Dr. Andreas Menke",
+      "deptId": "psychosomatic-medicine-and-psychotherapy",
+      "clinicId": "medical-park-chiemseeblick",
+      "cityId": "bernau-am-chiemsee",
+      "keywords": [
+        "andreas",
+        "bernau",
+        "bernau-am-chiemsee",
+        "bipolar",
+        "chiemsee",
+        "chiemseeblick",
+        "depression",
+        "diso",
+        "medical",
+        "medical-park-chiemseeblick",
+        "medicine",
+        "menke",
+        "park",
+        "prof",
+        "psychosomatic",
+        "psychosomatic-medicine-and-psychotherapy",
+        "psychotherapy",
+        "specialist",
+        "stress"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-dr-andre-kwalek",
+      "name": "Dr. André Kwalek",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "andr",
+        "berlin",
+        "general",
+        "kwalek",
+        "schlossparkklinik",
+        "specialist"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-dr-dominik-schuster",
+      "name": "Dr. Dominik Schuster",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "dominik",
+        "general",
+        "schlossparkklinik",
+        "schuster",
+        "specialist"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-dr-shahram-yousefi",
+      "name": "Dr. Shahram Yousefi",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "schlossparkklinik",
+        "shahram",
+        "specialist",
+        "yousefi"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-prof-dr-carsten-kamphues",
+      "name": "Prof. Dr. Carsten Kamphues",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "carsten",
+        "general",
+        "kamphues",
+        "prof",
+        "schlossparkklinik",
+        "specialist"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-prof-dr-theodoros-kombos",
+      "name": "Prof. Dr. Theodoros Kombos",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "kombos",
+        "prof",
+        "schlossparkklinik",
+        "specialist",
+        "theodoros"
+      ]
+    },
+    {
+      "id": "schlossparkklinik-prof-dr-thomas-lempert",
+      "name": "Prof. Dr. Thomas Lempert",
+      "deptId": "general",
+      "clinicId": "schlossparkklinik",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "lempert",
+        "prof",
+        "schlossparkklinik",
+        "specialist",
+        "thomas"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer",
+      "name": "Prof. Dr. Bernhard Meyer",
+      "deptId": "neurosurgery",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "bernhard",
+        "der",
+        "head",
+        "isar",
+        "klinikum",
+        "kopf",
+        "meyer",
+        "muenchen",
+        "munich",
+        "neuro",
+        "neurosurgery",
+        "prof",
+        "rechts",
+        "tum",
+        "tum-klinikum-rechts-der-isar",
+        "zentrum"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann",
+      "name": "Prof. Dr. Florian Bassermann",
+      "deptId": "hematology-oncology",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "bassermann",
+        "clinical",
+        "der",
+        "florian",
+        "head",
+        "hemato",
+        "hematology",
+        "hematology-oncology",
+        "isar",
+        "klinikum",
+        "leads",
+        "muenchen",
+        "munich",
+        "oncology",
+        "prof",
+        "rechts",
+        "tum",
+        "tum-klinikum-rechts-der-isar"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess",
+      "name": "Prof. Dr. Helmut Friess",
+      "deptId": "general-and-visceral-surgery",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "bile",
+        "der",
+        "ducts",
+        "focus",
+        "friess",
+        "general",
+        "general-and-visceral-surgery",
+        "helmut",
+        "isar",
+        "klinikum",
+        "liver",
+        "muenchen",
+        "munich",
+        "pancreas",
+        "prof",
+        "rechts",
+        "specialist",
+        "surgery",
+        "tum",
+        "tum-klinikum-rechts-der-isar",
+        "visceral"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend",
+      "name": "Prof. Dr. Jürgen E. Gschwend",
+      "deptId": "urology",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "clinic",
+        "der",
+        "gschwend",
+        "head",
+        "isar",
+        "jürgen",
+        "klinikum",
+        "muenchen",
+        "munich",
+        "polyclinic",
+        "prof",
+        "rechts",
+        "tum",
+        "tum-klinikum-rechts-der-isar",
+        "urology"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz",
+      "name": "Prof. Dr. Karl-Ludwig Laugwitz",
+      "deptId": "cardiology",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "cardiology",
+        "der",
+        "expert",
+        "interventional",
+        "isar",
+        "karl",
+        "klinikum",
+        "laugwitz",
+        "ludwig",
+        "muenchen",
+        "munich",
+        "prof",
+        "rechts",
+        "specialist",
+        "tum",
+        "tum-klinikum-rechts-der-isar"
+      ]
+    },
+    {
+      "id": "tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs",
+      "name": "Prof. Dr. Stephanie E. Combs",
+      "deptId": "radiation-oncology",
+      "clinicId": "tum-klinikum-rechts-der-isar",
+      "cityId": "muenchen",
+      "keywords": [
+        "and",
+        "combs",
+        "dean",
+        "der",
+        "descri",
+        "head",
+        "isar",
+        "klinikum",
+        "medical",
+        "muenchen",
+        "munich",
+        "oncology",
+        "prof",
+        "radiation",
+        "radiation-oncology",
+        "radiotherapy",
+        "rechts",
+        "stephanie",
+        "tum",
+        "tum-klinikum-rechts-der-isar"
+      ]
     },
     {
       "id": "uk-koeln-goldbrunner",
@@ -38,22 +3805,2458 @@
       "deptId": "neurosurgery",
       "clinicId": "uk-koeln",
       "cityId": "koeln",
-      "keywords": ["neurosurgery", "brain tumors"]
+      "keywords": [
+        "cologne",
+        "goldbrunner",
+        "hospital",
+        "koeln",
+        "med",
+        "neurosurgery",
+        "prof",
+        "roland",
+        "specialist",
+        "uk-koeln",
+        "univ",
+        "university"
+      ]
+    },
+    {
+      "id": "uk-koeln-hallek",
+      "name": "Prof. Dr. med. Michael Hallek",
+      "deptId": "hematology-oncology",
+      "clinicId": "uk-koeln",
+      "cityId": "koeln",
+      "keywords": [
+        "cologne",
+        "hallek",
+        "hematology",
+        "hematology-oncology",
+        "hospital",
+        "koeln",
+        "med",
+        "michael",
+        "oncology",
+        "prof",
+        "specialist",
+        "uk-koeln",
+        "university"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-bernau-dr.-arndt-von-kirchbach",
+      "name": "Dr. Arndt von Kirchbach",
+      "deptId": "trauma-surgery",
+      "clinicId": "universitaetsklinikum-bernau",
+      "cityId": "bernau-bei-berlin",
+      "keywords": [
+        "and",
+        "arndt",
+        "bei",
+        "berlin",
+        "bernau",
+        "bernau-bei-berlin",
+        "head",
+        "hernia",
+        "kirchbach",
+        "oct",
+        "oncologic",
+        "since",
+        "surg",
+        "surgery",
+        "trauma",
+        "trauma-surgery",
+        "universitaetsklinikum-bernau",
+        "universitätsklinikum",
+        "von"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-bernau-dr.-michael-zaenker",
+      "name": "Dr. Michael Zänker",
+      "deptId": "urology",
+      "clinicId": "universitaetsklinikum-bernau",
+      "cityId": "bernau-bei-berlin",
+      "keywords": [
+        "also",
+        "bei",
+        "berlin",
+        "bernau",
+        "bernau-bei-berlin",
+        "hospital",
+        "hygienist",
+        "michael",
+        "role",
+        "since",
+        "specialist",
+        "universitaetsklinikum-bernau",
+        "universitätsklinikum",
+        "urology",
+        "zänker"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik",
+      "name": "Prof. Dr. Cemil Özcelik",
+      "deptId": "internal-medicine",
+      "clinicId": "universitaetsklinikum-bernau",
+      "cityId": "bernau-bei-berlin",
+      "keywords": [
+        "bei",
+        "berlin",
+        "bernau",
+        "bernau-bei-berlin",
+        "cardiology",
+        "cemil",
+        "head",
+        "internal",
+        "internal-medicine",
+        "interven",
+        "medicine",
+        "prof",
+        "specialization",
+        "universitaetsklinikum-bernau",
+        "universitätsklinikum",
+        "özcelik"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba",
+      "name": "Prof. Dr. Johannes Maximilian Albes, MBA",
+      "deptId": "cardiac-surgery",
+      "clinicId": "universitaetsklinikum-bernau",
+      "cityId": "bernau-bei-berlin",
+      "keywords": [
+        "albes",
+        "and",
+        "bei",
+        "berlin",
+        "bernau",
+        "bernau-bei-berlin",
+        "cardiac",
+        "cardiac-surgery",
+        "coronary",
+        "johannes",
+        "maximilian",
+        "mba",
+        "prof",
+        "specialist",
+        "surgery",
+        "universitaetsklinikum-bernau",
+        "universitätsklinikum",
+        "valve"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter",
+      "name": "Univ.-Prof. Dr. Christian Butter",
+      "deptId": "cardiology",
+      "clinicId": "universitaetsklinikum-bernau",
+      "cityId": "bernau-bei-berlin",
+      "keywords": [
+        "bei",
+        "berlin",
+        "bernau",
+        "bernau-bei-berlin",
+        "butter",
+        "cardiology",
+        "christian",
+        "medicine",
+        "pioneer",
+        "prof",
+        "professor",
+        "since",
+        "specialist",
+        "univ",
+        "universitaetsklinikum-bernau",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach",
+      "name": "Dr. Arndt von Kirchbach",
+      "deptId": "trauma-surgery",
+      "clinicId": "universitaetsklinikum-brandenburg-havel",
+      "cityId": "brandenburg-an-der-havel",
+      "keywords": [
+        "and",
+        "arndt",
+        "brandenburg",
+        "brandenburg-an-der-havel",
+        "der",
+        "general",
+        "havel",
+        "heads",
+        "kirchbach",
+        "oct",
+        "since",
+        "specialist",
+        "surgery",
+        "trauma",
+        "trauma-surgery",
+        "universitaetsklinikum-brandenburg-havel",
+        "universitätsklinikum",
+        "von"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo",
+      "name": "PD Dr. Carlos Albert Reck-Burneo",
+      "deptId": "urology",
+      "clinicId": "universitaetsklinikum-brandenburg-havel",
+      "cityId": "brandenburg-an-der-havel",
+      "keywords": [
+        "albert",
+        "brandenburg",
+        "brandenburg-an-der-havel",
+        "burneo",
+        "carlos",
+        "colorectal",
+        "der",
+        "expert",
+        "havel",
+        "may",
+        "pediatric",
+        "reck",
+        "since",
+        "specialist",
+        "universitaetsklinikum-brandenburg-havel",
+        "universitätsklinikum",
+        "urology"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald",
+      "name": "Prof. Dr. Christian Ewald",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-brandenburg-havel",
+      "cityId": "brandenburg-an-der-havel",
+      "keywords": [
+        "and",
+        "brandenburg",
+        "brandenburg-an-der-havel",
+        "christian",
+        "cofounder",
+        "der",
+        "ewald",
+        "havel",
+        "head",
+        "neuroon",
+        "neurosurgery",
+        "prof",
+        "universitaetsklinikum-brandenburg-havel",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert",
+      "name": "Prof. Dr. P. Markus Deckert",
+      "deptId": "oncology",
+      "clinicId": "universitaetsklinikum-brandenburg-havel",
+      "cityId": "brandenburg-an-der-havel",
+      "keywords": [
+        "accredited",
+        "brandenburg",
+        "brandenburg-an-der-havel",
+        "can",
+        "center",
+        "deckert",
+        "der",
+        "descri",
+        "german",
+        "havel",
+        "heads",
+        "markus",
+        "oncology",
+        "prof",
+        "specialist",
+        "universitaetsklinikum-brandenburg-havel",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker",
+      "name": "Prof. Dr. Roland Becker",
+      "deptId": "orthopedics",
+      "clinicId": "universitaetsklinikum-brandenburg-havel",
+      "cityId": "brandenburg-an-der-havel",
+      "keywords": [
+        "and",
+        "becker",
+        "brandenburg",
+        "brandenburg-an-der-havel",
+        "der",
+        "descri",
+        "havel",
+        "joint",
+        "orthopedic",
+        "orthopedics",
+        "prof",
+        "rep",
+        "roland",
+        "specialist",
+        "surgery",
+        "universitaetsklinikum-brandenburg-havel",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-dr.-cordula-sikorski",
+      "name": "Dr. Cordula Sikorski",
+      "deptId": "psychiatry",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "cordula",
+        "cottbus",
+        "expert",
+        "integ",
+        "psychiatry",
+        "sikorski",
+        "since",
+        "social",
+        "specialist",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-dr.-cornelia-schmidt",
+      "name": "Dr. Cornelia Schmidt",
+      "deptId": "orthopedics",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "cornelia",
+        "cottbus",
+        "expert",
+        "joint",
+        "jul",
+        "orthopedics",
+        "replacement",
+        "schmidt",
+        "since",
+        "specialist",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-dr.-tim-flasbeck",
+      "name": "Dr. Tim Flasbeck",
+      "deptId": "emergency-medicine",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "cottbus",
+        "emergency",
+        "emergency-medicine",
+        "expert",
+        "flasbeck",
+        "heads",
+        "medicine",
+        "optimizatio",
+        "process",
+        "specialist",
+        "tim",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-pd-dr.-gero-wieners",
+      "name": "PD Dr. Gero Wieners",
+      "deptId": "radiology",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "charit",
+        "cottbus",
+        "formerly",
+        "gero",
+        "modern",
+        "radiology",
+        "sep",
+        "since",
+        "specialist",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum",
+        "wieners"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber",
+      "name": "PD Dr. Martin Schmidt-Hieber",
+      "deptId": "hematology-oncology",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "and",
+        "cottbus",
+        "descri",
+        "diagnosis",
+        "hemat",
+        "hematology",
+        "hematology-oncology",
+        "hieber",
+        "martin",
+        "oncology",
+        "schmidt",
+        "specialist",
+        "treatment",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-pd-dr.-rainer-kube",
+      "name": "PD Dr. Rainer Kube",
+      "deptId": "general-surgery",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "and",
+        "broad",
+        "cottbus",
+        "descri",
+        "general",
+        "general-surgery",
+        "kube",
+        "leads",
+        "rainer",
+        "specialist",
+        "spectrum",
+        "surgery",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum",
+        "visceral"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban",
+      "name": "Prof. Dr. Ehab Shiban",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "cottbus",
+        "ehab",
+        "expert",
+        "jun",
+        "neurooncology",
+        "neurosurgery",
+        "prof",
+        "shiban",
+        "since",
+        "skull",
+        "specialist",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs",
+      "name": "Prof. Dr. Helmut Sachs",
+      "deptId": "ophthalmology",
+      "clinicId": "universitaetsklinikum-cottbus",
+      "cityId": "cottbus",
+      "keywords": [
+        "apr",
+        "chip",
+        "cottbus",
+        "helmut",
+        "implan",
+        "ophthalmology",
+        "pioneer",
+        "prof",
+        "retinal",
+        "sachs",
+        "since",
+        "specialist",
+        "universitaetsklinikum-cottbus",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling",
+      "name": "Prof. Dr. med. Gerd Geerling",
+      "deptId": "ophthalmology",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "cente",
+        "director",
+        "duesseldorf",
+        "düsseldorf",
+        "geerling",
+        "gerd",
+        "international",
+        "med",
+        "ophthalmology",
+        "prof",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel",
+      "name": "Prof. Dr. med. habil. Wolfram Trudo Knoefel",
+      "deptId": "general-surgery",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "clinic",
+        "duesseldorf",
+        "düsseldorf",
+        "expert",
+        "general",
+        "general-surgery",
+        "habil",
+        "head",
+        "knoefel",
+        "med",
+        "prof",
+        "since",
+        "surgery",
+        "surgical",
+        "trudo",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum",
+        "wolfram"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust",
+      "name": "Prof. Dr. med. Katharina Faust",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "duesseldorf",
+        "düsseldorf",
+        "faust",
+        "focus",
+        "head",
+        "katharina",
+        "med",
+        "neurosurgery",
+        "nov",
+        "prof",
+        "since",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm",
+      "name": "Prof. Dr. med. Malte Kelm",
+      "deptId": "cardiology",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "and",
+        "angiology",
+        "cardiology",
+        "duesseldorf",
+        "düsseldorf",
+        "head",
+        "kelm",
+        "malte",
+        "med",
+        "pneumology",
+        "prof",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden",
+      "name": "Prof. Dr. med. univ. Michael Roden",
+      "deptId": "endocrinology",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "and",
+        "diabetology",
+        "duesseldorf",
+        "düsseldorf",
+        "endocrinology",
+        "head",
+        "interna",
+        "med",
+        "michael",
+        "prof",
+        "roden",
+        "univ",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting",
+      "name": "Univ.-Prof. Dr. med. Uwe Maus (acting)",
+      "deptId": "orthopedics",
+      "clinicId": "universitaetsklinikum-duesseldorf",
+      "cityId": "duesseldorf",
+      "keywords": [
+        "acting",
+        "and",
+        "descri",
+        "director",
+        "duesseldorf",
+        "düsseldorf",
+        "maus",
+        "med",
+        "orthopedics",
+        "prof",
+        "surg",
+        "trauma",
+        "univ",
+        "universitaetsklinikum-duesseldorf",
+        "universitätsklinikum",
+        "uwe"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich",
+      "name": "Prof. Dr. Bernd Wullich",
+      "deptId": "oncology",
+      "clinicId": "universitaetsklinikum-erlangen",
+      "cityId": "erlangen",
+      "keywords": [
+        "bernd",
+        "cancer",
+        "centers",
+        "coordinates",
+        "erlangen",
+        "oncology",
+        "prof",
+        "specialist",
+        "treatment",
+        "universitaetsklinikum-erlangen",
+        "universitätsklinikum",
+        "wullich"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald",
+      "name": "Prof. Dr. Oliver Dewald",
+      "deptId": "cardiac-surgery",
+      "clinicId": "universitaetsklinikum-erlangen",
+      "cityId": "erlangen",
+      "keywords": [
+        "adult",
+        "and",
+        "both",
+        "cardiac",
+        "cardiac-surgery",
+        "descri",
+        "dewald",
+        "erlangen",
+        "leads",
+        "oliver",
+        "pediatric",
+        "prof",
+        "specialist",
+        "surgery",
+        "universitaetsklinikum-erlangen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell",
+      "name": "Prof. Dr. Oliver Schnell",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-erlangen",
+      "cityId": "erlangen",
+      "keywords": [
+        "and",
+        "descri",
+        "erlangen",
+        "head",
+        "neuro",
+        "neurosurgery",
+        "oliver",
+        "oncology",
+        "prof",
+        "schnell",
+        "since",
+        "universitaetsklinikum-erlangen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach",
+      "name": "Prof. Dr. Stephan Achenbach",
+      "deptId": "cardiology",
+      "clinicId": "universitaetsklinikum-erlangen",
+      "cityId": "erlangen",
+      "keywords": [
+        "achenbach",
+        "cardiology",
+        "descri",
+        "erlangen",
+        "expert",
+        "interventional",
+        "leading",
+        "prof",
+        "specialist",
+        "stephan",
+        "universitaetsklinikum-erlangen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-erlangen-unknown",
+      "name": "Unknown",
+      "deptId": "urology",
+      "clinicId": "universitaetsklinikum-erlangen",
+      "cityId": "erlangen",
+      "keywords": [
+        "con",
+        "current",
+        "descri",
+        "erlangen",
+        "head",
+        "information",
+        "not",
+        "universitaetsklinikum-erlangen",
+        "universitätsklinikum",
+        "unknown",
+        "urology"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas",
+      "name": "Prof. Dr. Bernhard Banas",
+      "deptId": "nephrology",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "banas",
+        "bernhard",
+        "biomarkers",
+        "focus",
+        "kidney",
+        "nephrology",
+        "prof",
+        "regensburg",
+        "specialist",
+        "transplantation",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt",
+      "name": "Prof. Dr. Hans Jürgen Schlitt",
+      "deptId": "general",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "comple",
+        "descri",
+        "general",
+        "hans",
+        "jürgen",
+        "liver",
+        "prof",
+        "regensburg",
+        "schlitt",
+        "specialist",
+        "transplantation",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann",
+      "name": "Prof. Dr. Hans-Stefan Hofmann",
+      "deptId": "thoracic-surgery",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "hans",
+        "heart",
+        "hofmann",
+        "interventions",
+        "lungs",
+        "performs",
+        "prof",
+        "regensburg",
+        "specialist",
+        "stefan",
+        "surgery",
+        "thoracic",
+        "thoracic-surgery",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-lars-maier",
+      "name": "Prof. Dr. Lars Maier",
+      "deptId": "university-cardio-center-internal-medicine-ii",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "cardio",
+        "cardiology",
+        "center",
+        "head",
+        "intensive",
+        "internal",
+        "lars",
+        "maier",
+        "med",
+        "medicine",
+        "prof",
+        "pulmonology",
+        "regensburg",
+        "universitaetsklinikum-regensburg",
+        "university",
+        "university-cardio-center-internal-medicine-ii",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling",
+      "name": "Prof. Dr. Martina Müller-Schilling",
+      "deptId": "gastroenterology",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "descri",
+        "diseases",
+        "gastroenterology",
+        "gastrointestinal",
+        "martina",
+        "müller",
+        "prof",
+        "regensburg",
+        "schilling",
+        "specialist",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-michael-melter",
+      "name": "Prof. Dr. Michael Melter",
+      "deptId": "pediatrics",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "degum",
+        "expert",
+        "high",
+        "iii",
+        "level",
+        "melter",
+        "michael",
+        "pediatrics",
+        "prof",
+        "regensburg",
+        "specialist",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt",
+      "name": "Prof. Dr. Nils Ole Schmidt",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "brain",
+        "disea",
+        "expert",
+        "neuro",
+        "neurosurgery",
+        "nils",
+        "ole",
+        "oncology",
+        "prof",
+        "regensburg",
+        "schmidt",
+        "specialist",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum",
+        "vascular"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl",
+      "name": "Prof. Dr. Oliver Kölbl",
+      "deptId": "radiation-oncology",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "cancer",
+        "descri",
+        "head",
+        "innovative",
+        "kölbl",
+        "oliver",
+        "oncology",
+        "prof",
+        "radiation",
+        "radiation-oncology",
+        "radiotherapy",
+        "regensburg",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum",
+        "with"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-ralf-linker",
+      "name": "Prof. Dr. Ralf Linker",
+      "deptId": "urology",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "expert",
+        "linker",
+        "nervous",
+        "prof",
+        "ralf",
+        "regensburg",
+        "specialist",
+        "stroke",
+        "system",
+        "tumors",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum",
+        "urology"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr",
+      "name": "Prof. Dr. Wolfgang Herr",
+      "deptId": "hematology-oncology",
+      "clinicId": "universitaetsklinikum-regensburg",
+      "cityId": "regensburg",
+      "keywords": [
+        "and",
+        "bone",
+        "car",
+        "cell",
+        "expert",
+        "hematology",
+        "hematology-oncology",
+        "herr",
+        "marrow",
+        "oncology",
+        "prof",
+        "regensburg",
+        "specialist",
+        "therapy",
+        "universitaetsklinikum-regensburg",
+        "universitätsklinikum",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele",
+      "name": "Prof. Dr. Hermann Einsele",
+      "deptId": "hematology-oncology",
+      "clinicId": "universitaetsklinikum-wuerzburg",
+      "cityId": "wuerzburg",
+      "keywords": [
+        "and",
+        "descri",
+        "einsele",
+        "expert",
+        "hematology",
+        "hematology-oncology",
+        "hermann",
+        "oncology",
+        "prof",
+        "renowned",
+        "sin",
+        "specialist",
+        "universitaetsklinikum-wuerzburg",
+        "universitätsklinikum",
+        "wuerzburg",
+        "würzburg"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler",
+      "name": "Prof. Dr. Hubert Kübler",
+      "deptId": "urology",
+      "clinicId": "universitaetsklinikum-wuerzburg",
+      "cityId": "wuerzburg",
+      "keywords": [
+        "and",
+        "clinic",
+        "head",
+        "hubert",
+        "kübler",
+        "pediatric",
+        "prof",
+        "universitaetsklinikum-wuerzburg",
+        "universitätsklinikum",
+        "urology",
+        "wuerzburg",
+        "würzburg"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou",
+      "name": "Prof. Dr. Ralf Bargou",
+      "deptId": "oncology",
+      "clinicId": "universitaetsklinikum-wuerzburg",
+      "cityId": "wuerzburg",
+      "keywords": [
+        "bargou",
+        "oncology",
+        "prof",
+        "professo",
+        "professor",
+        "ralf",
+        "specialist",
+        "translational",
+        "universitaetsklinikum-wuerzburg",
+        "universitätsklinikum",
+        "wuerzburg",
+        "würzburg"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus",
+      "name": "Prof. Dr. Ralf-Ingo Ernestus",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsklinikum-wuerzburg",
+      "cityId": "wuerzburg",
+      "keywords": [
+        "brain",
+        "ernestus",
+        "focus",
+        "head",
+        "ingo",
+        "neurosurgery",
+        "prof",
+        "ralf",
+        "tumors",
+        "universitaetsklinikum-wuerzburg",
+        "universitätsklinikum",
+        "wuerzburg",
+        "würzburg"
+      ]
+    },
+    {
+      "id": "universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz",
+      "name": "Prof. Dr. Stefan Frantz",
+      "deptId": "cardiology",
+      "clinicId": "universitaetsklinikum-wuerzburg",
+      "cityId": "wuerzburg",
+      "keywords": [
+        "cardiology",
+        "center",
+        "deputy",
+        "director",
+        "failure",
+        "frantz",
+        "head",
+        "heart",
+        "prof",
+        "stefan",
+        "universitaetsklinikum-wuerzburg",
+        "universitätsklinikum",
+        "wuerzburg",
+        "würzburg"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-dr.-johannes-huette",
+      "name": "Dr. Johannes Hütte",
+      "deptId": "administration",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "administration",
+        "april",
+        "commercial",
+        "descri",
+        "director",
+        "essen",
+        "hütte",
+        "johannes",
+        "responsib",
+        "since",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-prof.-dr.-angelika-eggert",
+      "name": "Prof. Dr. Angelika Eggert",
+      "deptId": "administration",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "administration",
+        "and",
+        "angelika",
+        "chair",
+        "director",
+        "eggert",
+        "essen",
+        "june",
+        "medical",
+        "prof",
+        "since",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben",
+      "name": "Prof. Dr. med. Andreas Kribben",
+      "deptId": "nephrology",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "andreas",
+        "essen",
+        "expertise",
+        "head",
+        "internal",
+        "kribben",
+        "med",
+        "medi",
+        "nephrology",
+        "prof",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure",
+      "name": "Prof. Dr. med. Ulrich Sure",
+      "deptId": "neurosurgery",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "and",
+        "essen",
+        "expert",
+        "head",
+        "med",
+        "neurosurgery",
+        "prof",
+        "spine",
+        "sure",
+        "surgery",
+        "ulrich",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf",
+      "name": "Univ.-Prof. Dr. med. Dirk Schadendorf",
+      "deptId": "dermatology",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "and",
+        "cancer",
+        "cen",
+        "dermatology",
+        "descri",
+        "dirk",
+        "essen",
+        "german",
+        "head",
+        "med",
+        "prof",
+        "schadendorf",
+        "univ",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin",
+        "west"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig",
+      "name": "Univ.-Prof. Dr. med. habil. Rainer Kimmig",
+      "deptId": "gynecology",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "and",
+        "essen",
+        "gynecology",
+        "habil",
+        "head",
+        "kimmig",
+        "leads",
+        "med",
+        "obstetrics",
+        "oncol",
+        "prof",
+        "rainer",
+        "univ",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba",
+      "name": "Univ.-Prof. Dr. med. Thorsten Brenner, MHBA",
+      "deptId": "anesthesiology",
+      "clinicId": "universitaetsmedizin-essen",
+      "cityId": "essen",
+      "keywords": [
+        "and",
+        "anesthesiology",
+        "brenner",
+        "care",
+        "descri",
+        "essen",
+        "head",
+        "intensive",
+        "med",
+        "medi",
+        "mhba",
+        "prof",
+        "thorsten",
+        "univ",
+        "universitaetsmedizin-essen",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-kathleen-kreutzer",
+      "name": "Kathleen Kreutzer",
+      "deptId": "administration",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "administration",
+        "descri",
+        "for",
+        "infrastructure",
+        "july",
+        "kathleen",
+        "kreutzer",
+        "mainz",
+        "responsible",
+        "since",
+        "specialist",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler",
+      "name": "Prof. Dr. med. Thomas Kindler",
+      "deptId": "oncology",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "for",
+        "head",
+        "kindler",
+        "mainz",
+        "med",
+        "oncology",
+        "prof",
+        "responsible",
+        "strategic",
+        "thomas",
+        "uct",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz",
+      "name": "Univ.-Prof. Dr. Jonas Tesarz",
+      "deptId": "psychiatry",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "clinic",
+        "expert",
+        "head",
+        "jonas",
+        "mainz",
+        "nov",
+        "prof",
+        "psych",
+        "psychiatry",
+        "since",
+        "tesarz",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas",
+      "name": "Univ.-Prof. Dr. med. Bilal Al-Nawas",
+      "deptId": "oral-maxillofacial-surgery",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "and",
+        "bilal",
+        "facial",
+        "head",
+        "mainz",
+        "maxillofacial",
+        "med",
+        "nawas",
+        "oral",
+        "oral-maxillofacial-surgery",
+        "plastic",
+        "prof",
+        "surgery",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp",
+      "name": "Univ.-Prof. Dr. med. Frauke Zipp",
+      "deptId": "urology",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "frauke",
+        "head",
+        "mainz",
+        "med",
+        "neuroimmu",
+        "neurology",
+        "prof",
+        "specialization",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin",
+        "urology",
+        "zipp"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb",
+      "name": "Univ.-Prof. Dr. med. Klaus Lieb",
+      "deptId": "psychiatry",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "focus",
+        "head",
+        "klaus",
+        "lieb",
+        "mainz",
+        "med",
+        "prof",
+        "psychiatry",
+        "research",
+        "resilien",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald",
+      "name": "Univ.-Prof. Dr. med. Matthias Theobald",
+      "deptId": "hematology-oncology",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "clinic",
+        "deputy",
+        "head",
+        "hematology",
+        "hematology-oncology",
+        "internal",
+        "mainz",
+        "matthias",
+        "med",
+        "medicine",
+        "oncology",
+        "prof",
+        "theobald",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger",
+      "name": "Univ.-Prof. Dr. med. Peter Grimminger",
+      "deptId": "gastroenterology",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "and",
+        "esophageal",
+        "gastric",
+        "gastroenterology",
+        "grimminger",
+        "head",
+        "mainz",
+        "med",
+        "peter",
+        "prof",
+        "specia",
+        "surgery",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich",
+      "name": "Univ.-Prof. Dr. Ralf Kiesslich",
+      "deptId": "administration",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "administration",
+        "clinic",
+        "head",
+        "jan",
+        "kiesslich",
+        "mainz",
+        "prof",
+        "ralf",
+        "responsible",
+        "since",
+        "the",
+        "univ",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin"
+      ]
+    },
+    {
+      "id": "universitaetsmedizin-mainz-waltraud-kreutz-gers",
+      "name": "Waltraud Kreutz-Gers",
+      "deptId": "administration",
+      "clinicId": "universitaetsmedizin-mainz",
+      "cityId": "mainz",
+      "keywords": [
+        "administration",
+        "assume",
+        "descri",
+        "economic",
+        "from",
+        "gers",
+        "kreutz",
+        "mainz",
+        "managemen",
+        "march",
+        "specialist",
+        "universitaetsmedizin-mainz",
+        "universitätsmedizin",
+        "waltraud",
+        "will"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-dr-christiane-stehle",
+      "name": "Dr. Christiane Stehle",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "christiane",
+        "general",
+        "rostock",
+        "specialist",
+        "stehle",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-alexander-storch",
+      "name": "Prof. Dr. Alexander Storch",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "alexander",
+        "general",
+        "prof",
+        "rostock",
+        "specialist",
+        "storch",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-alper-oner",
+      "name": "Prof. Dr. Alper Öner",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "alper",
+        "general",
+        "prof",
+        "rostock",
+        "specialist",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock",
+        "öner"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-christian-d-etz",
+      "name": "Prof. Dr. Christian D. Etz",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "christian",
+        "etz",
+        "general",
+        "prof",
+        "rostock",
+        "specialist",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-habil-mittelmeier",
+      "name": "Prof. Dr. habil. Mittelmeier",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "general",
+        "habil",
+        "mittelmeier",
+        "prof",
+        "rostock",
+        "specialist",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-joachim-bernd-krause",
+      "name": "Prof. Dr. Joachim Bernd Krause",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "bernd",
+        "general",
+        "joachim",
+        "krause",
+        "prof",
+        "rostock",
+        "specialist",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universitatsmedizin-rostock-prof-dr-steffen-emmert",
+      "name": "Prof. Dr. Steffen Emmert",
+      "deptId": "general",
+      "clinicId": "universitatsmedizin-rostock",
+      "cityId": "rostock",
+      "keywords": [
+        "emmert",
+        "general",
+        "prof",
+        "rostock",
+        "specialist",
+        "steffen",
+        "universitatsmedizin",
+        "universitatsmedizin-rostock"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu",
+      "name": "Prof. Dr. Anca-Ligia Grosu",
+      "deptId": "radiation-oncology",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "anca",
+        "and",
+        "descri",
+        "freiburg",
+        "grosu",
+        "ligia",
+        "oncology",
+        "personalized",
+        "prof",
+        "radiation",
+        "radiation-oncology",
+        "radiotherapy",
+        "specialist",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode",
+      "name": "Prof. Dr. Christoph A. M. Bode",
+      "deptId": "cardiology",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "and",
+        "bode",
+        "cardiology",
+        "christoph",
+        "descri",
+        "focus",
+        "freiburg",
+        "interventional",
+        "prof",
+        "specialist",
+        "treatme",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-heinz-wiendl",
+      "name": "Prof. Dr. Heinz Wiendl",
+      "deptId": "urology",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "and",
+        "expert",
+        "freiburg",
+        "heinz",
+        "multiple",
+        "neuroimmunology",
+        "prof",
+        "sclerosis",
+        "specialist",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum",
+        "urology",
+        "wiendl"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-michael-quante",
+      "name": "Prof. Dr. Michael Quante",
+      "deptId": "gastroenterology",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "endoscopic",
+        "focus",
+        "freiburg",
+        "gastroenterology",
+        "gastrointestinal",
+        "michael",
+        "prof",
+        "quante",
+        "specialist",
+        "tumors",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg",
+      "name": "Prof. Dr. Siegbert R. Rieg",
+      "deptId": "infectious-diseases",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "and",
+        "bacterial",
+        "complex",
+        "descri",
+        "diseases",
+        "experience",
+        "freiburg",
+        "infectious",
+        "infectious-diseases",
+        "managing",
+        "prof",
+        "rieg",
+        "siegbert",
+        "specialist",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl",
+      "name": "Prof. Dr. Stefan Fichtner-Feigl",
+      "deptId": "general-and-visceral-surgery",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "and",
+        "expert",
+        "feigl",
+        "fichtner",
+        "freiburg",
+        "gastrointestinal",
+        "general",
+        "general-and-visceral-surgery",
+        "organ",
+        "prof",
+        "specialist",
+        "stefan",
+        "surgery",
+        "trans",
+        "tumors",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum",
+        "visceral"
+      ]
+    },
+    {
+      "id": "universittsklinikum-freiburg-prof.-dr.-stephan-ehl",
+      "name": "Prof. Dr. Stephan Ehl",
+      "deptId": "pediatric-immunology",
+      "clinicId": "universittsklinikum-freiburg",
+      "cityId": "freiburg",
+      "keywords": [
+        "congenital",
+        "descri",
+        "ehl",
+        "freiburg",
+        "immunodeficiencies",
+        "immunology",
+        "pediatric",
+        "pediatric-immunology",
+        "prof",
+        "specialist",
+        "stephan",
+        "universittsklinikum-freiburg",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-mannheim-dr.-florian-rehberger",
+      "name": "Dr. Florian Rehberger",
+      "deptId": "emergency-medicine",
+      "clinicId": "universittsklinikum-mannheim",
+      "cityId": "mannheim",
+      "keywords": [
+        "and",
+        "anesthesiology",
+        "emergency",
+        "emergency-medicine",
+        "florian",
+        "intensive",
+        "mannheim",
+        "medicine",
+        "rehberger",
+        "specialist",
+        "universittsklinikum-mannheim",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-mannheim-prof.-dr.-michael-platten",
+      "name": "Prof. Dr. Michael Platten",
+      "deptId": "urology",
+      "clinicId": "universittsklinikum-mannheim",
+      "cityId": "mannheim",
+      "keywords": [
+        "and",
+        "brain",
+        "descri",
+        "mannheim",
+        "michael",
+        "neuroimmunology",
+        "platten",
+        "prof",
+        "specialist",
+        "tumor",
+        "universittsklinikum-mannheim",
+        "universitätsklinikum",
+        "urology"
+      ]
+    },
+    {
+      "id": "universittsklinikum-mannheim-prof.-dr.-stefan-schnberg",
+      "name": "Prof. Dr. Stefan Schönberg",
+      "deptId": "radiology",
+      "clinicId": "universittsklinikum-mannheim",
+      "cityId": "mannheim",
+      "keywords": [
+        "and",
+        "department",
+        "descri",
+        "head",
+        "mannheim",
+        "medicine",
+        "nuclear",
+        "prof",
+        "radiology",
+        "schönberg",
+        "stefan",
+        "universittsklinikum-mannheim",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi",
+      "name": "Prof. Dr. André L. Mihaljević",
+      "deptId": "general",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "andr",
+        "general",
+        "head",
+        "mihaljevi",
+        "prof",
+        "surgery",
+        "transplant",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter",
+      "name": "Prof. Dr. Andreas J. Fallgatter",
+      "deptId": "psychiatry",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "andreas",
+        "fallgatter",
+        "general",
+        "head",
+        "prof",
+        "psychiatry",
+        "psychotherapy",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-bernd-lethaus",
+      "name": "Prof. Dr. Bernd Lethaus",
+      "deptId": "maxillofacial-and-plastic-surgery",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "bernd",
+        "expert",
+        "head",
+        "lethaus",
+        "maxillofacial",
+        "maxillofacial-and-plastic-surgery",
+        "neck",
+        "plastic",
+        "prof",
+        "reconstructive",
+        "surgery",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-christian-schlensak",
+      "name": "Prof. Dr. Christian Schlensak",
+      "deptId": "thoracic-surgery",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "cardiac",
+        "christian",
+        "conge",
+        "descri",
+        "expert",
+        "invasive",
+        "minimally",
+        "prof",
+        "schlensak",
+        "specialist",
+        "surgery",
+        "thoracic",
+        "thoracic-surgery",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-claudia-lengerke",
+      "name": "Prof. Dr. Claudia Lengerke",
+      "deptId": "hematology-oncology",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "claudia",
+        "expert",
+        "hematology",
+        "hematology-oncology",
+        "immunology",
+        "lengerke",
+        "oncology",
+        "prof",
+        "rheumatology",
+        "specialist",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-lars-zender",
+      "name": "Prof. Dr. Lars Zender",
+      "deptId": "internal-medicine",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "internal",
+        "internal-medicine",
+        "lars",
+        "medical",
+        "medicine",
+        "oncology",
+        "prof",
+        "pulmonology",
+        "specialist",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum",
+        "zender"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-stephan-zipfel",
+      "name": "Prof. Dr. Stephan Zipfel",
+      "deptId": "psychosomatic-medicine-and-psychotherapy",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "and",
+        "disorders",
+        "eating",
+        "expert",
+        "medicine",
+        "prof",
+        "psychosomatic",
+        "psychosomatic-medicine-and-psychotherapy",
+        "psychosomatics",
+        "psychotherapy",
+        "specialist",
+        "stephan",
+        "tuebingen",
+        "tübingen",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum",
+        "zipfel"
+      ]
+    },
+    {
+      "id": "universittsklinikum-tbingen-prof.-dr.-ulf-ziemann",
+      "name": "Prof. Dr. Ulf Ziemann",
+      "deptId": "urology",
+      "clinicId": "universittsklinikum-tbingen",
+      "cityId": "tuebingen",
+      "keywords": [
+        "focus",
+        "neuro",
+        "neurology",
+        "oncology",
+        "prof",
+        "specialist",
+        "tuebingen",
+        "tübingen",
+        "ulf",
+        "universittsklinikum-tbingen",
+        "universitätsklinikum",
+        "urology",
+        "vascular",
+        "ziemann"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-andreas-liebold",
+      "name": "Prof. Dr. Andreas Liebold",
+      "deptId": "cardiothoracic-and-vascular-surgery",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "and",
+        "andreas",
+        "aortic",
+        "cardiothoracic",
+        "cardiothoracic-and-vascular-surgery",
+        "liebold",
+        "mitral",
+        "prof",
+        "repair",
+        "specialist",
+        "surgery",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum",
+        "valve",
+        "vascular"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-florian-gebhard",
+      "name": "Prof. Dr. Florian Gebhard",
+      "deptId": "trauma-surgery",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "and",
+        "expert",
+        "florian",
+        "gebhard",
+        "prof",
+        "reconstructive",
+        "specialist",
+        "surgery",
+        "trauma",
+        "trauma-surgery",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-hartmut-dhner",
+      "name": "Prof. Dr. Hartmut Döhner",
+      "deptId": "internal-medicine",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "dis",
+        "döhner",
+        "expert",
+        "hartmut",
+        "hematology",
+        "infectious",
+        "internal",
+        "internal-medicine",
+        "medicine",
+        "oncology",
+        "prof",
+        "specialist",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann",
+      "name": "Prof. Dr. Thomas K. Hoffmann",
+      "deptId": "ent",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "and",
+        "ent",
+        "head",
+        "hoffmann",
+        "neck",
+        "oncology",
+        "otorhinolaryngology",
+        "plastic",
+        "prof",
+        "specialist",
+        "thomas",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-thomas-seufferlein",
+      "name": "Prof. Dr. Thomas Seufferlein",
+      "deptId": "internal-medicine",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "gastrointestinal",
+        "internal",
+        "internal-medicine",
+        "kidney",
+        "liver",
+        "medicine",
+        "prof",
+        "seufferlein",
+        "specialist",
+        "thomas",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum"
+      ]
+    },
+    {
+      "id": "universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer",
+      "name": "Prof. Dr. Wolfgang Rottbauer",
+      "deptId": "internal-medicine",
+      "clinicId": "universittsklinikum-ulm",
+      "cityId": "ulm",
+      "keywords": [
+        "and",
+        "cardiology",
+        "descri",
+        "expert",
+        "intensive",
+        "internal",
+        "internal-medicine",
+        "interventional",
+        "medicine",
+        "prof",
+        "rottbauer",
+        "specialist",
+        "ulm",
+        "universittsklinikum-ulm",
+        "universitätsklinikum",
+        "wolfgang"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-dr-frank-peter-job",
+      "name": "Dr. Frank Peter Job",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "frank",
+        "general",
+        "humboldtklinikum",
+        "job",
+        "peter",
+        "specialist",
+        "vivantes",
+        "vivantes-humboldtklinikum"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-dr-veit-mansmann",
+      "name": "Dr. Veit Mansmann",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "humboldtklinikum",
+        "mansmann",
+        "specialist",
+        "veit",
+        "vivantes",
+        "vivantes-humboldtklinikum"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-dr-zaher-halwani",
+      "name": "Dr. Zaher Halwani",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "halwani",
+        "humboldtklinikum",
+        "specialist",
+        "vivantes",
+        "vivantes-humboldtklinikum",
+        "zaher"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-prof-dr-andreas-umgelter",
+      "name": "Prof. Dr. Andreas Umgelter",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "andreas",
+        "berlin",
+        "general",
+        "humboldtklinikum",
+        "prof",
+        "specialist",
+        "umgelter",
+        "vivantes",
+        "vivantes-humboldtklinikum"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-prof-dr-bettina-schmitz",
+      "name": "Prof. Dr. Bettina Schmitz",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "bettina",
+        "general",
+        "humboldtklinikum",
+        "prof",
+        "schmitz",
+        "specialist",
+        "vivantes",
+        "vivantes-humboldtklinikum"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-prof-dr-ulrich-adam",
+      "name": "Prof. Dr. Ulrich Adam",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum",
+      "cityId": "berlin",
+      "keywords": [
+        "adam",
+        "berlin",
+        "general",
+        "humboldtklinikum",
+        "prof",
+        "specialist",
+        "ulrich",
+        "vivantes",
+        "vivantes-humboldtklinikum"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-spandau-dr-tobias-weismuller",
+      "name": "Dr. Tobias Weismüller",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum-spandau",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "humboldtklinikum",
+        "spandau",
+        "specialist",
+        "tobias",
+        "vivantes",
+        "vivantes-humboldtklinikum-spandau",
+        "weismüller"
+      ]
+    },
+    {
+      "id": "vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens",
+      "name": "Prof. Dr. Steffen Behrens",
+      "deptId": "general",
+      "clinicId": "vivantes-humboldtklinikum-spandau",
+      "cityId": "berlin",
+      "keywords": [
+        "behrens",
+        "berlin",
+        "general",
+        "humboldtklinikum",
+        "prof",
+        "spandau",
+        "specialist",
+        "steffen",
+        "vivantes",
+        "vivantes-humboldtklinikum-spandau"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-dr-mark-hackbarth",
+      "name": "Dr. Mark Hackbarth",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "hackbarth",
+        "klinikum",
+        "mark",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf",
+      "name": "Prof. Dr. Andreas Bechdolf",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain",
+      "cityId": "berlin",
+      "keywords": [
+        "andreas",
+        "bechdolf",
+        "berlin",
+        "friedrichshain",
+        "general",
+        "klinikum",
+        "prof",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban-klinikum-im-friedrichshain"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner",
+      "name": "Prof. Dr. Joachim Wagner",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "friedrichshain",
+        "general",
+        "joachim",
+        "klinikum",
+        "prof",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban-klinikum-im-friedrichshain",
+        "wagner"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-prof-dr-christian-scholz",
+      "name": "Prof. Dr. Christian Scholz",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "christian",
+        "general",
+        "klinikum",
+        "prof",
+        "scholz",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-prof-dr-hans-scherubl",
+      "name": "Prof. Dr. Hans Scherübl",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "hans",
+        "klinikum",
+        "prof",
+        "scherübl",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-am-urban-prof-dr-jonas-busch",
+      "name": "Prof. Dr. Jonas Busch",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-am-urban",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "busch",
+        "general",
+        "jonas",
+        "klinikum",
+        "prof",
+        "specialist",
+        "urban",
+        "vivantes",
+        "vivantes-klinikum-am-urban"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-neukolln-prof-dr-huseyin-ince",
+      "name": "Prof. Dr. Hüseyin Ince",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-neukolln",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "hüseyin",
+        "ince",
+        "klinikum",
+        "neukolln",
+        "prof",
+        "specialist",
+        "vivantes",
+        "vivantes-klinikum-neukolln"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-spandau-dr-tobias-weismuller",
+      "name": "Dr. Tobias Weismüller",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-spandau",
+      "cityId": "berlin",
+      "keywords": [
+        "berlin",
+        "general",
+        "klinikum",
+        "spandau",
+        "specialist",
+        "tobias",
+        "vivantes",
+        "vivantes-klinikum-spandau",
+        "weismüller"
+      ]
+    },
+    {
+      "id": "vivantes-klinikum-spandau-prof-dr-steffen-behrens",
+      "name": "Prof. Dr. Steffen Behrens",
+      "deptId": "general",
+      "clinicId": "vivantes-klinikum-spandau",
+      "cityId": "berlin",
+      "keywords": [
+        "behrens",
+        "berlin",
+        "general",
+        "klinikum",
+        "prof",
+        "spandau",
+        "specialist",
+        "steffen",
+        "vivantes",
+        "vivantes-klinikum-spandau"
+      ]
     }
-  ],
-  "departments": [
-    { "id": "hem-onc" },
-    { "id": "urology" },
-    { "id": "neurosurgery" }
-  ],
-  "clinics": [
-    { "id": "helios-krefeld", "cityId": "krefeld" },
-    { "id": "helios-berlin-buch", "cityId": "berlin" },
-    { "id": "uk-koeln", "cityId": "koeln" }
-  ],
-  "cities": [
-    { "id": "krefeld" },
-    { "id": "berlin" },
-    { "id": "koeln" }
   ]
 }
