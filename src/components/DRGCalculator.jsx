@@ -1,14 +1,11 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Search } from 'lucide-react';
-
-// ⬇️ Импортируем JSON прямо в бандл (без fetch)
-import { useEffect, useState } from 'react';
 
 export default function DRGCalculator() {
   const { t, i18n } = useTranslation();
 
-  // Начальные значения оставляем такими же
+  // UI state
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(null);
   const [lbfw, setLbfw] = useState('1');
@@ -21,33 +18,49 @@ export default function DRGCalculator() {
   const [error, setError] = useState('');
   const [showSug, setShowSug] = useState(false);
 
+  // data from /public/data
   const [drgCosts, setDrgCosts] = useState([]);
-const [drgTextsAll, setDrgTextsAll] = useState({});
+  const [drgTextsAll, setDrgTextsAll] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [loadErr, setLoadErr] = useState('');
 
-useEffect(() => {
-  Promise.all([
-    fetch('/data/drg-costs.json').then(r => r.json()),
-    fetch('/data/drg-texts.json').then(r => r.json())
-  ]).then(([costs, texts]) => {
-    setDrgCosts(costs);
-    setDrgTextsAll(texts);
-  });
-}, []);
+  useEffect(() => {
+    let alive = true;
+    (async () => {
+      try {
+        const [costsRes, textsRes] = await Promise.all([
+          fetch('/data/drg-costs.json'),
+          fetch('/data/drg-texts.json'),
+        ]);
+        if (!costsRes.ok || !textsRes.ok) throw new Error('Failed to fetch DRG data');
+        const [costs, texts] = await Promise.all([costsRes.json(), textsRes.json()]);
+        if (!alive) return;
+        setDrgCosts(Array.isArray(costs) ? costs : []);
+        setDrgTextsAll(texts || {});
+      } catch (e) {
+        if (!alive) return;
+        setLoadErr(e.message || 'Failed to load DRG data');
+      } finally {
+        if (alive) setLoading(false);
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, []);
 
-  // Быстрый доступ к текстам на текущем языке
   const getTitle = (code) =>
     drgTextsAll?.[code]?.[i18n.language] || drgTextsAll?.[code]?.en || '';
 
-  // Подсказки — только топ‑20 совпадений, чтобы не раздувать DOM
   const suggestions = useMemo(() => {
-    if (!showSug || !query) return [];
+    if (!showSug || !query || !Array.isArray(drgCosts)) return [];
     const q = query.toLowerCase();
     const filtered = drgCosts.filter((e) => {
       const txt = (getTitle(e.DRG) || '').toLowerCase();
-      return e.DRG.toLowerCase().includes(q) || txt.includes(q);
+      return e.DRG?.toLowerCase().includes(q) || txt.includes(q);
     });
     return filtered.slice(0, 20);
-  }, [showSug, query, i18n.language]);
+  }, [showSug, query, i18n.language, drgCosts]);
 
   const handleSelect = (drg) => {
     setSelected(drg);
@@ -90,6 +103,13 @@ useEffect(() => {
     TherBereich: t('drgCalculator.breakdown.TherBereich'),
     PatAufn: t('drgCalculator.breakdown.PatAufn'),
   };
+
+  if (loading) {
+    return <div className="p-4 text-sm text-gray-600">Loading DRG data…</div>;
+  }
+  if (loadErr) {
+    return <div className="p-4 text-sm text-red-600">Error: {loadErr}</div>;
+  }
 
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 max-w-xl mx-auto">
@@ -193,7 +213,7 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* Calculate Button (без бесконечной анимации) */}
+      {/* Calculate Button */}
       <button
         onClick={calculate}
         className="w-full py-3 bg-gradient-to-r from-blue-600 to-green-500 text-white font-semibold rounded-lg shadow hover:from-blue-700 hover:to-green-600 transition mb-4"
@@ -202,7 +222,7 @@ useEffect(() => {
       </button>
       {error && <p className="text-red-600 text-center mb-4">{error}</p>}
 
-      {/* Result Display */}
+      {/* Result */}
       {result && (
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
           <h4 className="text-lg font-semibold text-gray-800">
