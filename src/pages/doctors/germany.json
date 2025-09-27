@@ -138,49 +138,7 @@
       "id": "charite-comprehensive-cancer-center-cccc"
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cbf"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cbfcvk"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc12"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc13"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc14"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc15"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc16"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc8"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cc9"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-ccm"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-cvk"
-    },
-    {
-      "id": "charite-universitatsmedizin-berlin-mitte"
+      "id": "charite-universitatsmedizin-berlin"
     },
     {
       "id": "ethianum-klinik-heidelberg"
@@ -445,10 +403,10 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin-prof-dr-christian-otte",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Christian Otte",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "benjamin",
@@ -456,7 +414,7 @@
         "campus",
         "cbf",
         "charite",
-        "charite-universitatsmedizin-berlin-cbf-campus-benjamin-franklin",
+        "charite-universitatsmedizin-berlin",
         "christian",
         "franklin",
         "general",
@@ -467,16 +425,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cbf-prof-dr-max-heiland",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Max Heiland",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cbf",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "cbf",
         "charite",
-        "charite-universitatsmedizin-berlin-cbf",
+        "charite-universitatsmedizin-berlin",
         "general",
         "heiland",
         "max",
@@ -486,16 +444,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cbf-prof-dr-wolfgang-ertel",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Wolfgang Ertel",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cbf",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "cbf",
         "charite",
-        "charite-universitatsmedizin-berlin-cbf",
+        "charite-universitatsmedizin-berlin",
         "ertel",
         "general",
         "prof",
@@ -505,16 +463,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cbfcvk-prof-dr-daniel-zips",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Daniel Zips",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cbfcvk",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "cbfcvk",
         "charite",
-        "charite-universitatsmedizin-berlin-cbfcvk",
+        "charite-universitatsmedizin-berlin",
         "daniel",
         "general",
         "prof",
@@ -524,15 +482,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc12-prof-dr-martin-witzenrath",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Martin Witzenrath",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc12",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc12",
+        "charite-universitatsmedizin-berlin",
         "general",
         "martin",
         "prof",
@@ -542,16 +500,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-britta-siegmund",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Britta Siegmund",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "britta",
         "charite",
-        "charite-universitatsmedizin-berlin-cc13",
+        "charite-universitatsmedizin-berlin",
         "general",
         "prof",
         "siegmund",
@@ -560,15 +518,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-frank-tacke",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Frank Tacke",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc13",
+        "charite-universitatsmedizin-berlin",
         "frank",
         "general",
         "prof",
@@ -578,15 +536,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc13-prof-dr-kaiuwe-eckardt",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Kai‑Uwe Eckardt",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc13",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc13",
+        "charite-universitatsmedizin-berlin",
         "eckardt",
         "general",
         "kai",
@@ -597,15 +555,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc14-prof-dr-ulrich-keller",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Ulrich Keller",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc14",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc14",
+        "charite-universitatsmedizin-berlin",
         "general",
         "keller",
         "prof",
@@ -615,15 +573,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc15-prof-dr-matthias-endres",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Matthias Endres",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc15",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc15",
+        "charite-universitatsmedizin-berlin",
         "endres",
         "general",
         "matthias",
@@ -633,15 +591,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc15-prof-dr-peter-vajkoczy",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Peter Vajkoczy",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc15",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc15",
+        "charite-universitatsmedizin-berlin",
         "general",
         "peter",
         "prof",
@@ -651,16 +609,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc16-prof-dr-antonia-joussen",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Antonia Joussen",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc16",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "antonia",
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc16",
+        "charite-universitatsmedizin-berlin",
         "general",
         "joussen",
         "prof",
@@ -669,15 +627,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc16-prof-dr-heidi-olze",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Heidi Olze",
       "deptId": "ent",
-      "clinicId": "charite-universitatsmedizin-berlin-cc16",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc16",
+        "charite-universitatsmedizin-berlin",
         "ent",
         "heidi",
         "olze",
@@ -688,16 +646,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-andreas-greiner",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Andreas Greiner",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "andreas",
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc8",
+        "charite-universitatsmedizin-berlin",
         "general",
         "greiner",
         "prof",
@@ -706,15 +664,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-johann-pratschke",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Johann Pratschke",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc8",
+        "charite-universitatsmedizin-berlin",
         "general",
         "johann",
         "pratschke",
@@ -724,15 +682,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc8-prof-dr-thorsten-schlomm",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Thorsten Schlomm",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc8",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cc8",
+        "charite-universitatsmedizin-berlin",
         "general",
         "prof",
         "schlomm",
@@ -742,16 +700,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cc9-prof-dr-carsten-perka",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Carsten Perka",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cc9",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "carsten",
         "charite",
-        "charite-universitatsmedizin-berlin-cc9",
+        "charite-universitatsmedizin-berlin",
         "general",
         "perka",
         "prof",
@@ -760,17 +718,17 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte-prof-dr-sebastian-stintzing",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Sebastian Stintzing",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "campus",
         "ccm",
         "charite",
-        "charite-universitatsmedizin-berlin-ccm-campus-charite-mitte",
+        "charite-universitatsmedizin-berlin",
         "general",
         "mitte",
         "prof",
@@ -781,17 +739,17 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-ccm-prof-dr-jensuwe-blohmer",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Jens‑Uwe Blohmer",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-ccm",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "blohmer",
         "ccm",
         "charite",
-        "charite-universitatsmedizin-berlin-ccm",
+        "charite-universitatsmedizin-berlin",
         "general",
         "jens",
         "prof",
@@ -801,17 +759,17 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum-prof-dr-lars-bullinger",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Lars Bullinger",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "bullinger",
         "campus",
         "charite",
-        "charite-universitatsmedizin-berlin-cvk-campus-virchow-klinikum",
+        "charite-universitatsmedizin-berlin",
         "cvk",
         "general",
         "klinikum",
@@ -823,15 +781,15 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-cvk-prof-dr-jalid-sehouli",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Jalid Sehouli",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-cvk",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-cvk",
+        "charite-universitatsmedizin-berlin",
         "cvk",
         "general",
         "jalid",
@@ -842,16 +800,16 @@
       ]
     },
     {
-      "id": "charite-universitatsmedizin-berlin-mitte-prof-dr-malek-bajbouj",
+      "id": "charite-universitatsmedizin-berlin",
       "name": "Prof. Dr. Malek Bajbouj",
       "deptId": "general",
-      "clinicId": "charite-universitatsmedizin-berlin-mitte",
+      "clinicId": "charite-universitatsmedizin-berlin",
       "cityId": "berlin",
       "keywords": [
         "bajbouj",
         "berlin",
         "charite",
-        "charite-universitatsmedizin-berlin-mitte",
+        "charite-universitatsmedizin-berlin",
         "general",
         "malek",
         "mitte",
