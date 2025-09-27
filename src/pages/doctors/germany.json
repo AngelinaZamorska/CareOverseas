@@ -3685,7 +3685,7 @@
     },
     {
       "id": "universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting",
-      "name": "Univ.-Prof. Dr. med. Uwe Maus (acting)",
+      "name": "Univ.-Prof. Dr. med. Uwe Maus",
       "deptId": "orthopedics",
       "clinicId": "universitaetsklinikum-duesseldorf",
       "cityId": "duesseldorf",
@@ -3797,26 +3797,7 @@
         "universitätsklinikum"
       ]
     },
-    {
-      "id": "universitaetsklinikum-erlangen-unknown",
-      "name": "Unknown",
-      "deptId": "urology",
-      "clinicId": "universitaetsklinikum-erlangen",
-      "cityId": "erlangen",
-      "keywords": [
-        "con",
-        "current",
-        "descri",
-        "erlangen",
-        "head",
-        "information",
-        "not",
-        "universitaetsklinikum-erlangen",
-        "universitätsklinikum",
-        "unknown",
-        "urology"
-      ]
-    },
+    
     {
       "id": "universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas",
       "name": "Prof. Dr. Bernhard Banas",
