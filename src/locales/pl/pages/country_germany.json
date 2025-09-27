@@ -1,64 +1,915 @@
 {
-  "country.germany.metaTitle": "Niemcy — Katalog lekarzy | CareOverseas",
-  "country.germany.metaDesc": "Wiodący lekarze w Niemczech. Filtruj według kliniki, oddziału i miasta.",
-  "country.germany.title": "Niemcy — Katalog lekarzy",
-  "country.germany.subtitle": "Strona informacyjna. Najpierw ordynatorzy Heliosa i Uniwersyteckiego Szpitala w Kolonii.",
-  "country.germany.searchPlaceholder": "Szukaj po nazwisku, specjalności lub klinice",
-  "country.germany.clear": "Wyczyść",
-  "country.germany.filter.department": "Oddział",
-  "country.germany.filter.clinic": "Klinika",
-  "country.germany.filter.city": "Miasto",
-  "country.germany.sortBy": "Sortuj wg:",
-  "country.germany.sort.name": "Nazwisko",
-  "country.germany.sort.clinic": "Klinika",
-  "country.germany.sort.city": "Miasto",
-  "country.germany.empty": "Brak wyników. Zmień filtry lub zapytanie.",
-  "country.germany.backHome": "← Powrót na stronę główną",
-  "country.germany.contactCta": "Skontaktuj się z koordynatorem",
+ "country.germany.metaTitle": "Najlepsi lekarze w Niemczech | Kierownicy oddziałów i czołowi specjaliści | CareOverseas",
+"country.germany.metaDesc": "Poznaj najlepszych lekarzy i kierowników oddziałów w Niemczech w HELIOS, Charité, LMU, TUM, Kolonii i innych ośrodkach. Filtruj według specjalizacji, kliniki i miasta. Niezależny katalog z pomocą koordynatora.",
+"country.germany.title": "Niemcy — Katalog lekarzy",
+"country.germany.subtitle": "Niezależny katalog kierowników oddziałów i jednostek w HELIOS, Charité, Uniwersyteckim Szpitalu w Kolonii i innych czołowych centrach.",
+"country.germany.searchPlaceholder": "Szukaj według nazwiska, specjalizacji lub kliniki",
+"country.germany.clear": "Wyczyść",
+"country.germany.filter.department": "Oddział",
+"country.germany.filter.clinic": "Klinika",
+"country.germany.filter.city": "Miasto",
+"country.germany.sortBy": "Sortuj według:",
+"country.germany.sort.name": "Nazwisko",
+"country.germany.sort.clinic": "Klinika",
+"country.germany.sort.city": "Miasto",
+"country.germany.empty": "Brak wyników. Spróbuj zmienić filtry lub zapytanie.",
+"country.germany.backHome": "← Powrót do strony głównej",
+"country.germany.contactCta": "Skontaktuj się z koordynatorem",
+"country.germany.breadcrumbHome": "Strona główna",
+"country.germany.stats.doctorsLabel": "lekarze",
+"country.germany.stats.clinicsLabel": "kliniki",
+"country.germany.stats.citiesLabel": "miasta",
+"country.germany.stats.departmentsLabel": "oddziały",
+"country.germany.usp.expertsTitle": "Najlepsi eksperci dla Twojego przypadku",
+"country.germany.usp.expertsDesc": "Wybieramy tylko kierowników oddziałów i wyspecjalizowanych jednostek.",
+"country.germany.usp.safeTitle": "Przejrzyście i bez stresu",
+"country.germany.usp.safeDesc": "Jasna koordynacja, dokumenty w Twoim języku, brak kontraktów marketingowych.",
+"country.germany.usp.careTitle": "Wsparcie z ludzkim podejściem",
+"country.germany.usp.careDesc": "Indywidualne wsparcie od pierwszego kontaktu do powrotu do domu.",
+"country.germany.emptyHint": "Spróbuj inne miasto, klinikę lub specjalizację.",
+"country.germany.pitch.title": "Nie wiesz, który lekarz będzie odpowiedni?",
+"country.germany.pitch.subtitle": "Podaj diagnozę i preferencje. Dobierzemy kierownika oddziału, przygotujemy zapytanie i pomożemy uzyskać szybką odpowiedź od kliniki.",
+"country.germany.pitch.badge1": "Bezpłatne zapytanie wstępne",
+"country.germany.pitch.badge2": "Szybka odpowiedź",
+"country.germany.pitch.badge3": "Pomoc w dokumentach",
+"country.germany.pitch.cta": "Skontaktuj się z koordynatorem",
+"dict.dept.administration.name": "Administracja",
+"dict.dept.anesthesiology.name": "Anestezjologia",
+"dict.dept.cardiac-surgery.name": "Chirurgia serca",
+"dict.dept.cardiology.name": "Kardiologia",
+"dict.dept.cardiothoracic-and-vascular-surgery.name": "Chirurgia kardio-torakalna i naczyniowa",
+"dict.dept.dermatology.name": "Dermatologia",
+"dict.dept.emergency-medicine.name": "Medycyna ratunkowa",
+"dict.dept.endocrinology.name": "Endokrynologia",
+"dict.dept.ent.name": "Laryngologia (otorynolaryngologia)",
+"dict.dept.gastroenterology.name": "Gastroenterologia",
+"dict.dept.gastroenterology-and-diabetology.name": "Gastroenterologia i diabetologia",
 
-  "country.germany.breadcrumbHome": "Strona główna",
+"dict.dept.general-and-visceral-surgery.name": "Chirurgia ogólna i trzewna",
 
-  "country.germany.stats.doctorsLabel": "lekarzy",
-  "country.germany.stats.clinicsLabel": "klinik",
-  "country.germany.stats.citiesLabel": "miast",
-  "country.germany.stats.departmentsLabel": "oddziałów",
+"dict.dept.geriatrics.name": "Geriatria",
+"dict.dept.gynecology.name": "Ginekologia",
+"dict.dept.hand-surgery.name": "Chirurgia ręki",
+"dict.dept.hematology-oncology.name": "Hematologia i onkologia",
+"dict.dept.infectious-diseases.name": "Choroby zakaźne",
+"dict.dept.internal-medicine.name": "Medycyna wewnętrzna",
+"dict.dept.internal-medicine-and-intensive-care.name": "Medycyna wewnętrzna i intensywna terapia",
+"dict.dept.maxillofacial-and-plastic-surgery.name": "Chirurgia szczękowo-twarzowa i plastyczna",
+"dict.dept.nephrology.name": "Nefrologia",
+"dict.dept.neurosurgery.name": "Neurochirurgia",
+"dict.dept.oncology.name": "Onkologia",
+"dict.dept.ophthalmology.name": "Okulistyka",
+"dict.dept.oral-maxillofacial-surgery.name": "Chirurgia jamy ustnej i szczękowo-twarzowa",
+"dict.dept.orthopedics.name": "Ortopedia",
+"dict.dept.pediatric-immunology.name": "Immunologia pediatryczna",
+"dict.dept.pediatrics.name": "Pediatria",
+"dict.dept.physical-and-rehabilitation-medicine.name": "Medycyna fizykalna i rehabilitacyjna",
+"dict.dept.plastic-surgery.name": "Chirurgia plastyczna",
+"dict.dept.psychiatry.name": "Psychiatria",
+"dict.dept.psychosomatic-medicine-and-psychotherapy.name": "Medycyna psychosomatyczna i psychoterapia",
+"dict.dept.radiation-oncology.name": "Radioterapia onkologiczna",
+"dict.dept.radiology.name": "Radiologia",
+"dict.dept.spinal-surgery.name": "Chirurgia kręgosłupa",
+"dict.dept.thoracic-surgery.name": "Chirurgia klatki piersiowej",
+"dict.dept.trauma-and-reconstructive-surgery.name": "Chirurgia urazowa i rekonstrukcyjna",
 
-  "country.germany.usp.expertsTitle": "Najlepsi eksperci do Twojego przypadku",
-  "country.germany.usp.expertsDesc": "Wybieramy ordynatorów i liderów wyspecjalizowanych jednostek.",
-  "country.germany.usp.safeTitle": "Przejrzyście i bez stresu",
-  "country.germany.usp.safeDesc": "Jasna koordynacja, dokumenty w Twoim języku, żadnych umów marketingowych.",
-  "country.germany.usp.careTitle": "Wsparcie z ludzkim podejściem",
-  "country.germany.usp.careDesc": "Osobista opieka od pierwszej wiadomości aż do powrotu do domu.",
+"dict.dept.university-cardio-center-internal-medicine-ii.name": "Uniwersyteckie Centrum Kardiologiczne – Medycyna wewnętrzna II",
+"dict.dept.urology.name": "Urologia",
+"dict.dept.vascular-surgery.name": "Chirurgia naczyniowa",
 
-  "country.germany.emptyHint": "Spróbuj innego miasta, kliniki lub oddziału.",
+"dict.clinic.helios-krefeld.name": "HELIOS Klinika Krefeld",
+"dict.clinic.helios-berlin-buch.name": "HELIOS Klinika Berlin-Buch",
+"dict.clinic.uk-koeln.name": "Szpital Uniwersytecki w Kolonii",
+"dict.clinic.universittsklinikum-freiburg.name": "Szpital Uniwersytecki we Freiburgu",
+"dict.clinic.ethianum-klinik-heidelberg.name": "ETHIANUM Klinika Heidelberg",
+"dict.clinic.universittsklinikum-mannheim.name": "Szpital Uniwersytecki w Mannheim",
+"dict.clinic.universittsklinikum-tbingen.name": "Szpital Uniwersytecki w Tybindze",
+"dict.clinic.unversittsklinikum-ulm.name": "Szpital Uniwersytecki w Ulm",
+"dict.clinic.universittsklinikum-ulm.name": "Szpital Uniwersytecki w Ulm",
+"dict.clinic.helios-klinikum-pforzheim.name": "HELIOS Klinika Pforzheim",
+"dict.clinic.helios-klinik-rottweil.name": "HELIOS Klinika Rottweil",
+"dict.clinic.helios-klinik-titisee-neustadt.name": "HELIOS Klinika Titisee-Neustadt",
+"dict.clinic.helios-klinik-breisach.name": "HELIOS Klinika Breisach",
+"dict.clinic.lmu-klinikum-muenchen.name": "LMU Klinika Monachium",
+"dict.clinic.tum-klinikum-rechts-der-isar.name": "Klinika rechts der Isar (TUM)",
+"dict.clinic.universitaetsklinikum-erlangen.name": "Szpital Uniwersytecki w Erlangen",
+"dict.clinic.universitaetsklinikum-regensburg.name": "Szpital Uniwersytecki w Ratyzbonie",
+"dict.clinic.universitaetsklinikum-wuerzburg.name": "Szpital Uniwersytecki w Würzburgu",
+"dict.clinic.medical-park-bad-wiessee.name": "Medical Park Bad Wiessee",
+"dict.clinic.medical-park-bad-feilnbach.name": "Medical Park Bad Feilnbach",
+"dict.clinic.medical-park-bernau-felden-chiemsee.name": "Medical Park Bernau-Felden Chiemsee",
+"dict.clinic.medical-park-chiemseeblick.name": "Medical Park Chiemseeblick",
+"dict.clinic.medical-park-bad-rodach.name": "Medical Park Bad Rodach",
+"dict.clinic.helios-amper-klinikum-dachau.name": "HELIOS Amper Klinika Dachau",
+"dict.clinic.helios-muenchen-west.name": "HELIOS Monachium Zachód",
+"dict.clinic.helios-frankenwald-klinik-kronach.name": "HELIOS Frankenwald Klinika Kronach",
+"dict.clinic.universitaetsmedizin-mainz.name": "Medycyna Uniwersytecka Moguncja",
+"dict.clinic.universitaetsklinikum-duesseldorf.name": "Szpital Uniwersytecki w Düsseldorfie",
+"dict.clinic.universitaetsmedizin-essen.name": "Medycyna Uniwersytecka Essen",
+"dict.clinic.universitaetsklinikum-bernau.name": "Szpital Uniwersytecki Bernau koło Berlina",
+"dict.clinic.universitaetsklinikum-brandenburg-havel.name": "Szpital Uniwersytecki Brandenburg nad Hawelą",
+"dict.clinic.universitaetsklinikum-cottbus.name": "Szpital Uniwersytecki w Cottbus",
+"dict.clinic.helios-klinikum-bad-saarow.name": "HELIOS Klinika Bad Saarow",
+"dict.city.bad-feilnbach.name": "Bad Feilnbach",
+"dict.city.bad-rodach.name": "Bad Rodach",
+"dict.city.bad-saarow.name": "Bad Saarow",
+"dict.city.bad-wiessee.name": "Bad Wiessee",
+"dict.city.berlin.name": "Berlin",
+"dict.city.bernau-am-chiemsee.name": "Bernau am Chiemsee",
+"dict.city.bernau-bei-berlin.name": "Bernau bei Berlin",
+"dict.city.brandenburg-an-der-havel.name": "Brandenburg nad Hawelą",
+"dict.city.breisach-am-rhein.name": "Breisach nad Renem",
+"dict.city.cottbus.name": "Chociebuż (Cottbus)",
+"dict.city.dachau.name": "Dachau",
+"dict.city.duesseldorf.name": "Düsseldorf",
+"dict.city.erlangen.name": "Erlangen",
+"dict.city.essen.name": "Essen",
+"dict.city.freiburg.name": "Fryburg",
+"dict.city.heidelberg.name": "Heidelberg",
+"dict.city.koeln.name": "Kolonia",
+"dict.city.krefeld.name": "Krefeld",
+"dict.city.kronach.name": "Kronach",
+"dict.city.mainz.name": "Moguncja (Mainz)",
+"dict.city.mannheim.name": "Mannheim",
+"dict.city.muenchen.name": "Monachium",
+"dict.city.pforzheim.name": "Pforzheim",
+"dict.city.regensburg.name": "Ratyzbona (Regensburg)",
+"dict.city.rottweil.name": "Rottweil",
+"dict.city.titisee-neustadt.name": "Titisee-Neustadt",
+"dict.city.tuebingen.name": "Tybinga (Tübingen)",
+"dict.city.ulm.name": "Ulm",
+"dict.city.wuerzburg.name": "Würzburg",
+"dict.city.erfurt.name": "Erfurt",
+"dict.city.rostock.name": "Rostock",
+"dict.city.schwerin.name": "Schwerin",
+"dict.clinic.charite-universitatsmedizin-berlin": "Charité – Uniwersytecka Medycyna w Berlinie",
+"dict.clinic.schlossparkklinik.name": "Schlosspark-Klinik Berlin",
+"dict.clinic.vivantes-klinikum-am-urban.name": "Vivantes Klinikum am Urban Berlin",
+"dict.clinic.vivantes-klinikum-am-urban-klinikum-im-friedrichshain.name": "Vivantes Klinikum im Friedrichshain Berlin",
+"dict.clinic.vivantes-humboldtklinikum.name": "Vivantes Szpital Humboldt Berlin",
+"dict.clinic.vivantes-humboldtklinikum-spandau.name": "Vivantes Szpital Humboldt Spandau",
+"dict.clinic.vivantes-klinikum-spandau.name": "Vivantes Szpital Spandau",
+"dict.clinic.vivantes-klinikum-neukolln.name": "Vivantes Szpital Neukölln",
+"dict.clinic.helios-klinikum-berlinbuch.name": "HELIOS Szpital Berlin-Buch",
+"dict.clinic.helios-klinikum-berlinbuch-endoklinik-berlin.name": "ENDO-Klinik Berlin (HELIOS Berlin-Buch)",
+"dict.clinic.helios-klinikum-emil-von-behring.name": "HELIOS Szpital Emil von Behring Berlin",
+"dict.clinic.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn.name": "Klinika Chorób Płuc Heckeshorn (HELIOS Emil von Behring)",
+"dict.clinic.medical-park-berlin-humboldtmuhle.name": "Medical Park Berlin-Humboldtmühle",
 
-  "country.germany.pitch.title": "Nie wiesz, do którego lekarza się zgłosić?",
-  "country.germany.pitch.subtitle": "Opowiedz o diagnozie i preferencjach. Dopasuję odpowiedniego ordynatora, przygotuję zapytanie i pomogę uzyskać szybką odpowiedź z kliniki.",
-  "country.germany.pitch.badge1": "Bezpłatne wstępne zapytanie",
-  "country.germany.pitch.badge2": "Szybka odpowiedź",
-  "country.germany.pitch.badge3": "Pomoc w dokumentach",
-  "country.germany.pitch.cta": "Skontaktuj się z koordynatorem",
+"dict.clinic.universitatsklinikum-bernau.name": "Uniwersytecka Klinika Bernau",
+"dict.city.brandenburg.name": "Brandenburgia",
+"dict.clinic.universitatsklinikum-brandenburg-havel.name": "Uniwersytecka Klinika Brandenburg nad Hawelą",
+"dict.clinic.universitatsklinikum-cottbus.name": "Uniwersytecka Klinika Cottbus",
+"dict.clinic.universitatsklinikum-dresden.name": "Uniwersytecka Klinika Drezno",
+"dict.city.sachsen.name": "Saksonia",
+"dict.clinic.universitatsklinikum-leipzig.name": "Uniwersytecka Klinika Lipsk",
+"dict.clinic.klinikum-st-georg-leipzig.name": "Szpital św. Jerzego w Lipsku",
+"dict.clinic.helios-park-klinikum-leipzig.name": "HELIOS Park-Szpital Lipsk",
+"dict.clinic.herzzentrum-leipzig.name": "Centrum Kardiologiczne Lipsk",
 
-  "dict.dept.hem-onc.name": "Hematologia i onkologia kliniczna",
-  "dict.dept.urology.name": "Urologia",
-  "dict.dept.neurosurgery.name": "Neurochirurgia",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.title": "Profesor onkologii, dyrektor Charité Comprehensive Cancer Center w Berlinie",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.bio": "Prof. Ulrich Keilholz to międzynarodowo uznany onkolog, dyrektor Charité Comprehensive Cancer Center w Berlinie. Specjalista w zakresie immunoterapii, terapii celowanych i spersonalizowanych metod leczenia nowotworów, znany z przełomowych badań nad czerniakiem i guzami litymi.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.title": "Profesor psychiatrii i psychoterapii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.bio": "Prof. Christian Otte to znany psychiatra w Charité – Uniwersytecka Medycyna w Berlinie, specjalizujący się w depresji, zaburzeniach związanych ze stresem oraz psychofarmakologii klinicznej. Jego badania koncentrują się na innowacyjnych terapiach zaburzeń afektywnych i psychiatrii translacyjnej.",
 
-  "dict.clinic.helios-krefeld.name": "Helios Klinikum Krefeld",
-  "dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin-Buch",
-  "dict.clinic.uk-koeln.name": "Uniwersytecki Szpital w Kolonii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.title": "Profesor chirurgii szczękowo-twarzowej",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.bio": "Prof. Max Heiland jest kierownikiem oddziału chirurgii szczękowo-twarzowej w Charité Berlin. Specjalista w chirurgii onkologicznej rekonstrukcyjnej, chirurgii czaszkowo-twarzowej i implantologii. Znany z wdrażania nowoczesnych technik mikrochirurgicznych i złożonych rekonstrukcji nowotworowych.",
 
-  "dict.city.krefeld.name": "Krefeld",
-  "dict.city.berlin.name": "Berlin",
-  "dict.city.koeln.name": "Kolonia",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.title": "Profesor chirurgii urazowej i ortopedycznej",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.bio": "Prof. Wolfgang Ertel to czołowy traumatolog Charité Berlin, specjalizujący się w leczeniu wielonarządowych urazów, chirurgii septycznej i urazach układu mięśniowo-szkieletowego. Ma duże doświadczenie w medycynie ratunkowej i leczeniu powikłanych złamań oraz infekcji.",
 
-  "people.doctors.helios-krefeld-hunerliturkoglu.title": "Ordynator, Klinika Chorób Wewnętrznych II",
-  "people.doctors.helios-krefeld-hunerliturkoglu.bio": "Kieruje hematologią i onkologią (Klinika II) w Helios Krefeld.",
-  "people.doctors.helios-berlin-buch-schrader.title": "Ordynator Urologii",
-  "people.doctors.helios-berlin-buch-schrader.bio": "Szef urologii w Helios Berlin-Buch; onkourologia i chirurgia małoinwazyjna.",
-  "people.doctors.helios-berlin-buch-ryang.title": "Ordynator Neurochirurgii i Kierownik Centrum Kręgosłupa",
-  "people.doctors.helios-berlin-buch-ryang.bio": "Szefowa neurochirurgii w Helios Berlin-Buch; neuroonkologia i złożona chirurgia kręgosłupa.",
-  "people.doctors.uk-koeln-hallek.title": "Dyrektor Kliniki Chorób Wewnętrznych I",
-  "people.doctors.uk-koeln-hallek.bio": "Dyrektor Kliniki I (onkologia/hematologia/choroby zakaźne) w Uniwersyteckim Szpitalu w Kolonii.",
-  "people.doctors.uk-koeln-goldbrunner.title": "Dyrektor Neurochirurgii Ogólnej",
-  "people.doctors.uk-koeln-goldbrunner.bio": "Dyrektor neurochirurgii w Uniwersyteckim Szpitalu w Kolonii; guzy mózgu i chirurgia kręgosłupa."
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.title": "Profesor radioterapii onkologicznej",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.bio": "Prof. Daniel Zips to wybitny onkolog-radioterapeuta w Charité Berlin. Specjalizuje się w precyzyjnej radioterapii, nowotworach głowy i szyi oraz terapiach multimodalnych. Łączy nowoczesne techniki radioterapii z leczeniem systemowym w celu poprawy wyników przeżywalności.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.title": "Profesor pulmonologii i chorób zakaźnych",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.bio": "Prof. Martin Witzenrath to ekspert Charité Berlin w dziedzinie pulmonologii i chorób zakaźnych. Specjalizuje się w zapaleniu płuc, sepsie i nowoczesnych terapiach przeciwzakaźnych. Jest autorem uznanych międzynarodowo badań w medycynie oddechowej.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.title": "Profesor gastroenterologii, dyrektor oddziału gastroenterologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.bio": "Prof. Britta Siegmund to czołowa gastroenterolog Charité Berlin, specjalizująca się w nieswoistych chorobach zapalnych jelit (choroba Leśniowskiego-Crohna i wrzodziejące zapalenie jelita grubego). Międzynarodowo uznana badaczka łącząca immunologię z gastroenterologią kliniczną.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.title": "Profesor hepatologii i gastroenterologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.bio": "Prof. Frank Tacke to hepatolog i gastroenterolog w Charité Berlin. Specjalista w zakresie marskości wątroby, raka wątrobowokomórkowego i immunologii wątroby. Znany z pionierskich badań nad stanami zapalnymi i regeneracją wątroby.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.title": "Profesor nefrologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.bio": "Prof. Kai-Uwe Eckardt to jeden z czołowych nefrologów w Europie, kieruje oddziałem nefrologii w Charité Berlin. Specjalizuje się w przewlekłej chorobie nerek, dializoterapii i transplantologii nerek, rozwijając nowoczesne terapie zastępcze.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.title": "Profesor hematologii i onkologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.bio": "Prof. Ulrich Keller to hematolog i onkolog Charité Berlin. Ekspert w leczeniu białaczek, chłoniaków i terapii celowanych nowotworów. Autor badań translacyjnych i spersonalizowanych strategii w leczeniu nowotworów hematologicznych.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.title": "Profesor neurologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.bio": "Prof. Matthias Endres to światowej klasy neurolog w Charité Berlin, specjalizujący się w udarach, neuroprotekcji i neuroregeneracji. Wniósł istotny wkład w rozwój terapii chorób naczyniowo-mózgowych i poprawę opieki nad pacjentami po udarach.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.title": "Profesor neurochirurgii, dyrektor kliniki neurochirurgii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.bio": "Prof. Peter Vajkoczy to jeden z najwybitniejszych neurochirurgów w Europie, dyrektor kliniki neurochirurgii Charité Berlin. Ekspert w chirurgii guzów mózgu, neurochirurgii naczyniowej i chirurgii kręgosłupa. Znany z nowoczesnych technik minimalnie inwazyjnych.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.title": "Profesor okulistyki",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.bio": "Prof. Antonia Joussen to okulistka w Charité Berlin, specjalistka w chorobach siatkówki, onkologii okulistycznej i innowacyjnych technikach chirurgicznych. Jej badania nad retinopatią cukrzycową i zwyrodnieniem plamki są uznawane na całym świecie.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.title": "Profesor otorynolaryngologii (Laryngologia)",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.bio": "Prof. Heidi Olze to specjalistka otorynolaryngologii w Charité Berlin. Ekspertka w implantach ślimakowych, rehabilitacji słuchu i chirurgii niedosłuchu. Znana z badań nad implantami słuchowymi i przywracaniem słuchu w trudnych przypadkach.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.title": "Profesor chirurgii naczyniowej",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.bio": "Prof. Andreas Greiner to chirurg naczyniowy w Charité Berlin, specjalizujący się w rekonstrukcji tętnic, leczeniu tętniaków i operacjach wewnątrznaczyniowych. Rozwija minimalnie inwazyjne techniki naczyniowe i poprawia wyniki złożonych zabiegów.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.title": "Profesor chirurgii i transplantologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.bio": "Prof. Johann Pratschke to kierownik oddziału chirurgii Charité Berlin, specjalista w transplantacji narządów, chirurgii wątroby i dróg żółciowych oraz chirurgii jamy brzusznej. Jeden z czołowych ekspertów w Niemczech w zakresie przeszczepów wątroby i nerek.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.title": "Profesor urologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.bio": "Prof. Thorsten Schlomm to urolog w Charité Berlin, specjalista w leczeniu raka prostaty, chirurgii minimalnie inwazyjnej i onkologii precyzyjnej. Znany międzynarodowo z wkładu w chirurgię robotyczną i terapie spersonalizowane.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.title": "Profesor ortopedii i chirurgii urazowej",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.bio": "Prof. Carsten Perka to ortopeda w Charité Berlin, ekspert w endoprotezoplastyce stawów, rewizyjnej artroplastce i rekonstrukcji układu mięśniowo-szkieletowego. Pionier w skomplikowanych operacjach stawu biodrowego i kolanowego, stosuje nowoczesne implanty i techniki operacyjne.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.title": "Profesor onkologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.bio": "Prof. Sebastian Stintzing to onkolog kliniczny w Charité Berlin, specjalizujący się w nowotworach przewodu pokarmowego, terapiach celowanych i onkologii translacyjnej. Znany z badań klinicznych nad spersonalizowanymi terapiami raka jelita grubego.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.title": "Profesor ginekologii i położnictwa",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.bio": "Prof. Jens-Uwe Blohmer to ginekolog w Charité Berlin, ekspert w leczeniu raka piersi, chirurgii onkoplastycznej i indywidualizowanych metodach terapii. Szeroko znany z badań nad optymalizacją leczenia chirurgicznego i systemowego nowotworów piersi.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.title": "Profesor hematologii i onkologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.bio": "Prof. Lars Bullinger to hematolog i onkolog w Charité Berlin, specjalista w białaczkach, chłoniakach i medycynie molekularnej. Międzynarodowo uznany za wprowadzanie genomowych metod diagnozy i leczenia nowotworów hematologicznych.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.title": "Profesor ginekologii, dyrektor oddziału ginekologii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.bio": "Prof. Jalid Sehouli to czołowy onkolog ginekologiczny w Charité Berlin, specjalizujący się w raku jajnika, rakowatości otrzewnej i chirurgii onkologicznej. Znany z pionierskich operacji cytoredukcyjnych i międzynarodowego przywództwa w badaniach nad rakiem ginekologicznym.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.title": "Profesor psychiatrii i psychoterapii",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.bio": "Prof. Malek Bajbouj to psychiatra w Charité Berlin, ekspert w leczeniu depresji, zaburzeń lękowych i terapii neurostymulacyjnych. Specjalizuje się w przezczaszkowej stymulacji magnetycznej (TMS) i innowacyjnych metodach terapii depresji opornej na leczenie.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.title": "Profesor chirurgii i onkologii",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.bio": "Prof. Christoph Michalski to chirurg onkolog w ETHIANUM Heidelberg, specjalista w nowotworach trzustki, przewodu pokarmowego i wątroby. Międzynarodowo uznany za rozwój technik chirurgicznych raka trzustki i opiekę multidyscyplinarną w onkologii.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.title": "Profesor traumatologii i chirurgii rekonstrukcyjnej",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.bio": "Prof. Gerhard Schmidmaier to ekspert ETHIANUM Heidelberg w traumatologii i chirurgii rekonstrukcyjnej, specjalizuje się w złamaniach złożonych, regeneracji kości i biomateriałach. Znany z pionierskich badań w urazach ortopedycznych i inżynierii tkankowej.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.title": "Profesor anestezjologii i intensywnej terapii",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.bio": "Prof. Markus A. Weigand to kierownik anestezjologii w ETHIANUM Heidelberg, specjalista w medycynie okołooperacyjnej, intensywnej terapii i leczeniu bólu. Znany na świecie z badań nad ochroną narządów i bezpieczeństwem pacjentów podczas operacji.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.title": "Profesor otorynolaryngologii (Laryngologia)",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.bio": "Prof. Patrick Schuler to chirurg laryngolog w ETHIANUM Heidelberg, specjalista w onkologii głowy i szyi, mikrochirurgii rekonstrukcyjnej i minimalnie inwazyjnych operacjach laryngologicznych. Znany z innowacyjnych metod leczenia nowotworów głowy i szyi.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.title": "Profesor neurochirurgii",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.bio": "Prof. Sandro Krieg to neurochirurg w ETHIANUM Heidelberg, specjalista w chirurgii guzów mózgu, śródoperacyjnym monitoringu neurologicznym i neurochirurgii funkcjonalnej. Międzynarodowo uznany za innowacje w zachowaniu funkcji neurologicznych podczas złożonych operacji.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.title": "Profesor neurologii i neuroonkologii",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.bio": "Prof. Wolfgang Wick to międzynarodowo ceniony neurolog i neuroonkolog w ETHIANUM Heidelberg. Specjalista w guzach mózgu, stwardnieniu rozsianym i neuroonkologii klinicznej. Autor pionierskich badań w leczeniu glejaka i immunoterapii.",
+
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.title": "Specjalista medycyny fizykalnej i rehabilitacyjnej",
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.bio": "Dr. Wolfgang Koedel to specjalista rehabilitacji w HELIOS Amper Klinikum Dachau, zajmuje się przywracaniem sprawności po chorobach neurologicznych i ortopedycznych. Ekspert w neurorehabilitacji i indywidualnych programach terapeutycznych.",
+
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.title": "Specjalista kardiologii",
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.bio": "PD Dr. Bernhard Witzenbichler to kardiolog w HELIOS Amper Klinikum Dachau, specjalista w kardiologii interwencyjnej, chorobie wieńcowej i niewydolności serca. Znany z doświadczenia w cewnikowaniu serca i nowoczesnych terapiach kardiologicznych.",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.title": "Profesor chirurgii ogólnej i trzewnej",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.bio": "Prof. Axel Kleespies to chirurg ogólny i trzewny w HELIOS Amper Klinikum Dachau, specjalista w chirurgii przewodu pokarmowego, chirurgii onkologicznej i technikach małoinwazyjnych. Ma duże doświadczenie w leczeniu złożonych nowotworów jamy brzusznej.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.title": "Profesor neurologii",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.bio": "Prof. Holger Poppert to neurolog w HELIOS Amper Klinikum Dachau, specjalista w medycynie udarowej, chorobach naczyniowo-mózgowych i intensywnej neurologii. Znany z innowacyjnych metod leczenia i zapobiegania ostrym udarom mózgu.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.title": "Profesor gastroenterologii",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.bio": "Prof. Norbert Grüner to gastroenterolog w HELIOS Amper Klinikum Dachau, specjalista w chorobach wątroby, onkologii przewodu pokarmowego i diagnostyce endoskopowej. Ekspert w terapii przewlekłych zapalnych chorób jelit.",
+
+"people.doctors.helios-berlin-buch-ryang.title": "Specjalista neurochirurgii",
+"people.doctors.helios-berlin-buch-ryang.bio": "Dr. Ryang to neurochirurg w HELIOS Berlin-Buch, specjalista w chirurgii kręgosłupa, guzach mózgu i złożonych operacjach neurochirurgicznych. Znany z technik małoinwazyjnych i opieki skoncentrowanej na pacjencie.",
+
+"people.doctors.helios-berlin-buch-schrader.title": "Specjalista urologii",
+"people.doctors.helios-berlin-buch-schrader.bio": "Dr. Schrader to urolog w HELIOS Berlin-Buch, ekspert w raku prostaty, chorobach nerek i pęcherza oraz minimalnie inwazyjnych zabiegach urologicznych. Specjalizuje się w procedurach robotycznych i spersonalizowanym leczeniu.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.title": "Specjalista gastroenterologii",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.bio": "Dr. Hamadneh to gastroenterolog w HELIOS Frankenwald Klinik Kronach, specjalista w chorobach przewodu pokarmowego, endoskopii i onkologii przewodu pokarmowego. Ma doświadczenie w diagnostyce i terapii przewlekłych chorób trawiennych.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.title": "Specjalista chirurgii naczyniowej",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.bio": "Dr. Michael Moritz to chirurg naczyniowy w HELIOS Frankenwald Klinik Kronach, specjalista w chirurgii tętniczej i żylnej, leczeniu tętniaków i zabiegach wewnątrznaczyniowych. Znany z nowoczesnych metod leczenia chorób naczyń obwodowych.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.title": "Specjalista ginekologii",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.bio": "Dr. Milos Popovic to ginekolog w HELIOS Frankenwald Klinik Kronach, specjalizuje się w położnictwie, onkologii ginekologicznej i chirurgii małoinwazyjnej. Zapewnia kompleksową opiekę nad zdrowiem reprodukcyjnym kobiet.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.title": "Specjalista ortopedii",
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.bio": "Dr. Gennaro Manzo to ortopeda w HELIOS Frankenwald Klinik Kronach, ekspert w endoprotezoplastyce stawów, ortopedii urazowej i urazach sportowych. Znany z zaawansowanych operacji rekonstrukcji stawu biodrowego i kolanowego.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.title": "Specjalista geriatrii",
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.bio": "Dr. Smajl Marmullaku to specjalista geriatrii w HELIOS Frankenwald Klinik Kronach, ekspert w chorobach wieku podeszłego, wielochorobowości i kompleksowej opiece nad seniorami. Skupia się na poprawie jakości życia pacjentów w wieku podeszłym.",
+
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.title": "Specjalista urologii",
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.bio": "Dr. Claus-Henning Lüppchen to urolog w HELIOS Klinik Breisach, specjalista w zdrowiu prostaty, kamicy nerkowej i chorobach układu moczowego. Doświadczony w zabiegach małoinwazyjnych i endoskopowych.",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.title": "Specjalista chorób wewnętrznych",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.bio": "Dr. Martin Schuster to internista w HELIOS Klinik Breisach, koncentruje się na kardiologii, zaburzeniach metabolicznych i medycynie prewencyjnej. Zapewnia kompleksową diagnostykę i leczenie szerokiego zakresu chorób wewnętrznych.",
+
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.title": "Specjalista ortopedii",
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.bio": "Dr. Stefan Kleinert to ortopeda w HELIOS Klinik Breisach, specjalista w endoprotezoplastyce stawów, ortopedii urazowej i medycynie sportowej. Ma duże doświadczenie w rekonstrukcji stawu biodrowego i kolanowego.",
+
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.title": "Profesor chirurgii kręgosłupa",
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.bio": "Prof. Stefan M. Knöller to chirurg kręgosłupa w HELIOS Klinik Breisach, specjalizuje się w deformacjach kręgosłupa, małoinwazyjnej chirurgii kręgosłupa i endoprotezoplastyce dysków. Znany z innowacyjnych rozwiązań w złożonych przypadkach.",
+
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.title": "Specjalista geriatrii",
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.bio": "Dr. Cosmin Curelariu to geriatra w HELIOS Klinik Rottweil, specjalizuje się w chorobach wieku podeszłego, opiece nad chorymi z demencją i wielodyscyplinarnym prowadzeniu pacjentów starszych. Dba o poprawę mobilności i samodzielności seniorów.",
+
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.title": "Specjalista chirurgii naczyniowej",
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.bio": "Dr. Kai Mehlhase to chirurg naczyniowy w HELIOS Klinik Rottweil, specjalista w zabiegach wewnątrznaczyniowych, leczeniu żylaków i złożonej rekonstrukcji tętnic. Znany z nowoczesnych technik małoinwazyjnych.",
+
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.title": "Specjalista ginekologii",
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.bio": "Dr. Markus Zenz to ginekolog w HELIOS Klinik Rottweil, koncentruje się na zdrowiu reprodukcyjnym, położnictwie i onkologii ginekologicznej. Ma doświadczenie w małoinwazyjnej chirurgii ginekologicznej i kompleksowej opiece nad kobietą.",
+
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.title": "Specjalista chirurgii ogólnej i trzewnej",
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.bio": "Dr. René Hodina to chirurg ogólny i trzewny w HELIOS Klinik Rottweil, specjalista w chirurgii jamy brzusznej, onkologii przewodu pokarmowego i technikach małoinwazyjnych. Bogate doświadczenie w operacjach przewodu pokarmowego.",
+
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.title": "Specjalista anestezjologii",
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.bio": "Dr. Sandra Brandauer to anestezjolog w HELIOS Klinik Rottweil, specjalizuje się w opiece okołooperacyjnej, leczeniu bólu i intensywnej terapii. Stawia na bezpieczeństwo pacjenta i nowoczesne techniki znieczulenia.",
+
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.title": "Profesor ortopedii",
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.bio": "Prof. Markus Körber to ortopeda w HELIOS Klinik Rottweil, specjalista w ortopedii kręgosłupa, endoprotezoplastyce i rekonstrukcji narządu ruchu. Znany z pionierskich rozwiązań chirurgicznych w złożonych przypadkach.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.title": "Specjalista ginekologii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.bio": "Dr. Claudia Fritz to ginekolog w HELIOS Klinik Titisee-Neustadt, specjalistka w położnictwie, onkologii ginekologicznej i profilaktyce. Doświadczona w małoinwazyjnych operacjach i spersonalizowanej opiece nad kobietą.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.title": "Specjalista chorób wewnętrznych i intensywnej terapii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.bio": "Dr. Constanze Vollmer to specjalistka chorób wewnętrznych i intensywnej terapii w HELIOS Klinik Titisee-Neustadt. Zajmuje się stanami krytycznymi, pulmonologią i prowadzeniem złożonych chorób wewnętrznych wymagających intensywnego leczenia.",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.title": "Specjalista ginekologii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.bio": "Dr. Jan Jürgens to ginekolog w HELIOS Klinik Titisee-Neustadt, ekspert w zdrowiu reprodukcyjnym, prowadzeniu ciąż wysokiego ryzyka i onkologii ginekologicznej. Zapewnia kompleksową opiekę w zakresie zdrowia kobiet.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.title": "Specjalista ortopedii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.bio": "Dr. Lorand Alin Stoica to ortopeda w HELIOS Klinik Titisee-Neustadt, specjalista w ortopedii urazowej, rekonstrukcji stawów i urazach sportowych. Doświadczony w chirurgii małoinwazyjnej i opiece ukierunkowanej na rehabilitację.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.title": "Specjalista geriatrii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.bio": "Dr. Manfred Schmölders to specjalista geriatrii w HELIOS Klinik Titisee-Neustadt, koncentruje się na wielochorobowości, demencji i holistycznej opiece nad pacjentami starszymi. Łączy profilaktykę geriatryczną z nowoczesnymi strategiami terapeutycznymi.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.title": "Specjalista anestezjologii",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.bio": "Dr. Thomas Mrotzek to anestezjolog w HELIOS Klinik Titisee-Neustadt, specjalista w anestezji pacjentów wysokiego ryzyka, intensywnej terapii i leczeniu bólu. Zapewnia bezpieczną opiekę okołooperacyjną dzięki zaawansowanemu monitorowaniu.",
+
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.title": "Profesor chirurgii ogólnej i trzewnej",
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.bio": "Prof. Benjamin Sommer to chirurg w HELIOS Klinik Titisee-Neustadt, specjalizuje się w złożonych operacjach jamy brzusznej, raku jelita grubego i technikach małoinwazyjnych. Znany z ekspertyzy w chirurgii onkologicznej i rekonstrukcyjnej przewodu pokarmowego.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..title": "Ordynator chirurgii urazowej i ortopedii | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..bio": "Dr. Jens Osel, LL.M., to dyrektor medyczny i kierownik ortopedii i traumatologii w HELIOS Bad Saarow. Specjalizacja: skomplikowana chirurgia stopy i stawu skokowego, reumatologia i kierowanie regionalnym centrum urazowym. Wyróżniony przez FOCUS w zakresie chirurgii stopy, doświadczenie w klinikach w Wielkiej Brytanii.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.title": "Ordynator anestezjologii, intensywnej terapii i leczenia bólu okołooperacyjnego | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.bio": "Dr. Stefan Wirtz kieruje anestezjologią, OIOM i terapią bólu. Ekspert w leczeniu sepsy, ARDS/ECMO i odłączaniu od respiratora. Mocne strony: bezpieczeństwo okołooperacyjne, USG krytyczne/TEE oraz opieka paliatywna dla pacjentów chirurgicznych.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.title": "Ordynator chirurgii naczyniowej i wewnątrznaczyniowej | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.bio": "Dr. Walid Ibrahim kieruje Centrum Naczyniowym i Aortalnym, specjalista w małoinwazyjnej naprawie aorty/AAA, zabiegach hybrydowych i kompleksowych ścieżkach leczenia (angiologia–radiologia–chirurgia).",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.title": "Ordynator kardiologii | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.bio": "PD Dr. Erdal Şafak to kardiolog interwencyjny, ekspert w elektrofizjologii, terapii urządzeniami (ICD/CRT), zabiegach strukturalnych (PFO/MitraClip) i intensywnej opiece kardiologicznej. Łączy rytmologię i kardiologię interwencyjną.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.title": "Ordynator neurologii | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.bio": "PD Dr. Konstantin Prass, MBA, kieruje ostrą neurologią i oddziałem intensywnej terapii neuro z całodobową siecią trombektomii. Specjalizuje się w medycynie udaru, neuroimmunologii i złożonej opiece neurokrytycznej (szkolenie w Charité).",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.title": "Ordynator laryngologii, chirurgii głowy i szyi oraz chirurgii plastycznej twarzy | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.bio": "PD Dr. Thomas Schrom specjalizuje się w implantach ślimakowych i ucha środkowego, chirurgii endoskopowej nosa, onkologii głowy i szyi oraz chirurgii plastycznej i rekonstrukcyjnej twarzy.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.title": "Ordynator urologii i onkologii urologicznej | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.bio": "PD Dr. Tobias Klatte to ekspert w urologii robotycznej, laparoskopowej i otwartej. Specjalizacja: chirurgia raka prostaty, nerki i pęcherza, endourologia i urologia czynnościowa.",
+
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.title": "Ordynator chorób wewnętrznych, gastroenterologii i diabetologii | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.bio": "Prof. Florian Hentschel kieruje chorobami wewnętrznymi, specjalizuje się w endoskopii, NZJ, hepatologii i kompleksowej opiece diabetologicznej. Mocna strona: tworzenie zintegrowanych ścieżek GI–diabetes dla pacjentów z wielochorobowością.",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.title": "Ordynator neurochirurgii | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.bio": "Prof. Julius Dengler specjalizuje się w guzach mózgu i kręgosłupa, chirurgii naczyniowo-mózgowej, nerwów obwodowych oraz chirurgii bólu. Atuty: ekspert w chirurgii kręgosłupa i przewodniczący wielodyscyplinarnego konsylium onkologicznego.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.title": "Ordynator okulistyki | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.bio": "Dr Christoph von Sonnleithner, FEBO, kieruje kliniką okulistyki, oferując pełne spektrum diagnostyki i chirurgii. Specjalizacja: zaćma, refrakcja, jaskra, okulochirurgia plastyczna, drogi łzowe i orbita. Doświadczenie z Charité.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.title": "Ordynator anestezjologii i medycyny okołooperacyjnej | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.bio": "Dr David Schwaiberger kieruje anestezją i opieką okołooperacyjną, z naciskiem na bezpieczeństwo pacjenta, nowoczesne monitorowanie i optymalizację OIOM chirurgicznego (były starszy anestezjolog Charité).",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.title": "Ordynator onkologii i medycyny paliatywnej | Kierownik Centrum Mięsaków | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.bio": "Prof. Peter Reichardt to jeden z czołowych ekspertów ds. mięsaków w Europie, kieruje certyfikowanymi centrami onkologii i mięsaków. Specjalizacja: badania kliniczne GIST/STS/mięsaki kości, tworzenie wytycznych i opieka wielospecjalistyczna.",
+
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.title": "Ordynator ortopedii i traumatologii | Dyrektor ENDO-Klinik Berlin | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.bio": "Prof. Daniel Kendoff to specjalista w endoprotezoplastyce biodra i kolana, znany z małoinwazyjnych technik i skomplikowanych operacji rewizyjnych. Unikatowe doświadczenie: endoprotezy onkologiczne i szybkie protokoły rekonwalescencji.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.title": "Ordynator hematologii i terapii komórkowej (przeszczep komórek macierzystych) | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.bio": "Prof. Bertram Glaß kieruje hematologią, CAR-T i transplantacją komórek macierzystych. Specjalizacja: leczenie chłoniaków i białaczek, akredytowany program transplantacyjny, ponad 90 publikacji naukowych.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.title": "Ordynator chorób wewnętrznych i gastroenterologii | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.bio": "Prof. Frank Kolligs specjalizuje się w endoskopii zaawansowanej, hepatologii i onkologii przewodu pokarmowego. Mocne strony: leczenie raka wątroby i kompleksowa diagnostyka endoskopowa.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.title": "Ordynator neurologii | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.bio": "Prof. Georg Hagemann obejmuje pełne spektrum neurologii, z diagnostyką neuro-naczyniową (duplex, EEG/EMG, potencjały wywołane). Specjalizacja: udar, SM, epilepsja i opieka neurointensywna.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.title": "Dyrektor medyczny i ordynator kardiologii i nefrologii | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.bio": "Prof. Henning T. Baberg kieruje zintegrowaną opieką sercowo-nerkową (oddział bólu w klatce piersiowej, pracownia hemodynamiki, elektrofizjologia, dializy, cardio-MRI). Unikalne: przywództwo systemowe i rola akademicka w MSB.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-marc-bloching.title": "Ordynator laryngologii, chirurgii głowy i szyi | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-marc-bloching.bio": "Prof. Marc Bloching znany jest z rekonstrukcji głowy i szyi, chirurgii podstawy czaszki/orbity, implantów słuchowych i operacji korekty płci. Silne portfolio chirurgii plastycznej i rekonstrukcyjnej.",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-roger-wahba.title": "Ordynator chirurgii ogólnej, trzewnej i onkologicznej | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof.dr-roger-wahba.bio": "Prof. Roger Wahba — ekspert chirurgii wątroby i HPB. Atuty: zaawansowane resekcje onkologiczne (w tym ALPPS), wielospecjalistyczne ścieżki onkologiczne i przywództwo w małoinwazyjnej chirurgii trzewnej.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-stefan-dresel.title": "Ordynator medycyny nuklearnej | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof.dr-stefan-dresel.bio": "Prof. Stefan Dresel specjalizuje się w diagnostyce PET/SPECT i terapiach izotopowych. Unikatowe: obrazowanie funkcjonalne w onkologii i spersonalizowana theranostyka.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.title": "Ordynator chirurgii naczyniowej i wewnątrznaczyniowej | HELIOS Klinikum Emil von Behring (Berlin-Zehlendorf)",
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.bio": "Dr Adam Czerwinski prowadzi chirurgię naczyniową i endowaskularną z naciskiem na zabiegi aortalne, szyjne i obwodowe. Unikatowe: rozwój programu w Zehlendorfie i kompetencje hybrydowej sali operacyjnej.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.title": "Ordynator ortopedii i chirurgii urazowej | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.bio": "Dr Axel Reinhardt kieruje ortopedią z podziałem na sekcje zabiegowe wg podspecjalizacji. Fokus: wysokiej jakości leczenie operacyjne stawów, kręgosłupa i urazów przez zespół ekspertów.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.title": "Ordynator hematologii i onkologii | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.bio": "Dr Börge Arndt — specjalista w guzach litych i nowotworach hematologicznych z podejściem precyzyjnej onkologii. Atuty: onkologia przewodu pokarmowego, CUP, białaczki/chłoniaki oraz nowoczesne przeciwciała/immunoterapie.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.title": "Ordynator radiologii diagnostycznej i zabiegowej, medycyny nuklearnej i obrazowania molekularnego | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.bio": "PD dr Christian Althoff — ekspert angiografii i terapii pod kontrolą obrazowania. Unikatowe: pełne spektrum radiologii interwencyjnej w onkologii, naczyniach i układzie ruchu.",
+
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.title": "Ordynator chirurgii klatki piersiowej | Lungenklinik Heckeshorn, HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.bio": "Dr Mohamed Zaatar — specjalista chirurgii klatki piersiowej: rak płuca, metastazektomie, złożone zabiegi ściany klatki. Unikatowe: kierowanie historycznym programem Heckeshorn (mianowany 2025).",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik.title": "Ordynator kardiologii (Medycyna Wewnętrzna I), szef Helios Heart Network Berlin-Brandenburg | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik.bio": "Prof. Cemil Özcelik — kardiolog interwencyjny w chorobie wieńcowej i wadach strukturalnych serca (małoinwazyjne naprawy zastawek). Unikatowe: przywództwo sieci kardiologicznej i zaplecze w kardiogenetyce translacyjnej.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-eckart-schott.title": "Ordynator gastroenterologii, hepatologii i diabetologii (Medycyna Wewnętrzna II) | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-eckart-schott.bio": "Prof. Eckart Schott — ekspert hepatologii i zaawansowanej endoskopii. Atuty: NChZJ, wirusowe zapalenia wątroby, choroby trzustkowo-żółciowe i certyfikowane ścieżki onkologii przewodu pokarmowego.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-georg-hagemann.title": "Neurologia (informacja nie dotyczy tej sekcji)",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-georg-hagemann.bio": "Prof. Georg Hagemann jest ordynatorem neurologii w HELIOS Berlin-Buch. Dla poprawnego SEO prosimy przypisać go do Berlin-Buch, nie do Emil von Behring.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-henning-t-baberg.title": "Kardiologia i nefrologia (informacja nie dotyczy tej sekcji)",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-henning-t-baberg.bio": "Prof. Henning T. Baberg pracuje w HELIOS Berlin-Buch, nie w Emil von Behring. Prosimy mapować do Berlin-Buch dla właściwej kategoryzacji.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen.title": "Ordynator chirurgii ogólnej, trzewnej i małoinwazyjnej | Certyfikowane Centrum Chirurgii Małoinwazyjnej Berlin-Południowy Zachód | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen.bio": "Prof. Marc H. Jansen specjalizuje się w małoinwazyjnej chirurgii kolorektalnej i przepuklin, procedurach antyrefluksowych oraz chirurgii endokrynnej/górnego odcinka przewodu pokarmowego. Unikatowe: kierowanie certyfikowanymi programami onkologii trzewnej (jelito grube i trzustka).",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.title": "Chirurgia wisceralna (informacja nieaktualna dla tej strony)",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.bio": "Prof. Roger Wahba od sierpnia 2023 kieruje Kliniką Chirurgii Wisceralnej w HELIOS Berlin-Buch. Nie umieszczać pod Emil von Behring dla poprawności SEO.",
+
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.title": "Ordynator Chirurgii Szczękowo-Twarzowej | Centrum Nowotworów Głowy i Szyi | Chirurgia Estetyczna Twarzy",
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.bio": "PD Dr. Dr. Johannes Wikner kieruje chirurgią szczękowo-twarzową w Helios Erfurt, prowadzi Centrum Nowotworów Głowy i Szyi oraz Helios Privatklinik. Specjalizacja: chirurgia onkologiczna i rekonstrukcyjna twarzy, chirurgia ortognatyczna, implantologia i złożone operacje głowy i szyi.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.title": "Ordynator Chirurgii Kręgosłupa (Ortopedia i Traumatologia)",
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.bio": "Dr. Ali Ezzati kieruje Kliniką Chirurgii Kręgosłupa Helios Erfurt – od małoinwazyjnych zabiegów endoskopowych po korekcje deformacji. Wysokie roczne wolumeny operacji potwierdzają doświadczenie i skuteczność.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.title": "Ordynator Chirurgii Naczyniowej i Endowaskularnej | Współkierownik Centrum Naczyniowego Gotha–Erfurt",
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.bio": "PD Dr. Hendrik Bergert specjalizuje się w rekonstrukcjach aorty, tętnic szyjnych i obwodowych przy użyciu technik hybrydowych (endowaskularnych i otwartych). Współkierownik interdyscyplinarnego centrum naczyniowego.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.title": "Ordynator Pneumologii, Medycyny Snu i Wentylacji | Kierownik Centrum Raka Płuc",
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.bio": "Dr. Jens-Uwe Bauer kieruje pneumologią i certyfikowanym Centrum Raka Płuc Helios Erfurt. Specjalizacja: bronchoskopia interwencyjna, medycyna snu i wentylacji, multidyscyplinarne ścieżki onkologiczne.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.title": "Ordynator Chirurgii Klatki Piersiowej i Endoskopii | Kierownik Centrum Raka Płuc",
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.bio": "Dr. Jörg Kluge wykonuje złożone operacje płuc i śródpiersia techniką VATS/uniportal oraz bronchoskopię (sztywną/elastyczną), współkierując regionalnym Centrum Raka Płuc.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.title": "Ordynator, Interdyscyplinarne Centrum Stopy Cukrzycowej (IZDF)",
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.bio": "Dr. Thomas Werner prowadzi IZDF Helios Erfurt, z programem ratowania kończyn, zapobiegania amputacjom i koordynowanej opieki naczyniowo-diabetologicznej.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.title": "Ordynator Kardiologii | Kardiologia interwencyjna i strukturalna",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.bio": "Prof. Alexander Lauten kieruje oddziałem kardiologii: interwencje cewnikowe, pracownia hemodynamiczna, jednostka bólu w klatce piersiowej, obrazowanie serca (MRI/CT) i elektrofizjologia (ablacje, urządzenia).",  
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.title": "Ordynator Chirurgii Ogólnej i Wisceralnej | Kierownik Centrum Onkologii Wisceralnej",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.bio": "Prof. Attila Dubecz specjalizuje się w chirurgii górnego odcinka przewodu pokarmowego i HPB z użyciem technik robotycznych i małoinwazyjnych. Kierownik Centrum Onkologii Wisceralnej, gdzie decyzje podejmowane są w ramach konsyliów onkologicznych.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.title": "Profesor Neurochirurgii | Dyrektor Medyczny | Kierownik Centrum Neuroonkologii",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.bio": "Prof. Rüdiger Gerlach prowadzi Centrum Neuroonkologii i wykonuje zaawansowane operacje guzów mózgu i kręgosłupa z indywidualnym podejściem.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.title": "Ordynator Intensywnej i Pośredniej Opieki | Dyrektor sieci Anestezja–OIOM–Ratownictwo–Ból–Opieka Paliatywna",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.bio": "Prof. Heinrich V. Groesdonk kieruje regionalnym centrum anestezji, intensywnej terapii, medycyny ratunkowej, leczenia bólu i opieki paliatywnej. Ekspert w zakresie strategii podtrzymywania narządów i trudnego odłączania od respiratora.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.title": "Ordynator Otolaryngologii, Chirurgii Głowy i Szyi | Centrum Implantów Ślimakowych i Audiologii",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.bio": "Prof. Holger Kaftan specjalizuje się w onkochirurgii głowy i szyi, technikach laserowych CO₂ oraz implantach słuchowych (ślimakowych i ucha środkowego).",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.title": "Ordynator Nefrologii",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.bio": "Prof. Wolfgang Neuhofer zapewnia nowoczesną opiekę nefrologiczną, obejmującą dializy i kontrolę po przeszczepie, z indywidualnymi planami leczenia przewlekłej niewydolności nerek.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.title": "Ordynator Urologii | Kierownik Centrum Uroonkologii | Dyrektor Centrum Chirurgii Robotycznej Europy Środkowej",
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.bio": "Prof. Thomas Steiner kieruje urologią, stosując chirurgię robotyczną i małoinwazyjną w leczeniu raka prostaty, nerek i pęcherza. Prowadzi także programy urologii czynnościowej i zdrowia mężczyzn.",
+
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.title": "Ordynator Chirurgii Klatki Piersiowej",
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.bio": "Dr. Michael Klopp wykonuje anatomiczne resekcje płuc i zabiegi VATS we współpracy z pulmonologią i onkologią, zapewniając całodobową opiekę torakochirurgiczną.",
+
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.title": "Ordynator Ortopedii, Traumatologii i Chirurgii Kręgosłupa",
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.bio": "PD Dr. Bernd Maier prowadzi endoprotezoplastykę stawów, leczenie urazów i operacje kręgosłupa z zastosowaniem szybkiej rehabilitacji i technik oszczędzających ruch.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.title": "Profesor Neurologii | Ordynator",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.bio": "Prof. Benjamin Berger kieruje neurologią, specjalizuje się w chorobach naczyniowych mózgu, neuroimmunologii i opiece neurointensywnej, łącząc naukę akademicką z praktyką kliniczną.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.title": "Ordynator Gastroenterologii, Hepatologii, Chorób Zakaźnych i Diabetologii",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.bio": "Prof. Christian Rupp prowadzi zaawansowaną endoskopię, hepatologię i leczenie metaboliczne, integrując intensywną internę dla pacjentów złożonych (GI, cukrzyca).",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.title": "Ordynator Urologii i Urologii Dziecięcej | Chirurgia Robotyczna",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.bio": "Prof. Shu-Fon Muna specjalizuje się w operacjach robotycznych i małoinwazyjnych prostaty, nerek i pęcherza, rozwijając kompleksową opiekę urologiczną w regionie.",
+
+"people.doctors.helios-krefeld-hunerliturkoglu.title": "Ordynator Hematologii, Onkologii Klinicznej i Medycyny Paliatywnej",
+"people.doctors.helios-krefeld-hunerliturkoglu.bio": "Dr. Ali Nuri Hünerlitürkoglu kieruje Kliniką Chorób Wewnętrznych II w Helios Krefeld, leczy białaczki, chłoniaki i nowotwory lite nowoczesną terapią systemową i wspomagającą.",
+
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.title": "Ordynator Chirurgii Ogólnej i Wisceralnej",
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.bio": "Dr. Erich Bielesch specjalizuje się w onkologicznej chirurgii jelita grubego i zabiegach małoinwazyjnych, koordynuje certyfikowane ścieżki kolorektalne i protokoły ERAS.",
+
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.title": "Ordynator Chirurgii Naczyniowej | Dyrektor Medyczny | Specjalista Endowaskularny",
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.bio": "Dr. Reza Ghotbi – certyfikowany chirurg naczyniowy, wisceralny i endowaskularny (DGG), wykonuje zaawansowane operacje aorty, tętnic szyjnych i obwodowych w placówkach Helios w Monachium.",
+
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.title": "Ordynator Chirurgii Szczękowo-Twarzowej i Chirurgii Plastycznej Twarzy",
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.bio": "Prof. Denys J. Loeffelbein (FEBOMFS), lekarz podwójnej specjalizacji (medycyna i stomatologia), profesor akademicki, wykonuje złożone operacje rekonstrukcyjne i estetyczne twarzy.",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.title": "Ordynator Otolaryngologii (Głowa i Szyja) | Chirurgia Plastyczna i Rekonstrukcyjna LOR",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.bio": "PD Dr. Thomas Stark kieruje jedną z największych klinik LOR w południowej Bawarii, specjalizując się w chirurgii podstawy czaszki i onkologii głowy i szyi, z konsyliami wielodyscyplinarnymi i nowoczesnymi technikami rekonstrukcyjnymi.",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.title": "Ordynator Chirurgii Ręki",
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.bio": "Prof. Elias Volkmer prowadzi chirurgię ręki, ekspert w rekonstrukcji nerwów, ścięgien i nadgarstka; posiadacz certyfikatu eksperta DGH w chirurgii ręki.",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.title": "Ordynator Kardiologii i Intensywnej Interny",
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.bio": "Prof. Sebastian Kufner rozwija kardiologię w Helios Munich West, łącząc kardiologię interwencyjną, obrazowanie i intensywną internę z podejściem skoncentrowanym na pacjencie.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.title": "Profesor Kardiochirurgii | Pionier Transplantacji Serca i Płuc",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.bio": "Prof. Bruno Reichart to światowej sławy kardiochirurg z LMU Monachium, pionier nowoczesnych transplantacji serca i płuc. Jego badania nad ksenotransplantacją i mechanicznym wspomaganiem krążenia zrewolucjonizowały kardiochirurgię.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.title": "Profesor Urologii | Dyrektor Kliniki Urologii LMU Monachium",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.bio": "Prof. Christian G. Stief kieruje urologią LMU Monachium, specjalizuje się w onkourologii, chirurgii małoinwazyjnej i robotycznej oraz andrologii. Uznawany za lidera w badaniach nad rakiem prostaty i innowacjach zdrowia mężczyzn.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.title": "Profesor Neurochirurgii | Ekspert w Chirurgii Kręgosłupa i Neuroonkologii",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.bio": "Prof. Florian Ringel to czołowy neurochirurg LMU Monachium, specjalizuje się w operacjach kręgosłupa, neuroonkologii i obrazowaniu śródoperacyjnym. Znany jako pionier technik małoinwazyjnych i neuronawigacyjnych.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.title": "Profesor Kardiochirurgii | Specjalista od Sztucznego Serca i Transplantacji",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.bio": "Prof. Paolo Brenner – kardiochirurg LMU Monachium, ekspert w systemach sztucznego serca oraz transplantacjach płuc i serca. Jego badania nad ksenotransplantacją i wspomaganiem krążenia są uznawane na całym świecie.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.title": "Profesor Onkologii | Ekspert w Sarkomach i Hipertermii",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.bio": "Prof. Rolf D. Issels – onkolog LMU Monachium, specjalista w terapii sarkom i leczeniu hipertermią. Prowadził badania kliniczne nad chemioterapią regionalną i onkologią multimodalną, współtworząc międzynarodowe wytyczne.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.title": "Profesor Onkologii | Specjalista w Nowotworach Przewodu Pokarmowego",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.bio": "Prof. Volker Heinemann to czołowy onkolog LMU Monachium, koncentruje się na nowotworach przewodu pokarmowego, szczególnie raka jelita grubego i trzustki. Znany globalnie z badań klinicznych nad chemioterapią i terapiami celowanymi.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.title": "Specjalista Hematologii i Onkologii | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.bio": "Dr. Andreas Arndt – doświadczony onkolog w Medical Park Bad Feilnbach, koncentruje się na terapii systemowej raka, leczeniu wspomagającym i rehabilitacji pacjentów onkologicznych.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.title": "Specjalista Geriatrii i Chorób Wewnętrznych | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.bio": "Dr. Rainer Ahrens – specjalista w geriatrii, oferuje kompleksową rehabilitację seniorów. Ekspert w wielochorobowości, zaburzeniach mobilności i chorobach wewnętrznych wieku podeszłego.",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.title": "Profesor Urologii | Specjalista Urologii Funkcjonalnej i Rekonstrukcyjnej",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.bio": "Prof. Peter Young – ekspert urologii w Medical Park Bad Feilnbach, specjalizuje się w urologii funkcjonalnej i rekonstrukcyjnej. Znany z pracy nad nietrzymaniem moczu, neurourologią i rehabilitacją pooperacyjną.",
+
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.title": "Specjalista Urologii | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.bio": "Dr. Dirk Zauper – urolog w Medical Park Bad Rodach; obszary: uroonkologia, endourologia i zdrowie mężczyzn. Zapewnia zaawansowaną terapię i rehabilitację schorzeń urologicznych.",
+
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.title": "Specjalista Ortopedii i Rehabilitacji | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.bio": "Dr. Johannes Jürgen Mees – ortopeda, koncentruje się na rehabilitacji po operacjach stawów i kręgosłupa. Mocne strony: rehabilitacja narządu ruchu i medycyna sportowa.",
+
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.title": "Specjalista Ortopedii i Medycyny Sportowej | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.bio": "Dr. Nadine Dreyer – ekspert ortopedii w urazach sportowych, rehabilitacji stawów i małoinwazyjnym leczeniu schorzeń układu ruchu.",
+
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.title": "Specjalista Kardiologii i Chorób Wewnętrznych | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.bio": "PD Dr. Andreas Stein – kardiolog, specjalista w rehabilitacji kardiologicznej, leczeniu arytmii i profilaktyce sercowo-naczyniowej; łączy nowoczesną diagnostykę z indywidualną terapią.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.title": "Profesor Ortopedii | Specjalista Chirurgii Stawów i Rehabilitacji",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.bio": "Prof. Andrea Meurer – uznana ortopedka, specjalizacja: endoprotezoplastyka biodra i kolana oraz rehabilitacja pooperacyjna. Znana z podejścia skoncentrowanego na pacjencie i dorobku akademickiego.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.title": "Profesor Chorób Wewnętrznych | Specjalista Rehabilitacji i Medycyny Prewencyjnej",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.bio": "Prof. Christian Firschke koncentruje się na internie, prewencji sercowo-naczyniowej i rehabilitacji. Łączy terapię opartą na dowodach z podejściem profilaktycznym dla długofalowego zdrowia.",
+
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.title": "Profesor Ortopedii i Traumatologii | Specjalista Medycyny Rehabilitacyjnej",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.bio": "Prof. Karsten Dreinhöfer – ekspert ortopedii i traumatologii z naciskiem na rehabilitację, schorzenia układu mięśniowo-szkieletowego i zdrowie kości; międzynarodowo uznany w rehabilitologii i bezpieczeństwie pacjenta.",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.title": "Profesor Neurologii | Specjalista Medycyny Udaru i Neurorehabilitacji",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.bio": "Prof. Martin Ebinger – neurolog, specjalizuje się w medycynie udaru, neurorehabilitacji i nagłych stanach neurologicznych. Znany z badań nad przedszpitalną diagnostyką udaru i innowacyjnymi koncepcjami neurorehabilitacji.",
+
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.title": "Profesor Ortopedii | Specjalista Chirurgii Stawów i Medycyny Sportowej",
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.bio": "Prof. Marcus Schmitt-Sody – ortopeda, koncentruje się na endoprotezoplastyce biodra i kolana, medycynie sportowej i rehabilitacji układu ruchu. Lider rehabilitacji ortopedycznej nad jeziorem Chiemsee.",
+
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.title": "Profesor Medycyny Psychosomatycznej i Psychoterapii",
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.bio": "Prof. Andreas Menke – specjalista medycyny psychosomatycznej i psychoterapii; skupia się na depresji, zaburzeniach lękowych i związanych ze stresem. Łączy psychoterapię z holistyczną rehabilitacją.",
+
+"people.doctors.schlossparkklinik-dr-andre-kwalek.title": "Specjalista Ortopedii i Traumatologii | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-andre-kwalek.bio": "Dr. Andre Kwalek – ortopeda i traumatolog Schlosspark-Klinik Berlin; specjalizacja: endoprotezy stawów, urazy układu ruchu i chirurgia ukierunkowana na rehabilitację.",
+
+"people.doctors.schlossparkklinik-dr-dominik-schuster.title": "Specjalista Chorób Wewnętrznych i Gastroenterologii | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-dominik-schuster.bio": "Dr. Dominik Schuster – specjalista chorób wewnętrznych i gastroenterologii; zapewnia kompleksową diagnostykę i leczenie chorób przewodu pokarmowego i zaburzeń metabolicznych.",
+
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.title": "Specjalista Neurologii | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.bio": "Dr. Shahram Yousefi – neurolog w Schlosspark-Klinik Berlin; specjalizacja: choroby neurodegeneracyjne, padaczka i leczenie udaru.",
+
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.title": "Profesor Chirurgii Ogólnej i Wisceralnej | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.bio": "Prof. Carsten Kamphues – chirurg wisceralny, specjalizuje się w chirurgii wątroby, dróg żółciowych i trzustki oraz w onkologicznych operacjach jamy brzusznej.",
+
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.title": "Profesor Neurochirurgii | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.bio": "Prof. Theodoros Kombos – neurochirurg; zakres: guzy mózgu, chirurgia podstawy czaszki i neurochirurgia kręgosłupa; ceniony za połączenie mikrochirurgii z nowoczesnym obrazowaniem.",
+
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.title": "Profesor Neurologii | Specjalista Zawrotów Głowy i Zaburzeń Równowagi",
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.bio": "Prof. Thomas Lempert – czołowy neurolog w Berlinie, międzynarodowo znany z ekspertyzy w zawrotach głowy, vertigo i zaburzeniach równowagi; bogaty dorobek naukowy.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.title": "Profesor Neurochirurgii | Kierownik, TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.bio": "Prof. Bernhard Meyer – szef neurochirurgii w TUM Klinikum rechts der Isar; znany z operacji mózgu i kręgosłupa, neuroonkologii i małoinwazyjnych procedur kręgosłupa.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.title": "Profesor Hematologii i Onkologii | Dyrektor, Choroby Wewnętrzne III (H&O) TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.bio": "Prof. Florian Bassermann kieruje hematologią i onkologią w TUM; specjalizacja: białaczki, nowotwory B-komórkowe i terapie celowane; aktywnie działa w badaniach translacyjnych.",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.title": "Profesor Chirurgii Ogólnej i Wisceralnej | Ekspert chirurgii raka trzustki",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.bio": "Prof. Helmut Friess — dyrektor chirurgii TUM, międzynarodowo uznany w chirurgii trzustki, wątroby i dróg żółciowych; badania nad biologią raka trzustki.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.title": "Profesor Urologii | Lider onkourologii i chirurgii robotycznej",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.bio": "Prof. Jürgen E. Gschwend kieruje urologią TUM; koncentruje się na raku prostaty i pęcherza, technikach nerwooszczędzających i leczeniu multimodalnym.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.title": "Profesor Kardiologii | Dyrektor Kardiologii TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.bio": "Prof. Karl-Ludwig Laugwitz — czołowy kardiolog interwencyjny i specjalista niewydolności serca; rozwija badania nad komórkami macierzystymi i regeneracją mięśnia sercowego w Monachium.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.title": "Profesor Radioterapii Onkologicznej | Dyrektor Radioterapii Onkologicznej TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.bio": "Prof. Stephanie E. Combs kieruje radioterapią onkologiczną TUM, rozwija precyzyjną radioterapię i medycynę translacyjną w onkologii promieniowaniem.",
+  
+"people.doctors.uk-koeln-goldbrunner.title": "Profesor Neurochirurgii | Dyrektor, Uniwersytecki Szpital w Kolonii",
+"people.doctors.uk-koeln-goldbrunner.bio": "Prof. Guido Goldbrunner kieruje neurochirurgią w Kolonii: neuroonkologia, chirurgia podstawy czaszki i kompleksowe leczenie guzów mózgu.",
+  
+"people.doctors.uk-koeln-hallek.title": "Profesor Hematologii i Onkologii | Ekspert CLL, Uniwersytecki Szpital w Kolonii",
+"people.doctors.uk-koeln-hallek.bio": "Prof. Michael Hallek — światowy autorytet w CLL, prowadzi duże programy badań klinicznych i rozwija terapie celowane w nowotworach hematologicznych.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.title": "Kierownik Chirurgii Ogólnej, Wisceralnej i Urazowej | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.bio": "Dr Arndt von Kirchbach kieruje chirurgią ogólną, wisceralną i urazową w Bernau: zaawansowane operacje przepuklin, jamy brzusznej i chirurgia nagła.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.title": "Kierownik Chorób Wewnętrznych | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.bio": "Dr Michael Zänker kieruje interną w Bernau; mocne strony: opieka kardiometaboliczna i reumatologia oraz zintegrowane leczenie stacjonarne.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.title": "Profesor Kardiologii | Ordynator, Helios Emil von Behring (Berlin)",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.bio": "Prof. Cemil Özcelik — interwencyjny kardiolog z Berlina, ekspert w chorobach strukturalnych serca i interwencjach wieńcowych; lider Helios Heart Network Berlin-Brandenburg.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.title": "Profesor Kardiochirurgii | Kierownik Chirurgii Serca i Naczyń, Bernau",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.bio": "Prof. Johannes M. Albes kieruje kardiochirurgią i chirurgią naczyniową w Bernau: naprawa/wymiana zastawek oraz złożone procedury aortalne i wieńcowe.",
+  
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.title": "Profesor Kardiologii | Kierownik, Kardiologia — Bernau Heart Center",
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.bio": "Prof. Christian Butter — pionier interwencji strukturalnych (TAVI, MitraClip); kieruje kardiologią w Brandenburskim Centrum Serca w Bernau.",
+  
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.title": "Kierownik Chirurgii Ogólnej, Wisceralnej i Urazowej | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.bio": "Dr Arndt von Kirchbach — doświadczony chirurg ogólny i wisceralny; zakres: chirurgia jamy brzusznej, przepuklin i urazowa w Bernau (pod Berlinem).",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.title": "Ordynator Chirurgii Dziecięcej i Urologii | Uniwersytecka Klinika Brandenburg",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.bio": "PD Dr. Carlos A. Reck-Burneo – specjalista w złożonej chirurgii dziecięcej jelit i miednicy; zapewnia opiekę wielospecjalistyczną dla dzieci i młodzieży.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.title": "Profesor Neurochirurgii | Ordynator, Uniwersytecka Klinika Brandenburg",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.bio": "Prof. Christian Ewald kieruje neurochirurgią w Brandenburg an der Havel; specjalizacja: neuroonkologia, chirurgia kręgosłupa i zabiegi naczyniowo-neurologiczne.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.title": "Profesor Hematologii i Onkologii | Dyrektor Kliniki, Brandenburg",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.bio": "Prof. P. Markus Deckert prowadzi hematologię, onkologię i medycynę paliatywną, skupiając się na spersonalizowanej terapii raka i kompleksowej opiece wspierającej.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.title": "Profesor Ortopedii i Medycyny Sportowej | Brandenburg",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.bio": "Prof. Roland Becker – ortopeda znany z chirurgii kolana i urazów sportowych; specjalizacja: artroskopia i opieka zorientowana na rehabilitację.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.title": "Ordynator Psychiatrii, Psychosomatyki i Psychoterapii | Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.bio": "Dr Cordula Sikorski kieruje psychiatrią w Cottbus, łącząc opiekę stacjonarną, dzienną i ambulatoryjną w leczeniu depresji, lęków i psychoz.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.title": "Dyrektor Medyczny | Centrum Ortopedii i Traumatologii Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.bio": "Dr Cornelia Schmidt nadzoruje usługi ortopedyczne w Cottbus; mocne strony: stawy, kręgosłup i urazy w ramach regionalnej sieci narządu ruchu.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.title": "Ordynator Medycyny Ratunkowej | Carl-Thiem-Klinikum Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.bio": "Dr Tim Flasbeck kieruje medycyną ratunkową w CTK Cottbus; optymalizuje procesy SOR i ścieżki leczenia stanów nagłych.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.title": "Ordynator Radiologii Ogólnej | CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.bio": "PD Dr. Gero Wieners prowadzi radiologię ogólną w CTK Cottbus; rozwija obrazowanie onkologiczne, współpracę z neuroradiologią i diagnostykę zgodną z wytycznymi.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.title": "Profesor Hematologii i Onkologii | CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.bio": "Prof. Martin Schmidt-Hieber – ordynator hematologii i onkologii w CTK Cottbus; specjalizacja: białaczki, terapia komórkami macierzystymi i opieka wspierająca w onkologii.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.title": "Specjalista Chirurgii Ogólnej | Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.bio": "PD Dr. Rainer Kube zapewnia opiekę chirurgiczną ogólną i wisceralną w Cottbus, koncentrując się na małoinwazyjnych operacjach jamy brzusznej.",
+
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.title": "Profesor Neurochirurgii | Ordynator, CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.bio": "Prof. Ehab Shiban kieruje neurochirurgią CTK Cottbus; specjalizacja: neuroonkologia, chirurgia podstawy czaszki i nowoczesna chirurgia kręgosłupa.",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.title": "Profesor Okulistyki | Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.bio": "Prof. Helmut Sachs prowadzi okulistykę w Cottbus; specjalizacja: zaćma, jaskra, laseroterapia siatkówki i iniekcje doszklistkowe.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.title": "Profesor Okulistyki | Dyrektor, Uniwersytecki Szpital Okulistyczny w Düsseldorfie",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.bio": "Prof. Gerd Geerling — dyrektor okulistyki UKD, międzynarodowo znany z chirurgii rogówki, rekonstrukcji powierzchni oka i badań translacyjnych.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.title": "Profesor Chirurgii Ogólnej i Wisceralnej | Dyrektor, UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.bio": "Prof. Wolfram T. Knoefel kieruje chirurgią ogólną i wisceralną UKD; czołowy ekspert w chirurgii wątroby–trzustki–dróg żółciowych oraz transplantologii.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.title": "Profesor Neurochirurgii | Dyrektor, Uniwersytecki Szpital Düsseldorf",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.bio": "Prof. Katharina Faust kieruje neurochirurgią UKD; fokus: neuroonkologia i chirurgia podstawy czaszki z nowoczesnym obrazowaniem śródoperacyjnym.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.title": "Profesor Kardiologii | Przewodniczący, Kardiologia–Pulmonologia–Medycyna Naczyniowa UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.bio": "Prof. Malte Kelm prowadzi kardiologię UKD; specjalizacja: kardiologia interwencyjna, medycyna naczyniowa i translacyjne badania sercowo-naczyniowe.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.title": "Profesor Endokrynologii i Diabetologii | Dyrektor UKD; CEO, Niemieckie Centrum Diabetologii",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.bio": "Prof. Michael Roden kieruje endokrynologią i diabetologią w UKD oraz Niemieckim Centrum Diabetologii; fokus: choroby metaboliczne i precyzyjna diabetologia.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.title": "P.o. Dyrektora, Ortopedia i Traumatologia | Endoprotezoplastyka i zdrowie kości",
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.bio": "Univ.-Prof. Uwe Maus pełni funkcję p.o. dyrektora ortopedii UKD; endoprotezoplastyka biodra/kolana, osteologia i złożone operacje rewizyjne.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.title": "Profesor Urologii | Dyrektor, Uniwersytecki Szpital Erlangen",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.bio": "Prof. Bernd Wullich kieruje urologią w Erlangen; onkourologia, prostatektomia oraz rekonstrukcja dna miednicy.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.title": "Profesor Kardiochirurgii | Dyrektor, Kardiochirurgia Erlangen",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.bio": "Prof. Oliver Dewald prowadzi kardiochirurgię w Erlangen, łącząc chirurgię dorosłych i dzieci; nacisk na zabiegi zastawkowe i wrodzone wady serca.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.title": "Profesor Neurochirurgii | Dyrektor, Klinika Neurochirurgii Erlangen",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.bio": "Prof. Oliver Schnell kieruje neurochirurgią w Erlangen; mocne strony: neuroonkologia, chirurgia podstawy czaszki i neurochirurgia naczyniowa.",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.title": "Profesor Kardiologii | Dyrektor, Kardiologia i Angiologia Erlangen",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.bio": "Prof. Stephan Achenbach — kierownik kardiologii w Erlangen, światowy lider w obrazowaniu serca i kardiologii interwencyjnej, z bogatym doświadczeniem badawczym.",
+
+"people.doctors.universitaetsklinikum-erlangen-unknown.title": "Specjalista Urologii | Uniwersytecki Szpital Erlangen",
+"people.doctors.universitaetsklinikum-erlangen-unknown.bio": "Specjalista urolog w Erlangen, koncentruje się na procedurach małoinwazyjnych i onkourologii.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.title": "Profesor Nefrologii | Przeszczepy nerek i przewlekła choroba nerek",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.bio": "Prof. Bernhard Banas — nefrolog z Uniwersytetu w Ratyzbonie, specjalizuje się w transplantacji nerek, dializach i leczeniu PChN; szczególny nacisk na indywidualną immunosupresję.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.title": "Profesor Chirurgii Ogólnej, Wisceralnej i Transplantacyjnej | Chirurgia HPB i trzustki",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.bio": "Prof. Hans-Jürgen Schlitt prowadzi złożone operacje jamy brzusznej i HPB w Ratyzbonie; mocne strony: onkochirurgia przewodu pokarmowego, zabiegi na wątrobie i trzustce, programy transplantacyjne.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.title": "Profesor Chirurgii Klatki Piersiowej | Rak płuc i procedury małoinwazyjne",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.bio": "Prof. Hans-Stefan Hofmann — torakochirurg, specjalizacja: rak płuc, operacje śródpiersia i techniki VATS/robotyczne we współpracy z pulmonologią i onkologią.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.title": "Profesor Kardiologii | Dyrektor, Choroby Wewnętrzne II (kardio) Ratyzbona",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.bio": "Prof. Lars Maier — kardiolog, specjalizuje się w niewydolności serca, kardiologii interwencyjnej i obrazowaniu; wdraża medycynę opartą na dowodach w University Cardio Center Regensburg.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.title": "Profesor Gastroenterologii i Hepatologii | Ekspert w IBD i chorobach wątroby",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.bio": "Prof. Martina Müller-Schilling leczy nieswoiste zapalenia jelit, wirusowe zapalenia wątroby i nowotwory przewodu pokarmowego; łączy nowoczesną endoskopię i opiekę wielospecjalistyczną.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.title": "Profesor Pediatrii | Gastroenterologia i transplantacja dziecięca",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.bio": "Prof. Michael Melter świadczy opiekę pediatryczną najwyższego stopnia; specjalizacja: gastroenterologia dziecięca, choroby wątroby i transplantacje, z naciskiem na medycynę rodzinną.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.title": "Profesor Neurochirurgii | Chirurgia mózgu i kręgosłupa",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.bio": "Prof. Nils-Ole Schmidt — specjalista w neuroonkologii, chirurgii podstawy czaszki i kręgosłupa; stosuje neuronawigację i monitorowanie śródoperacyjne dla maksymalnego bezpieczeństwa.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.title": "Profesor Radioterapii Onkologicznej | Precyzyjna radioterapia",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.bio": "Prof. Oliver Kölbl rozwija precyzyjną radioterapię w onkologii przewodu pokarmowego, klatki piersiowej i neuroonkologii; IGRT i terapie spersonalizowane.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.title": "Profesor Neurologii | Stwardnienie rozsiane i neuroimmunologia",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.bio": "Prof. Ralf Linker — neurolog, specjalizacja: SM i neuroimmunologia; łączy badania kliniczne z indywidualną opieką nad pacjentami z SM.",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.title": "Profesor Hematologii i Onkologii | Białaczki i chłoniaki",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.bio": "Prof. Wolfgang Herr leczy nowotwory hematologiczne i guzy lite, łącząc nowoczesne terapie systemowe, badania kliniczne i onkologię wspierającą.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.title": "Profesor Hematologii i Onkologii | Dyrektor, Klinika Medyczna II Würzburg",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.bio": "Prof. Hermann Einsele — światowy autorytet w szpiczaku mnogim, transplantacji komórek macierzystych i terapiach komórkowych (w tym CAR-T).",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.title": "Profesor Urologii | Onkourologia i chirurgia robotyczna",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.bio": "Prof. Hubert Kübler specjalizuje się w raku prostaty, nerki i pęcherza; techniki nerwooszczędzające, małoinwazyjne i robotyczne oraz pełna opieka kontrolna.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.title": "Profesor Onkologii | Dyrektor, Comprehensive Cancer Center Mainfranken",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.bio": "Prof. Ralf Bargou rozwija onkologię translacyjną i programy immunoterapii, budując spersonalizowane ścieżki leczenia w regionie.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.title": "Profesor Neurochirurgii | Kierownik, Klinika Neurochirurgii Würzburg",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.bio": "Prof. Ralf-Ingo Ernestus — neurochirurg; zakres: neuroonkologia, podstawa czaszki i neurochirurgia naczyniowa; duże doświadczenie w złożonych operacjach czaszki.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.title": "Profesor Kardiologii | Niewydolność serca i kardiologia interwencyjna",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.bio": "Prof. Stefan Frantz zapewnia kompleksową kardiologię z naciskiem na niewydolność serca, interwencje wieńcowe i nowoczesne obrazowanie kardiologiczne.",
+
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.title": "Dyrektor Zarządzający (administracja) | Universitätsmedizin Essen",
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.bio": "Dr Johannes Hütte nadzoruje strategię administracyjną i operacje szpitala w Essen, koordynując jakość opieki, finanse i infrastrukturę.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.title": "Profesor Onkologii Dziecięcej | (Uwaga: głównie Charité, Berlin)",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.bio": "Prof. Angelika Eggert — międzynarodowo znana onkolog dziecięca, badania nad neuroblastomą i przywództwo w sieciach onkologii pediatrycznej.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.title": "Profesor Nefrologii | Dializoterapia i medycyna transplantacyjna",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.bio": "Prof. Andreas Kribben specjalizuje się w niewydolności nerek, dializach i transplantacji w Universitätsmedizin Essen, z naciskiem na złożoną internę.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.title": "Profesor Neurochirurgii | Dyrektor, Klinika Neurochirurgii Essen",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.bio": "Prof. Ulrich Sure wykonuje zaawansowane operacje mózgu i kręgosłupa, w tym podstawy czaszki i zabiegi naczyniowe, wspierane monitorowaniem śródoperacyjnym.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.title": "Profesor Dermatologii | Dyrektor, Narodowe Centrum Chorób Nowotworowych (rak skóry)",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.bio": "Univ.-Prof. Dirk Schadendorf — światowy ekspert w raku skóry, pionier immunoterapii czerniaka i kompleksowej dermatoonkologii.",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.title": "Profesor Ginekologii | Dyrektor, Onkoginekologia i Chirurgia Robotyczna",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.bio": "Univ.-Prof. Rainer Kimmig kieruje onkoginekologią, specjalista w chirurgii robotycznej i małoinwazyjnej w leczeniu raka jajnika, macicy i szyjki macicy.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.title": "Profesor Anestezjologii i Intensywnej Terapii | Medycyna Okołooperacyjna",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.bio": "Univ.-Prof. Thorsten Brenner odpowiada za anestezjologię, intensywną terapię i medycynę ratunkową w Essen, skupiając się na bezpieczeństwie okołooperacyjnym i wsparciu narządów.",
+
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.title": "Administracja Szpitala | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.bio": "Kathleen Kreutzer wspiera administrację strategiczną i zarządzanie procesami skoncentrowanymi na pacjencie w Universitätsmedizin Mainz.",
+
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.title": "Profesor Onkologii | Hematologia i Nowotwory Lity",
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.bio": "Prof. Thomas Kindler zajmuje się onkologią i hematologią w Moguncji, koncentrując się na indywidualnej terapii systemowej i opiece wspierającej pacjentów onkologicznych.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.title": "Profesor Medycyny Psychosomatycznej i Leczenia Bólu",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.bio": "Univ.-Prof. Jonas Tesarz specjalizuje się w medycynie psychosomatycznej i zaburzeniach bólowych, łącząc terapię behawioralną z leczeniem internistycznym.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.title": "Profesor Chirurgii Szczękowo-Twarzowej | Implantologia i Chirurgia Rekonstrukcyjna",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.bio": "Univ.-Prof. Bilal Al-Nawas — ekspert OMFS w implantologii, chirurgii onkologicznej i rekonstrukcyjnej twarzy w Universitätsmedizin Mainz.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.title": "Profesor Neurologii | Stwardnienie rozsiane i Neuroimmunologia",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.bio": "Univ.-Prof. Frauke Zipp — neurolog, specjalista w SM w Moguncji, rozwija neuroimmunologię i terapie spersonalizowane dla chorób demielinizacyjnych.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.title": "Profesor Psychiatrii i Psychoterapii | Dyrektor, Klinika Psychiatrii Mainz",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.bio": "Univ.-Prof. Klaus Lieb kieruje psychiatrią i badaniami w Moguncji; specjalista w depresji, zaburzeniach lękowych i psychoterapii opartej na dowodach.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.title": "Profesor Hematologii i Onkologii | Terapia komórkami macierzystymi",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.bio": "Univ.-Prof. Matthias Theobald — hematolog/onkolog, specjalizacja: białaczki, chłoniaki, transplantacja i nowoczesna opieka wspierająca.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.title": "Profesor Chirurgii Klatki Piersiowej | Rak płuc i procedury małoinwazyjne",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.bio": "Univ.-Prof. Peter Grimminger specjalizuje się w chirurgii raka płuc, technikach VATS/robotycznych i interdyscyplinarnej torakoonkologii w Moguncji.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.title": "Profesor Gastroenterologii i Endoskopii Interwencyjnej",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.bio": "Univ.-Prof. Ralf Kiesslich to innowator endoskopii, znany z zaawansowanych technik obrazowania i złożonych zabiegów interwencyjnych w gastroenterologii.",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.title": "Administracja szpitala | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.bio": "Waltraud Kreutz-Gers wspiera administrację szpitala i optymalizację przepływu pacjentów w Universitätsmedizin Mainz.",
+
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.title": "Specjalista chorób wewnętrznych | Geriatria i rehabilitacja",
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.bio": "Dr Christiane Stehle zapewnia opiekę internistyczną i rehabilitację ukierunkowaną na geriatrę w Rostocku; nacisk na mobilność, kruchość (frailty) i wielochorobowość.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.title": "Profesor neurologii | Zaburzenia ruchowe i choroba Parkinsona",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.bio": "Prof. Alexander Storch — neurolog koncentrujący się na chorobie Parkinsona i zaburzeniach ruchowych; łączy badania translacyjne z opieką skoncentrowaną na pacjencie.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.title": "Profesor okulistyki | Siatkówka i choroby plamki",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.bio": "Prof. Alper Öner — okulista, specjalizuje się w chorobach siatkówki, zwyrodnieniu plamki i nowoczesnej chirurgii witreoretinalnej w Rostocku.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.title": "Profesor chirurgii serca i aorty | Niewydolność serca i transplantacje",
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.bio": "Prof. Christian D. Etz wykonuje złożone operacje aorty, zastawek i w niewydolności serca, w tym mechaniczne wspomaganie krążenia i transplantacje.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-habil-mittelmeier.title": "Profesor ortopedii | Endoprotezoplastyka i ortopedia regeneracyjna",
+"people.doctors.universitatsmedizin-rostock-prof-dr-habil-mittelmeier.bio": "Prof. Peter Michael Mittelmeier — ortopeda; fokus: endoprotezy biodra i kolana, biomateriały i metody oszczędzające staw.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-joachim-bernd-krause.title": "Profesor neurochirurgii | Podstawa czaszki i neuroonkologia",
+"people.doctors.universitatsmedizin-rostock-prof-dr-joachim-bernd-krause.bio": "Prof. Joachim Bernd Krause leczy guzy mózgu, choroby podstawy czaszki i naczyniowe OUN, stosując mikrochirurgię i neuronawigację.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.title": "Profesor dermatologii | Rak skóry i dermatoonkologia",
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.bio": "Prof. Steffen Emmert — dermatolog; specjalizacja: czerniak i nowotwory nienaczerniakowe skóry, fotodermatologia i profilaktyczna dermatoonkologia.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.title": "Profesor radioterapii onkologicznej | Precyzyjna radioterapia i leczenie prowadzone obrazowaniem",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.bio": "Prof. Anca-Ligia Grosu kieruje radioterapią onkologiczną we Fryburgu; specjalizuje się w radioterapii wysokiej precyzji, planowaniu leczenia opartym na biologii i obrazowaniu oraz łączonej radioimmunoterapii.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.title": "Profesor kardiologii | Kardiologia interwencyjna i ostra opieka kardiologiczna",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.bio": "Prof. Christoph A. M. Bode — czołowy kardiolog interwencyjny we Fryburgu; skupia się na chorobie wieńcowej i strukturalnych wadach serca, badaniach nad zakrzepicą oraz ścieżkach intensywnej opieki kardiologicznej.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.title": "Profesor neurologii | Neuroimmunologia i stwardnienie rozsiane",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.bio": "Prof. Heinz Wiendl — neurolog znany z neuroimmunologii i opieki nad chorymi na SM; integruje nowoczesne immunoterapie i spersonalizowany monitoring zapalnych chorób OUN.",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.title": "Profesor onkologii przewodu pokarmowego | Rak przełyku i żołądka",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.bio": "Prof. Michael Quante specjalizuje się w przełyku Barretta, profilaktyce i leczeniu raka przełyku i żołądka, łącząc endoskopię, onkologię i badania translacyjne.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.title": "Profesor chorób zakaźnych | Staphylococcus aureus i zapalenie wsierdzia",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.bio": "Prof. Siegbert R. Rieg kieruje chorobami zakaźnymi we Fryburgu, ekspert w zakresie zakażeń krwi S. aureus, zapalenia wsierdzia, polityki antybiotykowej i infekcji związanych z klimatem.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.title": "Profesor chirurgii ogólnej i trzewnej | Onkologia przewodu pokarmowego i chirurgia małoinwazyjna",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.bio": "Prof. Stefan Fichtner-Feigl wykonuje skomplikowane operacje onkologiczne jamy brzusznej, wątroby, trzustki i jelita grubego z zastosowaniem technik małoinwazyjnych i robotycznych; badania nad immunologią nowotworów.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.title": "Profesor immunologii pediatrycznej | Pierwotne niedobory odporności",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.bio": "Prof. Stephan Ehl leczy dzieci z pierwotnymi niedoborami odporności w CCI Freiburg, łącząc diagnostykę, genetykę i celowane terapie immunologiczne.",
+
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.title": "Kierownik medycyny ratunkowej | Anestezjologia i intensywna terapia",
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.bio": "Dr Florian Rehberger kieruje zintegrowaną opieką ratunkową w Mannheim, ekspert w anestezji, intensywnej terapii i optymalizacji procesów medycyny nagłej.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.title": "Profesor neurologii | Neuroonkologia i neuroimmunologia",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.bio": "Prof. Michael Platten kieruje neurologią w Mannheim, specjalizuje się w immunologii guzów mózgu, stwardnieniu rozsianym i neuroonkologii translacyjnej.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.title": "Profesor radiologii i medycyny nuklearnej | Radiologia interwencyjna i onkologiczna",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.bio": "Prof. Stefan Schönberg — dyrektor radiologii w Mannheim, specjalizuje się w radiologii interwencyjnej, zaawansowanej diagnostyce MRI/CT oraz terapii nowotworów pod kontrolą obrazowania.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.title": "Profesor chirurgii ogólnej, trzewnej i transplantacyjnej | Chirurgia HPB i robotyczna",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.bio": "Prof. André L. Mihaljevic kieruje chirurgią w Tybindze, specjalizuje się w operacjach wątroby, trzustki i nowotworów jelita grubego z wykorzystaniem technik małoinwazyjnych i robotycznych.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.title": "Profesor psychiatrii i psychoterapii | Neuropsychiatria",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.bio": "Prof. Andreas J. Fallgatter rozwija diagnostykę i leczenie psychiatryczne, łącząc podejście neurofizjologiczne z terapią opartą na dowodach.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.title": "Profesor chirurgii szczękowo-twarzowej | Rekonstrukcja twarzy i rozszczepy",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.bio": "Prof. Bernd Lethaus specjalizuje się w chirurgii szczękowo-twarzowej i plastycznej rekonstrukcyjnej, obejmującej urazy, deformacje czaszkowo-twarzowe i implantologię.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.title": "Profesor chirurgii sercowo-torakalnej i naczyniowej | Kardiochirurgia dorosłych i dzieci",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.bio": "Prof. Christian Schlensak kieruje chirurgią sercowo-torakalną i naczyniową w Tybindze, specjalizuje się w chirurgii aorty, zastawek i kardiochirurgii dziecięcej.",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.title": "Profesor hematologii i onkologii | Terapie komórkowe i onkologia translacyjna",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.bio": "Prof. Claudia Lengerke kieruje hematologią i onkologią w Tybindze, specjalizuje się w oporności na leczenie, terapiach opartych na komórkach macierzystych i innowacyjnych badaniach klinicznych.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.title": "Profesor onkologii klinicznej i pneumologii | Rak wątroby i onkologia translacyjna",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.bio": "Prof. Lars Zender kieruje onkologią i medycyną płuc w Tybindze, skupia się na raku wątrobowokomórkowym, terapiach pod kontrolą obrazowania i programach onkologii precyzyjnej.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.title": "Profesor medycyny psychosomatycznej i psychoterapii | Zaburzenia odżywiania",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.bio": "Prof. Stephan Zipfel kieruje medycyną psychosomatyczną w Tybindze; specjalizuje się w leczeniu zaburzeń odżywiania, psychoterapii integracyjnej i medycynie umysł–ciało.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.title": "Profesor neurologii | Udar mózgu, stymulacja mózgu i neurorehabilitacja",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.bio": "Prof. Ulf Ziemann jest dyrektorem neurologii w Tybindze, specjalista w chorobach naczyniowych mózgu, stymulacji nieinwazyjnej i rehabilitacji poudarowej.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.title": "Profesor chirurgii sercowo-torakalnej i naczyniowej | Małoinwazyjna chirurgia zastawek i aorty",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.bio": "Prof. Andreas Liebold kieruje chirurgią serca, klatki piersiowej i naczyń w Ulm, ekspert w naprawie zastawek metodą małoinwazyjną, operacjach aorty i wspomaganiu krążenia.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.title": "Profesor traumatologii, chirurgii ręki i rekonstrukcyjnej | Traumatologia wspomagana komputerowo",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.bio": "Prof. Florian Gebhard kieruje traumatologią w Ulm, specjalizuje się w leczeniu złamań złożonych, politraumie i technikach ortopedii wspomaganej komputerowo.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.title": "Profesor hematologii i onkologii | AML/CLL i hematologia precyzyjna",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.bio": "Prof. Hartmut Döhner — wybitny hematolog w Ulm, koncentruje się na białaczkach (AML/CLL), ocenie ryzyka i terapiach celowanych.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.title": "Profesor otolaryngologii / chirurgii głowy i szyi | Chirurgia podstawy czaszki i onkologiczna",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.bio": "Prof. Thomas K. Hoffmann specjalizuje się w onkologii głowy i szyi, chirurgii podstawy czaszki, rekonstrukcjach i koncepcjach immunoterapii.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.title": "Profesor chorób wewnętrznych I | Gastroenterologia i onkologia przewodu pokarmowego",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.bio": "Prof. Thomas Seufferlein kieruje chorobami wewnętrznymi I w Ulm, specjalizuje się w gastroenterologii, hepatologii i onkologii przewodu pokarmowego.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.title": "Profesor kardiologii | Kardiologia interwencyjna i obrazowanie serca",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.bio": "Prof. Wolfgang Rottbauer kieruje kardiologią w Ulm, oferuje kompleksową opiekę interwencyjną, obrazowanie sercowo-naczyniowe i leczenie nagłych stanów kardiologicznych.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.title": "Ordynator medycyny prewencyjnej i żywieniowej | Choroby wewnętrzne i kardiologia",
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.bio": "Dr Frank-Peter Job kieruje Centrum Profilaktyki Vivantes i programami medycyny żywieniowej, zapewnia kompleksowe badania profilaktyczne i prewencję kardiometaboliczną.",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.title": "Profil specjalisty | Ortopedia i traumatologia",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.bio": "Prof. Veit Mansmann (ortopedia/traumatologia) znany jest z leczenia zachowawczego stawów i endoprotezoplastyki; profil dedykowany pacjentom poszukującym nowoczesnej ortopedii w Berlinie.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.title": "Ordynator ginekologii i położnictwa | Dno miednicy i uroginekologia",
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.bio": "Dr Zaher Halwani kieruje ginekologią i położnictwem w Vivantes Humboldt, specjalizuje się w uroginekologii, zaburzeniach dna miednicy i kompleksowej opiece położniczej.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.title": "Starszy lekarz medycyny ratunkowej i wewnętrznej | Koordynacja opieki nagłej",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.bio": "Prof. Andreas Umgelter rozwija usługi medycyny ratunkowej i wewnętrznej w Vivantes Humboldt, autor publikacji w zakresie hepatologii interwencyjnej i medycyny nagłej.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.title": "Profesor neurologii | Padaczka, udar i neurologia kobiet",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.bio": "Prof. Bettina Schmitz — ordynator neurologii w Vivantes Humboldt i Berlin Epilepsy Center; specjalizuje się w leczeniu padaczki, medycynie udaru i diagnostyce EEG.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.title": "Profesor chirurgii ogólnej i trzewnej | Onkologia trzewna i złożona chirurgia przewodu pokarmowego",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.bio": "Prof. Ulrich Adam kieruje chirurgią ogólną i trzewną w Vivantes Humboldt; prowadzi Centrum Onkologii Trzewnej i wykonuje zaawansowane operacje żołądkowo-jelitowe i wątroby.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.title": "Ordynator gastroenterologii i hepatologii | Choroby przewodu pokarmowego i wątroby",
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.bio": "Priv.-Doz. dr Tobias Weismüller kieruje gastroenterologią/hepatologią w Vivantes Humboldt i Spandau, specjalizuje się w NZJ, chorobach trzustki i wątroby.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.title": "Profesor kardiologii | Kardiologia interwencyjna i intensywna opieka kardiologiczna",
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.bio": "Prof. Steffen Behrens — ordynator kardiologii w Vivantes Spandau i Humboldt, specjalizuje się w kardiologii interwencyjnej i intensywnej terapii kardiologicznej.",
+
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.title": "Ordynator kardiologii | Kardiologia interwencyjna i ostra opieka kardiologiczna",
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.bio": "Dr Mark Hackbarth — ordynator kardiologii w Vivantes Klinikum am Urban (Berlin). Specjalizuje się w kardiologii interwencyjnej, ostrych zespołach wieńcowych i nowoczesnym leczeniu niewydolności serca.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.title": "Profesor psychiatrii i psychoterapii | Wczesne psychozy i integracyjna opieka psychiatryczna",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.bio": "Prof. Andreas Bechdolf kieruje psychiatrią w Vivantes Urban & Friedrichshain. Międzynarodowy ekspert w zakresie wczesnych psychoz, schizofrenii i zintegrowanej opieki psychospołecznej.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.title": "Profesor chirurgii ogólnej i trzewnej | Chirurgia małoinwazyjna i onkologia przewodu pokarmowego",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.bio": "Prof. Joachim Wagner — ordynator chirurgii w Vivantes Friedrichshain i Urban. Specjalizuje się w laparoskopii i chirurgii onkologicznej jamy brzusznej, w tym jelita grubego i wątroby.",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.title": "Profesor chirurgii klatki piersiowej | Rak płuca i małoinwazyjne procedury torakochirurgiczne",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.bio": "Prof. Christian Scholz kieruje torakochirurgią w Vivantes Urban. Ekspert w leczeniu raka płuca, guzów śródpiersia i nowoczesnych technik małoinwazyjnych (VATS, robotyka).",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.title": "Profesor gastroenterologii | Onkologia przewodu pokarmowego i endoskopia",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.bio": "Prof. Hans Scherübl — gastroenterolog w Berlinie, specjalizuje się w onkologii przewodu pokarmowego, profilaktyce raka jelita grubego i zaawansowanej endoskopii diagnostycznej.",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.title": "Profesor kardiochirurgii | Zastawki serca i procedury małoinwazyjne",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.bio": "Prof. Jonas Busch — ordynator kardiochirurgii w Vivantes Urban. Specjalizacja: rekonstrukcja zastawek, kardiochirurgia małoinwazyjna i transplantacje serca.",
+
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.title": "Profesor ginekologii i położnictwa | Onkoginekologia i chirurgia robotyczna",
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.bio": "Prof. Hüseyin Ince — ginekolog i położnik w Vivantes Neukölln. Specjalizuje się w onkoginekologii, chirurgii małoinwazyjnej i wspomaganej robotycznie oraz kompleksowej opiece zdrowotnej kobiet.",
+
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.title": "Ordynator gastroenterologii i hepatologii | Choroby wątroby i NZJ",
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.bio": "Priv.-Doz. dr Tobias Weismüller kieruje gastroenterologią w Vivantes Spandau i Humboldt. Ekspert w zakresie nieswoistych zapaleń jelit, hepatologii i zaburzeń trzustkowo-żółciowych.",
+
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.title": "Profesor kardiologii | Kardiologia interwencyjna i intensywna terapia",
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.bio": "Prof. Steffen Behrens — ordynator kardiologii w Vivantes Spandau i Humboldt (Berlin). Specjalizuje się w kardiologii interwencyjnej, ostrej opiece kardiologicznej i leczeniu niewydolności serca."
 }

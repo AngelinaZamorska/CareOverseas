@@ -1,64 +1,910 @@
 {
-  "country.germany.metaTitle": "ألمانيا — دليل الأطباء | كير أوفرسيز",
-  "country.germany.metaDesc": "تصفّح أبرز الأطباء في ألمانيا. فلترة حسب العيادة والقسم والمدينة.",
-  "country.germany.title": "ألمانيا — دليل الأطباء",
-  "country.germany.subtitle": "صفحة معلومات فقط. نعرض أولاً رؤساء الأقسام في هيليوس ومستشفى جامعة كولونيا.",
-  "country.germany.searchPlaceholder": "ابحث بالاسم أو التخصص أو العيادة",
-  "country.germany.clear": "مسح",
-  "country.germany.filter.department": "القسم",
-  "country.germany.filter.clinic": "العيادة",
-  "country.germany.filter.city": "المدينة",
-  "country.germany.sortBy": "رتّب حسب:",
-  "country.germany.sort.name": "الاسم",
-  "country.germany.sort.clinic": "العيادة",
-  "country.germany.sort.city": "المدينة",
-  "country.germany.empty": "لا توجد نتائج. جرّب تغيير الفلاتر أو البحث.",
-  "country.germany.backHome": "← العودة للرئيسية",
-  "country.germany.contactCta": "الاتصال بالمنسّق",
+  "country.germany.metaTitle": "أفضل الأطباء في ألمانيا | رؤساء الأقسام والمتخصصون الرائدون | CareOverseas",
+"country.germany.metaDesc": "استكشف أفضل الأطباء ورؤساء الأقسام في ألمانيا في HELIOS، Charité، LMU، TUM، كولونيا والمزيد. تصفية حسب التخصص، العيادة والمدينة. دليل مستقل مع دعم منسق.",
+"country.germany.title": "ألمانيا — دليل الأطباء",
+"country.germany.subtitle": "دليل مستقل يضم رؤساء الأقسام وقادة الوحدات في HELIOS و Charité ومستشفى كولونيا الجامعي وغيرها من المراكز الكبرى.",
+"country.germany.searchPlaceholder": "ابحث بالاسم، التخصص أو العيادة",
+"country.germany.clear": "مسح",
+"country.germany.filter.department": "القسم",
+"country.germany.filter.clinic": "العيادة",
+"country.germany.filter.city": "المدينة",
+"country.germany.sortBy": "ترتيب حسب:",
+"country.germany.sort.name": "الاسم",
+"country.germany.sort.clinic": "العيادة",
+"country.germany.sort.city": "المدينة",
+"country.germany.empty": "لا توجد نتائج. حاول تغيير عوامل التصفية أو الاستعلام.",
+"country.germany.backHome": "← العودة إلى الصفحة الرئيسية",
+"country.germany.contactCta": "اتصل بالمنسق",
+"country.germany.breadcrumbHome": "الرئيسية",
+"country.germany.stats.doctorsLabel": "الأطباء",
+"country.germany.stats.clinicsLabel": "العيادات",
+"country.germany.stats.citiesLabel": "المدن",
+"country.germany.stats.departmentsLabel": "الأقسام",
+"country.germany.usp.expertsTitle": "أفضل الخبراء لحالتك",
+"country.germany.usp.expertsDesc": "نختار فقط رؤساء الأقسام وقادة الوحدات المتخصصة.",
+"country.germany.usp.safeTitle": "شفافية وراحة بال",
+"country.germany.usp.safeDesc": "تنسيق واضح، وثائق بلغتك، ولا عقود تسويقية.",
+"country.germany.usp.careTitle": "دعم إنساني أولاً",
+"country.germany.usp.careDesc": "إرشاد شخصي من أول اتصال حتى العودة إلى المنزل.",
+"country.germany.emptyHint": "جرّب مدينة أو عيادة أو تخصصاً آخر.",
+"country.germany.pitch.title": "لست متأكداً أي طبيب هو الأنسب لك؟",
+"country.germany.pitch.subtitle": "أخبرنا بالتشخيص والتفضيلات. سنطابقك مع رئيس القسم المناسب، نُعد الطلب ونساعدك في الحصول على رد سريع من العيادة.",
+"country.germany.pitch.badge1": "طلب أولي مجاني",
+"country.germany.pitch.badge2": "استجابة سريعة",
+"country.germany.pitch.badge3": "مساعدة بالوثائق",
+"country.germany.pitch.cta": "اتصل بالمنسق",
+"dict.dept.administration.name": "الإدارة",
+"dict.dept.anesthesiology.name": "التخدير",
+"dict.dept.cardiac-surgery.name": "جراحة القلب",
+"dict.dept.cardiology.name": "طب القلب",
+"dict.dept.cardiothoracic-and-vascular-surgery.name": "جراحة القلب والصدر والأوعية الدموية",
+"dict.dept.dermatology.name": "الأمراض الجلدية",
+"dict.dept.emergency-medicine.name": "طب الطوارئ",
+"dict.dept.endocrinology.name": "الغدد الصماء",
+"dict.dept.ent.name": "الأنف والأذن والحنجرة",
+"dict.dept.gastroenterology.name": "أمراض الجهاز الهضمي",
+"dict.dept.gastroenterology-and-diabetology.name": "أمراض الجهاز الهضمي والسكري",
 
-  "country.germany.breadcrumbHome": "الرئيسية",
+"dict.dept.general-and-visceral-surgery.name": "الجراحة العامة وجراحة الأحشاء",
 
-  "country.germany.stats.doctorsLabel": "أطباء",
-  "country.germany.stats.clinicsLabel": "عيادات",
-  "country.germany.stats.citiesLabel": "مدن",
-  "country.germany.stats.departmentsLabel": "أقسام",
+"dict.dept.geriatrics.name": "طب الشيخوخة",
+"dict.dept.gynecology.name": "أمراض النساء",
+"dict.dept.hand-surgery.name": "جراحة اليد",
+"dict.dept.hematology-oncology.name": "أمراض الدم والأورام",
+"dict.dept.infectious-diseases.name": "الأمراض المعدية",
+"dict.dept.internal-medicine.name": "الطب الباطني",
+"dict.dept.internal-medicine-and-intensive-care.name": "الطب الباطني والعناية المركزة",
+"dict.dept.maxillofacial-and-plastic-surgery.name": "جراحة الوجه والفكين والجراحة التجميلية",
+"dict.dept.nephrology.name": "أمراض الكلى",
+"dict.dept.neurosurgery.name": "جراحة المخ والأعصاب",
+"dict.dept.oncology.name": "الأورام",
+"dict.dept.ophthalmology.name": "طب العيون",
+"dict.dept.oral-maxillofacial-surgery.name": "جراحة الفم والفكين",
+"dict.dept.orthopedics.name": "جراحة العظام",
+"dict.dept.pediatric-immunology.name": "المناعة للأطفال",
+"dict.dept.pediatrics.name": "طب الأطفال",
+"dict.dept.physical-and-rehabilitation-medicine.name": "الطب الفيزيائي وإعادة التأهيل",
+"dict.dept.plastic-surgery.name": "الجراحة التجميلية",
+"dict.dept.psychiatry.name": "الطب النفسي",
+"dict.dept.psychosomatic-medicine-and-psychotherapy.name": "الطب النفسي الجسدي والعلاج النفسي",
+"dict.dept.radiation-oncology.name": "طب الأورام بالإشعاع",
+"dict.dept.radiology.name": "الأشعة",
+"dict.dept.spinal-surgery.name": "جراحة العمود الفقري",
+"dict.dept.thoracic-surgery.name": "جراحة الصدر",
+"dict.dept.trauma-and-reconstructive-surgery.name": "جراحة الإصابات والترميم",
 
-  "country.germany.usp.expertsTitle": "خبراء رفيعو المستوى لحالتك",
-  "country.germany.usp.expertsDesc": "نرشّح رؤساء الأقسام وقادة الوحدات التخصّصية.",
-  "country.germany.usp.safeTitle": "شفافية وراحة بال",
-  "country.germany.usp.safeDesc": "تنسيق واضح، مستندات بلغتك، بلا عقود تسويق.",
-  "country.germany.usp.careTitle": "دعم يضع الإنسان أولاً",
-  "country.germany.usp.careDesc": "مرافقة شخصية من أول رسالة حتى العودة إلى المنزل.",
+"dict.dept.university-cardio-center-internal-medicine-ii.name": "مركز القلب الجامعي – الطب الباطني II",
+"dict.dept.urology.name": "جراحة المسالك البولية",
+"dict.dept.vascular-surgery.name": "جراحة الأوعية الدموية",
 
-  "country.germany.emptyHint": "جرّب مدينة أو عيادة أو قسمًا آخر.",
+"dict.clinic.helios-krefeld.name": "مستشفى هيليوس كريفيلد",
+"dict.clinic.helios-berlin-buch.name": "مستشفى هيليوس برلين-بوخ",
+"dict.clinic.uk-koeln.name": "مستشفى جامعة كولونيا",
+"dict.clinic.universittsklinikum-freiburg.name": "المستشفى الجامعي فرايبورغ",
+"dict.clinic.ethianum-klinik-heidelberg.name": "عيادة إيثيانيوم هايدلبرغ",
+"dict.clinic.universittsklinikum-mannheim.name": "المستشفى الجامعي مانهايم",
+"dict.clinic.universittsklinikum-tbingen.name": "المستشفى الجامعي توبنغن",
+"dict.clinic.unversittsklinikum-ulm.name": "المستشفى الجامعي أولم",
+"dict.clinic.universittsklinikum-ulm.name": "المستشفى الجامعي أولم",
+"dict.clinic.helios-klinikum-pforzheim.name": "مستشفى هيليوس بفورتسهايم",
+"dict.clinic.helios-klinik-rottweil.name": "مستشفى هيليوس روتفايل",
+"dict.clinic.helios-klinik-titisee-neustadt.name": "مستشفى هيليوس تيتيسي-نويشتادت",
+"dict.clinic.helios-klinik-breisach.name": "مستشفى هيليوس بريساخ",
+"dict.clinic.lmu-klinikum-muenchen.name": "مستشفى جامعة LMU ميونخ",
+"dict.clinic.tum-klinikum-rechts-der-isar.name": "مستشفى ريشتس دير إيسار (TUM)",
+"dict.clinic.universitaetsklinikum-erlangen.name": "المستشفى الجامعي إرلانغن",
+"dict.clinic.universitaetsklinikum-regensburg.name": "المستشفى الجامعي ريغنسبورغ",
+"dict.clinic.universitaetsklinikum-wuerzburg.name": "المستشفى الجامعي فورتسبورغ",
+"dict.clinic.medical-park-bad-wiessee.name": "ميديكال بارك باد فيسي",
+"dict.clinic.medical-park-bad-feilnbach.name": "ميديكال بارك باد فايلنبخ",
+"dict.clinic.medical-park-bernau-felden-chiemsee.name": "ميديكال بارك بيرناو-فيلدن كيمزي",
+"dict.clinic.medical-park-chiemseeblick.name": "ميديكال بارك كيمزي بليك",
+"dict.clinic.medical-park-bad-rodach.name": "ميديكال بارك باد روداخ",
+"dict.clinic.helios-amper-klinikum-dachau.name": "مستشفى هيليوس أمبر داخاو",
+"dict.clinic.helios-muenchen-west.name": "مستشفى هيليوس ميونخ الغربية",
+"dict.clinic.helios-frankenwald-klinik-kronach.name": "مستشفى هيليوس فرانكنفالد كروناخ",
+"dict.clinic.universitaetsmedizin-mainz.name": "الطب الجامعي ماينز",
+"dict.clinic.universitaetsklinikum-duesseldorf.name": "المستشفى الجامعي دوسلدورف",
+"dict.clinic.universitaetsmedizin-essen.name": "الطب الجامعي إيسن",
+"dict.clinic.universitaetsklinikum-bernau.name": "المستشفى الجامعي بيرناو قرب برلين",
+"dict.clinic.universitaetsklinikum-brandenburg-havel.name": "المستشفى الجامعي براندنبورغ أن دير هافل",
+"dict.clinic.universitaetsklinikum-cottbus.name": "المستشفى الجامعي كوتبوس",
+"dict.clinic.helios-klinikum-bad-saarow.name": "مستشفى هيليوس باد ساراو",
+"dict.city.bad-feilnbach.name": "باد فايلنبخ",
+"dict.city.bad-rodach.name": "باد روداخ",
+"dict.city.bad-saarow.name": "باد ساراو",
+"dict.city.bad-wiessee.name": "باد فيسي",
+"dict.city.berlin.name": "برلين",
+"dict.city.bernau-am-chiemsee.name": "برناو أم كيمزي",
+"dict.city.bernau-bei-berlin.name": "برناو بالقرب من برلين",
+"dict.city.brandenburg-an-der-havel.name": "براندنبورغ آن دير هافل",
+"dict.city.breisach-am-rhein.name": "برايشاخ أم راين",
+"dict.city.cottbus.name": "كوتبوس",
+"dict.city.dachau.name": "داخاو",
+"dict.city.duesseldorf.name": "دوسلدورف",
+"dict.city.erlangen.name": "إرلانغن",
+"dict.city.essen.name": "إيسن",
+"dict.city.freiburg.name": "فرايبورغ",
+"dict.city.heidelberg.name": "هايدلبرغ",
+"dict.city.koeln.name": "كولونيا",
+"dict.city.krefeld.name": "كريفيلد",
+"dict.city.kronach.name": "كروناخ",
+"dict.city.mainz.name": "ماينز",
+"dict.city.mannheim.name": "مانهايم",
+"dict.city.muenchen.name": "ميونخ",
+"dict.city.pforzheim.name": "بفورتسهايم",
+"dict.city.regensburg.name": "ريغنسبورغ",
+"dict.city.rottweil.name": "روتفيل",
+"dict.city.titisee-neustadt.name": "تيتيزي-نويشتات",
+"dict.city.tuebingen.name": "توبنغن",
+"dict.city.ulm.name": "أولم",
+"dict.city.wuerzburg.name": "فورتسبورغ",
+"dict.city.erfurt.name": "إرفورت",
+"dict.city.rostock.name": "روستوك",
+"dict.city.schwerin.name": "شفيرين",
+"dict.clinic.charite-universitatsmedizin-berlin": "مستشفى شاريتيه – جامعة برلين للطب",
+"dict.clinic.schlossparkklinik.name": "مستشفى شلوسبارك برلين",
+"dict.clinic.vivantes-klinikum-am-urban.name": "مستشفى فيفانتس أوربان برلين",
+"dict.clinic.vivantes-klinikum-am-urban-klinikum-im-friedrichshain.name": "مستشفى فيفانتس فريدريشهاين برلين",
+"dict.clinic.vivantes-humboldtklinikum.name": "مستشفى فيفانتس همبولت برلين",
+"dict.clinic.vivantes-humboldtklinikum-spandau.name": "مستشفى فيفانتس همبولت شبانداو",
+"dict.clinic.vivantes-klinikum-spandau.name": "مستشفى فيفانتس شبانداو",
+"dict.clinic.vivantes-klinikum-neukolln.name": "مستشفى فيفانتس نيوكولن",
+"dict.clinic.helios-klinikum-berlinbuch.name": "مستشفى هيليوس برلين-بوخ",
+"dict.clinic.helios-klinikum-berlinbuch-endoklinik-berlin.name": "عيادة إندو برلين (هيليوس برلين-بوخ)",
+"dict.clinic.helios-klinikum-emil-von-behring.name": "مستشفى هيليوس إميل فون بيرنغ برلين",
+"dict.clinic.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn.name": "مستشفى الرئة هيكيشهورن (هيليوس إميل فون بيرنغ)",
+"dict.clinic.medical-park-berlin-humboldtmuhle.name": "ميديكال بارك برلين-همبولدت مول",
 
-  "country.germany.pitch.title": "لست متأكدًا من الطبيب المناسب لك؟",
-  "country.germany.pitch.subtitle": "أخبرني بالتشخيص والتفضيلات. سأوفّقك مع رئيس القسم المناسب، أعدّ الطلب، وأساعدك في الحصول على رد سريع من العيادة.",
-  "country.germany.pitch.badge1": "طلب أوّلي مجاني",
-  "country.germany.pitch.badge2": "رد سريع",
-  "country.germany.pitch.badge3": "مساعدة في المستندات",
-  "country.germany.pitch.cta": "الاتصال بالمنسّق",
+"dict.clinic.universitatsklinikum-bernau.name": "المستشفى الجامعي برناو",
+"dict.city.brandenburg.name": "براندنبورغ",
+"dict.clinic.universitatsklinikum-brandenburg-havel.name": "المستشفى الجامعي براندنبورغ (هافل)",
+"dict.clinic.universitatsklinikum-cottbus.name": "المستشفى الجامعي كوتبوس",
+"dict.clinic.universitatsklinikum-dresden.name": "المستشفى الجامعي دريسدن",
+"dict.city.sachsen.name": "ساكسونيا",
+"dict.clinic.universitatsklinikum-leipzig.name": "المستشفى الجامعي لايبزيغ",
+"dict.clinic.klinikum-st-georg-leipzig.name": "مستشفى سانت جورج لايبزيغ",
+"dict.clinic.helios-park-klinikum-leipzig.name": "مستشفى هيليوس بارك لايبزيغ",
+"dict.clinic.herzzentrum-leipzig.name": "مركز القلب لايبزيغ",
 
-  "dict.dept.hem-onc.name": "أمراض الدم والأورام",
-  "dict.dept.urology.name": "المسالك البولية",
-  "dict.dept.neurosurgery.name": "جراحة الأعصاب",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.title": "أستاذ علم الأورام ومدير مركز شاريتيه الشامل للسرطان في برلين",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.bio": "الأستاذ الدكتور أولريش كايلهولتز هو أخصائي أورام معترف به دوليًا ومدير مركز شاريتيه الشامل للسرطان في برلين. خبير في العلاج المناعي والعلاجات الموجهة والشخصية، وله أبحاث رائدة في سرطان الجلد والأورام الصلبة.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.title": "أستاذ الطب النفسي والعلاج النفسي",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.bio": "الأستاذ الدكتور كريستيان أوته هو طبيب نفسي بارز في مستشفى شاريتيه – جامعة برلين للطب، متخصص في الاكتئاب واضطرابات التوتر والطب النفسي الدوائي السريري. تركز أبحاثه على تطوير علاجات مبتكرة للاضطرابات العاطفية وتحسين النتائج من خلال الطب النفسي الانتقالي.",
 
-  "dict.clinic.helios-krefeld.name": "مستشفى هيليوس كريفيلد",
-  "dict.clinic.helios-berlin-buch.name": "مستشفى هيليوس برلين-بوخ",
-  "dict.clinic.uk-koeln.name": "مستشفى جامعة كولونيا",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.title": "أستاذ جراحة الفم والفك والوجه",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.bio": "الأستاذ الدكتور ماكس هايلاند هو رئيس قسم جراحة الفم والفك والوجه في شاريتيه برلين. متخصص في الجراحة الترميمية للأورام وجراحة الوجه والجمجمة وزراعة الأسنان. معروف بتطوير التقنيات الميكروسكوبية والجراحات المعقدة لإعادة البناء بعد الأورام.",
 
-  "dict.city.krefeld.name": "كريفيلد",
-  "dict.city.berlin.name": "برلين",
-  "dict.city.koeln.name": "كولونيا",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.title": "أستاذ جراحة العظام والإصابات",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.bio": "الأستاذ الدكتور وولفغانغ إرتل هو جراح إصابات بارز في شاريتيه برلين، متخصص في إدارة الإصابات المتعددة والجراحة الإنتانية وإصابات الجهاز العضلي الهيكلي. يتمتع بخبرة واسعة في الرعاية الطارئة وعلاج الكسور المعقدة والالتهابات.",
 
-  "people.doctors.helios-krefeld-hunerliturkoglu.title": "الطبيب المسؤول، العيادة الطبية الثانية",
-  "people.doctors.helios-krefeld-hunerliturkoglu.bio": "رئيس قسم أمراض الدم والأورام (العيادة الطبية الثانية) في هيليوس كريفيلد.",
-  "people.doctors.helios-berlin-buch-schrader.title": "الطبيب المسؤول لقسم المسالك البولية",
-  "people.doctors.helios-berlin-buch-schrader.bio": "رئيس قسم المسالك البولية في هيليوس برلين-بوخ مع تركيز على أورام الجهاز البولي والجراحة طفيفة التوغّل.",
-  "people.doctors.helios-berlin-buch-ryang.title": "رئيسة جراحة الأعصاب ومديرة مركز العمود الفقري",
-  "people.doctors.helios-berlin-buch-ryang.bio": "تقود جراحة الأعصاب في هيليوس برلين-بوخ؛ تركيز على أورام الدماغ والجراحات المعقّدة للعمود الفقري.",
-  "people.doctors.uk-koeln-hallek.title": "مدير عيادة الأمراض الباطنية الأولى",
-  "people.doctors.uk-koeln-hallek.bio": "مدير عيادة I (الأورام/أمراض الدم/الأمراض المعدية) في مستشفى جامعة كولونيا.",
-  "people.doctors.uk-koeln-goldbrunner.title": "مدير جراحة الأعصاب العامة",
-  "people.doctors.uk-koeln-goldbrunner.bio": "مدير جراحة الأعصاب في مستشفى جامعة كولونيا؛ خبرة في أورام الدماغ وجراحة العمود الفقري."
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.title": "أستاذ علاج الأورام بالإشعاع",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.bio": "الأستاذ الدكتور دانيال زيبس هو أخصائي بارز في علاج الأورام بالإشعاع في شاريتيه برلين. يركز على العلاج الإشعاعي الدقيق، أورام الرأس والعنق، والعلاجات المتعددة التخصصات. يجمع بين أحدث تقنيات العلاج الإشعاعي والعلاجات الدوائية لتحسين نسب البقاء.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.title": "أستاذ أمراض الرئة والأمراض المعدية",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.bio": "الأستاذ الدكتور مارتن فيتزنرات هو خبير في أمراض الرئة والأمراض المعدية في شاريتيه برلين. تشمل مجالات خبرته الالتهاب الرئوي وتعفن الدم والعلاجات المبتكرة المضادة للعدوى. له مساهمات معترف بها دولياً في أبحاث طب الجهاز التنفسي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.title": "أستاذة أمراض الجهاز الهضمي ومديرة قسم أمراض الجهاز الهضمي",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.bio": "الأستاذة الدكتورة بريتا زيغوموند هي أخصائية أمراض الجهاز الهضمي في شاريتيه برلين، متخصصة في أمراض الأمعاء الالتهابية (كرون والتهاب القولون التقرحي). معروفة دولياً بأبحاثها الانتقالية التي تربط علم المناعة بطب الجهاز الهضمي السريري.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.title": "أستاذ أمراض الكبد والجهاز الهضمي",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.bio": "الأستاذ الدكتور فرانك تاكه هو أخصائي الكبد والجهاز الهضمي في شاريتيه برلين، بخبرة في تليف الكبد وسرطان الكبد المناعي. معروف بأبحاثه الرائدة في التهابات الكبد والطب التجديدي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.title": "أستاذ أمراض الكلى",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.bio": "الأستاذ الدكتور كاي-أوفه إيكهارت هو من أبرز أطباء أمراض الكلى في أوروبا، يرأس قسم أمراض الكلى في شاريتيه برلين. متخصص في مرض الكلى المزمن، غسيل الكلى وزراعة الكلى، مع تركيز على تطوير علاجات متقدمة للقصور الكلوي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.title": "أستاذ أمراض الدم والأورام",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.bio": "الأستاذ الدكتور أولريش كيلر هو أخصائي أمراض الدم والأورام في شاريتيه برلين. متخصص في اللوكيميا والأورام اللمفاوية والعلاجات الموجهة للأورام. معروف بأبحاثه الانتقالية في الأورام الدموية والعلاجات الشخصية.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.title": "أستاذ طب الأعصاب",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.bio": "الأستاذ الدكتور ماتياس إندرس هو طبيب أعصاب رائد عالمياً في شاريتيه برلين، متخصص في طب السكتات الدماغية، الحماية العصبية والتجديد العصبي. ساهم بشكل كبير في تطوير علاجات الأمراض الدماغية الوعائية وتحسين رعاية السكتة الدماغية.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.title": "أستاذ جراحة الأعصاب ومدير عيادة جراحة الأعصاب",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.bio": "الأستاذ الدكتور بيتر فايكوتشي هو أحد أبرز جراحي الأعصاب في أوروبا، مدير جراحة الأعصاب في شاريتيه برلين. خبير في جراحة أورام الدماغ، الجراحة العصبية الوعائية وجراحة العمود الفقري. معروف بتقنياته الجراحية المبتكرة والمعقدة.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.title": "أستاذة طب العيون",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.bio": "الأستاذة الدكتورة أنطونيا يوسن هي أخصائية عيون في شاريتيه برلين، متخصصة في أمراض الشبكية وأورام العيون والتقنيات الجراحية الحديثة. نالت اعترافاً دولياً بفضل أبحاثها في اعتلال الشبكية السكري والتنكس البقعي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.title": "أستاذة طب الأنف والأذن والحنجرة",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.bio": "الأستاذة الدكتورة هايدي أولتسه هي أخصائية أنف وأذن وحنجرة في شاريتيه برلين. خبيرة في زراعة القوقعة، إعادة تأهيل السمع والجراحة لمعالجة فقدان السمع. معروفة دولياً بأبحاثها حول زراعة السمع وإعادة السمع في الحالات المعقدة.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.title": "أستاذ جراحة الأوعية الدموية",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.bio": "الأستاذ الدكتور أندرياس غراينر هو جرّاح أوعية دموية في شاريتيه برلين، يركّز على إعادة بناء الشرايين، علاج أمّهات الدم، والجراحات داخل الأوعية. معروف بتطوير تقنيات طفيفة التوغّل وتحسين نتائج الحالات الوعائية المعقّدة.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.title": "أستاذ الجراحة وزراعة الأعضاء",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.bio": "الأستاذ الدكتور يوهان براتشكه هو رئيس قسم الجراحة في شاريتيه برلين، متخصص في زراعة الأعضاء، جراحة الكبد والقنوات الصفراوية والجراحة البطنية المعقّدة. من أبرز الخبراء في ألمانيا في زراعة الكبد والكلى.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.title": "أستاذ جراحة المسالك البولية",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.bio": "الأستاذ الدكتور تورستن شلوم هو أخصائي مسالك بولية في شاريتيه برلين، متخصص في سرطان البروستاتا، الجراحات طفيفة التوغّل والأورام الدقيقة. معروف دولياً بمساهماته في الجراحة الروبوتية والعلاج المخصّص للسرطان.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.title": "أستاذ جراحة العظام",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.bio": "الأستاذ الدكتور كارستن بيركا هو جرّاح عظام في شاريتيه برلين، خبير في استبدال المفاصل، مراجعات المفاصل وإعادة بناء الجهاز العضلي الهيكلي. رائد في العمليات المعقّدة لمفصلي الورك والركبة ويستخدم غرسات وتقنيات جراحية متقدّمة.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.title": "أستاذ علم الأورام",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.bio": "الأستاذ الدكتور سيباستيان شتينتسينغ هو طبيب أورام في مستشفى شاريتيه برلين، متخصص في سرطانات الجهاز الهضمي والعلاجات الموجهة والأورام الانتقالية. معروف بتجارب سريرية متقدمة في العلاجات الشخصية لسرطان القولون والمستقيم.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.title": "أستاذ أمراض النساء والتوليد",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.bio": "الأستاذ الدكتور ينس-أوفه بلومر هو طبيب نساء وتوليد في مستشفى شاريتيه برلين، خبير في سرطان الثدي والجراحة الأورام التجميلية ومفاهيم العلاج الفردي. معروف بأبحاثه في تحسين العلاج الجراحي والدوائي لسرطان الثدي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.title": "أستاذ أمراض الدم والأورام",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.bio": "الأستاذ الدكتور لارس بوللينغر هو أخصائي أمراض الدم والأورام في مستشفى شاريتيه برلين، متخصص في اللوكيميا والأورام اللمفاوية والطب الجزيئي الدقيق. معروف دولياً بتطوير أساليب جينية في تشخيص وعلاج سرطانات الدم.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.title": "أستاذ أمراض النساء ومدير قسم أمراض النساء",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.bio": "الأستاذ الدكتور جاليد سيهولي هو رائد في الأورام النسائية في شاريتيه برلين، متخصص في سرطان المبيض، سرطان الصفاق والجراحة الأورام. معروف بريادته في جراحات الاستئصال المعقدة وبقيادته الدولية في أبحاث السرطان النسائي.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.title": "أستاذ الطب النفسي والعلاج النفسي",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.bio": "الأستاذ الدكتور مالك باجبوج هو طبيب نفسي في مستشفى شاريتيه برلين، خبير في الاكتئاب واضطرابات القلق والعلاجات بالتحفيز العصبي. متخصص في التحفيز المغناطيسي عبر الجمجمة (TMS) وعلاجات مبتكرة للاكتئاب المقاوم.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.title": "أستاذ الجراحة والأورام",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.bio": "الأستاذ الدكتور كريستوف ميشالسكي هو جرّاح أورام بارز في ETHIANUM هايدلبرغ، متخصص في سرطانات البنكرياس والجهاز الهضمي والكبد والقنوات الصفراوية. معروف دولياً بتقنياته المتقدمة في جراحة البنكرياس والرعاية متعددة التخصصات في الأورام.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.title": "أستاذ جراحة الإصابات والجراحة الترميمية",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.bio": "الأستاذ الدكتور غيرهارد شمدماير هو خبير في جراحة الإصابات والجراحة الترميمية في ETHIANUM هايدلبرغ، يركز على الكسور المعقدة وتجديد العظام والمواد الحيوية. معروف بعمله الرائد في إصابات العظام والهندسة النسيجية.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.title": "أستاذ التخدير وطب العناية المركزة",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.bio": "الأستاذ الدكتور ماركوس فاينغاند هو رئيس قسم التخدير في ETHIANUM هايدلبرغ، متخصص في طب ما حول العمليات، العناية المركزة وإدارة الألم. معروف عالمياً بأبحاثه في حماية الأعضاء وسلامة المرضى أثناء الجراحة.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.title": "أستاذ طب الأنف والأذن والحنجرة",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.bio": "الأستاذ الدكتور باتريك شوله هو جرّاح أنف وأذن وحنجرة في ETHIANUM هايدلبرغ، متخصص في أورام الرأس والعنق، الجراحة المجهرية الترميمية والإجراءات طفيفة التوغّل. معروف بتطويره لرعاية مبتكرة في سرطانات الرأس والعنق.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.title": "أستاذ جراحة الأعصاب",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.bio": "الأستاذ الدكتور ساندرو كريغ هو جرّاح أعصاب في ETHIANUM هايدلبرغ، متخصص في جراحة أورام الدماغ، المراقبة العصبية أثناء العمليات وجراحة الأعصاب الوظيفية. معروف دولياً بابتكاراته في الحفاظ على الوظائف العصبية أثناء العمليات المعقدة.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.title": "أستاذ طب الأعصاب والأورام العصبية",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.bio": "الأستاذ الدكتور وولفغانغ فيك هو طبيب أعصاب وأورام عصبية بارز عالمياً في ETHIANUM هايدلبرغ. متخصص في أورام الدماغ والتصلب المتعدد والطب العصبي السريري. رائد في أبحاث علاج الورم الأرومي الدبقي والعلاج المناعي.",
+
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.title": "أخصائي في الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.bio": "الدكتور وولفغانغ كوديل هو أخصائي طب إعادة التأهيل في مستشفى HELIOS Amper Dachau، يركّز على استعادة الحركة والوظائف بعد الأمراض العصبية والعظمية. خبير في إعادة التأهيل العصبي وبرامج العلاج الفردية.",
+
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.title": "أخصائي أمراض القلب",
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.bio": "PD الدكتور برنهارد فيتزينبيخلر هو طبيب قلب في مستشفى HELIOS Amper Dachau، متخصص في أمراض القلب التداخلية، مرض الشرايين التاجية وفشل القلب. معروف بخبرته في قسطرة القلب والعلاجات القلبية الحديثة.",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.title": "أستاذ الجراحة العامة وجراحة الأحشاء",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.bio": "الأستاذ الدكتور أكسل كليسبيس هو جرّاح عام وجراحة أحشاء في مستشفى HELIOS Amper Dachau، متخصص في جراحة الجهاز الهضمي، الجراحة الأورام والتقنيات طفيفة التوغّل. لديه خبرة كبيرة في علاج سرطانات البطن المعقدة.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.title": "أستاذ طب الأعصاب",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.bio": "الأستاذ الدكتور هولغر بوبّرت هو طبيب أعصاب في مستشفى HELIOS Amper Dachau، متخصص في طب السكتة الدماغية، اضطرابات الأوعية الدماغية والرعاية العصبية الحرجة. معروف بأساليبه المبتكرة في علاج ومنع السكتة الدماغية الحادة.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.title": "أستاذ أمراض الجهاز الهضمي",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.bio": "الأستاذ الدكتور نوربرت غروينر هو أخصائي أمراض الجهاز الهضمي في مستشفى HELIOS Amper Dachau، متخصص في أمراض الكبد، أورام الجهاز الهضمي والتشخيص بالمنظار. خبير في العلاجات المتقدمة لأمراض الأمعاء الالتهابية المزمنة.",
+
+"people.doctors.helios-berlin-buch-ryang.title": "أخصائي جراحة الأعصاب",
+"people.doctors.helios-berlin-buch-ryang.bio": "الدكتور ريانغ هو جرّاح أعصاب في مستشفى HELIOS Berlin-Buch، متخصص في جراحة العمود الفقري، أورام الدماغ والعمليات العصبية المعقدة. معروف بتقنياته طفيفة التوغّل ورعايته الطبية المتمحورة حول المريض.",
+
+"people.doctors.helios-berlin-buch-schrader.title": "أخصائي أمراض المسالك البولية",
+"people.doctors.helios-berlin-buch-schrader.bio": "الدكتور شرادر هو طبيب مسالك بولية في مستشفى HELIOS Berlin-Buch، متخصص في سرطان البروستاتا، أمراض الكلى والمثانة والجراحة البولية طفيفة التوغّل. خبير في الجراحات الروبوتية والعلاجات المخصصة.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.title": "أخصائي أمراض الجهاز الهضمي",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.bio": "الدكتور حمدنه هو طبيب أمراض الجهاز الهضمي في مستشفى HELIOS Frankenwald Kronach، متخصص في أمراض الجهاز الهضمي، التنظير وأورام الجهاز الهضمي. لديه خبرة واسعة في تشخيص وعلاج الأمراض الهضمية المزمنة.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.title": "أخصائي جراحة الأوعية الدموية",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.bio": "الدكتور ميخائيل موريتس هو جرّاح أوعية دموية في مستشفى HELIOS Frankenwald Kronach، متخصص في جراحة الشرايين والأوردة، إصلاح أم الدم والإجراءات داخل الأوعية. معروف بعلاجاته المتقدمة لأمراض الأوعية الطرفية.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.title": "أخصائي أمراض النساء",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.bio": "الدكتور ميلوش بوبوفيتش هو طبيب نساء في مستشفى HELIOS Frankenwald Kronach، يركز على التوليد، الأورام النسائية والجراحة طفيفة التوغّل. خبير في الرعاية الشاملة لصحة المرأة الإنجابية.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.title": "أخصائي جراحة العظام",
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.bio": "الدكتور جنارو مانزو هو أخصائي عظام في مستشفى HELIOS Frankenwald Kronach، متخصص في استبدال المفاصل، جراحة العظام الرضحية وإصابات الرياضة. معروف بعملياته المتقدمة في إعادة بناء مفصل الورك والركبة.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.title": "أخصائي طب الشيخوخة",
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.bio": "الدكتور سميل مارموللاكو هو طبيب متخصص في طب الشيخوخة في مستشفى HELIOS Frankenwald Kronach، خبير في أمراض الشيخوخة المتعددة والرعاية الشاملة للمرضى كبار السن. يركز على تحسين جودة حياة كبار السن.",
+
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.title": "أخصائي أمراض المسالك البولية",
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.bio": "الدكتور كلاوس-هنينغ ليبشن هو طبيب مسالك بولية في مستشفى HELIOS Breisach، متخصص في صحة البروستاتا، حصى الكلى وأمراض الجهاز البولي. خبير في الإجراءات طفيفة التوغّل والتنظيرية.",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.title": "أخصائي الطب الباطني",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.bio": "الدكتور مارتن شوستر هو طبيب باطني في مستشفى HELIOS Breisach، يركّز على أمراض القلب، اضطرابات الأيض والطب الوقائي. يقدّم تشخيصاً وعلاجاً شاملاً لطيف واسع من أمراض الباطنة.",
+
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.title": "أخصائي جراحة العظام",
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.bio": "الدكتور شتيفان كلاينرت هو جرّاح عظام في مستشفى HELIOS Breisach، متخصص في استبدال المفاصل، طب العظام الرضحي والطب الرياضي. ذو خبرة كبيرة في إعادة بناء مفصلي الورك والركبة.",
+
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.title": "أستاذ جراحة العمود الفقري",
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.bio": "الأستاذ الدكتور شتفان م. كنولّر هو جرّاح عمود فقري في مستشفى HELIOS Breisach، متخصص في تشوّهات العمود الفقري، الجراحة طفيفة التوغّل واستبدال الأقراص. معروف بحلول جراحية مبتكرة في الحالات المعقّدة.",
+
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.title": "أخصائي طب الشيخوخة",
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.bio": "الدكتور كوسمين كوري لاريو هو طبيب شيخوخة في مستشفى HELIOS Rottweil، متخصص في أمراض الشيخوخة، رعاية الخرف والإدارة متعددة التخصصات لكبار السن. يلتزم بتحسين الحركة والاستقلالية لدى المسنين.",
+
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.title": "أخصائي جراحة الأوعية الدموية",
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.bio": "الدكتور كاي ميلهازه هو جرّاح أوعية دموية في مستشفى HELIOS Rottweil، متخصص في الإجراءات داخل الأوعية، علاج دوالي الأوردة وإعادة البناء الشرياني المعقّد. معروف بتقنيات حديثة طفيفة التوغّل.",
+
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.title": "أخصائي أمراض النساء",
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.bio": "الدكتور ماركوس تسنز هو طبيب نساء في مستشفى HELIOS Rottweil، يركّز على الصحة الإنجابية، التوليد والأورام النسائية. خبير في الجراحة النسائية طفيفة التوغّل ورعاية المرأة الشاملة.",
+
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.title": "أخصائي الجراحة العامة وجراحة الأحشاء",
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.bio": "الدكتور رينيه هودينا هو جرّاح عام وجراحة أحشاء في مستشفى HELIOS Rottweil، متخصص في جراحة البطن، أورام الجهاز الهضمي والتقنيات الجراحية طفيفة التوغّل. يمتلك خبرة واسعة في جراحات معقّدة للجهاز الهضمي.",
+
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.title": "أخصائي التخدير",
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.bio": "الدكتورة ساندرا برنداور هي طبيبة تخدير في مستشفى HELIOS Rottweil، متخصّصة في الرعاية حول العمليات، علاج الألم وطب العناية المركزة. تركّز على سلامة المرضى وتقنيات التخدير المتقدّمة.",
+
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.title": "أستاذ طب العظام",
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.bio": "الأستاذ الدكتور ماركوس كيربر هو جرّاح عظام في مستشفى HELIOS Rottweil، متخصص في طب العظام الفقري، استبدال المفاصل وإعادة بناء الجهاز العضلي الهيكلي. معروف بحلول جراحية رائدة في الحالات المعقّدة.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.title": "أخصائي أمراض النساء",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.bio": "الدكتورة كلاوديا فريتس هي طبيبة نساء في مستشفى HELIOS Titisee-Neustadt، متخصّصة في التوليد، الأورام النسائية والرعاية الوقائية. خبيرة في الجراحة النسائية طفيفة التوغّل والرعاية الصحية المخصّصة للمرأة.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.title": "أخصائي الطب الباطني والعناية المركزة",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.bio": "الدكتورة كونستانتسه فولمر هي أخصائية طب باطني وعناية مركزة في مستشفى HELIOS Titisee-Neustadt. تركز على الرعاية الحرجة، طب الجهاز التنفسي وإدارة الأمراض الباطنية المعقّدة التي تتطلب علاجاً مكثفاً.",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.title": "أخصائي أمراض النساء",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.bio": "الدكتور يان يورغنز هو طبيب نساء في مستشفى HELIOS Titisee-Neustadt، خبير في الصحة الإنجابية، الحمل عالي الخطورة والأورام النسائية. يقدّم رعاية شاملة لصحة المرأة.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.title": "أخصائي جراحة العظام",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.bio": "الدكتور لوراند ألين ستويكا هو جرّاح عظام في مستشفى HELIOS Titisee-Neustadt، متخصص في طب العظام الرضحي، إعادة بناء المفاصل وإصابات الرياضة. ذو خبرة في الجراحة العظمية طفيفة التوغّل والرعاية الموجهة للتأهيل.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.title": "أخصائي طب الشيخوخة",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.bio": "الدكتور مانفريد شمولدرس هو طبيب شيخوخة في مستشفى HELIOS Titisee-Neustadt، يركّز على الأمراض المتعددة، الخرف والرعاية الشاملة للمرضى كبار السن. يجمع بين طب الشيخوخة الوقائي والاستراتيجيات العلاجية الحديثة.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.title": "أخصائي التخدير",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.bio": "الدكتور توماس مروتسك هو طبيب تخدير في مستشفى HELIOS Titisee-Neustadt، متخصص في التخدير للمرضى ذوي المخاطر العالية، العناية المركزة وعلاج الألم. يضمن رعاية آمنة خلال العمليات باستخدام تقنيات مراقبة متقدمة.",
+
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.title": "أستاذ الجراحة العامة وجراحة الأحشاء",
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.bio": "الأستاذ الدكتور بنيامين زومر هو جرّاح في مستشفى HELIOS Titisee-Neustadt، متخصص في الجراحة البطنية المعقدة، سرطان القولون والمستقيم والتقنيات طفيفة التوغّل. معروف بخبرته في الجراحة الأورام وإعادة بناء الجهاز الهضمي.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..title": "رئيس قسم جراحة العظام والإصابات | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..bio": "الدكتور ينس أوسيل، LL.M.، هو المدير الطبي ورئيس قسم جراحة العظام والإصابات في مستشفى HELIOS Bad Saarow. متخصص في جراحة القدم والكاحل المعقدة، الرعاية الروماتولوجية وقيادة مركز الإصابات الإقليمي. مُعترف به من FOCUS لجراحة القدم وخبرة في مراكز المملكة المتحدة.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.title": "رئيس قسم التخدير، العناية المركزة وعلاج الألم | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.bio": "الدكتور شتيفان فيرتس يقود قسم التخدير، العناية المركزة وعلاج الألم. خبير في علاج الإنتان، ARDS/ECMO وبرامج الفطام من أجهزة التنفس. نقاط القوة: سلامة العمليات، الموجات فوق الصوتية الحرجة/TEE وخبرة في الرعاية التلطيفية.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.title": "رئيس قسم جراحة الأوعية والجراحة داخل الأوعية | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.bio": "الدكتور وليد إبراهيم يرأس مركز الأوعية الدموية والشريان الأبهر، متخصص في إصلاح الأبهر/AAA طفيفة التوغّل، العلاج داخل الأوعية في غرف العمليات الهجينة والمسارات العلاجية الشاملة عبر طب الأوعية–الأشعة–الجراحة.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.title": "رئيس قسم أمراض القلب | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.bio": "PD الدكتور إردال شافاك هو طبيب قلب تداخلي، خبير في الفيزيولوجيا الكهربية، علاج الأجهزة (ICD/CRT)، التدخلات القلبية البنيوية (PFO/MitraClip) والعناية القلبية المركزة. يجمع بين خبرة اضطرابات النظم وطب القلب التداخلي.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.title": "رئيس قسم طب الأعصاب | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.bio": "PD الدكتور كونستانتين براس، MBA، يقود طب الأعصاب الحاد ووحدة العناية المركزة العصبية مع شبكة ثرومبكتومي على مدار الساعة. متخصص في طب السكتة الدماغية، علم المناعة العصبية والرعاية العصبية الحرجة المعقدة (تدرّب في شاريتيه).",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.title": "رئيس قسم الأنف والأذن والحنجرة، جراحة الرأس والعنق وجراحة التجميل الوجهية | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.bio": "PD الدكتور توماس شتروم متخصص في زراعة القوقعة وزرعات الأذن الوسطى، الجراحة التنظيرية للأنف، أورام الرأس والعنق وجراحة التجميل والترميم الوجهية. خبرة فريدة تشمل طب الأذن، طب الأنف والجراحة التجميلية.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.title": "رئيس قسم جراحة المسالك البولية والأورام البولية | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.bio": "PD الدكتور توبياس كلاته هو خبير في الجراحة الروبوتية، التنظيرية والمفتوحة في المسالك البولية. التخصص: جراحة سرطان البروستاتا، الكلى والمثانة، جراحة المناظير والوظائف البولية.",
+
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.title": "رئيس قسم الطب الباطني، أمراض الجهاز الهضمي والسكري | HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.bio": "الأستاذ الدكتور فلوريان هنتشيل يقود الطب الباطني العام، متخصص في التنظير المتقدم، أمراض الأمعاء الالتهابية، أمراض الكبد ورعاية السكري المتكاملة. قوته: إنشاء مسارات متكاملة لمرضى الجهاز الهضمي والسكري مع الأمراض المتعددة.",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.title": "رئيس قسم جراحة الأعصاب | مستشفى HELIOS Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.bio": "الأستاذ الدكتور يوليوس دينجلر متخصص في أورام الدماغ والعمود الفقري، جراحة الأوعية الدماغية، الأعصاب الطرفية وجراحة الألم الوظيفية. نقاط القوة: خبرة في العمود الفقري وقيادة مجلس الأورام متعدد التخصصات.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.title": "رئيس قسم طب العيون | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.bio": "الدكتور كريستوف فون زونلايتنر، FEBO، يرأس عيادة العيون مع كامل نطاق التشخيص والجراحة. التخصص: الساد/الانكسار، الزرق، الجراحة التجميلية العينية، جراحة القناة الدمعية والمدار. خبرة قوية من Charité.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.title": "رئيس قسم التخدير والطب المحيط بالجراحة | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.bio": "الدكتور دافيد شفاِيبرجر يدير التخدير والرعاية المحيطة بالجراحة، مع تركيز على سلامة المرضى، المراقبة الحديثة وتحسين عمليات العناية المركزة الجراحية (كان كبير أطباء التخدير في Charité).",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.title": "رئيس قسم الأورام والطب التلطيفي | مدير مركز الساركوما | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.bio": "الأستاذ الدكتور بيتر رايشارت من أبرز خبراء الساركوما في أوروبا، يقود المراكز المعتمدة للأورام والساركوما. نقاط القوة: التجارب السريرية GIST/STS/ساركوما العظام، تطوير الإرشادات ورعاية متعددة التخصصات.",
+
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.title": "رئيس قسم جراحة العظام والإصابات | مدير ENDO-Klinik Berlin | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.bio": "الأستاذ الدكتور دانييل كندورف متخصص في استبدال مفصل الورك والركبة، معروف بالتقنيات طفيفة التوغّل والعمليات التصحيحية المعقدة. مميز: الأطراف الصناعية للأورام وبروتوكولات التعافي السريع.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.title": "رئيس قسم أمراض الدم والعلاج الخلوي (زرع الخلايا الجذعية) | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.bio": "الأستاذ الدكتور بيراترام غلاس يقود قسم أمراض الدم، CAR-T وزرع الخلايا الجذعية. نقاط القوة: علاج الأورام اللمفاوية/اللوكيميا، برنامج زراعة معتمد وأكثر من 90 منشوراً علمياً.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.title": "رئيس قسم الطب الباطني وأمراض الجهاز الهضمي | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.bio": "الأستاذ الدكتور فرانك كولليغس متخصص في التنظير المتقدم، أمراض الكبد وأورام الجهاز الهضمي. نقاط القوة: علاج سرطان الكبد والتشخيص والعلاج التنظيري الشامل.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.title": "رئيس قسم طب الأعصاب | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.bio": "الأستاذ الدكتور جورج هاغيمان يغطي كامل نطاق طب الأعصاب مع تشخيصات الأوعية الدموية العصبية (دوبلكس، EEG/EMG، الجهود المحرّضة). نقاط القوة: السكتة الدماغية، التصلب المتعدد، الصرع ومسارات العناية العصبية المركزة.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.title": "المدير الطبي ورئيس قسم أمراض القلب وأمراض الكلى | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.bio": "الأستاذ الدكتور هيننغ ت. بابيرغ يقود خدمات القلب والكلى المتكاملة بما في ذلك وحدة ألم الصدر، مختبر القسطرة/الفيزيولوجيا الكهربية، الغسيل الكلوي وتصوير القلب بالرنين المغناطيسي. الميزة الفريدة: القيادة على مستوى النظام والأدوار الأكاديمية في جامعة MSB.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-roger-wahba.title": "رئيس قسم الجراحة العامة وجراحة الأحشاء والأورام | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-roger-wahba.bio": "الأستاذ الدكتور روجر وهبة خبير جراحة الكبد والجهاز الكبدي-البنكرياسي-المراري (HPB). نقاط القوة: الاستئصالات الأورامية المتقدمة (بما في ذلك ALPPS)، مسارات سرطانية متعددة التخصصات وقيادة جراحة الأحشاء طفيفة التوغّل.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof.dr-stefan-dresel.title": "رئيس قسم الطب النووي | مستشفى HELIOS Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof.dr-stefan-dresel.bio": "الأستاذ الدكتور شتفان دريزل متخصص في تشخيص PET/SPECT والعلاجات بالمواد المشعة. مميز: التصوير الوظيفي للأورام والعلاجات الترانوسطية الشخصية.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.title": "رئيس جراحة الأوعية والجراحة داخل الأوعية | مستشفى HELIOS Emil von Behring (برلين-تسيلندورف)",
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.bio": "الدكتور آدم تشرفينسكي يقود جراحة الأوعية مع تركيز على تداخلات الشريان الأبهر، السباتي والطرفية. مميز: توسيع البرنامج في تسيلندورف وخبرة غرفة العمليات الهجينة.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.title": "رئيس قسم جراحة العظام وجراحة الإصابات | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.bio": "الدكتور أكسل راينهارت يدير وحدة عظام منظَّمة حسب التخصصات الدقيقة. التركيز: رعاية جراحية عالية الجودة للمفاصل والعمود الفقري والإصابات عبر فريق خبراء.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.title": "رئيس قسم أمراض الدم والأورام | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.bio": "الدكتور بيرغه أرندت متخصص في الأورام الصلبة وأورام الدم مع نهج الطب الدقيق. نقاط القوة: أورام الجهاز الهضمي، حالات CUP، ابيضاض الدم/اللمفوما والعلاجات بالأجسام المضادة/المناعية الحديثة.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.title": "رئيس قسم الأشعة التشخيصية والتداخلية، الطب النووي والتصوير الجزيئي | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.bio": "PD الدكتور كريستيان ألتوف خبير تصوير الأوعية والعلاج الموجَّه بالصور. مميز: طيف كامل من الأشعة التداخلية للأورام، الأوعية والجهاز العضلي الهيكلي.",
+
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.title": "رئيس قسم جراحة الصدر | عيادة الرئة هيكيشهورن، HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.bio": "الدكتور محمد زعتر جرّاح صدر معتمد يركّز على سرطان الرئة، استئصال النقائل وإجراءات جدار الصدر المعقّدة. مميز: قيادة برنامج هيكيشهورن التاريخي (تم التعيين 2025).",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik.title": "رئيس قسم أمراض القلب (الطب الباطني I) | رئيس شبكة Helios للقلب برلين-براندنبورغ | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-cemil-ozcelik.bio": "الأستاذ الدكتور جميل أوزجليك طبيب قلب تداخلي في أمراض الشرايين التاجية والقلب البنيوي (إصلاح الصمامات طفيفة التوغّل). مميز: قيادة إقليمية للشبكة القلبية وخلفية في الكارديوجيناتيك الانتقالية.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-eckart-schott.title": "رئيس قسم أمراض الجهاز الهضمي والكبد والسكري (الطب الباطني II) | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-eckart-schott.bio": "الأستاذ الدكتور إكارت شوت خبير الكبد والتنظير المتقدم. نقاط القوة: أمراض الأمعاء الالتهابية، التهاب الكبد الفيروسي، أمراض البنكرياس والقنوات الصفراوية ومسارات سرطانية معتمَدة للجهاز الهضمي.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-georg-hagemann.title": "طب الأعصاب (معلومة غير منطبقة على هذا القسم)",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-georg-hagemann.bio": "الأستاذ الدكتور جورج هاغيمان يعمل كرئيس قسم الأعصاب في HELIOS Berlin-Buch. لأغراض SEO الدقيقة، يرجى إدراجه ضمن Berlin-Buch وليس Emil von Behring.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-henning-t-baberg.title": "أمراض القلب والكلى (معلومة غير منطبقة على هذا القسم)",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-henning-t-baberg.bio": "الأستاذ الدكتور هيننغ بابيرغ يعمل في HELIOS Berlin-Buch وليس في Emil von Behring. الرجاء ربطه ببرلين-بوخ لضمان فهرسة SEO صحيحة.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-marc-h-jansen.title": "رئيس قسم الجراحة العامة وجراحة الأحشاء والجراحة طفيفة التوغّل | مركز برلين-الجنوب الغربي المعتمد للجراحة طفيفة التوغّل | مستشفى HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof.dr-marc-h-jansen.bio": "الأستاذ الدكتور مارك ه. يانسن متخصص في جراحة القولون والمستقيم والفتوق طفيفة التوغّل، جراحات الارتجاع والجراحة الصمّدية/الجزء العلوي من القناة الهضمية. مميز: قيادة برامج أورام الأحشاء المعتمدة (القولون-المستقيم والبنكرياس).",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.title": "جراحة الجهاز الهضمي (المعلومة غير صالحة لهذا الموقع)",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.bio": "الأستاذ الدكتور روجر واهبا يشغل منصب رئيس قسم جراحة الجهاز الهضمي في مستشفى هيليوس برلين-بوخ منذ أغسطس 2023. لا يُدرج تحت إميل فون بيرينغ للحفاظ على دقة تحسين محركات البحث.",
+
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.title": "رئيس قسم جراحة الفم والفكين والوجه | مركز أورام الرأس والعنق | جراحة تجميل الوجه",
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.bio": "البروفيسور يوهانس ويكنر يقود جراحة الفم والفكين في هيليوس إرفورت، ويدير مركز أورام الرأس والعنق والعيادة الخاصة Helios. خبرة في: الجراحة الأورام الترميمية للوجه، جراحة تقويم الفكين، الزرعات والإجراءات المعقدة للرأس والعنق.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.title": "رئيس قسم جراحة العمود الفقري (العظام والكسور)",
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.bio": "الدكتور علي عزّتي يرأس عيادة جراحة العمود الفقري في هيليوس إرفورت، من العمليات التنظيرية طفيفة التوغل حتى تصحيح التشوهات المعقدة. أحجام العمليات العالية سنويًا تؤكد الخبرة والنتائج.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.title": "رئيس قسم جراحة الأوعية وجراحة الأوعية داخل الأوعية | مدير مشارك، مركز الأوعية غوتا–إرفورت",
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.bio": "البروفيسور هندريك بيرغيرت متخصص في إعادة التوعية للشريان الأورطي، والشريان السباتي والطرفي باستخدام تقنيات هجينة (داخل الأوعية وجراحة مفتوحة). مدير مشارك لمركز الأوعية متعدد التخصصات.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.title": "رئيس قسم أمراض الرئة وطب النوم والتهوية | مدير مركز سرطان الرئة",
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.bio": "الدكتور ينس-أوفه باوَر يقود قسم أمراض الرئة والمركز المعتمد لسرطان الرئة في هيليوس إرفورت. التركيز: تنظير الشعب الهوائية التدخلي، طب النوم والتهوية، ومسارات علاج الأورام متعددة التخصصات.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.title": "رئيس قسم جراحة الصدر والتنظير الصدري | مدير مركز سرطان الرئة",
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.bio": "الدكتور يورغ كلوغه يجري عمليات معقدة للرئة والمنصف باستخدام تقنيات VATS/uniportal والتنظير المرن/الصلب، ويدير بالاشتراك المركز الإقليمي لسرطان الرئة.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.title": "رئيس، المركز متعدد التخصصات لقدم السكري (IZDF)",
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.bio": "الدكتور توماس فيرنر يقود مركز IZDF في هيليوس إرفورت ببرنامج إنقاذ الأطراف، الوقاية من البتر، ورعاية منسقة بين طب الأوعية والسكري.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.title": "رئيس قسم أمراض القلب | أمراض القلب التدخلية والبنيوية",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.bio": "الأستاذ ألكسندر لاوتن يدير قسم أمراض القلب مع تدخلات القسطرة، وحدة ألم الصدر، التصوير المتقدم (MRI/CT) وعلاج اضطرابات النظم (الاجتثاث، أجهزة تنظيم ضربات القلب).",  
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.title": "رئيس قسم الجراحة العامة وجراحة الجهاز الهضمي | مدير مركز أورام الجهاز الهضمي",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.bio": "الأستاذ أتيلا دوبتس متخصص في جراحة الجزء العلوي من الجهاز الهضمي وHPB باستخدام تقنيات روبوتية وطفيفة التوغل. يقود مركز أورام الجهاز الهضمي وفق بروتوكولات علاجية معتمدة ولجان الأورام.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.title": "أستاذ جراحة الأعصاب | المدير الطبي | مدير مركز الأورام العصبية",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.bio": "الأستاذ رودغر غيرلاخ يرأس مركز الأورام العصبية ويجمع بين جراحة الأورام الدماغية/النخاعية المتقدمة ورعاية فردية مدعومة بالتكنولوجيا.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.title": "رئيس قسم العناية المركزة والمتوسطة | مدير شبكة التخدير–العناية المركزة–الطوارئ–الألم–الرعاية التلطيفية",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.bio": "الأستاذ هاينريش ف. غروسدونك يقود المركز الإقليمي للتخدير، العناية المركزة، الطوارئ، علاج الألم والرعاية التلطيفية. خبير في استراتيجيات دعم الأعضاء والفطام المعقد عن أجهزة التنفس.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.title": "رئيس قسم الأنف والأذن والحنجرة، جراحة الرأس والعنق | مركز زراعة القوقعة والسمعيات",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.bio": "الأستاذ هولغر كافتان متخصص في جراحة أورام الرأس والعنق، تقنيات الليزر CO₂، وحلول السمع القابلة للزرع (القوقعة/الأذن الوسطى).",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.title": "رئيس قسم أمراض الكلى",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.bio": "الأستاذ ولفغانغ نوهوفر يقدم رعاية متقدمة لأمراض الكلى بما في ذلك الغسيل الكلوي ومتابعة ما بعد الزرع مع خطط علاجية شخصية لمرضى القصور الكلوي المزمن.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.title": "رئيس قسم جراحة المسالك البولية | مدير مركز أورام المسالك البولية | مدير مركز الجراحة الروبوتية لوسط ألمانيا",
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.bio": "الأستاذ توماس شتاينر يقود قسم المسالك البولية باستخدام الجراحة الروبوتية وطفيفة التوغل لعلاج سرطانات البروستاتا والكلى والمثانة، إضافة إلى برامج شاملة في طب الذكورة ووظائف المسالك.",
+
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.title": "رئيس قسم جراحة الصدر",
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.bio": "الدكتور ميشائيل كلوب يجري عمليات استئصال الرئة التشريحية وتقنيات VATS، بالتعاون الوثيق مع أطباء الرئة والأورام، لتقديم رعاية صدرية متعددة التخصصات على مدار الأسبوع.",
+
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.title": "رئيس قسم جراحة العظام والكسور والعمود الفقري",
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.bio": "PD Dr. بيرند ماير يقوم باستبدال المفاصل، وجراحة الإصابات والعمود الفقري باستخدام تقنيات إعادة التأهيل السريع والمحافظة على الحركة.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.title": "أستاذ طب الأعصاب | رئيس القسم",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.bio": "الأستاذ بنيامين برغر يقود قسم الأعصاب مع خبرة في الأمراض الوعائية الدماغية، المناعة العصبية ومسارات العناية المركزة العصبية، جامعًا بين البحث الأكاديمي والرعاية السريرية عالية الجودة.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.title": "رئيس قسم أمراض الجهاز الهضمي والكبد والأمراض المعدية والسكري",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.bio": "الأستاذ كريستيان روب يقدم تنظيرًا متقدمًا وعلاج أمراض الكبد والاضطرابات الأيضية، مدمجًا مع خبرة الطب الباطني المكثف لمرضى الجهاز الهضمي والسكري المعقدين.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.title": "رئيس قسم جراحة المسالك البولية والمسالك البولية للأطفال | الجراحة الروبوتية",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.bio": "الأستاذ شو-فون مونا متخصص في الجراحة الروبوتية وطفيفة التوغل للبروستاتا والكلى والمثانة، موسعًا خدمات المسالك البولية الشاملة في المنطقة.",
+
+"people.doctors.helios-krefeld-hunerliturkoglu.title": "رئيس قسم أمراض الدم والأورام الطبية والطب التلطيفي",
+"people.doctors.helios-krefeld-hunerliturkoglu.bio": "الدكتور علي نوري هونرليتوركوغلو يقود العيادة الطبية الثانية في هيليوس كريفيلد، يعالج سرطان الدم والأورام اللمفاوية والأورام الصلبة بأحدث العلاجات النظامية والداعمة.",
+
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.title": "رئيس قسم الجراحة العامة وجراحة الجهاز الهضمي",
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.bio": "الدكتور إريش بيلش يركز على جراحة القولون والمستقيم الأورام، والإجراءات طفيفة التوغل، منسقًا مسارات القولون والمستقيم المعتمدة وبروتوكولات التعافي ERAS.",
+
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.title": "رئيس قسم جراحة الأوعية | المدير الطبي | أخصائي الجراحة داخل الأوعية",
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.bio": "الدكتور رضا غوتبي جراح أوعية دموية وباطنية وداخل الأوعية معتمد (DGG)، يقدم تدخلات متقدمة على الشريان الأورطي والسباتي والأطراف في مراكز هيليوس بميونخ.",
+
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.title": "رئيس قسم جراحة الفم والفكين والوجه وجراحة تجميل الوجه",
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.bio": "الأستاذ دينيس ي. لوفيلباين (FEBOMFS)، حاصل على مؤهل مزدوج في الطب وطب الأسنان، أستاذ أكاديمي، يقدم جراحات إعادة بناء وتجميل معقدة للوجه.",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.title": "رئيس قسم الأنف والأذن والحنجرة (الرأس والرقبة) | جراحة تجميلية وترميمية لطب الأنف والأذن والحنجرة",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.bio": "يقود PD Dr. توماس شتارك إحدى أكبر عيادات الأنف والأذن والحنجرة في جنوب بافاريا، ويغطي جراحة قاعدة الجمجمة وأورام الرأس والعنق برعاية متعددة التخصصات وتقنيات ترميم حديثة.",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.title": "رئيس قسم جراحة اليد",
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.bio": "يقود PD Dr. إلياس فولكمِر جراحة اليد بخبرة تشمل ترميم الأعصاب والأوتار والمعصم؛ حاصل على «شهادة خبير» من الجمعية الألمانية لجراحة اليد (DGH).",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.title": "رئيس قسم أمراض القلب والعناية المركزة الباطنية",
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.bio": "يعزّز الأستاذ سيباستيان كوفنر خدمات القلب في ميونخ ويست عبر القسطرة القلبية والتصوير والباطنة الحرجة، جامعًا العلاج الحديث مع رعاية تتمحور حول المريض.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.title": "أستاذ جراحة القلب | رائد زرع القلب والرئة",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.bio": "الأستاذ برونو رايشارت – جراح قلب مرموق عالميًا في LMU ميونخ، رائد في زراعة القلب والرئة الحديثة. أسهمت أبحاثه في زرع الأعضاء بين الأنواع والدعم الميكانيكي للدورة في تطوير جراحة القلب عالميًا.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.title": "أستاذ جراحة المسالك البولية | مدير قسم المسالك البولية في LMU ميونخ",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.bio": "يقود الأستاذ كريستيان جورج شتيف قسم المسالك البولية في LMU ميونخ: أورام المسالك، الجراحة الروبوتية وطفيفة التوغل، والأنرولوجيا. معترف به كقائد في أبحاث سرطان البروستاتا وابتكارات صحة الرجل.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.title": "أستاذ جراحة الأعصاب | خبير في جراحة العمود الفقري والأورام العصبية",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.bio": "الأستاذ فلوريان رينجل – من أبرز جراحي الأعصاب في LMU ميونخ، يركز على جراحات العمود الفقري المعقدة، والأورام العصبية، والتصوير أثناء العمليات؛ رائد في الإجراءات طفيفة التوغل والملاحة العصبية.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.title": "أستاذ جراحة القلب | متخصص في القلب الصناعي والزراعة",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.bio": "الأستاذ باولو برينر – جراح قلب في LMU ميونخ، خبير الأنظمة القلبية الصناعية وزراعة القلب والرئة؛ أبحاثه في الكسنوزراعة والدعم الميكانيكي للدورة معترف بها عالميًا.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.title": "أستاذ الأورام | خبير الساركوما والعلاج الحراري",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.bio": "الأستاذ رولف د. إيسيلس – طبيب أورام في LMU ميونخ، متخصص في علاج الساركوما والعلاج بالحرارة؛ قاد أبحاثًا سريرية في العلاج الكيميائي الموضعي والأورام متعددة الوسائط وأسهم في وضع الإرشادات الدولية.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.title": "أستاذ الأورام | متخصص في سرطانات الجهاز الهضمي",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.bio": "الأستاذ فولكر هاينمان – من رواد الأورام في LMU ميونخ، يركز على سرطانات الجهاز الهضمي وبخاصة القولون والبنكرياس؛ معروف بقيادته للتجارب السريرية في العلاج الكيميائي والعلاجات الموجهة.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.title": "اختصاصي أمراض الدم والأورام | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.bio": "الدكتور أندرياس أرندت – طبيب أورام مخضرم في Medical Park Bad Feilnbach؛ العلاج الجهازي للسرطان، الرعاية الداعمة، وإعادة التأهيل.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.title": "اختصاصي طب الشيخوخة والأمراض الباطنية | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.bio": "الدكتور راينر آرِنس – متخصص في طب الشيخوخة؛ يقدم إعادة تأهيل شاملة لكبار السن: تعدد الأمراض، اضطرابات الحركة، وأمراض الباطنة المرتبطة بالعمر.",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.title": "أستاذ جراحة المسالك البولية | اختصاصي في المسالك الوظيفية وإعادة البناء",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.bio": "الأستاذ بيتر يونغ – خبير مسالك بولية في Medical Park Bad Feilnbach، متخصص في المسالك البولية الوظيفية وجراحات الترميم. معروف بعمله في السلس البولي، والنيورو-يورولوجي وإعادة التأهيل بعد الجراحة.",
+
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.title": "اختصاصي جراحة المسالك البولية | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.bio": "الدكتور ديرك تساوبر – طبيب مسالك بولية في Medical Park Bad Rodach؛ خبرة في أورام المسالك، المناظير البولية وصحة الرجل. يقدّم علاجًا متقدمًا وتأهيلًا لاضطرابات المسالك.",
+
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.title": "اختصاصي تقويم العظام وإعادة التأهيل | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.bio": "الدكتور يوهانس يورغن ميس – اختصاصي عظام يركز على إعادة التأهيل بعد جراحات المفاصل والعمود الفقري. نقاط القوة: تأهيل الجهاز العضلي الهيكلي وطبّ الرياضة.",
+
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.title": "اختصاصية تقويم العظام وطبّ الرياضة | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.bio": "الدكتورة نادين دراير – خبيرة في إصابات الرياضة، تأهيل المفاصل والعلاج الطفيف التوغل لاضطرابات الجهاز العضلي الهيكلي.",
+
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.title": "اختصاصي أمراض القلب والباطنة | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.bio": "PD Dr. أندرياس شتاين – اختصاصي قلب يتمتع بخبرة في إعادة التأهيل القلبي، تدبير اضطرابات النظم والوقاية القلبية الوعائية؛ يدمج تشخيصًا حديثًا مع خطط علاج فردية.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.title": "أستاذة تقويم العظام | اختصاصية جراحة المفاصل وإعادة التأهيل",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.bio": "الأستاذة أندريا مويرر – جرّاحة عظام مرموقة، متخصصة في استبدال مفصل الورك والركبة وإعادة التأهيل بعد الجراحة؛ معروفة برعاية تركز على المريض وخبرة أكاديمية.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.title": "أستاذ الطب الباطني | اختصاصي الطب التأهيلي والوقائي",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.bio": "الأستاذ كريستيان فيرشكه يركز على الباطنة والوقاية القلبية الوعائية وإعادة التأهيل؛ يدمج العلاج المبني على الدليل مع مقاربات وقائية لصحة طويلة الأمد.",
+
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.title": "أستاذ تقويم العظام وجراحة الرضوض | اختصاصي الطب التأهيلي",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.bio": "الأستاذ كارستن دراينهوفر – خبير في العظام والرضوض مع تركيز على إعادة التأهيل، واضطرابات الجهاز العضلي الهيكلي وصحة العظام؛ معترف به دوليًا في علوم التأهيل وسلامة المرضى.",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.title": "أستاذ طب الأعصاب | متخصص في طب السكتة الدماغية وإعادة التأهيل العصبي",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.bio": "الأستاذ مارتن إبنغر – طبيب أعصاب متخصص في طب السكتة الدماغية، إعادة التأهيل العصبي والرعاية العصبية الحادة. معروف بأبحاثه في تشخيص السكتة قبل دخول المستشفى ومفاهيم إعادة التأهيل العصبي المبتكرة.",
+
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.title": "أستاذ جراحة العظام | متخصص في جراحة المفاصل وطبّ الرياضة",
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.bio": "الأستاذ ماركوس شميت-سودي – جرّاح عظام يركز على استبدال مفصل الورك والركبة، طبّ الرياضة وإعادة التأهيل العضلي الهيكلي. قائد إعادة التأهيل العظمي في بحيرة كيمزي.",
+
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.title": "أستاذ الطب النفسي الجسدي والعلاج النفسي",
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.bio": "الأستاذ أندرياس مينكه – متخصص في الطب النفسي الجسدي والعلاج النفسي؛ يركز على الاكتئاب، القلق واضطرابات التوتر. يدمج الأساليب النفسية مع إعادة التأهيل الشاملة.",
+
+"people.doctors.schlossparkklinik-dr-andre-kwalek.title": "اختصاصي جراحة العظام والرضوض | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-andre-kwalek.bio": "الدكتور أندريه كفالك – جرّاح عظام ورضوض في Schlosspark-Klinik Berlin؛ خبرة في استبدال المفاصل، إصابات الجهاز العضلي الهيكلي وجراحة تركز على إعادة التأهيل.",
+
+"people.doctors.schlossparkklinik-dr-dominik-schuster.title": "اختصاصي الطب الباطني وأمراض الجهاز الهضمي | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-dominik-schuster.bio": "الدكتور دومينيك شستر – اختصاصي باطنة وجهاز هضمي؛ يقدم تشخيصًا وعلاجًا شاملًا لاضطرابات الجهاز الهضمي والتمثيل الغذائي.",
+
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.title": "اختصاصي طب الأعصاب | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.bio": "الدكتور شهرام يوسف – طبيب أعصاب في Schlosspark-Klinik Berlin؛ خبرة في الأمراض التنكسية العصبية، الصرع وطب السكتة الدماغية.",
+
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.title": "أستاذ الجراحة العامة وجراحة الجهاز الهضمي | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.bio": "الأستاذ كارستن كامفوس – جرّاح جهاز هضمي، متخصص في جراحة الكبد، القنوات الصفراوية والبنكرياس، إضافة إلى العمليات الأورام البطنية.",
+
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.title": "أستاذ جراحة الأعصاب | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.bio": "الأستاذ ثيودوروس كومبوس – جراح أعصاب يركز على أورام الدماغ، جراحة قاعدة الجمجمة وجراحة الأعصاب الفقرية؛ معروف بدمج الجراحة المجهرية مع التصوير العصبي المتقدم.",
+
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.title": "أستاذ طب الأعصاب | متخصص في الدوخة واضطرابات التوازن",
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.bio": "الأستاذ توماس ليمبرت – من أبرز أطباء الأعصاب في برلين، معروف عالميًا بخبرته في الدوخة والدوار واضطرابات التوازن، وله مساهمات أكاديمية واسعة.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.title": "أستاذ جراحة الأعصاب | رئيس، TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.bio": "الأستاذ برنارد ماير – رئيس قسم جراحة الأعصاب في TUM Klinikum rechts der Isar؛ معروف بالعمليات المعقدة للدماغ والعمود الفقري، الأورام العصبية والإجراءات طفيفة التوغل.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.title": "أستاذ أمراض الدم والأورام | مدير الطب الباطني III (H&O) TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.bio": "الأستاذ فلوريان باسرمان – يقود أمراض الدم والأورام في TUM؛ متخصص في ابيضاض الدم، أورام الخلايا البائية والعلاجات الموجهة؛ نشط في الأبحاث الانتقالية.",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.title": "أستاذ الجراحة العامة وجراحة الجهاز الهضمي | خبير جراحة سرطان البنكرياس",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.bio": "الأستاذ هيلموت فريس – مدير الجراحة في TUM، معترف به دوليًا في جراحة البنكرياس والكبد والطرق الصفراوية؛ أبحاث في بيولوجيا سرطان البنكرياس.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.title": "أستاذ جراحة المسالك البولية | رائد في أورام المسالك والجراحة الروبوتية",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.bio": "الأستاذ يورغن إي. غشفِند يرأس قسم المسالك في TUM؛ يركز على سرطانات البروستاتا والمثانة وتقنيات حفظ الأعصاب والرعاية الأورامية متعددة الوسائط.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.title": "أستاذ أمراض القلب | مدير أمراض القلب في TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.bio": "الأستاذ كارل-لويدفيغ لاوغفيتز – رائد في طب القلب التداخلي وخبير فشل القلب، يدفع أبحاث الخلايا الجذعية وتجديد القلب في ميونخ.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.title": "أستاذة علاج الأورام بالإشعاع | مديرة قسم الأشعة العلاجية في TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.bio": "الأستاذة ستيفاني إي. كومبس تقود الأشعة العلاجية في TUM وتطوّر العلاج الإشعاعي الدقيق والطب الإشعاعي الانتقالي من المختبر إلى السرير.",
+  
+"people.doctors.uk-koeln-goldbrunner.title": "أستاذ جراحة الأعصاب | مدير، مستشفى جامعة كولونيا",
+"people.doctors.uk-koeln-goldbrunner.bio": "الأستاذ غويدو غولدبرونر يقود جراحة الأعصاب في كولونيا؛ خبرة في الأورام العصبية، جراحة قاعدة الجمجمة ورعاية أورام الدماغ المعقدة.",
+  
+"people.doctors.uk-koeln-hallek.title": "أستاذ أمراض الدم والأورام | خبير CLL، مستشفى جامعة كولونيا",
+"people.doctors.uk-koeln-hallek.bio": "الأستاذ ميخائيل هالّك – من أبرز خبراء اللوكيميا اللمفاوية المزمنة عالميًا؛ يقود برامج أبحاث سريرية كبيرة ويطوّر علاجات موجّهة للأورام الدموية.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.title": "رئيس جراحة العامة والجهاز الهضمي والرضوض | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.bio": "الدكتور أرندت فون كيرخبخ يقود الجراحة العامة والباطنية والرضوض في برناو؛ جراحات متقدمة للفتوق والبطن والطوارئ.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.title": "رئيس قسم الباطنة | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.bio": "الدكتور ميخائيل تسِنكر يرأس الباطنة في برناو؛ خبرة في أمراض القلب الاستقلابية والروماتيزم مع إدارة منومة متكاملة.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.title": "أستاذ أمراض القلب | الطبيب الرئيسي، Helios Emil von Behring (برلين)",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.bio": "الأستاذ جِميل أوزجيليك – طبيب قلب تداخلي في برلين، خبير أمراض القلب البنيوية والتداخلات الإكليلية؛ يقود شبكة Helios القلبية برلين-براندنبورغ.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.title": "أستاذ جراحة القلب | رئيس جراحة القلب والأوعية الدموية في برناو",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.bio": "الأستاذ يوهانس م. ألبِس يقود جراحة القلب والأوعية في برناو؛ ترميم/استبدال الصمامات وإجراءات معقدة على الأبهر والشرايين التاجية.",
+  
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.title": "أستاذ أمراض القلب | رئيس قسم القلب — Bernau Heart Center",
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.bio": "الأستاذ كريستيان بوتر – رائد التداخلات البنيوية (TAVI، MitraClip)؛ يقود قسم القلب في مركز براندنبورغ القلبي ببرناو.",
+  
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.title": "رئيس جراحة العامة والجهاز الهضمي والرضوض | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.bio": "الدكتور أرندت فون كيرخبخ – جرّاح عام وويسيرال ذو خبرة؛ تركيز على جراحات البطن والفتوق والرضوض في برناو (بالقرب من برلين).",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.title": "رئيس جراحة الأطفال والمسالك البولية | مستشفى جامعة براندنبورغ",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.bio": "الدكتور كارلوس أ. ريك-بورنيو – متخصص في جراحات الأطفال المعقدة للقولون والحوض؛ يوفّر رعاية متعددة التخصصات للأطفال والمراهقين.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.title": "أستاذ جراحة الأعصاب | رئيس، مستشفى جامعة براندنبورغ",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.bio": "الأستاذ كريستيان إيفالد يقود جراحة الأعصاب في براندنبورغ آن دير هافل؛ خبرة في الأورام العصبية، جراحة العمود الفقري والإجراءات الوعائية العصبية.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.title": "أستاذ أمراض الدم والأورام | مدير العيادة، براندنبورغ",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.bio": "الأستاذ ماركوس ديكرت يقود أمراض الدم والأورام والطب التلطيفي؛ يركز على العلاج الفردي للسرطان والرعاية الداعمة الشاملة.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.title": "أستاذ جراحة العظام وطبّ الرياضة | براندنبورغ",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.bio": "الأستاذ رولاند بيكر – جراح عظام معروف بجراحة الركبة وإصابات الرياضة؛ متخصص في تنظير المفاصل ورعاية تركز على إعادة التأهيل.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.title": "رئيسة قسم الطب النفسي والطب النفسي الجسدي والعلاج النفسي | كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.bio": "الدكتورة كوردولا سيكورسكـي تدير خدمات الطب النفسي في كوتبوس؛ تدمج الرعاية الداخلية والنهارية والعيادات الخارجية لعلاج الاكتئاب، القلق والذهانات.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.title": "المديرة الطبية | مركز جراحة العظام والرضوض كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.bio": "الدكتورة كورنيليا شميت تشرف على خدمات جراحة العظام في كوتبوس؛ تركيز على المفاصل، العمود الفقري والرضوض ضمن شبكة إقليمية للجهاز العضلي الهيكلي.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.title": "رئيس قسم طب الطوارئ | Carl-Thiem-Klinikum Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.bio": "الدكتور تيم فلاسبيك يقود طب الطوارئ في CTK كوتبوس؛ يعمل على تحسين مسارات الإسعاف والرعاية العاجلة للحالات الحرجة.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.title": "رئيس قسم الأشعة العامة | CTK كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.bio": "الدكتور جيرو وينرز يرأس الأشعة العامة في CTK كوتبوس؛ يطوّر التصوير الأورامي، التعاون مع الأشعة العصبية والتشخيص وفقًا للإرشادات.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.title": "أستاذ أمراض الدم والأورام | CTK كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.bio": "الأستاذ مارتن شميت-هيبر – رئيس قسم أمراض الدم والأورام في CTK كوتبوس؛ متخصص في اللوكيميا، علاج الخلايا الجذعية والرعاية الداعمة للأورام.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.title": "اختصاصي في الجراحة العامة | كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.bio": "الدكتور راينر كوبي – يقدّم رعاية جراحية عامة وباطنية في كوتبوس؛ يركّز على العمليات البطنية طفيفة التوغل.",
+
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.title": "أستاذ جراحة الأعصاب | رئيس، CTK كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.bio": "الأستاذ إيهاب شيبان يقود جراحة الأعصاب في CTK كوتبوس؛ متخصص في الأورام العصبية، جراحة قاعدة الجمجمة وجراحة العمود الفقري المتقدمة.",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.title": "أستاذ طب العيون | كوتبوس",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.bio": "الأستاذ هيلموت زاخس يمارس طب العيون في كوتبوس؛ خبرة في الساد، الزرق، علاج الشبكية بالليزر والحقن داخل الجسم الزجاجي.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.title": "أستاذ طب العيون | مدير مستشفى العيون الجامعي في دوسلدورف",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.bio": "الأستاذ غيرد غيرلينغ – مدير طب العيون في UKD؛ معروف عالميًا بجراحة القرنية، ترميم سطح العين وأبحاث العيون الانتقالية.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.title": "أستاذ الجراحة العامة وجراحة الجهاز الهضمي | مدير، UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.bio": "الأستاذ فولفرام ت. كنوفل يقود الجراحة العامة والباطنية في UKD؛ خبير رائد في جراحة الكبد والبنكرياس والطرق الصفراوية وزراعة الأعضاء.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.title": "أستاذة جراحة الأعصاب | مديرة، مستشفى جامعة دوسلدورف",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.bio": "الأستاذة كاتارينا فاوست ترأس جراحة الأعصاب في UKD؛ تركيز على الأورام العصبية وجراحة قاعدة الجمجمة مع تصوير داخل العملية.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.title": "أستاذ أمراض القلب | رئيس مجموعة القلب–الرئة–الأوعية في UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.bio": "الأستاذ مالتِه كِلم يقود أمراض القلب في UKD؛ متخصص في القلب التداخلي، الطب الوعائي والأبحاث القلبية الوعائية الانتقالية.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.title": "أستاذ الغدد الصماء والسكري | مدير UKD؛ المدير التنفيذي للمركز الألماني للسكري",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.bio": "الأستاذ ميشائيل رودِن يقود الغدد الصماء والسكري في UKD ويرأس المركز الألماني للسكري؛ يركز على الأمراض الاستقلابية وطبّ السكري الدقيق.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.title": "مدير بالإنابة، جراحة العظام والرضوض | استبدال المفاصل وصحة العظام",
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.bio": "الأستاذ الجامعي أوفه ماوس يتولى إدارة قسم العظام بالإنابة في UKD؛ خبرة في استبدال الورك والركبة، علم العظام والعمليات التصحيحية المعقدة.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.title": "أستاذ جراحة المسالك البولية | مدير، مستشفى جامعة إرلانغن",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.bio": "الأستاذ بيرند فولّيش يقود قسم المسالك في إرلانغن؛ أورام المسالك، جراحة سرطان البروستاتا وترميم أرضية الحوض.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.title": "أستاذ جراحة القلب | مدير، جراحة القلب في إرلانغن",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.bio": "الأستاذ أوليفر ديفالد يدير جراحة القلب في إرلانغن، موحِّدًا جراحة القلب للكبار والأطفال مع تركيز على عمليات الصمامات والعيوب الخِلقية.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.title": "أستاذ جراحة الأعصاب | مدير، عيادة جراحة الأعصاب في إرلانغن",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.bio": "الأستاذ أوليفر شنيل يرأس جراحة الأعصاب في إرلانغن؛ اختصاص في الأورام العصبية، جراحة قاعدة الجمجمة والجراحة الوعائية العصبية.",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.title": "أستاذ أمراض القلب | مدير، أمراض القلب والأوعية في إرلانغن",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.bio": "الأستاذ شتيفان آخنباخ – رئيس أمراض القلب في إرلانغن، رائد عالمي في تصوير القلب وطب القلب التداخلي، بخبرة واسعة في التجارب السريرية.",
+
+"people.doctors.universitaetsklinikum-erlangen-unknown.title": "اختصاصي في جراحة المسالك البولية | مستشفى جامعة إرلانغن",
+"people.doctors.universitaetsklinikum-erlangen-unknown.bio": "اختصاصي مسالك بولية في مستشفى جامعة إرلانغن؛ يركز على الإجراءات طفيفة التوغل والأورام البولية.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.title": "أستاذ أمراض الكلى | زراعة الكلى والأمراض الكلوية المزمنة",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.bio": "الأستاذ برنهارد باناس – اختصاصي كلى في مستشفى جامعة ريغنسبورغ؛ متخصص في زراعة الكلى، غسيل الكلى وعلاج الأمراض المزمنة مع تركيز على المناعة الفردية.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.title": "أستاذ الجراحة العامة والجهاز الهضمي وزراعة الأعضاء | جراحة HPB والبنكرياس",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.bio": "الأستاذ هانس-يورغن شليت يقود الجراحة البطنية المعقدة وHPB في ريغنسبورغ؛ خبرة في جراحة الأورام الهضمية، الكبد والبنكرياس وبرامج الزرع المتعددة.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.title": "أستاذ جراحة الصدر | سرطان الرئة والإجراءات طفيفة التوغل",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.bio": "الأستاذ هانس-شتيفان هوفمان – جرّاح صدر؛ يركز على سرطان الرئة، جراحة المنصف وتقنيات VATS/الروبوتية بالتعاون مع أقسام الصدر والأورام.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.title": "أستاذ أمراض القلب | مدير، الباطنة II (القلب) ريغنسبورغ",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.bio": "الأستاذ لارس ماير – اختصاصي قلب؛ خبرة في فشل القلب، القلب التداخلي وتصوير القلب؛ يقود مسارات علاجية مبنية على الأدلة في University Cardio Center Regensburg.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.title": "أستاذة أمراض الجهاز الهضمي والكبد | خبيرة في IBD وأمراض الكبد",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.bio": "الأستاذة مارتينا مولر-شيلينغ تعالج أمراض الأمعاء الالتهابية، التهاب الكبد الفيروسي وأورام الجهاز الهضمي؛ تدمج التنظير المتقدم مع رعاية متعددة التخصصات للكبد.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.title": "أستاذ طب الأطفال | أمراض الجهاز الهضمي وزراعة الأعضاء للأطفال",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.bio": "الأستاذ ميشائيل ملتر يقدّم رعاية متخصصة للأطفال؛ تركيز على أمراض الجهاز الهضمي والكبد وزراعة الأعضاء، مع اهتمام بطب الأسرة.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.title": "أستاذ جراحة الأعصاب | جراحة الدماغ والعمود الفقري",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.bio": "الأستاذ نيلس-أوله شميت – متخصص في الأورام العصبية، جراحة قاعدة الجمجمة والعمود الفقري؛ يستخدم التوجيه العصبي والمراقبة أثناء العمليات لضمان الأمان.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.title": "أستاذ علاج الأورام بالإشعاع | العلاج الإشعاعي الدقيق",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.bio": "الأستاذ أوليفر كُلب يُطوّر العلاج الإشعاعي الدقيق في أورام الجهاز الهضمي، الصدر والدماغ باستخدام IGRT ومفاهيم علاجية فردية.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.title": "أستاذ طب الأعصاب | التصلب المتعدد والمناعة العصبية",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.bio": "الأستاذ رالف لينكر – طبيب أعصاب؛ متخصص في التصلب المتعدد والمناعة العصبية؛ يجمع بين التجارب السريرية والرعاية الشخصية لمرضى التصلب المتعدد.",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.title": "أستاذ أمراض الدم والأورام | اللوكيميا واللمفوما",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.bio": "الأستاذ فولفغانغ هِر يعالج الأورام الدموية والأورام الصلبة، مدمجًا العلاجات الجهازية الحديثة، التجارب السريرية والرعاية الداعمة للسرطان.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.title": "أستاذ أمراض الدم والأورام | مدير العيادة الطبية الثانية في فورتسبورغ",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.bio": "الأستاذ هيرمان آينزِله — من الرواد عالميًا في الورم النخاعي المتعدد، زرع الخلايا الجذعية والعلاجات الخلوية (بما فيها CAR-T).",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.title": "أستاذ جراحة المسالك البولية | أورام المسالك والجراحة الروبوتية",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.bio": "الأستاذ هوبرت كويبله متخصص في سرطانات البروستاتا والكلى والمثانة، مع تقنيات حفظ الأعصاب والجراحات طفيفة التوغل/الروبوتية ومتابعة شاملة.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.title": "أستاذ الأورام | مدير مركز السرطان الشامل ماينفرانكن",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.bio": "الأستاذ رالف بارغو يقود برامج الأورام الانتقالية والعلاجات المناعية، ويبني مسارات علاج فردية للسرطان على مستوى الإقليم.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.title": "أستاذ جراحة الأعصاب | رئيس عيادة جراحة الأعصاب في فورتسبورغ",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.bio": "الأستاذ رالف-إنغو إرنيستوس — جرّاح أعصاب يركز على الأورام العصبية، جراحة قاعدة الجمجمة والجراحة الوعائية العصبية؛ خبرة واسعة في الحالات القحفية المعقدة.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.title": "أستاذ أمراض القلب | فشل القلب والقلب التداخلي",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.bio": "الأستاذ شتيفان فرانتس يقدّم رعاية قلبية شاملة مع تركيز على فشل القلب، التداخلات التاجية وأحدث تقنيات تصوير القلب.",
+
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.title": "المدير الإداري | Universitätsmedizin Essen",
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.bio": "الدكتور يوهانس هوتّه يشرف على الاستراتيجية الإدارية وتشغيل المستشفى في إسن، منسّقًا جودة الرعاية والتمويل والبنية التحتية.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.title": "أستاذة أورام الأطفال | (ملاحظة: أساسًا في Charité، برلين)",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.bio": "الأستاذة أنغيليكا إيغيرت — معروفة عالميًا في أورام الأطفال، أبحاث الورم الأرومي العصبي وقيادة شبكات سرطانات الأطفال.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.title": "أستاذ أمراض الكلى | الغسيل الكلوي وطب زراعة الأعضاء",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.bio": "الأستاذ أندرياس كريبّن متخصص في الفشل الكلوي، الغسيل وزراعة الكلى في إسن، مع تركيز على الباطنة المعقّدة.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.title": "أستاذ جراحة الأعصاب | مدير عيادة جراحة الأعصاب في إسن",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.bio": "الأستاذ أولريش زوره يجري جراحات متقدمة للدماغ والعمود الفقري، بما فيها قاعدة الجمجمة والإجراءات الوعائية العصبية، بدعم من المراقبة أثناء الجراحة.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.title": "أستاذ الأمراض الجلدية | مدير المركز الوطني لأمراض الأورام (سرطان الجلد)",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.bio": "الأستاذ الجامعي ديرك شادِندورف — من رواد سرطان الجلد عالميًا، رائد في مناعة علاج الميلانوما والدرماتو-أونكولوجيا الشاملة.",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.title": "أستاذ طب النساء | مدير، أورام النساء والجراحة الروبوتية",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.bio": "الأستاذ راينر كيميغ يقود قسم أورام النساء، خبير في الجراحة الروبوتية والطفيفة لعلاج سرطانات المبيض والرحم وعنق الرحم.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.title": "أستاذ التخدير والعناية المركزة | طب ما حول العمليات",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.bio": "الأستاذ تورستن برينر يشرف على التخدير، العناية المركزة والطوارئ في إسن، مع تركيز على سلامة ما قبل وبعد العمليات ودعم الأعضاء.",
+
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.title": "إدارة المستشفى | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.bio": "كاثلين كرويتسر تدعم الإدارة الاستراتيجية وإدارة العمليات المتمحورة حول المريض في مستشفى جامعة ماينز.",
+
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.title": "أستاذ الأورام | أمراض الدم والأورام الصلبة",
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.bio": "الأستاذ توماس كيندلر يقدم علاج الأورام وأمراض الدم في ماينز، مع تركيز على العلاج النظامي الفردي والرعاية الداعمة.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.title": "أستاذ الطب النفسي الجسدي وطب الألم",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.bio": "الأستاذ يوناس تسارتس متخصص في الطب النفسي الجسدي واضطرابات الألم، يجمع بين العلاج السلوكي والرعاية الباطنية.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.title": "أستاذ جراحة الفم والفك والوجه | زراعة الأسنان وجراحة الوجه الترميمية",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.bio": "الأستاذ بلال الناواس — خبير OMFS مزدوج التدريب في زراعة الأسنان، جراحة الأورام والجراحة الترميمية للوجه في ماينز.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.title": "أستاذة طب الأعصاب | التصلب المتعدد والمناعة العصبية",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.bio": "الأستاذة فراوكه تسيب — طبيبة أعصاب متخصصة في التصلب المتعدد في ماينز، تطور المناعة العصبية والعلاجات الشخصية للأمراض المزالة للميالين.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.title": "أستاذ الطب النفسي والعلاج النفسي | مدير، قسم الطب النفسي ماينز",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.bio": "الأستاذ كلاوس ليب يقود الطب النفسي والبحوث في ماينز، خبير في الاكتئاب، القلق والعلاج النفسي المبني على الأدلة.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.title": "أستاذ أمراض الدم والأورام | علاج بالخلايا الجذعية",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.bio": "الأستاذ ماتياس تيوبالد — أخصائي أمراض الدم والأورام، تركيز على اللوكيميا، اللمفوما وزرع الخلايا مع رعاية داعمة حديثة.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.title": "أستاذ جراحة الصدر | سرطان الرئة والجراحة طفيفة التوغل",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.bio": "الأستاذ بيتر غريمنغر متخصص في جراحة الرئة الأورامية، تقنيات VATS/الروبوتية والأورام الصدرية متعددة التخصصات في ماينز.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.title": "أستاذ أمراض الجهاز الهضمي والتنظير التداخلي",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.bio": "الأستاذ رالف كيسليش مبتكر في التنظير الداخلي، معروف بتقنيات التصوير المتقدمة والإجراءات التداخلية المعقدة للجهاز الهضمي.",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.title": "إدارة المستشفى | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.bio": "فالترَوْد كرويتس-غيرس تسهم في الإدارة وتحسين مسار حركة المرضى في مستشفى جامعة ماينز.",
+
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.title": "اختصاصية في الطب الباطني | طب الشيخوخة وإعادة التأهيل",
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.bio": "الدكتورة كريستيانه شتِله تقدّم رعاية باطنية وإعادة تأهيل موجهة لكبار السن في روستوك، مع التركيز على الحركة، الهشاشة وتعدد الأمراض.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.title": "أستاذ طب الأعصاب | اضطرابات الحركة ومرض باركنسون",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.bio": "الأستاذ ألكسندر شتورخ طبيب أعصاب يركّز على باركنسون واضطرابات الحركة، ويجمع بين الأبحاث الانتقالية ورعاية تتمحور حول المريض.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.title": "أستاذ طب العيون | شبكية العين وأمراض البقعة",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.bio": "الأستاذ ألبر أونَر اختصاصي في أمراض الشبكية والتنكس البقعي والجراحة الشبكية الزجاجية الحديثة في روستوك.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.title": "أستاذ جراحة القلب والأبهر | قصور القلب والزراعة",
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.bio": "الأستاذ كريستيان د. إتس يجري جراحات معقّدة للأبهر والصمامات وقصور القلب، بما في ذلك أجهزة دعم الدوران الميكانيكية وزراعة القلب.",
+
+"people.doctors.universitatsmedizin-rostock-prof.dr-habil-mittelmeier.title": "أستاذ جراحة العظام | استبدال المفاصل والطب العظمي التجديدي",
+"people.doctors.universitatsmedizin-rostock-prof.dr-habil-mittelmeier.bio": "الأستاذ بيتر ميشائيل مِتّلمَير جرّاح عظام يركّز على استبدال مفصل الورك والركبة، المواد الحيوية واستراتيجيات المحافظة على المفصل.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-joachim-bernd-krause.title": "أستاذ جراحة الأعصاب | قاعدة الجمجمة والأورام العصبية",
+"people.doctors.universitatsmedizin-rostock-prof.dr-joachim-bernd-krause.bio": "الأستاذ يواخيم بيرند كراوزه يعالج أورام الدماغ وأمراض قاعدة الجمجمة والأوعية الدماغية باستخدام الجراحة الميكروسكوبية وتوجيه الملاحة العصبية.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.title": "أستاذ الأمراض الجلدية | سرطان الجلد وطب الأورام الجلدي",
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.bio": "الأستاذ شتيفن إمرْت اختصاصي جلدية في الميلانوما وسرطان الجلد غير الميلانومي، والجلدية الضوئية وطب الأورام الجلدي الوقائي.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.title": "أستاذة علاج الأورام بالإشعاع | علاج إشعاعي دقيق ورعاية موجهة بالتصوير",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.bio": "الأستاذة أنكا-ليجيا غروسو ترأس قسم علاج الأورام بالإشعاع في فرايبورغ؛ متخصصة في الإشعاع عالي الدقة، تخطيط علاجي موجه بالبيولوجيا والتصوير، والعلاج الإشعاعي المناعي المدمج للأورام المعقدة.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.title": "أستاذ أمراض القلب | القلب التداخلي ورعاية القلب الحادة",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.bio": "الأستاذ كريستوف أ. م. بودِه من رواد القلب التداخلي في فرايبورغ؛ يركّز على أمراض الشرايين التاجية وبنى القلب، أبحاث التخثر ومسارات العناية القلبية المكثفة.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.title": "أستاذ طب الأعصاب | المناعة العصبية والتصلب المتعدد",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.bio": "الأستاذ هاينتس فيندل معروف في المناعة العصبية ورعاية مرضى التصلب المتعدد؛ يدمج العلاجات المناعية المتقدمة والمتابعة الشخصية لالتهابات الجهاز العصبي المركزي.",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.title": "أستاذ علم الأورام الهضمية | سرطان المريء والمعدة",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.bio": "البروفيسور مايكل كوانته متخصص في مريء باريت، الوقاية وعلاج سرطان المريء والمعدة، يجمع بين التنظير، علم الأورام والبحوث الانتقالية.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.title": "أستاذ الأمراض المعدية | المكورات العنقودية الذهبية والتهاب الشغاف",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.bio": "البروفيسور زيغبرت ر. ريغ يقود قسم الأمراض المعدية في فرايبورغ، خبير في عدوى الدم بالمكورات العنقودية الذهبية، التهاب الشغاف، ترشيد المضادات الحيوية والعدوى المرتبطة بالمناخ.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.title": "أستاذ الجراحة العامة وجراحة الأحشاء | أورام الجهاز الهضمي والجراحة طفيفة التوغل",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.bio": "البروفيسور شتيفان فيشتنر-فيغل يجري عمليات معقدة في أورام البطن، الكبد، البنكرياس والقولون باستخدام تقنيات طفيفة التوغل والروبوتية؛ أبحاثه تركز على مناعة الأورام.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.title": "أستاذ علم المناعة للأطفال | نقص المناعة الأولي",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.bio": "البروفيسور شتيفان إيل يعالج الأطفال المصابين بنقص المناعة الأولي في مركز CCI بفرايبورغ، يجمع بين التشخيص، الوراثة والعلاجات المناعية الموجهة.",
+
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.title": "رئيس قسم طب الطوارئ | التخدير والعناية المركزة",
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.bio": "الدكتور فلوريان ريبرغر يقود الرعاية الطارئة المتكاملة في مانهايم، خبير في التخدير، العناية المركزة وتحسين سير العمل في طب الطوارئ.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.title": "أستاذ طب الأعصاب | علم الأورام العصبية والمناعة العصبية",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.bio": "البروفيسور مايكل بلاتن يرأس قسم الأعصاب في مانهايم، متخصص في مناعة أورام الدماغ، التصلب المتعدد والطب الانتقالي للأورام العصبية.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.title": "أستاذ الأشعة والطب النووي | الأشعة التداخلية والتصوير الأورامي",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.bio": "البروفيسور شتيفان شونبيرغ — مدير قسم الأشعة في مانهايم، متميز في الأشعة التداخلية، التصوير بالرنين المغناطيسي/الأشعة المقطعية المتقدمة والعلاجات الموجهة للأورام.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.title": "أستاذ الجراحة العامة وجراحة الأحشاء وزرع الأعضاء | جراحة الكبد والبنكرياس والروبوت",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.bio": "البروفيسور أندريه ل. ميهاليفيتش يقود الجراحة في توبنغن، متخصص في جراحات الكبد، البنكرياس وسرطان القولون باستخدام الأساليب طفيفة التوغل والروبوتية.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.title": "أستاذ الطب النفسي والعلاج النفسي | الطب النفسي العصبي",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.bio": "البروفيسور أندرياس ي. فالغاتر يطور التشخيص والعلاج في الطب النفسي، مع التركيز على الفيزيولوجيا العصبية والعلاجات المبنية على الأدلة.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.title": "أستاذ جراحة الفم والفك والوجه | ترميم الوجه وعلاج الشقوق",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.bio": "البروفيسور بيرند ليتهاوس متخصص في جراحة الوجه والفكين والجراحة الترميمية التجميلية، بما في ذلك إصابات الوجه، تشوهات الجمجمة والزرع السني.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.title": "أستاذ جراحة القلب والصدر والأوعية | جراحة قلب الأطفال والبالغين",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.bio": "البروفيسور كريستيان شلينزاك يقود جراحة القلب والصدر والأوعية في توبنغن، متميز في جراحة الشريان الأورطي، صمامات القلب وجراحة قلب الأطفال.",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.title": "أستاذة أمراض الدم والأورام | العلاجات الخلوية والسرطان الانتقالي",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.bio": "البروفيسورة كلاوديا لينغيركه ترأس قسم أمراض الدم والأورام في توبنغن، تركز على مقاومة العلاج، العلاجات المعتمدة على الخلايا الجذعية والتجارب السريرية المبتكرة.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.title": "أستاذ الأورام الطبية وأمراض الرئة | سرطان الكبد والأورام الانتقالية",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.bio": "البروفيسور لارس تسيندر يقود الأورام الطبية وطب الرئة في توبنغن، يركز على سرطان الكبد، العلاجات الموجهة بالتصوير وبرامج الأورام الدقيقة.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.title": "أستاذ الطب النفسي الجسدي والعلاج النفسي | اضطرابات الأكل",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.bio": "البروفيسور شتيفان تسيبفل يدير الطب النفسي الجسدي في توبنغن، خبير في اضطرابات الأكل، العلاج النفسي التكاملي وطب العقل والجسم.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.title": "أستاذ طب الأعصاب | السكتة الدماغية، تحفيز الدماغ وإعادة التأهيل العصبي",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.bio": "البروفيسور أولف تسيمن مدير طب الأعصاب في توبنغن، متخصص في أمراض الأوعية الدماغية، التحفيز الدماغي غير الجراحي والتعافي بعد السكتة الدماغية.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.title": "أستاذ جراحة القلب والصدر والأوعية | جراحة الصمامات والشريان الأورطي طفيفة التوغل",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.bio": "البروفيسور أندرياس ليبولد يقود جراحة القلب والصدر والأوعية في أولم، خبير في إصلاح الصمامات طفيفة التوغل، جراحة جذر الشريان الأورطي ودعم الدورة الدموية الآلي.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.title": "أستاذ جراحة الإصابات واليد والترميم | رعاية الإصابات بمساعدة الحاسوب",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.bio": "البروفيسور فلوريان غيبهارد يرأس جراحة الإصابات في أولم، متخصص في علاج الكسور المعقدة، الإصابات المتعددة والتقنيات العظمية بمساعدة الحاسوب.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.title": "أستاذ أمراض الدم والأورام | ابيضاض الدم AML/CLL والطب الدقيق",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.bio": "البروفيسور هارتموت دونهير خبير بارز في أمراض الدم بأولم، يركز على ابيضاض الدم (AML/CLL)، تقييم المخاطر والعلاجات المستهدفة المبتكرة.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.title": "أستاذ الأنف والأذن والحنجرة / جراحة الرأس والرقبة | جراحة قاعدة الجمجمة والأورام",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.bio": "البروفيسور توماس ك. هوفمان متخصص في أورام الرأس والرقبة، جراحة قاعدة الجمجمة، العمليات الترميمية ومفاهيم العلاج المناعي.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.title": "أستاذ الطب الباطني الأول | أمراض الجهاز الهضمي وأورام الجهاز الهضمي",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.bio": "البروفيسور توماس زويفرلاين يقود الطب الباطني الأول في أولم، يركز على أمراض الجهاز الهضمي، الكبد وأورام الجهاز الهضمي.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.title": "أستاذ أمراض القلب | أمراض القلب التداخلية وتصوير القلب",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.bio": "البروفيسور فولفغانغ روتباور يرأس أمراض القلب في أولم، يقدم رعاية تدخلية شاملة، تصوير القلب والأوعية وخدمات الطوارئ القلبية.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.title": "رئيس قسم الطب الوقائي والتغذوي | الطب الباطني وأمراض القلب",
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.bio": "الدكتور فرانك-بيتر يوب يقود مركز الوقاية في فيفانتس وبرامج الطب الغذائي، يقدم فحوصات شاملة ووقاية موجهة للمخاطر القلبية الأيضية.",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.title": "الملف الطبي | جراحة العظام والكسور",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.bio": "البروفيسور فايت مانسمان (جراحة العظام/الكسور) معروف بالحفاظ على المفاصل واستبدالها؛ ملف مخصص للمرضى الباحثين عن رعاية عظمية حديثة في برلين.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.title": "رئيس قسم أمراض النساء والتوليد | قاع الحوض وأمراض المسالك البولية النسائية",
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.bio": "الدكتور زاهر حلواني يقود أمراض النساء والتوليد في Vivantes Humboldt، متخصص في أمراض قاع الحوض واليوروجينيكولوجيا ورعاية الأمومة الشاملة.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.title": "طبيب أول في الطوارئ والطب الباطني | تنسيق الرعاية الحادة",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.bio": "البروفيسور أندرياس أومغيلتر يعزز خدمات الطب الباطني والطوارئ في Vivantes Humboldt، وله منشورات في طب الكبد التدخلي وإجراءات الطوارئ.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.title": "أستاذة طب الأعصاب | الصرع، السكتة الدماغية وطب أعصاب النساء",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.bio": "البروفيسورة بيتينا شميتس رئيسة قسم الأعصاب في Vivantes Humboldt ومركز برلين للصرع؛ خبرتها تشمل علاج الصرع، طب السكتة الدماغية وتشخيص EEG.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.title": "أستاذ الجراحة العامة وجراحة الأحشاء | أورام الأحشاء وجراحة الجهاز الهضمي المعقدة",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.bio": "البروفيسور أولريش آدم رئيس قسم الجراحة العامة وجراحة الأحشاء في Vivantes Humboldt؛ يقود مركز أورام الأحشاء ويجري عمليات متقدمة للجهاز الهضمي والكبد والمرارة.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.title": "رئيس قسم أمراض الجهاز الهضمي والكبد | أمراض الهضم والكبد",
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.bio": "المدرس الخاص د. توبياس فايسمولر يرأس أمراض الجهاز الهضمي والكبد في Vivantes Humboldt وSpandau، متخصص في أمراض الأمعاء الالتهابية، البنكرياس والكبد.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.title": "أستاذ أمراض القلب | أمراض القلب التداخلية والعناية المركزة القلبية",
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.bio": "البروفيسور شتيفن بيرنس رئيس أمراض القلب في Vivantes Spandau وHumboldt، متخصص في أمراض القلب التداخلية والعناية المركزة القلبية.",
+
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.title": "رئيس قسم أمراض القلب | أمراض القلب التداخلية والرعاية الحادة",
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.bio": "الدكتور مارك هاكباث رئيس قسم أمراض القلب في Vivantes Klinikum am Urban ببرلين. متخصص في أمراض القلب التداخلية، المتلازمات التاجية الحادة وعلاج قصور القلب الحديث.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.title": "أستاذ الطب النفسي والعلاج النفسي | الذهان المبكر والصحة النفسية التكاملية",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.bio": "البروفيسور أندرياس بيشدولف يدير الطب النفسي في Vivantes Urban & Friedrichshain. خبير عالمي في الذهان المبكر، الفصام والرعاية النفسية الاجتماعية التكاملية.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.title": "أستاذ الجراحة العامة وجراحة الأحشاء | الجراحة طفيفة التوغل وأورام الجهاز الهضمي",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.bio": "البروفيسور يواخيم فاغنر رئيس قسم الجراحة في Vivantes Friedrichshain وUrban. متخصص في الجراحة التنظيرية وجراحة الأورام البطنية بما في ذلك المستقيم والكبد.",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.title": "أستاذ جراحة الصدر | سرطان الرئة والإجراءات الصدرية طفيفة التوغل",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.bio": "البروفيسور كريستيان شولز يرأس جراحة الصدر في Vivantes Urban. خبرته تشمل سرطان الرئة، أورام المنصف والتقنيات الحديثة طفيفة التوغل (VATS والروبوتات).",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.title": "أستاذ أمراض الجهاز الهضمي | أورام الجهاز الهضمي والتنظير",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.bio": "البروفيسور هانز شروبل طبيب جهاز هضمي في برلين متخصص في أورام الجهاز الهضمي، الوقاية من سرطان القولون والمستقيم والتنظير التشخيصي المتقدم.",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.title": "أستاذ جراحة القلب | صمامات القلب والإجراءات طفيفة التوغل",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.bio": "البروفيسور يوناس بوش رئيس جراحة القلب في Vivantes Urban. يركز على إصلاح الصمامات، الجراحة القلبية طفيفة التوغل وزراعة القلب.",
+
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.title": "أستاذ أمراض النساء والتوليد | الأورام النسائية والجراحة الروبوتية",
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.bio": "البروفيسور حسين إنجه طبيب نساء وتوليد في Vivantes Neukölln. متخصص في الأورام النسائية، الجراحة طفيفة التوغل والمدعومة بالروبوت والرعاية الصحية الشاملة للنساء.",
+
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.title": "رئيس قسم أمراض الجهاز الهضمي والكبد | أمراض الكبد والتهابات الأمعاء",
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.bio": "المدرس الخاص د. توبياس فايسمولر يرأس أمراض الجهاز الهضمي والكبد في Vivantes Spandau وHumboldt. خبرته تشمل أمراض الأمعاء الالتهابية، أمراض الكبد واضطرابات البنكرياس والقنوات الصفراوية.",
+
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.title": "أستاذ أمراض القلب | أمراض القلب التداخلية والعناية المركزة",
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.bio": "البروفيسور شتيفن بيرنس رئيس أمراض القلب في Vivantes Spandau وHumboldt (برلين). متخصص في أمراض القلب التداخلية، الرعاية القلبية الحادة وإدارة فشل القلب المتقدم."
 }

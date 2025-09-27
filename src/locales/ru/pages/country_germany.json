@@ -1,64 +1,917 @@
 {
-  "country.germany.metaTitle": "Германия — Каталог врачей | CareOverseas",
-  "country.germany.metaDesc": "Сильные врачи Германии. Фильтр по клинике, отделению и городу.",
-  "country.germany.title": "Германия — Каталог врачей",
-  "country.germany.subtitle": "Информационная страница. Сначала — руководители отделений Helios и Университетской клиники Кёльна.",
-  "country.germany.searchPlaceholder": "Поиск по имени, специализации или клинике",
-  "country.germany.clear": "Очистить",
-  "country.germany.filter.department": "Отделение",
-  "country.germany.filter.clinic": "Клиника",
-  "country.germany.filter.city": "Город",
-  "country.germany.sortBy": "Сортировать по:",
-  "country.germany.sort.name": "Имя",
-  "country.germany.sort.clinic": "Клиника",
-  "country.germany.sort.city": "Город",
-  "country.germany.empty": "Ничего не найдено. Измените фильтры или запрос.",
-  "country.germany.backHome": "← На главную",
-  "country.germany.contactCta": "Связаться с координатором",
+  "country.germany.metaTitle": "Лучшие врачи Германии | Руководители отделений и ведущие специалисты | CareOverseas",
+"country.germany.metaDesc": "Изучите ведущих врачей и руководителей отделений Германии в HELIOS, Charité, LMU, TUM, Кёльн и других центрах. Фильтр по специальности, клинике и городу. Независимый справочник с поддержкой координатора.",
+"country.germany.title": "Германия — Каталог врачей",
+"country.germany.subtitle": "Независимый справочник руководителей отделений и центров HELIOS, Charité, Университетской клиники Кёльна и других ведущих центров.",
+"country.germany.searchPlaceholder": "Поиск по имени, специальности или клинике",
+"country.germany.clear": "Сбросить",
+"country.germany.filter.department": "Отделение",
+"country.germany.filter.clinic": "Клиника",
+"country.germany.filter.city": "Город",
+"country.germany.sortBy": "Сортировать по:",
+"country.germany.sort.name": "Имя",
+"country.germany.sort.clinic": "Клиника",
+"country.germany.sort.city": "Город",
+"country.germany.empty": "Совпадений нет. Попробуйте изменить фильтры или запрос.",
+"country.germany.backHome": "← Назад на главную",
+"country.germany.contactCta": "Связаться с координатором",
+"country.germany.breadcrumbHome": "Главная",
+"country.germany.stats.doctorsLabel": "врачи",
+"country.germany.stats.clinicsLabel": "клиники",
+"country.germany.stats.citiesLabel": "города",
+"country.germany.stats.departmentsLabel": "отделения",
+"country.germany.usp.expertsTitle": "Лучшие эксперты для вашего случая",
+"country.germany.usp.expertsDesc": "Мы отбираем только руководителей отделений и специализированных подразделений.",
+"country.germany.usp.safeTitle": "Прозрачно и без стресса",
+"country.germany.usp.safeDesc": "Понятная координация, документы на вашем языке и отсутствие маркетинговых контрактов.",
+"country.germany.usp.careTitle": "Поддержка с человеческим лицом",
+"country.germany.usp.careDesc": "Персональное сопровождение от первого контакта до возвращения домой.",
+"country.germany.emptyHint": "Попробуйте другой город, клинику или специальность.",
+"country.germany.pitch.title": "Не уверены, какой врач вам нужен?",
+"country.germany.pitch.subtitle": "Сообщите диагноз и предпочтения. Мы подберем руководителя отделения, подготовим запрос и поможем получить быстрый ответ от клиники.",
+"country.germany.pitch.badge1": "Бесплатный первичный запрос",
+"country.germany.pitch.badge2": "Быстрый ответ",
+"country.germany.pitch.badge3": "Помощь с документами",
+"country.germany.pitch.cta": "Связаться с координатором",
+"dict.dept.administration.name": "Администрация",
+"dict.dept.anesthesiology.name": "Анестезиология",
+"dict.dept.cardiac-surgery.name": "Кардиохирургия",
+"dict.dept.cardiology.name": "Кардиология",
+"dict.dept.cardiothoracic-and-vascular-surgery.name": "Кардиоторакальная и сосудистая хирургия",
+"dict.dept.dermatology.name": "Дерматология",
+"dict.dept.emergency-medicine.name": "Неотложная медицина",
+"dict.dept.endocrinology.name": "Эндокринология",
+"dict.dept.ent.name": "ЛОР (отоларингология)",
+"dict.dept.gastroenterology.name": "Гастроэнтерология",
+"dict.dept.gastroenterology-and-diabetology.name": "Гастроэнтерология и диабетология",
 
-  "country.germany.breadcrumbHome": "Главная",
+"dict.dept.general-and-visceral-surgery.name": "Общая и висцеральная хирургия",
 
-  "country.germany.stats.doctorsLabel": "врачей",
-  "country.germany.stats.clinicsLabel": "клиник",
-  "country.germany.stats.citiesLabel": "городов",
-  "country.germany.stats.departmentsLabel": "отделений",
+"dict.dept.geriatrics.name": "Гериатрия",
+"dict.dept.gynecology.name": "Гинекология",
+"dict.dept.hand-surgery.name": "Хирургия кисти",
+"dict.dept.hematology-oncology.name": "Гематология и онкология",
+"dict.dept.infectious-diseases.name": "Инфекционные болезни",
+"dict.dept.internal-medicine.name": "Внутренняя медицина",
+"dict.dept.internal-medicine-and-intensive-care.name": "Внутренняя медицина и интенсивная терапия",
+"dict.dept.maxillofacial-and-plastic-surgery.name": "Челюстно-лицевая и пластическая хирургия",
+"dict.dept.nephrology.name": "Нефрология",
+"dict.dept.neurosurgery.name": "Нейрохирургия",
+"dict.dept.oncology.name": "Онкология",
+"dict.dept.ophthalmology.name": "Офтальмология",
+"dict.dept.oral-maxillofacial-surgery.name": "Оральная и челюстно-лицевая хирургия",
+"dict.dept.orthopedics.name": "Ортопедия",
+"dict.dept.pediatric-immunology.name": "Педиатрическая иммунология",
+"dict.dept.pediatrics.name": "Педиатрия",
+"dict.dept.physical-and-rehabilitation-medicine.name": "Физическая и реабилитационная медицина",
+"dict.dept.plastic-surgery.name": "Пластическая хирургия",
+"dict.dept.psychiatry.name": "Психиатрия",
+"dict.dept.psychosomatic-medicine-and-psychotherapy.name": "Психосоматическая медицина и психотерапия",
+"dict.dept.radiation-oncology.name": "Лучевая онкология",
+"dict.dept.radiology.name": "Радиология",
+"dict.dept.spinal-surgery.name": "Спинальная хирургия",
+"dict.dept.thoracic-surgery.name": "Торакальная хирургия",
+"dict.dept.trauma-and-reconstructive-surgery.name": "Травматология и реконструктивная хирургия",
+"dict.dept.trauma-surgery.name": "Травматология",
+"dict.dept.university-cardio-center-internal-medicine-ii.name": "Университетский кардиоцентр – Внутренняя медицина II",
+"dict.dept.urology.name": "Урология",
+"dict.dept.vascular-surgery.name": "Сосудистая хирургия",
 
-  "country.germany.usp.expertsTitle": "Подбираю лучших под диагноз",
-  "country.germany.usp.expertsDesc": "В приоритете — заведующие отделениями и лидеры профильных центров.",
-  "country.germany.usp.safeTitle": "Прозрачно и без стресса",
-  "country.germany.usp.safeDesc": "Чёткая координация, документы на вашем языке, никаких маркетинговых договоров.",
-  "country.germany.usp.careTitle": "Забота прежде всего",
-  "country.germany.usp.careDesc": "Личное сопровождение — от первого сообщения до возвращения домой.",
+"dict.clinic.helios-krefeld.name": "HELIOS клиника Крефельд",
+"dict.clinic.helios-berlin-buch.name": "HELIOS клиника Берлин-Бух",
+"dict.clinic.uk-koeln.name": "Университетская клиника Кёльна",
+"dict.clinic.universittsklinikum-freiburg.name": "Университетская клиника Фрайбурга",
+"dict.clinic.ethianum-klinik-heidelberg.name": "ETHIANUM клиника Гейдельберга",
+"dict.clinic.universittsklinikum-mannheim.name": "Университетская клиника Мангейма",
+"dict.clinic.universittsklinikum-tbingen.name": "Университетская клиника Тюбингена",
+"dict.clinic.unversittsklinikum-ulm.name": "Университетская клиника Ульма",
+"dict.clinic.universittsklinikum-ulm.name": "Университетская клиника Ульма",
+"dict.clinic.helios-klinikum-pforzheim.name": "HELIOS клиника Пфорцхайм",
+"dict.clinic.helios-klinik-rottweil.name": "HELIOS клиника Ротвайл",
+"dict.clinic.helios-klinik-titisee-neustadt.name": "HELIOS клиника Титизее-Нойштадт",
+"dict.clinic.helios-klinik-breisach.name": "HELIOS клиника Брайзах",
+"dict.clinic.lmu-klinikum-muenchen.name": "LMU клиника Мюнхена",
+"dict.clinic.tum-klinikum-rechts-der-isar.name": "Клиника rechts der Isar (TUM)",
+"dict.clinic.universitaetsklinikum-erlangen.name": "Университетская клиника Эрлангена",
+"dict.clinic.universitaetsklinikum-regensburg.name": "Университетская клиника Регенсбурга",
+"dict.clinic.universitaetsklinikum-wuerzburg.name": "Университетская клиника Вюрцбурга",
+"dict.clinic.medical-park-bad-wiessee.name": "Medical Park Бад-Виззее",
+"dict.clinic.medical-park-bad-feilnbach.name": "Medical Park Бад-Файльнбах",
+"dict.clinic.medical-park-bernau-felden-chiemsee.name": "Medical Park Бернау-Фельден-Химзее",
+"dict.clinic.medical-park-chiemseeblick.name": "Medical Park Химзеблик",
+"dict.clinic.medical-park-bad-rodach.name": "Medical Park Бад-Родах",
+"dict.clinic.helios-amper-klinikum-dachau.name": "HELIOS Amper клиника Дахау",
+"dict.clinic.helios-muenchen-west.name": "HELIOS Мюнхен Вест",
+"dict.clinic.helios-frankenwald-klinik-kronach.name": "HELIOS Frankenwald клиника Кронах",
+"dict.clinic.universitaetsmedizin-mainz.name": "Университетская медицина Майнца",
+"dict.clinic.universitaetsklinikum-duesseldorf.name": "Университетская клиника Дюссельдорфа",
+"dict.clinic.universitaetsmedizin-essen.name": "Университетская медицина Эссена",
+"dict.clinic.universitaetsklinikum-bernau.name": "Университетская клиника Бернау (под Берлином)",
+"dict.clinic.universitaetsklinikum-brandenburg-havel.name": "Университетская клиника Бранденбург-на-Хафеле",
+"dict.clinic.universitaetsklinikum-cottbus.name": "Университетская клиника Котбуса",
+"dict.clinic.helios-klinikum-bad-saarow.name": "HELIOS клиника Бад-Заров",
+"dict.city.bad-feilnbach.name": "Бад-Файльнбах",
+"dict.city.bad-rodach.name": "Бад-Родах",
+"dict.city.bad-saarow.name": "Бад-Заров",
+"dict.city.bad-wiessee.name": "Бад-Виззее",
+"dict.city.berlin.name": "Берлин",
+"dict.city.bernau-am-chiemsee.name": "Бернау-ам-Химзее",
+"dict.city.bernau-bei-berlin.name": "Бернау-бай-Берлин",
+"dict.city.brandenburg-an-der-havel.name": "Бранденбург-на-Хафеле",
+"dict.city.breisach-am-rhein.name": "Брайзах-на-Рейне",
+"dict.city.cottbus.name": "Котбус",
+"dict.city.dachau.name": "Дахау",
+"dict.city.duesseldorf.name": "Дюссельдорф",
+"dict.city.erlangen.name": "Эрланген",
+"dict.city.essen.name": "Эссен",
+"dict.city.freiburg.name": "Фрайбург",
+"dict.city.heidelberg.name": "Гейдельберг",
+"dict.city.koeln.name": "Кёльн",
+"dict.city.krefeld.name": "Крефельд",
+"dict.city.kronach.name": "Кронах",
+"dict.city.mainz.name": "Майнц",
+"dict.city.mannheim.name": "Мангейм",
+"dict.city.muenchen.name": "Мюнхен",
+"dict.city.pforzheim.name": "Пфорцхайм",
+"dict.city.regensburg.name": "Регенсбург",
+"dict.city.rottweil.name": "Ротвайл",
+"dict.city.titisee-neustadt.name": "Титизее-Нойштадт",
+"dict.city.tuebingen.name": "Тюбинген",
+"dict.city.ulm.name": "Ульм",
+"dict.city.wuerzburg.name": "Вюрцбург",
+"dict.city.erfurt.name": "Эрфурт",
+"dict.city.rostock.name": "Росток",
+"dict.city.schwerin.name": "Шверин",
+"dict.clinic.charite-universitatsmedizin-berlin": "Клиника Charité – Университетская медицина Берлин",
+"dict.clinic.schlossparkklinik.name": "Schlosspark-Klinik Берлин",
+"dict.clinic.vivantes-klinikum-am-urban.name": "Vivantes Klinikum am Urban Берлин",
+"dict.clinic.vivantes-klinikum-am-urban-klinikum-im-friedrichshain.name": "Vivantes Klinikum im Friedrichshain Берлин",
+"dict.clinic.vivantes-humboldtklinikum.name": "Vivantes Гумбольдт-Клиника Берлин",
+"dict.clinic.vivantes-humboldtklinikum-spandau.name": "Vivantes Гумбольдт-Клиника Шпандау",
+"dict.clinic.vivantes-klinikum-spandau.name": "Vivantes Klinikum Шпандау",
+"dict.clinic.vivantes-klinikum-neukolln.name": "Vivantes Klinikum Нойкёльн",
+"dict.clinic.helios-klinikum-berlinbuch.name": "HELIOS Klinikum Берлин-Бух",
+"dict.clinic.helios-klinikum-berlinbuch-endoklinik-berlin.name": "ЭНДО-Клиника Берлин (HELIOS Berlin-Buch)",
+"dict.clinic.helios-klinikum-emil-von-behring.name": "HELIOS Klinikum Эмиль фон Беринга Берлин",
+"dict.clinic.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn.name": "Пульмонологическая клиника Heckeshorn (HELIOS Emil von Behring)",
+"dict.clinic.medical-park-berlin-humboldtmuhle.name": "Medical Park Берлин-Хумбольдтмюле",
 
-  "country.germany.emptyHint": "Попробуйте другой город, клинику или отделение.",
+"dict.clinic.universitatsklinikum-bernau.name": "Университетская клиника Бернау",
+"dict.city.brandenburg.name": "Бранденбург",
+"dict.clinic.universitatsklinikum-brandenburg-havel.name": "Университетская клиника Бранденбург-на-Хафеле",
+"dict.clinic.universitatsklinikum-cottbus.name": "Университетская клиника Котбус",
+"dict.clinic.universitatsklinikum-dresden.name": "Университетская клиника Дрездена",
+"dict.city.sachsen.name": "Саксония",
+"dict.clinic.universitatsklinikum-leipzig.name": "Университетская клиника Лейпциг",
+"dict.clinic.klinikum-st-georg-leipzig.name": "Клиника Святого Георга Лейпциг",
+"dict.clinic.helios-park-klinikum-leipzig.name": "HELIOS Парк-Клиника Лейпциг",
+"dict.clinic.herzzentrum-leipzig.name": "Кардиологический центр Лейпциг",
 
-  "country.germany.pitch.title": "Сомневаетесь, к какому врачу обратиться?",
-  "country.germany.pitch.subtitle": "Расскажите о диагнозе и пожеланиях. Подберу заведующего нужным отделением, подготовлю запрос и помогу получить быстрый ответ от клиники.",
-  "country.germany.pitch.badge1": "Первичный запрос — бесплатно",
-  "country.germany.pitch.badge2": "Быстрый отклик",
-  "country.germany.pitch.badge3": "Помощь с документами",
-  "country.germany.pitch.cta": "Связаться с координатором",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.title": "Профессор онкологии, директор Онкологического центра Charité Comprehensive Cancer Center",
+"people.doctors.charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz.bio": "Профессор Ульрих Кайлхольц — международно признанный онколог, директор Charité Comprehensive Cancer Center в Берлине. Эксперт в области иммунотерапии, таргетных и персонализированных методов лечения рака, автор ключевых исследований по меланоме и солидным опухолям.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.title": "Профессор психиатрии и психотерапии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-christian-otte.bio": "Профессор Кристиан Отте — известный психиатр клиники Charité – Университетская медицина Берлин, специализирующийся на депрессии, стрессовых расстройствах и клинической психофармакологии. Его исследования направлены на разработку инновационных методов терапии аффективных расстройств и улучшение результатов лечения.",
 
-  "dict.dept.hem-onc.name": "Гематология и онкология",
-  "dict.dept.urology.name": "Урология",
-  "dict.dept.neurosurgery.name": "Нейрохирургия",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.title": "Профессор челюстно-лицевой хирургии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-max-heiland.bio": "Профессор Макс Хайланд — руководитель отделения челюстно-лицевой хирургии Charité Берлин. Эксперт в онкологической реконструктивной хирургии, краниофациальной хирургии и имплантологии, известен внедрением микрососудистых методик и сложных реконструкций после опухолей.",
 
-  "dict.clinic.helios-krefeld.name": "Helios Klinikum Krefeld",
-  "dict.clinic.helios-berlin-buch.name": "Helios Klinikum Berlin-Buch",
-  "dict.clinic.uk-koeln.name": "Университетская клиника Кёльна",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.title": "Профессор травматологии и ортопедической хирургии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-wolfgang-ertel.bio": "Профессор Вольфганг Эртель — ведущий травматолог Charité Берлин, специалист по лечению политравм, септической хирургии и повреждений опорно-двигательного аппарата. Имеет большой опыт в неотложной помощи и инновационных методах лечения сложных переломов и инфекций.",
 
-  "dict.city.krefeld.name": "Крефельд",
-  "dict.city.berlin.name": "Берлин",
-  "dict.city.koeln.name": "Кёльн",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.title": "Профессор радиационной онкологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-daniel-zips.bio": "Профессор Даниэль Ципс — специалист по радиационной онкологии в Charité Берлин. Его работа направлена на прецизионную лучевую терапию, лечение опухолей головы и шеи, а также сочетанные мультимодальные подходы. Объединяет новейшие методы радиотерапии с системными терапиями.",
 
-  "people.doctors.helios-krefeld-hunerliturkoglu.title": "Главный врач, Медицинская клиника II",
-  "people.doctors.helios-krefeld-hunerliturkoglu.bio": "Руководитель гематологии и онкологии (Медицинская клиника II) Helios Krefeld.",
-  "people.doctors.helios-berlin-buch-schrader.title": "Главный врач урологии",
-  "people.doctors.helios-berlin-buch-schrader.bio": "Руководитель урологии Helios Berlin-Buch; фокус — онкоурология и малоинвазивная хирургия.",
-  "people.doctors.helios-berlin-buch-ryang.title": "Главная врач нейрохирургии и руководитель Центра позвоночника",
-  "people.doctors.helios-berlin-buch-ryang.bio": "Руководит нейрохирургией Helios Berlin-Buch; специализация — нейроонкология и сложная хирургия позвоночника.",
-  "people.doctors.uk-koeln-hallek.title": "Директор Клиники I внутренней медицины",
-  "people.doctors.uk-koeln-hallek.bio": "Директор Клиники I (онкология/гематология/инфекционные болезни) Университетской клиники Кёльна.",
-  "people.doctors.uk-koeln-goldbrunner.title": "Директор общей нейрохирургии",
-  "people.doctors.uk-koeln-goldbrunner.bio": "Директор нейрохирургии Университетской клиники Кёльна; эксперт по опухолям мозга и хирургии позвоночника."
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.title": "Профессор пульмонологии и инфекционных заболеваний",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-martin-witzenrath.bio": "Профессор Мартин Витценрат — эксперт в области пульмонологии и инфекционных болезней Charité Берлин. Основные направления: пневмония, сепсис, инновационные противоинфекционные терапии. Автор значимых исследований в области респираторной медицины.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.title": "Профессор гастроэнтерологии, директор отделения гастроэнтерологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-britta-siegmund.bio": "Профессор Бритта Зигмунд — ведущий гастроэнтеролог Charité Берлин, специализирующийся на воспалительных заболеваниях кишечника (болезнь Крона, язвенный колит). Международно признанный эксперт в области трансляционной гастроэнтерологии и иммунологии.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.title": "Профессор гепатологии и гастроэнтерологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-frank-tacke.bio": "Профессор Франк Такке — гепатолог Charité Берлин, эксперт по циррозу печени, гепатоцеллюлярной карциноме и иммунологии печени. Автор новаторских исследований воспаления и регенерации печени.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.title": "Профессор нефрологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-kaiuwe-eckardt.bio": "Профессор Кай-Уве Эккардт — один из ведущих нефрологов Европы, возглавляет отделение нефрологии Charité Берлин. Специализируется на хронической болезни почек, диализе и трансплантации почки, внедряя новые методы заместительной почечной терапии.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.title": "Профессор гематологии и онкологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-ulrich-keller.bio": "Профессор Ульрих Келлер — гематолог и онколог Charité Берлин, специалист по лейкемии, лимфомам и молекулярно-таргетным методам терапии. Известен трансляционными исследованиями и персонализированными стратегиями лечения гематологических опухолей.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.title": "Профессор неврологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-matthias-endres.bio": "Профессор Маттиас Эндрес — ведущий невролог Charité Берлин, эксперт в лечении инсультов, нейропротекции и нейрорегенерации. Автор значимых исследований по цереброваскулярным заболеваниям и улучшению помощи при инсультах.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.title": "Профессор нейрохирургии, директор клиники нейрохирургии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-peter-vajkoczy.bio": "Профессор Петер Вайкочи — один из ведущих нейрохирургов Европы, директор нейрохирургии Charité Берлин. Эксперт в хирургии опухолей мозга, цереброваскулярной и спинальной хирургии. Известен минимально инвазивными и сложными нейрохирургическими методиками.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.title": "Профессор офтальмологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-antonia-joussen.bio": "Профессор Антония Юссен — офтальмолог Charité Берлин, эксперт по заболеваниям сетчатки, офтальмоонкологии и хирургическим методикам. Международное признание получила за исследования диабетической ретинопатии и макулярной дегенерации.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.title": "Профессор оториноларингологии (ЛОР)",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-heidi-olze.bio": "Профессор Хайди Ольце — специалист по ЛОР-заболеваниям Charité Берлин. Эксперт по кохлеарным имплантам, реабилитации слуха и хирургии при тугоухости. Известна работами в области слуховых имплантов и восстановления слуха в сложных случаях.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.title": "Профессор сосудистой хирургии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-andreas-greiner.bio": "Профессор Андреас Грайнер — сосудистый хирург Charité Берлин, специализирующийся на артериальной реконструкции, лечении аневризм и эндоваскулярных операциях. Внедряет малоинвазивные методы и улучшает результаты сложных сосудистых операций.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.title": "Профессор хирургии и трансплантологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-johann-pratschke.bio": "Профессор Йоханн Пратшке — руководитель хирургического отделения Charité Берлин, эксперт по трансплантации органов, гепатобилиарной и абдоминальной хирургии. Один из ведущих специалистов Германии по трансплантации печени и почек.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.title": "Профессор урологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-thorsten-schlomm.bio": "Профессор Торстен Шломм — уролог Charité Берлин, специалист по лечению рака предстательной железы, минимально инвазивным операциям и прецизионной онкологии. Международно известен благодаря вкладу в роботизированную хирургию и индивидуализированное лечение рака.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.title": "Профессор ортопедической хирургии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-carsten-perka.bio": "Профессор Карстен Пёрка — ортопед Charité Берлин, эксперт по эндопротезированию суставов, ревизионной артропластике и реконструктивной хирургии. Пионер в сложных операциях на тазобедренном и коленном суставах, внедряющий инновационные импланты и современные хирургические методики.",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.title": "Профессор онкологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-sebastian-stintzing.bio": "Профессор Себастьян Штинцинг — врач-онколог Charité Берлин, специалист по опухолям желудочно-кишечного тракта, таргетным методам и трансляционной онкологии. Известен клиническими исследованиями в области персонализированного лечения колоректального рака.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.title": "Профессор гинекологии и акушерства",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jensuwe-blohmer.bio": "Профессор Йенс-Уве Бломер — гинеколог Charité Берлин, эксперт по лечению рака молочной железы, онкопластической хирургии и индивидуализированным терапевтическим подходам. Широко известен исследованиями по оптимизации хирургического и системного лечения опухолей груди.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.title": "Профессор гематологии и онкологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-lars-bullinger.bio": "Профессор Ларс Буллингер — гематолог и онколог Charité Берлин, специалист по лейкемиям, лимфомам и молекулярной медицине. Международно признан за внедрение геномных методов диагностики и лечения гематологических опухолей.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.title": "Профессор гинекологии, директор отделения гинекологии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-jalid-sehouli.bio": "Профессор Джалид Сехули — ведущий гинеколог-онколог Charité Берлин, специализируется на раке яичников, перитонеальном карциноматозе и онкохирургии. Известен разработкой сложных циторедуктивных операций и международным лидерством в исследованиях по гинекологическому раку.",
+
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.title": "Профессор психиатрии и психотерапии",
+"people.doctors.charite-universitatsmedizin-berlin-prof-dr-malek-bajbouj.bio": "Профессор Малек Баджбуж — психиатр Charité Берлин, эксперт в лечении депрессии, тревожных расстройств и нейростимуляционных терапий. Специализируется на транскраниальной магнитной стимуляции (TMS) и инновационных методах лечения резистентной депрессии.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.title": "Профессор хирургии и онкологии",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski.bio": "Профессор Кристоф Михальски — хирург-онколог ETHIANUM Heidelberg, специалист по опухолям поджелудочной железы, ЖКТ и гепатобилиарным заболеваниям. Международно признан за развитие хирургии рака поджелудочной железы и мультидисциплинарный подход в онкологии.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.title": "Профессор травматологии и реконструктивной хирургии",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-gerhard-schmidmaier.bio": "Профессор Герхард Шмидмайер — специалист ETHIANUM Heidelberg по травматологии и реконструктивной хирургии, эксперт в лечении сложных переломов, регенерации костей и биоматериалов. Известен новаторскими исследованиями в ортопедической травматологии и тканевой инженерии.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.title": "Профессор анестезиологии и интенсивной терапии",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-markus-a.-weigand.bio": "Профессор Маркус А. Вайганд — руководитель анестезиологии ETHIANUM Heidelberg, специалист по периоперационной медицине, интенсивной терапии и обезболиванию. Международно известен исследованиями в области защиты органов и безопасности пациентов во время операций.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.title": "Профессор оториноларингологии (ЛОР)",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-patrick-schuler.bio": "Профессор Патрик Шулер — ЛОР-хирург ETHIANUM Heidelberg, эксперт в онкологии головы и шеи, реконструктивной микрохирургии и минимально инвазивных ЛОР-операциях. Известен инновационными подходами в лечении опухолей головы и шеи.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.title": "Профессор нейрохирургии",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-sandro-krieg.bio": "Профессор Сандро Криг — нейрохирург ETHIANUM Heidelberg, специалист по хирургии опухолей мозга, интраоперационному нейромониторингу и функциональной нейрохирургии. Известен разработкой методов сохранения функций мозга при сложных операциях.",
+
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.title": "Профессор неврологии и нейроонкологии",
+"people.doctors.ethianum-klinik-heidelberg-prof.-dr.-wolfgang-wick.bio": "Профессор Вольфганг Вик — международно признанный невролог и нейроонколог ETHIANUM Heidelberg. Специалист по опухолям мозга, рассеянному склерозу и клинической нейроонкологии. Автор новаторских исследований по лечению глиобластомы и иммунотерапии.",
+
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.title": "Специалист по физической и реабилитационной медицине",
+"people.doctors.helios-amper-klinikum-dachau-dr.-wolfgang-koedel.bio": "Доктор Вольфганг Кёдель — специалист по реабилитационной медицине в HELIOS Amper Klinikum Дахау, занимается восстановлением функций после неврологических и ортопедических заболеваний. Эксперт в нейрореабилитации и персонализированных программах терапии.",
+
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.title": "Специалист по кардиологии",
+"people.doctors.helios-amper-klinikum-dachau-pd-dr.-bernhard-witzenbichler.bio": "PD доктор Бернхард Витценбихлер — кардиолог HELIOS Amper Klinikum Дахау, эксперт в интервенционной кардиологии, ишемической болезни сердца и сердечной недостаточности. Специализируется на катетеризации сердца и современных кардиологических методах лечения.",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.title": "Профессор общей и висцеральной хирургии",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies.bio": "Профессор Аксель Клесспис — хирург общей и висцеральной хирургии в HELIOS Amper Klinikum Дахау, специалист по хирургии ЖКТ, онкохирургии и малоинвазивным методикам. Имеет большой опыт в лечении сложных абдоминальных опухолей.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.title": "Профессор неврологии",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-holger-poppert.bio": "Профессор Хольгер Попперт — невролог HELIOS Amper Klinikum Дахау, специалист по инсультам, цереброваскулярным заболеваниям и нейрокритическим состояниям. Известен инновационными методами лечения и профилактики острых инсультов.",
+
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.title": "Профессор гастроэнтерологии",
+"people.doctors.helios-amper-klinikum-dachau-prof.-dr.-norbert-gruener.bio": "Профессор Норберт Грюнер — гастроэнтеролог HELIOS Amper Klinikum Дахау, эксперт по заболеваниям печени, онкологии ЖКТ и эндоскопической диагностике. Специализируется на терапии хронических воспалительных заболеваний кишечника.",
+
+"people.doctors.helios-berlin-buch-ryang.title": "Специалист по нейрохирургии",
+"people.doctors.helios-berlin-buch-ryang.bio": "Доктор Рянг — нейрохирург HELIOS Berlin-Buch, специалист по спинальной хирургии, опухолям мозга и сложным нейрохирургическим операциям. Известен малоинвазивными методами и ориентированным на пациента подходом.",
+
+"people.doctors.helios-berlin-buch-schrader.title": "Специалист по урологии",
+"people.doctors.helios-berlin-buch-schrader.bio": "Доктор Шрадер — уролог HELIOS Berlin-Buch, эксперт по раку предстательной железы, заболеваниям почек и мочевого пузыря, минимально инвазивной урологии. Специализируется на роботизированных операциях и персонализированных концепциях лечения.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.title": "Специалист по гастроэнтерологии",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-hamadneh.bio": "Доктор Хамадне — гастроэнтеролог HELIOS Frankenwald Klinik Кронах, специалист по заболеваниям ЖКТ, эндоскопии и онкологии пищеварительной системы. Имеет опыт в диагностике и лечении хронических болезней пищеварения.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.title": "Специалист по сосудистой хирургии",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-michael-moritz.bio": "Доктор Михаэль Мориц — сосудистый хирург HELIOS Frankenwald Klinik Кронах, эксперт по артериальной и венозной хирургии, лечению аневризм и эндоваскулярным вмешательствам. Известен современными методами лечения заболеваний сосудов.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.title": "Специалист по гинекологии",
+"people.doctors.helios-frankenwald-klinik-kronach-dr.-milos-popovic.bio": "Доктор Милош Попович — гинеколог HELIOS Frankenwald Klinik Кронах, специализируется на акушерстве, онкогинекологии и малоинвазивной хирургии. Обеспечивает комплексное ведение репродуктивного здоровья женщин.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.title": "Специалист по ортопедии",
+"people.doctors.helios-frankenwald-klinik-kronach-gennaro-manzo.bio": "Доктор Дженнаро Манцо — ортопед HELIOS Frankenwald Klinik Кронах, специалист по эндопротезированию суставов, травматологической ортопедии и спортивным травмам. Известен реконструктивными операциями тазобедренного и коленного суставов.",
+
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.title": "Специалист по гериатрии",
+"people.doctors.helios-frankenwald-klinik-kronach-smajl-marmullaku.bio": "Доктор Смаил Мармуллаку — специалист по гериатрии HELIOS Frankenwald Klinik Кронах, эксперт по возрастным заболеваниям, мультиморбидности и комплексному уходу за пожилыми пациентами. Работает над улучшением качества жизни пожилых людей.",
+
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.title": "Специалист по урологии",
+"people.doctors.helios-klinik-breisach-dr.-claus-henning-lppchen.bio": "Доктор Клаус-Хеннинг Люппхен — уролог HELIOS Klinik Breisach, эксперт по здоровью простаты, мочекаменной болезни и заболеваниям мочевыводящих путей. Специализируется на малоинвазивных и эндоскопических процедурах.",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.title": "Специалист по внутренним болезням (терапия)",
+"people.doctors.helios-klinik-breisach-dr.-martin-schuster.bio": "Доктор Мартин Шустер — терапевт HELIOS Klinik Breisach, специализируется на кардиологии, нарушениях обмена веществ и профилактической медицине. Оказывает комплексную диагностику и лечение широкого спектра внутренних заболеваний.",
+
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.title": "Специалист по ортопедии",
+"people.doctors.helios-klinik-breisach-dr.-stefan-kleinert.bio": "Доктор Стефан Клайнерт — ортопед в HELIOS Klinik Breisach, специалист по эндопротезированию суставов, травматологической ортопедии и спортивной медицине. Обладает большим опытом реконструкции тазобедренного и коленного суставов.",
+
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.title": "Профессор хирургии позвоночника",
+"people.doctors.helios-klinik-breisach-prof.-dr.-stefan-m.-knller.bio": "Профессор Штефан М. Кнёллер — спинальный хирург HELIOS Klinik Breisach, специалист по деформациям позвоночника, малоинвазивной хирургии и эндопротезированию дисков. Известен инновационными решениями при сложной спинальной патологии.",
+
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.title": "Специалист по гериатрии",
+"people.doctors.helios-klinik-rottweil-dr.-cosmin-curelariu.bio": "Доктор Космин Курелариу — гериатр HELIOS Klinik Rottweil, специализируется на возраст-ассоциированных заболеваниях, ведении деменции и междисциплинарной помощи пожилым пациентам. Работает над улучшением мобильности и самостоятельности пожилых людей.",
+
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.title": "Специалист по сосудистой хирургии",
+"people.doctors.helios-klinik-rottweil-dr.-kai-mehlhase.bio": "Доктор Кай Мельхазе — сосудистый хирург HELIOS Klinik Rottweil, специализируется на эндоваскулярных процедурах, лечении варикозной болезни и сложной артериальной реконструкции. Известен современными малоинвазивными методиками.",
+
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.title": "Специалист по гинекологии",
+"people.doctors.helios-klinik-rottweil-dr.-markus-zenz.bio": "Доктор Маркус Ценц — гинеколог HELIOS Klinik Rottweil, занимается репродуктивным здоровьем, акушерством и онкогинекологией. Имеет опыт малоинвазивной гинекологической хирургии и комплексного ведения пациенток.",
+
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.title": "Специалист по общей и висцеральной хирургии",
+"people.doctors.helios-klinik-rottweil-dr.-ren-hodina.bio": "Доктор Рене Ходина — хирург общей и висцеральной хирургии HELIOS Klinik Rottweil, специалист по абдоминальной хирургии, онкологии ЖКТ и малоинвазивным техникам. Большой опыт сложных операций на органах пищеварительного тракта.",
+
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.title": "Специалист по анестезиологии",
+"people.doctors.helios-klinik-rottweil-dr.-sandra-brandauer.bio": "Доктор Сандра Брандауэр — анестезиолог HELIOS Klinik Rottweil, специализируется на периоперационной помощи, лечении боли и интенсивной терапии. Уделяет особое внимание безопасности пациента и современным методам анестезии.",
+
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.title": "Профессор ортопедии",
+"people.doctors.helios-klinik-rottweil-prof.-dr.-markus-krber.bio": "Профессор Маркус Кёрбер — ортопед HELIOS Klinik Rottweil, специалист по спинальной ортопедии, эндопротезированию и реконструкции опорно-двигательного аппарата. Известен передовыми хирургическими решениями при сложных ортопедических случаях.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.title": "Специалист по гинекологии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-claudia-fritz.bio": "Доктор Клаудия Фритц — гинеколог HELIOS Klinik Titisee-Neustadt, специалист по акушерству, онкогинекологии и профилактике. Имеет опыт малоинвазивной хирургии и персонализированного подхода к женскому здоровью.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.title": "Специалист по внутренним болезням и интенсивной терапии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-constanze-vollmer.bio": "Доктор Констанце Фольмер — специалист по внутренним болезням и интенсивной терапии HELIOS Klinik Titisee-Neustadt. Профиль: критические состояния, респираторная медицина и ведение сложных внутренних заболеваний, требующих интенсивного лечения.",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.title": "Специалист по гинекологии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-jan-jrgens.bio": "Доктор Ян Йюргенс — гинеколог HELIOS Klinik Titisee-Neustadt, эксперт в области репродуктивного здоровья, ведения беременностей высокого риска и онкогинекологии. Обеспечивает комплексное ведение здоровья женщин.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.title": "Специалист по ортопедии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-lorand-alin-stoica.bio": "Доктор Лоранд Алин Стойка — ортопед HELIOS Klinik Titisee-Neustadt, специалист по травматологической ортопедии, реконструкции суставов и спортивным травмам. Имеет опыт малоинвазивной хирургии и реабилитационно-ориентированного подхода.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.title": "Специалист по гериатрии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-manfred-schmlders.bio": "Доктор Манфред Шмёльдерс — гериатр HELIOS Klinik Titisee-Neustadt, специалист по мультиморбидности, деменции и комплексному уходу за пожилыми пациентами. Его подход сочетает профилактическую гериатрию с современными терапевтическими стратегиями.",
+
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.title": "Специалист по анестезиологии",
+"people.doctors.helios-klinik-titisee-neustadt-dr.-thomas-mrotzek.bio": "Доктор Томас Мротцек — анестезиолог HELIOS Klinik Titisee-Neustadt, специалист по ведению пациентов высокого риска, интенсивной терапии и лечению боли. Обеспечивает безопасное периоперационное сопровождение с использованием современных методов мониторинга.",
+
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.title": "Профессор общей и висцеральной хирургии",
+"people.doctors.helios-klinik-titisee-neustadt-prof.-dr.-benjamin-sommer.bio": "Профессор Бенджамин Зоммер — хирург HELIOS Klinik Titisee-Neustadt, специалист по сложным абдоминальным операциям, колоректальному раку и малоинвазивным методам. Известен экспертизой в онкологической и реконструктивной хирургии ЖКТ.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..title": "Главный врач травматологии и ортопедической хирургии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-jens-osel-ll.m..bio": "Доктор Йенс Озель, LL.M., медицинский директор и руководитель травматологии и ортопедии в HELIOS Bad Saarow. Специализация: сложная хирургия стопы и голеностопа, ревматологическая помощь и руководство региональным травмоцентром. Отмечен журналом FOCUS за хирургию стопы, имеет опыт работы в клиниках Великобритании.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.title": "Главный врач анестезиологии, интенсивной терапии и периоперационной медицины боли | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-stefan-wirtz.bio": "Доктор Штефан Вирц руководит отделением анестезии, интенсивной терапии и лечения боли. Эксперт в лечении сепсиса, ARDS/ЭКМО и программах отлучения от ИВЛ. Сильные стороны: безопасность операций, критическое УЗИ/ЧПЭхоКГ и паллиативная помощь.",
+
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.title": "Главный врач сосудистой и эндоваскулярной хирургии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-dr.-walid-ibrahim.bio": "Доктор Валид Ибрагим возглавляет сосудистый и аортальный центр, специалист по малоинвазивной хирургии аорты/ААА, гибридным эндоваскулярным методикам и комплексным сосудистым маршрутам между ангиологией, радиологией и хирургией.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.title": "Главный врач кардиологии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-erdal-safak.bio": "PD доктор Эрдаль Шафак — интервенционный кардиолог, эксперт в электрофизиологии, устройственной терапии (ICD/CRT), структурных вмешательствах (PFO/MitraClip) и интенсивной кардиологии. Объединяет ритмологию и интервенционные методики.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.title": "Главный врач неврологии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-konstantin-prass-mba.bio": "PD доктор Константин Прасс, MBA, руководитель острой неврологии и нейро-ОИТ с круглосуточной сетью тромбэктомии. Специализация: инсультология, нейроиммунология и сложные нейрокритические состояния (обучался в Charité).",  
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.title": "Главный врач ЛОР, хирургии головы и шеи и пластической хирургии лица | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-thomas-schrom.bio": "PD доктор Томас Шром — эксперт по кохлеарным и среднеушным имплантам, эндоназальной хирургии, онкологии головы и шеи и пластической хирургии лица. Уникальное сочетание компетенций в отологии, ринологии и эстетической хирургии.",
+
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.title": "Главный врач урологии и урологической онкологии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-pd-dr.-tobias-klatte.bio": "PD доктор Тобиас Клатте — эксперт в роботизированной, лапароскопической и открытой урологии. Основное направление: хирургия рака простаты, почек и мочевого пузыря, эндоурология и функциональная урология.",
+
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.title": "Главный врач внутренней медицины, гастроэнтерологии и диабетологии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-florian-hentschel.bio": "Профессор Флориан Хентшель возглавляет внутреннюю медицину, специализируется на эндоскопии, ВЗК, гепатологии и комплексном лечении диабета. Сильная сторона: создание интегрированных маршрутов для пациентов с сочетанной патологией ЖКТ и диабетом.",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.title": "Главный врач нейрохирургии | HELIOS Klinikum Bad Saarow",
+"people.doctors.helios-klinikum-bad-saarow-prof.-dr.-julius-dengler.bio": "Проф. Юлиус Денглер специализируется на опухолях головного и спинного мозга, цереброваскулярной хирургии, хирургии периферических нервов и функциональной хирургии боли. Сильные стороны: эксперт по позвоночнику и руководство мультидисциплинарным консилиумом по опухолям.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.title": "Главный врач офтальмологии | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner.bio": "Д-р Кристоф фон Зоннлайтнер, FEBO, возглавляет офтальмологическую клинику с полным спектром диагностики и хирургии. Основные направления: катаракта/рефракция, глаукома, окулопластика, хирургия слезных путей и орбиты; опыт работы в Charité.",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.title": "Главный врач анестезиологии и периоперационной медицины | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-david-schwaiberger.bio": "Д-р Давид Швайбергер руководит анестезией и периоперационной помощью, уделяя внимание безопасности пациентов, современному мониторингу и оптимизации работы хирургической реанимации (бывший старший анестезиолог Charité).",
+
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.title": "Главный врач онкологии и паллиативной медицины | Руководитель центра сарком | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-dr-peter-reichardt.bio": "Проф. Петер Райхардт — один из ведущих европейских экспертов по саркомам, возглавляет сертифицированные центры сарком и онкологии. Сильные стороны: клинические исследования GIST/STS/костных сарком, руководство в разработке рекомендаций и мультидисциплинарная помощь.",
+
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.title": "Главный врач ортопедии и травматологии | Директор ENDO-Klinik Berlin | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff.bio": "Проф. Даниэль Кендорф — специалист по эндопротезированию тазобедренного и коленного суставов, известен малоинвазивными методиками и сложными ревизионными операциями. Уникально: эндопротезирование при опухолях и быстрые протоколы восстановления.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.title": "Главный врач гематологии и клеточной терапии (трансплантация стволовых клеток) | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-bertram-glaß.bio": "Проф. Бертрам Гласс возглавляет гематологию, CAR-T и трансплантацию стволовых клеток. Сильные стороны: лечение лимфом и лейкозов, аккредитованная программа трансплантации, более 90 научных публикаций.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.title": "Главный врач внутренней медицины и гастроэнтерологии | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-frank-kolligs.bio": "Проф. Франк Коллигс специализируется на эндоскопии, гепатологии и гастроонкологии. Сильные стороны: ведение пациентов с раком печени, комплексная эндоскопическая диагностика и терапия.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.title": "Главный врач неврологии | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-georg-hagemann.bio": "Проф. Георг Хагеман охватывает полный спектр неврологии, включая нейроваскулярную диагностику (дуплекс, ЭЭГ/ЭМГ, вызванные потенциалы). Сильные стороны: инсульт, РС, эпилепсия и интенсивная неврологическая терапия.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.title": "Медицинский директор и главный врач кардиологии и нефрологии | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-henning-t-baberg.bio": "Проф. Хеннинг Т. Баберг руководит интегрированными кардионефрологическими службами (блок неотложной помощи, катетеризация, ЭФИ, диализ, кардио-МРТ). Уникально: системное руководство и академическая деятельность в MSB.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-marc-bloching.title": "Главный врач ЛОР, хирургии головы и шеи | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-marc-bloching.bio": "Проф. Марк Блохинг известен в реконструктивной хирургии головы и шеи, хирургии основания черепа/орбиты, кохлеарных имплантах и гендер-афирмативной хирургии лица. Сильное портфолио пластической и реконструктивной хирургии.",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-roger-wahba.title": "Главный врач общей, висцеральной и онкологической хирургии | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-roger-wahba.bio": "Проф. Роджер Вахба — эксперт по хирургии печени и HPB. Сильные стороны: расширенные онкологические резекции (включая ALPPS), междисциплинарные онкомаршруты и лидерство в малоинвазивной висцеральной хирургии.",
+
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-stefan-dresel.title": "Главный врач ядерной медицины | HELIOS Klinikum Berlin-Buch",
+"people.doctors.helios-klinikum-berlinbuch-prof-dr-stefan-dresel.bio": "Проф. Штефан Дрезель специализируется на ПЭТ/СПЕКТ и радионуклидной терапии. Уникально: функциональная визуализация в онкологии и персонализированная тераностика.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.title": "Главный врач сосудистой и эндоваскулярной хирургии | HELIOS Klinikum Emil von Behring (Берлин-Целендорф)",
+"people.doctors.helios-klinikum-emil-von-behring-dr-adam-czerwinski.bio": "Д-р Адам Червиньски возглавляет сосудистую и эндоваскулярную хирургию с фокусом на аортальных, сонных и периферических вмешательствах. Уникально: развитие программы в Целендорфе и экспертиза гибридной операционной.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.title": "Главный врач ортопедии и травматологической хирургии | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-axel-reinhardt.bio": "Д-р Аксель Райнхардт руководит подразделением ортопедии, структурированным по подспециализациям. Фокус: высококачественная хирургия суставов, позвоночника и травм командой экспертов.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.title": "Главный врач гематологии и онкологии | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-borge-arndt.bio": "Д-р Бёрге Арндт — специалист по солидным опухолям и гематологическим злокачественным заболеваниям с акцентом на прецизионную онкологию. Сильные стороны: опухоли ЖКТ, CUP, лейкозы/лимфомы и современные антитела/иммунотерапии.",
+
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.title": "Главный врач диагностической и интервенционной радиологии, ядерной медицины и молекулярной визуализации | HELIOS Klinikum Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-dr-christian-althoff.bio": "PD д-р Кристиан Альтофф — эксперт по ангиографии и малоинвазивной терапии под контролем изображений. Уникально: полный спектр интервенционной радиологии в онкологии, сосудистой и опорно-двигательной патологии.",
+
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.title": "Главный врач торакальной хирургии | Lungenklinik Heckeshorn, HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar.bio": "Д-р Мохамед Заатар — сертифицированный торакальный хирург, фокус на раке лёгких, метастазэктомиях и сложных операциях на грудной стенке. Уникально: руководство исторической программой Heckeshorn (назначен в 2025).",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik.title": "Главный врач кардиологии (Внутренние болезни I), руководитель Helios Heart Network Berlin-Brandenburg | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik.bio": "Проф. Джемиль Озчелик — интервенционный кардиолог по коронарной и структурной патологии (минимально инвазивная клапанная коррекция). Уникально: региональное лидерство кардиосети и трансляционная кардиогенетика.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-eckart-schott.title": "Главный врач гастроэнтерологии, гепатологии и диабетологии (Внутренние болезни II) | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-eckart-schott.bio": "Проф. Эккарт Шотт — эксперт по гепатологии и продвинутой эндоскопии. Сильные стороны: ВЗК, вирусные гепатиты, панкреатобилиарные болезни и сертифицированные онкомаршруты ЖКТ.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-georg-hagemann.title": "Неврология (информация не применима к этому разделу)",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-georg-hagemann.bio": "Проф. Георг Хагеман — главный врач неврологии в HELIOS Berlin-Buch. Для корректного SEO просим размещать его в разделе Berlin-Buch, а не Emil von Behring.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-henning-t-baberg.title": "Кардиология и нефрология (информация не применима к этому разделу)",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-henning-t-baberg.bio": "Проф. Хеннинг Т. Баберг работает в HELIOS Berlin-Buch, а не в Emil von Behring. Пожалуйста, отнесите его к Berlin-Buch для корректной группировки.",
+
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen.title": "Главный врач общей, висцеральной и малоинвазивной хирургии | Сертифицированный центр МИ-хирургии Berlin-Southwest | HELIOS Emil von Behring",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen.bio": "Проф. Марк Х. Янсен специализируется на малоинвазивной колоректальной и грыжевой хирургии, операциях при рефлюксе и эндокринной/верхне-ЖКТ хирургии. Уникально: руководство сертифицированными программами висцеральной онкологии (колоректальный и панкреатический рак).",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.title": "Висцеральная хирургия (информация неактуальна для этого сайта)",
+"people.doctors.helios-klinikum-emil-von-behring-prof-dr-roger-wahba.bio": "Профессор Роджер Вахба — с августа 2023 года руководитель клиники висцеральной хирургии в HELIOS Берлин-Бух. Не указывать под Emil von Behring для корректности SEO.",
+
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.title": "Главный врач челюстно-лицевой хирургии | Центр опухолей головы и шеи | Эстетическая хирургия лица",
+"people.doctors.helios-klinikum-erfurt-dr-dr-johannes-wikner.bio": "PD Dr. Dr. Йоханнес Викнер возглавляет челюстно-лицевую хирургию в Helios Эрфурт, руководит Центром опухолей головы и шеи и Helios Privatklinik. Специализация: онкологическая и реконструктивная хирургия лица, ортогнатическая хирургия, имплантология и сложные операции головы и шеи.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.title": "Главный врач клиники хирургии позвоночника (ортопедия и травматология)",
+"people.doctors.helios-klinikum-erfurt-dr-med-ali-ezzati.bio": "Др. Али Эззати руководит клиникой хирургии позвоночника Helios Эрфурт, выполняя от малоинвазивных эндоскопических вмешательств до сложных коррекций деформаций. Большой ежегодный объем операций подтверждает экспертизу и ориентированность на результат.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.title": "Главный врач сосудистой и эндоваскулярной хирургии | Со-руководитель сосудистого центра Гота–Эрфурт",
+"people.doctors.helios-klinikum-erfurt-dr-med-hendrik-bergert.bio": "PD Dr. Хендрик Бергерт специализируется на аортальных, каротидных и периферических реконструкциях с применением гибридных OR-технологий (эндоваскулярных и открытых). Со-руководитель междисциплинарного сосудистого центра.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.title": "Главный врач пульмонологии, медицины сна и вентиляции | Руководитель Центра рака легких",
+"people.doctors.helios-klinikum-erfurt-dr-med-jens-uwe-bauer.bio": "Др. Йенс-Уве Бауэр возглавляет пульмонологию и сертифицированный Центр рака легких Helios Эрфурт. Ключевые направления: интервенционная бронхоскопия, медицина сна и вентиляции, междисциплинарные онкологические протоколы.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.title": "Главный врач торакальной хирургии и эндоскопии | Руководитель Центра рака легких",
+"people.doctors.helios-klinikum-erfurt-dr-med-jorg-kluge.bio": "Др. Йорг Клюге выполняет сложные операции на легких и средостении с применением VATS/uniportal и бронхоскопии (жесткой/гибкой), совместно руководит региональным Центром рака легких.",
+
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.title": "Главный врач, Междисциплинарный центр диабетической стопы (IZDF)",
+"people.doctors.helios-klinikum-erfurt-dr-med-thomas-werner.bio": "Др. Томас Вернер возглавляет IZDF Helios Эрфурт с программой сохранения конечностей, профилактикой ампутаций и координированной сосудисто-диабетологической помощью.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.title": "Главный врач кардиологии | Интервенционная и структурная кардиология",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-alexander-lauten.bio": "Проф. Александр Лаутен руководит отделением кардиологии: катетерные вмешательства, ЧКВ, отделение боли в груди, МРТ/КТ сердца и аритмология (абляция, устройства). Связь доказательной кардиологии с интенсивной терапией.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.title": "Главный врач общей и висцеральной хирургии | Руководитель Центра висцеральной онкологии",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-attila-dubecz.bio": "Проф. Аттила Дубеч специализируется на хирургии верхнего ЖКТ и HPB с роботическими и минимально инвазивными методами. Руководитель Центра висцеральной онкологии, обеспечивающего онкооперации по протоколам и решениям опухолевого консилиума.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.title": "Профессор нейрохирургии | Медицинский директор | Руководитель Центра нейроонкологии",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach.bio": "Проф. Рюдигер Герлах руководит Центром нейроонкологии и выполняет высокотехнологичные операции на головном и спинном мозге с персонализированным подходом.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.title": "Главный врач интенсивной и промежуточной терапии | Руководитель сети анестезия–ОРИТ–неотложка–боль–паллиатив",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk.bio": "Проф. Хайнрих В. Гресдонк возглавляет региональный центр анестезии, интенсивной терапии, неотложной, болевой и паллиативной медицины. Эксперт в органоподдержке, сложном отлучении от ИВЛ и координации критической помощи.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.title": "Главный врач ЛОР и хирургии головы и шеи | Центр кохлеарной имплантации и аудиологии",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-holger-kaftan.bio": "Проф. Хольгер Кафтaн специализируется на онкохирургии головы и шеи, CO₂-лазерных методиках и слуховых имплантах. Руководит сертифицированными центрами опухолей головы и шеи и аудиологии.",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.title": "Главный врач нефрологии",
+"people.doctors.helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer.bio": "Проф. Вольфганг Нойхофер обеспечивает современную помощь при заболеваниях почек, включая диализ и наблюдение после трансплантации, предлагая персонализированные планы лечения хронической почечной недостаточности.",
+
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.title": "Главный врач урологии | Руководитель Центра урологической онкологии | Директор Центра роботической хирургии Центральной Германии",
+"people.doctors.helios-klinikum-erfurt-prof-dr-thomas-steiner.bio": "Проф. Томас Штайнер возглавляет урологию с использованием роботических и минимально инвазивных методик при раке простаты, почек и мочевого пузыря, а также реализует комплексные программы функциональной урологии и мужского здоровья.",
+
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.title": "Главный врач торакальной хирургии",
+"people.doctors.helios-klinikum-pforzheim-dr.-michael-klopp.bio": "Др. Михаэль Клопп выполняет анатомические резекции легких и вмешательства VATS, тесно сотрудничая с пульмонологами и онкологами, обеспечивая круглосуточную мультидисциплинарную торакальную помощь.",
+
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.title": "Главный врач ортопедии, травматологии и хирургии позвоночника",
+"people.doctors.helios-klinikum-pforzheim-pd-dr.-bernd-maier.bio": "PD Dr. Бернд Майер выполняет эндопротезирование суставов, операции при травмах и заболеваниях позвоночника с применением ускоренной реабилитации и щадящих техник для активного восстановления.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.title": "Профессор неврологии | Главный врач",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-benjamin-berger.bio": "Проф. Бенджамин Бергер возглавляет неврологию, специализируется на цереброваскулярных заболеваниях, нейроиммунологии и нейро-ОРИТ, соединяя академическую науку с высококлассной клинической практикой.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.title": "Главный врач гастроэнтерологии, гепатологии, инфекционных болезней и диабетологии",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-christian-rupp.bio": "Проф. Кристиан Рупп проводит современные эндоскопические вмешательства, лечит заболевания печени и обмена веществ, интегрируя интенсивную терапию внутренних болезней для сложных пациентов с ЖКТ и диабетом.",
+
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.title": "Главный врач урологии и детской урологии | Роботическая хирургия",
+"people.doctors.helios-klinikum-pforzheim-prof.-dr.-shu-fon-muna.bio": "Проф. Шу-Фон Муна специализируется на робот-ассистированных и малоинвазивных операциях при патологиях простаты, почек и мочевого пузыря, расширяя урологическую помощь в регионе.",
+
+"people.doctors.helios-krefeld-hunerliturkoglu.title": "Главный врач гематологии, медицинской онкологии и паллиативной медицины",
+"people.doctors.helios-krefeld-hunerliturkoglu.bio": "Др. Али Нури Хюнерлитюркоглу руководит Медицинской клиникой II в Helios Крефельд, лечит лейкозы, лимфомы и солидные опухоли с применением современных системных и поддерживающих методов онкотерапии.",
+
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.title": "Главный врач общей и висцеральной хирургии",
+"people.doctors.helios-muenchen-west-dr.-erich-bielesch.bio": "Др. Эрих Билеш выполняет онкологические операции на кишечнике и минимально инвазивные вмешательства, координирует сертифицированные колоректальные маршруты и программы ERAS восстановления.",
+
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.title": "Главный врач сосудистой хирургии | Медицинский директор | Специалист по эндоваскулярной хирургии",
+"people.doctors.helios-muenchen-west-dr.-reza-ghotbi.bio": "Др. Реза Готби — сертифицированный сосудистый, висцеральный и эндоваскулярный хирург (DGG), проводит операции на аорте, сонных и периферических артериях во всех центрах Helios в Мюнхене.",
+
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.title": "Главный врач челюстно-лицевой и пластической хирургии лица",
+"people.doctors.helios-muenchen-west-pd-dr.-denys-j.-loeffelbein.bio": "Проф. Денис Й. Лёффельбайн (FEBOMFS), врач двойной квалификации (медик и стоматолог), академический преподаватель, выполняет сложные реконструктивные и эстетические операции на лице.",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.title": "Главный врач ЛОР (голова и шея) | Пластическая и реконструктивная ЛОР-хирургия",
+"people.doctors.helios-muenchen-west-pd-dr.-thomas-stark.bio": "PD Dr. Томас Штарк руководит одной из крупнейших ЛОР-клиник Южной Баварии, специализируется на хирургии основания черепа и онкологии головы и шеи, применяет междисциплинарные консилиумы и современные реконструктивные методики.",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.title": "Главный врач хирургии кисти",
+"people.doctors.helios-muenchen-west-prof.-dr.-elias-volkmer.bio": "Проф. Элиас Фолькмер возглавляет хирургию кисти, эксперт в реконструкции нервов, сухожилий и запястья; удостоен сертификата эксперта DGH по хирургии кисти.",
+
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.title": "Главный врач кардиологии и интенсивной терапии внутренних болезней",
+"people.doctors.helios-muenchen-west-prof.-dr.-sebastian-kufner.bio": "Проф. Себастьян Куфнер развивает кардиологию в Helios Munich West, сочетая интервенционные вмешательства, визуализацию и интенсивную терапию внутренних болезней с ориентированным на пациента подходом.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.title": "Профессор кардиохирургии | Пионер трансплантации сердца и легких",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-bruno-reichart.bio": "Проф. Бруно Райхарт — всемирно известный кардиохирург LMU Мюнхен, пионер современной трансплантации сердца и легких. Его новаторские исследования в ксенотрансплантации и механической поддержке кровообращения продвинули кардиохирургию во всем мире.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.title": "Профессор урологии | Директор клиники урологии LMU Мюнхен",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-christian-georg-stief.bio": "Проф. Кристиан Г. Штиф возглавляет урологию LMU Мюнхен, специализируется на онкоурологии, минимально инвазивной и роботической хирургии, андрологии. Известен как лидер исследований рака простаты и инноваций в области мужского здоровья.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.title": "Профессор нейрохирургии | Эксперт по хирургии позвоночника и нейроонкологии",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-florian-ringel.bio": "Проф. Флориан Рингель — ведущий нейрохирург LMU Мюнхен, специализируется на сложных операциях на позвоночнике, нейроонкологии и интраоперационной визуализации. Известен как пионер минимально инвазивных и навигационных методик.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.title": "Профессор кардиохирургии | Специалист по искусственному сердцу и трансплантации",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-paolo-brenner.bio": "Проф. Паоло Бреннер — кардиохирург LMU Мюнхен, эксперт по системам искусственного сердца, трансплантации легких и сердца. Его исследования в ксенотрансплантации и механической поддержке кровообращения признаны во всем мире.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.title": "Профессор онкологии | Эксперт по саркомам и гипертермии",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-rolf-d.-issels.bio": "Проф. Рольф Д. Иссельс — онколог LMU Мюнхен, специалист по терапии сарком и лечению гипертермией. Руководил клиническими исследованиями по регионарной химиотерапии и мультимодальной онкологии, формируя международные рекомендации.",
+
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.title": "Профессор онкологии | Специалист по опухолям ЖКТ",
+"people.doctors.lmu-klinikum-muenchen-prof.-dr.-volker-heinemann.bio": "Проф. Фолькер Хайнеманн — ведущий онколог LMU Мюнхен, специализируется на опухолях ЖКТ, особенно раке толстой кишки и поджелудочной железы. Всемирно признан за руководство клиническими исследованиями химио- и таргетной терапии.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.title": "Специалист по гематологии и онкологии | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-andreas-arndt.bio": "Др. Андреас Арндт — опытный онколог в Medical Park Bad Feilnbach, специализируется на системной терапии рака, поддерживающем лечении и реабилитации онкопациентов.",
+
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.title": "Специалист по гериатрии и внутренним болезням | Medical Park Bad Feilnbach",
+"people.doctors.medical-park-bad-feilnbach-dr.-rainer-ahrens.bio": "Др. Райнер Аренс — специалист по гериатрии, предлагает комплексную реабилитацию пожилых пациентов. Эксперт в области мультиморбидности, нарушений подвижности и возрастных заболеваний внутренних органов.",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.title": "Профессор урологии | Специалист по функциональной и реконструктивной урологии",
+"people.doctors.medical-park-bad-feilnbach-prof.-dr.-peter-young.bio": "Проф. Питер Янг — эксперт по урологии в Medical Park Bad Feilnbach, специализируется на функциональной и реконструктивной урологии. Известен работами по инконтиненции, нейроурологии и реабилитации после операций.",
+
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.title": "Специалист по урологии | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-dirk-zauper.bio": "Др. Дирк Цойпер — уролог Medical Park Bad Rodach, экспертиза: уроонкология, эндоурология и мужское здоровье. Обеспечивает современную терапию и реабилитацию при урологических заболеваниях.",
+
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.title": "Специалист по ортопедии и реабилитации | Medical Park Bad Rodach",
+"people.doctors.medical-park-bad-rodach-dr.-johannes-juergen-mees.bio": "Др. Йоханнес Юрген Мес — ортопед, фокус на реабилитации после операций на суставах и позвоночнике. Сильные стороны: опорно-двигательная реабилитация и спортивная медицина.",
+
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.title": "Специалист по ортопедии и спортивной медицине | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-dr.-nadine-dreyer.bio": "Др. Надин Драйер — ортопед с специализацией по спортивным травмам, реабилитации суставов и малоинвазивному лечению опорно-двигательных заболеваний.",
+
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.title": "Специалист по кардиологии и внутренним болезням | Medical Park Bad Wiessee",
+"people.doctors.medical-park-bad-wiessee-pd-dr.-andreas-stein.bio": "PD Dr. Андреас Штайн — кардиолог с опытом в кардиореабилитации, лечении аритмий и профилактической кардиологии. Совмещает современную диагностику с индивидуальными планами терапии.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.title": "Профессор ортопедии | Специалист по суставной хирургии и реабилитации",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-andrea-meurer.bio": "Проф. Андреа Мойрер — известный ортопед, специализация: эндопротезирование тазобедренного и коленного суставов и послеоперационная реабилитация. Известна пациент-ориентированным подходом и академической экспертизой.",
+
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.title": "Профессор внутренней медицины | Специалист по реабилитации и профилактической медицине",
+"people.doctors.medical-park-bad-wiessee-prof.-dr.-christian-firschke.bio": "Проф. Кристиан Фиршке фокусируется на внутренней медицине, сердечно-сосудистой профилактике и реабилитации. Интегрирует доказательную терапию и превентивные подходы для долгосрочного здоровья.",
+
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.title": "Профессор ортопедии и травматологии | Специалист по реабилитационной медицине",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer.bio": "Проф. Карстен Драйнхёфер — эксперт по ортопедии и травматологии с фокусом на реабилитации, заболеваниях опорно-двигательного аппарата и здоровье костей; международно признан в реабилитологии и безопасности пациентов.",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.title": "Профессор неврологии | Специалист по инсультологии и нейрореабилитации",
+"people.doctors.medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger.bio": "Проф. Мартин Эбингер — невролог, специализируется на инсультологии, нейрореабилитации и неотложной неврологической помощи. Известен исследованиями по догоспитальной диагностике инсульта и инновационным концепциям нейрореабилитации.",
+
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.title": "Профессор ортопедии | Специалист по суставной хирургии и спортивной медицине",
+"people.doctors.medical-park-bernau-felden-chiemsee-prof.-dr.-marcus-schmitt-sody.bio": "Проф. Маркус Шмитт-Соди — ортопед, специализируется на эндопротезировании тазобедренного и коленного суставов, спортивной медицине и реабилитации опорно-двигательного аппарата. Лидер в ортопедической реабилитации на озере Кимзее.",
+
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.title": "Профессор психосоматической медицины и психотерапии",
+"people.doctors.medical-park-chiemseeblick-prof.-dr.-andreas-menke.bio": "Проф. Андреас Менке специализируется на психосоматической медицине и психотерапии, фокус: депрессия, тревожные и стрессовые расстройства. Совмещает психотерапевтические методы с комплексной реабилитацией.",
+
+"people.doctors.schlossparkklinik-dr-andre-kwalek.title": "Специалист по ортопедии и травматологии | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-andre-kwalek.bio": "Др. Андре Квалек — ортопед и травматолог Schlosspark-Klinik Berlin, экспертиза: эндопротезирование суставов, травмы опорно-двигательной системы и хирургия с акцентом на реабилитацию.",
+
+"people.doctors.schlossparkklinik-dr-dominik-schuster.title": "Специалист по внутренним болезням и гастроэнтерологии | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-dominik-schuster.bio": "Др. Доминик Шустер — специалист по внутренним болезням и гастроэнтерологии, обеспечивает комплексную диагностику и лечение заболеваний ЖКТ и метаболических нарушений.",
+
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.title": "Специалист по неврологии | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-dr-shahram-yousefi.bio": "Др. Шахрам Юсефи — невролог Schlosspark-Klinik Berlin, специализация: нейродегенеративные болезни, эпилепсия и инсультология.",
+
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.title": "Профессор общей и висцеральной хирургии | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-carsten-kamphues.bio": "Проф. Карстен Кампхюс — висцеральный хирург, специализация: хирургия печени, желчных путей и поджелудочной железы, а также онкологические операции на органах брюшной полости.",
+
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.title": "Профессор нейрохирургии | Schlosspark-Klinik Berlin",
+"people.doctors.schlossparkklinik-prof-dr-theodoros-kombos.bio": "Проф. Теодорос Комбос — нейрохирург, фокус: опухоли головного мозга, хирургия основания черепа и спинальная нейрохирургия; признан за интеграцию микроскопической хирургии и современных методов нейровизуализации.",
+
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.title": "Профессор неврологии | Специалист по головокружениям и нарушениям равновесия",
+"people.doctors.schlossparkklinik-prof-dr-thomas-lempert.bio": "Проф. Томас Лемперт — ведущий невролог Берлина, международно известен экспертизой в лечении головокружений, вестибулярных и балансных расстройств; автор многочисленных научных работ.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.title": "Профессор нейрохирургии | Руководитель, TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-bernhard-meyer.bio": "Проф. Бернхард Мейер — заведующий нейрохирургией TUM Klinikum rechts der Isar, известен сложными операциями на головном и спинном мозге, нейроонкологией и малоинвазивными вмешательствами на позвоночнике.",
+
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.title": "Профессор гематологии и онкологии | Директор, Внутренняя медицина III (H&O) TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-florian-bassermann.bio": "Проф. Флориан Бассерманн возглавляет гематологию и онкологию TUM, специализация: лейкозы, В-клеточные опухоли и таргетная терапия; активно занимается трансляционными исследованиями.",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.title": "Профессор общей и висцеральной хирургии | Эксперт по хирургии рака поджелудочной железы",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-helmut-friess.bio": "Проф. Хельмут Фрисс — директор хирургии TUM, международно признанный специалист по хирургии поджелудочной железы, печени и желчных путей; исследования биологии карциномы поджелудочной.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.title": "Профессор урологии | Лидер уроонкологии и роботической хирургии",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-juergen-e.-gschwend.bio": "Проф. Юрген Э. Гшвенд возглавляет урологию TUM, фокус: рак простаты и мочевого пузыря, нервосберегающие техники и мультимодальная онкологическая помощь.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.title": "Профессор кардиологии | Директор кардиологии TUM Klinikum rechts der Isar",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-karl-ludwig-laugwitz.bio": "Проф. Карл-Людвиг Лаугвиц — ведущий интервенционный кардиолог и эксперт по сердечной недостаточности, развивает исследования стволовых клеток и регенерации миокарда в Мюнхене.",
+  
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.title": "Профессор лучевой онкологии | Директор радиационной онкологии TUM",
+"people.doctors.tum-klinikum-rechts-der-isar-prof.-dr.-stephanie-e.-combs.bio": "Проф. Стефани Э. Комбс руководит лучевой онкологией TUM, продвигая прецизионную радиотерапию и трансляционную радиационную медицину от лаборатории к клинике.",
+  
+"people.doctors.uk-koeln-goldbrunner.title": "Профессор нейрохирургии | Директор, Университетская клиника Кёльна",
+"people.doctors.uk-koeln-goldbrunner.bio": "Проф. Гидо Гольдбруннер возглавляет нейрохирургию Университетской клиники Кёльна: нейроонкология, хирургия основания черепа и лечение сложных опухолей мозга.",
+  
+"people.doctors.uk-koeln-hallek.title": "Профессор гематологии и онкологии | Эксперт по ХЛЛ, Университетская клиника Кёльна",
+"people.doctors.uk-koeln-hallek.bio": "Проф. Михаэль Халлек — мировой лидер по хроническому лимфолейкозу, руководит крупными клиническими программами и развивает таргетную терапию гематологических опухолей.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.title": "Руководитель общей, висцеральной и травматологической хирургии | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-arndt-von-kirchbach.bio": "Др. Арндт фон Кирхбах руководит общей, висцеральной и травматологической хирургией в Бернау: современные операции при грыжах, патологии брюшной полости и экстренной хирургии.",
+  
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.title": "Руководитель внутренней медицины | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-bernau-dr.-michael-zaenker.bio": "Др. Михаэль Ценкер возглавляет внутренние болезни в Бернау; сильные стороны: кардиометаболические и ревматологические заболевания, интегрированное стационарное ведение.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.title": "Профессор кардиологии | Главный врач, Helios Emil von Behring (Берлин)",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-cemil-oezcelik.bio": "Проф. Джемиль Озчелик — берлинский интервенционный кардиолог, эксперт по структурной патологии сердца и коронарным вмешательствам, возглавляет Helios Heart Network Berlin-Brandenburg.",
+  
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.title": "Профессор кардиохирургии | Руководитель, сердечно-сосудистая хирургия Бернау",
+"people.doctors.universitaetsklinikum-bernau-prof.-dr.-johannes-maximilian-albes-mba.bio": "Проф. Йоханнес М. Альбес возглавляет сердечно-сосудистую хирургию в Бернау: реконструкция/замена клапанов, сложные операции на аорте и коронарных артериях.",
+  
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.title": "Профессор кардиологии | Руководитель, кардиология Бернау (Heart Center)",
+"people.doctors.universitaetsklinikum-bernau-univ.-prof.-dr.-christian-butter.bio": "Проф. Кристиан Буттер — пионер структурных вмешательств (TAVI, MitraClip), возглавляет кардиологию Бранденбургского кардиоцентра в Бернау.",
+  
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.title": "Руководитель общей, висцеральной и травматологической хирургии | Immanuel Klinikum Bernau",
+"people.doctors.universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach.bio": "Др. Арндт фон Кирхбах — опытный общий и висцеральный хирург, фокус на абдоминальной, грыжевой и травматологической хирургии в Бернау (под Берлином).",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.title": "Заведующий детской хирургией и урологией | Университетская клиника Бранденбурга",
+"people.doctors.universitaetsklinikum-brandenburg-havel-pd-dr.-carlos-albert-reck-burneo.bio": "PD Dr. Карлос А. Рек-Бурнео специализируется на сложной колоректальной и тазовой детской хирургии, обеспечивает мультидисциплинарную помощь детям и подросткам.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.title": "Профессор нейрохирургии | Руководитель, Университетская клиника Бранденбурга",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-christian-ewald.bio": "Проф. Кристиан Эвальд возглавляет нейрохирургию в Бранденбурге-на-Хафеле, экспертиза: нейроонкология, хирургия позвоночника и нейроваскулярные процедуры.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.title": "Профессор гематологии и онкологии | Директор клиники, Бранденбург",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-p.-markus-deckert.bio": "Проф. П. Маркус Деккерт руководит гематологией, онкологией и паллиативной медициной, фокус на индивидуализированной терапии рака и комплексной поддерживающей помощи.",
+
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.title": "Профессор ортопедии и спортивной медицины | Бранденбург",
+"people.doctors.universitaetsklinikum-brandenburg-havel-prof.-dr.-roland-becker.bio": "Проф. Роланд Бекер — ортопед, известный хирург коленного сустава и спортивных травм; специализируется на артроскопии и реабилитационно-ориентированной помощи.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.title": "Руководитель психиатрии, психосоматики и психотерапии | Котбус",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cordula-sikorski.bio": "Др. Кордула Сикорски возглавляет психиатрическую службу в Котбусе, объединяя стационарное, дневное и амбулаторное лечение депрессий, тревожных и психотических расстройств.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.title": "Медицинский директор | Центр ортопедии и травматологии Котбус",
+"people.doctors.universitaetsklinikum-cottbus-dr.-cornelia-schmidt.bio": "Др. Корнелия Шмидт руководит ортопедическими службами Котбуса, сильные стороны: суставы, позвоночник и травматология в рамках региональной сети опорно-двигательных заболеваний.",
+
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.title": "Руководитель неотложной медицины | Carl-Thiem-Klinikum Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-dr.-tim-flasbeck.bio": "Др. Тим Фласбек возглавляет неотложную медицину CTK Cottbus, оптимизирует процессы ED и маршруты экстренной помощи при жизнеугрожающих состояниях.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.title": "Руководитель общей радиологии | CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-gero-wieners.bio": "PD Dr. Геро Винерс возглавляет общую радиологию в CTK Cottbus, развивает онкологическую визуализацию, нейрорадиологическое сотрудничество и диагностику по международным стандартам.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.title": "Профессор гематологии и онкологии | CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-martin-schmidt-hieber.bio": "Проф. Мартин Шмидт-Хибер — руководитель гематологии и онкологии CTK Cottbus, специализация: лейкозы, терапия стволовыми клетками и поддерживающее лечение рака.",
+
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.title": "Специалист по общей хирургии | Котбус",
+"people.doctors.universitaetsklinikum-cottbus-pd-dr.-rainer-kube.bio": "PD Dr. Райнер Кубе оказывает общую и висцеральную хирургическую помощь в Котбусе, акцент на малоинвазивных абдоминальных операциях.",
+
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.title": "Профессор нейрохирургии | Руководитель, CTK Cottbus",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-ehab-shiban.bio": "Проф. Ихаб Шибан возглавляет нейрохирургию CTK Cottbus; экспертиза: нейроонкология, хирургия основания черепа и передовые операции на позвоночнике.",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.title": "Профессор офтальмологии | Котбус",
+"people.doctors.universitaetsklinikum-cottbus-prof.-dr.-helmut-sachs.bio": "Проф. Хельмут Закс ведёт офтальмологическую практику в Котбусе: катаракта, глаукома, лазерная терапия сетчатки и интравитреальные инъекции.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.title": "Профессор офтальмологии | Директор, Университетская глазная клиника Дюссельдорфа",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-gerd-geerling.bio": "Проф. Герд Гёрлинг — директор офтальмологии UKD, международно известен в роговичной хирургии, реконструкции глазной поверхности и трансляционных исследованиях зрения.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.title": "Профессор общей и висцеральной хирургии | Директор, UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel.bio": "Проф. Вольфрам Т. Кнёфель возглавляет общую и висцеральную хирургию UKD, ведущий эксперт в HPB- и трансплантационной хирургии.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.title": "Профессор нейрохирургии | Директор, Университетская клиника Дюссельдорфа",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-katharina-faust.bio": "Проф. Катарина Фауст руководит нейрохирургией UKD; фокус — нейроонкология и хирургия основания черепа с использованием интраоперационной визуализации.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.title": "Профессор кардиологии | Руководитель, Кардиология–Пульмонология–Сосудистая медицина UKD",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-malte-kelm.bio": "Проф. Мальте Кельм возглавляет кардиологию UKD, специализируется на интервенционной кардиологии, сосудистой медицине и трансляционных исследованиях ССЗ.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.title": "Профессор эндокринологии и диабетологии | Директор UKD; CEO, Немецкий диабетический центр",
+"people.doctors.universitaetsklinikum-duesseldorf-prof.-dr.-med.-univ.-michael-roden.bio": "Проф. Михаэль Роден руководит эндокринологией и диабетологией UKD и Немецким диабетическим центром; фокус — метаболические заболевания и прецизионная диабетология.",
+
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.title": "И.о. директора, ортопедия и травматология | Эндопротезирование и здоровье костей",
+"people.doctors.universitaetsklinikum-duesseldorf-univ.-prof.-dr.-med.-uwe-maus-acting.bio": "Унив.-проф. Уве Маус исполняет обязанности директора ортопедии UKD: эндопротезирование тазобедренного/коленного суставов, остеология и сложные ревизионные операции.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.title": "Профессор урологии | Директор, Университетская клиника Эрлангена",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-bernd-wullich.bio": "Проф. Бернд Вуллих возглавляет урологию в Эрлангене: уроонкология, хирургия рака простаты и реконструкция тазового дна.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.title": "Профессор кардиохирургии | Директор, Кардиохирургия Эрланген",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-dewald.bio": "Проф. Оливер Девайлд руководит кардиохирургией в Эрлангене, объединяя взрослую и детскую кардиохирургию с акцентом на клапанные и врожденные пороки.",
+
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.title": "Профессор нейрохирургии | Директор, Нейрохирургическая клиника Эрланген",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-oliver-schnell.bio": "Проф. Оливер Шнелль возглавляет нейрохирургию в Эрлангене; сильные стороны — нейроонкология, хирургия основания черепа и сосудистая нейрохирургия.",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.title": "Профессор кардиологии | Директор, кардиология и ангиология Эрлангена",
+"people.doctors.universitaetsklinikum-erlangen-prof.-dr.-stephan-achenbach.bio": "Проф. Штефан Ахенбах — заведующий кардиологией в Эрлангене, мировой лидер в кардиологической визуализации и интервенционной кардиологии, автор множества клинических исследований.",
+
+"people.doctors.universitaetsklinikum-erlangen-unknown.title": "Специалист по урологии | Университетская клиника Эрлангена",
+"people.doctors.universitaetsklinikum-erlangen-unknown.bio": "Урологический специалист Университетской клиники Эрлангена, фокус на малоинвазивных процедурах и онкоурологии.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.title": "Профессор нефрологии | Трансплантация почки и хроническая болезнь почек",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-bernhard-banas.bio": "Проф. Бернхард Банас — нефролог Университетской клиники Регенсбурга; специализация: трансплантация почек, диализ и лечение ХБП с индивидуализированной иммуносупрессией.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.title": "Профессор общей, висцеральной и трансплантационной хирургии | Хирургия HPB и поджелудочной железы",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt.bio": "Проф. Ханс-Юрген Шлитт возглавляет сложные абдоминальные и HPB-операции в Регенсбурге. Сильные стороны: онкохирургия ЖКТ, операции печени и поджелудочной, трансплантационные программы.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.title": "Профессор торакальной хирургии | Рак лёгких и малоинвазивные процедуры",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-hans-stefan-hofmann.bio": "Проф. Ханс-Штефан Хофманн — торакальный хирург; специализация: рак лёгких, операции средостения, VATS/роботические методики в сотрудничестве с пульмонологами и онкологами.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.title": "Профессор кардиологии | Директор, внутренняя медицина II (кардио), Регенсбург",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-lars-maier.bio": "Проф. Ларс Майер — кардиолог, специализация: сердечная недостаточность, интервенционная кардиология и визуализация сердца; внедряет доказательные протоколы в University Cardio Center Regensburg.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.title": "Профессор гастроэнтерологии и гепатологии | Эксперт по ВЗК и заболеваниям печени",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-martina-mueller-schilling.bio": "Проф. Мартина Мюллер-Шиллинг лечит ВЗК, вирусные гепатиты и онкологию ЖКТ, сочетая передовую эндоскопию и мультидисциплинарную помощь при болезнях печени.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.title": "Профессор педиатрии | Педиатрическая гастроэнтерология и трансплантация",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-michael-melter.bio": "Проф. Михаэль Мельтер оказывает третичную педиатрическую помощь, фокус: ЖКТ у детей, болезни печени и трансплантация, акцент на семейно-ориентированной медицине.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.title": "Профессор нейрохирургии | Хирургия головного и спинного мозга",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-nils-ole-schmidt.bio": "Проф. Нильс-Оле Шмидт — эксперт в нейроонкологии, хирургии основания черепа и позвоночника; применяет нейронавигацию и интраоперационный мониторинг для максимальной безопасности.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.title": "Профессор радиационной онкологии | Прецизионная радиотерапия",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-oliver-koelbl.bio": "Проф. Оливер Кёльбл развивает прецизионную радиотерапию в онкологии ЖКТ, лёгких и нейроонкологии с использованием IGRT и индивидуализированных подходов.",
+
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.title": "Профессор неврологии | Рассеянный склероз и нейроиммунология",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-ralf-linker.bio": "Проф. Ральф Линкер — невролог, специализация: РС и нейроиммунология; соединяет клинические исследования с персонализированным лечением РС.",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.title": "Профессор гематологии и онкологии | Лейкоз и лимфомы",
+"people.doctors.universitaetsklinikum-regensburg-prof.-dr.-wolfgang-herr.bio": "Проф. Вольфганг Херр лечит гематологические злокачественные опухоли и солидные новообразования, сочетая современные системные терапии, клинические исследования и поддерживающую онкологию.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.title": "Профессор гематологии и онкологии | Директор, Медклиника II Вюрцбург",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hermann-einsele.bio": "Проф. Херманн Айнзеле — мировой эксперт по множественной миеломе, трансплантации стволовых клеток и клеточным терапиям (вкл. CAR-T).",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.title": "Профессор урологии | Уроонкология и роботическая хирургия",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-hubert-kuebler.bio": "Проф. Хуберт Кюблер специализируется на раке простаты, почек и мочевого пузыря, применяет нервосберегающие и малоинвазивные/роботические методики с полным последующим сопровождением.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.title": "Профессор онкологии | Директор, Комплексный онкоцентр Майнфранкен",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-bargou.bio": "Проф. Ральф Баргоу развивает трансляционную онкологию и программы иммунотерапии, формируя индивидуальные маршруты лечения рака в регионе.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.title": "Профессор нейрохирургии | Руководитель, Нейрохирургическая клиника Вюрцбург",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-ralf-ingo-ernestus.bio": "Проф. Ральф-Инго Эрнестус — нейрохирург, фокус: нейроонкология, хирургия основания черепа и сосудистая нейрохирургия; большой опыт сложных краниальных операций.",
+
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.title": "Профессор кардиологии | Сердечная недостаточность и интервенционная кардиология",
+"people.doctors.universitaetsklinikum-wuerzburg-prof.-dr.-stefan-frantz.bio": "Проф. Штефан Франц оказывает комплексную кардиологическую помощь с акцентом на ХСН, коронарные вмешательства и передовую визуализацию сердца.",
+
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.title": "Управляющий директор (администрация) | Universitätsmedizin Essen",
+"people.doctors.universitaetsmedizin-essen-dr.-johannes-huette.bio": "Др. Йоханнес Хютте курирует административную стратегию и работу больницы Universitätsmedizin Essen, координируя качество помощи, финансы и инфраструктуру.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.title": "Профессор детской онкологии | (Примечание: преимущественно Charité, Берлин)",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-angelika-eggert.bio": "Проф. Ангелика Эггерт — международно признанный детский онколог, известна исследованиями нейробластомы и лидерством в педиатрических онкосетях.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.title": "Профессор нефрологии | Диализ и трансплантационная медицина",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-andreas-kribben.bio": "Проф. Андреас Криббен специализируется на почечной недостаточности, диализе и трансплантации почки в Universitätsmedizin Essen, с упором на сложную внутреннюю медицину.",
+
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.title": "Профессор нейрохирургии | Директор, Нейрохирургическая клиника Эссен",
+"people.doctors.universitaetsmedizin-essen-prof.-dr.-med.-ulrich-sure.bio": "Проф. Ульрих Зуре выполняет сложные операции на головном и спинном мозге, включая основание черепа и нейроваскулярные вмешательства, с интраоперационным мониторингом.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.title": "Профессор дерматологии | Директор, Национальный центр опухолевых заболеваний (рак кожи)",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-dirk-schadendorf.bio": "Унив.-проф. Дирк Шадендорф — мировой эксперт по раку кожи, пионер иммунотерапии меланомы и комплексной дерматоонкологии.",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.title": "Профессор гинекологии | Директор, онкогинекология и роботическая хирургия",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-habil.-rainer-kimmig.bio": "Унив.-проф. Райнер Киммиг возглавляет онкогинекологию, эксперт в роботических и малоинвазивных операциях при раке яичников, матки и шейки матки.",
+
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.title": "Профессор анестезиологии и интенсивной терапии | Периоперативная медицина",
+"people.doctors.universitaetsmedizin-essen-univ.-prof.-dr.-med.-thorsten-brenner-mhba.bio": "Унив.-проф. Торстен Бреннер руководит анестезией, интенсивной и неотложной медициной в Эссене, уделяя внимание периоперационной безопасности и органоподдержке.",
+
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.title": "Администрация клиники | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-kathleen-kreutzer.bio": "Кэтлин Кройтцер отвечает за стратегическое администрирование и пациент-ориентированное управление процессами в Universitätsmedizin Mainz.",
+
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.title": "Профессор онкологии | Гематология и солидные опухоли",
+"people.doctors.universitaetsmedizin-mainz-prof.-dr.-med.-thomas-kindler.bio": "Проф. Томас Киндлер занимается онкологией и гематологией в Майнце, акцент на индивидуализированной системной терапии и поддерживающей онкологии.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.title": "Профессор психосоматической медицины и медицины боли",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-jonas-tesarz.bio": "Унив.-проф. Йонас Тесарц специализируется на психосоматической медицине и болевых расстройствах, сочетает поведенческую терапию с внутренней медициной.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.title": "Профессор челюстно-лицевой хирургии | Имплантология и реконструктивная хирургия лица",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-bilal-al-nawas.bio": "Унив.-проф. Билал Аль-Навас — эксперт в имплантологии, опухолевой и реконструктивной хирургии лица в Universitätsmedizin Mainz.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.title": "Профессор неврологии | Рассеянный склероз и нейроиммунология",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-frauke-zipp.bio": "Унив.-проф. Фрауке Ципп — невролог и специалист по РС в Майнце, развивает нейроиммунологию и персонализированную терапию демиелинизирующих заболеваний.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.title": "Профессор психиатрии и психотерапии | Директор, психиатрия Майнц",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-klaus-lieb.bio": "Унив.-проф. Клаус Либ возглавляет психиатрию и исследования в Майнце, эксперт по депрессии, тревожным расстройствам и доказательной психотерапии.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.title": "Профессор гематологии и онкологии | Терапия стволовыми клетками",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-matthias-theobald.bio": "Унив.-проф. Маттиас Теобальд — гематолог-онколог, специализация: лейкозы, лимфомы, трансплантация и современная поддерживающая терапия.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.title": "Профессор торакальной хирургии | Рак лёгких и малоинвазивная торакальная хирургия",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-med.-peter-grimminger.bio": "Унив.-проф. Петер Гриммингер специализируется на онкологических операциях лёгких, VATS/роботических методиках и междисциплинарной торакальной онкологии.",
+
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.title": "Профессор гастроэнтерологии и интервенционной эндоскопии",
+"people.doctors.universitaetsmedizin-mainz-univ.-prof.-dr.-ralf-kiesslich.bio": "Унив.-проф. Ральф Киссслих — новатор в эндоскопии, известен передовыми методами визуализации и сложными интервенционными процедурами ЖКТ.",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.title": "Администрация клиники | Universitätsmedizin Mainz",
+"people.doctors.universitaetsmedizin-mainz-waltraud-kreutz-gers.bio": "Вальтрауд Кройц-Герс участвует в администрировании клиники и оптимизации потоков пациентов в Universitätsmedizin Mainz.",
+
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.title": "Специалист по внутренним болезням | Гериатрия и реабилитация",
+"people.doctors.universitatsmedizin-rostock-dr-christiane-stehle.bio": "Др. Кристиане Штеле оказывает помощь по внутренним болезням и гериатрически ориентированную реабилитацию в Ростоке, с фокусом на мобильности, хрупкости (frailty) и полиморбидности.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.title": "Профессор неврологии | Двигательные расстройства и болезнь Паркинсона",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alexander-storch.bio": "Проф. Александр Шторх — невролог, специализируется на болезни Паркинсона и двигательных расстройствах, совмещая трансляционные исследования с пациент-ориентированной помощью.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.title": "Профессор офтальмологии | Сетчатка и макулярная патология",
+"people.doctors.universitatsmedizin-rostock-prof-dr-alper-oner.bio": "Проф. Альпер Ёнер — офтальмолог, специализация: заболевания сетчатки, макулярная дегенерация и современная витреоретинальная хирургия в Ростоке.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.title": "Профессор кардиальной и аортальной хирургии | Сердечная недостаточность и трансплантация",
+"people.doctors.universitatsmedizin-rostock-prof-dr-christian-d-etz.bio": "Проф. Кристиан Д. Эц выполняет сложные операции на аорте, клапанах и при сердечной недостаточности, включая механическую поддержку кровообращения и трансплантацию.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-habil-mittelmeier.title": "Профессор ортопедии | Эндопротезирование и регенеративная ортопедия",
+"people.doctors.universitatsmedizin-rostock-prof-dr-habil-mittelmeier.bio": "Проф. Петер Михаэль Миттельмайер — ортопед, фокус: эндопротезирование тазобедренного и коленного суставов, биоматериалы и суставосберегающие стратегии.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-joachim-bernd-krause.title": "Профессор нейрохирургии | Основание черепа и нейроонкология",
+"people.doctors.universitatsmedizin-rostock-prof-dr-joachim-bernd-krause.bio": "Проф. Йоахим Бернд Краузе лечит опухоли мозга, патологии основания черепа и цереброваскулярные заболевания с применением микроскопической хирургии и нейронавигации.",
+
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.title": "Профессор дерматологии | Рак кожи и дерматоонкология",
+"people.doctors.universitatsmedizin-rostock-prof-dr-steffen-emmert.bio": "Проф. Штеффен Эммерт — дерматолог, специализируется на меланоме и немеланомном раке кожи, фотодерматологии и профилактической дерматоонкологии.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.title": "Профессор радиационной онкологии | Прецизионная радиотерапия и лечение, направляемое визуализацией",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-anca-ligia-grosu.bio": "Проф. Анка-Лидия Гросу возглавляет радиационную онкологию во Фрайбурге; специализация: высокоточная радиотерапия, биологически и визуализационно ориентированное планирование, комбинированная радио-иммунотерапия сложных опухолей.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.title": "Профессор кардиологии | Интервенционная кардиология и острая кардиологическая помощь",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-christoph-a.-m.-bode.bio": "Проф. Кристоф А. М. Боде — ведущий интервенционный кардиолог Фрайбурга; фокус: коронарная и структурная патология сердца, исследования тромбоза и маршруты интенсивной кардиопомощи.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.title": "Профессор неврологии | Нейроиммунология и рассеянный склероз",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-heinz-wiendl.bio": "Проф. Хайнц Виндль — невролог, известен работами по нейроиммунологии и РС; интегрирует современные иммунотерапии и персонализированный мониторинг воспалительных заболеваний ЦНС.",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.title": "Профессор гастроинтестинальной онкологии | Рак пищевода и желудка",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-michael-quante.bio": "Проф. Михаэль Квантэ специализируется на пищеводе Барретта, профилактике и лечении рака пищевода и желудка, сочетая эндоскопию, онкологию и трансляционные исследования.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.title": "Профессор инфекционных болезней | Staphylococcus aureus и эндокардит",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-siegbert-r.-rieg.bio": "Проф. Зигберт Р. Риг возглавляет направление инфекционных заболеваний во Фрайбурге, эксперт по S. aureus, эндокардиту, антимикробной политике и инфекциям, связанным с климатом.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.title": "Профессор общей и висцеральной хирургии | Онкология ЖКТ и малоинвазивная хирургия",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stefan-fichtner-feigl.bio": "Проф. Штефан Фихтнер-Файгль выполняет сложные абдоминальные онкооперации, хирургию печени, поджелудочной железы и колоректальную хирургию с применением малоинвазивных и роботизированных технологий; исследует опухолевую иммунологию.",
+
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.title": "Профессор педиатрической иммунологии | Первичные иммунодефициты",
+"people.doctors.universittsklinikum-freiburg-prof.-dr.-stephan-ehl.bio": "Проф. Штефан Эль лечит детей с первичными иммунодефицитами в Центре CCI Фрайбурга, объединяя диагностику, генетику и таргетную иммунную терапию.",
+
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.title": "Руководитель неотложной медицины | Анестезиология и интенсивная терапия",
+"people.doctors.universittsklinikum-mannheim-dr.-florian-rehberger.bio": "Д-р Флориан Рехбергер руководит интегрированной экстренной медициной в Мангейме, специалист по анестезии, интенсивной терапии и оптимизации процессов неотложной помощи.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.title": "Профессор неврологии | Нейроонкология и нейроиммунология",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-michael-platten.bio": "Проф. Михаэль Платтен возглавляет неврологию в Мангейме, эксперт в области иммунологии опухолей мозга, рассеянного склероза и трансляционной нейроонкологии.",
+
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.title": "Профессор радиологии и ядерной медицины | Интервенционная и онкорадиология",
+"people.doctors.universittsklinikum-mannheim-prof.-dr.-stefan-schnberg.bio": "Проф. Штефан Шёнберг — директор радиологии в Мангейме, сильные стороны: интервенционная радиология, передовые МРТ/КТ и малоинвазивные методы лечения опухолей.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.title": "Профессор общей, висцеральной и трансплантационной хирургии | Гепатопанкреатобилиарная и роботизированная хирургия",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi.bio": "Проф. Андре Л. Михальевич возглавляет хирургию в Тюбингене, специализируется на операциях на печени, поджелудочной железе и колоректальной онкохирургии с использованием минимально инвазивных и роботизированных методов.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.title": "Профессор психиатрии и психотерапии | Нейропсихиатрия",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-andreas-j.-fallgatter.bio": "Проф. Андреас Й. Фалльгаттер развивает диагностику и лечение в психиатрии, сочетая нейрофизиологию и доказательные методы терапии.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.title": "Профессор челюстно-лицевой хирургии | Реконструкция лица и лечение расщелин",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-bernd-lethaus.bio": "Проф. Бернд Летаус специализируется на челюстно-лицевой и пластической реконструктивной хирургии, включая травмы, краниофациальные деформации и имплантологию.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.title": "Профессор кардиоторакальной и сосудистой хирургии | Взрослая и детская кардиохирургия",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-christian-schlensak.bio": "Проф. Кристиан Шлензак руководит кардиоторакальной и сосудистой хирургией в Тюбингене, сильные стороны: аортальная и клапанная хирургия, детская кардиохирургия.",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.title": "Профессор гематологии и онкологии | Клеточные терапии и трансляционная онкология",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-claudia-lengerke.bio": "Проф. Клаудия Ленгерке возглавляет гематологию и онкологию в Тюбингене, специализируется на резистентности к терапии, стволовых клетках и инновационных клинических исследованиях.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.title": "Профессор медицинской онкологии и пульмонологии | Рак печени и трансляционная онкология",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-lars-zender.bio": "Проф. Ларс Зендер руководит онкологией и пульмонологией, уделяя особое внимание гепатоцеллюлярной карциноме, методам под контролем визуализации и программам прецизионной онкологии.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.title": "Профессор психосоматической медицины и психотерапии | Расстройства пищевого поведения",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-stephan-zipfel.bio": "Проф. Штефан Ципфель возглавляет психосоматическую медицину в Тюбингене, сильные стороны: лечение расстройств пищевого поведения, интегративная психотерапия и психосоматика.",
+
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.title": "Профессор неврологии | Инсульт, стимуляция мозга и нейрореабилитация",
+"people.doctors.universittsklinikum-tbingen-prof.-dr.-ulf-ziemann.bio": "Проф. Ульф Циманн — директор неврологии в Тюбингене, специалист по инсульту, неинвазивной стимуляции мозга и восстановлению после инсульта.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.title": "Профессор кардиоторакальной и сосудистой хирургии | Минимально инвазивная хирургия клапанов и аорты",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-andreas-liebold.bio": "Проф. Андреас Либольд возглавляет кардио-, торакальную и сосудистую хирургию в Ульме, эксперт в малоинвазивной хирургии клапанов, операциях на аорте и механической поддержке кровообращения.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.title": "Профессор травматологии, хирургии кисти и реконструктивной хирургии | Компьютеризированная травматология",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-florian-gebhard.bio": "Проф. Флориан Гебхард руководит травматологией в Ульме, сильные стороны: лечение сложных переломов, политравм и компьютеризированные ортопедические методики.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.title": "Профессор гематологии и онкологии | ОМЛ/ХЛЛ и прецизионная гематология",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-hartmut-dhner.bio": "Проф. Хартмут Дёнер — ведущий гематолог в Ульме, специализируется на лейкозах (ОМЛ/ХЛЛ), стратификации риска и таргетных терапиях.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.title": "Профессор ЛОР / хирургии головы и шеи | Базис черепа и онкохирургия",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-k.-hoffmann.bio": "Проф. Томас К. Хоффманн специализируется на онкологии головы и шеи, хирургии основания черепа, реконструктивных операциях и иммунотерапии.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.title": "Профессор внутренней медицины I | Гастроэнтерология и онкология ЖКТ",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-thomas-seufferlein.bio": "Проф. Томас Зойфферляйн руководит внутренней медициной I в Ульме, фокус на гастроэнтерологии, гепатологии и онкологии ЖКТ.",
+
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.title": "Профессор кардиологии | Интервенционная кардиология и визуализация сердца",
+"people.doctors.universittsklinikum-ulm-prof.-dr.-wolfgang-rottbauer.bio": "Проф. Вольфганг Роттбауэр возглавляет кардиологию в Ульме, эксперт в интервенционной терапии, кардиовизуализации и лечении острых кардиологических состояний.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.title": "Главный врач профилактической и нутрициологической медицины | Внутренняя медицина и кардиология",
+"people.doctors.vivantes-humboldtklinikum-dr-frank-peter-job.bio": "Д-р Франк-Петер Йоб руководит Центром профилактики Vivantes и программами нутрициологии, предлагает комплексные чек-апы и профилактику кардиометаболических рисков.",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.title": "Профиль специалиста | Ортопедия и травматология",
+"people.doctors.vivantes-humboldtklinikum-dr-veit-mansmann.bio": "Проф. Вайт Мансманн (ортопедия/травматология) известен методами сохранения суставов и эндопротезированием; профиль ориентирован на пациентов, ищущих современную ортопедическую помощь в Берлине.",
+
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.title": "Заведующий гинекологией и акушерством | Тазовое дно и урогинекология",
+"people.doctors.vivantes-humboldtklinikum-dr-zaher-halwani.bio": "Д-р Захер Халвани возглавляет гинекологию и акушерство в Vivantes Humboldt, специализируется на урогинекологии, нарушениях тазового дна и комплексном ведении беременности.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.title": "Старший врач неотложной и внутренней медицины | Координация экстренной помощи",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-andreas-umgelter.bio": "Проф. Андреас Умгельтер укрепляет службы неотложной и внутренней медицины в Vivantes Humboldt, автор публикаций по интервенционной гепатологии и экстренной медицине.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.title": "Профессор неврологии | Эпилепсия, инсульт и женская неврология",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-bettina-schmitz.bio": "Проф. Беттина Шмитц — руководитель неврологии Vivantes Humboldt и Берлинского эпилептического центра; ключевые компетенции: лечение эпилепсии, инсультология и ЭЭГ-диагностика.",
+
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.title": "Профессор общей и висцеральной хирургии | Висцеральная онкология и сложная хирургия ЖКТ",
+"people.doctors.vivantes-humboldtklinikum-prof-dr-ulrich-adam.bio": "Проф. Ульрих Адам возглавляет общую и висцеральную хирургию в Vivantes Humboldt; руководит Центром висцеральной онкологии и выполняет сложные операции на ЖКТ и гепатобилиарной системе.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.title": "Заведующий гастроэнтерологией и гепатологией | Болезни ЖКТ и печени",
+"people.doctors.vivantes-humboldtklinikum-spandau-dr-tobias-weismuller.bio": "Прив.-доц. д-р Тобиас Вайсмюллер руководит гастроэнтерологией/гепатологией в Vivantes Humboldt и Spandau, специализируется на ВЗК, панкреатобилиарной патологии и заболеваниях печени.",
+
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.title": "Профессор кардиологии | Интервенционная кардиология и интенсивная терапия сердца",
+"people.doctors.vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens.bio": "Проф. Штеффен Беренс — заведующий кардиологией в Vivantes Spandau и Humboldt, специализируется на интервенционной кардиологии и интенсивной терапии сердечно-сосудистых заболеваний.",
+
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.title": "Главный врач кардиологии | Интервенционная кардиология и неотложная помощь при патологии сердца",
+"people.doctors.vivantes-klinikum-am-urban-dr-mark-hackbarth.bio": "Д-р Марк Хакбарт — заведующий кардиологией в Vivantes Klinikum am Urban (Берлин). Специализация: интервенционная кардиология, острые коронарные синдромы и современное лечение сердечной недостаточности.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.title": "Профессор психиатрии и психотерапии | Ранняя психозология и интегративное психическое здоровье",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf.bio": "Проф. Андреас Бехдольф руководит психиатрией Vivantes Urban & Friedrichshain. Международный эксперт в области ранних психозов, шизофрении и интегративной психосоциальной помощи.",
+
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.title": "Профессор общей и висцеральной хирургии | Минимально инвазивная хирургия и онкология ЖКТ",
+"people.doctors.vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner.bio": "Проф. Иоахим Вагнер — заведующий хирургией Vivantes Friedrichshain и Urban. Специализируется на лапароскопической и онкологической абдоминальной хирургии, включая колоректальные и гепатобилиарные операции.",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.title": "Профессор торакальной хирургии | Рак лёгких и малоинвазивные торакальные операции",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-christian-scholz.bio": "Проф. Кристиан Шольц возглавляет торакальную хирургию Vivantes Urban. Эксперт по раку лёгких, средостенным опухолям и современным малоинвазивным методикам (VATS, роботика).",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.title": "Профессор гастроэнтерологии | Онкология ЖКТ и эндоскопия",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-hans-scherubl.bio": "Проф. Ханс Шерюбль — гастроэнтеролог в Берлине, специализируется на онкологии ЖКТ, профилактике колоректального рака и продвинутой диагностической эндоскопии.",
+
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.title": "Профессор кардиохирургии | Хирургия клапанов и малоинвазивные процедуры",
+"people.doctors.vivantes-klinikum-am-urban-prof-dr-jonas-busch.bio": "Проф. Йонас Буш — заведующий кардиохирургией в Vivantes Urban. Специализация: реконструкция клапанов, малоинвазивная хирургия сердца и трансплантация.",
+
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.title": "Профессор гинекологии и акушерства | Онкогинекология и роботизированная хирургия",
+"people.doctors.vivantes-klinikum-neukolln-prof-dr-huseyin-ince.bio": "Проф. Хюсейн Инче — гинеколог и акушер Vivantes Neukölln. Специализация: онкогинекология, малоинвазивные и робот-ассистированные операции, комплексное здоровье женщин.",
+
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.title": "Заведующий гастроэнтерологией и гепатологией | Болезни печени и ВЗК",
+"people.doctors.vivantes-klinikum-spandau-dr-tobias-weismuller.bio": "Прив.-доц. д-р Тобиас Вайсмюллер руководит гастроэнтерологией Vivantes Spandau и Humboldt. Эксперт по воспалительным заболеваниям кишечника, гепатологии и панкреатобилиарной патологии.",
+
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.title": "Профессор кардиологии | Интервенционная кардиология и интенсивная терапия",
+"people.doctors.vivantes-klinikum-spandau-prof-dr-steffen-behrens.bio": "Проф. Штеффен Беренс — руководитель кардиологии Vivantes Spandau и Humboldt (Берлин). Специализируется на интервенционной кардиологии, острой кардиологической помощи и лечении сердечной недостаточности."
+
+
 }

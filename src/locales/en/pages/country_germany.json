@@ -1,5 +1,4 @@
-{
-    "country.germany.metaTitle": "Top Doctors in Germany | Department Heads & Leading Specialists | CareOverseas",
+{"country.germany.metaTitle": "Top Doctors in Germany | Department Heads & Leading Specialists | CareOverseas",
   "country.germany.metaDesc": "Explore Germany’s leading doctors and department heads at HELIOS, Charité, LMU, TUM, Cologne and more. Filter by specialty, clinic, and city. Independent directory with coordinator support.",
   "country.germany.title": "Germany — Doctors Directory",
   "country.germany.subtitle": "Independent, information-only directory of department heads and unit leaders at HELIOS, Charité, University Hospital Cologne, and other top centers.",
@@ -45,9 +44,9 @@
   "dict.dept.ent.name": "ENT (Otorhinolaryngology)",
   "dict.dept.gastroenterology.name": "Gastroenterology",
   "dict.dept.gastroenterology-and-diabetology.name": "Gastroenterology and Diabetology",
-  "dict.dept.general.name": "General",
+  
   "dict.dept.general-and-visceral-surgery.name": "General and Visceral Surgery",
-  "dict.dept.general-surgery.name": "General Surgery",
+  
   "dict.dept.geriatrics.name": "Geriatrics",
   "dict.dept.gynecology.name": "Gynecology",
   "dict.dept.hand-surgery.name": "Hand Surgery",
@@ -73,11 +72,11 @@
   "dict.dept.spinal-surgery.name": "Spinal Surgery",
   "dict.dept.thoracic-surgery.name": "Thoracic Surgery",
   "dict.dept.trauma-and-reconstructive-surgery.name": "Trauma and Reconstructive Surgery",
-  "dict.dept.trauma-surgery.name": "Trauma Surgery",
+  
   "dict.dept.university-cardio-center-internal-medicine-ii.name": "University Cardio Center – Internal Medicine II",
   "dict.dept.urology.name": "Urology",
   "dict.dept.vascular-surgery.name": "Vascular Surgery",
-  "dict.dept.vascular-surgery-and-medicine.name": "Vascular Surgery and Medicine",
+
 
   "dict.clinic.helios-krefeld.name": "HELIOS Klinikum Krefeld",
   "dict.clinic.helios-berlin-buch.name": "HELIOS Klinikum Berlin-Buch",

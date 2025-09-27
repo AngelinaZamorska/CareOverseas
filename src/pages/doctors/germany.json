@@ -1,8 +1,6 @@
 {
   "departments": [
-    {
-      "id": "general"
-    },
+    
     {
       "id": "ent"
     },
@@ -28,7 +26,7 @@
       "id": "gastroenterology"
     },
     {
-      "id": "vascular-surgery-and-medicine"
+      "id": "vascular-surgery"
     },
     {
       "id": "gynecology"
@@ -81,9 +79,7 @@
     {
       "id": "radiation-oncology"
     },
-    {
-      "id": "trauma-surgery"
-    },
+    
     {
       "id": "psychiatry"
     },
@@ -93,9 +89,7 @@
     {
       "id": "radiology"
     },
-    {
-      "id": "general-surgery"
-    },
+    
     {
       "id": "ophthalmology"
     },
@@ -384,7 +378,7 @@
     {
       "id": "charite-comprehensive-cancer-center-cccc-prof-dr-ulrich-keilholz",
       "name": "Prof. Dr. Ulrich Keilholz",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "charite-comprehensive-cancer-center-cccc",
       "cityId": "berlin",
       "keywords": [
@@ -395,7 +389,7 @@
         "charite",
         "charite-comprehensive-cancer-center-cccc",
         "comprehensive",
-        "general",
+        "general-and-visceral-surgery",
         "keilholz",
         "prof",
         "specialist",
@@ -406,14 +400,14 @@
     {
       "id": "ethianum-klinik-heidelberg-prof.-dr.-christoph-michalski",
       "name": "Prof. Dr. Christoph Michalski",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "ethianum-klinik-heidelberg",
       "cityId": "heidelberg",
       "keywords": [
         "christoph",
         "ethianum",
         "ethianum-klinik-heidelberg",
-        "general",
+        "general-and-visceral-surgery",
         "heidelberg",
         "klinik",
         "michalski",
@@ -590,7 +584,7 @@
     {
       "id": "helios-amper-klinikum-dachau-prof.-dr.-axel-kleespies",
       "name": "Prof. Dr. Axel Kleespies",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-amper-klinikum-dachau",
       "cityId": "dachau",
       "keywords": [
@@ -599,7 +593,7 @@
         "cancer",
         "center",
         "dachau",
-        "general",
+        "general-and-visceral-surgery",
         "head",
         "helios",
         "helios-amper-klinikum-dachau",
@@ -714,7 +708,7 @@
     {
       "id": "helios-frankenwald-klinik-kronach-dr.-michael-moritz",
       "name": "Dr. Michael Moritz",
-      "deptId": "vascular-surgery-and-medicine",
+      "deptId": "vascular-surgery",
       "clinicId": "helios-frankenwald-klinik-kronach",
       "cityId": "kronach",
       "keywords": [
@@ -734,7 +728,7 @@
         "specialist",
         "surgery",
         "vascular",
-        "vascular-surgery-and-medicine"
+        "vascular-surgery"
       ]
     },
     {
@@ -974,7 +968,7 @@
       "keywords": [
         "and",
         "emergency",
-        "general",
+        "general-and-visceral-surgery",
         "general-and-visceral-surgery",
         "helios",
         "helios-klinik-rottweil",
@@ -1177,7 +1171,7 @@
       "keywords": [
         "and",
         "benjamin",
-        "general",
+        "general-and-visceral-surgery",
         "general-and-visceral-surgery",
         "head",
         "helios",
@@ -1418,14 +1412,14 @@
     {
       "id": "helios-klinikum-berlinbuch-dr-christoph-von-sonnleithner",
       "name": "Dr. Christoph von Sonnleithner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "christoph",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1437,14 +1431,14 @@
     {
       "id": "helios-klinikum-berlinbuch-dr-david-schwaiberger",
       "name": "Dr. David Schwaiberger",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "david",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1455,13 +1449,13 @@
     {
       "id": "helios-klinikum-berlinbuch-dr-peter-reichardt",
       "name": "Dr. Peter Reichardt",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1473,7 +1467,7 @@
     {
       "id": "helios-klinikum-berlinbuch-endoklinik-berlin-prof-dr-daniel-kendoff",
       "name": "Prof. Dr. Daniel Kendoff",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch-endoklinik-berlin",
       "cityId": "berlin",
       "keywords": [
@@ -1481,7 +1475,7 @@
         "berlinbuch",
         "daniel",
         "endoklinik",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch-endoklinik-berlin",
         "kendoff",
@@ -1493,14 +1487,14 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-bertram-glaß",
       "name": "Prof. Dr. Bertram Glaß",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "bertram",
-        "general",
+        "general-and-visceral-surgery",
         "glaß",
         "helios",
         "helios-klinikum-berlinbuch",
@@ -1512,14 +1506,14 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-frank-kolligs",
       "name": "Prof. Dr. Frank Kolligs",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "frank",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1531,13 +1525,13 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-georg-hagemann",
       "name": "Prof. Dr. Georg Hagemann",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
-        "general",
+        "general-and-visceral-surgery",
         "georg",
         "hagemann",
         "helios",
@@ -1550,14 +1544,14 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-henning-t-baberg",
       "name": "Prof. Dr. Henning T. Baberg",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "baberg",
         "berlin",
         "berlinbuch",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "henning",
@@ -1569,14 +1563,14 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-marc-bloching",
       "name": "Prof. Dr. Marc Bloching",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "bloching",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1588,13 +1582,13 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-roger-wahba",
       "name": "Prof. Dr. Roger Wahba",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1607,14 +1601,14 @@
     {
       "id": "helios-klinikum-berlinbuch-prof-dr-stefan-dresel",
       "name": "Prof. Dr. Stefan Dresel",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-berlinbuch",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "berlinbuch",
         "dresel",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-berlinbuch",
         "klinikum",
@@ -1626,7 +1620,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-dr-adam-czerwinski",
       "name": "Dr. Adam Czerwinski",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1635,7 +1629,7 @@
         "berlin",
         "czerwinski",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1646,7 +1640,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-dr-axel-reinhardt",
       "name": "Dr. Axel Reinhardt",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1654,7 +1648,7 @@
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1666,7 +1660,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-dr-borge-arndt",
       "name": "Dr. Börge Arndt",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1675,7 +1669,7 @@
         "berlin",
         "börge",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1686,7 +1680,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-dr-christian-althoff",
       "name": "Dr. Christian Althoff",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1695,7 +1689,7 @@
         "berlin",
         "christian",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1706,14 +1700,14 @@
     {
       "id": "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn-dr-mohamed-zaatar",
       "name": "Dr. Mohamed Zaatar",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn",
       "cityId": "berlin",
       "keywords": [
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "heckeshorn",
         "helios",
         "helios-klinikum-emil-von-behring-lungenklinik-heckeshorn",
@@ -1728,7 +1722,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-cemil-ozcelik",
       "name": "Prof. Dr. Cemil Özcelik",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1736,7 +1730,7 @@
         "berlin",
         "cemil",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1749,7 +1743,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-eckart-schott",
       "name": "Prof. Dr. Eckart Schott",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1757,7 +1751,7 @@
         "berlin",
         "eckart",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1770,14 +1764,14 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-georg-hagemann",
       "name": "Prof. Dr. Georg Hagemann",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "georg",
         "hagemann",
         "helios",
@@ -1791,7 +1785,7 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-henning-t-baberg",
       "name": "Prof. Dr. Henning T. Baberg",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
@@ -1799,7 +1793,7 @@
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "henning",
@@ -1812,14 +1806,14 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-marc-h-jansen",
       "name": "Prof. Dr. Marc H. Jansen",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "jansen",
@@ -1833,14 +1827,14 @@
     {
       "id": "helios-klinikum-emil-von-behring-prof-dr-roger-wahba",
       "name": "Prof. Dr. Roger Wahba",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-emil-von-behring",
       "cityId": "berlin",
       "keywords": [
         "behring",
         "berlin",
         "emil",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-emil-von-behring",
         "klinikum",
@@ -1854,12 +1848,12 @@
     {
       "id": "helios-klinikum-erfurt-dr-dr-johannes-wikner",
       "name": "Dr. Dr. Johannes Wikner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "johannes",
@@ -1871,14 +1865,14 @@
     {
       "id": "helios-klinikum-erfurt-dr-med-ali-ezzati",
       "name": "Dr. med. Ali Ezzati",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "ali",
         "erfurt",
         "ezzati",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -1889,13 +1883,13 @@
     {
       "id": "helios-klinikum-erfurt-dr-med-hendrik-bergert",
       "name": "Dr. med. Hendrik Bergert",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "bergert",
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "hendrik",
@@ -1907,13 +1901,13 @@
     {
       "id": "helios-klinikum-erfurt-dr-med-jens-uwe-bauer",
       "name": "Dr. med. Jens-Uwe Bauer",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "bauer",
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "jens",
@@ -1926,12 +1920,12 @@
     {
       "id": "helios-klinikum-erfurt-dr-med-jorg-kluge",
       "name": "Dr. med. Jörg Kluge",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "jörg",
@@ -1944,12 +1938,12 @@
     {
       "id": "helios-klinikum-erfurt-dr-med-thomas-werner",
       "name": "Dr. med. Thomas Werner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -1962,13 +1956,13 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-alexander-lauten",
       "name": "Prof. Dr. med. Alexander Lauten",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "alexander",
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -1981,14 +1975,14 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-attila-dubecz",
       "name": "Prof. Dr. med. Attila Dubecz",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "attila",
         "dubecz",
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -2000,12 +1994,12 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-habil-rudiger-gerlach",
       "name": "Prof. Dr. med. habil. Rüdiger Gerlach",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "gerlach",
         "habil",
         "helios",
@@ -2020,12 +2014,12 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-heinrich-v-groesdonk",
       "name": "Prof. Dr. med. Heinrich V. Groesdonk",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "groesdonk",
         "heinrich",
         "helios",
@@ -2039,12 +2033,12 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-holger-kaftan",
       "name": "Prof. Dr. med. Holger Kaftan",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "holger",
@@ -2058,12 +2052,12 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-med-wolfgang-neuhofer",
       "name": "Prof. Dr. med. Wolfgang Neuhofer",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -2077,12 +2071,12 @@
     {
       "id": "helios-klinikum-erfurt-prof-dr-thomas-steiner",
       "name": "Prof. Dr. Thomas Steiner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "helios-klinikum-erfurt",
       "cityId": "erfurt",
       "keywords": [
         "erfurt",
-        "general",
+        "general-and-visceral-surgery",
         "helios",
         "helios-klinikum-erfurt",
         "klinikum",
@@ -2239,7 +2233,7 @@
         "darmz",
         "darmzentrum",
         "erich",
-        "general",
+        "general-and-visceral-surgery",
         "general-and-visceral-surgery",
         "head",
         "helios",
@@ -2750,13 +2744,13 @@
     {
       "id": "medical-park-berlin-humboldtmuhle-prof-dr-karsten-e-dreinhofer",
       "name": "Prof. Dr. Karsten E. Dreinhöfer",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "medical-park-berlin-humboldtmuhle",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "dreinhöfer",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtmuhle",
         "karsten",
         "medical",
@@ -2769,13 +2763,13 @@
     {
       "id": "medical-park-berlin-humboldtmuhle-prof-dr-martin-ebinger",
       "name": "Prof. Dr. Martin Ebinger",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "medical-park-berlin-humboldtmuhle",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "ebinger",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtmuhle",
         "martin",
         "medical",
@@ -2844,13 +2838,13 @@
     {
       "id": "schlossparkklinik-dr-andre-kwalek",
       "name": "Dr. André Kwalek",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "andr",
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "kwalek",
         "schlossparkklinik",
         "specialist"
@@ -2859,13 +2853,13 @@
     {
       "id": "schlossparkklinik-dr-dominik-schuster",
       "name": "Dr. Dominik Schuster",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "dominik",
-        "general",
+        "general-and-visceral-surgery",
         "schlossparkklinik",
         "schuster",
         "specialist"
@@ -2874,12 +2868,12 @@
     {
       "id": "schlossparkklinik-dr-shahram-yousefi",
       "name": "Dr. Shahram Yousefi",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "schlossparkklinik",
         "shahram",
         "specialist",
@@ -2889,13 +2883,13 @@
     {
       "id": "schlossparkklinik-prof-dr-carsten-kamphues",
       "name": "Prof. Dr. Carsten Kamphues",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "carsten",
-        "general",
+        "general-and-visceral-surgery",
         "kamphues",
         "prof",
         "schlossparkklinik",
@@ -2905,12 +2899,12 @@
     {
       "id": "schlossparkklinik-prof-dr-theodoros-kombos",
       "name": "Prof. Dr. Theodoros Kombos",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "kombos",
         "prof",
         "schlossparkklinik",
@@ -2921,12 +2915,12 @@
     {
       "id": "schlossparkklinik-prof-dr-thomas-lempert",
       "name": "Prof. Dr. Thomas Lempert",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "schlossparkklinik",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "lempert",
         "prof",
         "schlossparkklinik",
@@ -3000,7 +2994,7 @@
         "ducts",
         "focus",
         "friess",
-        "general",
+        "general-and-visceral-surgery",
         "general-and-visceral-surgery",
         "helmut",
         "isar",
@@ -3143,7 +3137,7 @@
     {
       "id": "universitaetsklinikum-bernau-dr.-arndt-von-kirchbach",
       "name": "Dr. Arndt von Kirchbach",
-      "deptId": "trauma-surgery",
+      "deptId": "trauma-and-reconstructive-surgery",
       "clinicId": "universitaetsklinikum-bernau",
       "cityId": "bernau-bei-berlin",
       "keywords": [
@@ -3162,7 +3156,7 @@
         "surg",
         "surgery",
         "trauma",
-        "trauma-surgery",
+        "trauma-and-reconstructive-surgery",
         "universitaetsklinikum-bernau",
         "universitätsklinikum",
         "von"
@@ -3272,7 +3266,7 @@
     {
       "id": "universitaetsklinikum-brandenburg-havel-dr.-arndt-von-kirchbach",
       "name": "Dr. Arndt von Kirchbach",
-      "deptId": "trauma-surgery",
+      "deptId": "trauma-and-reconstructive-surgery",
       "clinicId": "universitaetsklinikum-brandenburg-havel",
       "cityId": "brandenburg-an-der-havel",
       "keywords": [
@@ -3281,7 +3275,7 @@
         "brandenburg",
         "brandenburg-an-der-havel",
         "der",
-        "general",
+        "general-and-visceral-surgery",
         "havel",
         "heads",
         "kirchbach",
@@ -3290,7 +3284,7 @@
         "specialist",
         "surgery",
         "trauma",
-        "trauma-surgery",
+        "trauma-and-reconstructive-surgery",
         "universitaetsklinikum-brandenburg-havel",
         "universitätsklinikum",
         "von"
@@ -3508,7 +3502,7 @@
     {
       "id": "universitaetsklinikum-cottbus-pd-dr.-rainer-kube",
       "name": "PD Dr. Rainer Kube",
-      "deptId": "general-surgery",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitaetsklinikum-cottbus",
       "cityId": "cottbus",
       "keywords": [
@@ -3516,8 +3510,8 @@
         "broad",
         "cottbus",
         "descri",
-        "general",
-        "general-surgery",
+        "general-and-visceral-surgery",
+        "general-and-visceral-surgery",
         "kube",
         "leads",
         "rainer",
@@ -3598,7 +3592,7 @@
     {
       "id": "universitaetsklinikum-duesseldorf-prof.-dr.-med.-habil.-wolfram-trudo-knoefel",
       "name": "Prof. Dr. med. habil. Wolfram Trudo Knoefel",
-      "deptId": "general-surgery",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitaetsklinikum-duesseldorf",
       "cityId": "duesseldorf",
       "keywords": [
@@ -3606,8 +3600,8 @@
         "duesseldorf",
         "düsseldorf",
         "expert",
-        "general",
-        "general-surgery",
+        "general-and-visceral-surgery",
+        "general-and-visceral-surgery",
         "habil",
         "head",
         "knoefel",
@@ -3848,14 +3842,14 @@
     {
       "id": "universitaetsklinikum-regensburg-prof.-dr.-hans-juergen-schlitt",
       "name": "Prof. Dr. Hans Jürgen Schlitt",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitaetsklinikum-regensburg",
       "cityId": "regensburg",
       "keywords": [
         "and",
         "comple",
         "descri",
-        "general",
+        "general-and-visceral-surgery",
         "hans",
         "jürgen",
         "liver",
@@ -4567,12 +4561,12 @@
     {
       "id": "universitatsmedizin-rostock-dr-christiane-stehle",
       "name": "Dr. Christiane Stehle",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "christiane",
-        "general",
+        "general-and-visceral-surgery",
         "rostock",
         "specialist",
         "stehle",
@@ -4583,12 +4577,12 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-alexander-storch",
       "name": "Prof. Dr. Alexander Storch",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "alexander",
-        "general",
+        "general-and-visceral-surgery",
         "prof",
         "rostock",
         "specialist",
@@ -4600,12 +4594,12 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-alper-oner",
       "name": "Prof. Dr. Alper Öner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "alper",
-        "general",
+        "general-and-visceral-surgery",
         "prof",
         "rostock",
         "specialist",
@@ -4617,13 +4611,13 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-christian-d-etz",
       "name": "Prof. Dr. Christian D. Etz",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "christian",
         "etz",
-        "general",
+        "general-and-visceral-surgery",
         "prof",
         "rostock",
         "specialist",
@@ -4634,11 +4628,11 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-habil-mittelmeier",
       "name": "Prof. Dr. habil. Mittelmeier",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
-        "general",
+        "general-and-visceral-surgery",
         "habil",
         "mittelmeier",
         "prof",
@@ -4651,12 +4645,12 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-joachim-bernd-krause",
       "name": "Prof. Dr. Joachim Bernd Krause",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "bernd",
-        "general",
+        "general-and-visceral-surgery",
         "joachim",
         "krause",
         "prof",
@@ -4669,12 +4663,12 @@
     {
       "id": "universitatsmedizin-rostock-prof-dr-steffen-emmert",
       "name": "Prof. Dr. Steffen Emmert",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universitatsmedizin-rostock",
       "cityId": "rostock",
       "keywords": [
         "emmert",
-        "general",
+        "general-and-visceral-surgery",
         "prof",
         "rostock",
         "specialist",
@@ -4810,7 +4804,7 @@
         "fichtner",
         "freiburg",
         "gastrointestinal",
-        "general",
+        "general-and-visceral-surgery",
         "general-and-visceral-surgery",
         "organ",
         "prof",
@@ -4914,13 +4908,13 @@
     {
       "id": "universittsklinikum-tbingen-prof.-dr.-andr-l.-mihaljevi",
       "name": "Prof. Dr. André L. Mihaljević",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "universittsklinikum-tbingen",
       "cityId": "tuebingen",
       "keywords": [
         "and",
         "andr",
-        "general",
+        "general-and-visceral-surgery",
         "head",
         "mihaljevi",
         "prof",
@@ -4942,7 +4936,7 @@
         "and",
         "andreas",
         "fallgatter",
-        "general",
+        "general-and-visceral-surgery",
         "head",
         "prof",
         "psychiatry",
@@ -5129,7 +5123,7 @@
     {
       "id": "universittsklinikum-ulm-prof.-dr.-florian-gebhard",
       "name": "Prof. Dr. Florian Gebhard",
-      "deptId": "trauma-surgery",
+      "deptId": "trauma-and-reconstructive-surgery",
       "clinicId": "universittsklinikum-ulm",
       "cityId": "ulm",
       "keywords": [
@@ -5142,7 +5136,7 @@
         "specialist",
         "surgery",
         "trauma",
-        "trauma-surgery",
+        "trauma-and-reconstructive-surgery",
         "ulm",
         "universittsklinikum-ulm",
         "universitätsklinikum"
@@ -5245,13 +5239,13 @@
     {
       "id": "vivantes-humboldtklinikum-dr-frank-peter-job",
       "name": "Dr. Frank Peter Job",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "frank",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "job",
         "peter",
@@ -5263,12 +5257,12 @@
     {
       "id": "vivantes-humboldtklinikum-dr-veit-mansmann",
       "name": "Dr. Veit Mansmann",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "mansmann",
         "specialist",
@@ -5280,12 +5274,12 @@
     {
       "id": "vivantes-humboldtklinikum-dr-zaher-halwani",
       "name": "Dr. Zaher Halwani",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "halwani",
         "humboldtklinikum",
         "specialist",
@@ -5297,13 +5291,13 @@
     {
       "id": "vivantes-humboldtklinikum-prof-dr-andreas-umgelter",
       "name": "Prof. Dr. Andreas Umgelter",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "andreas",
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "prof",
         "specialist",
@@ -5315,13 +5309,13 @@
     {
       "id": "vivantes-humboldtklinikum-prof-dr-bettina-schmitz",
       "name": "Prof. Dr. Bettina Schmitz",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "bettina",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "prof",
         "schmitz",
@@ -5333,13 +5327,13 @@
     {
       "id": "vivantes-humboldtklinikum-prof-dr-ulrich-adam",
       "name": "Prof. Dr. Ulrich Adam",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum",
       "cityId": "berlin",
       "keywords": [
         "adam",
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "prof",
         "specialist",
@@ -5351,12 +5345,12 @@
     {
       "id": "vivantes-humboldtklinikum-spandau-dr-tobias-weismuller",
       "name": "Dr. Tobias Weismüller",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum-spandau",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "spandau",
         "specialist",
@@ -5369,13 +5363,13 @@
     {
       "id": "vivantes-humboldtklinikum-spandau-prof-dr-steffen-behrens",
       "name": "Prof. Dr. Steffen Behrens",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-humboldtklinikum-spandau",
       "cityId": "berlin",
       "keywords": [
         "behrens",
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "humboldtklinikum",
         "prof",
         "spandau",
@@ -5388,12 +5382,12 @@
     {
       "id": "vivantes-klinikum-am-urban-dr-mark-hackbarth",
       "name": "Dr. Mark Hackbarth",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "hackbarth",
         "klinikum",
         "mark",
@@ -5406,7 +5400,7 @@
     {
       "id": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-andreas-bechdolf",
       "name": "Prof. Dr. Andreas Bechdolf",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain",
       "cityId": "berlin",
       "keywords": [
@@ -5414,7 +5408,7 @@
         "bechdolf",
         "berlin",
         "friedrichshain",
-        "general",
+        "general-and-visceral-surgery",
         "klinikum",
         "prof",
         "specialist",
@@ -5426,13 +5420,13 @@
     {
       "id": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain-prof-dr-joachim-wagner",
       "name": "Prof. Dr. Joachim Wagner",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban-klinikum-im-friedrichshain",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "friedrichshain",
-        "general",
+        "general-and-visceral-surgery",
         "joachim",
         "klinikum",
         "prof",
@@ -5446,13 +5440,13 @@
     {
       "id": "vivantes-klinikum-am-urban-prof-dr-christian-scholz",
       "name": "Prof. Dr. Christian Scholz",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "christian",
-        "general",
+        "general-and-visceral-surgery",
         "klinikum",
         "prof",
         "scholz",
@@ -5465,12 +5459,12 @@
     {
       "id": "vivantes-klinikum-am-urban-prof-dr-hans-scherubl",
       "name": "Prof. Dr. Hans Scherübl",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "hans",
         "klinikum",
         "prof",
@@ -5484,13 +5478,13 @@
     {
       "id": "vivantes-klinikum-am-urban-prof-dr-jonas-busch",
       "name": "Prof. Dr. Jonas Busch",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-am-urban",
       "cityId": "berlin",
       "keywords": [
         "berlin",
         "busch",
-        "general",
+        "general-and-visceral-surgery",
         "jonas",
         "klinikum",
         "prof",
@@ -5503,12 +5497,12 @@
     {
       "id": "vivantes-klinikum-neukolln-prof-dr-huseyin-ince",
       "name": "Prof. Dr. Hüseyin Ince",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-neukolln",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "hüseyin",
         "ince",
         "klinikum",
@@ -5522,12 +5516,12 @@
     {
       "id": "vivantes-klinikum-spandau-dr-tobias-weismuller",
       "name": "Dr. Tobias Weismüller",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-spandau",
       "cityId": "berlin",
       "keywords": [
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "klinikum",
         "spandau",
         "specialist",
@@ -5540,13 +5534,13 @@
     {
       "id": "vivantes-klinikum-spandau-prof-dr-steffen-behrens",
       "name": "Prof. Dr. Steffen Behrens",
-      "deptId": "general",
+      "deptId": "general-and-visceral-surgery",
       "clinicId": "vivantes-klinikum-spandau",
       "cityId": "berlin",
       "keywords": [
         "behrens",
         "berlin",
-        "general",
+        "general-and-visceral-surgery",
         "klinikum",
         "prof",
         "spandau",
