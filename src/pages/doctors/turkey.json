@@ -1,13 +1,6 @@
 {
   "doctors": [
-    {
-      "id": "acibadem-istanbul-cardiology-slot",
-      "name": "—",
-      "deptId": "cardiology",
-      "clinicId": "acibadem-maslak",
-      "cityId": "istanbul",
-      "keywords": ["cardiology", "heart", "angiography"]
-    },
+    
     {
     "id": "maslak-akiyol-cardiology",
     "name": "Prof. Dr. Ahmet Akyol",
@@ -142,14 +135,7 @@
     "cityId": "istanbul",
     "keywords": ["neurosurgery", "vascular", "skull base"]
   },
-    {
-      "id": "liv-ankara-oncology-slot",
-      "name": "—",
-      "deptId": "oncology",
-      "clinicId": "liv-ankara",
-      "cityId": "ankara",
-      "keywords": ["oncology", "chemotherapy", "radiation"]
-    },
+    
     
     {
     "id": "liv-ulus-cardiology-enis-oguz",
@@ -578,21 +564,14 @@
     "cityId": "ankara",
     "keywords": ["rehabilitation", "sports medicine"]
   },
+    
     {
-      "id": "medicana-istanbul-orthopedics-slot",
-      "name": "—",
-      "deptId": "orthopedics",
-      "clinicId": "medicana-international-istanbul",
-      "cityId": "istanbul",
-      "keywords": ["orthopedics", "joint", "spine"]
-    },
-    {
-      "id": "memorial-antalya-ivf-slot",
-      "name": "—",
-      "deptId": "ivf",
-      "clinicId": "memorial-antalya",
-      "cityId": "antalya",
-      "keywords": ["ivf", "fertility", "embryology"]
+      "id": "memorial-antalya-ivf-safak-olgan",
+  "name": "Prof. Dr. Şafak Olgan",
+  "deptId": "ivf",
+  "clinicId": "memorial-antalya",
+  "cityId": "antalya",
+  "keywords": ["IVF","ICSI","PGT","REI"]
     },
     {
     "id": "memorial-sisli-ophthalmology-abdullah-ozkaya",
@@ -936,14 +915,7 @@
     "cityId": "ankara",
     "keywords": ["general surgery", "laparoscopy"]
   },
-    {
-      "id": "np-istanbul-brain-neurosurgery-slot",
-      "name": "—",
-      "deptId": "neurosurgery",
-      "clinicId": "np-istanbul-brain",
-      "cityId": "istanbul",
-      "keywords": ["neurosurgery", "spine", "epilepsy"]
-    },
+    
     {
     "id": "np-istanbul-brain-psychiatry-nevzat-tarhan",
     "name": "Prof. Dr. K. Nevzat Tarhan",
@@ -1080,30 +1052,23 @@
     "cityId": "istanbul",
     "keywords": ["speech therapy", "language disorders"]
   },
+    
     {
-      "id": "anadolu-gebze-oncology-slot",
-      "name": "—",
-      "deptId": "oncology",
-      "clinicId": "anadolu-gebze",
-      "cityId": "kocaeli",
-      "keywords": ["oncology", "radiation", "chemotherapy"]
-    },
-    {
-      "id": "medipol-mega-transplant-slot",
-      "name": "—",
-      "deptId": "transplant",
-      "clinicId": "medipol-mega",
-      "cityId": "istanbul",
-      "keywords": ["transplant", "liver", "kidney"]
-    },
+  "id": "medipol-mega-transplant-murat-dayangac",
+  "name": "Prof. Dr. Murat Dayangaç",
+  "deptId": "transplant",
+  "clinicId": "medipol-mega",
+  "cityId": "istanbul",
+  "keywords": ["liver transplant","kidney transplant","HPB surgery"]
+},
     { "id": "cardiovascular-surgery" },
     {
-      "id": "dunyagoz-istanbul-ophthalmology-slot",
-      "name": "—",
-      "deptId": "ophthalmology",
-      "clinicId": "dunyagoz-istanbul",
-      "cityId": "istanbul",
-      "keywords": ["ophthalmology", "lasik", "cataract"]
+      "id": "dunyagoz-etiler-retina-cengiz-aras",
+  "name": "Prof. Dr. Cengiz Aras",
+  "deptId": "ophthalmology-retina",
+  "clinicId": "dunyagoz-istanbul-etiler",
+  "cityId": "istanbul",
+  "keywords": ["retina","vitrectomy","cataract","laser"]
     },
     { "id": "anadolu-istanbul-oncology-yesim-yildirim", "name": "Prof. Dr. Yeşim Yıldırım", "deptId": "oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["medical oncology","breast","lung","chemotherapy"] },
   { "id": "anadolu-istanbul-oncology-bulent-karagoz", "name": "Prof. Dr. Bülent Karagöz", "deptId": "oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["medical oncology","gi cancers","targeted therapy"] },
@@ -1442,7 +1407,10 @@
     { "id": "infectious-diseases" },
     { "id": "pmr" },
     { "id": "interventional-radiology" },
-    { "id": "thoracic-surgery" },
+    { "id": "rehabilitation" },      
+{ "id": "child-psychiatry" },     
+{ "id": "speech-therapy" },       
+{ "id": "thoracic-diseases" }, 
     { "id": "pulmonology" },
     { "id": "hematology" },
     { "id": "obgyn" },
@@ -1475,7 +1443,7 @@
     { "id": "acibadem-altunizade", "cityId": "istanbul" },
     { "id": "liv-ankara", "cityId": "ankara" },
     { "id": "liv-ulus", "cityId": "istanbul" },
-    { "id": "liv-vadi", "cityId": "istanbul" },
+    { "id": "liv-vadistanbul", "cityId": "istanbul" },
     { "id": "memorial-antalya", "cityId": "antalya" },
     { "id": "memorial-sisli", "cityId": "istanbul" },
     { "id": "medicana-international-istanbul", "cityId": "istanbul" },
