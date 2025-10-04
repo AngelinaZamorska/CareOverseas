@@ -1,81 +1,1075 @@
 {
-  "country.turkey.metaTitle": "تركيا — دليل الأطباء | كير أوفرسيز",
-  "country.turkey.metaDesc": "تصفّح أبرز الأطباء في تركيا. فلترة حسب العيادة والقسم والمدينة.",
-  "country.turkey.title": "تركيا — دليل الأطباء",
-  "country.turkey.subtitle": "صفحة معلومات: إسطنبول، أنطاليا، أنقرة — Acibadem و Liv و Medicana و Medistate و NP Istanbul Brain Hospital و Memorial و Anadolu.",
-  "country.turkey.searchPlaceholder": "ابحث بالاسم أو التخصص أو العيادة",
-  "country.turkey.clear": "مسح",
-  "country.turkey.filter.department": "القسم",
-  "country.turkey.filter.clinic": "العيادة",
-  "country.turkey.filter.city": "المدينة",
-  "country.turkey.sortBy": "رتّب حسب:",
-  "country.turkey.sort.name": "الاسم",
-  "country.turkey.sort.clinic": "العيادة",
-  "country.turkey.sort.city": "المدينة",
-  "country.turkey.empty": "لا توجد نتائج. جرّب تغيير الفلاتر أو البحث.",
-  "country.turkey.emptyHint": "جرّب مدينة أو عيادة أو قسمًا آخر.",
-  "country.turkey.backHome": "← العودة للرئيسية",
-  "country.turkey.contactCta": "الاتصال بالمنسّق",
-  "country.turkey.breadcrumbHome": "الرئيسية",
-  "country.turkey.stats.doctorsLabel": "أطباء",
-  "country.turkey.stats.clinicsLabel": "عيادات",
-  "country.turkey.stats.citiesLabel": "مدن",
-  "country.turkey.stats.departmentsLabel": "أقسام",
-  "country.turkey.usp.expertsTitle": "خبراء رفيعو المستوى لحالتك",
-  "country.turkey.usp.expertsDesc": "نرشّح رؤساء الأقسام وقادة الوحدات التخصّصية.",
-  "country.turkey.usp.safeTitle": "شفافية وراحة بال",
-  "country.turkey.usp.safeDesc": "تنسيق واضح، مستندات بلغتك، بلا عقود تسويق.",
-  "country.turkey.usp.careTitle": "دعم يضع الإنسان أولاً",
-  "country.turkey.usp.careDesc": "مرافقة شخصية من أول رسالة حتى العودة إلى المنزل.",
-  "country.turkey.pitch.title": "لست متأكدًا من الطبيب المناسب لك؟",
-  "country.turkey.pitch.subtitle": "أخبرني بالتشخيص والتفضيلات. سأوفّقك مع رئيس القسم المناسب، أعدّ الطلب، وأساعدك في الحصول على رد سريع من العيادة.",
-  "country.turkey.pitch.badge1": "طلب أوّلي مجاني",
-  "country.turkey.pitch.badge2": "رد سريع",
-  "country.turkey.pitch.badge3": "مساعدة في المستندات",
-  "country.turkey.pitch.cta": "الاتصال بالمنسّق",
+  "country.turkey.metaTitle": "تركيا — دليل الأطباء | CareOverseas",
+"country.turkey.metaDesc": "تصفح أفضل الأطباء في تركيا. يمكنك التصفية حسب المستشفى، التخصص أو المدينة.",
+"country.turkey.title": "تركيا — دليل الأطباء",
+"country.turkey.subtitle": "دليل معلوماتي. Acibadem، Liv، Memorial، Medicana، Medistate، Medipol، NP Brain، Anadolu، Dünyagöz — إسطنبول، أنقرة، أنطاليا، كوجالي.",
+"country.turkey.searchPlaceholder": "ابحث بالاسم أو التخصص أو المستشفى",
+"country.turkey.clear": "مسح",
+"country.turkey.filter.department": "القسم",
+"country.turkey.filter.clinic": "المستشفى",
+"country.turkey.filter.city": "المدينة",
+"country.turkey.sortBy": "ترتيب حسب:",
+"country.turkey.sort.name": "الاسم",
+"country.turkey.sort.clinic": "المستشفى",
+"country.turkey.sort.city": "المدينة",
+"country.turkey.empty": "لا توجد نتائج. حاول تغيير الفلاتر أو البحث.",
+"country.turkey.emptyHint": "جرّب مدينة أو مستشفى أو تخصصًا آخر.",
+"country.turkey.backHome": "← العودة إلى الصفحة الرئيسية",
+"country.turkey.contactCta": "اتصل بالمنسق",
+"country.turkey.breadcrumbHome": "الصفحة الرئيسية",
+"country.turkey.stats.doctorsLabel": "الأطباء",
+"country.turkey.stats.clinicsLabel": "المستشفيات",
+"country.turkey.stats.citiesLabel": "المدن",
+"country.turkey.stats.departmentsLabel": "الأقسام",
+"country.turkey.usp.expertsTitle": "أفضل الخبراء لحالتك",
+"country.turkey.usp.expertsDesc": "نختار رؤساء الأقسام وقادة الوحدات المتخصصة.",
+"country.turkey.usp.safeTitle": "شفافية وراحة تامة",
+"country.turkey.usp.safeDesc": "تنسيق واضح، مستندات بلغتك، بدون عقود تسويقية.",
+"country.turkey.usp.careTitle": "دعم إنساني ومتفهم",
+"country.turkey.usp.careDesc": "مرافقة شخصية منذ أول تواصل وحتى عودتك إلى الوطن.",
+"country.turkey.pitch.title": "لست متأكدًا أي طبيب هو الأنسب لحالتك؟",
+"country.turkey.pitch.subtitle": "أخبرني عن التشخيص وتفضيلاتك. سأختار لك رئيس القسم المناسب، أجهز الطلب، وأساعدك في الحصول على رد سريع من المستشفى.",
+"country.turkey.pitch.badge1": "طلب مبدئي مجاني",
+"country.turkey.pitch.badge2": "استجابة سريعة",
+"country.turkey.pitch.badge3": "مساعدة في المستندات",
+"country.turkey.pitch.cta": "تواصل مع المنسق",
 
-  "dict.city.istanbul.name": "إسطنبول",
-  "dict.city.antalya.name": "أنطاليا",
-  "dict.city.ankara.name": "أنقرة",
+"dict.city.istanbul.name": "إسطنبول",
+"dict.city.ankara.name": "أنقرة",
+"dict.city.antalya.name": "أنطاليا",
+"dict.city.kocaeli.name": "كوجالي (غبزة)",
 
-  "dict.clinic.acibadem-istanbul.name": "Acibadem (إسطنبول)",
-  "dict.clinic.liv-ankara.name": "Liv Hospital Ankara",
-  "dict.clinic.medicana-istanbul.name": "Medicana (إسطنبول)",
-  "dict.clinic.medistate-istanbul.name": "Medistate (إسطنبول)",
-  "dict.clinic.np-istanbul-brain.name": "NP Istanbul Brain Hospital",
-  "dict.clinic.memorial-antalya.name": "Memorial Antalya Hospital",
-  "dict.clinic.anadolu-istanbul.name": "Anadolu Medical Center (إسطنبول)",
+"dict.clinic.acibadem-maslak.name": "مستشفى Acıbadem Maslak",
+"people.doctors.maslak-akiyol-cardiology.name": "البروفيسور الدكتور أحمد أكيول",
+"people.doctors.maslak-akiyol-cardiology.title": "طبيب قلب تداخلي",
+"people.doctors.maslak-akiyol-cardiology.bio": "أحد أبرز أطباء القلب التداخلي في ماسلاك، بخبرة كبيرة في تركيب الدعامات والتدخلات الوعائية.",
 
-  "dict.dept.cardiology.name": "أمراض القلب",
-  "dict.dept.oncology.name": "الأورام",
-  "dict.dept.neurosurgery.name": "جراحة الأعصاب",
-  "dict.dept.ivf.name": "أطفال الأنابيب والخصوبة",
-  "dict.dept.orthopedics.name": "جراحة العظام",
-  "dict.dept.gastro.name": "أمراض الجهاز الهضمي",
-  "dict.dept.endocrinology.name": "الغدد الصماء",
-  "dict.dept.general-surgery.name": "الجراحة العامة",
-  "dict.dept.transplant.name": "زراعة الأعضاء",
-  "dict.dept.radiology.name": "الأشعة",
-  "dict.dept.radiation-oncology.name": "الأورام الإشعاعية",
-  "dict.dept.pediatrics.name": "طب الأطفال",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.name": "البروفيسور أليكس ديغيرمنجي أوغلو",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.title": "طبيب قلب",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.bio": "متخصص في أمراض القلب غير التداخلية، تخطيط صدى القلب والتصوير التشخيصي.",
 
-  "people.doctors.acibadem-istanbul-cardio-slot.name": "سيُضاف قريبًا — Acibadem، أمراض القلب",
-  "people.doctors.acibadem-istanbul-cardio-slot.title": "مثال: رئيس قسم أمراض القلب",
-  "people.doctors.acibadem-istanbul-cardio-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.name": "البروفيسور الدكتور جوكهان بوزكورت",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.title": "جرّاح أعصاب",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.bio": "خبير في جراحة قاعدة الجمجمة وجراحة الأعصاب الوعائية.",
 
-  "people.doctors.liv-ankara-oncology-slot.name": "سيُضاف قريبًا — Liv، الأورام (أنقرة)",
-  "people.doctors.liv-ankara-oncology-slot.title": "مثال: مدير قسم الأورام",
-  "people.doctors.liv-ankara-oncology-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.name": "البروفيسور متيز ظافر بيركمان",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.title": "جرّاح أعصاب",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.bio": "متخصص في جراحة العمود الفقري العصبية.",
 
-  "people.doctors.medicana-istanbul-orthopedics-slot.name": "سيُضاف قريبًا — Medicana، جراحة العظام",
-  "people.doctors.medicana-istanbul-orthopedics-slot.title": "مثال: رئيس جراحة العظام",
-  "people.doctors.medicana-istanbul-orthopedics-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.maslak-erdem-kilavuz-ent.name": "البروفيسور أ. إردم كيلفوز",
+"people.doctors.maslak-erdem-kilavuz-ent.title": "طبيب أنف وأذن وحنجرة",
+"people.doctors.maslak-erdem-kilavuz-ent.bio": "متخصص في جراحة الرأس والعنق، الجيوب الأنفية والأذن.",
+"people.doctors.maslak-sefa-sahin-otolaryngology.name": "البروفيسور سدف شاهين",
+"people.doctors.maslak-sefa-sahin-otolaryngology.title": "طبيبة جلدية",
+"people.doctors.maslak-sefa-sahin-otolaryngology.bio": "خبيرة في أمراض الجلد والجلدية التجميلية.",
 
-  "people.doctors.memorial-antalya-ivf-slot.name": "سيُضاف قريبًا — Memorial، أطفال الأنابيب (أنطاليا)",
-  "people.doctors.memorial-antalya-ivf-slot.title": "مثال: قائد برنامج أطفال الأنابيب",
-  "people.doctors.memorial-antalya-ivf-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.maslak-alper-medical-oncology.name": "البروفيسور جوكهان دمير",
+"people.doctors.maslak-alper-medical-oncology.title": "طبيب أورام",
+"people.doctors.maslak-alper-medical-oncology.bio": "علاج الأورام الصلبة، العلاج المناعي والعلاج الكيميائي.",
 
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "سيُضاف قريبًا — NP Istanbul، جراحة الأعصاب",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "مثال: رئيس جراحة الأعصاب",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية."
+"people.doctors.maslak-olmez-ozlem-oncology.name": "البروفيسور عمر فتيح أولميز",
+"people.doctors.maslak-olmez-ozlem-oncology.title": "طبيب أورام",
+"people.doctors.maslak-olmez-ozlem-oncology.bio": "علاج السرطان بمنهج متعدد التخصصات.",
+
+"dict.clinic.acibadem-altunizade.name": "مستشفى Acıbadem Altunizade",
+"people.doctors.altunizade-usta-gynecology.name": "البروفيسور الدكتور أ. تانر أوستا",
+"people.doctors.altunizade-usta-gynecology.title": "طبيب نساء وتوليد",
+"people.doctors.altunizade-usta-gynecology.bio": "متخصص في الحمل عالي الخطورة والجراحة التناسلية.",
+
+"people.doctors.altunizade-tayyar-gynecology.name": "البروفيسور الدكتور أحمد تايار",
+"people.doctors.altunizade-tayyar-gynecology.title": "طبيب نساء",
+"people.doctors.altunizade-tayyar-gynecology.bio": "جراحة نسائية طفيفة التوغل وعلاج العقم.",
+
+"people.doctors.altunizade-alper-ozkan-cardiology.name": "البروفيسور ألبير أوزكان",
+"people.doctors.altunizade-alper-ozkan-cardiology.title": "طبيب قلب",
+"people.doctors.altunizade-alper-ozkan-cardiology.bio": "أمراض القلب لدى البالغين والأطفال، التدخلات التاجية.",
+
+"people.doctors.altunizade-duhan-bayrak-cardiology.name": "البروفيسور دوجان فتيح بايراك",
+"people.doctors.altunizade-duhan-bayrak-cardiology.title": "طبيب قلب",
+"people.doctors.altunizade-duhan-bayrak-cardiology.bio": "قصور القلب، أمراض القلب التداخلية.",
+
+"people.doctors.altunizade-faysal-dane-oncology.name": "البروفيسور فايصال دانه",
+"people.doctors.altunizade-faysal-dane-oncology.title": "طبيب أورام",
+"people.doctors.altunizade-faysal-dane-oncology.bio": "تشخيص السرطان، العلاج الكيميائي وتصميم البروتوكولات العلاجية."
+,
+"people.doctors.altunizade-gul-basaran-oncology.name": "البروفيسور غول باشاران",
+"people.doctors.altunizade-gul-basaran-oncology.title": "طبيبة أورام",
+"people.doctors.altunizade-gul-basaran-oncology.bio": "متخصصة في سرطانات الثدي والسرطانات النسائية.",
+
+"people.doctors.altunizade-koray-ozduman-neurosurgery.name": "البروفيسور كوراي أوزدومان",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.title": "جرّاح أعصاب",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.bio": "أورام الدماغ، الجراحة التجسيمية.",
+
+"people.doctors.altunizade-memet-ozek-neurosurgery.name": "البروفيسور ميميت أوزك",
+"people.doctors.altunizade-memet-ozek-neurosurgery.title": "جرّاح أعصاب",
+"people.doctors.altunizade-memet-ozek-neurosurgery.bio": "جراحة الأعصاب الوعائية وعمليات قاعدة الجمجمة.",
+
+"people.doctors.liv-ulus-cardiology-yurtseven.title": "طبيب قلب تداخلي",
+"people.doctors.liv-ulus-cardiology-yurtseven.bio": "تصوير الشرايين التاجية وتركيب الدعامات، أمراض القلب الهيكلية، التصوير القلبي.",
+
+"people.doctors.liv-ulus-cardiology-ozdemir.title": "طبيب قلب",
+"people.doctors.liv-ulus-cardiology-ozdemir.bio": "اضطرابات نظم القلب وفشل القلب، تخطيط صدى القلب والوقاية من أمراض القلب.",
+
+"people.doctors.liv-ulus-cardiology-enis-oguz.title": "اختصاصي كهرباء القلب التداخلي",
+"people.doctors.liv-ulus-cardiology-enis-oguz.bio": "الاستئصال بالقسطرة (AF/SVT/VT)، علاج الأجهزة (CRT/ICD) وإدارة اضطرابات النظم المعقدة.",
+
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.title": "اختصاصي علاج الأورام بالإشعاع",
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.bio": "العلاج الإشعاعي الموجه بالصور (VMAT/IGRT)، والتخطيط الإشعاعي الدقيق والشخصي.",
+
+"people.doctors.liv-ulus-nuclear-emel-ceylan.title": "اختصاصية الطب النووي",
+"people.doctors.liv-ulus-nuclear-emel-ceylan.bio": "فحوصات PET/CT للأورام، العلاج بالنظائر المشعة والتشخيص العلاجي (Theranostics).",
+
+"people.doctors.liv-ulus-urology-engin-kaya.title": "طبيب مسالك بولية / ذكورة",
+"people.doctors.liv-ulus-urology-engin-kaya.bio": "حصى الكلى، تضخم البروستاتا، العقم الذكري وجراحة المناظير البولية.",
+
+"people.doctors.liv-ulus-medonc-meral-gunaldi.title": "طبيبة أورام",
+"people.doctors.liv-ulus-medonc-meral-gunaldi.bio": "سرطانات الثدي والجهاز الهضمي والرئة؛ العلاج المناعي والعلاج الموجّه."
+,
+"people.doctors.liv-ulus-medonc-duygu-derin.title": "طبيبة أورام",
+"people.doctors.liv-ulus-medonc-duygu-derin.bio": "رعاية الأورام الجهازية، الطب الدقيق والمجالس متعددة التخصصات للأورام.",
+
+"people.doctors.liv-ulus-neurosurgery-bozkurt.title": "جرّاح أعصاب",
+"people.doctors.liv-ulus-neurosurgery-bozkurt.bio": "جراحة قاعدة الجمجمة والجراحة العصبية الوعائية؛ عمليات معقدة للدماغ والعمود الفقري.",
+
+"people.doctors.liv-ulus-neurosurgery-ozduman.title": "جرّاح أعصاب",
+"people.doctors.liv-ulus-neurosurgery-ozduman.bio": "أورام الدماغ، الجراحة العصبية التجسيمية والوظيفية.",
+
+"people.doctors.liv-ulus-ophthalmology-kahraman.title": "طبيب عيون",
+"people.doctors.liv-ulus-ophthalmology-kahraman.bio": "إعتام عدسة العين، أمراض الشبكية والبقعة؛ جراحة العين الشاملة.",
+
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.title": "اختصاصي الغدد الصماء للأطفال",
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.bio": "داء السكري من النوع الأول، اضطرابات النمو والبلوغ، أمراض الغدة الدرقية لدى الأطفال.",
+
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.title": "اختصاصي أمراض الرئة للأطفال",
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.bio": "الربو، التليف الكيسي ورعاية أمراض مجرى الهواء المعقدة.",
+
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.title": "اختصاصية الغدد الصماء",
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.bio": "أمراض الغدة الدرقية والسكري والاضطرابات الأيضية؛ الوقاية من المخاطر الهرمونية.",
+
+"people.doctors.liv-ulus-radiology-adem-ucar.title": "اختصاصي الأشعة التداخلية",
+"people.doctors.liv-ulus-radiology-adem-ucar.bio": "التدخلات الوعائية والأورام، التصوير المتقدم للبطن والصدر.",
+
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.title": "جرّاح عظام",
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.bio": "استبدال مفصل الورك والركبة، إعادة بناء ما بعد الصدمات، إصابات الرياضة.",
+
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.title": "جرّاح عظام وعمود فقري",
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.bio": "جراحة العمود الفقري، الجراحة بالمنظار وجراحة الإصابات؛ تصحيح تشوهات الأطراف.",
+
+"people.doctors.liv-ulus-neurology-mustafa-alkan.title": "طبيب أعصاب",
+"people.doctors.liv-ulus-neurology-mustafa-alkan.bio": "علاج السكتة الدماغية، الصرع واضطرابات الحركة."
+,
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.title": "اختصاصية أمراض الجهاز الهضمي",
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.bio": "تنظير المعدة والقولون، أمراض الأمعاء الالتهابية واضطرابات الكبد والمرارة.",
+
+"people.doctors.liv-ulus-surgery-bulent-ozturk.title": "جرّاح عام وأورام",
+"people.doctors.liv-ulus-surgery-bulent-ozturk.bio": "جراحة الجهاز الهضمي والكبد والمرارة بالمنظار؛ عمليات الفتاق والجراحة القولونية المستقيمية.",
+
+"people.doctors.liv-ulus-plastic-kemal-aykan.title": "جرّاح تجميل وإعادة بناء",
+"people.doctors.liv-ulus-plastic-kemal-aykan.bio": "الجراحة المجهرية الترميمية، نحت الجسم والإجراءات التجميلية.",
+
+"people.doctors.liv-ulus-ivf-taner-usta.title": "طبيب نساء / اختصاصي أطفال الأنابيب",
+"people.doctors.liv-ulus-ivf-taner-usta.bio": "تشخيص العقم، أطفال الأنابيب (IVF/ICSI) وجراحات الخصوبة طفيفة التوغل.",
+
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.title": "طبيبة نساء وتوليد",
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.bio": "رعاية ما قبل الولادة، الحمل عالي الخطورة والجراحات النسائية الروتينية.",
+
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.title": "طبيبة أطفال",
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.bio": "طب الأطفال العام وحديثي الولادة؛ التطعيم ونمو الطفل.",
+
+"people.doctors.liv-ulus-physical-nurcan-turhan.title": "اختصاصية الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.liv-ulus-physical-nurcan-turhan.bio": "إعادة التأهيل بعد الجراحة، آلام الجهاز العضلي الهيكلي وطب الرياضة.",
+
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.title": "طبيب مسالك بولية (روبوتي ومنظار)",
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.bio": "استئصال البروستاتا بالروبوت، جراحة أورام الكلى والمثانة، علاج حصى الكلى.",
+
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.title": "طبيب قلب",
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.bio": "التصوير القلبي المتقدم وطب القلب التداخلي.",
+
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.title": "اختصاصي كهرباء القلب",
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.bio": "استئصال AF/VT، العلاج بالأجهزة (CRT/ICD) وإدارة اضطرابات النظم المعقدة."
+,
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.title": "طبيب قلب",
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.bio": "طب القلب غير التداخلي، تخطيط صدى القلب والوقاية من أمراض القلب.",
+
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.title": "طبيب قلب تداخلي",
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.bio": "تصوير الشرايين التاجية، توسيع الأوعية وتركيب الدعامات.",
+
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.title": "اختصاصي الطب الباطني",
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.bio": "السكري وأمراض الغدة الدرقية، الصحة الأيضية؛ الموجات فوق الصوتية بجانب السرير (POCUS).",
+
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.title": "جرّاح عظام وإصابات",
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.bio": "إصابات الرياضة، الجراحة بالمنظار والعلاج من الإصابات المعقدة.",
+
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.title": "جرّاح عظام",
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.bio": "طب الرياضة، تنظير الركبة والكتف.",
+
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.title": "طبيبة أعصاب",
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.bio": "مرض باركنسون، التصلب المتعدد وطب الأعصاب الإدراكي.",
+
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.title": "اختصاصي أمراض الجهاز الهضمي",
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.bio": "أمراض الكبد، الارتجاع والقرحة؛ التنظير التشخيصي والعلاجي.",
+
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.title": "جرّاح عام وجراحة السمنة",
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.bio": "جراحات الأيض والسمنة، جراحة الجهاز الهضمي والفتق بالمنظار.",
+
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.title": "جرّاح تجميل وترميم",
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.bio": "ترميم الثدي، نحت الجسم والإجراءات التجميلية.",
+
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.title": "طبيبة نساء / اختصاصية أطفال الأنابيب",
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.bio": "تشخيص العقم، أطفال الأنابيب (IVF/ICSI) والغدد التناسلية.",
+
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.title": "طبيبة نساء وتوليد",
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.bio": "رعاية ما قبل الولادة، الحمل عالي الخطورة والجراحة النسائية.",
+
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.title": "طبيب أطفال",
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.bio": "الالتهابات لدى الأطفال، الحساسية ومتابعة النمو والتطور.",
+
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.title": "اختصاصية الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.bio": "إعادة تأهيل العمود الفقري والجهاز العضلي، علاج الألم المزمن وطب الرياضة."
+,
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.title": "طبيب عيون",
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.bio": "جراحة محجر العين، إصابات العين والرعاية البصرية الشاملة.",
+
+"people.doctors.liv-ankara-ent-levent-ilarslan.title": "طبيب أنف وأذن وحنجرة",
+"people.doctors.liv-ankara-ent-levent-ilarslan.bio": "جراحة الجيوب الأنفية بالمنظار، أمراض الأذن والأنف.",
+
+"people.doctors.liv-ankara-cardiology-utku-zor.title": "طبيب قلب",
+"people.doctors.liv-ankara-cardiology-utku-zor.bio": "تصوير القلب، الوقاية القلبية وتقييم المخاطر.",
+
+"people.doctors.liv-ankara-cardiology-aytun-canga.title": "طبيب قلب",
+"people.doctors.liv-ankara-cardiology-aytun-canga.bio": "قصور القلب وطب القلب العام للبالغين.",
+
+"people.doctors.liv-ankara-cardiology-murat-tulmac.title": "طبيب قلب تداخلي",
+"people.doctors.liv-ankara-cardiology-murat-tulmac.bio": "تصوير الشرايين التاجية، توسيع الأوعية والتدخلات الهيكلية.",
+
+"people.doctors.liv-ankara-cardiology-alper-canbay.title": "طبيب قلب",
+"people.doctors.liv-ankara-cardiology-alper-canbay.bio": "تقييم اضطرابات نظم القلب والرعاية القلبية الشاملة.",
+
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.title": "جرّاح عظام وطب رياضي",
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.bio": "إعادة بناء الأربطة، جراحة الغضروف والركبة، إصابات الرياضة.",
+
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.title": "جرّاح عظام",
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.bio": "استبدال المفاصل، جراحة الإصابات والتنظير المفصلي.",
+
+"people.doctors.liv-ankara-neurology-didem-celik.title": "طبيبة أعصاب",
+"people.doctors.liv-ankara-neurology-didem-celik.bio": "السكتة الدماغية، الخرف واضطرابات الحركة.",
+
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.title": "اختصاصي أمراض الجهاز الهضمي",
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.bio": "أمراض الكبد، الارتجاع المعدي المريئي والتنظير التشخيصي والعلاجي.",
+
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.title": "جرّاح عام",
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.bio": "جراحة الفتق والجهاز الهضمي بالمنظار؛ جراحة القنوات الصفراوية والقولون والمستقيم.",
+
+"people.doctors.liv-ankara-plastic-murat-ugurlu.title": "جرّاح تجميل وترميم",
+"people.doctors.liv-ankara-plastic-murat-ugurlu.bio": "تجميل الثدي والجسم والوجه؛ الجراحة الترميمية.",
+
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.title": "طبيبة نساء / اختصاصية أطفال الأنابيب",
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.bio": "تشخيص العقم، أطفال الأنابيب (IVF/ICSI) والغدد التناسلية.",
+
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.title": "طبيبة نساء وتوليد",
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.bio": "رعاية ما قبل الولادة، الحمل عالي الخطورة والجراحة النسائية.",
+
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.title": "طبيبة أطفال",
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.bio": "الأمراض المعدية عند الأطفال، الحساسية ومتابعة النمو."
+,
+"people.doctors.liv-ankara-physical-funda-ozkan.title": "اختصاصية الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.liv-ankara-physical-funda-ozkan.bio": "إعادة التأهيل بعد الجراحة، آلام العضلات والعظام وطب الرياضة.",
+
+"people.doctors.liv-ankara-cardiology-sample.title": "طبيب قلب",
+"people.doctors.liv-ankara-cardiology-sample.bio": "تشخيص وعلاج أمراض القلب؛ الرعاية غير التداخلية والتداخلية.",
+
+"people.doctors.liv-ankara-oncology-sample.title": "طبيب أورام",
+"people.doctors.liv-ankara-oncology-sample.bio": "العلاج الجهازي للأورام الصلبة، رعاية الأورام الداعمة.",
+
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.bio": "جراحة الصمامات والشرايين التاجية والأبهر؛ تقنيات جراحية طفيفة التوغل.",
+
+"people.doctors.liv-vadistanbul-oncology-sample.title": "طبيب أورام",
+"people.doctors.liv-vadistanbul-oncology-sample.bio": "العلاج الكيميائي، العلاجات الموجهة والعلاج المناعي.",
+
+"dict.clinic.liv-ankara.name": "مستشفى Liv أنقرة",
+"dict.clinic.liv-ulus.name": "مستشفى Liv أولوس",
+"dict.clinic.liv-vadistanbul.name": "مستشفى Liv فاديستانبول",
+
+"dict.clinic.memorial-antalya.name": "مستشفى ميموريال أنطاليا",
+"dict.clinic.memorial-sisli.name": "مستشفى ميموريال شيشلي",
+"dict.clinic.memorial-ankara.name": "مستشفى ميموريال أنقرة",
+"dict.clinic.memorial-atasehir.name": "مستشفى ميموريال أتاشهير",
+
+"dict.dept.microbiology.name": "علم الأحياء الدقيقة السريرية",
+"dict.dept.bmt.name": "زرع نخاع العظم",
+"dict.dept.kidney-transplant.name": "زرع الكلى",
+"dict.dept.cornea-transplant.name": "زرع القرنية",
+"dict.dept.checkup.name": "الفحص الطبي الشامل (Check-up)",
+"dict.dept.emergency.name": "طب الطوارئ",
+"dict.dept.allergy-immunology.name": "الحساسية والمناعة",
+"dict.dept.nutrition.name": "التغذية والحمية",
+"dict.dept.pediatric-allergy-immunology.name": "حساسية ومناعة الأطفال",
+"dict.dept.pediatric-surgery.name": "جراحة الأطفال",
+"dict.dept.pediatric-hem-onc.name": "أمراض الدم والأورام لدى الأطفال",
+"dict.dept.pediatric-cardiology.name": "أمراض قلب الأطفال",
+"dict.dept.pediatric-neurology.name": "أمراض الأعصاب لدى الأطفال",
+"dict.dept.pmr.name": "الطب الفيزيائي وإعادة التأهيل"
+,
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.title": "طبيب عيون",
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.bio": "جراحة الشبكية وإزالة المياه البيضاء؛ رعاية طبية وجراحية شاملة للعين.",
+
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.title": "طبيبة عيون",
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.bio": "جراحة القرنية والجزء الأمامي من العين، علاج الساد والانكسار.",
+
+"people.doctors.memorial-sisli-gastro-birol-baysal.title": "اختصاصي أمراض الجهاز الهضمي",
+"people.doctors.memorial-sisli-gastro-birol-baysal.bio": "أمراض الكبد، التنظير التشخيصي والعلاجي وإدارة أمراض الأمعاء الالتهابية.",
+
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.title": "طبيبة أعصاب",
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.bio": "السكتة الدماغية، اضطرابات الحركة والأعصاب العامة.",
+
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.title": "جرّاح أعصاب",
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.bio": "جراحة قاعدة الجمجمة والأوعية الدموية؛ جراحات الدماغ والعمود الفقري المعقدة.",
+
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.title": "جرّاح عظام وإصابات",
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.bio": "استبدال المفاصل، ترميم الإصابات وإصابات الرياضة.",
+
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.title": "جرّاح عام وأورام",
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.bio": "جراحة الجهاز الهضمي والكبد بالمنظار؛ عمليات الفتاق والقولون والمستقيم.",
+
+"people.doctors.memorial-sisli-rehab-engin-cakar.title": "اختصاصي الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.memorial-sisli-rehab-engin-cakar.bio": "إعادة التأهيل العصبي، آلام العضلات والعظام واستعادة الوظائف.",
+
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.title": "اختصاصي الطب النووي",
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.bio": "تصوير PET/CT وسPECT وعلاج الأورام بالنظائر المشعة.",
+
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.title": "اختصاصية أمراض الدم للأطفال",
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.bio": "أمراض الدم والأورام الدموية لدى الأطفال؛ رعاية متعددة التخصصات.",
+
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.title": "طبيب قلب تداخلي",
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.bio": "التدخلات التاجية والتصوير القلبي المتقدم.",
+
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.title": "اختصاصية الغدد الصماء",
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.bio": "السكري، أمراض الغدة الدرقية والاضطرابات الأيضية.",
+
+"people.doctors.memorial-atasehir-ent-engin-acioglu.title": "طبيب أنف وأذن وحنجرة",
+"people.doctors.memorial-atasehir-ent-engin-acioglu.bio": "أمراض الأذن والأنف وجراحة الجيوب الأنفية بالمنظار.",
+
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.title": "طبيب أنف وأذن وحنجرة",
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.bio": "أمراض الأنف والأذن للأطفال واضطرابات الرأس والعنق.",
+
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.title": "جرّاح تجميل وترميم"
+,
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.bio": "إعادة بناء الثدي، نحت الجسم والجراحة التجميلية.",
+
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.title": "طبيبة نساء وتوليد",
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.bio": "رعاية ما قبل الولادة، الحمل عالي الخطورة والإجراءات النسائية.",
+
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.title": "جرّاح أعصاب",
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.bio": "جراحة العمود الفقري وعلاج أورام الدماغ.",
+
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.title": "طبيب مسالك بولية",
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.bio": "أورام المسالك البولية، تضخم البروستاتا وجراحة المسالك طفيفة التوغل.",
+
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.title": "اختصاصية أمراض الجهاز الهضمي للأطفال",
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.bio": "أمراض الكبد لدى الأطفال، التنظير واضطرابات التغذية.",
+
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.title": "اختصاصي أمراض الرئة للأطفال",
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.bio": "الربو، التليف الكيسي وأمراض مجرى الهواء المعقدة.",
+
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.title": "اختصاصي الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.bio": "إعادة تأهيل العمود الفقري والرياضة وعلاج الألم.",
+
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.title": "طبيب أمراض صدرية / أمراض الرئة",
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.bio": "مرض الانسداد الرئوي المزمن، أمراض الرئة الخلالية واضطرابات التنفس أثناء النوم.",
+
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.title": "جرّاح عظام",
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.bio": "علاج الإصابات، إصابات الرياضة وجراحة المفاصل بالمنظار.",
+
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.title": "جرّاح عام وجراحة السمنة",
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.bio": "جراحات الأيض والسمنة والجراحة المتقدمة بالمنظار.",
+
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.title": "جرّاح أعصاب",
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.bio": "جراحة الدماغ والعمود الفقري، أورام وجراحة الأوعية الدموية.",
+
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.title": "طبيب أورام",
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.bio": "العلاج الكيميائي والموجه والمناعي للأورام الصلبة.",
+
+"people.doctors.memorial-antalya-ivf-onur-erol.title": "طبيب نساء / أطفال الأنابيب وأمراض الذكورة",
+"people.doctors.memorial-antalya-ivf-onur-erol.bio": "علاج العقم، أطفال الأنابيب (IVF/ICSI) وتقييم العقم الذكري.",
+
+"people.doctors.memorial-antalya-obgyn-safak-olgan.title": "طبيب نساء وتوليد",
+"people.doctors.memorial-antalya-obgyn-safak-olgan.bio": "طب الأم والجنين ورعاية الحمل.",
+
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.title": "طبيب أنف وأذن وحنجرة",
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.bio": "جراحة الجيوب الأنفية بالمنظار، أمراض الأذن والأنف."
+,
+"people.doctors.memorial-antalya-perinatology-eftal-avci.title": "اختصاصي طب الأم والجنين (الطب المحيط بالولادة)",
+"people.doctors.memorial-antalya-perinatology-eftal-avci.bio": "الحمل عالي الخطورة، مراقبة الجنين والتشخيص قبل الولادة.",
+
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.title": "طبيب أطفال",
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.bio": "الرعاية الأولية للأطفال، العدوى ونمو الطفل وتطوره.",
+
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.title": "طبيبة أعصاب",
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.bio": "الصداع، السكتة الدماغية والأعصاب العامة.",
+
+"people.doctors.memorial-ankara-cardiology-ali-oto.title": "اختصاصي كهرباء القلب التداخلي",
+"people.doctors.memorial-ankara-cardiology-ali-oto.bio": "استئصال الرجفان الأذيني / البطيني والعلاج بالأجهزة (CRT/ICD).",
+
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.title": "طبيبة قلب",
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.bio": "تصوير القلب والوقاية من أمراض القلب.",
+
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.bio": "جراحة الصمامات والشريان الأورطي والشرايين التاجية؛ تقنيات طفيفة التوغل.",
+
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.bio": "جراحة الشرايين التاجية والصمامات؛ العمليات دون جهاز قلب-رئة.",
+
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.title": "طبيب مسالك بولية",
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.bio": "أورام المسالك البولية، تضخم البروستاتا وحصى الكلى.",
+
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.title": "جرّاح عظام وعمود فقري",
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.bio": "تشوهات العمود الفقري، الأمراض التنكسية والجراحات المعقدة.",
+
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.title": "جرّاح عظام",
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.bio": "الإصابات، استبدال المفاصل وتنظير المفاصل.",
+
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.title": "جرّاح أعصاب",
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.bio": "جراحة الدماغ والعمود الفقري، الأورام والأمراض الوعائية الدماغية.",
+
+"people.doctors.memorial-ankara-hematology-ferit-avcu.title": "اختصاصي أمراض الدم",
+"people.doctors.memorial-ankara-hematology-ferit-avcu.bio": "سرطانات الدم، الأورام اللمفاوية واضطرابات الدم الحميدة.",
+
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.title": "جرّاح عام",
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.bio": "جراحة الجهاز الهضمي بالمنظار، الفتوق والعمليات الصفراوية.",
+
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.title": "طبيب نفسي، رئيس مجلس الإدارة",
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.bio": "مؤسس مستشفى NP إسطنبول للأعصاب؛ الطب النفسي العصبي، اضطرابات المزاج والقلق، علاج تكاملي قائم على الأدلة."
+,
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.title": "طبيبة نفسية",
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.bio": "خبيرة في اضطرابات المزاج والعلاج النفسي؛ الطب النفسي المتعدد التخصصات للبالغين.",
+
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.title": "طبيبة نفسية",
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.bio": "الإدمان، الطب النفسي الاستشاري والعلاج المدعوم بالتحفيز العصبي.",
+
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.title": "طبيبة نفسية للأطفال والمراهقين",
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.bio": "الاضطرابات النمائية العصبية، اضطراب فرط الحركة ونقص الانتباه وصحة المراهقين النفسية.",
+
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.title": "طبيبة نفسية للأطفال والمراهقين",
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.bio": "الطب النفسي للأطفال، طيف التوحد واضطرابات الانتباه.",
+
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.title": "طبيب أعصاب",
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.bio": "الأعصاب الإدراكية، الخرف واضطرابات الحركة.",
+
+"people.doctors.np-istanbul-brain-neurology-baris-metin.title": "طبيب أعصاب",
+"people.doctors.np-istanbul-brain-neurology-baris-metin.bio": "التصوير العصبي، الأعصاب الإدراكية وعلم النفس العصبي.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.title": "جرّاح أعصاب",
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.bio": "جراحة قاعدة الجمجمة، الجراحة العصبية الوعائية والأورام، جراحات العمود الفقري المتقدمة.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.title": "جرّاح أعصاب",
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.bio": "جراحة العمود الفقري، الأورام والجراحة العصبية طفيفة التوغل.",
+
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.title": "اختصاصية أشعة تشخيصية",
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.bio": "تشخيص بالرنين المغناطيسي / الأشعة المقطعية مع تركيز على الأشعة العصبية والدعم بين الأقسام.",
+
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.title": "اختصاصي أشعة",
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.bio": "الأشعة العصبية والتصوير التشخيصي المتقدم.",
+
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.title": "اختصاصي أمراض الجهاز الهضمي / الطب الباطني",
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.bio": "أمراض الجهاز الهضمي والطب الباطني؛ التنظير التشخيصي والعلاجي."
+,
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.title": "الطب الفيزيائي وإعادة التأهيل",
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.bio": "إعادة التأهيل العصبي، الألم المزمن وبرامج استعادة الوظائف.",
+
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.title": "أخصائية علم النفس العصبي السريري",
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.bio": "التقييم العصبي النفسي، إعادة التأهيل الإدراكي والعلاج النفسي القائم على الأدلة.",
+
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.title": "أخصائي علم النفس السريري",
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.bio": "العلاج النفسي للبالغين (CBT)، إدارة التوتر والقلق.",
+
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.title": "طبيب قلب",
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.bio": "تصوير القلب والوقاية من أمراض القلب؛ الرعاية القلبية قبل الجراحة.",
+
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.title": "أخصائي علاج النطق واللغة",
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.bio": "اضطرابات النطق واللغة؛ رئيس قسم علاج النطق واللغة.",
+
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.title": "أستاذ أمراض القلب",
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.bio": "أمراض القلب لدى البالغين، ارتفاع ضغط الدم ومرض الشريان التاجي؛ استشارات في مستشفى ميدستيت كافاجك.",
+
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.title": "اختصاصي أمراض القلب التداخلية",
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.bio": "التدخلات التاجية والعلاج الموجه بتقنية الإيكو.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.bio": "جراحة القلب للبالغين بما في ذلك المجازات القلبية وجراحات الصمامات.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.bio": "جراحة الأوعية الدموية والشريان الأورطي."
+,
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.title": "جرّاح أعصاب",
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.bio": "الجراحة الميكروسكوبية لأمراض العمود الفقري والدماغ.",
+
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.title": "طبيبة أعصاب",
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.bio": "الصداع، السكتة الدماغية والأعصاب العامة.",
+
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.title": "رئيس قسم الجراحة العامة ومركز علاج السمنة",
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.bio": "الجراحة بالمنظار وجراحة السمنة؛ يدير مركز علاج السمنة.",
+
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.title": "جرّاح عام",
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.bio": "جراحة البطن والفتوق.",
+
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.title": "اختصاصي أمراض الجهاز الهضمي",
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.bio": "التنظير، أمراض الأمعاء الالتهابية واضطرابات الكبد والقنوات الصفراوية.",
+
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.title": "مدير عيادة المسالك البولية، طبيب مسالك بولية",
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.bio": "أورام المسالك البولية، حصى الكلى وأمراض الذكورة.",
+
+"people.doctors.medistate-kavacik-urology-orhan-koca.title": "طبيب مسالك بولية",
+"people.doctors.medistate-kavacik-urology-orhan-koca.bio": "أمراض البروستاتا والكلى والمثانة.",
+
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.title": "طبيب نساء وتوليد، طب الأم والجنين (الحمل عالي الخطورة)",
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.bio": "طب الأم والجنين والحمل المعقّد."
+,
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.title": "طبيب نساء وتوليد، طب الإنجاب",
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.bio": "أطفال الأنابيب / تقنيات الإخصاب المساعد وعلاج العقم.",
+
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.title": "طبيب أنف وأذن وحنجرة / جراحة الرأس والرقبة",
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.bio": "أمراض الأنف والجيوب الأنفية، اضطرابات الحنجرة وجراحة الرأس والرقبة.",
+
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.title": "جرّاح أنف وأذن وحنجرة",
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.bio": "أمراض الأذن والجراحة التنظيرية للأنف والأذن والحنجرة.",
+
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.title": "طبيب عيون",
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.bio": "جراحة الساد وجراحات الجزء الأمامي من العين.",
+
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.title": "طبيبة عيون",
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.bio": "أمراض الشبكية والرعاية البصرية الشاملة.",
+
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.title": "اختصاصي جراحة العظام والكسور",
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.bio": "الإصابات، إصابات الرياضة وجراحة المفاصل.",
+
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.title": "جرّاح عظام",
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.bio": "استبدال المفاصل وإعادة بناء الأطراف.",
+
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.title": "طبيب أطفال",
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.bio": "طب الأطفال العام والرعاية الوقائية."
+,
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.title": "طبيب أطفال",
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.bio": "رعاية الأطفال الأصحاء وعلاج الحالات الحادة.",
+
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.title": "طبيبة أمراض الرئة",
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.bio": "مرض الانسداد الرئوي المزمن، الربو واضطرابات التنفس أثناء النوم.",
+
+"people.doctors.medistate-kavacik-radiology-kaan-meric.title": "رئيس قسم الأشعة",
+"people.doctors.medistate-kavacik-radiology-kaan-meric.bio": "التصوير المقطعي والإشراف على خدمات التصوير الطبي.",
+
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.title": "اختصاصي أشعة",
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.bio": "تشخيص بالأشعة المقطعية والرنين المغناطيسي.",
+
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.title": "طبيبة أمراض جلدية",
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.bio": "الأمراض الجلدية الطبية وعلاج اضطرابات الجلد.",
+
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.title": "أمراض معدية وميكروبيولوجيا سريرية",
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.bio": "الأمراض المعدية، إدارة استخدام المضادات الحيوية والتشخيص المخبري.",
+
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.title": "طبيب باطني",
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.bio": "الأمراض المزمنة والرعاية الأيضية.",
+
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.title": "طبيب باطني",
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.bio": "الطب الباطني العام والوقاية الصحية."
+,
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.title": "طبيب نفسي",
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.bio": "الطب النفسي للبالغين والرعاية الخارجية.",
+
+"people.doctors.medistate-kavacik-dentistry-ali-gul.title": "طبيب أسنان",
+"people.doctors.medistate-kavacik-dentistry-ali-gul.bio": "طب الأسنان العام والعلاج الترميمي.",
+
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.title": "طبيبة أسنان",
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.bio": "طب الأسنان الوقائي والتجميلي.",
+
+"dict.clinic.medipol-mega.name": "مستشفى ميديبول ميغا الجامعي",
+"dict.clinic.medipol-mega-istanbul.name": "مستشفى ميديبول ميغا الجامعي (إسطنبول)",
+"dict.clinic.np-istanbul-brain.name": "مستشفى الدماغ إن بي إسطنبول",
+"dict.clinic.anadolu-gebze.name": "مركز الأناضول الطبي (غبزة)",
+"dict.clinic.anadolu-istanbul.name": "مركز الأناضول الطبي (إسطنبول)",
+"dict.clinic.dunyagoz-istanbul.name": "دنيا غوز إسطنبول",
+
+"dict.dept.cardiology.name": "أمراض القلب",
+"dict.dept.oncology.name": "علم الأورام",
+"dict.dept.orthopedics.name": "جراحة العظام",
+"dict.dept.ivf.name": "الإخصاب والطب الإنجابي",
+"dict.dept.neurosurgery.name": "جراحة الأعصاب",
+"dict.dept.ophthalmology.name": "طب العيون",
+"dict.dept.transplant.name": "زراعة الأعضاء",
+"dict.dept.radiology.name": "الأشعة",
+"dict.dept.radiation-oncology.name": "طب الأورام الإشعاعي",
+"dict.dept.pediatrics.name": "طب الأطفال",
+"dict.dept.general-surgery.name": "الجراحة العامة",
+"dict.dept.urology.name": "جراحة المسالك البولية"
+,
+"dict.dept.plastic-surgery.name": "جراحة التجميل",
+"dict.dept.gastro.name": "أمراض الجهاز الهضمي",
+"dict.dept.nuclear-medicine.name": "الطب النووي",
+"dict.dept.internal-medicine.name": "الطب الباطني",
+"dict.dept.ent.name": "أنف وأذن وحنجرة (طب الأنف والأذن والحنجرة)",
+"dict.dept.neurology.name": "طب الأعصاب",
+"dict.dept.hematology.name": "أمراض الدم",
+"dict.dept.pulmonology.name": "أمراض الرئة",
+"dict.dept.cardiovascular-surgery.name": "جراحة القلب والأوعية الدموية",
+"dict.dept.obgyn.name": "طب النساء والتوليد",
+"dict.dept.rehabilitation.name": "الطب الطبيعي وإعادة التأهيل",
+"dict.dept.thoracic-diseases.name": "أمراض الصدر",
+"dict.dept.perinatology.name": "طب الأم والجنين (الطب حول الولادة)",
+"dict.dept.psychiatry.name": "الطب النفسي",
+"dict.dept.child-psychiatry.name": "طب نفس الأطفال والمراهقين",
+"dict.dept.psychology.name": "علم النفس",
+"dict.dept.speech-therapy.name": "علاج النطق واللغة",
+
+"people.doctors.acibadem-istanbul-cardiology-slot.title": "أستاذ أمراض القلب (مستشفى أجيبادم ماسلاك)",
+"people.doctors.acibadem-istanbul-cardiology-slot.bio": "متخصص في أمراض القلب التداخلية والعامة؛ يعالج أمراض الشرايين التاجية وصمامات القلب واضطرابات النظم وارتفاع ضغط الدم في مستشفى أجيبادم ماسلاك بإسطنبول.",
+
+"people.doctors.liv-ankara-oncology-slot.title": "رئيس قسم الأورام الطبية، مستشفى ليف أنقرة",
+"people.doctors.liv-ankara-oncology-slot.bio": "يشرف على قسم الأورام السريرية والدراسات الإكلينيكية من المرحلتين الثانية والثالثة؛ يعالج الأورام الصلبة باستخدام العلاج الكيميائي والمناعي والموجه.",
+
+"people.doctors.medicana-istanbul-orthopedics-slot.title": "جراحة العظام والكسور — مستشفى ميديكـانا إنترناشيونال إسطنبول (بيليك دوزو)",
+"people.doctors.medicana-istanbul-orthopedics-slot.bio": "يجري عمليات استبدال المفاصل المعقدة وتنظير المفاصل؛ يعالج الإصابات والتشوهات في مستشفى ميديكـانا إنترناشيونال إسطنبول."
+,
+"dict.dept.nephrology.name": "أمراض الكلى",
+"dict.dept.anesthesiology.name": "التخدير",
+"dict.dept.dermatology.name": "الأمراض الجلدية",
+"dict.dept.rheumatology.name": "أمراض الروماتيزم",
+"dict.dept.pathology.name": "علم الأمراض",
+"dict.dept.thoracic-surgery.name": "جراحة الصدر",
+"dict.dept.dentistry.name": "طب الأسنان",
+"dict.dept.interventional-radiology.name": "الأشعة التداخلية",
+
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.title": "طبيب قلب تداخلي",
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.bio": "متخصص في عمليات PCI المعقدة وTAVI/MitraClip وإغلاق عيوب الحاجز الأذيني (ASD/PFO)؛ أحد كبار أطباء القلب في مستشفى ميديكـانا إنترناشيونال إسطنبول.",
+
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.title": "طبيب قلب",
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.bio": "طب القلب للبالغين؛ التشخيص والعلاج الدوائي لأمراض القلب.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.title": "جرّاح قلب وأوعية دموية",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.bio": "جراحة الصمامات وعمليات مجازة الشرايين التاجية.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.title": "جرّاح قلب وأوعية دموية",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.bio": "جراحة القلب لدى البالغين.",
+
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.title": "طبيب أورام",
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.bio": "العلاج الجهازي للأورام الصلبة؛ نهج متعدد التخصصات.",
+
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.title": "طبيب أورام",
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.bio": "العلاج الكيميائي والعلاجات الموجهة للأورام.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.title": "طبيبة علاج إشعاعي",
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.bio": "علاج إشعاعي متقدم بتقنيات IMRT/IGRT وبرامج شاملة للعلاج الإشعاعي.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.title": "طبيبة علاج إشعاعي",
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.bio": "تخطيط وتنفيذ جلسات العلاج الإشعاعي."
+,
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.title": "جرّاح عظام",
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.bio": "إصابات رياضية وإعادة بناء المفاصل.",
+
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.title": "جرّاح عظام",
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.bio": "جراحة الرضوض واستبدال المفاصل.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.title": "جرّاح أعصاب",
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.bio": "جراحة العمود الفقري والدماغ.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.title": "جرّاح أعصاب",
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.bio": "أمراض الدماغ والحبل الشوكي.",
+
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.title": "جرّاح أنف وأذن وحنجرة",
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.bio": "جراحة الجيوب الأنفية والأذن.",
+
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.title": "جرّاح أنف وأذن وحنجرة",
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.bio": "اضطرابات الرأس والرقبة وجراحة الأنف والأذن والحنجرة.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.title": "طبيب عيون",
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.bio": "علاج الساد وأمراض الشبكية.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.title": "طبيب عيون",
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.bio": "الجزء الأمامي من العين وأمراض الشبكية.",
+
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.title": "طبيب أمراض الجهاز الهضمي",
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.bio": "تنظير متقدم وتشخيص أمراض الجهاز الهضمي.",
+
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.title": "طبيبة أمراض الجهاز الهضمي",
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.bio": "أمراض الأمعاء الالتهابية وأمراض الكبد."
+,
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.title": "جرّاح عام",
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.bio": "جراحة الأورام والجراحة طفيفة التوغل.",
+
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.title": "جرّاح عام",
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.bio": "جراحة الكبد والقنوات الصفراوية والجهاز الهضمي.",
+
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.title": "طبيب مسالك بولية",
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.bio": "جراحة المسالك البولية الداخلية وحصى الكلى.",
+
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.title": "طبيب مسالك بولية",
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.bio": "المسالك البولية العامة.",
+
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.title": "طبيب نساء وتوليد",
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.bio": "رعاية الحمل والإجراءات النسائية.",
+
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.title": "أخصائي أطفال الأنابيب",
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.bio": "الإخصاب الصناعي وتقنيات المساعدة على الإنجاب والجراحة التناسلية.",
+
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.title": "طبيب أمراض الرئة",
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.bio": "مرض الانسداد الرئوي المزمن، الربو، وتشخيص سرطان الرئة.",
+
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.title": "جرّاح صدر",
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.bio": "جراحة أورام الصدر وجراحة المنظار الصدري (VATS).",
+
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.title": "طبيب أمراض الدم",
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.bio": "الأورام الدموية وزرع نخاع العظم.",
+
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.title": "طبيب أمراض الكلى",
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.bio": "أمراض الكلى وزراعة الكلى."
+,
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.title": "طبيب باطني",
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.bio": "الأمراض الباطنية العامة والأمراض المزمنة.",
+
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.title": "طبيب أشعة",
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.bio": "تصوير بالرنين المغناطيسي والأشعة المقطعية وتشخيص أمراض البطن.",
+
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.title": "أخصائي أشعة تداخلية",
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.bio": "إجراءات الأوعية الدموية والأورام تحت التوجيه الشعاعي.",
+
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.title": "طبيب أمراض جلدية",
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.bio": "الأمراض الجلدية السريرية والإجراءات التجميلية.",
+
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.title": "طبيب أمراض جلدية",
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.bio": "تشخيص الأمراض الجلدية وفحص الجلد بالدرموسكوب.",
+
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.title": "طبيب أمراض الروماتيزم",
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.bio": "الأمراض الروماتيزمية الجهازية.",
+
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.title": "طبيب علم الأمراض",
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.bio": "علم الأمراض السرطانية والتشخيص المجهري.",
+
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.title": "طبيبة نفسية",
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.bio": "الطب النفسي للبالغين وعلاج اضطرابات المزاج والقلق.",
+
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.title": "أخصائية نفسية إكلينيكية",
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.bio": "العلاج الفردي والتقييم النفسي."
+,
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.title": "أخصائية طب نووي",
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.bio": "التصوير المقطعي بالإصدار البوزيتروني PET-CT والتصوير بالنظائر المشعة.",
+
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.title": "طبيبة أسنان",
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.bio": "طب الأسنان العام والتجميلي.",
+
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.title": "طبيب قلب تداخلي",
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.bio": "التدخلات التاجية، تخطيط صدى القلب، وإدارة مختبر القسطرة.",
+
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.title": "طبيب قلب",
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.bio": "أمراض القلب العامة والتداخلية.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.title": "جرّاح قلب وأوعية دموية",
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.bio": "جراحة القلب والأوعية الدموية للبالغين.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.title": "جرّاحة قلب وأوعية دموية",
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.bio": "عمليات الصمامات والشريان الأبهر.",
+
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.title": "طبيب أورام",
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.bio": "العلاجات الجهازية وإدارة الأورام الصلبة.",
+
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.title": "طبيب أورام",
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.bio": "الأورام السريرية والأبحاث الطبية.",
+
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.title": "طبيبة علاج إشعاعي",
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.bio": "العلاج الإشعاعي الحديث (IMRT، VMAT)."
+,
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.title": "جرّاح عظام",
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.bio": "إصابات رياضية، جراحة العظام واستبدال المفاصل.",
+
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.title": "جرّاح عظام",
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.bio": "إصابات رياضية، جراحة الركبة والكتف.",
+
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.title": "جرّاح أعصاب",
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.bio": "جراحة الدماغ والعمود الفقري، والعلاج الإشعاعي التجسيمي.",
+
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.title": "جرّاح أنف وأذن وحنجرة",
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.bio": "طب الأنف والأذن والحنجرة الشامل.",
+
+"people.doctors.medicana-ankara-ent-hatice-karadas.title": "جرّاحة أنف وأذن وحنجرة",
+"people.doctors.medicana-ankara-ent-hatice-karadas.bio": "أمراض الرأس والعنق والجراحة التخصصية.",
+
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.title": "طبيبة عيون",
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.bio": "علاج وإزالة إعتام عدسة العين وجراحة الجزء الأمامي من العين.",
+
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.title": "طبيب أمراض الجهاز الهضمي",
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.bio": "تنظير داخلي وعلاج أمراض الجهاز الهضمي.",
+
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.title": "جرّاح زراعة الأعضاء",
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.bio": "زرع الكلى والجراحة البطنية المعقدة.",
+
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.title": "طبيب مسالك بولية",
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.bio": "أورام الجهاز البولي وحصى الكلى."
+,
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.title": "طبيبة نساء وتوليد",
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.bio": "أمراض النساء والتوليد ورعاية الحمل عالي الخطورة.",
+
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.title": "طبيبة أمراض صدرية",
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.bio": "أمراض الرئة والوقاية من الأمراض التنفسية.",
+
+"people.doctors.medicana-ankara-nephrology-siren-sezer.title": "طبيبة أمراض الكلى",
+"people.doctors.medicana-ankara-nephrology-siren-sezer.bio": "الفشل الكلوي وطب زراعة الكلى.",
+
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.title": "طبيب باطني / أخصائي غدد صماء",
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.bio": "الأمراض الباطنية واضطرابات الغدد الصماء.",
+
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.title": "أخصائي أشعة تداخلية",
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "إجراءات الأوعية الدموية والأورام تحت التوجيه الإشعاعي.",
+
+"people.doctors.memorial-antalya-ivf-slot.title": "رئيس مركز أطفال الأنابيب والصحة الإنجابية",
+"people.doctors.memorial-antalya-ivf-slot.bio": "يشرف على برنامج أطفال الأنابيب في مستشفى ميموريال أنطاليا؛ متخصص في الغدد الصماء التناسلية، العقم، وإجراءات IVF/ICSI وPGT.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-slot.title": "رئيس قسم جراحة الأعصاب والمؤسس",
+"people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "يقود قسم جراحة الأعصاب في مستشفى الدماغ NP إسطنبول؛ متخصص في جراحة قاعدة الجمجمة، الأوعية الدموية، الأورام والعمود الفقري، بالإضافة إلى الجراحة الوظيفية وجراحة الصرع.",
+
+"people.doctors.anadolu-gebze-oncology-slot.title": "مدير قسم الأورام الطبية",
+"people.doctors.anadolu-gebze-oncology-slot.bio": "يدير قسم الأورام الطبية في مركز الأناضول الطبي (غبزة) وينسق رعاية السرطان متعددة التخصصات بالتعاون مع مستشفى جونز هوبكنز."
+,
+"people.doctors.anadolu-istanbul-oncology-yesim-yildirim.title": "طبيبة أورام",
+"people.doctors.anadolu-istanbul-oncology-yesim-yildirim.bio": "أستاذة في طب الأورام بمركز الأناضول الطبي؛ تقدم رعاية متعددة التخصصات وعلاجات جهازية (سرطان الثدي والرئة والجهاز الهضمي).",
+
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.title": "طبيب أورام",
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.bio": "استشاري أورام متخصص في سرطانات الجهاز الهضمي والصدر؛ عضو في فريق مركز السرطان المتكامل.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.title": "مديرة قسم علاج الأورام بالإشعاع",
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.bio": "تشرف على تقنيات العلاج الإشعاعي المتقدمة (MR-Linac وCyberKnife وRadixact وVarian Edge)؛ متخصصة في SBRT والعلاجات الموجهة بالتصوير.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.title": "أخصائي علاج الأورام بالإشعاع",
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.bio": "يعمل على تخطيط وتنفيذ العلاج الإشعاعي المتوافق الحديث (IMRT/VMAT) داخل مركز السرطان.",
+
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.title": "اختصاصي أمراض الدم",
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.bio": "طب الدم وزراعة الخلايا الجذعية؛ خبرة في علاج اللوكيميا والأورام اللمفاوية وبرامج زراعة نخاع العظم.",
+
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.title": "اختصاصي أمراض الدم والأورام",
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.bio": "منسق العلوم الأورامية؛ يعالج سرطانات الدم والأورام الصلبة ضمن فريق متعدد التخصصات.",
+
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.title": "أخصائي زراعة نخاع العظم (للكبار)",
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.bio": "زراعة الخلايا الجذعية المكوّنة للدم للبالغين وعلاج الأورام الدموية.",
+
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.title": "أخصائي زراعة نخاع العظم للأطفال",
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.bio": "أمراض الدم والأورام لدى الأطفال؛ خبرة واسعة في اضطرابات الدم والمناعة وزراعة النخاع العظمي."
+,
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.title": "طبيب قلب",
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.bio": "طب القلب العام والوقائي، تخطيط صدى القلب وتقييم مخاطر أمراض القلب.",
+
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.title": "طبيب قلب تدخلي",
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.bio": "متخصص في أمراض الشرايين التاجية المعقدة والإجراءات التداخلية القلبية.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.title": "جرّاح القلب والأوعية الدموية",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.bio": "جراحة القلب للكبار بما في ذلك مجازات الشرايين التاجية وإعادة بناء الصمامات.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.title": "جرّاحة القلب والأوعية الدموية",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.bio": "جراحات الأوعية القلبية تشمل الشريان الأورطي، التاجي والطرفي.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.title": "جرّاح أعصاب",
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.bio": "جراحة الأعصاب المجهرية لأورام الدماغ وتمدد الأوعية والتشوهات الشريانية الوريدية واضطرابات العمود الفقري.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.title": "جرّاح أعصاب",
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.bio": "جراحة العمود الفقري والجمجمة باستخدام التقنيات التنظيرية طفيفة التوغل.",
+
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.title": "طبيب أعصاب",
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.bio": "اضطرابات الحركة والصداع النصفي والاضطرابات العصبية الوظيفية.",
+
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.title": "طبيبة أعصاب",
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.bio": "الصرع، السكتة الدماغية وأمراض المناعة العصبية.",
+
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.title": "جرّاح عظام وإصابات",
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.bio": "إصابات رياضية، تنظير المفاصل والحفاظ على صحة المفاصل."
+,
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.title": "جرّاح عظام وأورام",
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.bio": "علاج ساركوما العظام والأنسجة الرخوة وإعادة بناء الأطراف دون بتر.",
+
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.title": "مدير مركز صحة الثدي؛ جرّاح عام وأورام",
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.bio": "جراحة الثدي والجراحة العامة للأورام؛ يرأس مركز صحة الثدي.",
+
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.title": "جرّاح عام",
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.bio": "الجراحة التنظيرية للبطن وعلاج الفتوق.",
+
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.title": "طبيب مسالك بولية",
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.bio": "أورام المسالك البولية، سرطان البروستاتا وجراحة المسالك طفيفة التوغل.",
+
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.title": "طبيب مسالك بولية",
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.bio": "حصى الكلى والإجراءات التنظيرية البولية.",
+
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.title": "طبيب أمراض الجهاز الهضمي",
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.bio": "التنظير المتقدم وأمراض الأمعاء الالتهابية.",
+
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.title": "طبيب أمراض الجهاز الهضمي",
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.bio": "ERCP، أمراض الكبد ودعم الأورام الهضمية.",
+
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.title": "اختصاصي الغدد الصماء",
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.bio": "داء السكري، أمراض الغدة الدرقية والغدة النخامية."
+,
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.title": "اختصاصي الغدد الصماء",
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.bio": "الغدد الصماء العامة وأمراض الأيض.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.title": "اختصاصي الطب الباطني",
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.bio": "الطب الباطني الشامل وإدارة الأمراض المزمنة.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.title": "اختصاصي الطب الباطني",
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.bio": "الرعاية الباطنية الأولية والطب الوقائي.",
+
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.title": "اختصاصي الأنف والأذن والحنجرة / جراحة الرأس والعنق",
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.bio": "أورام الرأس والعنق، جراحة الحنجرة وقاعدة الجمجمة.",
+
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.title": "جرّاح أنف وأذن وحنجرة",
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.bio": "تجميل الأنف الوظيفي والجمالي، جراحة الجيوب والأنف للأطفال.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.title": "طبيب عيون",
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.bio": "جراحة الساد، الانكسار والجراحة الأمامية للعين.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.title": "طبيب عيون (الشبكية)",
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.bio": "جراحة الشبكية واستئصال الزجاجية لأمراض البقعة والسكري.",
+
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.title": "طبيبة أطفال",
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.bio": "طب الأطفال العام، النمو والتطعيمات."
+,
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.title": "اختصاصي أمراض الدم والأورام للأطفال / زراعة الخلايا الجذعية",
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.bio": "أمراض الدم والأورام عند الأطفال وزراعة الخلايا الجذعية.",
+
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.title": "اختصاصي أشعة",
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.bio": "الأشعة التداخلية والتصوير المقطعي والرنين المغناطيسي.",
+
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.title": "اختصاصي أشعة",
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.bio": "تطبيقات متقدمة للتصوير بالرنين المغناطيسي وتصوير مريح للمرضى.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.title": "مديرة قسم الطب النووي",
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.bio": "PET/CT والعلاج الموجه بالنظائر المشعة والعلاج باليود المشع.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.title": "اختصاصي الطب النووي",
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.bio": "التشخيص والعلاجات المستهدفة بالنظائر المشعة.",
+
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.title": "طبيبة نساء وتوليد",
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.bio": "الحمل عالي الخطورة، تشخيص العقم والتعاون مع مركز أطفال الأنابيب.",
+
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.title": "طبيبة نساء وتوليد",
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.bio": "رعاية ما قبل الولادة والإجراءات النسائية.",
+
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.title": "مدير مركز أطفال الأنابيب",
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.bio": "طب الغدد التناسلية، بروتوكولات أطفال الأنابيب، PRP والعلاجات المساندة."
+,
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.title": "اختصاصية أطفال الأنابيب (طبيبة نساء وتوليد)",
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.bio": "تشخيص العقم لدى النساء وإدارة دورات أطفال الأنابيب.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.title": "اختصاصي جراحة تجميلية وترميمية",
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.bio": "ترميم الثدي بعد السرطان والجراحة الميكروسكوبية المعقدة.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.title": "اختصاصي جراحة تجميلية وترميمية",
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.bio": "إجراءات تجميلية وترميمية باستخدام تقنيات حديثة.",
+
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.title": "اختصاصي أمراض الرئة",
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.bio": "مرض الانسداد الرئوي المزمن، رعاية ما بعد كوفيد وطب الرئة التداخلي.",
+
+"people.doctors.medipol-mega-transplant-slot.title": "مدير مركز زراعة الأعضاء — مستشفى ميديبول ميغا الجامعي",
+"people.doctors.medipol-mega-transplant-slot.bio": "جرّاح متخصص في زراعة الكبد والجراحة الكبدية الصفراوية، يشرف على برنامج زراعة الكبد والكلى من متبرعين أحياء ومتوفين.",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.title": "أستاذ أمراض القلب — مستشفى ميديبول ميغا الجامعي",
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.bio": "اختصاصي قلب تداخلي يركز على تصوير الشرايين التاجية بالأشعة المقطعية ومرض الشريان التاجي والوقاية القلبية.",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.title": "أستاذ أمراض القلب",
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.bio": "الوقاية من أمراض القلب وعلاج الحالات المعقدة لأمراض الشريان التاجي والمشاركة في الأبحاث والتعليم الطبي.",
+
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.title": "أستاذ جراحة القلب والأوعية الدموية",
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.bio": "متخصص في جراحات الشريان الأبهر وصمامات القلب والجراحة طفيفة التوغل وجراحة الشريان التاجي للمرضى ذوي الخطورة العالية."
+,
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.title": "أستاذ جراحة القلب والأوعية الدموية (للأطفال والبالغين)",
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.bio": "يجري عمليات قلب معقدة للأطفال والبالغين بما في ذلك إصلاح واستبدال الصمامات.",
+
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.title": "أستاذ الأورام الطبية",
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.bio": "اختصاصي أورام ذو خبرة واسعة في علاج الأورام الصلبة باستخدام العلاج الكيميائي والمناعي والموجه؛ يشارك في الأبحاث والتعليم الطبي.",
+
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.title": "أستاذ الأورام الطبية",
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.bio": "يعالج الأورام الصلبة الشائعة بالعلاجات النظامية المستندة إلى الأدلة؛ مؤلف ومتحدث في علم الأورام الحديث.",
+
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.title": "أستاذ علاج الأورام بالإشعاع",
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.bio": "تستخدم تقنيات العلاج الإشعاعي الموجه والمجسم (IGRT، SBRT) لعلاج سرطان الثدي والأورام الصلبة الأخرى.",
+
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.title": "اختصاصي علاج الأورام بالإشعاع",
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.bio": "متخصص في تخطيط وتنفيذ العلاج الإشعاعي للأورام الصلبة في مركز ميديبول ميغا للأورام.",
+
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.title": "أستاذ أمراض الجهاز الهضمي والكبد",
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.bio": "طبيب كبد وجهاز هضمي بخبرة دولية، يعالج أمراض الكبد والقولون ويجري مناظير متقدمة.",
+
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.title": "أستاذ أمراض الجهاز الهضمي",
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.bio": "يعالج مجموعة واسعة من أمراض الجهاز الهضمي ويجري مناظير تشخيصية وعلاجية.",
+
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.title": "أستاذ زراعة الأعضاء (جراحة الكبد والقنوات الصفراوية)",
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.bio": "جرّاح رائد في زراعة الكبد؛ يجري عمليات زراعة من متبرعين أحياء وجراحة أورام الكبد المعقدة."
+,
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.title": "أستاذ مشارك في الجراحة العامة وزراعة الأعضاء",
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.bio": "جرّاح مدرّب في زراعة الكبد؛ عضو في فريق مركز ميديبول ميغا لزراعة الأعضاء.",
+
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.title": "أستاذ جراحة العظام والإصابات",
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.bio": "يختص بجراحة المفاصل والكسور وإصابات الرياضة؛ خبير في إعادة بناء المفاصل والكسور المعقدة.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.title": "أستاذ جراحة الأعصاب",
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.bio": "جرّاح أعصاب بارز متخصص في جراحة الأوعية الدقيقة للتمددات الدماغية وقاعدة الجمجمة؛ رئيس سابق للجمعية التركية لجراحة الأعصاب.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.title": "أستاذ جراحة الأعصاب",
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.bio": "يقود برامج جراحة أورام الدماغ والصرع باستخدام التصوير بالرنين المغناطيسي أثناء الجراحة وتوجيه الأعصاب.",
+
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.title": "أستاذة مشاركة في طب التكاثر (أطفال الأنابيب) والتوليد وأمراض النساء",
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.bio": "متخصصة في طب الغدد الصماء التناسلية وأطفال الأنابيب؛ تقدم رعاية شاملة لحالات العقم المعقدة.",
+
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.title": "أستاذ أمراض النساء والتوليد والأورام النسائية",
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.bio": "جرّاح أورام نسائية يجري عمليات بالمنظار والجراحة المفتوحة لسرطان الرحم والمبيض وعنق الرحم.",
+
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.title": "أستاذ جراحة المسالك البولية (جراحة المناظير)",
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.bio": "خبير عالمي في جراحة المسالك البولية بالمنظار، يعالج تضخم البروستاتا وحصوات الكلى والإجراءات الطفيفة التوغل.",
+
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.title": "أستاذة جراحة المسالك البولية (أورام الجهاز البولي)",
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.bio": "متخصصة في أورام الكلى والمثانة والبروستاتا؛ تستخدم تقنيات الجراحة الروبوتية والمنظار."
+,
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.title": "أستاذ الأشعة",
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.bio": "أخصائي أشعة متمرس يمارس الأشعة التداخلية؛ يقود إجراءات التشخيص والعلاج الموجهة بالتصوير.",
+
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.title": "أستاذ الأشعة (أشعة الأطفال)",
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.bio": "متخصص في التصوير الإشعاعي للأطفال والتقنيات التشخيصية المتقدمة.",
+
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.title": "أستاذ طب العيون",
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.bio": "جرّاح شبكية زجاجية يجري عمليات استئصال الجسم الزجاجي وإصلاح الشبكية؛ يعمل في مستشفى ميديبول ميغا ومستشفى العيون التابع له.",
+
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.title": "أستاذة طب أورام وأمراض الدم للأطفال ورئيسة قسم زراعة نخاع العظم للأطفال",
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.bio": "تقود قسم أمراض الدم والأورام وزراعة النخاع للأطفال؛ أكثر من 30 عامًا من الخبرة ونسب شفاء مرتفعة في اللوكيميا لدى الأطفال.",
+
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.title": "استشاري طب العيون — الشبكية والكتاراكت (دنياغوز إيتيلر)",
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.bio": "جرّاح شبكية وعدسة متخصص في عمليات الليزر والفكواتراكت في مستشفى دنياغوز إيتيلر.",
+
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.title": "أستاذ طب العيون — القرنية والكتاراكت وجراحة تصحيح البصر",
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.bio": "متخصص في أمراض القرنية والكتاراكت وتصحيح البصر بالليزر؛ أكثر من 30 ألف عملية؛ يتحدث الإنجليزية.",
+
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.title": "أستاذ طب العيون — الكتاراكت وجراحة تصحيح الإبصار",
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.bio": "يجري جراحات الكتاراكت وتصحيح البصر بالليزر؛ أكثر من 60 ألف عملية وسجل أكاديمي متميز."
+,
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.title": "أستاذ طب العيون — الزرق وطب العيون العصبي",
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.bio": "يعالج الزرق والكتاراكت واضطرابات العصب البصري؛ عمل مع مجموعة أبحاث الزرق والتعليم في سان فرانسيسكو.",
+
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.title": "أستاذ طب العيون — أورام العين",
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.bio": "متخصص في أورام العين في مستشفى دنياغوز إيتيلر؛ عضو في الجمعية الدولية لأورام العين؛ محاضر ومؤلف منشورات علمية.",
+
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.title": "أستاذ مشارك — طب عيون الأطفال والحول",
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.bio": "متخصص في صحة عيون الأطفال، علاج كسل العين والحول؛ أجرى أكثر من 1000 عملية؛ عضو في ESA وAAO.",
+
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.title": "أستاذ طب العيون — الساد والعدسات داخل العين",
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.bio": "أجرى أكثر من 25 ألف عملية الساد وزراعة العدسات؛ تلقى تدريبه في مركز سينسكي للعيون / جامعة كاليفورنيا.",
+
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.title": "أستاذ مشارك — جراحة تصحيح الإبصار والقرنية",
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.bio": "يجري عمليات الليزك والابتسامة وعلاج الساد؛ متخصص في أمراض القرنية والانكسار.",
+
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.title": "أستاذة — جراحة العيون التجميلية والقرنية",
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.bio": "أكثر من 25 عامًا من الخبرة؛ تعمل في جراحة تجميل العين والقرنية والعدسات اللاصقة؛ عضو نشط في الجمعية التركية لطب العيون.",
+
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.title": "أستاذ — الزرق والكتاراكت",
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.bio": "متخصص في الزرق والكتاراكت؛ تدرب في مستشفى ويلز للعيون؛ عضو في الجمعية الأوروبية والعالمية للزرق.",
+
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.title": "أستاذ — التهاب القزحية والزرق",
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.bio": "استشاري عيون كبير في أنطاليا؛ متخصص في التهاب القزحية والزرق؛ أكثر من 40 عامًا من الخبرة ومنشورات دولية.",
+
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.title": "أستاذة مشاركة — الشبكية والكتاراكت",
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.bio": "تعالج أمراض الشبكية والكتاراكت واضطرابات العصب البصري؛ أكثر من 50 منشورًا علميًا؛ تمارس منذ عام 2004."
+
+
+
 }

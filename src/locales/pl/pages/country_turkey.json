@@ -1,81 +1,1074 @@
 {
   "country.turkey.metaTitle": "Turcja — Katalog lekarzy | CareOverseas",
-  "country.turkey.metaDesc": "Lekarze w Turcji. Filtruj wg kliniki, oddziału i miasta.",
-  "country.turkey.title": "Turcja — Katalog lekarzy",
-  "country.turkey.subtitle": "Strona informacyjna: Stambuł, Antalya, Ankara — Acibadem, Liv, Medicana, Medistate, NP Istanbul Brain Hospital, Memorial, Anadolu.",
-  "country.turkey.searchPlaceholder": "Szukaj po nazwisku, specjalności lub klinice",
-  "country.turkey.clear": "Wyczyść",
-  "country.turkey.filter.department": "Oddział",
-  "country.turkey.filter.clinic": "Klinika",
-  "country.turkey.filter.city": "Miasto",
-  "country.turkey.sortBy": "Sortuj wg:",
-  "country.turkey.sort.name": "Nazwisko",
-  "country.turkey.sort.clinic": "Klinika",
-  "country.turkey.sort.city": "Miasto",
-  "country.turkey.empty": "Brak wyników. Zmień filtry lub zapytanie.",
-  "country.turkey.emptyHint": "Spróbuj innego miasta, kliniki lub oddziału.",
-  "country.turkey.backHome": "← Powrót na stronę główną",
-  "country.turkey.contactCta": "Skontaktuj się z koordynatorem",
-  "country.turkey.breadcrumbHome": "Strona główna",
-  "country.turkey.stats.doctorsLabel": "lekarzy",
-  "country.turkey.stats.clinicsLabel": "klinik",
-  "country.turkey.stats.citiesLabel": "miast",
-  "country.turkey.stats.departmentsLabel": "oddziałów",
-  "country.turkey.usp.expertsTitle": "Najlepsi eksperci do Twojego przypadku",
-  "country.turkey.usp.expertsDesc": "Wybieramy ordynatorów i liderów wyspecjalizowanych jednostek.",
-  "country.turkey.usp.safeTitle": "Przejrzyście i bez stresu",
-  "country.turkey.usp.safeDesc": "Jasna koordynacja, dokumenty w Twoim języku, żadnych umów marketingowych.",
-  "country.turkey.usp.careTitle": "Wsparcie z ludzkim podejściem",
-  "country.turkey.usp.careDesc": "Osobista opieka od pierwszej wiadomości aż do powrotu do domu.",
-  "country.turkey.pitch.title": "Nie wiesz, do którego lekarza się zgłosić?",
-  "country.turkey.pitch.subtitle": "Opowiedz o diagnozie i preferencjach. Dopasuję odpowiedniego ordynatora, przygotuję zapytanie i pomogę uzyskać szybką odpowiedź z kliniki.",
-  "country.turkey.pitch.badge1": "Bezpłatne wstępne zapytanie",
-  "country.turkey.pitch.badge2": "Szybka odpowiedź",
-  "country.turkey.pitch.badge3": "Pomoc w dokumentach",
-  "country.turkey.pitch.cta": "Skontaktuj się z koordynatorem",
+"country.turkey.metaDesc": "Przeglądaj najlepszych lekarzy w Turcji. Filtruj według kliniki, specjalizacji i miasta.",
+"country.turkey.title": "Turcja — Katalog lekarzy",
+"country.turkey.subtitle": "Katalog informacyjny. Acibadem, Liv, Memorial, Medicana, Medistate, Medipol, NP Brain, Anadolu, Dünyagöz — Stambuł, Ankara, Antalya, Kocaeli.",
+"country.turkey.searchPlaceholder": "Szukaj według nazwiska, specjalizacji lub kliniki",
+"country.turkey.clear": "Wyczyść",
+"country.turkey.filter.department": "Oddział",
+"country.turkey.filter.clinic": "Klinika",
+"country.turkey.filter.city": "Miasto",
+"country.turkey.sortBy": "Sortuj według:",
+"country.turkey.sort.name": "Nazwisko",
+"country.turkey.sort.clinic": "Klinika",
+"country.turkey.sort.city": "Miasto",
+"country.turkey.empty": "Brak wyników. Spróbuj zmienić filtry lub zapytanie.",
+"country.turkey.emptyHint": "Spróbuj inne miasto, klinikę lub specjalizację.",
+"country.turkey.backHome": "← Powrót do strony głównej",
+"country.turkey.contactCta": "Skontaktuj się z koordynatorem",
+"country.turkey.breadcrumbHome": "Strona główna",
+"country.turkey.stats.doctorsLabel": "lekarze",
+"country.turkey.stats.clinicsLabel": "kliniki",
+"country.turkey.stats.citiesLabel": "miasta",
+"country.turkey.stats.departmentsLabel": "oddziały",
+"country.turkey.usp.expertsTitle": "Najlepsi specjaliści dla Twojego przypadku",
+"country.turkey.usp.expertsDesc": "Wybieramy ordynatorów i liderów wyspecjalizowanych jednostek.",
+"country.turkey.usp.safeTitle": "Przejrzyście i bez stresu",
+"country.turkey.usp.safeDesc": "Jasna koordynacja, dokumenty w Twoim języku, brak marketingowych pośredników.",
+"country.turkey.usp.careTitle": "Wsparcie z ludzkim podejściem",
+"country.turkey.usp.careDesc": "Indywidualna opieka od pierwszej wiadomości aż po powrót do domu.",
+"country.turkey.pitch.title": "Nie wiesz, który lekarz będzie odpowiedni?",
+"country.turkey.pitch.subtitle": "Opowiedz o diagnozie i preferencjach. Dobiorę odpowiedniego ordynatora, przygotuję zapytanie i pomogę uzyskać szybką odpowiedź z kliniki.",
+"country.turkey.pitch.badge1": "Bezpłatne zapytanie wstępne",
+"country.turkey.pitch.badge2": "Szybka odpowiedź",
+"country.turkey.pitch.badge3": "Pomoc z dokumentami",
+"country.turkey.pitch.cta": "Skontaktuj się z koordynatorem",
 
-  "dict.city.istanbul.name": "Stambuł",
-  "dict.city.antalya.name": "Antalya",
-  "dict.city.ankara.name": "Ankara",
+"dict.city.istanbul.name": "Stambuł",
+"dict.city.ankara.name": "Ankara",
+"dict.city.antalya.name": "Antalya",
+"dict.city.kocaeli.name": "Kocaeli (Gebze)",
 
-  "dict.clinic.acibadem-istanbul.name": "Acibadem (Stambuł)",
-  "dict.clinic.liv-ankara.name": "Liv Hospital Ankara",
-  "dict.clinic.medicana-istanbul.name": "Medicana (Stambuł)",
-  "dict.clinic.medistate-istanbul.name": "Medistate (Stambuł)",
-  "dict.clinic.np-istanbul-brain.name": "NP Istanbul Brain Hospital",
-  "dict.clinic.memorial-antalya.name": "Memorial Antalya Hospital",
-  "dict.clinic.anadolu-istanbul.name": "Anadolu Medical Center (Stambuł)",
+"dict.clinic.acibadem-maslak.name": "Szpital Acıbadem Maslak",
+"people.doctors.maslak-akiyol-cardiology.name": "Prof. dr Ahmet Akyol",
+"people.doctors.maslak-akiyol-cardiology.title": "Kardiolog interwencyjny",
+"people.doctors.maslak-akiyol-cardiology.bio": "Czołowy specjalista w zakresie kardiologii interwencyjnej w Maslak, duże doświadczenie w implantacji stentów i zabiegach naczyniowych.",
 
-  "dict.dept.cardiology.name": "Kardiologia",
-  "dict.dept.oncology.name": "Onkologia",
-  "dict.dept.neurosurgery.name": "Neurochirurgia",
-  "dict.dept.ivf.name": "IVF i medycyna rozrodu",
-  "dict.dept.orthopedics.name": "Ortopedia",
-  "dict.dept.gastro.name": "Gastroenterologia",
-  "dict.dept.endocrinology.name": "Endokrynologia",
-  "dict.dept.general-surgery.name": "Chirurgia ogólna",
-  "dict.dept.transplant.name": "Transplantologia",
-  "dict.dept.radiology.name": "Radiologia",
-  "dict.dept.radiation-oncology.name": "Onkologia radioterapeutyczna",
-  "dict.dept.pediatrics.name": "Pediatria",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.name": "Prof. Aleks Değirmencioğlu",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.title": "Kardiolog",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.bio": "Specjalista w kardiologii nieinwazyjnej, echokardiografii i diagnostyce obrazowej.",
 
-  "people.doctors.acibadem-istanbul-cardio-slot.name": "Do uzupełnienia — Acibadem, kardiologia",
-  "people.doctors.acibadem-istanbul-cardio-slot.title": "Przykład: ordynator kardiologii",
-  "people.doctors.acibadem-istanbul-cardio-slot.bio": "Zastępczy opis. Wstaw krótkie CV po polsku.",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.name": "Prof. dr Gökhan Bozkurt",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.title": "Neurochirurg",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.bio": "Ekspert w chirurgii podstawy czaszki i neurochirurgii naczyniowej.",
 
-  "people.doctors.liv-ankara-oncology-slot.name": "Do uzupełnienia — Liv, onkologia (Ankara)",
-  "people.doctors.liv-ankara-oncology-slot.title": "Przykład: dyrektor onkologii",
-  "people.doctors.liv-ankara-oncology-slot.bio": "Zastępczy opis. Wstaw krótkie CV po polsku.",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.name": "Prof. Metiz Zafer Berkman",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.title": "Neurochirurg",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.bio": "Specjalizuje się w neurochirurgii kręgosłupa.",
 
-  "people.doctors.medicana-istanbul-orthopedics-slot.name": "Do uzupełnienia — Medicana, ortopedia",
-  "people.doctors.medicana-istanbul-orthopedics-slot.title": "Przykład: ordynator ortopedii",
-  "people.doctors.medicana-istanbul-orthopedics-slot.bio": "Zastępczy opis. Wstaw krótkie CV po polsku.",
+"people.doctors.maslak-erdem-kilavuz-ent.name": "Prof. A. Erdem Kılavuz",
+"people.doctors.maslak-erdem-kilavuz-ent.title": "Laryngolog / Otolaryngolog",
+"people.doctors.maslak-erdem-kilavuz-ent.bio": "Specjalista w chirurgii głowy i szyi, zatok i ucha.",
+"people.doctors.maslak-sefa-sahin-otolaryngology.name": "Prof. Sedef Şahin",
+"people.doctors.maslak-sefa-sahin-otolaryngology.title": "Dermatolog",
+"people.doctors.maslak-sefa-sahin-otolaryngology.bio": "Specjalistka w zakresie chorób skóry i dermatologii estetycznej.",
 
-  "people.doctors.memorial-antalya-ivf-slot.name": "Do uzupełnienia — Memorial, IVF (Antalya)",
-  "people.doctors.memorial-antalya-ivf-slot.title": "Przykład: kierownik programu IVF",
-  "people.doctors.memorial-antalya-ivf-slot.bio": "Zastępczy opis. Wstaw krótkie CV po polsku.",
+"people.doctors.maslak-alper-medical-oncology.name": "Prof. Gökhan Demir",
+"people.doctors.maslak-alper-medical-oncology.title": "Onkolog kliniczny",
+"people.doctors.maslak-alper-medical-oncology.bio": "Leczenie guzów litych, immunoterapia, chemioterapia.",
 
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "Do uzupełnienia — NP Istanbul, neurochirurgia",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Przykład: ordynator neurochirurgii",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Zastępczy opis. Wstaw krótkie CV po polsku."
+"people.doctors.maslak-olmez-ozlem-oncology.name": "Prof. Ömer Fatih Ölmez",
+"people.doctors.maslak-olmez-ozlem-oncology.title": "Onkolog",
+"people.doctors.maslak-olmez-ozlem-oncology.bio": "Leczenie nowotworów z podejściem interdyscyplinarnym.",
+
+"dict.clinic.acibadem-altunizade.name": "Szpital Acıbadem Altunizade",
+"people.doctors.altunizade-usta-gynecology.name": "Prof. dr A. Taner Usta",
+"people.doctors.altunizade-usta-gynecology.title": "Ginekolog / Położnik",
+"people.doctors.altunizade-usta-gynecology.bio": "Specjalista w ciążach wysokiego ryzyka i chirurgii reprodukcyjnej.",
+
+"people.doctors.altunizade-tayyar-gynecology.name": "Prof. dr Ahmet Tayyar",
+"people.doctors.altunizade-tayyar-gynecology.title": "Ginekolog",
+"people.doctors.altunizade-tayyar-gynecology.bio": "Minimalnie inwazyjna chirurgia ginekologiczna, leczenie niepłodności.",
+
+"people.doctors.altunizade-alper-ozkan-cardiology.name": "Prof. Alper Özkan",
+"people.doctors.altunizade-alper-ozkan-cardiology.title": "Kardiolog",
+"people.doctors.altunizade-alper-ozkan-cardiology.bio": "Kardiologia dorosłych i dzieci, zabiegi wieńcowe.",
+
+"people.doctors.altunizade-duhan-bayrak-cardiology.name": "Prof. Duhan Fatih Bayrak",
+"people.doctors.altunizade-duhan-bayrak-cardiology.title": "Kardiolog",
+"people.doctors.altunizade-duhan-bayrak-cardiology.bio": "Niewydolność serca, kardiologia interwencyjna.",
+
+"people.doctors.altunizade-faysal-dane-oncology.name": "Prof. Faysal Dane",
+"people.doctors.altunizade-faysal-dane-oncology.title": "Onkolog kliniczny",
+"people.doctors.altunizade-faysal-dane-oncology.bio": "Diagnostyka raka, chemioterapia, opracowywanie protokołów terapeutycznych."
+,
+"people.doctors.altunizade-gul-basaran-oncology.name": "Prof. Gül Başaran",
+"people.doctors.altunizade-gul-basaran-oncology.title": "Onkolog",
+"people.doctors.altunizade-gul-basaran-oncology.bio": "Specjalistka w zakresie raka piersi i nowotworów ginekologicznych.",
+
+"people.doctors.altunizade-koray-ozduman-neurosurgery.name": "Prof. Koray Özduman",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.title": "Neurochirurg",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.bio": "Guzy mózgu, chirurgia stereotaktyczna.",
+
+"people.doctors.altunizade-memet-ozek-neurosurgery.name": "Prof. Memet Özek",
+"people.doctors.altunizade-memet-ozek-neurosurgery.title": "Neurochirurg",
+"people.doctors.altunizade-memet-ozek-neurosurgery.bio": "Neurochirurgia naczyniowa, operacje podstawy czaszki.",
+
+"people.doctors.liv-ulus-cardiology-yurtseven.title": "Kardiolog interwencyjny",
+"people.doctors.liv-ulus-cardiology-yurtseven.bio": "Koronarografia i stentowanie, wady strukturalne serca, obrazowanie kardiologiczne.",
+
+"people.doctors.liv-ulus-cardiology-ozdemir.title": "Kardiolog",
+"people.doctors.liv-ulus-cardiology-ozdemir.bio": "Zaburzenia rytmu serca i niewydolność, echokardiografia i profilaktyka chorób serca.",
+
+"people.doctors.liv-ulus-cardiology-enis-oguz.title": "Elektrofizjolog interwencyjny",
+"people.doctors.liv-ulus-cardiology-enis-oguz.bio": "Ablacja cewnikowa (AF/SVT/VT), terapia urządzeniami (CRT/ICD) i kompleksowa opieka nad rytmem serca.",
+
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.title": "Onkolog radioterapeuta",
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.bio": "Radioterapia kierowana obrazem (VMAT/IGRT), stereotaktyczne i spersonalizowane plany leczenia.",
+
+"people.doctors.liv-ulus-nuclear-emel-ceylan.title": "Specjalista medycyny nuklearnej",
+"people.doctors.liv-ulus-nuclear-emel-ceylan.bio": "Onkologiczne PET/CT, terapia radionuklidowa i tzw. theranostics.",
+
+"people.doctors.liv-ulus-urology-engin-kaya.title": "Urolog / Androlog",
+"people.doctors.liv-ulus-urology-engin-kaya.bio": "Kamica nerkowa, przerost prostaty, niepłodność męska, endourologia.",
+
+"people.doctors.liv-ulus-medonc-meral-gunaldi.title": "Onkolog kliniczny",
+"people.doctors.liv-ulus-medonc-meral-gunaldi.bio": "Rak piersi, układu pokarmowego i płuc; immunoterapia i leczenie celowane."
+,
+"people.doctors.liv-ulus-medonc-duygu-derin.title": "Onkolog kliniczny",
+"people.doctors.liv-ulus-medonc-duygu-derin.bio": "Systemowa opieka onkologiczna, medycyna precyzyjna i wielospecjalistyczne konsylia nowotworowe.",
+
+"people.doctors.liv-ulus-neurosurgery-bozkurt.title": "Neurochirurg",
+"people.doctors.liv-ulus-neurosurgery-bozkurt.bio": "Chirurgia podstawy czaszki i naczyniowa; skomplikowane operacje mózgu i kręgosłupa.",
+
+"people.doctors.liv-ulus-neurosurgery-ozduman.title": "Neurochirurg",
+"people.doctors.liv-ulus-neurosurgery-ozduman.bio": "Guzy mózgu, neurochirurgia stereotaktyczna i czynnościowa.",
+
+"people.doctors.liv-ulus-ophthalmology-kahraman.title": "Okulista",
+"people.doctors.liv-ulus-ophthalmology-kahraman.bio": "Zaćma, choroby siatkówki i plamki; kompleksowa chirurgia oka.",
+
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.title": "Endokrynolog dziecięcy",
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.bio": "Cukrzyca typu 1, zaburzenia wzrostu i dojrzewania, choroby tarczycy u dzieci.",
+
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.title": "Pulmonolog dziecięcy",
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.bio": "Astma, mukowiscydoza i opieka nad złożonymi chorobami dróg oddechowych.",
+
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.title": "Endokrynolog",
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.bio": "Choroby tarczycy, cukrzyca i zaburzenia metaboliczne; profilaktyka ryzyka endokrynologicznego.",
+
+"people.doctors.liv-ulus-radiology-adem-ucar.title": "Radiolog interwencyjny",
+"people.doctors.liv-ulus-radiology-adem-ucar.bio": "Zabiegi onkologiczne i naczyniowe, zaawansowane obrazowanie jamy brzusznej i klatki piersiowej.",
+
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.title": "Ortopeda",
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.bio": "Endoprotezoplastyka biodra i kolana, rekonstrukcja pourazowa, urazy sportowe.",
+
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.title": "Chirurg ortopeda i kręgosłupa",
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.bio": "Kręgosłup, chirurgia artroskopowa i pourazowa; korekcja deformacji kończyn.",
+
+"people.doctors.liv-ulus-neurology-mustafa-alkan.title": "Neurolog",
+"people.doctors.liv-ulus-neurology-mustafa-alkan.bio": "Opieka poudarowa, epilepsja i zaburzenia ruchowe."
+,
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.title": "Gastroenterolog",
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.bio": "Endoskopia i kolonoskopia, choroby zapalne jelit oraz schorzenia wątroby i dróg żółciowych.",
+
+"people.doctors.liv-ulus-surgery-bulent-ozturk.title": "Chirurg ogólny i onkologiczny",
+"people.doctors.liv-ulus-surgery-bulent-ozturk.bio": "Laparoskopowa chirurgia przewodu pokarmowego i układu wątrobowo-żółciowego, operacje przepuklin i zabiegi kolorektalne.",
+
+"people.doctors.liv-ulus-plastic-kemal-aykan.title": "Chirurg plastyczny, rekonstrukcyjny i estetyczny",
+"people.doctors.liv-ulus-plastic-kemal-aykan.bio": "Mikrochirurgia rekonstrukcyjna, modelowanie sylwetki i zabiegi estetyczne.",
+
+"people.doctors.liv-ulus-ivf-taner-usta.title": "Ginekolog / Specjalista IVF",
+"people.doctors.liv-ulus-ivf-taner-usta.bio": "Diagnostyka niepłodności, IVF/ICSI oraz małoinwazyjna chirurgia rozrodcza.",
+
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.title": "Ginekolog i położnik",
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.bio": "Opieka prenatalna, ciąże wysokiego ryzyka oraz standardowe zabiegi ginekologiczne.",
+
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.title": "Pediatra",
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.bio": "Pediatria ogólna i neonatologia, szczepienia i rozwój dziecka.",
+
+"people.doctors.liv-ulus-physical-nurcan-turhan.title": "Specjalista rehabilitacji medycznej",
+"people.doctors.liv-ulus-physical-nurcan-turhan.bio": "Rehabilitacja pooperacyjna, leczenie bólu mięśniowo-szkieletowego i medycyna sportowa.",
+
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.title": "Urolog (chirurgia robotyczna i laparoskopowa)",
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.bio": "Prostatektomia robotyczna, operacje raka nerki i pęcherza, kamica nerkowa.",
+
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.title": "Kardiolog",
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.bio": "Zaawansowane obrazowanie serca i kardiologia interwencyjna.",
+
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.title": "Elektrofizjolog serca",
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.bio": "Ablacja AF/VT, terapia urządzeniami (CRT/ICD) i kompleksowe leczenie zaburzeń rytmu serca."
+,
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.title": "Kardiolog",
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.bio": "Kardiologia nieinwazyjna, echokardiografia i profilaktyka chorób serca.",
+
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.title": "Kardiolog interwencyjny",
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.bio": "Koronarografia, angioplastyka i implantacja stentów.",
+
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.title": "Specjalista chorób wewnętrznych",
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.bio": "Cukrzyca i choroby tarczycy, zdrowie metaboliczne; USG przyłóżkowe (POCUS).",
+
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.title": "Ortopeda i traumatolog",
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.bio": "Urazy sportowe, artroskopia i leczenie złożonych urazów.",
+
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.title": "Chirurg ortopeda",
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.bio": "Medycyna sportowa, artroskopia kolana i barku.",
+
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.title": "Neurolog",
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.bio": "Choroba Parkinsona, stwardnienie rozsiane i neurologia poznawcza.",
+
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.title": "Gastroenterolog",
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.bio": "Hepatologia, refluks i choroba wrzodowa; endoskopia diagnostyczna i terapeutyczna.",
+
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.title": "Chirurg ogólny i bariatryczny",
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.bio": "Zabiegi metaboliczne i bariatryczne, laparoskopia przewodu pokarmowego i przepuklin.",
+
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.title": "Chirurg plastyczny, rekonstrukcyjny i estetyczny",
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.bio": "Rekonstrukcja piersi, modelowanie sylwetki i zabiegi estetyczne.",
+
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.title": "Ginekolog / Specjalista IVF",
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.bio": "Diagnostyka niepłodności, IVF/ICSI i endokrynologia rozrodu.",
+
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.title": "Ginekolog i położnik",
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.bio": "Opieka prenatalna, ciąże wysokiego ryzyka i zabiegi ginekologiczne.",
+
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.title": "Pediatra",
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.bio": "Infekcje dziecięce, alergie oraz kontrola wzrostu i rozwoju.",
+
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.title": "Specjalista rehabilitacji medycznej",
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.bio": "Rehabilitacja kręgosłupa i układu mięśniowo-szkieletowego, ból przewlekły i medycyna sportowa."
+,
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.title": "Okulista",
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.bio": "Chirurgia oczodołu, urazy oka i kompleksowa opieka okulistyczna.",
+
+"people.doctors.liv-ankara-ent-levent-ilarslan.title": "Laryngolog / Otolaryngolog",
+"people.doctors.liv-ankara-ent-levent-ilarslan.bio": "Endoskopowa chirurgia zatok, otologia i rinologia.",
+
+"people.doctors.liv-ankara-cardiology-utku-zor.title": "Kardiolog",
+"people.doctors.liv-ankara-cardiology-utku-zor.bio": "Obrazowanie serca, profilaktyka chorób serca i ocena ryzyka.",
+
+"people.doctors.liv-ankara-cardiology-aytun-canga.title": "Kardiolog",
+"people.doctors.liv-ankara-cardiology-aytun-canga.bio": "Niewydolność serca i kardiologia dorosłych.",
+
+"people.doctors.liv-ankara-cardiology-murat-tulmac.title": "Kardiolog interwencyjny",
+"people.doctors.liv-ankara-cardiology-murat-tulmac.bio": "Koronarografia, angioplastyka i zabiegi strukturalne serca.",
+
+"people.doctors.liv-ankara-cardiology-alper-canbay.title": "Kardiolog",
+"people.doctors.liv-ankara-cardiology-alper-canbay.bio": "Diagnostyka arytmii i kompleksowa opieka kardiologiczna.",
+
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.title": "Ortopeda / Chirurg sportowy",
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.bio": "Rekonstrukcja więzadeł, operacje łąkotki i chrząstki, urazy sportowe.",
+
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.title": "Chirurg ortopeda",
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.bio": "Endoprotezoplastyka stawów, traumatologia i artroskopia.",
+
+"people.doctors.liv-ankara-neurology-didem-celik.title": "Neurolog",
+"people.doctors.liv-ankara-neurology-didem-celik.bio": "Udar mózgu, demencja i zaburzenia ruchowe.",
+
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.title": "Gastroenterolog",
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.bio": "Hepatologia, refluks żołądkowo-przełykowy i endoskopia diagnostyczno-terapeutyczna.",
+
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.title": "Chirurg ogólny",
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.bio": "Laparoskopowa chirurgia przepuklin i przewodu pokarmowego, zabiegi żółciowe i kolorektalne.",
+
+"people.doctors.liv-ankara-plastic-murat-ugurlu.title": "Chirurg plastyczny, rekonstrukcyjny i estetyczny",
+"people.doctors.liv-ankara-plastic-murat-ugurlu.bio": "Estetyka piersi, ciała i twarzy; chirurgia rekonstrukcyjna.",
+
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.title": "Ginekolog / Specjalista IVF",
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.bio": "Diagnostyka niepłodności, IVF/ICSI i endokrynologia rozrodu.",
+
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.title": "Ginekolog i położnik",
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.bio": "Opieka prenatalna, ciąże wysokiego ryzyka i zabiegi ginekologiczne.",
+
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.title": "Pediatra",
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.bio": "Infekcje wieku dziecięcego, alergie i monitorowanie wzrostu."
+,
+"people.doctors.liv-ankara-physical-funda-ozkan.title": "Specjalista rehabilitacji medycznej",
+"people.doctors.liv-ankara-physical-funda-ozkan.bio": "Rehabilitacja pooperacyjna, bóle układu mięśniowo-szkieletowego i medycyna sportowa.",
+
+"people.doctors.liv-ankara-cardiology-sample.title": "Kardiolog",
+"people.doctors.liv-ankara-cardiology-sample.bio": "Diagnostyka i leczenie chorób serca; opieka nieinwazyjna i interwencyjna.",
+
+"people.doctors.liv-ankara-oncology-sample.title": "Onkolog kliniczny",
+"people.doctors.liv-ankara-oncology-sample.bio": "Terapia systemowa guzów litych i opieka wspierająca w onkologii.",
+
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.title": "Chirurg kardiochirurgiczny",
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.bio": "Operacje zastawek, tętnic wieńcowych i aorty; techniki małoinwazyjne.",
+
+"people.doctors.liv-vadistanbul-oncology-sample.title": "Onkolog",
+"people.doctors.liv-vadistanbul-oncology-sample.bio": "Chemioterapia, leki celowane i immunoterapia.",
+
+"dict.clinic.liv-ankara.name": "Szpital Liv Ankara",
+"dict.clinic.liv-ulus.name": "Szpital Liv Ulus",
+"dict.clinic.liv-vadistanbul.name": "Szpital Liv Vadistanbul",
+
+"dict.clinic.memorial-antalya.name": "Szpital Memorial Antalya",
+"dict.clinic.memorial-sisli.name": "Szpital Memorial Şişli",
+"dict.clinic.memorial-ankara.name": "Szpital Memorial Ankara",
+"dict.clinic.memorial-atasehir.name": "Szpital Memorial Ataşehir",
+
+"dict.dept.microbiology.name": "Mikrobiologia kliniczna",
+"dict.dept.bmt.name": "Przeszczep szpiku kostnego (BMT)",
+"dict.dept.kidney-transplant.name": "Przeszczep nerki",
+"dict.dept.cornea-transplant.name": "Przeszczep rogówki",
+"dict.dept.checkup.name": "Badanie profilaktyczne (Check-up)",
+"dict.dept.emergency.name": "Medycyna ratunkowa",
+"dict.dept.allergy-immunology.name": "Alergologia i immunologia",
+"dict.dept.nutrition.name": "Dietetyka i żywienie",
+"dict.dept.pediatric-allergy-immunology.name": "Alergologia i immunologia dziecięca",
+"dict.dept.pediatric-surgery.name": "Chirurgia dziecięca",
+"dict.dept.pediatric-hem-onc.name": "Hematologia i onkologia dziecięca",
+"dict.dept.pediatric-cardiology.name": "Kardiologia dziecięca",
+"dict.dept.pediatric-neurology.name": "Neurologia dziecięca",
+"dict.dept.pmr.name": "Medycyna fizykalna i rehabilitacja"
+,
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.title": "Okulista",
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.bio": "Chirurgia siatkówki i zaćmy; kompleksowa diagnostyka i leczenie okulistyczne.",
+
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.title": "Okulista",
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.bio": "Chirurgia rogówki i przedniego odcinka oka, leczenie zaćmy i wad refrakcji.",
+
+"people.doctors.memorial-sisli-gastro-birol-baysal.title": "Gastroenterolog",
+"people.doctors.memorial-sisli-gastro-birol-baysal.bio": "Hepatologia, endoskopia diagnostyczna i terapeutyczna, leczenie chorób zapalnych jelit (IBD).",
+
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.title": "Neurolog",
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.bio": "Udar mózgu, zaburzenia ruchowe i neurologia ogólna.",
+
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.title": "Neurochirurg",
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.bio": "Chirurgia podstawy czaszki i naczyniowa; złożone operacje mózgu i kręgosłupa.",
+
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.title": "Ortopeda i traumatolog",
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.bio": "Endoprotezoplastyka stawów, rekonstrukcja pourazowa i urazy sportowe.",
+
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.title": "Chirurg ogólny i onkologiczny",
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.bio": "Małoinwazyjna chirurgia przewodu pokarmowego i układu żółciowego; operacje przepuklin i kolorektalne.",
+
+"people.doctors.memorial-sisli-rehab-engin-cakar.title": "Specjalista rehabilitacji medycznej",
+"people.doctors.memorial-sisli-rehab-engin-cakar.bio": "Neurorrehabilitacja, bóle układu mięśniowo-szkieletowego i odzyskiwanie funkcji.",
+
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.title": "Specjalista medycyny nuklearnej",
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.bio": "Onkologiczne badania PET/CT, SPECT i terapie radioizotopowe.",
+
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.title": "Hematolog dziecięcy",
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.bio": "Choroby krwi i hematoonkologia dziecięca; opieka wielospecjalistyczna.",
+
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.title": "Kardiolog interwencyjny",
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.bio": "Zabiegi wieńcowe i zaawansowane obrazowanie serca.",
+
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.title": "Endokrynolog",
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.bio": "Cukrzyca, choroby tarczycy i zaburzenia metaboliczne.",
+
+"people.doctors.memorial-atasehir-ent-engin-acioglu.title": "Laryngolog / Otolaryngolog",
+"people.doctors.memorial-atasehir-ent-engin-acioglu.bio": "Otologia, rinologia i endoskopowa chirurgia zatok.",
+
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.title": "Laryngolog / Otolaryngolog",
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.bio": "Laryngologia dziecięca i choroby głowy i szyi.",
+
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.title": "Chirurg plastyczny, rekonstrukcyjny i estetyczny"
+,
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.bio": "Rekonstrukcja piersi, modelowanie sylwetki i chirurgia estetyczna.",
+
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.title": "Ginekolog i położnik",
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.bio": "Opieka prenatalna, ciąże wysokiego ryzyka i zabiegi ginekologiczne.",
+
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.title": "Neurochirurg",
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.bio": "Chirurgia kręgosłupa i leczenie guzów mózgu.",
+
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.title": "Urolog",
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.bio": "Uroonkologia, przerost prostaty i małoinwazyjna urologia.",
+
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.title": "Gastroenterolog dziecięcy",
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.bio": "Hepatologia dziecięca, endoskopia i zaburzenia odżywiania.",
+
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.title": "Pulmonolog dziecięcy",
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.bio": "Astma, mukowiscydoza i choroby dróg oddechowych.",
+
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.title": "Specjalista rehabilitacji medycznej",
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.bio": "Rehabilitacja kręgosłupa i urazów sportowych, leczenie bólu.",
+
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.title": "Pulmonolog / Choroby klatki piersiowej",
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.bio": "POChP, choroby śródmiąższowe płuc i zaburzenia oddychania podczas snu.",
+
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.title": "Chirurg ortopeda",
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.bio": "Leczenie urazów, kontuzji sportowych i artroskopia.",
+
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.title": "Chirurg ogólny i bariatryczny",
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.bio": "Zabiegi metaboliczne i bariatryczne oraz laparoskopia zaawansowana.",
+
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.title": "Neurochirurg",
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.bio": "Chirurgia mózgu i kręgosłupa, nowotwory i chirurgia naczyniowa.",
+
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.title": "Onkolog kliniczny",
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.bio": "Terapie systemowe nowotworów litych: chemioterapia, terapia celowana i immunoterapia.",
+
+"people.doctors.memorial-antalya-ivf-onur-erol.title": "Ginekolog / Specjalista IVF i andrologii",
+"people.doctors.memorial-antalya-ivf-onur-erol.bio": "Niepłodność, IVF/ICSI i diagnostyka czynnika męskiego.",
+
+"people.doctors.memorial-antalya-obgyn-safak-olgan.title": "Ginekolog i położnik",
+"people.doctors.memorial-antalya-obgyn-safak-olgan.bio": "Medycyna matczyno-płodowa i opieka położnicza.",
+
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.title": "Laryngolog / Otolaryngolog",
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.bio": "Endoskopowa chirurgia zatok, otologia i rinologia."
+,
+"people.doctors.memorial-antalya-perinatology-eftal-avci.title": "Perinatolog (Medycyna matczyno-płodowa)",
+"people.doctors.memorial-antalya-perinatology-eftal-avci.bio": "Ciąża wysokiego ryzyka, monitorowanie płodu i diagnostyka prenatalna.",
+
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.title": "Pediatra",
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.bio": "Opieka pediatryczna, choroby zakaźne i kontrola wzrostu i rozwoju.",
+
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.title": "Neurolog",
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.bio": "Bóle głowy, udary mózgu i neurologia ogólna.",
+
+"people.doctors.memorial-ankara-cardiology-ali-oto.title": "Elektrofizjolog interwencyjny",
+"people.doctors.memorial-ankara-cardiology-ali-oto.bio": "Ablacja cewnikowa (AF/VT) i terapia urządzeniami (CRT/ICD).",
+
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.title": "Kardiolog",
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.bio": "Obrazowanie serca i kardiologia prewencyjna.",
+
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.bio": "Operacje zastawek, aorty i tętnic wieńcowych; techniki małoinwazyjne.",
+
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.bio": "Operacje wieńcowe i zastawkowe; techniki bez krążenia pozaustrojowego.",
+
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.title": "Urolog",
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.bio": "Uroonkologia, przerost prostaty i kamica nerkowa.",
+
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.title": "Ortopeda / Chirurg kręgosłupa",
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.bio": "Deformacje kręgosłupa, schorzenia zwyrodnieniowe i rekonstrukcje złożone.",
+
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.title": "Chirurg ortopeda",
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.bio": "Urazy, endoprotezoplastyka i artroskopia.",
+
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.title": "Neurochirurg",
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.bio": "Chirurgia mózgu i kręgosłupa, nowotwory i choroby naczyniowe.",
+
+"people.doctors.memorial-ankara-hematology-ferit-avcu.title": "Hematolog",
+"people.doctors.memorial-ankara-hematology-ferit-avcu.bio": "Białaczki, chłoniaki i łagodne choroby hematologiczne.",
+
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.title": "Chirurg ogólny",
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.bio": "Laparoskopowa chirurgia przewodu pokarmowego, przepukliny i drogi żółciowe.",
+
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.title": "Psychiatra, Przewodniczący",
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.bio": "Założyciel szpitala NP Istanbul Brain; neuropsychiatria, zaburzenia lękowe i nastroju, podejście oparte na dowodach naukowych."
+,
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.title": "Psychiatra",
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.bio": "Specjalistka od zaburzeń nastroju i psychoterapii; multidyscyplinarna psychiatria dorosłych.",
+
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.title": "Psychiatra",
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.bio": "Uzależnienia, psychiatria konsultacyjna i leczenie wspomagane neuromodulacją.",
+
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.title": "Psychiatra dzieci i młodzieży",
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.bio": "Zaburzenia neurorozwojowe, ADHD i zdrowie psychiczne nastolatków.",
+
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.title": "Psychiatra dzieci i młodzieży",
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.bio": "Psychiatria dziecięca, spektrum autyzmu i zaburzenia uwagi.",
+
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.title": "Neurolog",
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.bio": "Neurologia poznawcza, demencja i zaburzenia ruchowe.",
+
+"people.doctors.np-istanbul-brain-neurology-baris-metin.title": "Neurolog",
+"people.doctors.np-istanbul-brain-neurology-baris-metin.bio": "Neuroobrazowanie, neurologia poznawcza i neuropsychologia.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.title": "Neurochirurg",
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.bio": "Chirurgia podstawy czaszki, naczyniowa i onkologiczna, zaawansowane operacje kręgosłupa.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.title": "Neurochirurg",
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.bio": "Chirurgia kręgosłupa, nowotwory i neurochirurgia małoinwazyjna.",
+
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.title": "Radiolog diagnostyczny",
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.bio": "Diagnostyka MRI/CT z naciskiem na neuroradiologię i wsparcie interdyscyplinarne.",
+
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.title": "Radiolog",
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.bio": "Neuroradiologia i zaawansowana diagnostyka obrazowa.",
+
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.title": "Gastroenterolog / Internista",
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.bio": "Gastroenterologia i choroby wewnętrzne; endoskopia diagnostyczna i terapeutyczna."
+,
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.title": "Medycyna fizykalna i rehabilitacja",
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.bio": "Neurorehabilitacja, leczenie bólu przewlekłego i programy przywracania funkcji.",
+
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.title": "Neuropsycholog kliniczny",
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.bio": "Diagnoza neuropsychologiczna, rehabilitacja poznawcza i psychoterapia oparta na dowodach.",
+
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.title": "Psycholog kliniczny",
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.bio": "Psychoterapia dorosłych (CBT), zarządzanie stresem i lękiem.",
+
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.title": "Kardiolog",
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.bio": "Obrazowanie serca i kardiologia prewencyjna; opieka okołooperacyjna kardiologiczna.",
+
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.title": "Logopeda / Terapeuta mowy",
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.bio": "Zaburzenia mowy i języka; kierownik oddziału terapii mowy.",
+
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.title": "Profesor kardiologii",
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.bio": "Kardiologia dorosłych, nadciśnienie i choroba wieńcowa; konsultacje w szpitalu Medistate Kavacık.",
+
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.title": "Kardiolog interwencyjny",
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.bio": "Zabiegi wieńcowe i leczenie prowadzone pod kontrolą echo.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.bio": "Chirurgia serca dorosłych – pomostowanie i operacje zastawek.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.bio": "Chirurgia naczyniowa i aortalna."
+,
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.title": "Neurochirurg",
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.bio": "Mikroneurochirurgia schorzeń kręgosłupa i czaszki.",
+
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.title": "Neurolog",
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.bio": "Bóle głowy, udary mózgu i neurologia ogólna.",
+
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.title": "Kierownik Oddziału Chirurgii Ogólnej i Centrum Leczenia Otyłości",
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.bio": "Chirurgia laparoskopowa i bariatryczna; prowadzi Centrum Otyłości.",
+
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.title": "Chirurg ogólny",
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.bio": "Chirurgia jamy brzusznej i przepuklin.",
+
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.title": "Gastroenterolog",
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.bio": "Endoskopia, nieswoiste zapalenia jelit i choroby wątroby oraz dróg żółciowych.",
+
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.title": "Dyrektor Kliniki Urologii, Urolog",
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.bio": "Uroonkologia, kamica nerkowa i andrologia.",
+
+"people.doctors.medistate-kavacik-urology-orhan-koca.title": "Urolog",
+"people.doctors.medistate-kavacik-urology-orhan-koca.bio": "Choroby prostaty, nerek i pęcherza moczowego.",
+
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.title": "Ginekolog i położnik, perinatolog (ciąża wysokiego ryzyka)",
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.bio": "Medycyna matczyno-płodowa i ciąże powikłane."
+,
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.title": "Ginekolog i położnik, medycyna rozrodu",
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.bio": "IVF / ART i leczenie niepłodności.",
+
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.title": "Laryngolog / Chirurgia głowy i szyi",
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.bio": "Rynologia, choroby krtani i chirurgia głowy oraz szyi.",
+
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.title": "Chirurg laryngolog",
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.bio": "Otologia i endoskopowa chirurgia laryngologiczna.",
+
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.title": "Okulista",
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.bio": "Operacje zaćmy i przedniego odcinka oka.",
+
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.title": "Okulista",
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.bio": "Siatkówka i kompleksowa opieka okulistyczna.",
+
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.title": "Ortopeda i traumatolog",
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.bio": "Urazy, kontuzje sportowe i chirurgia stawów.",
+
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.title": "Chirurg ortopeda",
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.bio": "Endoprotezoplastyka i rekonstrukcja kończyn.",
+
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.title": "Pediatra",
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.bio": "Pediatria ogólna i profilaktyka zdrowotna."
+,
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.title": "Pediatra",
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.bio": "Opieka nad dziećmi zdrowymi i chorobami ostrymi.",
+
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.title": "Pulmonolog",
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.bio": "POChP, astma i zaburzenia oddychania podczas snu.",
+
+"people.doctors.medistate-kavacik-radiology-kaan-meric.title": "Kierownik Kliniki Radiologii",
+"people.doctors.medistate-kavacik-radiology-kaan-meric.bio": "Obrazowanie przekrojowe i nadzór nad diagnostyką obrazową.",
+
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.title": "Radiolog",
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.bio": "Diagnostyka TK i MRI.",
+
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.title": "Dermatolog",
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.bio": "Dermatologia kliniczna i choroby skóry.",
+
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.title": "Specjalista chorób zakaźnych i mikrobiologii klinicznej",
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.bio": "Zakażenia, racjonalna antybiotykoterapia i diagnostyka mikrobiologiczna.",
+
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.title": "Specjalista chorób wewnętrznych",
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.bio": "Choroby przewlekłe i opieka metaboliczna.",
+
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.title": "Specjalista chorób wewnętrznych",
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.bio": "Medycyna ogólna i profilaktyka zdrowotna."
+,
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.title": "Psychiatra",
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.bio": "Psychiatria dorosłych i opieka ambulatoryjna.",
+
+"people.doctors.medistate-kavacik-dentistry-ali-gul.title": "Dentysta",
+"people.doctors.medistate-kavacik-dentistry-ali-gul.bio": "Stomatologia ogólna i leczenie rekonstrukcyjne.",
+
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.title": "Dentystka",
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.bio": "Stomatologia profilaktyczna i estetyczna.",
+
+"dict.clinic.medipol-mega.name": "Szpital Uniwersytecki Medipol Mega",
+"dict.clinic.medipol-mega-istanbul.name": "Szpital Uniwersytecki Medipol Mega (Stambuł)",
+"dict.clinic.np-istanbul-brain.name": "Szpital Mózgu NP Istanbul",
+"dict.clinic.anadolu-gebze.name": "Centrum Medyczne Anadolu (Gebze)",
+"dict.clinic.anadolu-istanbul.name": "Centrum Medyczne Anadolu (Stambuł)",
+"dict.clinic.dunyagoz-istanbul.name": "Dünyagöz Stambuł",
+
+"dict.dept.cardiology.name": "Kardiologia",
+"dict.dept.oncology.name": "Onkologia",
+"dict.dept.orthopedics.name": "Ortopedia",
+"dict.dept.ivf.name": "IVF i medycyna rozrodu",
+"dict.dept.neurosurgery.name": "Neurochirurgia",
+"dict.dept.ophthalmology.name": "Okulistyka",
+"dict.dept.transplant.name": "Transplantologia",
+"dict.dept.radiology.name": "Radiologia",
+"dict.dept.radiation-oncology.name": "Radioterapia onkologiczna",
+"dict.dept.pediatrics.name": "Pediatria",
+"dict.dept.general-surgery.name": "Chirurgia ogólna",
+"dict.dept.urology.name": "Urologia"
+,
+"dict.dept.plastic-surgery.name": "Chirurgia plastyczna",
+"dict.dept.gastro.name": "Gastroenterologia",
+"dict.dept.nuclear-medicine.name": "Medycyna nuklearna",
+"dict.dept.internal-medicine.name": "Medycyna wewnętrzna",
+"dict.dept.ent.name": "Laryngologia (otorynolaryngologia)",
+"dict.dept.neurology.name": "Neurologia",
+"dict.dept.hematology.name": "Hematologia",
+"dict.dept.pulmonology.name": "Pulmonologia",
+"dict.dept.cardiovascular-surgery.name": "Chirurgia sercowo-naczyniowa",
+"dict.dept.obgyn.name": "Położnictwo i ginekologia",
+"dict.dept.rehabilitation.name": "Medycyna fizykalna i rehabilitacja",
+"dict.dept.thoracic-diseases.name": "Choroby klatki piersiowej",
+"dict.dept.perinatology.name": "Perinatologia (medycyna matczyno-płodowa)",
+"dict.dept.psychiatry.name": "Psychiatria",
+"dict.dept.child-psychiatry.name": "Psychiatria dzieci i młodzieży",
+"dict.dept.psychology.name": "Psychologia",
+"dict.dept.speech-therapy.name": "Terapia mowy i języka",
+
+"people.doctors.acibadem-istanbul-cardiology-slot.title": "Profesor kardiologii (Acıbadem Maslak Hospital)",
+"people.doctors.acibadem-istanbul-cardiology-slot.bio": "Kardiologia interwencyjna i ogólna; leczenie choroby wieńcowej, wad zastawkowych, arytmii i nadciśnienia w szpitalu Acıbadem Maslak w Stambule.",
+
+"people.doctors.liv-ankara-oncology-slot.title": "Kierownik onkologii klinicznej, Liv Hospital Ankara",
+"people.doctors.liv-ankara-oncology-slot.bio": "Prowadzi badania kliniczne fazy II/III i leczy guzy lite przy użyciu chemioterapii, terapii celowanej i immunoterapii.",
+
+"people.doctors.medicana-istanbul-orthopedics-slot.title": "Ortopedia i traumatologia — Medicana International Istanbul (Beylikdüzü)",
+"people.doctors.medicana-istanbul-orthopedics-slot.bio": "Wykonuje skomplikowane endoprotezy i artroskopie; rekonstrukcje deformacji i leczenie urazów w szpitalu Medicana International Istanbul."
+,
+"dict.dept.nephrology.name": "Nefrologia",
+"dict.dept.anesthesiology.name": "Anestezjologia",
+"dict.dept.dermatology.name": "Dermatologia",
+"dict.dept.rheumatology.name": "Reumatologia",
+"dict.dept.pathology.name": "Patologia",
+"dict.dept.thoracic-surgery.name": "Chirurgia klatki piersiowej",
+"dict.dept.dentistry.name": "Stomatologia",
+"dict.dept.interventional-radiology.name": "Radiologia interwencyjna",
+
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.title": "Kardiolog inwazyjny",
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.bio": "Specjalizuje się w złożonych zabiegach PCI, TAVI/MitraClip, zamykaniu ASD/PFO; starszy kardiolog w Medicana International Istanbul.",
+
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.title": "Kardiolog",
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.bio": "Kardiologia dorosłych; diagnostyka i leczenie zachowawcze chorób serca.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.bio": "Operacje zastawkowe i pomostowanie aortalno-wieńcowe.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.bio": "Chirurgia serca u dorosłych.",
+
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.title": "Onkolog kliniczny",
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.bio": "Terapia systemowa nowotworów litych; podejście interdyscyplinarne.",
+
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.title": "Onkolog kliniczny",
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.bio": "Chemioterapia i terapie celowane w leczeniu nowotworów.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.title": "Onkolog radioterapeuta",
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.bio": "IMRT/IGRT i kompleksowe programy radioterapii.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.title": "Onkolog radioterapeuta",
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.bio": "Planowanie i prowadzenie leczenia promieniowaniem."
+,
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.title": "Chirurg ortopeda",
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.bio": "Urazy sportowe i rekonstrukcje stawów.",
+
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.title": "Chirurg ortopeda",
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.bio": "Traumatologia i endoprotezoplastyka.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.title": "Neurochirurg",
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.bio": "Chirurgia kręgosłupa i mózgu.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.title": "Neurochirurg",
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.bio": "Choroby mózgu i rdzenia kręgowego.",
+
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.title": "Chirurg laryngolog",
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.bio": "Chirurgia zatok przynosowych i ucha.",
+
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.title": "Chirurg laryngolog",
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.bio": "Chirurgia głowy i szyi, laryngologia ogólna.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.title": "Okulista",
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.bio": "Leczenie zaćmy i chorób siatkówki.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.title": "Okulista",
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.bio": "Przedni odcinek oka i schorzenia siatkówki.",
+
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.title": "Gastroenterolog",
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.bio": "Zaawansowana endoskopia i diagnostyka przewodu pokarmowego.",
+
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.title": "Gastroenterolog",
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.bio": "Choroby zapalne jelit i hepatologia."
+,
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.title": "Chirurg onkologiczny",
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.bio": "Chirurgia onkologiczna i małoinwazyjna.",
+
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.title": "Chirurg ogólny",
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.bio": "Chirurgia wątroby, dróg żółciowych i przewodu pokarmowego.",
+
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.title": "Urolog",
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.bio": "Endourologia i kamica nerkowa.",
+
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.title": "Urolog",
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.bio": "Urologia ogólna.",
+
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.title": "Ginekolog-położnik",
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.bio": "Opieka prenatalna i zabiegi ginekologiczne.",
+
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.title": "Specjalista IVF",
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.bio": "In vitro, techniki wspomaganego rozrodu i chirurgia ginekologiczna.",
+
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.title": "Pulmonolog",
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.bio": "POChP, astma i diagnostyka raka płuc.",
+
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.title": "Chirurg klatki piersiowej",
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.bio": "Onkologia klatki piersiowej i torakoskopia (VATS).",
+
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.title": "Hematolog",
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.bio": "Nowotwory krwi i przeszczep szpiku.",
+
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.title": "Nefrolog",
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.bio": "Choroby nerek i transplantologia."
+,
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.title": "Specjalista chorób wewnętrznych",
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.bio": "Medycyna ogólna i choroby przewlekłe.",
+
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.title": "Radiolog",
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.bio": "Diagnostyka MRI/CT, obrazowanie jamy brzusznej.",
+
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.title": "Radiolog interwencyjny",
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.bio": "Zabiegi naczyniowe i onkologiczne pod kontrolą obrazowania.",
+
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.title": "Dermatolog",
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.bio": "Dermatologia kliniczna i zabiegowa.",
+
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.title": "Dermatolog",
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.bio": "Dermatozy i dermoskopia.",
+
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.title": "Reumatolog",
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.bio": "Układowe choroby reumatyczne.",
+
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.title": "Patolog",
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.bio": "Patologia onkologiczna i diagnostyka histopatologiczna.",
+
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.title": "Psychiatra",
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.bio": "Psychiatria dorosłych, leczenie depresji i zaburzeń lękowych.",
+
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.title": "Psycholog kliniczny",
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.bio": "Terapia indywidualna i diagnoza psychologiczna."
+,
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.title": "Specjalista medycyny nuklearnej",
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.bio": "PET-CT i obrazowanie radionuklidowe.",
+
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.title": "Dentysta",
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.bio": "Stomatologia ogólna i estetyczna.",
+
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.title": "Kardiolog inwazyjny",
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.bio": "Zabiegi wieńcowe, echo serca i nadzór nad pracownią hemodynamiki.",
+
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.title": "Kardiolog",
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.bio": "Kardiologia ogólna i inwazyjna.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.bio": "Chirurgia serca i naczyń u dorosłych.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.bio": "Operacje zastawkowe i aortalne.",
+
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.title": "Onkolog kliniczny",
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.bio": "Leczenie systemowe i prowadzenie pacjentów z guzami litymi.",
+
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.title": "Onkolog",
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.bio": "Onkologia kliniczna i badania naukowe.",
+
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.title": "Onkolog radioterapeuta",
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.bio": "Nowoczesna radioterapia (IMRT, VMAT)."
+,
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.title": "Chirurg ortopeda",
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.bio": "Urazy sportowe, ortopedia i endoprotezoplastyka stawów.",
+
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.title": "Chirurg ortopeda",
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.bio": "Kontuzje sportowe, staw kolanowy i barkowy.",
+
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.title": "Neurochirurg",
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.bio": "Chirurgia mózgu i kręgosłupa, radioterapia stereotaktyczna.",
+
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.title": "Chirurg laryngolog",
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.bio": "Kompleksowa otolaryngologia – ucho, nos, gardło.",
+
+"people.doctors.medicana-ankara-ent-hatice-karadas.title": "Chirurg laryngolog",
+"people.doctors.medicana-ankara-ent-hatice-karadas.bio": "Choroby głowy i szyi, chirurgia laryngologiczna.",
+
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.title": "Okulista",
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.bio": "Zaćma i chirurgia odcinka przedniego oka.",
+
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.title": "Gastroenterolog",
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.bio": "Endoskopia i choroby układu pokarmowego.",
+
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.title": "Chirurg transplantolog",
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.bio": "Przeszczep nerki i zaawansowana chirurgia jamy brzusznej.",
+
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.title": "Urolog",
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.bio": "Onkologia urologiczna i kamica nerkowa."
+,
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.title": "Ginekolog-położnik",
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.bio": "Położnictwo, ginekologia i prowadzenie ciąż wysokiego ryzyka.",
+
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.title": "Pulmonolog",
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.bio": "Choroby płuc i profilaktyka schorzeń oddechowych.",
+
+"people.doctors.medicana-ankara-nephrology-siren-sezer.title": "Nefrolog",
+"people.doctors.medicana-ankara-nephrology-siren-sezer.bio": "Niewydolność nerek i nefrologia transplantacyjna.",
+
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.title": "Internista / Endokrynolog",
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.bio": "Medycyna wewnętrzna i choroby endokrynologiczne.",
+
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.title": "Radiolog interwencyjny",
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "Zabiegi naczyniowe i onkologiczne pod kontrolą obrazowania.",
+
+"people.doctors.memorial-antalya-ivf-slot.title": "Kierownik Centrum IVF i Zdrowia Reprodukcyjnego",
+"people.doctors.memorial-antalya-ivf-slot.bio": "Prowadzi program IVF w Memorial Antalya; specjalista w zakresie endokrynologii rozrodu, leczenia niepłodności, IVF/ICSI i diagnostyki przedimplantacyjnej.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Założyciel i kierownik neurochirurgii",
+"people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Kieruje oddziałem neurochirurgii w NPİstanbul Brain Hospital; specjalizuje się w chirurgii podstawy czaszki, naczyniowej, nowotworowej i kręgosłupa, a także chirurgii funkcjonalnej i padaczkowej.",
+
+"people.doctors.anadolu-gebze-oncology-slot.title": "Dyrektor Onkologii Klinicznej",
+"people.doctors.anadolu-gebze-oncology-slot.bio": "Kieruje onkologią w Anadolu Medical Center (Gebze); koordynuje multidyscyplinarne leczenie raka we współpracy z Johns Hopkins Medicine."
+,
+"people.doctors.anadolu-istanbul-oncology-yesim-yildirim.title": "Onkolog kliniczny",
+"people.doctors.anadolu-istanbul-oncology-yesim-yildirim.bio": "Profesor onkologii klinicznej w Anadolu Medical Center; opieka wielospecjalistyczna i terapie systemowe (rak piersi, płuc i przewodu pokarmowego).",
+
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.title": "Onkolog kliniczny",
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.bio": "Doświadczony onkolog specjalizujący się w nowotworach przewodu pokarmowego i klatki piersiowej; członek zespołu Centrum Onkologicznego.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.title": "Kierownik Radioterapii Onkologicznej",
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.bio": "Kieruje nowoczesną radioterapią (MR-Linac, CyberKnife, Radixact, Varian Edge); specjalizuje się w SBRT i precyzyjnym leczeniu pod kontrolą obrazowania.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.title": "Radioterapeuta onkologiczny",
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.bio": "Planowanie i realizacja nowoczesnej radioterapii konformalnej oraz IMRT/VMAT w ramach Centrum Onkologicznego.",
+
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.title": "Hematolog",
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.bio": "Hematologia i przeszczepy komórek macierzystych; doświadczenie w leczeniu białaczek, chłoniaków i programach przeszczepowych.",
+
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.title": "Hematolog i onkolog kliniczny",
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.bio": "Koordynator nauk onkologicznych; leczenie nowotworów hematologicznych i litych w ramach zespołu wielospecjalistycznego.",
+
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.title": "Specjalista transplantacji szpiku (dorośli)",
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.bio": "Transplantacja komórek macierzystych u dorosłych i leczenie nowotworów hematologicznych.",
+
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.title": "Pediatryczny transplantolog szpiku",
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.bio": "Pediatryczna hematologia i onkologia, transplantacje szpiku u dzieci; doświadczenie w zaburzeniach immunohematologicznych."
+,
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.title": "Kardiolog",
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.bio": "Kardiologia ogólna i profilaktyczna, echokardiografia oraz ocena ryzyka sercowo-naczyniowego.",
+
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.title": "Kardiolog interwencyjny",
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.bio": "Kardiologia interwencyjna i leczenie złożonych chorób wieńcowych.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.bio": "Chirurgia serca dorosłych, w tym pomostowanie aortalno-wieńcowe (CABG) i rekonstrukcje zastawek.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.title": "Chirurg sercowo-naczyniowy",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.bio": "Zabiegi naczyniowe na aorcie, tętnicach wieńcowych i obwodowych.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.title": "Neurochirurg",
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.bio": "Mikroneurochirurgia guzów mózgu, tętniaków/AVM oraz schorzeń kręgosłupa.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.title": "Neurochirurg",
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.bio": "Endoskopowa i małoinwazyjna chirurgia kręgosłupa i czaszki.",
+
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.title": "Neurolog",
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.bio": "Zaburzenia ruchowe, migrena i neurologia funkcjonalna.",
+
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.title": "Neurolog",
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.bio": "Padaczka, udar mózgu i choroby neuroimmunologiczne.",
+
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.title": "Ortopeda i traumatolog",
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.bio": "Urazy sportowe, artroskopia i zachowanie funkcji stawów."
+,
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.title": "Ortopeda i chirurg onkologiczny",
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.bio": "Mięsaki kości i tkanek miękkich, rekonstrukcje oszczędzające kończyny.",
+
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.title": "Dyrektor Centrum Zdrowia Piersi; chirurg ogólny i onkologiczny",
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.bio": "Chirurgia piersi i chirurgia onkologiczna; kieruje Centrum Zdrowia Piersi.",
+
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.title": "Chirurg ogólny",
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.bio": "Chirurgia laparoskopowa jamy brzusznej i operacje przepuklin.",
+
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.title": "Urolog",
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.bio": "Uroonkologia, rak prostaty i małoinwazyjna urologia.",
+
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.title": "Urolog",
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.bio": "Kamica moczowa i zabiegi endourologiczne.",
+
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.title": "Gastroenterolog",
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.bio": "Zaawansowana endoskopia i choroby zapalne jelit.",
+
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.title": "Gastroenterolog",
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.bio": "ERCP, hepatologia i wsparcie onkologiczne w chorobach przewodu pokarmowego.",
+
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.title": "Endokrynolog",
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.bio": "Cukrzyca, choroby tarczycy i przysadki mózgowej."
+,
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.title": "Endokrynolog",
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.bio": "Endokrynologia ogólna i choroby metaboliczne.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.title": "Specjalista chorób wewnętrznych",
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.bio": "Kompleksowa opieka internistyczna i leczenie chorób przewlekłych.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.title": "Specjalista chorób wewnętrznych",
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.bio": "Podstawowa opieka internistyczna i profilaktyka zdrowotna.",
+
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.title": "Laryngolog / chirurg głowy i szyi",
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.bio": "Onkologia głowy i szyi, chirurgia krtani i podstawy czaszki.",
+
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.title": "Chirurg laryngologiczny",
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.bio": "Rynoplastyka funkcjonalna i estetyczna, chirurgia zatok i laryngologia dziecięca.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.title": "Okulista",
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.bio": "Zaćma, chirurgia refrakcyjna i odcinka przedniego oka.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.title": "Okulista (siatkówka)",
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.bio": "Chirurgia siatkówki i witrektomia w chorobach plamki i cukrzycowych.",
+
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.title": "Pediatra",
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.bio": "Pediatria ogólna, rozwój dziecka i programy szczepień."
+,
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.title": "Specjalista hematologii i onkologii dziecięcej / Transplantolog",
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.bio": "Hematologia, onkologia dziecięca i przeszczepy komórek macierzystych.",
+
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.title": "Radiolog",
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.bio": "Radiologia interwencyjna i obrazowanie przekrojowe (TK, MRI).",
+
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.title": "Radiolog",
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.bio": "Zaawansowane badania MRI i przyjazna diagnostyka dla pacjentów.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.title": "Kierownik Zakładu Medycyny Nuklearnej",
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.bio": "PET/CT, tzw. theranostyka, terapia jodem radioaktywnym i leczenie izotopowe.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.title": "Specjalista medycyny nuklearnej",
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.bio": "Diagnostyka i celowane terapie radioizotopowe.",
+
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.title": "Ginekolog i położnik",
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.bio": "Ciąża wysokiego ryzyka, diagnostyka niepłodności i współpraca z ośrodkiem IVF.",
+
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.title": "Ginekolog i położnik",
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.bio": "Opieka prenatalna i zabiegi ginekologiczne.",
+
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.title": "Dyrektor Centrum IVF",
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.bio": "Endokrynologia rozrodu, protokoły IVF, PRP i terapie wspomagające."
+,
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.title": "Specjalistka IVF (ginekolog-położnik)",
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.bio": "Diagnostyka niepłodności kobiecej i prowadzenie cykli IVF.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.title": "Chirurg plastyczny, rekonstrukcyjny i estetyczny",
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.bio": "Rekonstrukcja piersi po chorobach onkologicznych oraz mikrochirurgia rekonstrukcyjna.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.title": "Chirurg plastyczny i rekonstrukcyjny",
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.bio": "Zabiegi estetyczne i rekonstrukcyjne wykonywane nowoczesnymi technikami.",
+
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.title": "Pulmonolog",
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.bio": "POChP, opieka po COVID-19 i pulmonologia interwencyjna.",
+
+"people.doctors.medipol-mega-transplant-slot.title": "Dyrektor Centrum Transplantacji Narządów — Medipol Mega",
+"people.doctors.medipol-mega-transplant-slot.bio": "Chirurg transplantolog; kieruje programem przeszczepów wątroby i nerek (od dawców żywych i zmarłych).",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.title": "Profesor kardiologii — Szpital Uniwersytecki Medipol Mega",
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.bio": "Kardiolog interwencyjny; angiografia TK, choroba niedokrwienna serca i profilaktyka kardiologiczna.",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.title": "Profesor kardiologii",
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.bio": "Profilaktyka chorób serca, leczenie złożonych przypadków choroby wieńcowej, działalność naukowa.",
+
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.title": "Profesor chirurgii sercowo-naczyniowej",
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.bio": "Specjalizuje się w operacjach aorty i zastawek, metodach małoinwazyjnych oraz CABG u pacjentów wysokiego ryzyka."
+,
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.title": "Profesor kardiochirurgii (dziecięcej i dorosłych)",
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.bio": "Wykonuje złożone operacje serca u dzieci i dorosłych, w tym rekonstrukcje i wymiany zastawek.",
+
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.title": "Profesor onkologii klinicznej",
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.bio": "Specjalista onkologii z szerokim doświadczeniem w leczeniu guzów litych. Stosuje nowoczesne terapie celowane, immunoterapię i chemioterapię; aktywny naukowo.",
+
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.title": "Profesor onkologii klinicznej",
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.bio": "Leczy powszechne nowotwory za pomocą terapii systemowych opartych na dowodach; autor publikacji naukowych i prelegent.",
+
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.title": "Profesor radioterapii onkologicznej",
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.bio": "Stosuje techniki IGRT i SBRT do precyzyjnej radioterapii raka piersi i innych nowotworów litych.",
+
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.title": "Specjalista radioterapii onkologicznej",
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.bio": "Planowanie i prowadzenie radioterapii w Centrum Onkologii Medipol Mega.",
+
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.title": "Profesor gastroenterologii i hepatologii",
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.bio": "Specjalista w dziedzinie chorób wątroby i przewodu pokarmowego, z doświadczeniem międzynarodowym; wykonuje zaawansowane procedury endoskopowe.",
+
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.title": "Profesor gastroenterologii",
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.bio": "Zajmuje się diagnostyką i leczeniem chorób przewodu pokarmowego; wykonuje endoskopię diagnostyczną i terapeutyczną.",
+
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.title": "Profesor transplantologii (chirurgia wątroby i dróg żółciowych)",
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.bio": "Czołowy chirurg transplantacyjny wątroby; wykonuje przeszczepy od dawców żywych i zmarłych oraz onkochirurgię wątroby."
+,
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.title": "Adiunkt chirurgii ogólnej i transplantologii",
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.bio": "Chirurg z doświadczeniem w przeszczepach wątroby; członek zespołu Centrum Transplantacji Medipol Mega.",
+
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.title": "Profesor ortopedii i traumatologii",
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.bio": "Specjalista w zakresie urazów, endoprotezoplastyki i chirurgii sportowej; doświadczenie w rekonstrukcji stawów i złamań.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.title": "Profesor neurochirurgii",
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.bio": "Wybitny neurochirurg specjalizujący się w mikrochirurgii tętniaków i podstawy czaszki; były prezes Tureckiego Towarzystwa Neurochirurgicznego.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.title": "Profesor neurochirurgii",
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.bio": "Kieruje programami chirurgii guzów mózgu i padaczki, stosując śródoperacyjne MRI i neuronawigację.",
+
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.title": "Adiunkt medycyny rozrodu (IVF) i ginekologii",
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.bio": "Specjalistka w zakresie endokrynologii rozrodu i zapłodnienia in vitro; kompleksowa opieka nad niepłodnością.",
+
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.title": "Profesor ginekologii, położnictwa i onkoginekologii",
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.bio": "Chirurg onkoginekolog wykonujący laparoskopowe i otwarte operacje raka macicy, jajników i szyjki macicy.",
+
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.title": "Profesor urologii (Endourologia)",
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.bio": "Międzynarodowy ekspert w dziedzinie endourologii; zajmuje się BPH, kamicą moczową i małoinwazyjnymi zabiegami prostaty i nerek.",
+
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.title": "Profesor urologii (Uroonkologia)",
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.bio": "Ekspertka w zakresie raka nerki, pęcherza i prostaty; stosuje nowoczesne techniki laparoskopowe i robotyczne."
+,
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.title": "Profesor radiologii",
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.bio": "Doświadczony radiolog z praktyką interwencyjną; wykonuje złożone procedury diagnostyczne i terapeutyczne pod kontrolą obrazowania.",
+
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.title": "Profesor radiologii (radiologia dziecięca)",
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.bio": "Specjalista w zakresie diagnostyki obrazowej u dzieci i nowoczesnych technik diagnostycznych.",
+
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.title": "Profesor okulistyki",
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.bio": "Chirurg witreoretinalny wykonujący witrektomię i zabiegi siatkówki; przyjmuje w Medipol Mega i powiązanym szpitalu okulistycznym.",
+
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.title": "Profesor hematologii i onkologii dziecięcej, kierownik przeszczepów szpiku",
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.bio": "Kieruje hematologią, onkologią i przeszczepami u dzieci; ponad 30 lat doświadczenia i wysoki odsetek remisji w białaczce dziecięcej.",
+
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.title": "Starszy okulista — Siatkówka i Zaćma (Dünyagöz Etiler)",
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.bio": "Chirurg witreoretinalny i specjalista od zaćmy; wykonuje zabiegi laserowe i fakoemulsyjne w Dünyagöz Etiler.",
+
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.title": "Profesor okulistyki — Rogówka, Zaćma i Chirurgia Refrakcyjna",
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.bio": "Specjalista w zakresie leczenia rogówki, zaćmy i laserowej korekcji wzroku; ponad 30 000 operacji; konsultacje w języku angielskim.",
+
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.title": "Profesor okulistyki — Zaćma i Chirurgia Refrakcyjna",
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.bio": "Wykonuje operacje zaćmy i laserowej korekcji wzroku; ponad 60 000 zabiegów; bogaty dorobek naukowy."
+,
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.title": "Profesor okulistyki — Jaskra i Neurookulistyka",
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.bio": "Zajmuje się leczeniem jaskry, zaćmy i zaburzeń neurookulistycznych. Doświadczenie zdobywał w Glaucoma Research and Education Group (San Francisco).",
+
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.title": "Profesor okulistyki — Onkologia okulistyczna",
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.bio": "Specjalista w zakresie guzów oka w Dünyagöz Etiler; członek Międzynarodowego Towarzystwa Onkologii Okulistycznej; autor publikacji i wykładowca.",
+
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.title": "Adiunkt — Okulistyka dziecięca i zez",
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.bio": "Specjalizuje się w zdrowiu oczu dzieci, leczeniu amblyopii i zeza; ponad 1000 operacji; członek ESA i AAO.",
+
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.title": "Profesor okulistyki — Zaćma i soczewki wewnątrzgałkowe",
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.bio": "Wykonał ponad 25 000 operacji zaćmy i implantacji soczewek; szkolenie w Sinskey Ophthalmic Center / UCLA.",
+
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.title": "Adiunkt — Chirurgia refrakcyjna i rogówka",
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.bio": "Wykonuje zabiegi LASIK/SMILE i operacje zaćmy; specjalista w zakresie rogówki i refrakcji.",
+
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.title": "Profesor — Chirurgia okuloplastyczna i rogówka",
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.bio": "Ponad 25 lat doświadczenia; zajmuje się chirurgią okuloplastyczną, rogówką i soczewkami kontaktowymi; aktywna członkini Tureckiego Towarzystwa Okulistycznego.",
+
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.title": "Profesor — Jaskra i Zaćma",
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.bio": "Specjalista w zakresie jaskry i zaćmy; staż w Wills Eye Hospital; członek EGS i World Glaucoma Association.",
+
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.title": "Profesor — Zapalenie błony naczyniowej oka i jaskra",
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.bio": "Doświadczony okulista z Antalyi; ponad 40 lat praktyki w leczeniu jaskry i zapalenia błony naczyniowej; autor publikacji międzynarodowych.",
+
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.title": "Adiunkt — Siatkówka i Zaćma",
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.bio": "Zajmuje się chorobami siatkówki, zaćmą i zaburzeniami neurookulistycznymi; ponad 50 publikacji; praktykuje od 2004 roku."
+
+
 }

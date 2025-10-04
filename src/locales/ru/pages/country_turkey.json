@@ -1,81 +1,1081 @@
 {
   "country.turkey.metaTitle": "Турция — Каталог врачей | CareOverseas",
-  "country.turkey.metaDesc": "Врачи Турции. Фильтр по клинике, отделению и городу.",
-  "country.turkey.title": "Турция — Каталог врачей",
-  "country.turkey.subtitle": "Информационная страница: Стамбул, Анталья, Анкара — Acibadem, Liv, Medicana, Medistate, NP Istanbul Brain Hospital, Memorial, Anadolu.",
-  "country.turkey.searchPlaceholder": "Поиск по имени, специализации или клинике",
-  "country.turkey.clear": "Очистить",
-  "country.turkey.filter.department": "Отделение",
-  "country.turkey.filter.clinic": "Клиника",
-  "country.turkey.filter.city": "Город",
-  "country.turkey.sortBy": "Сортировать по:",
-  "country.turkey.sort.name": "Имя",
-  "country.turkey.sort.clinic": "Клиника",
-  "country.turkey.sort.city": "Город",
-  "country.turkey.empty": "Ничего не найдено. Измените фильтры или запрос.",
-  "country.turkey.emptyHint": "Попробуйте другой город, клинику или отделение.",
-  "country.turkey.backHome": "← На главную",
-  "country.turkey.contactCta": "Связаться с координатором",
-  "country.turkey.breadcrumbHome": "Главная",
-  "country.turkey.stats.doctorsLabel": "врачей",
-  "country.turkey.stats.clinicsLabel": "клиник",
-  "country.turkey.stats.citiesLabel": "городов",
-  "country.turkey.stats.departmentsLabel": "отделений",
-  "country.turkey.usp.expertsTitle": "Подбираю лучших под ваш диагноз",
-  "country.turkey.usp.expertsDesc": "В приоритете — заведующие отделениями и лидеры профильных центров.",
-  "country.turkey.usp.safeTitle": "Прозрачно и без стресса",
-  "country.turkey.usp.safeDesc": "Чёткая координация, документы на вашем языке, никаких маркетинговых договоров.",
-  "country.turkey.usp.careTitle": "Забота и сопровождение",
-  "country.turkey.usp.careDesc": "Личное сопровождение от первого сообщения до возвращения домой.",
-  "country.turkey.pitch.title": "Сомневаетесь, к какому врачу обратиться?",
-  "country.turkey.pitch.subtitle": "Расскажите о диагнозе и пожеланиях. Подберу заведующего нужным отделением, подготовлю запрос и помогу получить быстрый ответ от клиники.",
-  "country.turkey.pitch.badge1": "Первичный запрос — бесплатно",
-  "country.turkey.pitch.badge2": "Быстрый отклик",
-  "country.turkey.pitch.badge3": "Помощь с документами",
-  "country.turkey.pitch.cta": "Связаться с координатором",
+"country.turkey.metaDesc": "Просмотрите ведущих врачей Турции. Фильтр по клинике, специальности и городу.",
+"country.turkey.title": "Турция — Каталог врачей",
+"country.turkey.subtitle": "Информационный каталог. Acibadem, Liv, Memorial, Medicana, Medistate, Medipol, NP Brain, Anadolu, Dünyagöz — Стамбул, Анкара, Анталья, Коджаэли.",
+"country.turkey.searchPlaceholder": "Поиск по имени, специальности или клинике",
+"country.turkey.clear": "Очистить",
+"country.turkey.filter.department": "Отделение",
+"country.turkey.filter.clinic": "Клиника",
+"country.turkey.filter.city": "Город",
+"country.turkey.sortBy": "Сортировать по:",
+"country.turkey.sort.name": "Имя",
+"country.turkey.sort.clinic": "Клиника",
+"country.turkey.sort.city": "Город",
+"country.turkey.empty": "Нет совпадений. Попробуйте изменить фильтры или запрос.",
+"country.turkey.emptyHint": "Попробуйте другой город, клинику или специальность.",
+"country.turkey.backHome": "← Назад на главную",
+"country.turkey.contactCta": "Связаться с координатором",
+"country.turkey.breadcrumbHome": "Главная",
+"country.turkey.stats.doctorsLabel": "врачи",
+"country.turkey.stats.clinicsLabel": "клиники",
+"country.turkey.stats.citiesLabel": "города",
+"country.turkey.stats.departmentsLabel": "отделения",
+"country.turkey.usp.expertsTitle": "Лучшие специалисты для вашего случая",
+"country.turkey.usp.expertsDesc": "Мы отбираем заведующих отделениями и ведущих экспертов узких направлений.",
+"country.turkey.usp.safeTitle": "Прозрачно и без стресса",
+"country.turkey.usp.safeDesc": "Четкая координация, документы на вашем языке, без маркетинговых посредников.",
+"country.turkey.usp.careTitle": "Поддержка с человеческим подходом",
+"country.turkey.usp.careDesc": "Личное сопровождение от первого сообщения до возвращения домой.",
+"country.turkey.pitch.title": "Не уверены, какой врач вам подходит?",
+"country.turkey.pitch.subtitle": "Расскажите о диагнозе и предпочтениях. Я подберу подходящего заведующего отделением, подготовлю запрос и помогу получить быстрый ответ от клиники.",
+"country.turkey.pitch.badge1": "Бесплатный первичный запрос",
+"country.turkey.pitch.badge2": "Быстрый ответ",
+"country.turkey.pitch.badge3": "Помощь с документами",
+"country.turkey.pitch.cta": "Связаться с координатором",
 
-  "dict.city.istanbul.name": "Стамбул",
-  "dict.city.antalya.name": "Анталья",
-  "dict.city.ankara.name": "Анкара",
+"dict.city.istanbul.name": "Стамбул",
+"dict.city.ankara.name": "Анкара",
+"dict.city.antalya.name": "Анталья",
+"dict.city.kocaeli.name": "Коджаэли (Гебзе)",
 
-  "dict.clinic.acibadem-istanbul.name": "Acibadem (Стамбул)",
-  "dict.clinic.liv-ankara.name": "Liv Hospital Ankara",
-  "dict.clinic.medicana-istanbul.name": "Medicana (Стамбул)",
-  "dict.clinic.medistate-istanbul.name": "Medistate (Стамбул)",
-  "dict.clinic.np-istanbul-brain.name": "NP Istanbul Brain Hospital",
-  "dict.clinic.memorial-antalya.name": "Memorial Antalya Hospital",
-  "dict.clinic.anadolu-istanbul.name": "Anadolu Medical Center (Стамбул)",
+"dict.clinic.acibadem-maslak.name": "Больница Acıbadem Maslak",
+"people.doctors.maslak-akiyol-cardiology.name": "Проф. д-р Ахмет Акйол",
+"people.doctors.maslak-akiyol-cardiology.title": "Интервенционный кардиолог",
+"people.doctors.maslak-akiyol-cardiology.bio": "Ведущий специалист по интервенционной кардиологии в Маслак, большой опыт в установке стентов и сосудистых вмешательствах.",
 
-  "dict.dept.cardiology.name": "Кардиология",
-  "dict.dept.oncology.name": "Онкология",
-  "dict.dept.neurosurgery.name": "Нейрохирургия",
-  "dict.dept.ivf.name": "ЭКО и репродуктивная медицина",
-  "dict.dept.orthopedics.name": "Ортопедия",
-  "dict.dept.gastro.name": "Гастроэнтерология",
-  "dict.dept.endocrinology.name": "Эндокринология",
-  "dict.dept.general-surgery.name": "Общая хирургия",
-  "dict.dept.transplant.name": "Трансплантология",
-  "dict.dept.radiology.name": "Радиология",
-  "dict.dept.radiation-oncology.name": "Лучевая онкология",
-  "dict.dept.pediatrics.name": "Педиатрия",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.name": "Проф. Алекс Дегирменджиоглу",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.title": "Кардиолог",
+"people.doctors.maslak-aleks-degirmencioglu-cardiology.bio": "Специалист по неинвазивной кардиологии, эхокардиографии и диагностической визуализации.",
 
-  "people.doctors.acibadem-istanbul-cardio-slot.name": "Имя будет добавлено — Acibadem, кардиология",
-  "people.doctors.acibadem-istanbul-cardio-slot.title": "Пример: заведующий кардиологией",
-  "people.doctors.acibadem-istanbul-cardio-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.name": "Проф. д-р Гёкхан Бозкурт",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.title": "Нейрохирург",
+"people.doctors.maslak-gokhan-bozkurt-neurosurgery.bio": "Эксперт по нейрохирургии основания черепа и сосудистой нейрохирургии.",
 
-  "people.doctors.liv-ankara-oncology-slot.name": "Имя будет добавлено — Liv, онкология (Анкара)",
-  "people.doctors.liv-ankara-oncology-slot.title": "Пример: директор по онкологии",
-  "people.doctors.liv-ankara-oncology-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.name": "Проф. Метиз Зафер Беркман",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.title": "Нейрохирург",
+"people.doctors.maslak-metiz-zafer-berkman-neurosurgery.bio": "Специализируется на спинальной нейрохирургии.",
 
-  "people.doctors.medicana-istanbul-orthopedics-slot.name": "Имя будет добавлено — Medicana, ортопедия",
-  "people.doctors.medicana-istanbul-orthopedics-slot.title": "Пример: главный врач ортопедии",
-  "people.doctors.medicana-istanbul-orthopedics-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.maslak-erdem-kilavuz-ent.name": "Проф. А. Эрдэм Килавуз",
+"people.doctors.maslak-erdem-kilavuz-ent.title": "ЛОР / Отоларинголог",
+"people.doctors.maslak-erdem-kilavuz-ent.bio": "Специалист по хирургии головы и шеи, пазух и уха.",
+"people.doctors.maslak-sefa-sahin-otolaryngology.name": "Проф. Седеф Шахин",
+"people.doctors.maslak-sefa-sahin-otolaryngology.title": "Дерматолог",
+"people.doctors.maslak-sefa-sahin-otolaryngology.bio": "Эксперт в области кожных заболеваний и эстетической дерматологии.",
 
-  "people.doctors.memorial-antalya-ivf-slot.name": "Имя будет добавлено — Memorial, ЭКО (Анталья)",
-  "people.doctors.memorial-antalya-ivf-slot.title": "Пример: руководитель программы ЭКО",
-  "people.doctors.memorial-antalya-ivf-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.maslak-alper-medical-oncology.name": "Проф. Гёкхан Демир",
+"people.doctors.maslak-alper-medical-oncology.title": "Онколог",
+"people.doctors.maslak-alper-medical-oncology.bio": "Лечение солидных опухолей, иммунотерапия, химиотерапия.",
 
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "Имя будет добавлено — NP Istanbul, нейрохирургия",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Пример: заведующий нейрохирургией",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Заглушка. Замените на краткое резюме на русском."
+"people.doctors.maslak-olmez-ozlem-oncology.name": "Проф. Омер Фатих Өлмез",
+"people.doctors.maslak-olmez-ozlem-oncology.title": "Онколог",
+"people.doctors.maslak-olmez-ozlem-oncology.bio": "Специалист по лечению рака, комплексный мультидисциплинарный подход.",
+
+"dict.clinic.acibadem-altunizade.name": "Больница Acıbadem Altunizade",
+"people.doctors.altunizade-usta-gynecology.name": "Проф. д-р А. Танер Уста",
+"people.doctors.altunizade-usta-gynecology.title": "Гинеколог / Акушер",
+"people.doctors.altunizade-usta-gynecology.bio": "Специалист по ведению беременности высокого риска и репродуктивной хирургии.",
+
+"people.doctors.altunizade-tayyar-gynecology.name": "Проф. д-р Ахмет Тайяр",
+"people.doctors.altunizade-tayyar-gynecology.title": "Гинеколог",
+"people.doctors.altunizade-tayyar-gynecology.bio": "Минимально инвазивная гинекологическая хирургия, лечение бесплодия.",
+
+"people.doctors.altunizade-alper-ozkan-cardiology.name": "Проф. Алпер Озкан",
+"people.doctors.altunizade-alper-ozkan-cardiology.title": "Кардиолог",
+"people.doctors.altunizade-alper-ozkan-cardiology.bio": "Кардиология взрослых и детей, коронарные вмешательства.",
+
+"people.doctors.altunizade-duhan-bayrak-cardiology.name": "Проф. Дуган Фатих Байрак",
+"people.doctors.altunizade-duhan-bayrak-cardiology.title": "Кардиолог",
+"people.doctors.altunizade-duhan-bayrak-cardiology.bio": "Недостаточность сердца, интервенционная кардиология.",
+
+"people.doctors.altunizade-faysal-dane-oncology.name": "Проф. Файсал Дане",
+"people.doctors.altunizade-faysal-dane-oncology.title": "Онколог",
+"people.doctors.altunizade-faysal-dane-oncology.bio": "Диагностика рака, химиотерапия, разработка терапевтических протоколов.",
+"people.doctors.altunizade-gul-basaran-oncology.name": "Проф. Гюль Башаран",
+"people.doctors.altunizade-gul-basaran-oncology.title": "Онколог",
+"people.doctors.altunizade-gul-basaran-oncology.bio": "Специалист по раку молочной железы и гинекологическим опухолям.",
+
+"people.doctors.altunizade-koray-ozduman-neurosurgery.name": "Проф. Корай Оздуман",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.title": "Нейрохирург",
+"people.doctors.altunizade-koray-ozduman-neurosurgery.bio": "Опухоли мозга, стереотаксическая нейрохирургия.",
+
+"people.doctors.altunizade-memet-ozek-neurosurgery.name": "Проф. Мемет Озек",
+"people.doctors.altunizade-memet-ozek-neurosurgery.title": "Нейрохирург",
+"people.doctors.altunizade-memet-ozek-neurosurgery.bio": "Сосудистая нейрохирургия, операции основания черепа.",
+
+"people.doctors.liv-ulus-cardiology-yurtseven.title": "Интервенционный кардиолог",
+"people.doctors.liv-ulus-cardiology-yurtseven.bio": "Коронарная ангиография и стентирование, структурные пороки сердца, кардиологическая визуализация.",
+
+"people.doctors.liv-ulus-cardiology-ozdemir.title": "Кардиолог",
+"people.doctors.liv-ulus-cardiology-ozdemir.bio": "Аритмии и сердечная недостаточность, эхокардиография и профилактика сердечно-сосудистых рисков.",
+
+"people.doctors.liv-ulus-cardiology-enis-oguz.title": "Интервенционный электрофизиолог",
+"people.doctors.liv-ulus-cardiology-enis-oguz.bio": "Катетерная абляция (ФП/СВТ/ЖТ), имплантация устройств (CRT/ICD), лечение сложных нарушений ритма.",
+
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.title": "Врач-радиационный онколог",
+"people.doctors.liv-ulus-radonc-emre-merdan-fayda.bio": "Лучевая терапия с визуальным наведением (VMAT/IGRT), стереотаксическое и персонализированное планирование.",
+
+"people.doctors.liv-ulus-nuclear-emel-ceylan.title": "Специалист по ядерной медицине",
+"people.doctors.liv-ulus-nuclear-emel-ceylan.bio": "Онкологические ПЭТ/КТ, радионуклидная терапия и тераностика.",
+
+"people.doctors.liv-ulus-urology-engin-kaya.title": "Уролог / Андролог",
+"people.doctors.liv-ulus-urology-engin-kaya.bio": "Мочекаменная болезнь, ДГПЖ, мужское бесплодие, эндоурология.",
+
+"people.doctors.liv-ulus-medonc-meral-gunaldi.title": "Онколог",
+"people.doctors.liv-ulus-medonc-meral-gunaldi.bio": "Рак молочной железы, ЖКТ и лёгких; иммунотерапия и таргетное лечение."
+,
+"people.doctors.liv-ulus-medonc-duygu-derin.title": "Онколог",
+"people.doctors.liv-ulus-medonc-duygu-derin.bio": "Системная онкотерапия, персонализированная медицина и мультидисциплинарные консилиумы.",
+
+"people.doctors.liv-ulus-neurosurgery-bozkurt.title": "Нейрохирург",
+"people.doctors.liv-ulus-neurosurgery-bozkurt.bio": "Нейрохирургия основания черепа и сосудистая нейрохирургия; сложные операции на мозге и позвоночнике.",
+
+"people.doctors.liv-ulus-neurosurgery-ozduman.title": "Нейрохирург",
+"people.doctors.liv-ulus-neurosurgery-ozduman.bio": "Опухоли мозга, стереотаксическая и функциональная нейрохирургия.",
+
+"people.doctors.liv-ulus-ophthalmology-kahraman.title": "Офтальмолог",
+"people.doctors.liv-ulus-ophthalmology-kahraman.bio": "Катаракта, заболевания сетчатки и макулы; комплексная глазная хирургия.",
+
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.title": "Детский эндокринолог",
+"people.doctors.liv-ulus-ped-endo-cengiz-kara.bio": "Сахарный диабет 1 типа, нарушения роста и полового развития, заболевания щитовидной железы у детей.",
+
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.title": "Детский пульмонолог",
+"people.doctors.liv-ulus-ped-pulm-erkan-cakir.bio": "Астма, муковисцидоз и лечение сложных дыхательных расстройств.",
+
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.title": "Эндокринолог",
+"people.doctors.liv-ulus-endocrinology-demet-yetkin.bio": "Заболевания щитовидной железы, диабет и метаболические расстройства; профилактика эндокринных рисков.",
+
+"people.doctors.liv-ulus-radiology-adem-ucar.title": "Интервенционный радиолог",
+"people.doctors.liv-ulus-radiology-adem-ucar.bio": "Онкологические и сосудистые вмешательства, продвинутая визуализация брюшной и грудной областей.",
+
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.title": "Ортопед-хирург",
+"people.doctors.liv-ulus-orthopedics-mehmet-ozkan.bio": "Эндопротезирование тазобедренного и коленного суставов, реконструкция после травм и спортивные травмы.",
+
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.title": "Ортопед и хирург позвоночника",
+"people.doctors.liv-ulus-orthopedics-cemalettin-yildiz.bio": "Хирургия позвоночника, травматология и артроскопия; коррекция деформаций конечностей.",
+
+"people.doctors.liv-ulus-neurology-mustafa-alkan.title": "Невролог",
+"people.doctors.liv-ulus-neurology-mustafa-alkan.bio": "Лечение инсультов, эпилепсии и двигательных расстройств."
+,
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.title": "Гастроэнтеролог",
+"people.doctors.liv-ulus-gastro-ozlem-ozkan.bio": "Эндоскопия и колоноскопия, воспалительные заболевания кишечника и патология печени и желчных путей.",
+
+"people.doctors.liv-ulus-surgery-bulent-ozturk.title": "Хирург общего и онкологического профиля",
+"people.doctors.liv-ulus-surgery-bulent-ozturk.bio": "Лапароскопическая хирургия ЖКТ и гепатобилиарной системы, операции при грыжах и колоректальные вмешательства.",
+
+"people.doctors.liv-ulus-plastic-kemal-aykan.title": "Пластический, реконструктивный и эстетический хирург",
+"people.doctors.liv-ulus-plastic-kemal-aykan.bio": "Микрохирургическая реконструкция, контурная пластика тела и эстетические операции.",
+
+"people.doctors.liv-ulus-ivf-taner-usta.title": "Гинеколог / Специалист по ЭКО",
+"people.doctors.liv-ulus-ivf-taner-usta.bio": "Диагностика бесплодия, программы ЭКО/ИКСИ, малоинвазивная репродуктивная хирургия.",
+
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.title": "Гинеколог / Акушер",
+"people.doctors.liv-ulus-obgyn-ayse-yavuz.bio": "Дородовое ведение, беременность высокого риска и плановые гинекологические операции.",
+
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.title": "Педиатр",
+"people.doctors.liv-ulus-pediatrics-fatma-kaya.bio": "Общая педиатрия и неонатология, вакцинация и развитие ребёнка.",
+
+"people.doctors.liv-ulus-physical-nurcan-turhan.title": "Врач физической медицины и реабилитации",
+"people.doctors.liv-ulus-physical-nurcan-turhan.bio": "Послеоперационная реабилитация, лечение боли в опорно-двигательном аппарате, спортивная медицина.",
+
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.title": "Уролог (роботическая и лапароскопическая хирургия)",
+"people.doctors.liv-vadistanbul-urology-volkan-tugcu.bio": "Робот-ассистированная простатэктомия, хирургия рака почек и мочевого пузыря, лечение мочекаменной болезни.",
+
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.title": "Кардиолог",
+"people.doctors.liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu.bio": "Современная кардиовизуализация и интервенционная кардиология.",
+
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.title": "Кардиоэлектрофизиолог",
+"people.doctors.liv-vadistanbul-cardiology-batur-gonenc-kanar.bio": "Абляция ФП/ЖТ, имплантация устройств (CRT/ICD) и лечение сложных нарушений ритма сердца."
+,
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.title": "Кардиолог",
+"people.doctors.liv-vadistanbul-cardiology-akin-torun.bio": "Неинвазивная кардиология, эхокардиография и профилактика сердечно-сосудистых заболеваний.",
+
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.title": "Интервенционный кардиолог",
+"people.doctors.liv-vadistanbul-cardiology-hasan-burak-isleyen.bio": "Коронарная ангиография, ангиопластика и стентирование.",
+
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.title": "Врач внутренней медицины",
+"people.doctors.liv-vadistanbul-internal-hakan-kocoglu.bio": "Диабет и заболевания щитовидной железы, метаболическое здоровье; ультразвуковая диагностика у постели (POCUS).",
+
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.title": "Ортопед-травматолог",
+"people.doctors.liv-vadistanbul-orthopedics-sinan-karadeniz.bio": "Спортивные травмы, артроскопия и лечение сложных травм.",
+
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.title": "Ортопед-хирург",
+"people.doctors.liv-vadistanbul-orthopedics-volkan-yildiz.bio": "Спортивная медицина, артроскопия коленного и плечевого суставов.",
+
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.title": "Невролог",
+"people.doctors.liv-vadistanbul-neurology-sevda-kara.bio": "Болезнь Паркинсона, рассеянный склероз и когнитивная неврология.",
+
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.title": "Гастроэнтеролог",
+"people.doctors.liv-vadistanbul-gastro-fatih-arslan.bio": "Гепатология, рефлюкс и язвенная болезнь; диагностическая и терапевтическая эндоскопия.",
+
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.title": "Хирург общего и бариатрического профиля",
+"people.doctors.liv-vadistanbul-surgery-omer-hasan-alioglu.bio": "Метаболическая и бариатрическая хирургия, лапароскопические операции ЖКТ и грыжи.",
+
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.title": "Пластический, реконструктивный и эстетический хирург",
+"people.doctors.liv-vadistanbul-plastic-hakan-ozkaya.bio": "Реконструкция груди, контурная пластика тела и эстетическая хирургия.",
+
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.title": "Гинеколог / Специалист по ЭКО",
+"people.doctors.liv-vadistanbul-ivf-elif-karabacak.bio": "Диагностика бесплодия, программы ЭКО/ИКСИ и репродуктивная эндокринология.",
+
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.title": "Гинеколог / Акушер",
+"people.doctors.liv-vadistanbul-obgyn-burcu-yilmaz.bio": "Дородовое ведение, беременность высокого риска и гинекологические операции.",
+
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.title": "Педиатр",
+"people.doctors.liv-vadistanbul-pediatrics-emre-unal.bio": "Детские инфекции, аллергии и контроль роста и развития ребёнка.",
+
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.title": "Врач физической медицины и реабилитации",
+"people.doctors.liv-vadistanbul-physical-aylin-kurt.bio": "Реабилитация позвоночника и опорно-двигательной системы, хроническая боль и спортивная медицина."
+,
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.title": "Офтальмолог",
+"people.doctors.liv-ankara-ophthalmology-mutlu-acar.bio": "Хирургия глазницы, травмы глаза и комплексная офтальмологическая помощь.",
+
+"people.doctors.liv-ankara-ent-levent-ilarslan.title": "ЛОР / Отоларинголог",
+"people.doctors.liv-ankara-ent-levent-ilarslan.bio": "Эндоскопическая хирургия пазух, отология и ринология.",
+
+"people.doctors.liv-ankara-cardiology-utku-zor.title": "Кардиолог",
+"people.doctors.liv-ankara-cardiology-utku-zor.bio": "Кардиологическая визуализация, профилактическая кардиология и оценка рисков.",
+
+"people.doctors.liv-ankara-cardiology-aytun-canga.title": "Кардиолог",
+"people.doctors.liv-ankara-cardiology-aytun-canga.bio": "Сердечная недостаточность и общая кардиология для взрослых.",
+
+"people.doctors.liv-ankara-cardiology-murat-tulmac.title": "Интервенционный кардиолог",
+"people.doctors.liv-ankara-cardiology-murat-tulmac.bio": "Коронарная ангиография, ангиопластика и структурные вмешательства на сердце.",
+
+"people.doctors.liv-ankara-cardiology-alper-canbay.title": "Кардиолог",
+"people.doctors.liv-ankara-cardiology-alper-canbay.bio": "Диагностика аритмий и комплексная кардиологическая помощь.",
+
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.title": "Ортопед / Спортивный хирург",
+"people.doctors.liv-ankara-orthopedics-tahsin-beyzadeoglu.bio": "Реконструкция связок, операции на мениске и хряще, спортивные травмы.",
+
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.title": "Ортопед-хирург",
+"people.doctors.liv-ankara-orthopedics-okan-eroglu.bio": "Эндопротезирование суставов, травматология и артроскопия.",
+
+"people.doctors.liv-ankara-neurology-didem-celik.title": "Невролог",
+"people.doctors.liv-ankara-neurology-didem-celik.bio": "Инсульты, деменция и двигательные расстройства.",
+
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.title": "Гастроэнтеролог",
+"people.doctors.liv-ankara-gastro-serkan-ozcelik.bio": "Гепатология, гастроэзофагеальный рефлюкс и диагностическая/терапевтическая эндоскопия.",
+
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.title": "Хирург общего профиля",
+"people.doctors.liv-ankara-surgery-ismail-yilmaz.bio": "Лапароскопическая хирургия грыж и ЖКТ, билиарные и колоректальные операции.",
+
+"people.doctors.liv-ankara-plastic-murat-ugurlu.title": "Пластический, реконструктивный и эстетический хирург",
+"people.doctors.liv-ankara-plastic-murat-ugurlu.bio": "Эстетика груди, тела и лица; реконструктивная хирургия.",
+
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.title": "Гинеколог / Специалист по ЭКО",
+"people.doctors.liv-ankara-ivf-gulsah-ozdemir.bio": "Диагностика бесплодия, ЭКО/ИКСИ и репродуктивная эндокринология.",
+
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.title": "Гинеколог / Акушер",
+"people.doctors.liv-ankara-obgyn-ozlem-bektaş.bio": "Дородовое наблюдение, беременность высокого риска и гинекологические операции.",
+
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.title": "Педиатр",
+"people.doctors.liv-ankara-pediatrics-hale-yilmaz.bio": "Инфекции детского возраста, аллергии и контроль роста ребёнка."
+,
+"people.doctors.liv-ankara-physical-funda-ozkan.title": "Врач физической медицины и реабилитации",
+"people.doctors.liv-ankara-physical-funda-ozkan.bio": "Послеоперационная реабилитация, боли в опорно-двигательном аппарате и спортивная медицина.",
+
+"people.doctors.liv-ankara-cardiology-sample.title": "Кардиолог",
+"people.doctors.liv-ankara-cardiology-sample.bio": "Диагностика и лечение сердечно-сосудистых заболеваний; неинвазивная и интервенционная помощь.",
+
+"people.doctors.liv-ankara-oncology-sample.title": "Онколог",
+"people.doctors.liv-ankara-oncology-sample.bio": "Системная терапия солидных опухолей, поддерживающая онкология.",
+
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.title": "Кардиоваскулярный хирург",
+"people.doctors.liv-vadistanbul-cardiovascular-surgery-sample.bio": "Хирургия клапанов, коронарных и аортальных сосудов; минимально инвазивные методики.",
+
+"people.doctors.liv-vadistanbul-oncology-sample.title": "Онколог",
+"people.doctors.liv-vadistanbul-oncology-sample.bio": "Химиотерапия, таргетные препараты и иммунотерапия.",
+
+"dict.clinic.liv-ankara.name": "Больница Liv Ankara",
+"dict.clinic.liv-ulus.name": "Больница Liv Ulus",
+"dict.clinic.liv-vadistanbul.name": "Больница Liv Vadistanbul",
+
+"dict.clinic.memorial-antalya.name": "Больница Memorial Antalya",
+"dict.clinic.memorial-sisli.name": "Больница Memorial Şişli",
+"dict.clinic.memorial-ankara.name": "Больница Memorial Ankara",
+"dict.clinic.memorial-atasehir.name": "Больница Memorial Ataşehir",
+
+"dict.dept.microbiology.name": "Клиническая микробиология",
+"dict.dept.bmt.name": "Трансплантация костного мозга",
+"dict.dept.kidney-transplant.name": "Трансплантация почки",
+"dict.dept.cornea-transplant.name": "Трансплантация роговицы",
+"dict.dept.checkup.name": "Полное обследование (Check-up)",
+"dict.dept.emergency.name": "Неотложная медицина",
+"dict.dept.allergy-immunology.name": "Аллергология и иммунология",
+"dict.dept.nutrition.name": "Диетология и питание",
+"dict.dept.pediatric-allergy-immunology.name": "Детская аллергология и иммунология",
+"dict.dept.pediatric-surgery.name": "Детская хирургия",
+"dict.dept.pediatric-hem-onc.name": "Детская гематология и онкология",
+"dict.dept.pediatric-cardiology.name": "Детская кардиология",
+"dict.dept.pediatric-neurology.name": "Детская неврология",
+"dict.dept.pmr.name": "Физическая медицина и реабилитация"
+,
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.title": "Офтальмолог",
+"people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.bio": "Хирургия сетчатки и катаракты; полная офтальмологическая помощь — диагностика и операции.",
+
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.title": "Офтальмолог",
+"people.doctors.memorial-sisli-ophthalmology-dilek-erkan.bio": "Хирургия роговицы и переднего сегмента, лечение катаракты и рефракционных нарушений.",
+
+"people.doctors.memorial-sisli-gastro-birol-baysal.title": "Гастроэнтеролог",
+"people.doctors.memorial-sisli-gastro-birol-baysal.bio": "Гепатология, диагностическая и терапевтическая эндоскопия, лечение воспалительных заболеваний кишечника (ВЗК).",
+
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.title": "Невролог",
+"people.doctors.memorial-sisli-neurology-dilek-necioglu-orken.bio": "Инсульты, двигательные расстройства и общая неврология.",
+
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.title": "Нейрохирург",
+"people.doctors.memorial-sisli-neurosurgery-hakan-hanimoglu.bio": "Черепно-основная и сосудистая нейрохирургия; сложные операции на мозге и позвоночнике.",
+
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.title": "Ортопед-травматолог",
+"people.doctors.memorial-sisli-orthopedics-mehmet-alp.bio": "Эндопротезирование суставов, реконструкция после травм и спортивные травмы.",
+
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.title": "Хирург общего и онкологического профиля",
+"people.doctors.memorial-sisli-general-surgery-adnan-isgor.bio": "Малоинвазивная хирургия ЖКТ и гепатобилиарной системы, грыжи, колоректальные операции.",
+
+"people.doctors.memorial-sisli-rehab-engin-cakar.title": "Врач физической медицины и реабилитации",
+"people.doctors.memorial-sisli-rehab-engin-cakar.bio": "Нейрореабилитация, лечение болей в опорно-двигательном аппарате и восстановление функций.",
+
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.title": "Специалист по ядерной медицине",
+"people.doctors.memorial-sisli-nuclear-cuneyt-turkmen.bio": "Онкологическая ПЭТ/КТ, SPECT и радионуклидная терапия.",
+
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.title": "Детский гематолог",
+"people.doctors.memorial-sisli-ped-hematology-betul-tavil.bio": "Заболевания крови и детская гемоонкология; мультидисциплинарный подход.",
+
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.title": "Интервенционный кардиолог",
+"people.doctors.memorial-atasehir-cardiology-bahadir-dagdeviren.bio": "Коронарные вмешательства и передовые методы визуализации сердца.",
+
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.title": "Эндокринолог",
+"people.doctors.memorial-atasehir-endocrinology-basak-karbek-bayraktar.bio": "Диабет, заболевания щитовидной железы и метаболические расстройства.",
+
+"people.doctors.memorial-atasehir-ent-engin-acioglu.title": "ЛОР / Отоларинголог",
+"people.doctors.memorial-atasehir-ent-engin-acioglu.bio": "Отология, ринология и эндоскопическая хирургия околоносовых пазух.",
+
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.title": "ЛОР / Отоларинголог",
+"people.doctors.memorial-atasehir-ent-erol-selimoglu.bio": "Детская оториноларингология и заболевания головы и шеи.",
+
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.title": "Пластический, реконструктивный и эстетический хирург"
+,
+"people.doctors.memorial-atasehir-plastic-ercan-karacaoglu.bio": "Реконструкция груди, контурная пластика тела и эстетическая хирургия.",
+
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.title": "Гинеколог / Акушер",
+"people.doctors.memorial-atasehir-obgyn-ebru-cogendez.bio": "Дородовое наблюдение, беременность высокого риска и гинекологические операции.",
+
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.title": "Нейрохирург",
+"people.doctors.memorial-atasehir-neurosurgery-zafer-orkun-toktas.bio": "Хирургия позвоночника и лечение опухолей головного мозга.",
+
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.title": "Уролог",
+"people.doctors.memorial-atasehir-urology-turhan-caskurlu.bio": "Уроонкология, аденома простаты и малоинвазивная урология.",
+
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.title": "Детский гастроэнтеролог",
+"people.doctors.memorial-atasehir-ped-gastro-ayse-selimoglu.bio": "Детская гепатология, эндоскопия и нарушения питания.",
+
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.title": "Детский пульмонолог",
+"people.doctors.memorial-atasehir-ped-pulmo-bulent-karadag.bio": "Астма, муковисцидоз и сложные заболевания дыхательных путей.",
+
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.title": "Врач физической медицины и реабилитации",
+"people.doctors.memorial-atasehir-physio-mehmet-ali-taskaynan.bio": "Реабилитация позвоночника и спортивных травм, лечение боли.",
+
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.title": "Пульмонолог / Заболевания грудной клетки",
+"people.doctors.memorial-atasehir-thoracic-attila-saygi.bio": "ХОБЛ, интерстициальные болезни лёгких и нарушения дыхания во сне.",
+
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.title": "Ортопед-хирург",
+"people.doctors.memorial-antalya-orthopedics-ahmet-turan-aydin.bio": "Лечение травм, спортивные повреждения и артроскопическая хирургия.",
+
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.title": "Хирург общего и бариатрического профиля",
+"people.doctors.memorial-antalya-general-surgery-alihan-gurkan.bio": "Метаболическая и бариатрическая хирургия, лапароскопические операции.",
+
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.title": "Нейрохирург",
+"people.doctors.memorial-antalya-neurosurgery-mahmut-akyuz.bio": "Операции на мозге и позвоночнике, опухоли и сосудистая нейрохирургия.",
+
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.title": "Онколог",
+"people.doctors.memorial-antalya-oncology-mustafa-ozdogan.bio": "Системная терапия солидных опухолей: химио-, таргетная и иммунотерапия.",
+
+"people.doctors.memorial-antalya-ivf-onur-erol.title": "Гинеколог / ЭКО и андрология",
+"people.doctors.memorial-antalya-ivf-onur-erol.bio": "Бесплодие, ЭКО/ИКСИ и диагностика мужского фактора.",
+
+"people.doctors.memorial-antalya-obgyn-safak-olgan.title": "Гинеколог / Акушер",
+"people.doctors.memorial-antalya-obgyn-safak-olgan.bio": "Медицина матери и плода, акушерское наблюдение.",
+
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.title": "ЛОР / Отоларинголог",
+"people.doctors.memorial-antalya-ent-ismail-onder-uysal.bio": "Эндоскопическая хирургия пазух, отология и ринология."
+,
+"people.doctors.memorial-antalya-perinatology-eftal-avci.title": "Перинатолог (Медицина матери и плода)",
+"people.doctors.memorial-antalya-perinatology-eftal-avci.bio": "Беременность высокого риска, мониторинг плода и пренатальная диагностика.",
+
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.title": "Педиатр",
+"people.doctors.memorial-antalya-pediatrics-ahmet-yildirim.bio": "Общая педиатрия, инфекционные заболевания и контроль роста и развития ребёнка.",
+
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.title": "Невролог",
+"people.doctors.memorial-antalya-neurology-elif-sarionder-gencer.bio": "Головная боль, инсульт и общая неврология.",
+
+"people.doctors.memorial-ankara-cardiology-ali-oto.title": "Интервенционный электрофизиолог",
+"people.doctors.memorial-ankara-cardiology-ali-oto.bio": "Катетерная абляция (ФП/ЖТ) и терапия устройствами (CRT/ICD).",
+
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.title": "Кардиолог",
+"people.doctors.memorial-ankara-cardiology-ebru-akgul-ercan.bio": "Кардиологическая визуализация и профилактическая кардиология.",
+
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.title": "Кардиохирург",
+"people.doctors.memorial-ankara-cardiovascular-cem-yorgancioglu.bio": "Операции на клапанах, аорте и коронарных сосудах; малоинвазивные методики.",
+
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.title": "Кардиохирург",
+"people.doctors.memorial-ankara-cardiovascular-mustafa-serkan-durdu.bio": "Коронарное и клапанное шунтирование; операции без ИК и малоинвазивная хирургия.",
+
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.title": "Уролог",
+"people.doctors.memorial-ankara-urology-ali-fuat-atmaca.bio": "Уроонкология, гиперплазия простаты и мочекаменная болезнь.",
+
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.title": "Ортопед / Хирург позвоночника",
+"people.doctors.memorial-ankara-orthopedics-emre-acaroglu.bio": "Деформации позвоночника, дегенеративные заболевания и сложные реконструкции.",
+
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.title": "Ортопед-хирург",
+"people.doctors.memorial-ankara-orthopedics-ali-turgay-cavusoglu.bio": "Травматология, артропластика и артроскопия.",
+
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.title": "Нейрохирург",
+"people.doctors.memorial-ankara-neurosurgery-erkin-sonmez.bio": "Хирургия мозга и позвоночника, опухоли и сосудистые патологии.",
+
+"people.doctors.memorial-ankara-hematology-ferit-avcu.title": "Гематолог",
+"people.doctors.memorial-ankara-hematology-ferit-avcu.bio": "Лейкозы, лимфомы и доброкачественные гематологические заболевания.",
+
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.title": "Хирург общего профиля",
+"people.doctors.memorial-ankara-general-surgery-acar-tuzuner.bio": "Лапароскопическая хирургия ЖКТ, грыжи и билиарные операции.",
+
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.title": "Психиатр, председатель правления",
+"people.doctors.np-istanbul-brain-psychiatry-nevzat-tarhan.bio": "Основатель больницы NP Istanbul Brain; нейропсихиатрия, тревожные и аффективные расстройства, доказательная интегративная терапия."
+,
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.title": "Психиатр",
+"people.doctors.np-istanbul-brain-psychiatry-sermin-kesebir.bio": "Эксперт по аффективным расстройствам и психотерапии; мультидисциплинарная психиатрия взрослых.",
+
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.title": "Психиатр",
+"people.doctors.np-istanbul-brain-psychiatry-gul-eryilmaz.bio": "Зависимости, консилиумная психиатрия и лечение с применением нейромодуляции.",
+
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.title": "Детский и подростковый психиатр",
+"people.doctors.np-istanbul-brain-child-psych-melek-gozde-lus.bio": "Нейроразвитийные расстройства, СДВГ и психическое здоровье подростков.",
+
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.title": "Детский и подростковый психиатр",
+"people.doctors.np-istanbul-brain-child-psych-neriman-kilit.bio": "Детская психиатрия, аутизм и расстройства внимания.",
+
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.title": "Невролог",
+"people.doctors.np-istanbul-brain-neurology-oguz-tanridag.bio": "Когнитивная неврология, деменция и двигательные расстройства.",
+
+"people.doctors.np-istanbul-brain-neurology-baris-metin.title": "Невролог",
+"people.doctors.np-istanbul-brain-neurology-baris-metin.bio": "Нейровизуализация, когнитивная неврология и нейропсихология.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.title": "Нейрохирург",
+"people.doctors.np-istanbul-brain-neurosurgery-mustafa-bozbuga.bio": "Операции основания черепа, нейроваскулярная и онкологическая нейрохирургия, продвинутые спинальные вмешательства.",
+
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.title": "Нейрохирург",
+"people.doctors.np-istanbul-brain-neurosurgery-onur-yaman.bio": "Хирургия позвоночника, опухоли и малоинвазивная нейрохирургия.",
+
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.title": "Врач-рентгенолог (диагностическая радиология)",
+"people.doctors.np-istanbul-brain-radiology-zelal-tahaoglu.bio": "МРТ/КТ диагностика с фокусом на нейрорадиологию и междисциплинарную поддержку.",
+
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.title": "Рентгенолог",
+"people.doctors.np-istanbul-brain-radiology-necati-alp-tabak.bio": "Нейрорадиология и передовые методы диагностической визуализации.",
+
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.title": "Гастроэнтеролог / Врач внутренней медицины",
+"people.doctors.np-istanbul-brain-gastro-aytac-atamer.bio": "Гастроэнтерология и внутренняя медицина; диагностическая и терапевтическая эндоскопия."
+,
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.title": "Физиотерапия и реабилитация",
+"people.doctors.np-istanbul-brain-rehab-safak-sahir-karamehmetoglu.bio": "Нейрореабилитация, хроническая боль и программы функционального восстановления.",
+
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.title": "Клинический нейропсихолог",
+"people.doctors.np-istanbul-brain-psychology-merve-turkkol.bio": "Нейропсихологическая диагностика, когнитивная реабилитация и психотерапия, основанная на доказательствах.",
+
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.title": "Клинический психолог",
+"people.doctors.np-istanbul-brain-psychology-feridun-can-comert.bio": "Психотерапия взрослых (КПТ), работа со стрессом и тревожными расстройствами.",
+
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.title": "Кардиолог",
+"people.doctors.np-istanbul-brain-cardiology-mehmet-baltali.bio": "Кардиологическая визуализация и профилактическая кардиология; предоперационное наблюдение.",
+
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.title": "Логопед / Специалист по речи",
+"people.doctors.np-istanbul-brain-speech-ahmet-konrot.bio": "Нарушения речи и языка; руководитель отделения логопедии и терапии речи.",
+
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.title": "Профессор кардиологии",
+"people.doctors.medistate-kavacik-cardiology-yusuf-tavil.bio": "Взрослая кардиология, гипертония и ишемическая болезнь сердца; консультации в клинике Medistate Kavacık.",
+
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.title": "Интервенционный кардиолог",
+"people.doctors.medistate-kavacik-cardiology-zekeriya-kucukdurmaz.bio": "Коронарные вмешательства и эхокардиографическое сопровождение лечения.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.title": "Кардиохирург",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut.bio": "Кардиохирургия взрослых: шунтирование и операции на клапанах сердца.",
+
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.title": "Кардиохирург",
+"people.doctors.medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz.bio": "Хирургия сосудов и аорты."
+,
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.title": "Нейрохирург",
+"people.doctors.medistate-kavacik-neurosurgery-sevki-gok.bio": "Микронейрохирургия заболеваний позвоночника и головного мозга.",
+
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.title": "Невролог",
+"people.doctors.medistate-kavacik-neurology-gulistan-halac.bio": "Головные боли, инсульты и общая неврология.",
+
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.title": "Руководитель отделения общей хирургии и Центра ожирения",
+"people.doctors.medistate-kavacik-general-surgery-emin-ersoy.bio": "Лапароскопическая и бариатрическая хирургия; руководитель Центра по лечению ожирения.",
+
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.title": "Хирург общего профиля",
+"people.doctors.medistate-kavacik-general-surgery-selcuk-oktemer.bio": "Операции на органах брюшной полости и хирургия грыж.",
+
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.title": "Гастроэнтеролог",
+"people.doctors.medistate-kavacik-gastro-ahmet-burak-toros.bio": "Эндоскопия, воспалительные заболевания кишечника и гепатобилиарные патологии.",
+
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.title": "Директор отделения урологии, Уролог",
+"people.doctors.medistate-kavacik-urology-m-ihsan-karaman.bio": "Уроонкология, мочекаменная болезнь и андрология.",
+
+"people.doctors.medistate-kavacik-urology-orhan-koca.title": "Уролог",
+"people.doctors.medistate-kavacik-urology-orhan-koca.bio": "Заболевания простаты, почек и мочевого пузыря.",
+
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.title": "Акушер-гинеколог, перинатолог (беременность высокого риска)",
+"people.doctors.medistate-kavacik-obgyn-ahmet-semih-tugrul.bio": "Медицина матери и плода, осложнённая беременность."
+,
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.title": "Акушер-гинеколог, репродуктивная медицина",
+"people.doctors.medistate-kavacik-ivf-kenan-sofuoglu.bio": "ЭКО / ВРТ и лечение бесплодия.",
+
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.title": "ЛОР / Хирургия головы и шеи",
+"people.doctors.medistate-kavacik-ent-ismail-yilmaz.bio": "Ринология, заболевания гортани и хирургия головы и шеи.",
+
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.title": "Хирург-отоларинголог",
+"people.doctors.medistate-kavacik-ent-muhammet-tekin.bio": "Отология и эндоскопическая ЛОР-хирургия.",
+
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.title": "Офтальмолог",
+"people.doctors.medistate-kavacik-ophthalmology-melih-haboglu.bio": "Катаракта и хирургия переднего отрезка глаза.",
+
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.title": "Офтальмолог",
+"people.doctors.medistate-kavacik-ophthalmology-nihal-balcioglu.bio": "Лечение заболеваний сетчатки и комплексная офтальмологическая помощь.",
+
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.title": "Ортопед и травматолог",
+"people.doctors.medistate-kavacik-orthopedics-tevfik-balikci.bio": "Травмы, спортивные повреждения и суставная хирургия.",
+
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.title": "Ортопед-хирург",
+"people.doctors.medistate-kavacik-orthopedics-mustafa-tekkesin.bio": "Эндопротезирование и реконструкция конечностей.",
+
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.title": "Педиатр",
+"people.doctors.medistate-kavacik-pediatrics-huseyin-guvenc.bio": "Общая педиатрия и профилактическая медицина."
+,
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.title": "Педиатр",
+"people.doctors.medistate-kavacik-pediatrics-ibrahim-melih-yavuz.bio": "Детское здоровье и острые заболевания у детей.",
+
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.title": "Пульмонолог",
+"people.doctors.medistate-kavacik-pulmonology-zehra-yasar.bio": "ХОБЛ, астма и нарушения дыхания во сне.",
+
+"people.doctors.medistate-kavacik-radiology-kaan-meric.title": "Руководитель отделения радиологии",
+"people.doctors.medistate-kavacik-radiology-kaan-meric.bio": "Кросс-секционная визуализация и руководство отделением.",
+
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.title": "Радиолог",
+"people.doctors.medistate-kavacik-radiology-mehmet-mustafa-ozlu.bio": "Диагностика с помощью КТ и МРТ.",
+
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.title": "Дерматолог",
+"people.doctors.medistate-kavacik-dermatology-ebru-ikizler.bio": "Лечение кожных заболеваний и дерматозов.",
+
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.title": "Инфекционные болезни и клиническая микробиология",
+"people.doctors.medistate-kavacik-infectious-mucahit-yemisen.bio": "Инфекционные заболевания, антимикробная терапия и микробиологическая диагностика.",
+
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.title": "Врач внутренней медицины",
+"people.doctors.medistate-kavacik-internal-medicine-huseyin-yasar.bio": "Хронические болезни и метаболические расстройства.",
+
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.title": "Врач внутренней медицины",
+"people.doctors.medistate-kavacik-internal-medicine-muharrem-yildirim.bio": "Общая терапия и профилактическая медицина."
+,
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.title": "Психиатр",
+"people.doctors.medistate-kavacik-psychiatry-furkan-coskun.bio": "Психиатрия для взрослых и амбулаторное лечение.",
+
+"people.doctors.medistate-kavacik-dentistry-ali-gul.title": "Стоматолог",
+"people.doctors.medistate-kavacik-dentistry-ali-gul.bio": "Общая стоматология и восстановительное лечение.",
+
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.title": "Стоматолог",
+"people.doctors.medistate-kavacik-dentistry-figen-sencan.bio": "Профилактическая и эстетическая стоматология.",
+
+"dict.clinic.medipol-mega.name": "Университетская больница Medipol Mega",
+"dict.clinic.medipol-mega-istanbul.name": "Университетская больница Medipol Mega (Стамбул)",
+"dict.clinic.np-istanbul-brain.name": "Больница мозга NP Istanbul",
+"dict.clinic.anadolu-gebze.name": "Медицинский центр Anadolu (Гебзе)",
+"dict.clinic.anadolu-istanbul.name": "Медицинский центр Anadolu (Стамбул)",
+"dict.clinic.dunyagoz-istanbul.name": "Dünyagöz Стамбул",
+
+"dict.dept.cardiology.name": "Кардиология",
+"dict.dept.oncology.name": "Онкология",
+"dict.dept.orthopedics.name": "Ортопедия",
+"dict.dept.ivf.name": "ЭКО и репродуктивная медицина",
+"dict.dept.neurosurgery.name": "Нейрохирургия",
+"dict.dept.ophthalmology.name": "Офтальмология",
+"dict.dept.transplant.name": "Трансплантология",
+"dict.dept.radiology.name": "Радиология",
+"dict.dept.radiation-oncology.name": "Лучевая онкология",
+"dict.dept.pediatrics.name": "Педиатрия",
+"dict.dept.general-surgery.name": "Общая хирургия",
+"dict.dept.urology.name": "Урология"
+,
+"dict.dept.plastic-surgery.name": "Пластическая хирургия",
+"dict.dept.gastro.name": "Гастроэнтерология",
+"dict.dept.nuclear-medicine.name": "Ядерная медицина",
+"dict.dept.internal-medicine.name": "Внутренняя медицина",
+"dict.dept.ent.name": "ЛОР (отоларингология)",
+"dict.dept.neurology.name": "Неврология",
+"dict.dept.hematology.name": "Гематология",
+"dict.dept.pulmonology.name": "Пульмонология",
+"dict.dept.cardiovascular-surgery.name": "Сердечно-сосудистая хирургия",
+"dict.dept.obgyn.name": "Акушерство и гинекология",
+"dict.dept.rehabilitation.name": "Физиотерапия и реабилитация",
+"dict.dept.thoracic-diseases.name": "Заболевания грудной клетки",
+"dict.dept.perinatology.name": "Перинатология (медицина матери и плода)",
+"dict.dept.psychiatry.name": "Психиатрия",
+"dict.dept.child-psychiatry.name": "Детская и подростковая психиатрия",
+"dict.dept.psychology.name": "Психология",
+"dict.dept.speech-therapy.name": "Логопедия",
+
+"people.doctors.acibadem-istanbul-cardiology-slot.title": "Профессор кардиологии (Acıbadem Maslak Hospital)",
+"people.doctors.acibadem-istanbul-cardiology-slot.bio": "Интервенционная и общая кардиология; лечение заболеваний коронарных артерий, клапанов, аритмий и гипертонии в клинике Acıbadem Maslak (Стамбул).",
+
+"people.doctors.liv-ankara-oncology-slot.title": "Руководитель отделения онкологии, Liv Hospital Ankara",
+"people.doctors.liv-ankara-oncology-slot.bio": "Руководит направлением медицинской онкологии и клинических исследований фазы II–III; лечение солидных опухолей с применением химио-, таргетной и иммунотерапии.",
+
+"people.doctors.medicana-istanbul-orthopedics-slot.title": "Ортопедия и травматология — Medicana International Istanbul (Beylikdüzü)",
+"people.doctors.medicana-istanbul-orthopedics-slot.bio": "Выполняет сложное эндопротезирование суставов и артроскопию; реконструкция деформаций и лечение травм в клинике Medicana International Istanbul."
+,
+"dict.dept.nephrology.name": "Нефрология",
+"dict.dept.anesthesiology.name": "Анестезиология",
+"dict.dept.dermatology.name": "Дерматология",
+"dict.dept.rheumatology.name": "Ревматология",
+"dict.dept.pathology.name": "Патология",
+"dict.dept.thoracic-surgery.name": "Торакальная хирургия",
+"dict.dept.dentistry.name": "Стоматология",
+"dict.dept.interventional-radiology.name": "Интервенционная радиология",
+
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.title": "Интервенционный кардиолог",
+"people.doctors.medicana-international-istanbul-cardiology-sebahattin-atesal.bio": "Специализируется на сложных чрескожных вмешательствах (PCI), TAVI/MitraClip, закрытии дефектов межпредсердной перегородки (ASD/PFO); ведущий кардиолог Medicana International Istanbul.",
+
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.title": "Кардиолог",
+"people.doctors.medicana-international-istanbul-cardiology-omer-uz.bio": "Кардиология для взрослых; диагностика и терапевтическое лечение сердечно-сосудистых заболеваний.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.title": "Сердечно-сосудистый хирург",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu.bio": "Хирургия клапанов и аортокоронарное шунтирование.",
+
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.title": "Сердечно-сосудистый хирург",
+"people.doctors.medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim.bio": "Хирургия сердца у взрослых.",
+
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.title": "Врач-онколог",
+"people.doctors.medicana-international-istanbul-oncology-ali-osman-kaya.bio": "Системная терапия солидных опухолей; междисциплинарный подход к лечению.",
+
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.title": "Врач-онколог",
+"people.doctors.medicana-international-istanbul-oncology-nezih-meydan.bio": "Химиотерапия и таргетная терапия онкологических заболеваний.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.title": "Радиотерапевт-онколог",
+"people.doctors.medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli.bio": "IMRT/IGRT и комплексные программы лучевой терапии.",
+
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.title": "Радиотерапевт-онколог",
+"people.doctors.medicana-international-istanbul-radiation-oncology-yildiz-keles.bio": "Планирование и проведение курсов лучевой терапии."
+,
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.title": "Ортопед-хирург",
+"people.doctors.medicana-international-istanbul-orthopedics-celil-alemdar.bio": "Спортивные травмы и реконструкция суставов.",
+
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.title": "Ортопед-хирург",
+"people.doctors.medicana-international-istanbul-orthopedics-tugrul-ergun.bio": "Травматология и эндопротезирование суставов.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.title": "Нейрохирург",
+"people.doctors.medicana-international-istanbul-neurosurgery-erhan-takci.bio": "Операции на позвоночнике и головном мозге.",
+
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.title": "Нейрохирург",
+"people.doctors.medicana-international-istanbul-neurosurgery-levent-aydin.bio": "Заболевания головного и спинного мозга.",
+
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.title": "ЛОР-хирург",
+"people.doctors.medicana-international-istanbul-ent-a-bedri-ozer.bio": "Хирургия пазух и уха.",
+
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.title": "ЛОР-хирург",
+"people.doctors.medicana-international-istanbul-ent-cenk-evren.bio": "Патологии головы и шеи, хирургия ЛОР-органов.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.title": "Офтальмолог",
+"people.doctors.medicana-international-istanbul-ophthalmology-orhan-ayar.bio": "Лечение катаракты и заболеваний сетчатки.",
+
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.title": "Офтальмолог",
+"people.doctors.medicana-international-istanbul-ophthalmology-sait-alim.bio": "Передний отрезок глаза и патологии сетчатки.",
+
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.title": "Гастроэнтеролог",
+"people.doctors.medicana-international-istanbul-gastro-mustafa-yakut.bio": "Продвинутая эндоскопия и диагностика ЖКТ.",
+
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.title": "Гастроэнтеролог",
+"people.doctors.medicana-international-istanbul-gastro-ozlem-mutluay-soyer.bio": "Воспалительные заболевания кишечника и гепатология."
+,
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.title": "Хирург-онколог",
+"people.doctors.medicana-international-istanbul-general-surgery-cengizhan-yigitler.bio": "Онкологическая и малоинвазивная хирургия.",
+
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.title": "Хирург",
+"people.doctors.medicana-international-istanbul-general-surgery-yahya-ekici.bio": "Гепатобилиарная и желудочно-кишечная хирургия.",
+
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.title": "Уролог",
+"people.doctors.medicana-international-istanbul-urology-emrah-yuruk.bio": "Эндоурология и лечение мочекаменной болезни.",
+
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.title": "Уролог",
+"people.doctors.medicana-international-istanbul-urology-akif-ersoy-erkmen.bio": "Общая урология и амбулаторная практика.",
+
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.title": "Акушер-гинеколог",
+"people.doctors.medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu.bio": "Ведение беременности и гинекологические процедуры.",
+
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.title": "Специалист по ЭКО",
+"people.doctors.medicana-international-istanbul-ivf-selman-lacin.bio": "Вспомогательные репродуктивные технологии и репродуктивная хирургия.",
+
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.title": "Пульмонолог",
+"people.doctors.medicana-international-istanbul-pulmonology-ozcan-ogurlu.bio": "ХОБЛ, астма и диагностика рака лёгких.",
+
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.title": "Торакальный хирург",
+"people.doctors.medicana-international-istanbul-thoracic-surgery-levent-alpay.bio": "Онкология грудной клетки и видеоторакоскопические операции (VATS).",
+
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.title": "Гематолог",
+"people.doctors.medicana-international-istanbul-hematology-yener-koc.bio": "Гематологические злокачественные заболевания, трансплантация костного мозга.",
+
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.title": "Нефролог",
+"people.doctors.medicana-international-istanbul-nephrology-murathan-uyar.bio": "Заболевания почек и трансплантация."
+,
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.title": "Врач внутренней медицины",
+"people.doctors.medicana-international-istanbul-internal-medicine-mustafa-temizel.bio": "Общая терапия и хронические заболевания.",
+
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.title": "Радиолог",
+"people.doctors.medicana-international-istanbul-radiology-ismail-serifoglu.bio": "МРТ/КТ диагностика, визуализация органов брюшной полости.",
+
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.title": "Интервенционный радиолог",
+"people.doctors.medicana-international-istanbul-interventional-radiology-metin-cevener.bio": "Сосудистые и онкологические вмешательства под контролем изображений.",
+
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.title": "Дерматолог",
+"people.doctors.medicana-international-istanbul-dermatology-omer-faruk-elmas.bio": "Лечебная и процедурная дерматология.",
+
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.title": "Дерматолог",
+"people.doctors.medicana-international-istanbul-dermatology-hurmuz-isik-caner.bio": "Диагностика дерматозов и дерматоскопия.",
+
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.title": "Ревматолог",
+"people.doctors.medicana-international-istanbul-rheumatology-zuhre-sari.bio": "Системные ревматические заболевания.",
+
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.title": "Патолог",
+"people.doctors.medicana-international-istanbul-pathology-cemal-gundogdu.bio": "Онкологическая патология и морфологическая диагностика.",
+
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.title": "Психиатр",
+"people.doctors.medicana-international-istanbul-psychiatry-halime-dal-uysal.bio": "Психиатрия для взрослых, лечение тревожных и депрессивных расстройств.",
+
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.title": "Клинический психолог",
+"people.doctors.medicana-international-istanbul-psychology-tugce-colakoglu.bio": "Индивидуальная терапия и психологическая диагностика."
+,
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.title": "Специалист по ядерной медицине",
+"people.doctors.medicana-international-istanbul-nuclear-medicine-ebru-yilmaz.bio": "ПЭТ-КТ и радионуклидная визуализация.",
+
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.title": "Стоматолог",
+"people.doctors.medicana-international-istanbul-dentistry-bahar-pehlevan.bio": "Общая и эстетическая стоматология.",
+
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.title": "Интервенционный кардиолог",
+"people.doctors.medicana-ankara-cardiology-erdogan-ilkay.bio": "Коронарные вмешательства, эхокардиография и руководство катетеризационной лабораторией.",
+
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.title": "Кардиолог",
+"people.doctors.medicana-ankara-cardiology-veysel-kutay-vurgun.bio": "Общая и интервенционная кардиология.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.title": "Кардиоваскулярный хирург",
+"people.doctors.medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin.bio": "Хирургия сердца и сосудов у взрослых.",
+
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.title": "Кардиоваскулярный хирург",
+"people.doctors.medicana-ankara-cardiovascular-surgery-arzum-kale.bio": "Операции на клапанах и аорте.",
+
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.title": "Онколог",
+"people.doctors.medicana-ankara-oncology-ibrahim-tek.bio": "Системная терапия и ведение пациентов с солидными опухолями.",
+
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.title": "Онколог",
+"people.doctors.medicana-ankara-oncology-mehmet-metin-seker.bio": "Клинические исследования и лечение онкологических заболеваний.",
+
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.title": "Радиотерапевт",
+"people.doctors.medicana-ankara-radiation-oncology-petek-erpolat.bio": "Современная радиотерапия (IMRT, VMAT)."
+,
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.title": "Ортопедический хирург",
+"people.doctors.medicana-ankara-orthopedics-mehmet-batu-ertan.bio": "Спортивные травмы, ортопедия и эндопротезирование суставов.",
+
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.title": "Ортопедический хирург",
+"people.doctors.medicana-ankara-orthopedics-mehmet-dervis-guner.bio": "Спортивные повреждения, хирургия коленного и плечевого сустава.",
+
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.title": "Нейрохирург",
+"people.doctors.medicana-ankara-neurosurgery-sait-sirin.bio": "Хирургия головного и спинного мозга, радиохирургия.",
+
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.title": "ЛОР-хирург",
+"people.doctors.medicana-ankara-ent-ali-safak-dagli.bio": "Полный спектр заболеваний уха, горла и носа.",
+
+"people.doctors.medicana-ankara-ent-hatice-karadas.title": "ЛОР-хирург",
+"people.doctors.medicana-ankara-ent-hatice-karadas.bio": "Заболевания головы и шеи, хирургия ЛОР-органов.",
+
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.title": "Офтальмолог",
+"people.doctors.medicana-ankara-ophthalmology-mefkure-yalciner.bio": "Катаракта и хирургия переднего отрезка глаза.",
+
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.title": "Гастроэнтеролог",
+"people.doctors.medicana-ankara-gastro-fatih-karaahmet.bio": "Эндоскопия и лечение заболеваний ЖКТ.",
+
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.title": "Хирург-трансплантолог",
+"people.doctors.medicana-ankara-general-surgery-ulas-sozener.bio": "Трансплантация почки и сложная абдоминальная хирургия.",
+
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.title": "Уролог",
+"people.doctors.medicana-ankara-urology-hasan-bakirtas.bio": "Уроонкология и лечение мочекаменной болезни."
+,
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.name": "Prof. Dr. Ayla Aktulay",
+  "people.doctors.medicana-ankara-obgyn-ayla-aktulay.title": "OB-GYN",
+  "people.doctors.medicana-ankara-obgyn-ayla-aktulay.bio": "Obstetrics, gynecology and high-risk pregnancy care.",
+
+  "people.doctors.medicana-ankara-pulmonology-songul-turgut.name": "Uzm. Dr. Songül Turğut",
+  "people.doctors.medicana-ankara-pulmonology-songul-turgut.title": "Pulmonologist",
+  "people.doctors.medicana-ankara-pulmonology-songul-turgut.bio": "Cerebrovascular/neurology background notes; pulmonary topics for public health.",
+
+  "people.doctors.medicana-ankara-nephrology-siren-sezer.name": "Prof. Dr. Siren Sezer",
+  "people.doctors.medicana-ankara-nephrology-siren-sezer.title": "Nephrologist",
+  "people.doctors.medicana-ankara-nephrology-siren-sezer.bio": "Renal failure and transplant nephrology.",
+
+  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.name": "Prof. Dr. Aydoğan Aydoğdu",
+  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.title": "Internist / Endocrinologist",
+  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.bio": "Internal medicine and endocrine disorders.",
+
+  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.name": "Prof. Dr. Eşref Umut Özyer",
+  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.title": "Interventional Radiologist",
+  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "Endovascular and oncologic interventions.",
+
+
+  "people.doctors.memorial-antalya-ivf-slot.name": "Prof. Dr. Şafak Olgan",
+  "people.doctors.memorial-antalya-ivf-slot.title": "Head of IVF & Reproductive Health Center",
+  "people.doctors.memorial-antalya-ivf-slot.bio": "Leads the IVF program at Memorial Antalya; reproductive endocrinology & infertility specialist; performs IVF/ICSI and PGT.",
+
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "Prof. Dr. Mustafa Bozbuğa",
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Founding Head of Neurosurgery",
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Leads neurosurgery at NPİstanbul Brain Hospital; practice spans skull base, neurovascular, tumor and spine surgery; the department also covers functional/epilepsy surgery.",
+
+  "people.doctors.anadolu-gebze-oncology-slot.name": "Prof. Dr. Necdet Üskent",
+  "people.doctors.anadolu-gebze-oncology-slot.title": "Director of Medical Oncology",
+  "people.doctors.anadolu-gebze-oncology-slot.bio": "Heads Medical Oncology at Anadolu Medical Center (Gebze) and coordinates multidisciplinary cancer care in collaboration with Johns Hopkins Medicine.",
+  
+  "people.doctors.anadolu-istanbul-oncology-yesim-yildirim.title": "Врач-онколог",
+"people.doctors.anadolu-istanbul-oncology-yesim-yildirim.bio": "Профессор медицинской онкологии в Anadolu Medical Center; многопрофильное лечение рака, системная терапия (рак молочной железы, лёгких, ЖКТ).",
+
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.title": "Врач-онколог",
+"people.doctors.anadolu-istanbul-oncology-bulent-karagoz.bio": "Опытный онколог, специализируется на опухолях ЖКТ и грудной клетки; член мультидисциплинарной команды Центра онкологии.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.title": "Руководитель радиационной онкологии",
+"people.doctors.anadolu-istanbul-radiation-oncology-hale-basak-caglar.bio": "Руководит отделением современной радиотерапии (MR-Linac, CyberKnife, Radixact, Varian Edge); специализируется на СБРТ и точной визуально-направляемой терапии.",
+
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.title": "Врач-радиационный онколог",
+"people.doctors.anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu.bio": "Планирование и проведение современной конформной радиотерапии и IMRT/VMAT в рамках Центра онкологии.",
+
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.title": "Гематолог",
+"people.doctors.anadolu-istanbul-hematology-zafer-gulbas.bio": "Гематология и трансплантация стволовых клеток; опыт в лечении лейкозов, лимфом и проведении программ ТКМ.",
+
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.title": "Гематолог и врач-онколог",
+"people.doctors.anadolu-istanbul-hematology-necdet-uskent.bio": "Координатор онкологических программ; лечение гематологических злокачественных и солидных опухолей в междисциплинарной команде.",
+
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.title": "Трансплантолог костного мозга (взрослые)",
+"people.doctors.anadolu-istanbul-transplant-zafer-gulbas.bio": "Трансплантация гемопоэтических стволовых клеток у взрослых и лечение гематологических опухолей.",
+
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.title": "Педиатрический трансплантолог костного мозга",
+"people.doctors.anadolu-istanbul-transplant-savas-kansoy.bio": "Педиатрическая гематология и онкология, трансплантация костного мозга у детей; опыт лечения иммуногематологических заболеваний."
+,
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.title": "Кардиолог",
+"people.doctors.anadolu-istanbul-cardiology-nevrez-koylan.bio": "Общая и профилактическая кардиология, эхокардиография и оценка сердечно-сосудистого риска.",
+
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.title": "Кардиолог",
+"people.doctors.anadolu-istanbul-cardiology-ertan-okmen.bio": "Интервенционная кардиология и лечение сложных коронарных заболеваний.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.title": "Кардиохирург",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy.bio": "Кардиохирургия взрослых, включая АКШ и реконструкцию клапанов.",
+
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.title": "Кардиохирург",
+"people.doctors.anadolu-istanbul-cardiovascular-surgery-fatma-bahceci.bio": "Операции на аорте, коронарных и периферических сосудах.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.title": "Нейрохирург",
+"people.doctors.anadolu-istanbul-neurosurgery-selcuk-gocmen.bio": "Микронейрохирургия опухолей мозга, аневризм/АВМ и заболеваний позвоночника.",
+
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.title": "Нейрохирург",
+"people.doctors.anadolu-istanbul-neurosurgery-emre-zorlu.bio": "Эндоскопическая и малоинвазивная хирургия позвоночника и черепа.",
+
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.title": "Невролог",
+"people.doctors.anadolu-istanbul-neurology-yasar-kutukcu.bio": "Двигательные расстройства, мигрень и функциональная неврология.",
+
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.title": "Невролог",
+"people.doctors.anadolu-istanbul-neurology-nihal-isik.bio": "Эпилепсия, инсульт и нейроиммунологические заболевания.",
+
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.title": "Ортопед-травматолог",
+"people.doctors.anadolu-istanbul-orthopedics-kenan-keklikci.bio": "Спортивные травмы, артроскопия и сохранение суставов."
+,
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.title": "Ортопед и онкохирург",
+"people.doctors.anadolu-istanbul-orthopedics-selim-sanel.bio": "Саркомы костей и мягких тканей, реконструкции с сохранением конечностей.",
+
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.title": "Директор Центра здоровья груди; общий и онкологический хирург",
+"people.doctors.anadolu-istanbul-general-surgery-ali-ugur-emre.bio": "Операции на молочной железе и онкологическая хирургия; руководитель Центра здоровья груди.",
+
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.title": "Общий хирург",
+"people.doctors.anadolu-istanbul-general-surgery-kemal-rasa.bio": "Лапароскопические операции на органах брюшной полости и лечение грыж.",
+
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.title": "Уролог",
+"people.doctors.anadolu-istanbul-urology-ilker-tinay.bio": "Уроонкология, рак предстательной железы и малоинвазивная урология.",
+
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.title": "Уролог",
+"people.doctors.anadolu-istanbul-urology-muhammed-sulukaya.bio": "Мочекаменная болезнь и эндоурологические процедуры.",
+
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.title": "Гастроэнтеролог",
+"people.doctors.anadolu-istanbul-gastro-zulfikar-polat.bio": "Продвинутая эндоскопия и воспалительные заболевания кишечника.",
+
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.title": "Гастроэнтеролог",
+"people.doctors.anadolu-istanbul-gastro-ahmet-melih-ozel.bio": "ЭРХПГ, гепатология и поддержка при онкозаболеваниях ЖКТ.",
+
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.title": "Эндокринолог",
+"people.doctors.anadolu-istanbul-endocrinology-ilhan-tarkun.bio": "Диабет, заболевания щитовидной и гипофизарной систем."
+,
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.title": "Эндокринолог",
+"people.doctors.anadolu-istanbul-endocrinology-esat-erdem-turemen.bio": "Общая эндокринология и заболевания обмена веществ.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.title": "Врач внутренней медицины",
+"people.doctors.anadolu-istanbul-internal-medicine-cihan-top.bio": "Комплексная терапия и лечение хронических заболеваний.",
+
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.title": "Врач внутренней медицины",
+"people.doctors.anadolu-istanbul-internal-medicine-zahide-karaca.bio": "Первичная терапевтическая помощь и профилактика заболеваний.",
+
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.title": "ЛОР / хирург головы и шеи",
+"people.doctors.anadolu-istanbul-ent-bulent-evren-erkul.bio": "Онкология головы и шеи, хирургия гортани и основания черепа.",
+
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.title": "ЛОР-хирург",
+"people.doctors.anadolu-istanbul-ent-ahmet-hamdi-onay.bio": "Функциональная и эстетическая ринопластика, синус- и детская отоларингология.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.title": "Офтальмолог",
+"people.doctors.anadolu-istanbul-ophthalmology-arslan-bozdag.bio": "Катаракта, рефракционная и переднесегментная хирургия.",
+
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.title": "Офтальмолог (сетчатка)",
+"people.doctors.anadolu-istanbul-ophthalmology-burcu-usta-uslu.bio": "Хирургия сетчатки и витрэктомия при макулярных и диабетических заболеваниях.",
+
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.title": "Педиатр",
+"people.doctors.anadolu-istanbul-pediatrics-sevim-gulbas.bio": "Общая педиатрия, рост и развитие, программы вакцинации."
+,
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.title": "Детский гематолог-онколог и трансплантолог",
+"people.doctors.anadolu-istanbul-pediatrics-savas-kansoy.bio": "Детская гематология, онкология и трансплантация стволовых клеток.",
+
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.title": "Радиолог",
+"people.doctors.anadolu-istanbul-radiology-ahmet-murat-dokdok.bio": "Интервенционная радиология и послойная визуализация (КТ, МРТ).",
+
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.title": "Радиолог",
+"people.doctors.anadolu-istanbul-radiology-oktay-karadeniz.bio": "Современные МРТ-протоколы и комфортное обследование пациентов.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.title": "Руководитель отделения ядерной медицины",
+"people.doctors.anadolu-istanbul-nuclear-medicine-kezban-berberoglu.bio": "ПЭТ/КТ, тераностика, радиойодтерапия и радионуклидное лечение.",
+
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.title": "Специалист по ядерной медицине",
+"people.doctors.anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi.bio": "Диагностика и таргетная радионуклидная терапия.",
+
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.title": "Акушер-гинеколог",
+"people.doctors.anadolu-istanbul-obgyn-ebru-ozturk-oksuz.bio": "Высокорисковая беременность, диагностика бесплодия и сотрудничество с IVF-центром.",
+
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.title": "Акушер-гинеколог",
+"people.doctors.anadolu-istanbul-obgyn-meltem-emine-cam.bio": "Пренатальное наблюдение и гинекологические процедуры.",
+
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.title": "Руководитель центра ЭКО",
+"people.doctors.anadolu-istanbul-ivf-tayfun-kutlu.bio": "Репродуктивная эндокринология, протоколы ЭКО, PRP и вспомогательные методы терапии."
+,
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.title": "Специалист по ЭКО (акушер-гинеколог)",
+"people.doctors.anadolu-istanbul-ivf-ebru-ozturk-oksuz.bio": "Диагностика женского бесплодия и ведение циклов ЭКО.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.title": "Пластический, реконструктивный и эстетический хирург",
+"people.doctors.anadolu-istanbul-plastic-surgery-haluk-duman.bio": "Реконструкция груди после онкологии и сложная микрохирургия.",
+
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.title": "Пластический и реконструктивный хирург",
+"people.doctors.anadolu-istanbul-plastic-surgery-serdar-duzgun.bio": "Эстетические и реконструктивные операции с применением современных методик.",
+
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.title": "Пульмонолог",
+"people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.bio": "ХОБЛ, постковидное восстановление и интервенционная пульмонология.",
+
+"people.doctors.medipol-mega-transplant-slot.title": "Руководитель Центра трансплантации органов — Медиполь Мега",
+"people.doctors.medipol-mega-transplant-slot.bio": "Хирург по трансплантации печени и гепатобилиарным операциям. Руководит программой трансплантации печени и почек (донорские и посмертные операции).",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.title": "Профессор кардиологии — Медиполь Мега",
+"people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.bio": "Интервенционный кардиолог; КТ-ангиография, ишемическая болезнь сердца и профилактическая кардиология.",
+
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.title": "Профессор кардиологии",
+"people.doctors.medipol-mega-istanbul-cardiology-bulent-demir.bio": "Профилактика сердечно-сосудистых заболеваний и лечение сложных форм ишемии; научная и образовательная деятельность.",
+
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.title": "Профессор сердечно-сосудистой хирургии",
+"people.doctors.medipol-mega-istanbul-cv-korhan-erkanli.bio": "Специализируется на аортальных и клапанных операциях, миниинвазивных методах и АКШ у пациентов высокого риска."
+,
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.title": "Профессор сердечно-сосудистой хирургии (детская и взрослая)",
+"people.doctors.medipol-mega-istanbul-cv-ahmet-sasmazel.bio": "Проводит сложные врожденные и детские кардиохирургические операции, а также реконструкции и замену клапанов.",
+
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.title": "Профессор медицинской онкологии",
+"people.doctors.medipol-mega-istanbul-oncology-ahmet-bilici.bio": "Онколог с обширным опытом лечения солидных опухолей. Применяет современные химио-, иммуно- и таргетные терапии; активно участвует в исследованиях и преподавании.",
+
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.title": "Профессор медицинской онкологии",
+"people.doctors.medipol-mega-istanbul-oncology-mesut-seker.bio": "Специализируется на системном лечении распространённых опухолей. Автор научных публикаций и спикер по современным методам онкотерапии.",
+
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.title": "Профессор радиационной онкологии",
+"people.doctors.medipol-mega-istanbul-radonc-dilek-unal.bio": "Применяет IGRT и SBRT — точечную и визуально-наведённую лучевую терапию при раке груди и других опухолях.",
+
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.title": "Врач-радиационный онколог",
+"people.doctors.medipol-mega-istanbul-radonc-mehmet-faik-cetindag.bio": "Планирование и проведение радиотерапии при солидных опухолях в онкоцентре Medipol Mega.",
+
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.title": "Профессор гастроэнтерологии и гепатологии",
+"people.doctors.medipol-mega-istanbul-gastro-vedat-goral.bio": "Специалист по заболеваниям печени и ЖКТ с международным опытом. Ведёт пациентов с гепатитом, ВЗК и выполняет продвинутую эндоскопию.",
+
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.title": "Профессор гастроэнтерологии",
+"people.doctors.medipol-mega-istanbul-gastro-esin-korkut.bio": "Занимается лечением широкого спектра желудочно-кишечных заболеваний, проводит диагностическую и терапевтическую эндоскопию.",
+
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.title": "Профессор трансплантологии (гепатобилиарная хирургия)",
+"people.doctors.medipol-mega-istanbul-transplant-murat-dayangac.bio": "Ведущий хирург по трансплантации печени с международной подготовкой; выполняет сложные операции с живыми донорами и онкохирургию печени."
+,
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.title": "Доцент общей хирургии и трансплантологии",
+"people.doctors.medipol-mega-istanbul-transplant-cenk-simsek.bio": "Хирург с международной подготовкой в области трансплантации печени; член команды Центра трансплантации Medipol Mega.",
+
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.title": "Профессор ортопедии и травматологии",
+"people.doctors.medipol-mega-istanbul-orthopedics-adnan-kara.bio": "Специалист по травмам, артропластике и спортивным повреждениям; опыт в реконструкции суставов и сложных переломах.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.title": "Профессор нейрохирургии",
+"people.doctors.medipol-mega-istanbul-neurosurgery-zeki-sekerci.bio": "Известный нейрохирург, специалист по микрохирургии аневризм и основания черепа; бывший президент Турецкого нейрохирургического общества.",
+
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.title": "Профессор нейрохирургии",
+"people.doctors.medipol-mega-istanbul-neurosurgery-nejat-akalan.bio": "Руководит программами по хирургии опухолей мозга и эпилепсии с использованием интраоперационного МРТ и нейронавигации.",
+
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.title": "Доцент репродуктивной медицины (ЭКО) и акушерства-гинекологии",
+"people.doctors.medipol-mega-istanbul-ivf-aysu-akca.bio": "Специалист по ЭКО и эндокринологии репродукции; ведет лечение сложных форм бесплодия.",
+
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.title": "Профессор акушерства, гинекологии и онкогинекологии",
+"people.doctors.medipol-mega-istanbul-obgyn-volkan-ulker.bio": "Онкогинеколог выполняет лапароскопические и открытые операции при раке матки, яичников и шейки матки.",
+
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.title": "Профессор урологии (эндоурология)",
+"people.doctors.medipol-mega-istanbul-urology-jean-de-la-rosette.bio": "Международно признанный эксперт по эндоурологии, лечению аденомы простаты, мочекаменной болезни и минимально инвазивным вмешательствам.",
+
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.title": "Профессор урологии (уроонкология)",
+"people.doctors.medipol-mega-istanbul-urology-maria-laguna.bio": "Эксперт по уроонкологии: рак почки, мочевого пузыря и простаты; применяет лапароскопические и роботизированные методы."
+,
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.title": "Профессор радиологии",
+"people.doctors.medipol-mega-istanbul-radiology-erol-akgul.bio": "Опытный радиолог с практикой в интервенционной радиологии; проводит сложные диагностические и терапевтические процедуры под контролем изображений.",
+
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.title": "Профессор радиологии (детская радиология)",
+"people.doctors.medipol-mega-istanbul-radiology-mehmet-sait-dogan.bio": "Специалист по детской визуализации и современным методам диагностики.",
+
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.title": "Профессор офтальмологии",
+"people.doctors.medipol-mega-istanbul-ophthalmology-ali-demircan.bio": "Витреоретинальный хирург, выполняет витрэктомию и операции на сетчатке; ведет прием в Medipol Mega и филиале глазной клиники.",
+
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.title": "Профессор детской гематологии и онкологии, руководитель отделения трансплантации костного мозга",
+"people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.bio": "Возглавляет детскую гематологию, онкологию и трансплантацию костного мозга; более 30 лет опыта, высокие показатели ремиссии при детском лейкозе.",
+
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.title": "Старший офтальмолог — Сетчатка и Катаракта (Dünyagöz Etiler)",
+"people.doctors.dunyagoz-istanbul-ophthalmology-slot.bio": "Витреоретинальный хирург и специалист по катаракте; проводит лазерные и микрохирургические операции в Dünyagöz Etiler.",
+
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.title": "Профессор офтальмологии — Роговица, Катаракта и Лазерная коррекция",
+"people.doctors.dunyagoz-etiler-cornea-anil-kubaloglu.bio": "Специалист по заболеваниям роговицы, катаракте и лазерной коррекции зрения; более 30 000 операций; принимает англоговорящих пациентов.",
+
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.title": "Профессор офтальмологии — Катаракта и Рефракционная хирургия",
+"people.doctors.dunyagoz-etiler-cataract-bozkurt-sener.bio": "Проводит операции по катаракте и лазерной коррекции зрения; более 60 000 процедур; активно публикуется в международных изданиях."
+,
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.title": "Профессор офтальмологии — Глаукома и Нейроофтальмология",
+"people.doctors.dunyagoz-etiler-glaucoma-umit-aykan.bio": "Занимается лечением глаукомы, катаракты и нейроофтальмологических заболеваний. Работал в исследовательской группе по глаукоме (Сан-Франциско).",
+
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.title": "Профессор офтальмологии — Офтальмоонкология",
+"people.doctors.dunyagoz-etiler-ocular-oncology-samuray-tuncer.bio": "Специалист по опухолям глаза в Dünyagöz Etiler; член Международного общества офтальмоонкологии; автор международных публикаций и лекций.",
+
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.title": "Доцент — Детская офтальмология и Косоглазие",
+"people.doctors.dunyagoz-etiler-pediatric-osman-bulut-ocak.bio": "Специализируется на детском зрении, амблиопии и косоглазии; более 1000 операций; член ESA и AAO.",
+
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.title": "Профессор офтальмологии — Катаракта и Внутриглазные линзы",
+"people.doctors.dunyagoz-ankara-tunus-cataract-fatih-karel.bio": "Выполнил более 25 000 операций по удалению катаракты и имплантации линз; проходил стажировку в центре Sinskey Ophthalmic / UCLA.",
+
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.title": "Доцент — Рефракционная хирургия и Роговица",
+"people.doctors.dunyagoz-ankara-tunus-refractive-volkan-hurmeric.bio": "Выполняет операции LASIK/SMILE и катарактальные процедуры; специалист по роговице и рефракции.",
+
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.title": "Профессор — Окулопластическая хирургия и Роговица",
+"people.doctors.dunyagoz-ankara-tunus-oculoplastics-canan-gurdal.bio": "Более 25 лет опыта; работает в области окулопластики, роговицы и контактных линз; активный член Турецкого офтальмологического общества.",
+
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.title": "Профессор — Глаукома и Катаракта",
+"people.doctors.dunyagoz-ankara-tunus-glaucoma-atilla-bayer.bio": "Специалист по глаукоме и катаракте; проходил стажировку в Wills Eye Hospital; член Европейского глаукомного общества и Всемирной глаукомной ассоциации.",
+
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.title": "Профессор — Увеит и Глаукома",
+"people.doctors.dunyagoz-antalya-uveitis-kadri-cemil-apaydin.bio": "Старший офтальмолог в Анталье; специализируется на увеите и глаукоме; более 40 лет практики и международные публикации.",
+
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.title": "Доцент — Сетчатка и Катаракта",
+"people.doctors.dunyagoz-antalya-retina-esra-ayhan-tuzcu.bio": "Занимается лечением заболеваний сетчатки, катаракты и нейроофтальмологических патологий; более 50 публикаций; практикует с 2004 года."
+
 }
