@@ -602,17 +602,17 @@
   "dict.dept.psychology.name": "Psychology",
   "dict.dept.speech-therapy.name": "Speech & Language Therapy",
 
-  "people.doctors.acibadem-istanbul-cardiology-slot.name": "To be added — Acibadem Cardiology",
-  "people.doctors.acibadem-istanbul-cardiology-slot.title": "Head of Cardiology",
-  "people.doctors.acibadem-istanbul-cardiology-slot.bio": "Expert in interventional cardiology, stenting and valve replacement procedures.",
+  "people.doctors.acibadem-istanbul-cardiology-slot.name": "Prof. Dr. Aleks Değirmencioğlu",
+  "people.doctors.acibadem-istanbul-cardiology-slot.title": "Professor of Cardiology (Acıbadem Maslak Hospital)",
+  "people.doctors.acibadem-istanbul-cardiology-slot.bio": "Interventional & general cardiology; manages coronary artery and valve disease, arrhythmias and hypertension at Acıbadem Maslak in Istanbul.",
 
-  "people.doctors.liv-ankara-oncology-slot.name": "To be added — Liv Oncology (Ankara)",
-  "people.doctors.liv-ankara-oncology-slot.title": "Director of Medical Oncology",
-  "people.doctors.liv-ankara-oncology-slot.bio": "Specialist in solid tumors, targeted therapy and immunotherapy.",
+  "people.doctors.liv-ankara-oncology-slot.name": "Prof. Dr. Saadettin Kılıçkap",
+  "people.doctors.liv-ankara-oncology-slot.title": "Head of Medical Oncology, Liv Hospital Ankara",
+  "people.doctors.liv-ankara-oncology-slot.bio": "Leads medical oncology and phase-2/3 clinical trials; treats solid tumors using chemotherapy, targeted therapy and immunotherapy.",
 
-  "people.doctors.medicana-istanbul-orthopedics-slot.name": "To be added — Medicana Orthopedics",
-  "people.doctors.medicana-istanbul-orthopedics-slot.title": "Chief of Orthopedics and Traumatology",
-  "people.doctors.medicana-istanbul-orthopedics-slot.bio": "Performs complex joint replacement, arthroscopy and spinal deformity correction.",
+  "people.doctors.medicana-istanbul-orthopedics-slot.name": "Prof. Dr. Celil Alemdar",
+  "people.doctors.medicana-istanbul-orthopedics-slot.title": "Orthopedics & Traumatology — Medicana International Istanbul (Beylikdüzü)",
+  "people.doctors.medicana-istanbul-orthopedics-slot.bio": "Performs complex joint replacement and arthroscopy; trauma and deformity reconstruction; practicing at Medicana International Istanbul.",
  
   "dict.dept.nephrology.name": "Nephrology",
   "dict.dept.anesthesiology.name": "Anesthesiology",
@@ -845,17 +845,17 @@
   "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "Endovascular and oncologic interventions.",
 
 
-  "people.doctors.memorial-antalya-ivf-slot.name": "To be added — Memorial IVF (Antalya)",
-  "people.doctors.memorial-antalya-ivf-slot.title": "IVF Program Director",
-  "people.doctors.memorial-antalya-ivf-slot.bio": "Oversees assisted reproduction, ICSI and preimplantation genetic testing.",
+  "people.doctors.memorial-antalya-ivf-slot.name": "Prof. Dr. Şafak Olgan",
+  "people.doctors.memorial-antalya-ivf-slot.title": "Head of IVF & Reproductive Health Center",
+  "people.doctors.memorial-antalya-ivf-slot.bio": "Leads the IVF program at Memorial Antalya; reproductive endocrinology & infertility specialist; performs IVF/ICSI and PGT.",
 
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "To be added — NP Istanbul Neurosurgery",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Chief of Neurosurgery",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Performs brain and spine surgeries, including epilepsy and deep brain stimulation.",
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "Prof. Dr. Mustafa Bozbuğa",
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Founding Head of Neurosurgery",
+  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Leads neurosurgery at NPİstanbul Brain Hospital; practice spans skull base, neurovascular, tumor and spine surgery; the department also covers functional/epilepsy surgery.",
 
-  "people.doctors.anadolu-gebze-oncology-slot.name": "To be added — Anadolu Oncology",
-  "people.doctors.anadolu-gebze-oncology-slot.title": "Head of Oncology Center",
-  "people.doctors.anadolu-gebze-oncology-slot.bio": "Leads multidisciplinary cancer treatment programs following Johns Hopkins standards.",
+  "people.doctors.anadolu-gebze-oncology-slot.name": "Prof. Dr. Necdet Üskent",
+  "people.doctors.anadolu-gebze-oncology-slot.title": "Director of Medical Oncology",
+  "people.doctors.anadolu-gebze-oncology-slot.bio": "Heads Medical Oncology at Anadolu Medical Center (Gebze) and coordinates multidisciplinary cancer care in collaboration with Johns Hopkins Medicine.",
 
   "people.doctors.anadolu-istanbul-oncology-yesim-yildirim.name": "Yeşim Yıldırım, MD, Prof.",
   "people.doctors.anadolu-istanbul-oncology-yesim-yildirim.title": "Medical Oncologist",
@@ -1037,9 +1037,9 @@
   "people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.title": "Pulmonologist",
   "people.doctors.anadolu-istanbul-pulmonology-tayfun-caliskan.bio": "COPD, post-COVID care and interventional pulmonology.",
 
-  "people.doctors.medipol-mega-transplant-slot.name": "To be added — Medipol Transplant",
-  "people.doctors.medipol-mega-transplant-slot.title": "Chief Transplant Surgeon",
-  "people.doctors.medipol-mega-transplant-slot.bio": "Performs kidney and liver transplants with advanced minimally invasive techniques.",
+  "people.doctors.medipol-mega-transplant-slot.name": "Prof. Dr. Murat Dayangaç",
+  "people.doctors.medipol-mega-transplant-slot.title": "Director, Center for Organ Transplantation — Medipol Mega University Hospital",
+  "people.doctors.medipol-mega-transplant-slot.bio": "Liver transplant & hepatobiliary surgeon; leads Medipol’s organ transplant program (liver and kidney). Performs living/deceased-donor liver transplants and complex HPB surgery.",
   
   "people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.name": "Bilal Boztosun, MD, Prof.",
   "people.doctors.medipol-mega-istanbul-cardiology-bilal-boztosun.title": "Professor of Cardiology — Medipol Mega University Hospital",
@@ -1133,9 +1133,9 @@
   "people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.title": "Professor of Pediatric Hematology & Oncology; Head of Pediatric BMT",
   "people.doctors.medipol-mega-istanbul-pediatrics-sema-anak.bio": "Leads pediatric hem/onc and bone marrow transplant; >30 years’ experience, high remission outcomes in childhood leukemia.",
 
-  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.name": "To be added — Dünyagöz Ophthalmology",
-  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.title": "Senior Ophthalmologist",
-  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.bio": "Specializes in cataract, retina and refractive laser surgery.",
+  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.name": "Prof. Dr. Cengiz Aras",
+  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.title": "Senior Ophthalmologist — Retina & Cataract (Dünyagöz Etiler)",
+  "people.doctors.dunyagoz-istanbul-ophthalmology-slot.bio": "Vitreoretinal surgeon and cataract specialist at Dünyagöz Etiler; treats macular/retinal disease, performs phaco cataract surgery and laser treatments.",
   "dict.clinic.dunyagoz-istanbul-etiler.name": "Dünyagöz Etiler (Istanbul)",
   "dict.clinic.dunyagoz-ankara-tunus.name": "Dünyagöz Ankara — Tunus",
   "dict.clinic.dunyagoz-antalya.name": "Dünyagöz Antalya",
