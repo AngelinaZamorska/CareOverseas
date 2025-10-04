@@ -1,28 +1,590 @@
 {
   "doctors": [
     {
-      "id": "acibadem-istanbul-cardio-slot",
+      "id": "acibadem-istanbul-cardiology-slot",
       "name": "—",
       "deptId": "cardiology",
-      "clinicId": "acibadem-istanbul",
+      "clinicId": "acibadem-maslak",
       "cityId": "istanbul",
-      "keywords": ["cardiology", "heart"]
+      "keywords": ["cardiology", "heart", "angiography"]
     },
+    {
+    "id": "maslak-akiyol-cardiology",
+    "name": "Prof. Dr. Ahmet Akyol",
+    "deptId": "cardiology",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "interventional", "stent"]
+  },
+  {
+    "id": "maslak-aleks-degirmencioglu-cardiology",
+    "name": "Prof. Aleks Değirmencioğlu",
+    "deptId": "cardiology",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "echocardiography"]
+  },
+
+  {
+    "id": "maslak-gokhan-bozkurt-neurosurgery",
+    "name": "Prof. Dr. Gökhan Bozkurt",
+    "deptId": "neurosurgery",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "skull base", "brain"]
+  },
+  {
+    "id": "maslak-metiz-zafer-berkman-neurosurgery",
+    "name": "Prof. Metiz Zafer Berkman",
+    "deptId": "neurosurgery",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "spine"]
+  },
+
+  {
+    "id": "maslak-erdem-kilavuz-ent",
+    "name": "Prof. A. Erdem Kilavuz",
+    "deptId": "ent",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["ENT", "otolaryngology"]
+  },
+  {
+    "id": "maslak-sefa-sahin-otolaryngology",
+    "name": "Prof. Sedef Şahin",
+    "deptId": "dermatology",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["dermatology", "skin"]
+  },
+
+  {
+    "id": "maslak-alper-medical-oncology",
+    "name": "Prof. Gökhan Demir",
+    "deptId": "oncology",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["oncology", "solid tumors"]
+  },
+  {
+    "id": "maslak-olmez-ozlem-oncology",
+    "name": "Prof. Ömer Fatih Ölmez",
+    "deptId": "oncology",
+    "clinicId": "acibadem-maslak",
+    "cityId": "istanbul",
+    "keywords": ["oncology", "medical oncology"]
+  },
+  {
+    "id": "altunizade-usta-gynecology",
+    "name": "Prof. Dr. A. Taner Usta",
+    "deptId": "obgyn",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["gynecology", "obstetrics"]
+  },
+  {
+    "id": "altunizade-tayyar-gynecology",
+    "name": "Prof. Dr. Ahmet Tayyar",
+    "deptId": "obgyn",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["gynecology", "women’s health"]
+  },
+
+  {
+    "id": "altunizade-alper-ozkan-cardiology",
+    "name": "Prof. Alper Özkan",
+    "deptId": "cardiology",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "interventional"]
+  },
+  {
+    "id": "altunizade-duhan-bayrak-cardiology",
+    "name": "Prof. Duhan Fatih Bayrak",
+    "deptId": "cardiology",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "heart failure"]
+  },
+
+  {
+    "id": "altunizade-faysal-dane-oncology",
+    "name": "Prof. Faysal Dane",
+    "deptId": "oncology",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["oncology", "radiation"]
+  },
+  {
+    "id": "altunizade-gul-basaran-oncology",
+    "name": "Prof. Gül Başaran",
+    "deptId": "oncology",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["oncology", "breast cancer"]
+  },
+
+  {
+    "id": "altunizade-koray-ozduman-neurosurgery",
+    "name": "Prof. Koray Özduman",
+    "deptId": "neurosurgery",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "brain"]
+  },
+  {
+    "id": "altunizade-memet-ozek-neurosurgery",
+    "name": "Prof. Memet Özek",
+    "deptId": "neurosurgery",
+    "clinicId": "acibadem-altunizade",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "vascular", "skull base"]
+  },
     {
       "id": "liv-ankara-oncology-slot",
       "name": "—",
       "deptId": "oncology",
       "clinicId": "liv-ankara",
       "cityId": "ankara",
-      "keywords": ["oncology", "chemotherapy"]
+      "keywords": ["oncology", "chemotherapy", "radiation"]
     },
+    
+    {
+    "id": "liv-ulus-cardiology-enis-oguz",
+    "name": "Prof. MD. Enis Oğuz",
+    "deptId": "cardiology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "electrophysiology", "ablation", "CRT"]
+  },
+  {
+    "id": "liv-ulus-radonc-emre-merdan-fayda",
+    "name": "Prof. MD. Emre Merdan Fayda",
+    "deptId": "radiation-oncology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["radiation oncology", "Versa-HD", "IGRT", "VMAT"]
+  },
+  {
+    "id": "liv-ulus-nuclear-emel-ceylan",
+    "name": "Prof. MD. Emel Ceylan",
+    "deptId": "nuclear-medicine",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["nuclear medicine", "PET/CT", "theranostics"]
+  },
+  {
+    "id": "liv-ulus-urology-engin-kaya",
+    "name": "Prof. MD. Engin Kaya",
+    "deptId": "urology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["urology", "andrology", "stone", "BPH"]
+  },
+  {
+    "id": "liv-ulus-medonc-meral-gunaldi",
+    "name": "Prof. MD. Meral Günaldı",
+    "deptId": "oncology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["medical oncology", "breast", "GI", "lung"]
+  },
+  {
+    "id": "liv-ulus-medonc-duygu-derin",
+    "name": "Prof. MD. Duygu Derin",
+    "deptId": "oncology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["medical oncology", "immunotherapy", "targeted"]
+  },
+  {
+    "id": "liv-ulus-ped-endo-cengiz-kara",
+    "name": "Prof. MD. Cengiz Kara",
+    "deptId": "endocrinology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["pediatric endocrinology", "diabetes", "growth"]
+  },
+  {
+    "id": "liv-ulus-ped-pulm-erkan-cakir",
+    "name": "Prof. MD. Erkan Çakır",
+    "deptId": "pulmonology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["pediatric respirology", "asthma", "CF"]
+  },
+  {
+    "id": "liv-ulus-endocrinology-demet-yetkin",
+    "name": "Prof. MD. Demet Yetkin",
+    "deptId": "endocrinology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["endocrinology", "thyroid", "diabetes"]
+  },
+  {
+    "id": "liv-ulus-radiology-adem-ucar",
+    "name": "Prof. MD. Adem Uçar",
+    "deptId": "radiology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["interventional radiology", "oncologic IR", "vascular"]
+  },
+
+  
+  {
+    "id": "liv-vadi-urology-volkan-tugcu",
+    "name": "Prof. MD. Volkan Tuğcu",
+    "deptId": "urology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["urology", "robotic", "laparoscopy", "prostatectomy"]
+  },
+  {
+    "id": "liv-vadi-cardiology-mehmet-vefik-yazicioglu",
+    "name": "Prof. MD. Mehmet Vefik Yazıcıoğlu",
+    "deptId": "cardiology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "imaging", "interventional"]
+  },
+  {
+    "id": "liv-vadi-cardiology-batur-gonenc-kanar",
+    "name": "Assoc. Prof. MD. Batur Gönenç Kanar",
+    "deptId": "cardiology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["electrophysiology", "AF ablation", "CRT", "ICD"]
+  },
+  {
+    "id": "liv-vadi-cardiology-akin-torun",
+    "name": "Spec. MD. Akın Torun",
+    "deptId": "cardiology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "echo", "prevention"]
+  },
+  {
+    "id": "liv-vadi-cardiology-hasan-burak-isleyen",
+    "name": "Asst. Prof. MD. Hasan Burak İşleyen",
+    "deptId": "cardiology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "interventional"]
+  },
+  {
+    "id": "liv-vadi-internal-hakan-kocoglu",
+    "name": "Assoc. Prof. MD. Hakan Koçoğlu",
+    "deptId": "internal-medicine",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["internal medicine", "diabetes", "thyroid", "POCUS"]
+  },
+
+  
+  {
+    "id": "liv-ankara-ophthalmology-mutlu-acar",
+    "name": "Prof. MD. Mutlu Acar",
+    "deptId": "ophthalmology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["ophthalmology", "orbit", "trauma"]
+  },
+  {
+    "id": "liv-ankara-ent-levent-ilarslan",
+    "name": "Op. MD. Levent İlarslan",
+    "deptId": "ent",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["ENT", "endoscopic sinus", "otology"]
+  },
+  {
+    "id": "liv-ankara-cardiology-utku-zor",
+    "name": "Spec. MD. Utku Zor",
+    "deptId": "cardiology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "echo", "prevention"]
+  },
+  {
+    "id": "liv-ankara-cardiology-aytun-canga",
+    "name": "Prof. MD. Aytun Çanga",
+    "deptId": "cardiology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "heart failure"]
+  },
+  {
+    "id": "liv-ankara-cardiology-murat-tulmac",
+    "name": "Prof. MD. Murat Tulmaç",
+    "deptId": "cardiology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "interventional"]
+  },
+  {
+    "id": "liv-ankara-cardiology-alper-canbay",
+    "name": "Assoc. Prof. MD. Alper Canbay",
+    "deptId": "cardiology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "arrhythmia"]
+  },
+
+  
+  
+  {
+    "id": "liv-ulus-orthopedics-mehmet-ozkan",
+    "name": "Prof. MD. Mehmet Özkan",
+    "deptId": "orthopedics",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["orthopedics", "arthroplasty", "joint", "sports"]
+  },
+  {
+    "id": "liv-ulus-orthopedics-cemalettin-yildiz",
+    "name": "Assoc. Prof. MD. Cemalettin Yıldız",
+    "deptId": "orthopedics",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["orthopedics", "trauma", "spine"]
+  },
+  {
+    "id": "liv-ulus-neurology-mustafa-alkan",
+    "name": "Prof. MD. Mustafa Alkan",
+    "deptId": "neurology",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["neurology", "stroke", "epilepsy"]
+  },
+  {
+    "id": "liv-ulus-gastro-ozlem-ozkan",
+    "name": "Assoc. Prof. MD. Özlem Özkan",
+    "deptId": "gastro",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["gastroenterology", "endoscopy", "IBD"]
+  },
+  {
+    "id": "liv-ulus-surgery-bulent-ozturk",
+    "name": "Prof. MD. Bülent Öztürk",
+    "deptId": "general-surgery",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["general surgery", "laparoscopy", "oncologic"]
+  },
+  {
+    "id": "liv-ulus-plastic-kemal-aykan",
+    "name": "Assoc. Prof. MD. Kemal Aykan",
+    "deptId": "plastic-surgery",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["plastic surgery", "reconstructive", "aesthetic"]
+  },
+  {
+    "id": "liv-ulus-ivf-taner-usta",
+    "name": "Prof. MD. A. Taner Usta",
+    "deptId": "ivf",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["IVF", "reproductive", "gynecology"]
+  },
+  {
+    "id": "liv-ulus-obgyn-ayse-yavuz",
+    "name": "Spec. MD. Ayşe Yavuz",
+    "deptId": "obgyn",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["gynecology", "obstetrics", "prenatal"]
+  },
+  {
+    "id": "liv-ulus-pediatrics-fatma-kaya",
+    "name": "Assoc. Prof. MD. Fatma Kaya",
+    "deptId": "pediatrics",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["pediatrics", "neonatology"]
+  },
+  {
+    "id": "liv-ulus-physical-nurcan-turhan",
+    "name": "Prof. MD. Nurcan Turhan",
+    "deptId": "rehabilitation",
+    "clinicId": "liv-ulus",
+    "cityId": "istanbul",
+    "keywords": ["rehabilitation", "sports medicine", "pain therapy"]
+  },
+
+  
+  {
+    "id": "liv-vadi-orthopedics-sinan-karadeniz",
+    "name": "Prof. MD. Sinan Karadeniz",
+    "deptId": "orthopedics",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["orthopedics", "trauma", "arthroscopy"]
+  },
+  {
+    "id": "liv-vadi-orthopedics-volkan-yildiz",
+    "name": "Assoc. Prof. MD. Volkan Yıldız",
+    "deptId": "orthopedics",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["orthopedics", "sports injuries"]
+  },
+  {
+    "id": "liv-vadi-neurology-sevda-kara",
+    "name": "Prof. MD. Sevda Kara",
+    "deptId": "neurology",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["neurology", "Parkinson’s", "MS"]
+  },
+  {
+    "id": "liv-vadi-gastro-fatih-arslan",
+    "name": "Assoc. Prof. MD. Fatih Arslan",
+    "deptId": "gastro",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["gastroenterology", "hepatology"]
+  },
+  {
+    "id": "liv-vadi-surgery-omer-hasan-alioglu",
+    "name": "Prof. MD. Ömer Hasan Alioğlu",
+    "deptId": "general-surgery",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["general surgery", "bariatric", "oncologic"]
+  },
+  {
+    "id": "liv-vadi-plastic-hakan-ozkaya",
+    "name": "Assoc. Prof. MD. Hakan Özkaya",
+    "deptId": "plastic-surgery",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["plastic surgery", "reconstructive"]
+  },
+  {
+    "id": "liv-vadi-ivf-elif-karabacak",
+    "name": "Spec. MD. Elif Karabacak",
+    "deptId": "ivf",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["IVF", "reproductive medicine"]
+  },
+  {
+    "id": "liv-vadi-obgyn-burcu-yilmaz",
+    "name": "Assoc. Prof. MD. Burcu Yılmaz",
+    "deptId": "obgyn",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["obstetrics", "gynecology"]
+  },
+  {
+    "id": "liv-vadi-pediatrics-emre-unal",
+    "name": "Spec. MD. Emre Ünal",
+    "deptId": "pediatrics",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["pediatrics", "immunology"]
+  },
+  {
+    "id": "liv-vadi-physical-aylin-kurt",
+    "name": "Prof. MD. Aylin Kurt",
+    "deptId": "rehabilitation",
+    "clinicId": "liv-vadistanbul",
+    "cityId": "istanbul",
+    "keywords": ["rehabilitation", "pain management", "spine"]
+  },
+
+  
+  {
+    "id": "liv-ankara-orthopedics-tahsin-beyzadeoglu",
+    "name": "Prof. MD. Tahsin Beyzadeoğlu",
+    "deptId": "orthopedics",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["orthopedics", "sports surgery"]
+  },
+  {
+    "id": "liv-ankara-orthopedics-okan-eroglu",
+    "name": "Assoc. Prof. MD. Okan Eroğlu",
+    "deptId": "orthopedics",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["orthopedics", "joint replacement"]
+  },
+  {
+    "id": "liv-ankara-neurology-didem-celik",
+    "name": "Prof. MD. Didem Çelik",
+    "deptId": "neurology",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["neurology", "stroke", "dementia"]
+  },
+  {
+    "id": "liv-ankara-gastro-serkan-ozcelik",
+    "name": "Assoc. Prof. MD. Serkan Özçelik",
+    "deptId": "gastro",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["gastroenterology", "hepatology"]
+  },
+  {
+    "id": "liv-ankara-surgery-ismail-yilmaz",
+    "name": "Prof. MD. İsmail Yılmaz",
+    "deptId": "general-surgery",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["general surgery", "laparoscopic"]
+  },
+  {
+    "id": "liv-ankara-plastic-murat-ugurlu",
+    "name": "Assoc. Prof. MD. Murat Uğurlu",
+    "deptId": "plastic-surgery",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["plastic surgery", "aesthetic"]
+  },
+  {
+    "id": "liv-ankara-ivf-gulsah-ozdemir",
+    "name": "Spec. MD. Gülşah Özdemir",
+    "deptId": "ivf",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["IVF", "fertility", "gynecology"]
+  },
+  {
+    "id": "liv-ankara-obgyn-ozlem-bektaş",
+    "name": "Assoc. Prof. MD. Özlem Bektaş",
+    "deptId": "obgyn",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["obstetrics", "prenatal care"]
+  },
+  {
+    "id": "liv-ankara-pediatrics-hale-yilmaz",
+    "name": "Prof. MD. Hale Yılmaz",
+    "deptId": "pediatrics",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["pediatrics", "allergy"]
+  },
+  {
+    "id": "liv-ankara-physical-funda-ozkan",
+    "name": "Assoc. Prof. MD. Funda Özkan",
+    "deptId": "rehabilitation",
+    "clinicId": "liv-ankara",
+    "cityId": "ankara",
+    "keywords": ["rehabilitation", "sports medicine"]
+  },
     {
       "id": "medicana-istanbul-orthopedics-slot",
       "name": "—",
       "deptId": "orthopedics",
-      "clinicId": "medicana-istanbul",
+      "clinicId": "medicana-international-istanbul",
       "cityId": "istanbul",
-      "keywords": ["orthopedics", "joint"]
+      "keywords": ["orthopedics", "joint", "spine"]
     },
     {
       "id": "memorial-antalya-ivf-slot",
@@ -30,43 +592,908 @@
       "deptId": "ivf",
       "clinicId": "memorial-antalya",
       "cityId": "antalya",
-      "keywords": ["ivf", "fertility"]
+      "keywords": ["ivf", "fertility", "embryology"]
     },
+    {
+    "id": "memorial-sisli-ophthalmology-abdullah-ozkaya",
+    "name": "Prof. Abdullah Özkaya",
+    "deptId": "ophthalmology",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["ophthalmology", "retina", "cataract"]
+  },
+  {
+    "id": "memorial-sisli-ophthalmology-dilek-erkan",
+    "name": "Prof. Dilek Erkan",
+    "deptId": "ophthalmology",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["ophthalmology", "cornea", "cataract"]
+  },
+  {
+    "id": "memorial-sisli-gastro-birol-baysal",
+    "name": "Prof. Birol Baysal",
+    "deptId": "gastro",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["gastroenterology", "hepatology", "endoscopy"]
+  },
+  {
+    "id": "memorial-sisli-neurology-dilek-necioglu-orken",
+    "name": "Prof. Dilek Necioğlu Örken",
+    "deptId": "neurology",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["neurology", "stroke", "movement-disorders"]
+  },
+  {
+    "id": "memorial-sisli-neurosurgery-hakan-hanimoglu",
+    "name": "Prof. Hakan Hanimoğlu",
+    "deptId": "neurosurgery",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "skull-base", "vascular"]
+  },
+  {
+    "id": "memorial-sisli-orthopedics-mehmet-alp",
+    "name": "Prof. Mehmet Alp",
+    "deptId": "orthopedics",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["orthopedics", "trauma", "arthroplasty"]
+  },
+  {
+    "id": "memorial-sisli-general-surgery-adnan-isgor",
+    "name": "Prof. Adnan İşgör",
+    "deptId": "general-surgery",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["general surgery", "laparoscopy", "oncologic"]
+  },
+  {
+    "id": "memorial-sisli-rehab-engin-cakar",
+    "name": "Prof. Engin Çakar",
+    "deptId": "rehabilitation",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["rehabilitation", "neurorehab", "pain"]
+  },
+  {
+    "id": "memorial-sisli-nuclear-cuneyt-turkmen",
+    "name": "Prof. Cüneyt Türkmen",
+    "deptId": "nuclear-medicine",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["nuclear medicine", "PET-CT", "theranostics"]
+  },
+  {
+    "id": "memorial-sisli-ped-hematology-betul-tavil",
+    "name": "Prof. Betül Tavil",
+    "deptId": "hematology",
+    "clinicId": "memorial-sisli",
+    "cityId": "istanbul",
+    "keywords": ["pediatric hematology", "hemato-oncology"]
+  },
+
+ 
+  {
+    "id": "memorial-atasehir-cardiology-bahadir-dagdeviren",
+    "name": "Prof. Bahadır Dağdeviren",
+    "deptId": "cardiology",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "interventional", "imaging"]
+  },
+  {
+    "id": "memorial-atasehir-endocrinology-basak-karbek-bayraktar",
+    "name": "Prof. Başak Karbek Bayraktar",
+    "deptId": "endocrinology",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["endocrinology", "diabetes", "thyroid"]
+  },
+  {
+    "id": "memorial-atasehir-ent-engin-acioglu",
+    "name": "Prof. Engin Acioğlu",
+    "deptId": "ent",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["ENT", "otology", "rhinology"]
+  },
+  {
+    "id": "memorial-atasehir-ent-erol-selimoglu",
+    "name": "Prof. Erol Selimoğlu",
+    "deptId": "ent",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["ENT", "pediatric ENT"]
+  },
+  {
+    "id": "memorial-atasehir-plastic-ercan-karacaoglu",
+    "name": "Prof. Ercan Karacaoğlu",
+    "deptId": "plastic-surgery",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["plastic surgery", "reconstructive", "aesthetic"]
+  },
+  {
+    "id": "memorial-atasehir-obgyn-ebru-cogendez",
+    "name": "Prof. Ebru Çöğendez",
+    "deptId": "obgyn",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["gynecology", "obstetrics", "prenatal"]
+  },
+  {
+    "id": "memorial-atasehir-neurosurgery-zafer-orkun-toktas",
+    "name": "Prof. Zafer Orkun Toktaş",
+    "deptId": "neurosurgery",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "spine", "tumors"]
+  },
+  {
+    "id": "memorial-atasehir-urology-turhan-caskurlu",
+    "name": "Prof. Turhan Çaşkurlu",
+    "deptId": "urology",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["urology", "oncology", "BPH"]
+  },
+  {
+    "id": "memorial-atasehir-ped-gastro-ayse-selimoglu",
+    "name": "Prof. Ayşe Selimoğlu",
+    "deptId": "gastro",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["pediatric gastroenterology", "hepatology"]
+  },
+  {
+    "id": "memorial-atasehir-ped-pulmo-bulent-karadag",
+    "name": "Prof. Bülent Karadağ",
+    "deptId": "pediatrics",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["pediatric pulmonology", "asthma", "CF"]
+  },
+  {
+    "id": "memorial-atasehir-physio-mehmet-ali-taskaynan",
+    "name": "Prof. Mehmet Ali Taşkaynatan",
+    "deptId": "rehabilitation",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["rehabilitation", "spine", "sports"]
+  },
+  {
+    "id": "memorial-atasehir-thoracic-attila-saygi",
+    "name": "Prof. Attila Saygı",
+    "deptId": "thoracic-diseases",
+    "clinicId": "memorial-atasehir",
+    "cityId": "istanbul",
+    "keywords": ["pulmonology", "thoracic diseases"]
+  },
+
+  
+  {
+    "id": "memorial-antalya-orthopedics-ahmet-turan-aydin",
+    "name": "Prof. Ahmet Turan Aydın",
+    "deptId": "orthopedics",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["orthopedics", "trauma", "sports"]
+  },
+  {
+    "id": "memorial-antalya-general-surgery-alihan-gurkan",
+    "name": "Prof. Alihan Gürkan",
+    "deptId": "general-surgery",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["bariatric", "general surgery", "laparoscopy"]
+  },
+  {
+    "id": "memorial-antalya-neurosurgery-mahmut-akyuz",
+    "name": "Prof. Mahmut Akyüz",
+    "deptId": "neurosurgery",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["neurosurgery", "brain", "spine"]
+  },
+  {
+    "id": "memorial-antalya-oncology-mustafa-ozdogan",
+    "name": "Prof. Mustafa Özdoğan",
+    "deptId": "oncology",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["medical oncology", "immunotherapy", "GI", "breast"]
+  },
+  {
+    "id": "memorial-antalya-ivf-onur-erol",
+    "name": "Prof. Onur Erol",
+    "deptId": "ivf",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["IVF", "andrology", "genetics"]
+  },
+  {
+    "id": "memorial-antalya-obgyn-safak-olgan",
+    "name": "Prof. Şafak Olgan",
+    "deptId": "obgyn",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["gynecology", "obstetrics", "perinatology"]
+  },
+  {
+    "id": "memorial-antalya-ent-ismail-onder-uysal",
+    "name": "Assoc. Prof. İsmail Önder Uysal",
+    "deptId": "ent",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["ENT", "sinus", "otology"]
+  },
+  {
+    "id": "memorial-antalya-perinatology-eftal-avci",
+    "name": "Assoc. Prof. M. Eftal Avcı",
+    "deptId": "perinatology",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["maternal-fetal", "high-risk pregnancy"]
+  },
+  {
+    "id": "memorial-antalya-pediatrics-ahmet-yildirim",
+    "name": "MD Ahmet Yıldırım",
+    "deptId": "pediatrics",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["pediatrics", "general pediatrics"]
+  },
+  {
+    "id": "memorial-antalya-neurology-elif-sarionder-gencer",
+    "name": "MD Elif Sarönder Gencer",
+    "deptId": "neurology",
+    "clinicId": "memorial-antalya",
+    "cityId": "antalya",
+    "keywords": ["neurology", "headache", "stroke"]
+  },
+
+  
+  {
+    "id": "memorial-ankara-cardiology-ali-oto",
+    "name": "Prof. Ali Oto",
+    "deptId": "cardiology",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "electrophysiology", "ablation"]
+  },
+  {
+    "id": "memorial-ankara-cardiology-ebru-akgul-ercan",
+    "name": "Prof. Ebru Akgül Ercan",
+    "deptId": "cardiology",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiology", "imaging", "prevention"]
+  },
+  {
+    "id": "memorial-ankara-cardiovascular-cem-yorgancioglu",
+    "name": "Prof. Cem Yorgancıoğlu",
+    "deptId": "cardiovascular-surgery",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiac surgery", "valve", "aorta"]
+  },
+  {
+    "id": "memorial-ankara-cardiovascular-mustafa-serkan-durdu",
+    "name": "Prof. Mustafa Serkan Durdu",
+    "deptId": "cardiovascular-surgery",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["cardiac surgery", "coronary", "minimally-invasive"]
+  },
+  {
+    "id": "memorial-ankara-urology-ali-fuat-atmaca",
+    "name": "Prof. Ali Fuat Atmaca",
+    "deptId": "urology",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["urology", "oncology", "stone"]
+  },
+  {
+    "id": "memorial-ankara-orthopedics-emre-acaroglu",
+    "name": "Prof. Emre Acaroğlu",
+    "deptId": "orthopedics",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["orthopedics", "spine", "deformity"]
+  },
+  {
+    "id": "memorial-ankara-orthopedics-ali-turgay-cavusoglu",
+    "name": "Prof. Ali Turgay Çavuşoğlu",
+    "deptId": "orthopedics",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["orthopedics", "trauma", "arthroplasty"]
+  },
+  {
+    "id": "memorial-ankara-neurosurgery-erkin-sonmez",
+    "name": "Prof. Erkin Sönmez",
+    "deptId": "neurosurgery",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["neurosurgery", "brain", "spine"]
+  },
+  {
+    "id": "memorial-ankara-hematology-ferit-avcu",
+    "name": "Prof. Ferit Avcu",
+    "deptId": "hematology",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["hematology", "blood diseases"]
+  },
+  {
+    "id": "memorial-ankara-general-surgery-acar-tuzuner",
+    "name": "Prof. Acar Tüzüner",
+    "deptId": "general-surgery",
+    "clinicId": "memorial-ankara",
+    "cityId": "ankara",
+    "keywords": ["general surgery", "laparoscopy"]
+  },
     {
       "id": "np-istanbul-brain-neurosurgery-slot",
       "name": "—",
       "deptId": "neurosurgery",
       "clinicId": "np-istanbul-brain",
       "cityId": "istanbul",
-      "keywords": ["neuro", "spine"]
+      "keywords": ["neurosurgery", "spine", "epilepsy"]
+    },
+    {
+    "id": "np-istanbul-brain-psychiatry-nevzat-tarhan",
+    "name": "Prof. Dr. K. Nevzat Tarhan",
+    "deptId": "psychiatry",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["psychiatry", "neuropsychiatry", "founder"]
+  },
+  {
+    "id": "np-istanbul-brain-psychiatry-sermin-kesebir",
+    "name": "Prof. Dr. Sermin Kesebir",
+    "deptId": "psychiatry",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["psychiatry", "mood disorders", "bipolar"]
+  },
+  {
+    "id": "np-istanbul-brain-psychiatry-gul-eryilmaz",
+    "name": "Prof. Dr. Gül Eryılmaz",
+    "deptId": "psychiatry",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["psychiatry", "addiction", "neurostimulation"]
+  },
+  {
+    "id": "np-istanbul-brain-child-psych-melek-gozde-lus",
+    "name": "Dr. Öğr. Üyesi Melek Gözde Luş",
+    "deptId": "child-psychiatry",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["child psychiatry", "adolescent", "neurodevelopmental"]
+  },
+  {
+    "id": "np-istanbul-brain-child-psych-neriman-kilit",
+    "name": "Dr. Öğr. Üyesi Neriman Kilit",
+    "deptId": "child-psychiatry",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["child psychiatry", "ADHD", "autism"]
+  },
+  {
+    "id": "np-istanbul-brain-neurology-oguz-tanridag",
+    "name": "Prof. Dr. A. Oğuz Tanrıdağ",
+    "deptId": "neurology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["neurology", "cognitive", "dementia"]
+  },
+  {
+    "id": "np-istanbul-brain-neurology-baris-metin",
+    "name": "Prof. Dr. Barış Metin",
+    "deptId": "neurology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["neurology", "neuroimaging", "cognition"]
+  },
+  {
+    "id": "np-istanbul-brain-neurosurgery-mustafa-bozbuga",
+    "name": "Prof. Dr. Mustafa Bozbuğa",
+    "deptId": "neurosurgery",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "skull base", "vascular", "spine"]
+  },
+  {
+    "id": "np-istanbul-brain-neurosurgery-onur-yaman",
+    "name": "Prof. Dr. Onur Yaman",
+    "deptId": "neurosurgery",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["neurosurgery", "spine", "tumor"]
+  },
+  {
+    "id": "np-istanbul-brain-radiology-zelal-tahaoglu",
+    "name": "Uzm. Dr. Zelal Tahaoğlu",
+    "deptId": "radiology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["radiology", "diagnostic", "MRI", "CT"]
+  },
+  {
+    "id": "np-istanbul-brain-radiology-necati-alp-tabak",
+    "name": "Dr. Öğr. Üyesi Necati Alp Tabak",
+    "deptId": "radiology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["radiology", "neuroradiology"]
+  },
+  {
+    "id": "np-istanbul-brain-gastro-aytac-atamer",
+    "name": "Prof. Dr. Aytaç Atamer",
+    "deptId": "gastro",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["gastroenterology", "internal medicine"]
+  },
+  {
+    "id": "np-istanbul-brain-rehab-safak-sahir-karamehmetoglu",
+    "name": "Prof. Dr. Şafak Sahir Karamehmetoğlu",
+    "deptId": "rehabilitation",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["PM&R", "neurorehab", "pain"]
+  },
+  {
+    "id": "np-istanbul-brain-psychology-merve-turkkol",
+    "name": "Uzm. Klinik Psikolog Merve Türkkol",
+    "deptId": "psychology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["clinical psychology", "neuropsychology"]
+  },
+  {
+    "id": "np-istanbul-brain-psychology-feridun-can-comert",
+    "name": "Feridun Can Cömert",
+    "deptId": "psychology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["clinical psychology", "CBT"]
+  },
+  {
+    "id": "np-istanbul-brain-cardiology-mehmet-baltali",
+    "name": "Prof. Dr. Mehmet Baltalı",
+    "deptId": "cardiology",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["cardiology", "imaging", "prevention"]
+  },
+  {
+    "id": "np-istanbul-brain-speech-ahmet-konrot",
+    "name": "Prof. Dr. Ahmet Konrot",
+    "deptId": "speech-therapy",
+    "clinicId": "np-istanbul-brain",
+    "cityId": "istanbul",
+    "keywords": ["speech therapy", "language disorders"]
+  },
+    {
+      "id": "anadolu-gebze-oncology-slot",
+      "name": "—",
+      "deptId": "oncology",
+      "clinicId": "anadolu-gebze",
+      "cityId": "kocaeli",
+      "keywords": ["oncology", "radiation", "chemotherapy"]
+    },
+    {
+      "id": "medipol-mega-transplant-slot",
+      "name": "—",
+      "deptId": "transplant",
+      "clinicId": "medipol-mega",
+      "cityId": "istanbul",
+      "keywords": ["transplant", "liver", "kidney"]
+    },
+    { "id": "cardiovascular-surgery" },
+    {
+      "id": "dunyagoz-istanbul-ophthalmology-slot",
+      "name": "—",
+      "deptId": "ophthalmology",
+      "clinicId": "dunyagoz-istanbul",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "lasik", "cataract"]
+    },
+    { "id": "anadolu-istanbul-oncology-yesim-yildirim", "name": "Prof. Dr. Yeşim Yıldırım", "deptId": "oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["medical oncology","breast","lung","chemotherapy"] },
+  { "id": "anadolu-istanbul-oncology-bulent-karagoz", "name": "Prof. Dr. Bülent Karagöz", "deptId": "oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["medical oncology","gi cancers","targeted therapy"] },
+
+  { "id": "anadolu-istanbul-radiation-oncology-hale-basak-caglar", "name": "Prof. Dr. Hale Başak Çağlar", "deptId": "radiation-oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["radiation oncology","SBRT","MR-Linac","CyberKnife"] },
+  { "id": "anadolu-istanbul-radiation-oncology-mehmet-dogu-canoglu", "name": "Uzm. Dr. Mehmet Doğu Canoğlu", "deptId": "radiation-oncology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["radiation oncology","IMRT","Radixact"] },
+
+  { "id": "anadolu-istanbul-hematology-zafer-gulbas", "name": "Prof. Dr. Zafer Gülbaş", "deptId": "hematology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["hematology","BMT","leukemia"] },
+  { "id": "anadolu-istanbul-hematology-necdet-uskent", "name": "Prof. Dr. Necdet Üskent", "deptId": "hematology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["hematologic oncology","lymphoma","myeloma"] },
+
+  { "id": "anadolu-istanbul-transplant-zafer-gulbas", "name": "Prof. Dr. Zafer Gülbaş", "deptId": "transplant", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["bone marrow transplant","adult BMT"] },
+  { "id": "anadolu-istanbul-transplant-savas-kansoy", "name": "Prof. Dr. Savaş Kansoy", "deptId": "transplant", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["pediatric BMT","pediatric hem/onc"] },
+
+  { "id": "anadolu-istanbul-cardiology-nevrez-koylan", "name": "Prof. Dr. Nevrez Koylan", "deptId": "cardiology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["cardiology","hypertension","echo"] },
+  { "id": "anadolu-istanbul-cardiology-ertan-okmen", "name": "Prof. Dr. Ertan Ökmen", "deptId": "cardiology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["cardiology","interventional"] },
+
+  { "id": "anadolu-istanbul-cardiovascular-surgery-hasim-ustunsoy", "name": "Prof. Dr. Haşim Üstünsoy", "deptId": "cardiovascular-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["cardiovascular surgery","CABG","valves"] },
+  { "id": "anadolu-istanbul-cardiovascular-surgery-fatma-bahceci", "name": "Op. Dr. Fatma Bahçeci", "deptId": "cardiovascular-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["cardiovascular surgery"] },
+
+  { "id": "anadolu-istanbul-neurosurgery-selcuk-gocmen", "name": "Prof. Dr. Selçuk Göçmen", "deptId": "neurosurgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["neurosurgery","brain tumors","spine"] },
+  { "id": "anadolu-istanbul-neurosurgery-emre-zorlu", "name": "Uzm. Dr. Emre Zorlu", "deptId": "neurosurgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["neurosurgery","endoscopic spine"] },
+
+  { "id": "anadolu-istanbul-neurology-yasar-kutukcu", "name": "Prof. Dr. Yaşar Kütükçü", "deptId": "neurology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["neurology","movement disorders","headache"] },
+  { "id": "anadolu-istanbul-neurology-nihal-isik", "name": "Prof. Dr. Nihal Işık", "deptId": "neurology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["neurology","epilepsy","stroke"] },
+
+  { "id": "anadolu-istanbul-orthopedics-kenan-keklikci", "name": "Prof. Dr. Kenan Keklikçi", "deptId": "orthopedics", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["orthopedics","arthroscopy","sports"] },
+  { "id": "anadolu-istanbul-orthopedics-selim-sanel", "name": "Prof. Dr. Selim Şanel", "deptId": "orthopedics", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["orthopedics","sarcoma","bone tumors"] },
+
+  { "id": "anadolu-istanbul-general-surgery-ali-ugur-emre", "name": "Prof. Dr. Ali Uğur Emre", "deptId": "general-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["general surgery","breast surgery","oncologic surgery"] },
+  { "id": "anadolu-istanbul-general-surgery-kemal-rasa", "name": "Op. Dr. Kemal Raşa", "deptId": "general-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["general surgery","laparoscopy"] },
+
+  { "id": "anadolu-istanbul-urology-ilker-tinay", "name": "Prof. Dr. İlker Tinay", "deptId": "urology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["urology","prostate","uro-oncology"] },
+  { "id": "anadolu-istanbul-urology-muhammed-sulukaya", "name": "Op. Dr. Muhammed Sulukaya", "deptId": "urology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["urology","stone","endourology"] },
+
+  { "id": "anadolu-istanbul-gastro-zulfikar-polat", "name": "Prof. Dr. Zülfikar Polat", "deptId": "gastro", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["gastroenterology","endoscopy","IBD"] },
+  { "id": "anadolu-istanbul-gastro-ahmet-melih-ozel", "name": "Prof. Dr. Ahmet Melih Özel", "deptId": "gastro", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["gastroenterology","ERCP","hepatology"] },
+
+  { "id": "anadolu-istanbul-endocrinology-ilhan-tarkun", "name": "Prof. Dr. İlhan Tarkun", "deptId": "endocrinology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["endocrinology","diabetes","thyroid"] },
+  { "id": "anadolu-istanbul-endocrinology-esat-erdem-turemen", "name": "Uzm. Dr. Esat Erdem Türemen", "deptId": "endocrinology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["endocrinology","metabolism"] },
+
+  { "id": "anadolu-istanbul-internal-medicine-cihan-top", "name": "Prof. Dr. Cihan Top", "deptId": "internal-medicine", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["internal medicine","hypertension","diabetes"] },
+  { "id": "anadolu-istanbul-internal-medicine-zahide-karaca", "name": "Uzm. Dr. Zahide Karaca", "deptId": "internal-medicine", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["internal medicine"] },
+
+  { "id": "anadolu-istanbul-ent-bulent-evren-erkul", "name": "Prof. Dr. Bülent Evren Erkul", "deptId": "ent", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["ENT","head & neck","larynx"] },
+  { "id": "anadolu-istanbul-ent-ahmet-hamdi-onay", "name": "Op. Dr. Ahmet Hamdi Önay", "deptId": "ent", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["ENT","rhinoplasty","pediatric ENT"] },
+
+  { "id": "anadolu-istanbul-ophthalmology-arslan-bozdag", "name": "Op. Dr. Arslan Bozdağ", "deptId": "ophthalmology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["ophthalmology","cataract","refractive"] },
+  { "id": "anadolu-istanbul-ophthalmology-burcu-usta-uslu", "name": "Op. Dr. Burcu Usta Uslu", "deptId": "ophthalmology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["ophthalmology","retina","vitrectomy"] },
+
+  { "id": "anadolu-istanbul-pediatrics-sevim-gulbas", "name": "Uzm. Dr. Sevim Gülbaş", "deptId": "pediatrics", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["pediatrics","well-child","vaccines"] },
+  { "id": "anadolu-istanbul-pediatrics-savas-kansoy", "name": "Prof. Dr. Savaş Kansoy", "deptId": "pediatrics", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["pediatric hematology","BMT"] },
+
+  { "id": "anadolu-istanbul-radiology-ahmet-murat-dokdok", "name": "Doç. Dr. Ahmet Murat Dökdök", "deptId": "radiology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["radiology","interventional","CT/MRI"] },
+  { "id": "anadolu-istanbul-radiology-oktay-karadeniz", "name": "Uzm. Dr. Oktay Karadeniz", "deptId": "radiology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["radiology","MRI","patient comfort"] },
+
+  { "id": "anadolu-istanbul-nuclear-medicine-kezban-berberoglu", "name": "Doç. Dr. Kezban Berberoğlu", "deptId": "nuclear-medicine", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["nuclear medicine","PET/CT","radioiodine"] },
+  { "id": "anadolu-istanbul-nuclear-medicine-seyedbaresh-razavikhosroshahi", "name": "Uzm. Dr. SeyedBaresh Razavıkhosroshahı", "deptId": "nuclear-medicine", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["nuclear medicine","theranostics"] },
+
+  { "id": "anadolu-istanbul-obgyn-ebru-ozturk-oksuz", "name": "Op. Dr. Ebru Öztürk Öksüz", "deptId": "obgyn", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["obgyn","high-risk pregnancy","IVF support"] },
+  { "id": "anadolu-istanbul-obgyn-meltem-emine-cam", "name": "Op. Dr. Meltem Emine Çam", "deptId": "obgyn", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["obgyn","prenatal care"] },
+
+  { "id": "anadolu-istanbul-ivf-tayfun-kutlu", "name": "Prof. Dr. Tayfun Kutlu", "deptId": "ivf", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["IVF","REI","PRP"] },
+  { "id": "anadolu-istanbul-ivf-ebru-ozturk-oksuz", "name": "Op. Dr. Ebru Öztürk Öksüz", "deptId": "ivf", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["IVF","female infertility"] },
+
+  { "id": "anadolu-istanbul-plastic-surgery-haluk-duman", "name": "Prof. Dr. Haluk Duman", "deptId": "plastic-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["plastic surgery","breast reconstruction","microsurgery"] },
+  { "id": "anadolu-istanbul-plastic-surgery-serdar-duzgun", "name": "Op. Dr. Serdar Düzgün", "deptId": "plastic-surgery", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["plastic surgery","aesthetic","reconstructive"] },
+
+  { "id": "anadolu-istanbul-pulmonology-tayfun-caliskan", "name": "Doç. Dr. Tayfun Çalışkan", "deptId": "pulmonology", "clinicId": "anadolu-istanbul", "cityId": "istanbul", "keywords": ["pulmonology","COPD","post-COVID"] },
+  { "id": "medicana-international-istanbul-cardiology-sebahattin-atesal", "name": "—", "deptId": "cardiology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["cardiology","interventional","TAVI","Mitraclip"] },
+    { "id": "medicana-international-istanbul-cardiology-omer-uz", "name": "—", "deptId": "cardiology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["cardiology"] },
+
+    { "id": "medicana-international-istanbul-cardiovascular-surgery-ozer-selimoglu", "name": "—", "deptId": "cardiovascular-surgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["cardiac surgery","bypass","valve"] },
+    { "id": "medicana-international-istanbul-cardiovascular-surgery-ibrahim-savas-yildirim", "name": "—", "deptId": "cardiovascular-surgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["cardiac surgery"] },
+
+    { "id": "medicana-international-istanbul-oncology-ali-osman-kaya", "name": "—", "deptId": "oncology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["medical oncology","systemic therapy"] },
+    { "id": "medicana-international-istanbul-oncology-nezih-meydan", "name": "—", "deptId": "oncology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["medical oncology"] },
+
+    { "id": "medicana-international-istanbul-radiation-oncology-zehra-fusun-tokatli", "name": "—", "deptId": "radiation-oncology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["radiation oncology","IMRT","LINAC"] },
+    { "id": "medicana-international-istanbul-radiation-oncology-yildiz-keles", "name": "—", "deptId": "radiation-oncology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["radiation oncology"] },
+
+    { "id": "medicana-international-istanbul-orthopedics-celil-alemdar", "name": "—", "deptId": "orthopedics", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["orthopedics","joint","sports"] },
+    { "id": "medicana-international-istanbul-orthopedics-tugrul-ergun", "name": "—", "deptId": "orthopedics", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["orthopedics"] },
+
+    { "id": "medicana-international-istanbul-neurosurgery-erhan-takci", "name": "—", "deptId": "neurosurgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["neurosurgery","spine"] },
+    { "id": "medicana-international-istanbul-neurosurgery-levent-aydin", "name": "—", "deptId": "neurosurgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["neurosurgery"] },
+
+    { "id": "medicana-international-istanbul-ent-a-bedri-ozer", "name": "—", "deptId": "ent", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["ENT","sinus","ear"] },
+    { "id": "medicana-international-istanbul-ent-cenk-evren", "name": "—", "deptId": "ent", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["ENT"] },
+
+    { "id": "medicana-international-istanbul-ophthalmology-orhan-ayar", "name": "—", "deptId": "ophthalmology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["ophthalmology"] },
+    { "id": "medicana-international-istanbul-ophthalmology-sait-alim", "name": "—", "deptId": "ophthalmology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["ophthalmology"] },
+
+    { "id": "medicana-international-istanbul-gastro-mustafa-yakut", "name": "—", "deptId": "gastro", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["gastroenterology","endoscopy"] },
+    { "id": "medicana-international-istanbul-gastro-ozlem-mutluay-soyer", "name": "—", "deptId": "gastro", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["gastroenterology"] },
+
+    { "id": "medicana-international-istanbul-general-surgery-cengizhan-yigitler", "name": "—", "deptId": "general-surgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["general surgery","laparoscopy"] },
+    { "id": "medicana-international-istanbul-general-surgery-yahya-ekici", "name": "—", "deptId": "general-surgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["general surgery"] },
+
+    { "id": "medicana-international-istanbul-urology-emrah-yuruk", "name": "—", "deptId": "urology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["urology","endourology"] },
+    { "id": "medicana-international-istanbul-urology-akif-ersoy-erkmen", "name": "—", "deptId": "urology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["urology"] },
+
+    { "id": "medicana-international-istanbul-obgyn-mustafa-uner-karacaoglu", "name": "—", "deptId": "obgyn", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["obgyn"] },
+    { "id": "medicana-international-istanbul-ivf-selman-lacin", "name": "—", "deptId": "ivf", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["ivf","ART"] },
+
+    { "id": "medicana-international-istanbul-pulmonology-ozcan-ogurlu", "name": "—", "deptId": "pulmonology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["pulmonology","COPD","asthma"] },
+    { "id": "medicana-international-istanbul-thoracic-surgery-levent-alpay", "name": "—", "deptId": "thoracic-surgery", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["thoracic surgery"] },
+
+    { "id": "medicana-international-istanbul-hematology-yener-koc", "name": "—", "deptId": "hematology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["hematology","BMT"] },
+
+    { "id": "medicana-international-istanbul-nephrology-murathan-uyar", "name": "—", "deptId": "nephrology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["nephrology","kidney transplant"] },
+
+    { "id": "medicana-international-istanbul-internal-medicine-mustafa-temizel", "name": "—", "deptId": "internal-medicine", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["internal medicine"] },
+
+    { "id": "medicana-international-istanbul-radiology-ismail-serifoglu", "name": "—", "deptId": "radiology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["radiology","MRI","CT"] },
+    { "id": "medicana-international-istanbul-interventional-radiology-metin-cevener", "name": "—", "deptId": "interventional-radiology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["interventional radiology","embolization"] },
+
+    { "id": "medicana-international-istanbul-dermatology-omer-faruk-elmas", "name": "—", "deptId": "dermatology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["dermatology"] },
+    { "id": "medicana-international-istanbul-dermatology-hurmuz-isik-caner", "name": "—", "deptId": "dermatology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["dermatology"] },
+
+    { "id": "medicana-international-istanbul-rheumatology-zuhre-sari", "name": "—", "deptId": "rheumatology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["rheumatology"] },
+
+    { "id": "medicana-international-istanbul-pathology-cemal-gundogdu", "name": "—", "deptId": "pathology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["pathology"] },
+
+    { "id": "medicana-international-istanbul-psychiatry-halime-dal-uysal", "name": "—", "deptId": "psychiatry", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["psychiatry"] },
+    { "id": "medicana-international-istanbul-psychology-tugce-colakoglu", "name": "—", "deptId": "psychology", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["psychology"] },
+
+    { "id": "medicana-international-istanbul-nuclear-medicine-ebru-yilmaz", "name": "—", "deptId": "nuclear-medicine", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["nuclear medicine","PET-CT"] },
+
+    { "id": "medicana-international-istanbul-dentistry-bahar-pehlevan", "name": "—", "deptId": "dentistry", "clinicId": "medicana-international-istanbul", "cityId": "istanbul", "keywords": ["dentistry"] },
+
+    
+    { "id": "medicana-ankara-cardiology-erdogan-ilkay", "name": "—", "deptId": "cardiology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["cardiology","interventional"] },
+    { "id": "medicana-ankara-cardiology-veysel-kutay-vurgun", "name": "—", "deptId": "cardiology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["cardiology"] },
+
+    { "id": "medicana-ankara-cardiovascular-surgery-hakki-serkan-sahin", "name": "—", "deptId": "cardiovascular-surgery", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["cardiac surgery"] },
+    { "id": "medicana-ankara-cardiovascular-surgery-arzum-kale", "name": "—", "deptId": "cardiovascular-surgery", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["cardiac surgery"] },
+
+    { "id": "medicana-ankara-oncology-ibrahim-tek", "name": "—", "deptId": "oncology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["medical oncology"] },
+    { "id": "medicana-ankara-oncology-mehmet-metin-seker", "name": "—", "deptId": "oncology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["medical oncology"] },
+
+    { "id": "medicana-ankara-radiation-oncology-petek-erpolat", "name": "—", "deptId": "radiation-oncology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["radiation oncology"] },
+
+    { "id": "medicana-ankara-orthopedics-mehmet-batu-ertan", "name": "—", "deptId": "orthopedics", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["orthopedics","sports"] },
+    { "id": "medicana-ankara-orthopedics-mehmet-dervis-guner", "name": "—", "deptId": "orthopedics", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["orthopedics"] },
+
+    { "id": "medicana-ankara-neurosurgery-sait-sirin", "name": "—", "deptId": "neurosurgery", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["neurosurgery","radiosurgery"] },
+
+    { "id": "medicana-ankara-ent-ali-safak-dagli", "name": "—", "deptId": "ent", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["ENT"] },
+    { "id": "medicana-ankara-ent-hatice-karadas", "name": "—", "deptId": "ent", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["ENT"] },
+
+    { "id": "medicana-ankara-ophthalmology-mefkure-yalciner", "name": "—", "deptId": "ophthalmology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["ophthalmology"] },
+
+    { "id": "medicana-ankara-gastro-fatih-karaahmet", "name": "—", "deptId": "gastro", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["gastroenterology","endoscopy"] },
+
+    { "id": "medicana-ankara-general-surgery-ulas-sozener", "name": "—", "deptId": "general-surgery", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["general surgery","organ transplant"] },
+
+    { "id": "medicana-ankara-urology-hasan-bakirtas", "name": "—", "deptId": "urology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["urology"] },
+
+    { "id": "medicana-ankara-obgyn-ayla-aktulay", "name": "—", "deptId": "obgyn", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["obgyn","perinatology"] },
+
+    { "id": "medicana-ankara-pulmonology-songul-turgut", "name": "—", "deptId": "pulmonology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["pulmonology"] },
+
+    { "id": "medicana-ankara-nephrology-siren-sezer", "name": "—", "deptId": "nephrology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["nephrology","transplant"] },
+
+    { "id": "medicana-ankara-internal-medicine-aydogan-aydogdu", "name": "—", "deptId": "internal-medicine", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["internal medicine","endocrinology"] },
+
+    { "id": "medicana-ankara-interventional-radiology-esref-umut-ozyer", "name": "—", "deptId": "interventional-radiology", "clinicId": "medicana-ankara", "cityId": "ankara", "keywords": ["interventional radiology","embolization"] },
+    { "id": "medistate-kavacik-cardiology-yusuf-tavil", "name": "Prof. Dr. Yusuf Tavil", "deptId": "cardiology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["cardiology","hypertension","echo","ischemia"] },
+  { "id": "medistate-kavacik-cardiology-zekeriya-kucukdurmaz", "name": "Doç. Dr. Zekeriya Küçükdurmaz", "deptId": "cardiology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["cardiology","interventional","stent"] },
+
+  { "id": "medistate-kavacik-cardiovascular-surgery-ahmet-refik-turgut", "name": "Op. Dr. Ahmet Refik Turgut", "deptId": "cardiovascular-surgery", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["cardiovascular surgery","CABG","valve"] },
+  { "id": "medistate-kavacik-cardiovascular-surgery-mahmut-akyildiz", "name": "Op. Dr. Mahmut Akyıldız", "deptId": "cardiovascular-surgery", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["cardiac surgery"] },
+
+  { "id": "medistate-kavacik-neurosurgery-sevki-gok", "name": "Op. Dr. Şevki Gök", "deptId": "neurosurgery", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["neurosurgery","spine","brain-tumor"] },
+
+  { "id": "medistate-kavacik-neurology-gulistan-halac", "name": "Uzm. Dr. Gülistan Halaç", "deptId": "neurology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["neurology","headache","stroke"] },
+
+  { "id": "medistate-kavacik-general-surgery-emin-ersoy", "name": "Prof. Dr. Emin Ersoy", "deptId": "general-surgery", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["general surgery","obesity","laparoscopy"] },
+  { "id": "medistate-kavacik-general-surgery-selcuk-oktemer", "name": "Op. Dr. Selçuk Öktemer", "deptId": "general-surgery", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["general surgery"] },
+
+  { "id": "medistate-kavacik-gastro-ahmet-burak-toros", "name": "Prof. Dr. Ahmet Burak Toros", "deptId": "gastro", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["gastroenterology","endoscopy","IBD"] },
+
+  { "id": "medistate-kavacik-urology-m-ihsan-karaman", "name": "Prof. Dr. M. İhsan Karaman", "deptId": "urology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["urology","uro-oncology","stones"] },
+  { "id": "medistate-kavacik-urology-orhan-koca", "name": "Prof. Dr. Orhan Koca", "deptId": "urology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["urology"] },
+
+  { "id": "medistate-kavacik-obgyn-ahmet-semih-tugrul", "name": "Prof. Dr. Ahmet Semih Tuğrul", "deptId": "obgyn", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["obgyn","perinatology","high-risk"] },
+  { "id": "medistate-kavacik-ivf-kenan-sofuoglu", "name": "Op. Dr. Kenan Sofuoğlu", "deptId": "ivf", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["ivf","reproductive medicine"] },
+
+  { "id": "medistate-kavacik-ent-ismail-yilmaz", "name": "Prof. Dr. İsmail Yılmaz", "deptId": "ent", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["ENT","sinus","larynx"] },
+  { "id": "medistate-kavacik-ent-muhammet-tekin", "name": "Prof. Dr. Muhammet Tekin", "deptId": "ent", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["ENT","otology"] },
+
+  { "id": "medistate-kavacik-ophthalmology-melih-haboglu", "name": "Op. Dr. Melih Haboğlu", "deptId": "ophthalmology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["ophthalmology","cataract"] },
+  { "id": "medistate-kavacik-ophthalmology-nihal-balcioglu", "name": "Op. Dr. Nihal Balcıoğlu", "deptId": "ophthalmology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["ophthalmology","retina"] },
+
+  { "id": "medistate-kavacik-orthopedics-tevfik-balikci", "name": "Op. Dr. Tevfik Balıkçı", "deptId": "orthopedics", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["orthopedics","trauma","sports"] },
+  { "id": "medistate-kavacik-orthopedics-mustafa-tekkesin", "name": "Op. Dr. Mustafa Tekkeşin", "deptId": "orthopedics", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["orthopedics","arthroplasty"] },
+
+  { "id": "medistate-kavacik-pediatrics-huseyin-guvenc", "name": "Prof. Dr. Hüseyin Güvenç", "deptId": "pediatrics", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["pediatrics"] },
+  { "id": "medistate-kavacik-pediatrics-ibrahim-melih-yavuz", "name": "Uzm. Dr. İbrahim Melih Yavuz", "deptId": "pediatrics", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["pediatrics"] },
+
+  { "id": "medistate-kavacik-pulmonology-zehra-yasar", "name": "Doç. Dr. Zehra Yaşar", "deptId": "pulmonology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["pulmonology","COPD","asthma"] },
+
+  { "id": "medistate-kavacik-radiology-kaan-meric", "name": "Prof. Dr. Kaan Meriç", "deptId": "radiology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["radiology","director","MRI","CT"] },
+  { "id": "medistate-kavacik-radiology-mehmet-mustafa-ozlu", "name": "Uzm. Dr. Mehmet Mustafa Özlü", "deptId": "radiology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["radiology"] },
+
+  { "id": "medistate-kavacik-dermatology-ebru-ikizler", "name": "Uzm. Dr. Ebru İkizler", "deptId": "dermatology", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["dermatology"] },
+
+  { "id": "medistate-kavacik-infectious-mucahit-yemisen", "name": "Doç. Dr. Mücahit Yemişen", "deptId": "infectious-diseases", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["infectious diseases","microbiology"] },
+
+  { "id": "medistate-kavacik-internal-medicine-huseyin-yasar", "name": "Uzm. Dr. Hüseyin Yaşar", "deptId": "internal-medicine", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["internal medicine"] },
+  { "id": "medistate-kavacik-internal-medicine-muharrem-yildirim", "name": "Uzm. Dr. Muharrem Yıldırım", "deptId": "internal-medicine", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["internal medicine"] },
+
+  { "id": "medistate-kavacik-psychiatry-furkan-coskun", "name": "Uzm. Dr. Furkan Coşkun", "deptId": "psychiatry", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["psychiatry","adult"] },
+
+  { "id": "medistate-kavacik-dentistry-ali-gul", "name": "Dt. Ali Gül", "deptId": "dentistry", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["dentistry"] },
+  { "id": "medistate-kavacik-dentistry-figen-sencan", "name": "Dt. Figen Şencan", "deptId": "dentistry", "clinicId": "medistate-kavacik", "cityId": "istanbul", "keywords": ["dentistry"] },
+
+  {
+      "id": "dunyagoz-etiler-cornea-anil-kubaloglu",
+      "name": "—",
+      "deptId": "ophthalmology-cornea",
+      "clinicId": "dunyagoz-istanbul-etiler",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "cornea", "cataract", "laser"]
+    },
+    {
+      "id": "dunyagoz-etiler-cataract-bozkurt-sener",
+      "name": "—",
+      "deptId": "ophthalmology-cataract",
+      "clinicId": "dunyagoz-istanbul-etiler",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "cataract", "refractive", "laser"]
+    },
+    {
+      "id": "dunyagoz-etiler-glaucoma-umit-aykan",
+      "name": "—",
+      "deptId": "ophthalmology-glaucoma",
+      "clinicId": "dunyagoz-istanbul-etiler",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "glaucoma", "neuro-ophthalmology", "cataract"]
+    },
+    {
+      "id": "dunyagoz-etiler-ocular-oncology-samuray-tuncer",
+      "name": "—",
+      "deptId": "ophthalmology-ocular-oncology",
+      "clinicId": "dunyagoz-istanbul-etiler",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "ocular oncology", "tumor"]
+    },
+    {
+      "id": "dunyagoz-etiler-pediatric-osman-bulut-ocak",
+      "name": "—",
+      "deptId": "ophthalmology-pediatric",
+      "clinicId": "dunyagoz-istanbul-etiler",
+      "cityId": "istanbul",
+      "keywords": ["ophthalmology", "pediatric", "strabismus", "amblyopia"]
+    },
+
+    {
+      "id": "dunyagoz-ankara-tunus-cataract-fatih-karel",
+      "name": "—",
+      "deptId": "ophthalmology-cataract",
+      "clinicId": "dunyagoz-ankara-tunus",
+      "cityId": "ankara",
+      "keywords": ["ophthalmology", "cataract", "IOL", "presbyopia"]
+    },
+    {
+      "id": "dunyagoz-ankara-tunus-refractive-volkan-hurmeric",
+      "name": "—",
+      "deptId": "ophthalmology-refractive",
+      "clinicId": "dunyagoz-ankara-tunus",
+      "cityId": "ankara",
+      "keywords": ["ophthalmology", "refractive", "LASIK", "SMILE", "cornea"]
+    },
+    {
+      "id": "dunyagoz-ankara-tunus-oculoplastics-canan-gurdal",
+      "name": "—",
+      "deptId": "ophthalmology-oculoplastics",
+      "clinicId": "dunyagoz-ankara-tunus",
+      "cityId": "ankara",
+      "keywords": ["ophthalmology", "oculoplastics", "cornea", "contact lens"]
+    },
+    {
+      "id": "dunyagoz-ankara-tunus-glaucoma-atilla-bayer",
+      "name": "—",
+      "deptId": "ophthalmology-glaucoma",
+      "clinicId": "dunyagoz-ankara-tunus",
+      "cityId": "ankara",
+      "keywords": ["ophthalmology", "glaucoma", "cataract"]
+    },
+
+    {
+      "id": "dunyagoz-antalya-uveitis-kadri-cemil-apaydin",
+      "name": "—",
+      "deptId": "ophthalmology-uveitis",
+      "clinicId": "dunyagoz-antalya",
+      "cityId": "antalya",
+      "keywords": ["ophthalmology", "uveitis", "glaucoma"]
+    },
+    {
+      "id": "dunyagoz-antalya-retina-esra-ayhan-tuzcu",
+      "name": "—",
+      "deptId": "ophthalmology-retina",
+      "clinicId": "dunyagoz-antalya",
+      "cityId": "antalya",
+      "keywords": ["ophthalmology", "retina", "cataract", "neuro-ophthalmology"]
     }
   ],
+
   "departments": [
     { "id": "cardiology" },
     { "id": "oncology" },
-    { "id": "neurosurgery" },
-    { "id": "ivf" },
     { "id": "orthopedics" },
-    { "id": "gastro" },
-    { "id": "endocrinology" },
-    { "id": "general-surgery" },
+    { "id": "ivf" },
+    { "id": "neurosurgery" },
+    { "id": "ophthalmology" },
     { "id": "transplant" },
     { "id": "radiology" },
     { "id": "radiation-oncology" },
-    { "id": "pediatrics" }
+    { "id": "pediatrics" },
+    { "id": "general-surgery" },
+    { "id": "urology" },
+    { "id": "plastic-surgery" },
+    { "id": "gastro" },
+    { "id": "cardiovascular-surgery" },
+    { "id": "emergency" },
+    { "id": "dentistry" },
+    { "id": "allergy-immunology" },
+    { "id": "anesthesiology" },
+    { "id": "nutrition" },
+    { "id": "pediatric-allergy-immunology" },
+    { "id": "pediatric-surgery" },
+    { "id": "pediatric-hem-onc" },
+    { "id": "pediatric-cardiology" },
+    { "id": "pediatric-neurology" },
+    { "id": "infectious-diseases" },
+    { "id": "pmr" },
+    { "id": "interventional-radiology" },
+    { "id": "thoracic-surgery" },
+    { "id": "pulmonology" },
+    { "id": "hematology" },
+    { "id": "obgyn" },
+  { "id": "nephrology" },
+  { "id": "dermatology" },
+   { "id": "psychiatry" },
+    { "id": "psychology" },
+    { "id": "thoracic-surgery" },
+    { "id": "microbiology" },
+    { "id": "rheumatology" },
+    { "id": "pathology" },
+    { "id": "bmt" },
+    { "id": "kidney-transplant" },
+    { "id": "cornea-transplant" },
+    { "id": "checkup" },
+    { "id": "ophthalmology-cataract" },
+    { "id": "ophthalmology-refractive" },
+    { "id": "ophthalmology-cornea" },
+    { "id": "ophthalmology-glaucoma" },
+    { "id": "ophthalmology-retina" },
+    { "id": "ophthalmology-pediatric" },
+    { "id": "ophthalmology-oculoplastics" },
+    { "id": "ophthalmology-neuro-ophthalmology" },
+    { "id": "ophthalmology-uveitis" },
+    { "id": "ophthalmology-ocular-oncology" }
   ],
+
   "clinics": [
-    { "id": "acibadem-istanbul",      "cityId": "istanbul" },
-    { "id": "liv-ankara",             "cityId": "ankara" },
-    { "id": "medicana-istanbul",      "cityId": "istanbul" },
-    { "id": "medistate-istanbul",     "cityId": "istanbul" },
-    { "id": "np-istanbul-brain",      "cityId": "istanbul" },
-    { "id": "memorial-antalya",       "cityId": "antalya" },
-    { "id": "anadolu-istanbul",       "cityId": "istanbul" }
+    { "id": "acibadem-maslak", "cityId": "istanbul" },
+    { "id": "acibadem-altunizade", "cityId": "istanbul" },
+    { "id": "liv-ankara", "cityId": "ankara" },
+    { "id": "liv-ulus", "cityId": "istanbul" },
+    { "id": "liv-vadi", "cityId": "istanbul" },
+    { "id": "memorial-antalya", "cityId": "antalya" },
+    { "id": "memorial-sisli", "cityId": "istanbul" },
+    { "id": "medicana-international-istanbul", "cityId": "istanbul" },
+    { "id": "medicana-ankara", "cityId": "ankara" },
+    { "id": "medistate-kavacik", "cityId": "istanbul" },
+    { "id": "medipol-mega", "cityId": "istanbul" },
+    { "id": "np-istanbul-brain", "cityId": "istanbul" },
+    { "id": "anadolu-gebze", "cityId": "kocaeli" },
+    { "id": "dunyagoz-istanbul-etiler", "cityId": "istanbul" },
+    { "id": "dunyagoz-ankara-tunus",    "cityId": "ankara" },
+    { "id": "dunyagoz-antalya",         "cityId": "antalya" }
   ],
+
   "cities": [
     { "id": "istanbul" },
+    { "id": "ankara" },
     { "id": "antalya" },
-    { "id": "ankara" }
+    { "id": "kocaeli" }
   ]
 }
+
