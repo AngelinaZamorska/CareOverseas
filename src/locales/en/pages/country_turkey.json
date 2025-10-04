@@ -296,6 +296,8 @@
 
   "dict.clinic.memorial-antalya.name": "Memorial Antalya Hospital",
   "dict.clinic.memorial-sisli.name": "Memorial Şişli Hospital",
+  "dict.clinic.memorial-ankara.name": "Memorial Ankara Hospital",
+  "dict.clinic.memorial-atasehir.name": "Memorial Atasehir Hospital",
   
 
   "people.doctors.memorial-sisli-ophthalmology-abdullah-ozkaya.title": "Ophthalmologist",
@@ -570,6 +572,7 @@
   "dict.clinic.medipol-mega-istanbul.name": "Medipol Mega University Hospital (Istanbul)",
   "dict.clinic.np-istanbul-brain.name": "NP Istanbul Brain Hospital",
   "dict.clinic.anadolu-gebze.name": "Anadolu Medical Center (Gebze)",
+  "dict.clinic.anadolu-istanbul.name": "Anadolu Medical Center Istanbul",
   "dict.clinic.dunyagoz-istanbul.name": "Dünyagöz Istanbul",
 
   "dict.dept.cardiology.name": "Cardiology",
