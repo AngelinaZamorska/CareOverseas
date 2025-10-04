@@ -220,7 +220,7 @@
 
   
   {
-    "id": "liv-vadi-urology-volkan-tugcu",
+    "id": "liv-vadistanbul-urology-volkan-tugcu",
     "name": "Prof. MD. Volkan Tuğcu",
     "deptId": "urology",
     "clinicId": "liv-vadistanbul",
@@ -228,7 +228,7 @@
     "keywords": ["urology", "robotic", "laparoscopy", "prostatectomy"]
   },
   {
-    "id": "liv-vadi-cardiology-mehmet-vefik-yazicioglu",
+    "id": "liv-vadistanbul-cardiology-mehmet-vefik-yazicioglu",
     "name": "Prof. MD. Mehmet Vefik Yazıcıoğlu",
     "deptId": "cardiology",
     "clinicId": "liv-vadistanbul",
@@ -236,7 +236,7 @@
     "keywords": ["cardiology", "imaging", "interventional"]
   },
   {
-    "id": "liv-vadi-cardiology-batur-gonenc-kanar",
+    "id": "liv-vadistanbul-cardiology-batur-gonenc-kanar",
     "name": "Assoc. Prof. MD. Batur Gönenç Kanar",
     "deptId": "cardiology",
     "clinicId": "liv-vadistanbul",
@@ -244,7 +244,7 @@
     "keywords": ["electrophysiology", "AF ablation", "CRT", "ICD"]
   },
   {
-    "id": "liv-vadi-cardiology-akin-torun",
+    "id": "liv-vadistanbul-cardiology-akin-torun",
     "name": "Spec. MD. Akın Torun",
     "deptId": "cardiology",
     "clinicId": "liv-vadistanbul",
@@ -252,7 +252,7 @@
     "keywords": ["cardiology", "echo", "prevention"]
   },
   {
-    "id": "liv-vadi-cardiology-hasan-burak-isleyen",
+    "id": "liv-vadistanbul-cardiology-hasan-burak-isleyen",
     "name": "Asst. Prof. MD. Hasan Burak İşleyen",
     "deptId": "cardiology",
     "clinicId": "liv-vadistanbul",
@@ -260,7 +260,7 @@
     "keywords": ["cardiology", "interventional"]
   },
   {
-    "id": "liv-vadi-internal-hakan-kocoglu",
+    "id": "liv-vadistanbul-internal-hakan-kocoglu",
     "name": "Assoc. Prof. MD. Hakan Koçoğlu",
     "deptId": "internal-medicine",
     "clinicId": "liv-vadistanbul",
@@ -403,7 +403,7 @@
 
   
   {
-    "id": "liv-vadi-orthopedics-sinan-karadeniz",
+    "id": "liv-vadistanbul-orthopedics-sinan-karadeniz",
     "name": "Prof. MD. Sinan Karadeniz",
     "deptId": "orthopedics",
     "clinicId": "liv-vadistanbul",
@@ -411,7 +411,7 @@
     "keywords": ["orthopedics", "trauma", "arthroscopy"]
   },
   {
-    "id": "liv-vadi-orthopedics-volkan-yildiz",
+    "id": "liv-vadistanbul-orthopedics-volkan-yildiz",
     "name": "Assoc. Prof. MD. Volkan Yıldız",
     "deptId": "orthopedics",
     "clinicId": "liv-vadistanbul",
@@ -419,7 +419,7 @@
     "keywords": ["orthopedics", "sports injuries"]
   },
   {
-    "id": "liv-vadi-neurology-sevda-kara",
+    "id": "liv-vadistanbul-neurology-sevda-kara",
     "name": "Prof. MD. Sevda Kara",
     "deptId": "neurology",
     "clinicId": "liv-vadistanbul",
@@ -427,7 +427,7 @@
     "keywords": ["neurology", "Parkinson’s", "MS"]
   },
   {
-    "id": "liv-vadi-gastro-fatih-arslan",
+    "id": "liv-vadistanbul-gastro-fatih-arslan",
     "name": "Assoc. Prof. MD. Fatih Arslan",
     "deptId": "gastro",
     "clinicId": "liv-vadistanbul",
@@ -435,7 +435,7 @@
     "keywords": ["gastroenterology", "hepatology"]
   },
   {
-    "id": "liv-vadi-surgery-omer-hasan-alioglu",
+    "id": "liv-vadistanbul-surgery-omer-hasan-alioglu",
     "name": "Prof. MD. Ömer Hasan Alioğlu",
     "deptId": "general-surgery",
     "clinicId": "liv-vadistanbul",
@@ -443,7 +443,7 @@
     "keywords": ["general surgery", "bariatric", "oncologic"]
   },
   {
-    "id": "liv-vadi-plastic-hakan-ozkaya",
+    "id": "liv-vadistanbul-plastic-hakan-ozkaya",
     "name": "Assoc. Prof. MD. Hakan Özkaya",
     "deptId": "plastic-surgery",
     "clinicId": "liv-vadistanbul",
@@ -451,7 +451,7 @@
     "keywords": ["plastic surgery", "reconstructive"]
   },
   {
-    "id": "liv-vadi-ivf-elif-karabacak",
+    "id": "liv-vadistanbul-ivf-elif-karabacak",
     "name": "Spec. MD. Elif Karabacak",
     "deptId": "ivf",
     "clinicId": "liv-vadistanbul",
@@ -459,7 +459,7 @@
     "keywords": ["IVF", "reproductive medicine"]
   },
   {
-    "id": "liv-vadi-obgyn-burcu-yilmaz",
+    "id": "liv-vadistanbul-obgyn-burcu-yilmaz",
     "name": "Assoc. Prof. MD. Burcu Yılmaz",
     "deptId": "obgyn",
     "clinicId": "liv-vadistanbul",
@@ -467,7 +467,7 @@
     "keywords": ["obstetrics", "gynecology"]
   },
   {
-    "id": "liv-vadi-pediatrics-emre-unal",
+    "id": "liv-vadistanbul-pediatrics-emre-unal",
     "name": "Spec. MD. Emre Ünal",
     "deptId": "pediatrics",
     "clinicId": "liv-vadistanbul",
@@ -475,7 +475,7 @@
     "keywords": ["pediatrics", "immunology"]
   },
   {
-    "id": "liv-vadi-physical-aylin-kurt",
+    "id": "liv-vadistanbul-physical-aylin-kurt",
     "name": "Prof. MD. Aylin Kurt",
     "deptId": "rehabilitation",
     "clinicId": "liv-vadistanbul",
@@ -1451,6 +1451,7 @@
     { "id": "medistate-kavacik", "cityId": "istanbul" },
     { "id": "medipol-mega", "cityId": "istanbul" },
     { "id": "np-istanbul-brain", "cityId": "istanbul" },
+    { "id": "anadolu-istanbul", "cityId": "istanbul" },
     { "id": "anadolu-gebze", "cityId": "kocaeli" },
     { "id": "dunyagoz-istanbul-etiler", "cityId": "istanbul" },
     { "id": "dunyagoz-ankara-tunus",    "cityId": "ankara" },
