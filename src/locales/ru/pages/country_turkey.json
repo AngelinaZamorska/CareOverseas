@@ -802,38 +802,29 @@
 "people.doctors.medicana-ankara-urology-hasan-bakirtas.title": "Уролог",
 "people.doctors.medicana-ankara-urology-hasan-bakirtas.bio": "Уроонкология и лечение мочекаменной болезни."
 ,
-"people.doctors.medicana-ankara-obgyn-ayla-aktulay.name": "Prof. Dr. Ayla Aktulay",
-  "people.doctors.medicana-ankara-obgyn-ayla-aktulay.title": "OB-GYN",
-  "people.doctors.medicana-ankara-obgyn-ayla-aktulay.bio": "Obstetrics, gynecology and high-risk pregnancy care.",
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.title": "Акушер-гинеколог",
+"people.doctors.medicana-ankara-obgyn-ayla-aktulay.bio": "Акушерство, гинекология и ведение беременностей высокого риска.",
 
-  "people.doctors.medicana-ankara-pulmonology-songul-turgut.name": "Uzm. Dr. Songül Turğut",
-  "people.doctors.medicana-ankara-pulmonology-songul-turgut.title": "Pulmonologist",
-  "people.doctors.medicana-ankara-pulmonology-songul-turgut.bio": "Cerebrovascular/neurology background notes; pulmonary topics for public health.",
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.title": "Пульмонолог",
+"people.doctors.medicana-ankara-pulmonology-songul-turgut.bio": "Болезни лёгких, пульмонология и профилактика респираторных заболеваний.",
 
-  "people.doctors.medicana-ankara-nephrology-siren-sezer.name": "Prof. Dr. Siren Sezer",
-  "people.doctors.medicana-ankara-nephrology-siren-sezer.title": "Nephrologist",
-  "people.doctors.medicana-ankara-nephrology-siren-sezer.bio": "Renal failure and transplant nephrology.",
+"people.doctors.medicana-ankara-nephrology-siren-sezer.title": "Нефролог",
+"people.doctors.medicana-ankara-nephrology-siren-sezer.bio": "Хроническая почечная недостаточность и трансплантационная нефрология.",
 
-  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.name": "Prof. Dr. Aydoğan Aydoğdu",
-  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.title": "Internist / Endocrinologist",
-  "people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.bio": "Internal medicine and endocrine disorders.",
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.title": "Терапевт / Эндокринолог",
+"people.doctors.medicana-ankara-internal-medicine-aydogan-aydogdu.bio": "Заболевания внутренних органов и эндокринные нарушения.",
 
-  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.name": "Prof. Dr. Eşref Umut Özyer",
-  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.title": "Interventional Radiologist",
-  "people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "Endovascular and oncologic interventions.",
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.title": "Интервенционный радиолог",
+"people.doctors.medicana-ankara-interventional-radiology-esref-umut-ozyer.bio": "Эндоваскулярные и онкологические вмешательства под контролем изображений.",
 
+"people.doctors.memorial-antalya-ivf-slot.title": "Руководитель центра ЭКО и репродуктивного здоровья",
+"people.doctors.memorial-antalya-ivf-slot.bio": "Руководит программой ЭКО в Memorial Antalya; специалист по репродуктивной эндокринологии, бесплодию, ЭКО/ИКСИ и преимплантационной диагностике.",
 
-  "people.doctors.memorial-antalya-ivf-slot.name": "Prof. Dr. Şafak Olgan",
-  "people.doctors.memorial-antalya-ivf-slot.title": "Head of IVF & Reproductive Health Center",
-  "people.doctors.memorial-antalya-ivf-slot.bio": "Leads the IVF program at Memorial Antalya; reproductive endocrinology & infertility specialist; performs IVF/ICSI and PGT.",
+"people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Основатель и руководитель нейрохирургии",
+"people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Возглавляет нейрохирургическое отделение NPİstanbul Brain Hospital; специализируется на хирургии основания черепа, сосудистой, опухолевой и спинальной нейрохирургии, а также функциональной и эпилептической хирургии.",
 
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.name": "Prof. Dr. Mustafa Bozbuğa",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.title": "Founding Head of Neurosurgery",
-  "people.doctors.np-istanbul-brain-neurosurgery-slot.bio": "Leads neurosurgery at NPİstanbul Brain Hospital; practice spans skull base, neurovascular, tumor and spine surgery; the department also covers functional/epilepsy surgery.",
-
-  "people.doctors.anadolu-gebze-oncology-slot.name": "Prof. Dr. Necdet Üskent",
-  "people.doctors.anadolu-gebze-oncology-slot.title": "Director of Medical Oncology",
-  "people.doctors.anadolu-gebze-oncology-slot.bio": "Heads Medical Oncology at Anadolu Medical Center (Gebze) and coordinates multidisciplinary cancer care in collaboration with Johns Hopkins Medicine.",
+"people.doctors.anadolu-gebze-oncology-slot.title": "Руководитель отделения онкологии",
+"people.doctors.anadolu-gebze-oncology-slot.bio": "Возглавляет отделение медицинской онкологии в Anadolu Medical Center (Гебзе); координирует мультидисциплинарное лечение рака в сотрудничестве с Johns Hopkins Medicine.",
   
   "people.doctors.anadolu-istanbul-oncology-yesim-yildirim.title": "Врач-онколог",
 "people.doctors.anadolu-istanbul-oncology-yesim-yildirim.bio": "Профессор медицинской онкологии в Anadolu Medical Center; многопрофильное лечение рака, системная терапия (рак молочной железы, лёгких, ЖКТ).",
