@@ -34,40 +34,6 @@
   { "id": "huqm-pellicer-neonatology", "name": "Dr. Adelina Pellicer Martínez", "deptId": "pediatrics", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["neonatology", "associate head", "NICU"] },
 
   { "id": "huqm-gosalvez-ivf", "name": "Dr. Antonio Gosálvez Vega", "deptId": "ivf", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["IVF", "assisted reproduction", "unit director"] },
-  { "id": "huqm-pastor-ivf", "name": "Dr. Paula Pastor Vargas", "deptId": "ivf", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["IVF", "obstetrics", "clinical care"] },
-  { "id": "hqb-vinolas-cardiology", "name": "Dr. Xavier Viñolas Prat", "deptId": "cardiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["cardiology", "head of service", "arrhythmias", "pacemakers"] },
-  { "id": "hqb-garcia-del-blanco-cardiology", "name": "Dr. Bruno García del Blanco", "deptId": "cardiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["interventional cardiology", "coronary intervention"] },
-
-  { "id": "hqb-tabernero-oncology", "name": "Prof. Josep Tabernero", "deptId": "oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["medical oncology", "IOB head", "GI cancers", "clinical research"] },
-  
-
-  { "id": "hqb-clavel-neurosurgery", "name": "Dr. Pablo Clavel", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "head of service", "spine surgery"] },
-  { "id": "hqb-català-neurosurgery", "name": "Dr. Ignasi Català", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "brain & spine"] },
-
-  { "id": "hqb-cugat-orthopedics", "name": "Dr. Ramon Cugat", "deptId": "orthopedics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["orthopedics", "head of service", "sports knee", "arthroscopy"] },
-  { "id": "hqb-nardi-orthopedics", "name": "Dr. Joan Nardi Vilardaga", "deptId": "orthopedics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["orthopedics", "co-head", "hip", "knee"] },
-
-  { "id": "hqb-azpiroz-gastro", "name": "Dr. Fernando Azpiroz", "deptId": "gastro", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["gastroenterology", "unit lead", "motility", "manometry"] },
-  { "id": "hqb-armengol-endoscopy", "name": "Dr. Jordi Armengol Bertroli", "deptId": "gastro", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["digestive endoscopy", "ERCP", "EGD"] },
-
-  { "id": "hqb-burgos-endocrinology", "name": "Dr. Rosa Burgos Peláez", "deptId": "endocrinology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["endocrinology", "head of service", "nutrition", "diabetes"] },
-  { "id": "hqb-pelayo-endocrinology", "name": "Dr. Manuel Jesús Pelayo", "deptId": "endocrinology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["endocrinology", "diabetes", "thyroid"] },
-
-  { "id": "hqb-delacy-general-surgery", "name": "Prof. Antonio de Lacy", "deptId": "general-surgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["general surgery", "GI surgery", "minimally invasive"] },
-  { "id": "hqb-balsells-general-surgery", "name": "Dr. Joaquim Balsells", "deptId": "general-surgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["general surgery", "colorectal", "abdominal wall"] },
-
-  { "id": "hqb-azpiroz-transplant", "name": "Dr. Fernando Azpiroz", "deptId": "transplant", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["hepatology", "post-transplant care", "GI motility"] },
-  { "id": "hqb-esteban-transplant", "name": "Dr. Rafael Esteban Mur", "deptId": "transplant", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["internal medicine", "hepatology", "transplant follow-up"] },
-
-  { "id": "hqb-romera-radiology", "name": "Dr. Nadine Romera", "deptId": "radiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["diagnostic imaging", "thoracic & abdominal", "oncologic imaging"] },
-  { "id": "hqb-guri-radiology", "name": "Dr. Xavier Gurí", "deptId": "radiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["diagnostic imaging", "MRI", "CT"] },
-
-  { "id": "hqb-puertas-radonc", "name": "Dr. Enrique Puertas Calvo", "deptId": "radiation-oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["radiation oncology", "head of service", "external beam"] },
-
-  { "id": "hqb-boix-pediatrics", "name": "Dr. Héctor Boix", "deptId": "pediatrics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pediatrics", "head of service", "neonatology"] },
-  { "id": "hqb-vives-pediatrics", "name": "Dr. Isabel Vives", "deptId": "pediatrics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pediatrics", "infectious diseases", "outpatient clinic"] },
-
-  { "id": "hqb-aurell-ivf", "name": "Dr. Ramón Aurell", "deptId": "ivf", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["IVF", "medical director", "assisted reproduction"] },
   { "id": "hqb-llado-neurology", "name": "Dr. Ana Lladó Carbo", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurology", "head of service", "neurodegenerative", "stroke"] },
   { "id": "hqb-garcia-pascual-neurology", "name": "Dr. Marta García Pascual", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurology", "epilepsy", "multiple sclerosis"] },
 
