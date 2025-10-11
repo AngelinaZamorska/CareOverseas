@@ -385,34 +385,68 @@
     }
   ],
   "departments": [
-    { "id": "hematology" },
-    { "id": "neurology" },
-    { "id": "neurophysiology" },
-    { "id": "psychiatry" },
-    { "id": "dermatology" },
-    { "id": "pulmonology" },
-    { "id": "ophthalmology" },
-    { "id": "nephrology" },
-    { "id": "urology" },
-    { "id": "nuclear-medicine" }
-  ],
-  "clinics": [
-    { "id": "quironsalud-madrid",    "cityId": "madrid" },
-    { "id": "quironsalud-barcelona", "cityId": "barcelona" },
-    { "id": "quironsalud-valencia",  "cityId": "valencia" },
-    { "id": "quironsalud-malaga",    "cityId": "malaga" },
-    { "id": "quironsalud-alicante",  "cityId": "alicante" },
+  { "id": "cardiology" },
+  { "id": "oncology" },
+  { "id": "hematology" },
+  { "id": "oncohematology" },
+  { "id": "neurosurgery" },
+  { "id": "neurology" },
+  { "id": "neurophysiology" },
+  { "id": "neuropsychology" },
+  { "id": "psychiatry" },
+  { "id": "pulmonology" },
+  { "id": "dermatology" },
+  { "id": "endocrinology" },
+  { "id": "gastro" },
+  { "id": "general-surgery" },
+  { "id": "surgery" },
+  { "id": "plastic-surgery" },
+  { "id": "thoracic-surgery" },
+  { "id": "orthopedics" },
+  { "id": "traumatology" },
+  { "id": "transplant" },
+  { "id": "urology" },
+  { "id": "nephrology" },
+  { "id": "ivf" },
+  { "id": "obstetrics" },
+  { "id": "pediatrics" },
+  { "id": "immunology" },
+  { "id": "allergology" },
+  { "id": "rheumatology" },
+  { "id": "rehabilitation" },
+  { "id": "radiology" },
+  { "id": "radiation-oncology" },
+  { "id": "nuclear-medicine" },
+  { "id": "internal-medicine" },
+  { "id": "ophthalmology" },
+  { "id": "otolaryngology" },
+  { "id": "dentistry" },
+  { "id": "aesthetic-medicine" },
+  { "id": "genetics" }
+],
 
-    { "id": "quironsalud-seville", "cityId": "seville" }
-    
-  ],
-  "cities": [
-    { "id": "madrid" },
-    { "id": "barcelona" },
-    { "id": "valencia" },
-    { "id": "malaga" },
-    { "id": "alicante" },
-    
-    { "id": "seville" }
-  ]
+"clinics": [
+  { "id": "quironsalud-madrid",    "cityId": "madrid" },
+  { "id": "quironsalud-barcelona", "cityId": "barcelona" },
+  { "id": "quironsalud-valencia",  "cityId": "valencia" },
+  { "id": "quironsalud-malaga",    "cityId": "malaga" },
+  { "id": "quironsalud-alicante",  "cityId": "alicante" },
+  { "id": "quironsalud-seville",   "cityId": "seville" },
+  { "id": "quironsalud-bilbao",    "cityId": "bilbao" },
+  { "id": "sant-joan-deu-barcelona", "cityId": "barcelona" },
+  { "id": "iob-institute-oncology-barcelona", "cityId": "barcelona" },
+  { "id": "quironsalud-valdemoro", "cityId": "madrid" },
+  { "id": "quironsalud-san-jose",  "cityId": "madrid" },
+  { "id": "quironsalud-olympia",   "cityId": "madrid" }
+],
+
+"cities": [
+  { "id": "madrid" },
+  { "id": "barcelona" },
+  { "id": "valencia" },
+  { "id": "malaga" },
+  { "id": "alicante" },
+  { "id": "seville" },
+  { "id": "bilbao" }
+]
 }
