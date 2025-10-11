@@ -543,5 +543,25 @@
 
 "people.doctors.seville-maria-gonzalez-endocrinology.name": "Dr María González",
 "people.doctors.seville-maria-gonzalez-endocrinology.title": "Endokrynolog — Quirónsalud Sewilla",
-"people.doctors.seville-maria-gonzalez-endocrinology.bio": "Specjalistka w zaburzeniach metabolicznych, tarczycy i przysadki mózgowej. Oferuje spersonalizowaną terapię żywieniową i hormonalną dla zdrowia endokrynnego."
+"people.doctors.seville-maria-gonzalez-endocrinology.bio": "Specjalistka w zaburzeniach metabolicznych, tarczycy i przysadki mózgowej. Oferuje spersonalizowaną terapię żywieniową i hormonalną dla zdrowia endokrynnego.",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.name": "Dr Alberto Del Valle Arévalo",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.title": "Chirurg ogólny i przewodu pokarmowego — Quirónsalud Sewilla",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.bio": "Specjalista chirurgii ogólnej i trawiennej w Quirónsalud Sewilla. Zajmuje się leczeniem chirurgicznym schorzeń jamy brzusznej, przepuklin oraz pęcherzyka żółciowego, stosując techniki małoinwazyjne.",
+
+"people.doctors.barcelona-garcia-del-blanco-cardiology.name": "Dr Bruno García del Blanco",
+"people.doctors.barcelona-garcia-del-blanco-cardiology.title": "Kardiolog interwencyjny — Quirónsalud Barcelona",
+"people.doctors.barcelona-garcia-del-blanco-cardiology.bio": "Ekspert w zakresie interwencji wieńcowych, angioplastyki i cewnikowania serca. Konsultant kardiolog w Quirónsalud Barcelona i szpitalu Vall d’Hebron, aktywnie zaangażowany w badania naukowe i dydaktykę.",
+
+"people.doctors.barcelona-puertas-radonc.name": "Dr Enrique Puertas Calvo",
+"people.doctors.barcelona-puertas-radonc.title": "Kierownik Oddziału Onkologii Radiacyjnej — Quirónsalud Barcelona",
+"people.doctors.barcelona-puertas-radonc.bio": "Kierownik oddziału onkologii radiacyjnej w Quirónsalud Barcelona. Specjalizuje się w radioterapii stereotaktycznej (SBRT), radiochirurgii mózgu i płuc oraz zaawansowanych technikach precyzyjnych w leczeniu nowotworów.",
+
+"people.doctors.barcelona-delacy-general-surgery.name": "Prof. Antonio de Lacy Fortuny",
+"people.doctors.barcelona-delacy-general-surgery.title": "Chirurg ogólny i gastroenterologiczny — Quirónsalud Barcelona",
+"people.doctors.barcelona-delacy-general-surgery.bio": "Światowej sławy pionier chirurgii małoinwazyjnej i robotycznej. Dyrektor Instytutu Chirurgii Lacy, specjalizuje się w chirurgii przewodu pokarmowego, kolorektalnej i bariatrycznej. Profesor Uniwersytetu Barcelońskiego i międzynarodowy innowator w dziedzinie chirurgii.",
+
+"people.doctors.barcelona-felip-oncology.name": "Dr Enriqueta Felip Font",
+"people.doctors.barcelona-felip-oncology.title": "Onkolog — Quirónsalud Barcelona / Vall d’Hebron",
+"people.doctors.barcelona-felip-oncology.bio": "Kierownik oddziału nowotworów klatki piersiowej oraz głowy i szyi w Vall d’Hebron i IOB-Baselga. Ekspert w leczeniu raka płuc, terapii celowanej, immunoterapii i badaniach klinicznych. Prezes SEOM, laureatka nagrody „Women for Oncology”."
+
 }

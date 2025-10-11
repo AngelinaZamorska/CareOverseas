@@ -39,7 +39,7 @@
   { "id": "hqb-garcia-del-blanco-cardiology", "name": "Dr. Bruno García del Blanco", "deptId": "cardiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["interventional cardiology", "coronary intervention"] },
 
   { "id": "hqb-tabernero-oncology", "name": "Prof. Josep Tabernero", "deptId": "oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["medical oncology", "IOB head", "GI cancers", "clinical research"] },
-  { "id": "hqb-felip-oncology", "name": "Dr. Enriqueta Felip", "deptId": "oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["medical oncology", "lung cancer", "thoracic tumors"] },
+  
 
   { "id": "hqb-clavel-neurosurgery", "name": "Dr. Pablo Clavel", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "head of service", "spine surgery"] },
   { "id": "hqb-català-neurosurgery", "name": "Dr. Ignasi Català", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "brain & spine"] },

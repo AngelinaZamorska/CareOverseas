@@ -543,5 +543,25 @@
 
 "people.doctors.seville-maria-gonzalez-endocrinology.name": "الدكتورة ماريا غونثاليث",
 "people.doctors.seville-maria-gonzalez-endocrinology.title": "اختصاصية الغدد الصماء — كيرونسالود إشبيلية",
-"people.doctors.seville-maria-gonzalez-endocrinology.bio": "متخصصة في اضطرابات الأيض والغدة الدرقية والغدة النخامية. تقدم علاجًا شخصيًا بالتغذية والهرمونات لصحة الغدد الصماء."
+"people.doctors.seville-maria-gonzalez-endocrinology.bio": "متخصصة في اضطرابات الأيض والغدة الدرقية والغدة النخامية. تقدم علاجًا شخصيًا بالتغذية والهرمونات لصحة الغدد الصماء.",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.name": "الدكتور ألبرتو ديل فالي أريفالو",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.title": "جرّاح عام وجهاز هضمي — كيرونسالود إشبيلية",
+"people.doctors.seville-alberto-del-valle-arévalo-general-surgery.bio": "متخصص في الجراحة العامة وجراحة الجهاز الهضمي في كيرونسالود إشبيلية. يقدم علاجًا جراحيًا لأمراض البطن والفتق والمرارة باستخدام التقنيات طفيفة التوغل.",
+
+"people.doctors.barcelona-garcia-del-blanco-cardiology.name": "الدكتور برونو غارسيا ديل بلانكو",
+"people.doctors.barcelona-garcia-del-blanco-cardiology.title": "أخصائي أمراض القلب التداخلية — كيرونسالود برشلونة",
+"people.doctors.barcelona-garcia-del-blanco-cardiology.bio": "خبير في التدخلات التاجية ورأب الأوعية الدموية وقسطرة القلب. يعمل كاستشاري في مستشفى كيرونسالود برشلونة ومستشفى فال دي هبرون، وله نشاط أكاديمي وبحثي واسع.",
+
+"people.doctors.barcelona-puertas-radonc.name": "الدكتور إنريكي بويرتاس كالفو",
+"people.doctors.barcelona-puertas-radonc.title": "رئيس قسم علاج الأورام الإشعاعي — كيرونسالود برشلونة",
+"people.doctors.barcelona-puertas-radonc.bio": "رئيس قسم علاج الأورام الإشعاعي في كيرونسالود برشلونة. متخصص في العلاج الإشعاعي التجسيمي (SBRT) والجراحة الإشعاعية لأورام الدماغ والرئة، ويستخدم أحدث تقنيات العلاج الدقيق للأورام.",
+
+"people.doctors.barcelona-delacy-general-surgery.name": "البروفيسور أنطونيو دي لاكي فورتوني",
+"people.doctors.barcelona-delacy-general-surgery.title": "جرّاح عام وجهاز هضمي — كيرونسالود برشلونة",
+"people.doctors.barcelona-delacy-general-surgery.bio": "رائد عالمي في الجراحة طفيفة التوغل والجراحة الروبوتية. مدير معهد لاكي للجراحة، متخصص في جراحة الجهاز الهضمي والقولون والمعدة. أستاذ في جامعة برشلونة ومبتكر دولي في مجال الجراحة.",
+
+"people.doctors.barcelona-felip-oncology.name": "الدكتورة إنريكيتا فيليب فونت",
+"people.doctors.barcelona-felip-oncology.title": "طبيبة أورام — كيرونسالود برشلونة / فال دي هبرون",
+"people.doctors.barcelona-felip-oncology.bio": "رئيسة وحدة أورام الصدر والرأس والعنق في مستشفى فال دي هبرون ومعهد IOB-Baselga. خبيرة في سرطان الرئة والعلاجات الموجهة والمناعية والتجارب السريرية. رئيسة الجمعية الإسبانية لطب الأورام (SEOM) وحاصلة على جائزة 'النساء في علم الأورام'."
+
 }
