@@ -34,49 +34,515 @@
   "country.spain.pitch.badge3": "Помощь с документами",
   "country.spain.pitch.cta": "Связаться с координатором",
 
-  "dict.city.madrid.name": "Мадрид",
+    "dict.city.madrid.name": "Мадрид",
   "dict.city.barcelona.name": "Барселона",
   "dict.city.valencia.name": "Валенсия",
   "dict.city.malaga.name": "Малага",
   "dict.city.alicante.name": "Аликанте",
+  "dict.city.seville.name": "Севилья",
+  "dict.city.bilbao.name": "Бильбао",
 
-  "dict.clinic.quironsalud-madrid.name": "Quirónsalud Madrid",
-  "dict.clinic.quironsalud-barcelona.name": "Quirónsalud Barcelona",
-  "dict.clinic.quironsalud-valencia.name": "Quirónsalud Valencia",
-  "dict.clinic.quironsalud-malaga.name": "Quirónsalud Málaga",
-  "dict.clinic.quironsalud-alicante.name": "Quirónsalud Alicante",
-  "dict.clinic.sant-joan-deu-barcelona.name": "Sant Joan de Déu Barcelona",
+  "dict.clinic.quironsalud-madrid.name": "Киронсалюд Мадрид",
+  "dict.clinic.quironsalud-barcelona.name": "Киронсалюд Барселона",
+  "dict.clinic.quironsalud-valencia.name": "Киронсалюд Валенсия",
+  "dict.clinic.quironsalud-malaga.name": "Киронсалюд Малага",
+  "dict.clinic.quironsalud-alicante.name": "Киронсалюд Аликанте",
+  "dict.clinic.quironsalud-seville.name": "Киронсалюд Севилья",
+  "dict.clinic.quironsalud-bilbao.name": "Киронсалюд Бильбао",
+  "dict.clinic.sant-joan-deu-barcelona.name": "Сант Жоан де Деу Барселона",
+  "dict.clinic.iob-institute-oncology-barcelona.name": "Институт онкологии IOB Барселона",
+  "dict.clinic.quironsalud-valdemoro.name": "Киронсалюд Вальдеморо",
+  "dict.clinic.quironsalud-san-jose.name": "Киронсалюд Сан-Хосе",
+  "dict.clinic.quironsalud-olympia.name": "Медицинский центр Олимпия Мадрид",
 
   "dict.dept.cardiology.name": "Кардиология",
   "dict.dept.oncology.name": "Онкология",
+  "dict.dept.hematology.name": "Гематология",
+  "dict.dept.oncohematology.name": "Онкогематология",
   "dict.dept.neurosurgery.name": "Нейрохирургия",
-  "dict.dept.ivf.name": "ЭКО и репродуктивная медицина",
-  "dict.dept.orthopedics.name": "Ортопедия",
-  "dict.dept.gastro.name": "Гастроэнтерология",
+  "dict.dept.neurology.name": "Неврология",
+  "dict.dept.neurophysiology.name": "Нейрофизиология",
+  "dict.dept.neuropsychology.name": "Нейропсихология",
+  "dict.dept.psychiatry.name": "Психиатрия",
+  "dict.dept.pulmonology.name": "Пульмонология",
+  "dict.dept.dermatology.name": "Дерматология",
   "dict.dept.endocrinology.name": "Эндокринология",
+  "dict.dept.gastro.name": "Гастроэнтерология",
   "dict.dept.general-surgery.name": "Общая хирургия",
+  "dict.dept.surgery.name": "Хирургия",
+  "dict.dept.plastic-surgery.name": "Пластическая хирургия",
+  "dict.dept.thoracic-surgery.name": "Торакальная хирургия",
+  "dict.dept.orthopedics.name": "Ортопедия",
+  "dict.dept.traumatology.name": "Травматология",
   "dict.dept.transplant.name": "Трансплантология",
+  "dict.dept.urology.name": "Урология",
+  "dict.dept.nephrology.name": "Нефрология",
+  "dict.dept.ivf.name": "ЭКО и репродуктивная медицина",
+  "dict.dept.obstetrics.name": "Акушерство",
+  "dict.dept.pediatrics.name": "Педиатрия",
+  "dict.dept.immunology.name": "Иммунология",
+  "dict.dept.allergology.name": "Аллергология",
+  "dict.dept.rheumatology.name": "Ревматология",
+  "dict.dept.rehabilitation.name": "Реабилитация",
   "dict.dept.radiology.name": "Радиология",
   "dict.dept.radiation-oncology.name": "Лучевая онкология",
-  "dict.dept.pediatrics.name": "Педиатрия",
+  "dict.dept.nuclear-medicine.name": "Ядерная медицина",
+  "dict.dept.internal-medicine.name": "Внутренние болезни",
+  "dict.dept.ophthalmology.name": "Офтальмология",
+  "dict.dept.otolaryngology.name": "Отоларингология (ЛОР)",
+  "dict.dept.dentistry.name": "Стоматология",
+  "dict.dept.aesthetic-medicine.name": "Эстетическая медицина",
+  "dict.dept.genetics.name": "Генетика",
 
-  "people.doctors.quironsalud-madrid-cardiology-slot.name": "Имя будет добавлено — Quirónsalud, кардиология (Мадрид)",
-  "people.doctors.quironsalud-madrid-cardiology-slot.title": "Пример: заведующий кардиологией",
-  "people.doctors.quironsalud-madrid-cardiology-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
 
-  "people.doctors.quironsalud-barcelona-oncology-slot.name": "Имя будет добавлено — Quirónsalud, онкология (Барселона)",
-  "people.doctors.quironsalud-barcelona-oncology-slot.title": "Пример: директор по онкологии",
-  "people.doctors.quironsalud-barcelona-oncology-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+  "people.doctors.huqm-cabrera-cardiology.name": "Доктор Хосе Анхель Кабрера Родригес",
+"people.doctors.huqm-cabrera-cardiology.title": "Руководитель кардиологии — Университетская больница Киронсалюд Мадрид",
+"people.doctors.huqm-cabrera-cardiology.bio": "Известный электрофизиолог, специализируется на абляции фибрилляции предсердий. Руководит кардиологическими отделениями в Киронсалюд Мадрид, Рубер Хуан Браво и Olympia Medical Center.",
 
-  "people.doctors.quironsalud-valencia-orthopedics-slot.name": "Имя будет добавлено — Quirónsalud, ортопедия (Валенсия)",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.title": "Пример: главный врач ортопедии",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.huqm-datino-cardiology.name": "Доктор Томас Датино Романиега",
+"people.doctors.huqm-datino-cardiology.title": "Кардиолог — Отдел аритмий, Киронсалюд Мадрид",
+"people.doctors.huqm-datino-cardiology.bio": "Специалист по кардиологической электрофизиологии и катетерной абляции сложных аритмий, с акцентом на малоинвазивную коррекцию ритма.",
 
-  "people.doctors.quironsalud-malaga-ivf-slot.name": "Имя будет добавлено — Quirónsalud, ЭКО (Малага)",
-  "people.doctors.quironsalud-malaga-ivf-slot.title": "Пример: руководитель программы ЭКО",
-  "people.doctors.quironsalud-malaga-ivf-slot.bio": "Заглушка. Замените на краткое резюме на русском.",
+"people.doctors.huqm-gonzalez-cortijo-oncology.name": "Доктор Лусия Гонсалес Кортихо",
+"people.doctors.huqm-gonzalez-cortijo-oncology.title": "Руководитель отделения онкологии — Университетская больница Киронсалюд Мадрид",
+"people.doctors.huqm-gonzalez-cortijo-oncology.bio": "Возглавляет мультидисциплинарное онкологическое отделение. Эксперт по раку груди, клиническим исследованиям и персонализированным протоколам лечения.",
 
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.name": "Имя будет добавлено — Sant Joan de Déu, педиатрия (Барселона)",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.title": "Пример: заведующий педиатрией",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.bio": "Заглушка. Замените на краткое резюме на русском."
+"people.doctors.huqm-boni-oncology.name": "Доктор Валентина Бони",
+"people.doctors.huqm-boni-oncology.title": "Онколог — Отдел клинических испытаний I фазы, Киронсалюд Мадрид",
+"people.doctors.huqm-boni-oncology.bio": "Специалист по ранним фазам разработки противораковых препаратов и первым испытаниям на людях. Фокусируется на таргетной и иммунотерапии.",
+
+"people.doctors.huqm-gil-robles-neurosurgery.name": "Доктор Сантьяго Гиль-Роблес",
+"people.doctors.huqm-gil-robles-neurosurgery.title": "Руководитель нейрохирургии — Университетская больница Киронсалюд Мадрид",
+"people.doctors.huqm-gil-robles-neurosurgery.bio": "Международно признанный нейрохирург, специалист по операциям при опухолях мозга. Пионер интраоперационного картирования мозга и операций на бодрствующем пациенте.",
+
+"people.doctors.huqm-ley-neurosurgery.name": "Доктор Луис Лей Урсаис",
+"people.doctors.huqm-ley-neurosurgery.title": "Консультант-нейрохирург — Киронсалюд Мадрид",
+"people.doctors.huqm-ley-neurosurgery.bio": "Проводит сложные операции на мозге и позвоночнике. Опытен в малоинвазивных методах и лечении нейротравм.",
+
+"people.doctors.huqm-tabuenca-ortho.name": "Доктор Хосе Табуэнка Дюмортье",
+"people.doctors.huqm-tabuenca-ortho.title": "Руководитель ортопедии и травматологии — Киронсалюд Мадрид",
+"people.doctors.huqm-tabuenca-ortho.bio": "Руководит отделением ортопедии и травматологии, специализируется на хирургии бедра, колена, плеча, кисти, стопы и голеностопа.",
+
+"people.doctors.huqm-trigo-ortho.name": "Доктор Луис Триго Лахос",
+"people.doctors.huqm-trigo-ortho.title": "Ортопед — Отдел плеча и локтя, Киронсалюд Мадрид",
+"people.doctors.huqm-trigo-ortho.bio": "Эксперт по артроскопической и реконструктивной хирургии плеча и локтя. Специализируется на спортивных травмах и восстановлении суставов.",
+"people.doctors.huqm-juzgado-gastro.name": "Доктор Диего Хусгадо де Лукас",
+"people.doctors.huqm-juzgado-gastro.title": "Руководитель гастроэнтерологии и эндоскопии — Университетская больница Киронсалюд Мадрид",
+"people.doctors.huqm-juzgado-gastro.bio": "Возглавляет отдел гастроэнтерологии и эндоскопии. Эксперт в области продвинутой эндоскопии, диагностики FibroScan и лечения заболеваний печени.",
+
+"people.doctors.huqm-vazquez-sequeiros-gastro.name": "Доктор Энрике Васкес Секейрос",
+"people.doctors.huqm-vazquez-sequeiros-gastro.title": "Заместитель руководителя гастроэнтерологии — Киронсалюд Мадрид",
+"people.doctors.huqm-vazquez-sequeiros-gastro.bio": "Специалист по терапевтической эндоскопии и сложным билиопанкреатическим вмешательствам. Выполняет ЭРХПГ, ЭУС и интервенционные процедуры.",
+
+"people.doctors.huqm-jodar-endo.name": "Доктор Эстебан Ходар Химено",
+"people.doctors.huqm-jodar-endo.title": "Руководитель эндокринологии, диабета и питания — Киронсалюд Мадрид",
+"people.doctors.huqm-jodar-endo.bio": "Возглавляет отдел эндокринологии. Эксперт в области диабета, ожирения и заболеваний щитовидной железы. Разрабатывает образовательные и метаболические программы для пациентов.",
+
+"people.doctors.huqm-perez-arroyo-endo.name": "Доктор Мария Беатрис Перес Арройо",
+"people.doctors.huqm-perez-arroyo-endo.title": "Заместитель руководителя эндокринологии — Киронсалюд Мадрид",
+"people.doctors.huqm-perez-arroyo-endo.bio": "Специализируется на лечении диабета, нутритивной терапии и обучении пациентов. Работает в составе мультидисциплинарных эндокринологических команд.",
+
+"people.doctors.huqm-merello-gs.name": "Доктор Хесус Мерельо Годино",
+"people.doctors.huqm-merello-gs.title": "Руководитель общей хирургии — Киронсалюд Мадрид",
+"people.doctors.huqm-merello-gs.bio": "Возглавляет отдел общей хирургии. Специалист по гастроинтестинальной, лапароскопической и сложной абдоминальной хирургии.",
+
+"people.doctors.huqm-fernandez-luengas-gs.name": "Доктор Давид Фернандес Луэнгас",
+"people.doctors.huqm-fernandez-luengas-gs.title": "Хирург по общей и бариатрической хирургии — Киронсалюд Мадрид",
+"people.doctors.huqm-fernandez-luengas-gs.bio": "Проводит продвинутые лапароскопические и бариатрические операции. Специализируется на малоинвазивном лечении заболеваний пищеварительной системы и ожирения.",
+
+"people.doctors.huqm-delgado-neph-transplant.name": "Доктор Рамон Дельгадо Лильо",
+"people.doctors.huqm-delgado-neph-transplant.title": "Руководитель нефрологии — Киронсалюд Мадрид",
+"people.doctors.huqm-delgado-neph-transplant.bio": "Возглавляет отдел нефрологии. Эксперт в области заместительной почечной терапии, трансплантации почек и лечения хронических заболеваний почек.",
+
+"people.doctors.huqm-praga-neph-transplant.name": "Доктор Мануэль Прага Тэренте",
+"people.doctors.huqm-praga-neph-transplant.title": "Консультант-нефролог — Киронсалюд Мадрид",
+"people.doctors.huqm-praga-neph-transplant.bio": "Специалист по хроническим заболеваниям почек, гломерулопатиям и долгосрочному наблюдению после трансплантации. Руководит программами расширенного почечного мониторинга.",
+"people.doctors.huqm-martinez-vega-radiology.name": "Доктор Висенте Мартинес де Вега",
+"people.doctors.huqm-martinez-vega-radiology.title": "Руководитель отделения диагностической визуализации — Университетская больница Киронсалюд Мадрид",
+"people.doctors.huqm-martinez-vega-radiology.bio": "Возглавляет отдел диагностической визуализации. Эксперт в области МРТ, КТ и комплексной диагностики под контролем изображений для сложных случаев.",
+
+"people.doctors.huqm-casasco-vir.name": "Доктор Альфредо Касаско",
+"people.doctors.huqm-casasco-vir.title": "Интервенционный радиолог — Киронсалюд Мадрид",
+"people.doctors.huqm-casasco-vir.bio": "Проводит эндоваскулярные и эмболизационные процедуры. Специалист по малоинвазивным вмешательствам под контролем визуализации.",
+
+"people.doctors.huqm-del-cerro-radonco.name": "Доктор Элия дель Серро Пеньяльвер",
+"people.doctors.huqm-del-cerro-radonco.title": "Руководитель радиационной онкологии — Киронсалюд Мадрид",
+"people.doctors.huqm-del-cerro-radonco.bio": "Эксперт в области дистанционной лучевой терапии и брахитерапии. Руководит программами лечения с использованием линейного ускорителя TrueBeam.",
+
+"people.doctors.huqm-diaz-gavela-radonco.name": "Доктор Ана Аурора Диас Гавела",
+"people.doctors.huqm-diaz-gavela-radonco.title": "Заместитель руководителя радиационной онкологии — Киронсалюд Мадрид",
+"people.doctors.huqm-diaz-gavela-radonco.bio": "Специалист по точным методам лучевой терапии, обеспечивающим целевую доставку дозы с сохранением здоровых тканей.",
+
+"people.doctors.huqm-cabanas-pediatrics.name": "Доктор Фернандо Кабаньяс Гонсалес",
+"people.doctors.huqm-cabanas-pediatrics.title": "Руководитель педиатрии — Киронсалюд Мадрид",
+"people.doctors.huqm-cabanas-pediatrics.bio": "Возглавляет отделения педиатрии и неонатологии. Эксперт в неонатальной интенсивной терапии, перинатальной диагностике и неотложной педиатрии.",
+
+"people.doctors.huqm-pellicer-neonatology.name": "Доктор Аделина Пельисер Мартинес",
+"people.doctors.huqm-pellicer-neonatology.title": "Заместитель руководителя неонатологии — Киронсалюд Мадрид",
+"people.doctors.huqm-pellicer-neonatology.bio": "Координирует работу отделения интенсивной терапии новорождённых. Специалист по уходу за недоношенными детьми и неонатальной патологии.",
+
+"people.doctors.huqm-gosalvez-ivf.name": "Доктор Антонио Госальвес Вега",
+"people.doctors.huqm-gosalvez-ivf.title": "Директор отделения вспомогательных репродуктивных технологий — Киронсалюд Мадрид",
+"people.doctors.huqm-gosalvez-ivf.bio": "Руководит программами ЭКО в Киронсалюд Мадрид и Сан-Хосе. Гинеколог, специализирующийся на репродуктивной медицине, фертильности и донорстве яйцеклеток.",
+
+"people.doctors.hqv-merenciano-cardiology.name": "Доктор Эктор Мануэль Меренсиано Гонсалес",
+"people.doctors.hqv-merenciano-cardiology.title": "Кардиолог — Киронсалюд Валенсия",
+"people.doctors.hqv-merenciano-cardiology.bio": "Специалист по клинической кардиологии, эхокардиографии и лечению сердечной недостаточности. Обеспечивает комплексное кардиологическое наблюдение.",
+
+"people.doctors.hqv-ferrero-arrhythmia.name": "Доктор Анхель Ферреро де Лома Осорио",
+"people.doctors.hqv-ferrero-arrhythmia.title": "Электрофизиолог — Отдел аритмий и кардиостимуляторов, Киронсалюд Валенсия",
+"people.doctors.hqv-ferrero-arrhythmia.bio": "Эксперт по диагностике и лечению нарушений сердечного ритма. Выполняет абляции и имплантацию устройств, включая кардиостимуляторы и дефибрилляторы.",
+
+"people.doctors.hqv-sempere-gastro.name": "Доктор Хавьер Семпере Гарсия-Аргуэльес",
+"people.doctors.hqv-sempere-gastro.title": "Гастроэнтеролог — Отдел заболеваний пищеварительной системы, Киронсалюд Валенсия",
+"people.doctors.hqv-sempere-gastro.bio": "Специалист по эндоскопии ЖКТ, кишечной патологии и хроническим заболеваниям пищеварительной системы. Проводит продвинутую эндоскопическую диагностику.",
+"people.doctors.hqv-sanchiz-gastro.name": "Доктор Висенте Санчис Солер",
+"people.doctors.hqv-sanchiz-gastro.title": "Гастроэнтеролог — Киронсалюд Валенсия",
+"people.doctors.hqv-sanchiz-gastro.bio": "Специалист по гепатологии и заболеваниям пищеварительной системы. Оказывает продвинутую эндоскопическую помощь и проводит диагностику заболеваний печени.",
+
+"people.doctors.hqv-flor-gs.name": "Доктор Блас Флор Лоренте",
+"people.doctors.hqv-flor-gs.title": "Хирург по общей и гастроинтестинальной хирургии — Киронсалюд Валенсия",
+"people.doctors.hqv-flor-gs.bio": "Проводит операции на желудочно-кишечном тракте и органах брюшной полости с использованием малоинвазивных и лапароскопических методик.",
+
+"people.doctors.hqv-paya-gs.name": "Доктор Кармен Пайя Льоренте",
+"people.doctors.hqv-paya-gs.title": "Хирург общего профиля — Киронсалюд Валенсия",
+"people.doctors.hqv-paya-gs.bio": "Специалист по абдоминальной и пищеварительной хирургии с опытом выполнения продвинутых лапароскопических процедур.",
+
+"people.doctors.hqv-marti-radiology.name": "Доктор Луис Марти-Бонмати",
+"people.doctors.hqv-marti-radiology.title": "Руководитель радиологии — Киронсалюд Валенсия",
+"people.doctors.hqv-marti-radiology.bio": "Возглавляет отдел радиологии. Международно признанный эксперт в области МРТ, КТ и визуально-направляемой диагностики и исследований.",
+
+"people.doctors.hqm-agustin-cataldo-cardiology.name": "Доктор Агустин Кальдальдо",
+"people.doctors.hqm-agustin-cataldo-cardiology.title": "Кардиолог — Киронсалюд Малага",
+"people.doctors.hqm-agustin-cataldo-cardiology.bio": "Специалист по клинической кардиологии и неинвазивной диагностике сердца. Предоставляет ориентированную на пациента кардиологическую помощь.",
+
+"people.doctors.hqm-alberto-barrera-cardiology.name": "Доктор Альберто Баррера Кордеро",
+"people.doctors.hqm-alberto-barrera-cardiology.title": "Кардиолог — Киронсалюд Малага",
+"people.doctors.hqm-alberto-barrera-cardiology.bio": "Эксперт в эхокардиографии и клиническом ведении сердечно-сосудистых заболеваний. Специализируется на ранней диагностике и профилактической кардиологии.",
+
+"people.doctors.hqm-jose-antonio-trujillo-gs.name": "Доктор Хосе Антонио Трухильо Руис",
+"people.doctors.hqm-jose-antonio-trujillo-gs.title": "Хирург по общей и пищеварительной хирургии — Киронсалюд Малага",
+"people.doctors.hqm-jose-antonio-trujillo-gs.bio": "Специалист по общей и абдоминальной хирургии с акцентом на малоинвазивные методы. Также входит в руководство клиники.",
+
+"people.doctors.hqm-cesar-ramirez-gs.name": "Доктор Сесар Пабло Рамирес Пласа",
+"people.doctors.hqm-cesar-ramirez-gs.title": "Онкологический и общий хирург — Киронсалюд Малага",
+"people.doctors.hqm-cesar-ramirez-gs.bio": "Проводит онкологические операции на ободочной и прямой кишке, а также щитовидной железе. Авторитетный член хирургического отдела Киронсалюд Малага.",
+"people.doctors.hqm-alba-castano-radiology.name": "Доктор Альба Мария Кастаньо Рамирес",
+"people.doctors.hqm-alba-castano-radiology.title": "Радиолог — Диагностическая визуализация, Киронсалюд Малага",
+"people.doctors.hqm-alba-castano-radiology.bio": "Специалист по диагностической радиологии, эксперт в онкологической визуализации и интерпретации МРТ.",
+
+"people.doctors.hqm-alba-merchan-radiology.name": "Доктор Альба Мерчан Паэс",
+"people.doctors.hqm-alba-merchan-radiology.title": "Радиолог — Киронсалюд Малага",
+"people.doctors.hqm-alba-merchan-radiology.bio": "Эксперт по магнитно-резонансной томографии (МРТ) и компьютерной томографии (КТ). Предоставляет комплексные услуги диагностической визуализации.",
+
+"people.doctors.hqm-beatriz-medina-endocrinology.name": "Доктор Беатрис Медина Оливарес",
+"people.doctors.hqm-beatriz-medina-endocrinology.title": "Эндокринолог — Киронсалюд Малага",
+"people.doctors.hqm-beatriz-medina-endocrinology.bio": "Специалист в области эндокринологии и клинического питания. Занимается диабетом, заболеваниями щитовидной железы и метаболическим здоровьем.",
+
+"people.doctors.hqm-carmen-hardy-endocrinology.name": "Доктор Кармен Мария Харди Аньон",
+"people.doctors.hqm-carmen-hardy-endocrinology.title": "Эндокринолог — Киронсалюд Малага",
+"people.doctors.hqm-carmen-hardy-endocrinology.bio": "Эксперт по метаболизму и сложным эндокринным расстройствам. Предоставляет персонализированную гормональную и нутритивную терапию в Малаге.",
+
+"people.doctors.hqm-juan-luis-alcazar-ivf.name": "Доктор Хуан Луис Алькасар",
+"people.doctors.hqm-juan-luis-alcazar-ivf.title": "Гинеколог и специалист по ЭКО — Киронсалюд Малага",
+"people.doctors.hqm-juan-luis-alcazar-ivf.bio": "Руководит программами вспомогательной репродукции и лечения бесплодия. Имеет опыт в ЭКО, ИКСИ и передовых репродуктивных методиках.",
+
+"people.doctors.hqm-luis-alonso-pacheco-ivf.name": "Доктор Луис Альонсо Пачеко",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.title": "Специалист по ЭКО — Отдел репродуктивной медицины, Киронсалюд Малага",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.bio": "Проводит процедуры экстракорпорального оплодотворения и лечения фертильности. Сосредоточен на индивидуальном подходе и поддержке пациентов.",
+
+"people.doctors.qa-pascual-cardiology.name": "Доктор Алехандро Паскуаль Гутьеррес",
+"people.doctors.qa-pascual-cardiology.title": "Кардиолог — Киронсалюд Аликанте",
+"people.doctors.qa-pascual-cardiology.bio": "Член мультидисциплинарной кардиологической команды Киронсалюд Аликанте. Занимается диагностикой и лечением сердечно-сосудистых заболеваний.",
+
+"people.doctors.qa-hortelano-cardiology.name": "Доктор Игнасио Ортелано Мойя",
+"people.doctors.qa-hortelano-cardiology.title": "Кардиолог — Киронсалюд Аликанте",
+"people.doctors.qa-hortelano-cardiology.bio": "Специалист по сердечно-сосудистым заболеваниям и профилактической диагностике. Занимается лечением аритмий, гипертонии и контролем здоровья сердца.",
+"people.doctors.qa-inigo-gastro.name": "Доктор Альмудена Иньиго Чавес",
+"people.doctors.qa-inigo-gastro.title": "Гастроэнтеролог — Киронсалюд Аликанте",
+"people.doctors.qa-inigo-gastro.bio": "Специалист по заболеваниям пищеварительной системы и эндоскопическим процедурам. Обеспечивает комплексное гастроэнтерологическое лечение.",
+
+"people.doctors.qa-pascualmora-gastro.name": "Доктор Анхель Агустин Паскуаль Мора",
+"people.doctors.qa-pascualmora-gastro.title": "Гастроэнтеролог — Отдел заболеваний пищеварительной системы, Киронсалюд Аликанте",
+"people.doctors.qa-pascualmora-gastro.bio": "Эксперт по заболеваниям желудочно-кишечного тракта и эндоскопическим методам лечения. Предлагает персонализированное ведение пациентов с заболеваниями ЖКТ.",
+
+"people.doctors.qa-roscomesana-gs.name": "Доктор Алехандро Рос Комесанья",
+"people.doctors.qa-roscomesana-gs.title": "Хирург по общей и абдоминальной хирургии — Киронсалюд Аликанте",
+"people.doctors.qa-roscomesana-gs.bio": "Проводит общие и пищеварительные хирургические операции с использованием малоинвазивных абдоминальных методик.",
+
+"people.doctors.qa-farre-onco.name": "Доктор Хосе Фарре Алегре",
+"people.doctors.qa-farre-onco.title": "Онкологический хирург — Киронсалюд Аликанте",
+"people.doctors.qa-farre-onco.bio": "Специалист по онкологической хирургии, применяющий мультидисциплинарный подход к лечению опухолей и послеоперационному уходу.",
+
+"people.doctors.qa-maehr-ortho.name": "Доктор Альбан Мер",
+"people.doctors.qa-maehr-ortho.title": "Ортопедический хирург — Киронсалюд Аликанте",
+"people.doctors.qa-maehr-ortho.bio": "Специалист по травматологии и ортопедической хирургии. Сосредоточен на лечении опорно-двигательных травм и реконструкции суставов.",
+
+"people.doctors.qa-salvador-ortho.name": "Доктор Хорхе Сальвадор Марин",
+"people.doctors.qa-salvador-ortho.title": "Ортопед и травматолог — Киронсалюд Аликанте",
+"people.doctors.qa-salvador-ortho.bio": "Эксперт по ортопедической хирургии и реабилитации. Проводит операции при переломах, спортивных травмах и заболеваниях суставов.",
+
+"people.doctors.qa-hernandez-radiology.name": "Доктор Кармен Бланка Эрнандес Састре",
+"people.doctors.qa-hernandez-radiology.title": "Руководитель диагностической визуализации — Киронсалюд Аликанте",
+"people.doctors.qa-hernandez-radiology.bio": "Возглавляет отдел диагностической визуализации. Эксперт по радиодиагностике, МРТ, КТ и цифровым технологиям визуализации.",
+
+"people.doctors.qa-pla-radiology.name": "Доктор Фернандо Пла Мингоренсе",
+"people.doctors.qa-pla-radiology.title": "Радиолог — Киронсалюд Аликанте",
+"people.doctors.qa-pla-radiology.bio": "Специалист по магнитно-резонансной томографии и современным методам визуализации для точной диагностики.",
+"people.doctors.qa-maestre-neuro.name": "Доктор Хосе Хоакин Маэстре Хиль",
+"people.doctors.qa-maestre-neuro.title": "Нейрохирург — Киронсалюд Аликанте",
+"people.doctors.qa-maestre-neuro.bio": "Член отделения нейронаук, специализируется на операциях на головном и спинном мозге. Использует малоинвазивные нейрохирургические техники.",
+
+"people.doctors.qa-puell-neuro.name": "Доктор Карлос Исраэль Пуэль Орта",
+"people.doctors.qa-puell-neuro.title": "Нейрохирург — Киронсалюд Аликанте",
+"people.doctors.qa-puell-neuro.bio": "Эксперт по нейрохирургии и заболеваниям центральной нервной системы. Проводит хирургическое лечение патологий мозга и позвоночника.",
+
+"people.doctors.qa-mendoza-endocrinology.name": "Доктор Алехандро Оскар Мендоса",
+"people.doctors.qa-mendoza-endocrinology.title": "Эндокринолог — Киронсалюд Аликанте",
+"people.doctors.qa-mendoza-endocrinology.bio": "Специалист в области эндокринологии и питания. Проводит диагностику и лечение гормональных и метаболических нарушений.",
+
+"people.doctors.qa-cid-endocrinology.name": "Доктор Хорхе Сид Перес",
+"people.doctors.qa-cid-endocrinology.title": "Эндокринолог — Киронсалюд Аликанте",
+"people.doctors.qa-cid-endocrinology.bio": "Специалист по диабету, ожирению и метаболическим заболеваниям. Предлагает профилактическое и терапевтическое лечение эндокринных расстройств.",
+
+"people.doctors.sjd-mora-oncology.name": "Доктор Жауме Мора Граупера",
+"people.doctors.sjd-mora-oncology.title": "Детский онколог — Госпиталь Сант Жоан де Деу Барселона",
+"people.doctors.sjd-mora-oncology.bio": "Директор отделения детской онкологии. Исследователь в области опухолей у детей и прецизионных методов лечения редких форм рака.",
+
+"people.doctors.sjd-rives-hematology.name": "Доктор Сусана Ривес Сола",
+"people.doctors.sjd-rives-hematology.title": "Детский гематолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-rives-hematology.bio": "Специалист по детским гематологическим заболеваниям и иммунным дефицитам. Руководит инновационными программами терапии лейкемии у детей.",
+
+"people.doctors.sjd-hinojosa-neurosurgery.name": "Доктор Хосе Инохоса Мена-Берналь",
+"people.doctors.sjd-hinojosa-neurosurgery.title": "Детский нейрохирург — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-hinojosa-neurosurgery.bio": "Специалист по детской нейроонкологии, синдромам фиксированного спинного мозга и краниофациальной хирургии. Проводит сложные микронейрохирургические операции.",
+
+"people.doctors.sjd-fons-neurology.name": "Доктор Мария Карме Фонс Эступинья",
+"people.doctors.sjd-fons-neurology.title": "Детский невролог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-fons-neurology.bio": "Детский невролог, специализирующийся на нарушениях развития, эпилепсии и нейрогенетических заболеваниях.",
+"people.doctors.sjd-prada-cardiology.name": "Доктор Фреди Эрмогенес Прада Мартинес",
+"people.doctors.sjd-prada-cardiology.title": "Детский кардиолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-prada-cardiology.bio": "Специалист по врожденным порокам сердца и длительному наблюдению за детьми с кардиологическими заболеваниями. Предоставляет высококвалифицированную педиатрическую кардиологическую помощь.",
+
+"people.doctors.sjd-sarquella-cardiology.name": "Доктор Джорджия Саркелья Бругада",
+"people.doctors.sjd-sarquella-cardiology.title": "Детский кардиолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-sarquella-cardiology.bio": "Эксперт по детским аритмиям и врожденным заболеваниям сердца. Представитель семьи Бругада — пионеров в изучении наследственных нарушений сердечного ритма.",
+
+"people.doctors.sjd-parri-surgery.name": "Доктор Франсиско Хосе Парри Феррандис",
+"people.doctors.sjd-parri-surgery.title": "Детский и пластический хирург — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-parri-surgery.bio": "Специалист по детской хирургии и реконструктивным операциям при врожденных пороках развития. Применяет малоинвазивные хирургические методы.",
+
+"people.doctors.sjd-krauel-surgery.name": "Доктор Лукас Крауэль Хименес-Салинас",
+"people.doctors.sjd-krauel-surgery.title": "Детский хирург — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-krauel-surgery.bio": "Эксперт по детской онкохирургии и малоинвазивным методам. Руководит инновационными программами в области детской онкохирургии.",
+
+"people.doctors.sjd-carrasco-surgery.name": "Доктор Росалия Карраско Торренс",
+"people.doctors.sjd-carrasco-surgery.title": "Детский торакальный и пластический хирург — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-carrasco-surgery.bio": "Специалист по детской торакальной и реконструктивной хирургии. Занимается врожденными пороками развития и онкологическими операциями.",
+
+"people.doctors.sjd-garciaapu-urology.name": "Доктор Луис Гарсия Апарисио",
+"people.doctors.sjd-garciaapu-urology.title": "Детский уролог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-garciaapu-urology.bio": "Специалист по детской урологии, лечению гидронефроза, пузырно-мочеточникового рефлюкса и гипоспадии. Проводит малоинвазивные операции.",
+
+"people.doctors.sjd-galofontecha-ortho.name": "Доктор Сесар Гало Гарсия Фонтеча",
+"people.doctors.sjd-galofontecha-ortho.title": "Детский ортопед и травматолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-galofontecha-ortho.bio": "Эксперт по детской ортопедии и травматологии. Занимается деформациями конечностей, нарушениями опорно-двигательного аппарата и коррекцией сколиоза.",
+
+"people.doctors.sjd-alberti-otorhinolaryngology.name": "Доктор Анна Альберти Касас",
+"people.doctors.sjd-alberti-otorhinolaryngology.title": "Детский ЛОР-врач — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-alberti-otorhinolaryngology.bio": "Специалист по детской отоларингологии с опытом в лечении заболеваний слуха, дыхательных путей и черепно-лицевых патологий. Обеспечивает мультидисциплинарную ЛОР-помощь.",
+"people.doctors.sjd-alsina-immunology.name": "Доктор Лайя Альсина Манрик де Лара",
+"people.doctors.sjd-alsina-immunology.title": "Детский иммунолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-alsina-immunology.bio": "Клинический детский иммунолог, специализирующийся на иммунных и аутоиммунных заболеваниях. Руководит исследованиями в области первичных иммунодефицитов.",
+
+"people.doctors.sjd-climent-neurophysiology.name": "Доктор Жана Климент",
+"people.doctors.sjd-climent-neurophysiology.title": "Клинический нейрофизиолог и специалист по развитию — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-climent-neurophysiology.bio": "Специалист по детской нейрофизиологии и нейродиагностике развития, с акцентом на раннее выявление нейроразвитийных нарушений.",
+
+"people.doctors.sjd-colome-neuropsychology.name": "Доктор Розер Коломе Рура",
+"people.doctors.sjd-colome-neuropsychology.title": "Детский нейропсихолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-colome-neuropsychology.bio": "Эксперт по когнитивному развитию, нарушениям обучения и детской нейропсихологической диагностике.",
+
+"people.doctors.sjd-cols-pulmonology.name": "Доктор Мария Колс Ройг",
+"people.doctors.sjd-cols-pulmonology.title": "Детский пульмонолог — Сант Жоан де Деу Барселона",
+"people.doctors.sjd-cols-pulmonology.bio": "Специалист по детской респираторной медицине и хроническим заболеваниям лёгких. Предоставляет комплексную помощь при астме и редких легочных расстройствах.",
+
+"people.doctors.hqb-llado-neurology.name": "Доктор Ана Льядо Карбо",
+"people.doctors.hqb-llado-neurology.title": "Руководитель неврологии — Киронсалюд Барселона",
+"people.doctors.hqb-llado-neurology.bio": "Руководитель отделения неврологии в Киронсалюд Барселона. Специалист по инсультам, рассеянному склерозу и нейродегенеративным заболеваниям.",
+
+"people.doctors.hqb-garcia-pascual-neurology.name": "Доктор Марта Гарсия Паскуаль",
+"people.doctors.hqb-garcia-pascual-neurology.title": "Невролог — Киронсалюд Барселона",
+"people.doctors.hqb-garcia-pascual-neurology.bio": "Специалист по эпилепсии и демиелинизирующим заболеваниям центральной нервной системы. Проводит передовую неврологическую диагностику.",
+
+"people.doctors.hqb-hernandez-neurophysiology.name": "Доктор Мария Эрнандес Вильяльба",
+"people.doctors.hqb-hernandez-neurophysiology.title": "Клинический нейрофизиолог — Киронсалюд Барселона",
+"people.doctors.hqb-hernandez-neurophysiology.bio": "Эксперт по ЭЭГ, ЭМГ и исследованиям сна. Член отдела клинической нейрофизиологии, проводит электрофизиологическую диагностику.",
+
+"people.doctors.hqb-martinez-neurophysiology.name": "Доктор Давид Мартинес Диас",
+"people.doctors.hqb-martinez-neurophysiology.title": "Нейрофизиолог — Киронсалюд Барселона",
+"people.doctors.hqb-martinez-neurophysiology.bio": "Проводит нейрофизиологическую диагностику при эпилепсии, невропатиях и нарушениях сна. Специализируется на точном функциональном картировании.",
+
+"people.doctors.hqb-gispert-psychiatry.name": "Доктор Ева Гисперт Далмау",
+"people.doctors.hqb-gispert-psychiatry.title": "Психиатр — Киронсалюд Барселона",
+"people.doctors.hqb-gispert-psychiatry.bio": "Специалист по взрослой психиатрии с фокусом на депрессии, тревожных и аффективных расстройствах. Оказывает доказательную психиатрическую помощь.",
+
+"people.doctors.hqb-sanchez-psychiatry.name": "Доктор Монсеррат Санчес Эрнандес",
+"people.doctors.hqb-sanchez-psychiatry.title": "Детский и подростковый психиатр — Киронсалюд Барселона",
+"people.doctors.hqb-sanchez-psychiatry.bio": "Эксперт по психиатрии детей и подростков, специализируется на СДВГ, расстройствах аутистического спектра и эмоциональном развитии.",
+
+"people.doctors.hqb-girbau-dermatology.name": "Доктор Монсеррат Гирбау",
+"people.doctors.hqb-girbau-dermatology.title": "Руководитель дерматологии — Киронсалюд Барселона",
+"people.doctors.hqb-girbau-dermatology.bio": "Руководитель отделения дерматологии. Специалист по дерматохирургии и воспалительным заболеваниям кожи, таким как псориаз и атопический дерматит.",
+"people.doctors.hqb-sierra-dermatology.name": "Доктор Кристина Сьерра Гиральт",
+"people.doctors.hqb-sierra-dermatology.title": "Дерматолог — Киронсалюд Барселона",
+"people.doctors.hqb-sierra-dermatology.bio": "Специалист по эстетической дерматологии, лазерной терапии и омоложению кожи. Предоставляет продвинутую косметическую и медицинскую дерматологическую помощь.",
+
+"people.doctors.hqb-rodriguez-pulmonology.name": "Доктор Мария Родригес Марин",
+"people.doctors.hqb-rodriguez-pulmonology.title": "Пульмонолог — Киронсалюд Барселона",
+"people.doctors.hqb-rodriguez-pulmonology.bio": "Эксперт по респираторным заболеваниям, астме и нарушениям дыхания во сне. Проводит исследования функции лёгких и сомнологические исследования.",
+
+"people.doctors.hqb-vilaseca-pulmonology.name": "Доктор Сержи Виласека Рекена",
+"people.doctors.hqb-vilaseca-pulmonology.title": "Пульмонолог — Киронсалюд Барселона",
+"people.doctors.hqb-vilaseca-pulmonology.bio": "Специалист по ХОБЛ, хроническому бронхиту и респираторной реабилитации. Обеспечивает длительное ведение пациентов с лёгочными заболеваниями.",
+
+"people.doctors.hqb-becerra-epileptology.name": "Доктор Хосе Бесерра Фернандес",
+"people.doctors.hqb-becerra-epileptology.title": "Невролог — Отделение эпилептологии, Киронсалюд Барселона",
+"people.doctors.hqb-becerra-epileptology.bio": "Специалист по клинической эпилептологии, мониторингу ЭЭГ и хирургии эпилепсии. Сфокусирован на резистентных и сложных формах приступов.",
+
+"people.doctors.hqb-rodriguez-epileptology.name": "Доктор Ана Родригес Перес",
+"people.doctors.hqb-rodriguez-epileptology.title": "Невролог — Детская и взрослая эпилептология, Киронсалюд Барселона",
+"people.doctors.hqb-rodriguez-epileptology.bio": "Оказывает комплексное лечение сложной эпилепсии и проводит нейрофизиологическую диагностику у детей и взрослых.",
+
+"people.doctors.hqb-minguez-hematology.name": "Доктор Глория Мингес",
+"people.doctors.hqb-minguez-hematology.title": "Гематолог — Киронсалюд Барселона",
+"people.doctors.hqb-minguez-hematology.bio": "Специалист по клинической гематологии, лейкозам и заболеваниям крови. Сотрудничает с Институтом онкологии IOB для интегрированного лечения.",
+
+"people.doctors.hqb-dominguez-hematology.name": "Доктор Альберто Домингес Гарсия",
+"people.doctors.hqb-dominguez-hematology.title": "Гематолог — Отделение онкогематологии, Киронсалюд Барселона",
+"people.doctors.hqb-dominguez-hematology.bio": "Эксперт по лимфомам, множественной миеломе и злокачественным гематологическим заболеваниям. Фокусируется на персонализированной онкогематологической терапии.",
+
+"people.doctors.hqb-lloveras-nuclear.name": "Доктор Хосе Льоверес Рубио",
+"people.doctors.hqb-lloveras-nuclear.title": "Руководитель отделения ядерной медицины — Киронсалюд Барселона",
+"people.doctors.hqb-lloveras-nuclear.bio": "Возглавляет отделение ядерной медицины. Отвечает за ПЭТ-КТ и продвинутую функциональную визуализацию в онкологии и метаболической диагностике.",
+"people.doctors.hqb-escalona-nuclear.name": "Доктор Мария Эскалона Гарсия",
+"people.doctors.hqb-escalona-nuclear.title": "Специалист по ядерной медицине — Киронсалюд Барселона",
+"people.doctors.hqb-escalona-nuclear.bio": "Эксперт в области молекулярной визуализации и управления радиофармацевтической терапией (I-131, Lu-177, Ga-68). Специализируется на функциональной диагностической визуализации.",
+
+"people.doctors.hqb-torreblanca-ophthalmology.name": "Доктор Хосе Мария Торребланка",
+"people.doctors.hqb-torreblanca-ophthalmology.title": "Офтальмолог — Хирургия сетчатки и катаракты, Киронсалюд Барселона",
+"people.doctors.hqb-torreblanca-ophthalmology.bio": "Специалист по хирургии сетчатки и катаракты. Проводит передовую диагностику и микрохирургическое лечение зрения.",
+
+"people.doctors.hqb-perez-montes-ophthalmology.name": "Доктор Мария Перес Монтес",
+"people.doctors.hqb-perez-montes-ophthalmology.title": "Офтальмолог — Специалист по роговице и глаукоме, Киронсалюд Барселона",
+"people.doctors.hqb-perez-montes-ophthalmology.bio": "Эксперт по хирургии роговицы и лечению хронической глаукомы. Выполняет операции по коррекции зрения и реконструкции поверхности глаза.",
+
+"people.doctors.hqb-ferrandez-nephrology.name": "Доктор Франсеск Феррандес Лопес",
+"people.doctors.hqb-ferrandez-nephrology.title": "Нефролог — Киронсалюд Барселона",
+"people.doctors.hqb-ferrandez-nephrology.bio": "Специалист по клинической нефрологии, артериальной гипертензии и хроническим заболеваниям почек. Предоставляет профилактическое и заместительное почечное лечение.",
+
+"people.doctors.hqb-gomez-nephrology.name": "Доктор Ана Гомес Ортис",
+"people.doctors.hqb-gomez-nephrology.title": "Нефролог — Киронсалюд Барселона",
+"people.doctors.hqb-gomez-nephrology.bio": "Специализируется на почечной недостаточности, нефропатиях и наблюдении пациентов после трансплантации. Обеспечивает мультидисциплинарный подход в лечении почечных заболеваний.",
+
+"people.doctors.hqb-lledo-urology.name": "Доктор Эусебио Льедо Гарсия",
+"people.doctors.hqb-lledo-urology.title": "Руководитель отделения урологии — Киронсалюд Барселона",
+"people.doctors.hqb-lledo-urology.bio": "Руководитель отделения урологии. Эксперт в лапароскопической хирургии, онкоурологии и андрологии. Выполняет сложные операции на предстательной железе и почках.",
+
+"people.doctors.hqb-caballero-urology.name": "Доктор Хорхе Кабальеро Гарсия",
+"people.doctors.hqb-caballero-urology.title": "Уролог — Минимально инвазивная хирургия, Киронсалюд Барселона",
+"people.doctors.hqb-caballero-urology.bio": "Специалист по хирургии предстательной железы и малоинвазивным урологическим техникам. Ориентируется на точность и быстрое восстановление пациента.",
+
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.name": "Доктор Адольфо Лопес Гомес",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.title": "Руководитель отделения гинекологии и акушерства — Киронсалюд Севилья",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.bio": "Возглавляет отделение гинекологии и акушерства. Специалист по нарушениям фертильности, лапароскопической хирургии и ведению беременностей высокого риска.",
+"people.doctors.seville-agustina-moreno-martos-gynecology.name": "Доктор Агустина Морено Мартос",
+"people.doctors.seville-agustina-moreno-martos-gynecology.title": "Гинеколог — Киронсалюд Севилья",
+"people.doctors.seville-agustina-moreno-martos-gynecology.bio": "Специалист по репродуктивной медицине и женским гормональным нарушениям. Предоставляет персонализированное лечение бесплодия и современную гинекологическую помощь.",
+
+"people.doctors.seville-adrian-revello-bustos-cardiology.name": "Доктор Адриан Ревельо Бустос",
+"people.doctors.seville-adrian-revello-bustos-cardiology.title": "Кардиолог — Киронсалюд Севилья",
+"people.doctors.seville-adrian-revello-bustos-cardiology.bio": "Специалист по интервенционной кардиологии и ишемической болезни сердца. Проводит диагностическую катетеризацию, ангиопластику и профилактические программы в кардиологии.",
+
+"people.doctors.seville-javier-marquez-cardiology.name": "Доктор Хавьер Маркес",
+"people.doctors.seville-javier-marquez-cardiology.title": "Интервенционный кардиолог — Киронсалюд Севилья",
+"people.doctors.seville-javier-marquez-cardiology.bio": "Эксперт по коронарным вмешательствам, кардиологической визуализации и управлению сердечным ритмом. Специализируется на ангиопластике и лечении гипертонии.",
+
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.name": "Доктор Агуас Сантас Санчес Руль",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.title": "Офтальмолог — Киронсалюд Севилья",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.bio": "Специалист по хирургии катаракты, глаукомы и рефракционных нарушений. Предоставляет передовую диагностику и лечение заболеваний роговицы.",
+
+"people.doctors.seville-miguel-fernandez-ophthalmology.name": "Доктор Мигель Фернандес",
+"people.doctors.seville-miguel-fernandez-ophthalmology.title": "Офтальмолог — Киронсалюд Севилья",
+"people.doctors.seville-miguel-fernandez-ophthalmology.bio": "Специализируется на заболеваниях сетчатки и макулы, глаукоме и диабетической ретинопатии. Выполняет лазерные и микрохирургические операции на глазах.",
+
+"people.doctors.seville-abdul-razack-general-surgery.name": "Доктор Абдул Разак",
+"people.doctors.seville-abdul-razack-general-surgery.title": "Хирург общего профиля и желудочно-кишечного тракта — Киронсалюд Севилья",
+"people.doctors.seville-abdul-razack-general-surgery.bio": "Проводит лапароскопические и малоинвазивные операции при заболеваниях желчного пузыря, грыжах и болезнях ЖКТ.",
+
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.name": "Доктор Альберто дель Валье Аревало",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.title": "Хирург общего профиля — Киронсалюд Севилья",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.bio": "Специалист по малоинвазивной абдоминальной и желудочно-кишечной хирургии. Работает в составе мультидисциплинарных команд для сложных клинических случаев.",
+
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.name": "Доктор Абрахам Гарсия Мендоса",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.title": "Ортопед и травматолог — Киронсалюд Севилья",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.bio": "Специалист по эндопротезированию суставов, артроскопии и спортивной травматологии. Оказывает хирургическое и консервативное лечение заболеваний опорно-двигательного аппарата.",
+"people.doctors.seville-clara-martinez-orthopedics.name": "Доктор Клара Мартинес",
+"people.doctors.seville-clara-martinez-orthopedics.title": "Ортопед-хирург — Киронсалюд Севилья",
+"people.doctors.seville-clara-martinez-orthopedics.bio": "Лечит переломы, повреждения связок и спортивные травмы. Имеет опыт в детской и взрослой ортопедии, уделяя особое внимание функциональному восстановлению.",
+
+"people.doctors.seville-maria-jose-lirola-pediatrics.name": "Доктор Мария Хосе Лирола",
+"people.doctors.seville-maria-jose-lirola-pediatrics.title": "Руководитель отделения педиатрии — Киронсалюд Севилья",
+"people.doctors.seville-maria-jose-lirola-pediatrics.bio": "Возглавляет педиатрическое отделение в составе Матерно-Инфантильного блока. Специалист по профилактической педиатрии, аллергии и ведению хронических заболеваний у детей.",
+
+"people.doctors.seville-ana-garcia-pediatrics.name": "Доктор Ана Гарсия",
+"people.doctors.seville-ana-garcia-pediatrics.title": "Педиатр — Киронсалюд Севилья",
+"people.doctors.seville-ana-garcia-pediatrics.bio": "Оказывает неонатальную и развивающую помощь. Специализируется на респираторных инфекциях, детском питании и профилактических программах вакцинации.",
+
+"people.doctors.seville-carlos-ruiz-oncology.name": "Доктор Карлос Руис",
+"people.doctors.seville-carlos-ruiz-oncology.title": "Онколог — Киронсалюд Севилья",
+"people.doctors.seville-carlos-ruiz-oncology.bio": "Эксперт в области химиотерапии, иммунотерапии и таргетного лечения рака. Разрабатывает индивидуальные планы лечения пациентов с солидными опухолями.",
+
+"people.doctors.seville-laura-gomez-oncology.name": "Доктор Лаура Гомес",
+"people.doctors.seville-laura-gomez-oncology.title": "Врач-онколог — Киронсалюд Севилья",
+"people.doctors.seville-laura-gomez-oncology.bio": "Специализируется на раке молочной железы и желудочно-кишечных опухолях. Обеспечивает мультидисциплинарный подход и долгосрочное наблюдение за пациентами.",
+
+"people.doctors.seville-ricardo-martin-neurosurgery.name": "Доктор Рикардо Мартин",
+"people.doctors.seville-ricardo-martin-neurosurgery.title": "Нейрохирург — Киронсалюд Севилья",
+"people.doctors.seville-ricardo-martin-neurosurgery.bio": "Проводит микрохирургические операции на мозге и позвоночнике при опухолях, грыжах и компрессии нервов. Применяет современные нейрохирургические методы.",
+
+"people.doctors.seville-isabel-martinez-neurosurgery.name": "Доктор Изабель Мартинес",
+"people.doctors.seville-isabel-martinez-neurosurgery.title": "Нейрохирург — Киронсалюд Севилья",
+"people.doctors.seville-isabel-martinez-neurosurgery.bio": "Специалист по хирургии позвоночника и периферических нервов. Обеспечивает комплексный подход к лечению травматических и дегенеративных заболеваний нервной системы.",
+
+"people.doctors.seville-javier-sanchez-urology.name": "Доктор Хавьер Санчес",
+"people.doctors.seville-javier-sanchez-urology.title": "Уролог — Киронсалюд Севилья",
+"people.doctors.seville-javier-sanchez-urology.bio": "Специалист по заболеваниям предстательной железы и мочевыводящих путей. Проводит эндоскопические и малоинвазивные урологические операции для оптимального восстановления.",
+"people.doctors.seville-marta-lopez-urology.name": "Доктор Марта Лопес",
+"people.doctors.seville-marta-lopez-urology.title": "Уролог — Киронсалюд Севилья",
+"people.doctors.seville-marta-lopez-urology.bio": "Специалист по заболеваниям почек и мочевого пузыря, включая лечение камней и женскую урологию. Проводит диагностические и функциональные ультразвуковые исследования.",
+
+"people.doctors.seville-antonio-castro-dermatology.name": "Доктор Антонио Кастро",
+"people.doctors.seville-antonio-castro-dermatology.title": "Дерматолог — Киронсалюд Севилья",
+"people.doctors.seville-antonio-castro-dermatology.bio": "Лечит хронические заболевания кожи, такие как псориаз, экзема и дерматит. Имеет опыт в дерматохирургии, дерматоскопии и скрининге рака кожи.",
+
+"people.doctors.seville-silvia-garcia-dermatology.name": "Доктор Сильвия Гарсия",
+"people.doctors.seville-silvia-garcia-dermatology.title": "Дерматолог — Киронсалюд Севилья",
+"people.doctors.seville-silvia-garcia-dermatology.bio": "Специалист по эстетической дерматологии и лазерной терапии. Проводит лечение акне, пигментации, рубцов и омоложения кожи.",
+
+"people.doctors.seville-diego-rodriguez-gastro.name": "Доктор Диего Родригес",
+"people.doctors.seville-diego-rodriguez-gastro.title": "Гастроэнтеролог — Киронсалюд Севилья",
+"people.doctors.seville-diego-rodriguez-gastro.bio": "Специалист по заболеваниям пищеварительной системы и печени. Проводит эндоскопию, колоноскопию и лечение рефлюкса и воспалительных заболеваний кишечника.",
+
+"people.doctors.seville-noelia-martin-gastro.name": "Доктор Ноэлия Мартин",
+"people.doctors.seville-noelia-martin-gastro.title": "Гастроэнтеролог — Киронсалюд Севилья",
+"people.doctors.seville-noelia-martin-gastro.bio": "Специализируется на гепатологии и заболеваниях поджелудочной железы. Имеет опыт в лечении метаболических и печёночных болезней, а также в продвинутой эндоскопической диагностике.",
+
+"people.doctors.seville-fernando-ruiz-endocrinology.name": "Доктор Фернандо Руис",
+"people.doctors.seville-fernando-ruiz-endocrinology.title": "Эндокринолог — Киронсалюд Севилья",
+"people.doctors.seville-fernando-ruiz-endocrinology.bio": "Эксперт в лечении диабета, заболеваний щитовидной железы и ожирения. Проводит гормональную терапию и профилактические эндокринологические консультации.",
+
+"people.doctors.seville-maria-gonzalez-endocrinology.name": "Доктор Мария Гонсалес",
+"people.doctors.seville-maria-gonzalez-endocrinology.title": "Эндокринолог — Киронсалюд Севилья",
+"people.doctors.seville-maria-gonzalez-endocrinology.bio": "Специалист по метаболическим, щитовидным и гипофизарным нарушениям. Предлагает персонализированную нутритивную и гормональную терапию для поддержания эндокринного здоровья."
 }

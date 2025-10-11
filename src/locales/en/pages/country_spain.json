@@ -34,49 +34,526 @@
   "country.spain.pitch.badge3": "Help with documents",
   "country.spain.pitch.cta": "Contact the coordinator",
 
-  "dict.city.madrid.name": "Madrid",
+    "dict.city.madrid.name": "Madrid",
   "dict.city.barcelona.name": "Barcelona",
   "dict.city.valencia.name": "Valencia",
   "dict.city.malaga.name": "Málaga",
   "dict.city.alicante.name": "Alicante",
+  "dict.city.seville.name": "Seville",
+  "dict.city.bilbao.name": "Bilbao",
 
   "dict.clinic.quironsalud-madrid.name": "Quirónsalud Madrid",
   "dict.clinic.quironsalud-barcelona.name": "Quirónsalud Barcelona",
   "dict.clinic.quironsalud-valencia.name": "Quirónsalud Valencia",
   "dict.clinic.quironsalud-malaga.name": "Quirónsalud Málaga",
   "dict.clinic.quironsalud-alicante.name": "Quirónsalud Alicante",
+  "dict.clinic.quironsalud-seville.name": "Quirónsalud Seville",
+  "dict.clinic.quironsalud-bilbao.name": "Quirónsalud Bilbao",
   "dict.clinic.sant-joan-deu-barcelona.name": "Sant Joan de Déu Barcelona",
+  "dict.clinic.iob-institute-oncology-barcelona.name": "IOB Institute of Oncology Barcelona",
+  "dict.clinic.quironsalud-valdemoro.name": "Quirónsalud Valdemoro",
+  "dict.clinic.quironsalud-san-jose.name": "Quirónsalud San José",
+  "dict.clinic.quironsalud-olympia.name": "Olympia Medical Center Madrid",
 
-  "dict.dept.cardiology.name": "Cardiology",
+   "dict.dept.cardiology.name": "Cardiology",
   "dict.dept.oncology.name": "Oncology",
+  "dict.dept.hematology.name": "Hematology",
+  "dict.dept.oncohematology.name": "Oncohematology",
   "dict.dept.neurosurgery.name": "Neurosurgery",
-  "dict.dept.ivf.name": "IVF & Reproductive Medicine",
-  "dict.dept.orthopedics.name": "Orthopedics",
-  "dict.dept.gastro.name": "Gastroenterology",
+  "dict.dept.neurology.name": "Neurology",
+  "dict.dept.neurophysiology.name": "Neurophysiology",
+  "dict.dept.neuropsychology.name": "Neuropsychology",
+  "dict.dept.psychiatry.name": "Psychiatry",
+  "dict.dept.pulmonology.name": "Pulmonology",
+  "dict.dept.dermatology.name": "Dermatology",
   "dict.dept.endocrinology.name": "Endocrinology",
+  "dict.dept.gastro.name": "Gastroenterology",
   "dict.dept.general-surgery.name": "General Surgery",
+  "dict.dept.surgery.name": "Surgery",
+  "dict.dept.plastic-surgery.name": "Plastic Surgery",
+  "dict.dept.thoracic-surgery.name": "Thoracic Surgery",
+  "dict.dept.orthopedics.name": "Orthopedics",
+  "dict.dept.traumatology.name": "Traumatology",
   "dict.dept.transplant.name": "Transplantation",
+  "dict.dept.urology.name": "Urology",
+  "dict.dept.nephrology.name": "Nephrology",
+  "dict.dept.ivf.name": "IVF & Reproductive Medicine",
+  "dict.dept.obstetrics.name": "Obstetrics",
+  "dict.dept.pediatrics.name": "Pediatrics",
+  "dict.dept.immunology.name": "Immunology",
+  "dict.dept.allergology.name": "Allergology",
+  "dict.dept.rheumatology.name": "Rheumatology",
+  "dict.dept.rehabilitation.name": "Rehabilitation",
   "dict.dept.radiology.name": "Radiology",
   "dict.dept.radiation-oncology.name": "Radiation Oncology",
-  "dict.dept.pediatrics.name": "Pediatrics",
+  "dict.dept.nuclear-medicine.name": "Nuclear Medicine",
+  "dict.dept.internal-medicine.name": "Internal Medicine",
+  "dict.dept.ophthalmology.name": "Ophthalmology",
+  "dict.dept.otolaryngology.name": "Otolaryngology (ENT)",
+  "dict.dept.dentistry.name": "Dentistry",
+  "dict.dept.aesthetic-medicine.name": "Aesthetic Medicine",
+  "dict.dept.genetics.name": "Genetics",
 
-  "people.doctors.quironsalud-madrid-cardiology-slot.name": "To be added — Quirónsalud Cardiology (Madrid)",
-  "people.doctors.quironsalud-madrid-cardiology-slot.title": "Example: Head of Cardiology",
-  "people.doctors.quironsalud-madrid-cardiology-slot.bio": "Placeholder bio. Replace with a short resume in English.",
+  "people.doctors.huqm-cabrera-cardiology.name": "Dr. José Ángel Cabrera Rodríguez",
+"people.doctors.huqm-cabrera-cardiology.title": "Head of Cardiology — Hospital Universitario Quirónsalud Madrid",
+"people.doctors.huqm-cabrera-cardiology.bio": "Renowned electrophysiologist specializing in atrial fibrillation ablation. Leads cardiology at Quirónsalud Madrid, Ruber Juan Bravo, and Olympia Medical Center.",
 
-  "people.doctors.quironsalud-barcelona-oncology-slot.name": "To be added — Quirónsalud Oncology (Barcelona)",
-  "people.doctors.quironsalud-barcelona-oncology-slot.title": "Example: Director of Medical Oncology",
-  "people.doctors.quironsalud-barcelona-oncology-slot.bio": "Placeholder bio. Replace with a short resume in English.",
+"people.doctors.huqm-datino-cardiology.name": "Dr. Tomás Datino Romaniega",
+"people.doctors.huqm-datino-cardiology.title": "Cardiologist — Arrhythmia Unit, Quirónsalud Madrid",
+"people.doctors.huqm-datino-cardiology.bio": "Specialist in cardiac electrophysiology and catheter ablation of complex arrhythmias, with focus on minimally invasive rhythm correction.",
 
-  "people.doctors.quironsalud-valencia-orthopedics-slot.name": "To be added — Quirónsalud Orthopedics (Valencia)",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.title": "Example: Chief of Orthopedics",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.bio": "Placeholder bio. Replace with a short resume in English.",
+"people.doctors.huqm-gonzalez-cortijo-oncology.name": "Dr. Lucía González Cortijo",
+"people.doctors.huqm-gonzalez-cortijo-oncology.title": "Head of Medical Oncology — Hospital Universitario Quirónsalud Madrid",
+"people.doctors.huqm-gonzalez-cortijo-oncology.bio": "Leads the multidisciplinary oncology department. Expert in breast cancer, clinical research, and personalized treatment protocols.",
 
-  "people.doctors.quironsalud-malaga-ivf-slot.name": "To be added — Quirónsalud IVF (Málaga)",
-  "people.doctors.quironsalud-malaga-ivf-slot.title": "Example: IVF Program Lead",
-  "people.doctors.quironsalud-malaga-ivf-slot.bio": "Placeholder bio. Replace with a short resume in English.",
+"people.doctors.huqm-boni-oncology.name": "Dr. Valentina Boni",
+"people.doctors.huqm-boni-oncology.title": "Medical Oncologist — Phase I Clinical Trials Unit, Quirónsalud Madrid",
+"people.doctors.huqm-boni-oncology.bio": "Specialist in early-phase oncology drug development and first-in-human clinical trials. Focuses on targeted and immunotherapy research.",
 
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.name": "To be added — Sant Joan de Déu Pediatrics (Barcelona)",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.title": "Example: Head of Pediatrics",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.bio": "Placeholder bio. Replace with a short resume in English."
+"people.doctors.huqm-gil-robles-neurosurgery.name": "Dr. Santiago Gil-Robles",
+"people.doctors.huqm-gil-robles-neurosurgery.title": "Head of Neurosurgery — Hospital Universitario Quirónsalud Madrid",
+"people.doctors.huqm-gil-robles-neurosurgery.bio": "Internationally recognized neurosurgeon specializing in brain tumor and neuro-oncology surgery. Pioneer in intraoperative brain mapping and awake surgery.",
+
+"people.doctors.huqm-ley-neurosurgery.name": "Dr. Luis Ley Urzaiz",
+"people.doctors.huqm-ley-neurosurgery.title": "Consultant Neurosurgeon — Quirónsalud Madrid",
+"people.doctors.huqm-ley-neurosurgery.bio": "Performs advanced cranial and spinal surgeries. Experienced in minimally invasive techniques and neurological trauma treatment.",
+
+"people.doctors.huqm-tabuenca-ortho.name": "Dr. José Tabuenca Dumortier",
+"people.doctors.huqm-tabuenca-ortho.title": "Head of Orthopedics and Traumatology — Quirónsalud Madrid",
+"people.doctors.huqm-tabuenca-ortho.bio": "Leads the Orthopedics & Traumatology Department with subspecialties in hip, knee, shoulder, hand, foot, and ankle surgery.",
+
+"people.doctors.huqm-trigo-ortho.name": "Dr. Luis Trigo Lahoz",
+"people.doctors.huqm-trigo-ortho.title": "Orthopedic Surgeon — Shoulder & Elbow Unit, Quirónsalud Madrid",
+"people.doctors.huqm-trigo-ortho.bio": "Expert in arthroscopic and reconstructive surgery of the shoulder and elbow. Focuses on sports injuries and joint restoration.",
+  "people.doctors.huqm-juzgado-gastro.name": "Dr. Diego Juzgado de Lucas",
+"people.doctors.huqm-juzgado-gastro.title": "Head of Gastroenterology and Endoscopy — Hospital Universitario Quirónsalud Madrid",
+"people.doctors.huqm-juzgado-gastro.bio": "Leads the Gastroenterology and Endoscopy Department. Expert in advanced endoscopy, FibroScan diagnostics, and liver disease management.",
+
+"people.doctors.huqm-vazquez-sequeiros-gastro.name": "Dr. Enrique Vázquez Sequeiros",
+"people.doctors.huqm-vazquez-sequeiros-gastro.title": "Associate Head of Gastroenterology — Quirónsalud Madrid",
+"people.doctors.huqm-vazquez-sequeiros-gastro.bio": "Specialist in therapeutic endoscopy and complex biliary-pancreatic interventions. Performs ERCP, EUS, and interventional procedures.",
+
+"people.doctors.huqm-jodar-endo.name": "Dr. Esteban Jódar Gimeno",
+"people.doctors.huqm-jodar-endo.title": "Head of Endocrinology, Diabetes and Nutrition — Quirónsalud Madrid",
+"people.doctors.huqm-jodar-endo.bio": "Leads the Endocrinology Department. Expert in diabetes, obesity, and thyroid disorders. Develops patient-centered education and metabolic programs.",
+
+"people.doctors.huqm-perez-arroyo-endo.name": "Dra. Mª Beatriz Pérez Arroyo",
+"people.doctors.huqm-perez-arroyo-endo.title": "Associate Head of Endocrinology — Quirónsalud Madrid",
+"people.doctors.huqm-perez-arroyo-endo.bio": "Focuses on diabetes management, nutritional therapy, and therapeutic education. Works within multidisciplinary endocrine care teams.",
+
+"people.doctors.huqm-merello-gs.name": "Dr. Jesús Merello Godino",
+"people.doctors.huqm-merello-gs.title": "Head of General Surgery — Quirónsalud Madrid",
+"people.doctors.huqm-merello-gs.bio": "Leads the General Surgery Department. Specialist in gastrointestinal, laparoscopic, and complex abdominal procedures.",
+
+"people.doctors.huqm-fernandez-luengas-gs.name": "Dr. David Fernández Luengas",
+"people.doctors.huqm-fernandez-luengas-gs.title": "General and Bariatric Surgeon — Quirónsalud Madrid",
+"people.doctors.huqm-fernandez-luengas-gs.bio": "Performs advanced laparoscopic and bariatric surgeries. Focuses on minimally invasive treatment of digestive disorders and obesity.",
+
+"people.doctors.huqm-delgado-neph-transplant.name": "Dr. Ramón Delgado Lillo",
+"people.doctors.huqm-delgado-neph-transplant.title": "Head of Nephrology — Quirónsalud Madrid",
+"people.doctors.huqm-delgado-neph-transplant.bio": "Leads the Nephrology Department. Expert in renal replacement therapy, kidney transplantation, and chronic renal disease management.",
+
+"people.doctors.huqm-praga-neph-transplant.name": "Dr. Manuel Praga Terente",
+"people.doctors.huqm-praga-neph-transplant.title": "Consultant Nephrologist — Quirónsalud Madrid",
+"people.doctors.huqm-praga-neph-transplant.bio": "Specialist in chronic kidney disease, glomerulopathies, and long-term post-transplant care. Provides advanced renal follow-up programs.",
+  "people.doctors.huqm-martinez-vega-radiology.name": "Dr. Vicente Martínez de Vega",
+"people.doctors.huqm-martinez-vega-radiology.title": "Head of Diagnostic Imaging — Hospital Universitario Quirónsalud Madrid",
+"people.doctors.huqm-martinez-vega-radiology.bio": "Leads the Diagnostic Imaging Department. Expert in MRI, CT, and comprehensive image-guided diagnostics for complex cases.",
+
+"people.doctors.huqm-casasco-vir.name": "Dr. Alfredo Casasco",
+"people.doctors.huqm-casasco-vir.title": "Interventional Radiologist — Quirónsalud Madrid",
+"people.doctors.huqm-casasco-vir.bio": "Performs endovascular and embolization procedures. Specialist in minimally invasive image-guided interventions.",
+
+"people.doctors.huqm-del-cerro-radonco.name": "Dra. Elia del Cerro Peñalver",
+"people.doctors.huqm-del-cerro-radonco.title": "Head of Radiation Oncology — Quirónsalud Madrid",
+"people.doctors.huqm-del-cerro-radonco.bio": "Expert in external beam radiotherapy and brachytherapy. Leads treatment programs using the TrueBeam linear accelerator platform.",
+
+"people.doctors.huqm-diaz-gavela-radonco.name": "Dra. Ana Aurora Díaz Gavela",
+"people.doctors.huqm-diaz-gavela-radonco.title": "Associate Head of Radiation Oncology — Quirónsalud Madrid",
+"people.doctors.huqm-diaz-gavela-radonco.bio": "Specialist in precision radiotherapy techniques ensuring targeted dose delivery while protecting healthy tissue.",
+
+"people.doctors.huqm-cabanas-pediatrics.name": "Dr. Fernando Cabañas González",
+"people.doctors.huqm-cabanas-pediatrics.title": "Head of Pediatrics — Quirónsalud Madrid",
+"people.doctors.huqm-cabanas-pediatrics.bio": "Leads the Pediatric and Neonatal Departments. Expert in neonatal intensive care, perinatal diagnosis, and pediatric emergencies.",
+
+"people.doctors.huqm-pellicer-neonatology.name": "Dra. Adelina Pellicer Martínez",
+"people.doctors.huqm-pellicer-neonatology.title": "Associate Head of Neonatology — Quirónsalud Madrid",
+"people.doctors.huqm-pellicer-neonatology.bio": "Coordinates NICU operations and complex neonatal care. Specialist in premature infant support and neonatal pathology.",
+
+"people.doctors.huqm-gosalvez-ivf.name": "Dr. Antonio Gosálvez Vega",
+"people.doctors.huqm-gosalvez-ivf.title": "Director of the Assisted Reproduction Unit — Quirónsalud Madrid",
+"people.doctors.huqm-gosalvez-ivf.bio": "Leads IVF programs at Quirónsalud Madrid and San José. Gynecologist specialized in reproductive medicine, fertility, and egg donation.",
+
+"people.doctors.hqv-merenciano-cardiology.name": "Dr. Héctor Manuel Merenciano González",
+"people.doctors.hqv-merenciano-cardiology.title": "Cardiologist — Quirónsalud Valencia",
+"people.doctors.hqv-merenciano-cardiology.bio": "Specialist in clinical cardiology, echocardiography, and heart failure management. Provides comprehensive cardiovascular care.",
+
+"people.doctors.hqv-ferrero-arrhythmia.name": "Dr. Ángel Ferrero de Loma Osorio",
+"people.doctors.hqv-ferrero-arrhythmia.title": "Electrophysiologist — Arrhythmia and Pacemaker Unit, Quirónsalud Valencia",
+"people.doctors.hqv-ferrero-arrhythmia.bio": "Expert in diagnosis and treatment of cardiac rhythm disorders. Performs ablation and device therapy, including pacemakers and defibrillators.",
+
+"people.doctors.hqv-sempere-gastro.name": "Dr. Javier Sempere García-Argüelles",
+"people.doctors.hqv-sempere-gastro.title": "Gastroenterologist — Digestive Diseases Department, Quirónsalud Valencia",
+"people.doctors.hqv-sempere-gastro.bio": "Specialist in digestive endoscopy, intestinal pathology, and chronic gastrointestinal disorders. Provides advanced endoscopic diagnostics.",
+
+  "people.doctors.hqv-sanchiz-gastro.name": "Dr. Vicente Sanchiz Soler",
+"people.doctors.hqv-sanchiz-gastro.title": "Gastroenterologist — Quirónsalud Valencia",
+"people.doctors.hqv-sanchiz-gastro.bio": "Specialist in hepatology and digestive system diseases. Provides advanced endoscopic and liver diagnostic care.",
+
+"people.doctors.hqv-flor-gs.name": "Dr. Blas Flor Lorente",
+"people.doctors.hqv-flor-gs.title": "General and Gastrointestinal Surgeon — Quirónsalud Valencia",
+"people.doctors.hqv-flor-gs.bio": "Performs gastrointestinal and abdominal surgery using minimally invasive and laparoscopic techniques.",
+
+"people.doctors.hqv-paya-gs.name": "Dra. Carmen Payá Llorente",
+"people.doctors.hqv-paya-gs.title": "General Surgeon — Quirónsalud Valencia",
+"people.doctors.hqv-paya-gs.bio": "Specialist in abdominal and digestive surgery with experience in advanced laparoscopic procedures.",
+
+"people.doctors.hqv-marti-radiology.name": "Dr. Luis Martí-Bonmatí",
+"people.doctors.hqv-marti-radiology.title": "Head of Radiology — Quirónsalud Valencia",
+"people.doctors.hqv-marti-radiology.bio": "Leads the Radiology Department. Internationally recognized expert in MRI, CT, and image-guided diagnostics and research.",
+
+"people.doctors.hqm-agustin-cataldo-cardiology.name": "Dr. Agustín Cataldo",
+"people.doctors.hqm-agustin-cataldo-cardiology.title": "Cardiologist — Quirónsalud Málaga",
+"people.doctors.hqm-agustin-cataldo-cardiology.bio": "Specialist in clinical cardiology and non-invasive heart diagnostics. Provides patient-centered cardiovascular care.",
+
+"people.doctors.hqm-alberto-barrera-cardiology.name": "Dr. Alberto Barrera Cordero",
+"people.doctors.hqm-alberto-barrera-cardiology.title": "Cardiologist — Quirónsalud Málaga",
+"people.doctors.hqm-alberto-barrera-cardiology.bio": "Expert in echocardiography and clinical management of cardiac diseases. Focuses on early diagnosis and preventive cardiology.",
+
+"people.doctors.hqm-jose-antonio-trujillo-gs.name": "Dr. José Antonio Trujillo Ruíz",
+"people.doctors.hqm-jose-antonio-trujillo-gs.title": "General and Digestive Surgeon — Quirónsalud Málaga",
+"people.doctors.hqm-jose-antonio-trujillo-gs.bio": "Specialist in general and digestive surgery with emphasis on minimally invasive techniques. Also part of the hospital’s medical leadership team.",
+
+"people.doctors.hqm-cesar-ramirez-gs.name": "Dr. César Pablo Ramírez Plaza",
+"people.doctors.hqm-cesar-ramirez-gs.title": "General and Oncologic Surgeon — Quirónsalud Málaga",
+"people.doctors.hqm-cesar-ramirez-gs.bio": "Performs oncologic surgery of the colon, rectum, and thyroid. Distinguished member of Quirónsalud Málaga’s surgical department.",
+
+  "people.doctors.hqm-alba-castano-radiology.name": "Dra. Alba María Castaño Ramírez",
+"people.doctors.hqm-alba-castano-radiology.title": "Radiologist — Diagnostic Imaging, Quirónsalud Málaga",
+"people.doctors.hqm-alba-castano-radiology.bio": "Specialist in diagnostic radiology with expertise in oncologic imaging and advanced MRI interpretation.",
+
+"people.doctors.hqm-alba-merchan-radiology.name": "Dra. Alba Merchán Páez",
+"people.doctors.hqm-alba-merchan-radiology.title": "Radiologist — Quirónsalud Málaga",
+"people.doctors.hqm-alba-merchan-radiology.bio": "Expert in magnetic resonance imaging (MRI) and computed tomography (CT). Provides comprehensive diagnostic imaging services.",
+
+"people.doctors.hqm-beatriz-medina-endocrinology.name": "Dra. Beatriz Medina Olivares",
+"people.doctors.hqm-beatriz-medina-endocrinology.title": "Endocrinologist — Quirónsalud Málaga",
+"people.doctors.hqm-beatriz-medina-endocrinology.bio": "Specialist in endocrinology and clinical nutrition. Focuses on diabetes, thyroid disorders, and metabolic health management.",
+
+"people.doctors.hqm-carmen-hardy-endocrinology.name": "Dra. Carmen María Hardy Añón",
+"people.doctors.hqm-carmen-hardy-endocrinology.title": "Endocrinologist — Quirónsalud Málaga",
+"people.doctors.hqm-carmen-hardy-endocrinology.bio": "Expert in metabolism and complex endocrine disorders. Provides personalized hormonal and nutritional therapy in Málaga.",
+
+"people.doctors.hqm-juan-luis-alcazar-ivf.name": "Dr. Juan Luis Alcázar",
+"people.doctors.hqm-juan-luis-alcazar-ivf.title": "Gynecologist and IVF Specialist — Quirónsalud Málaga",
+"people.doctors.hqm-juan-luis-alcazar-ivf.bio": "Leads assisted reproduction and infertility programs. Experienced in IVF, ICSI, and advanced reproductive techniques.",
+
+"people.doctors.hqm-luis-alonso-pacheco-ivf.name": "Dr. Luis Alonso Pacheco",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.title": "IVF Specialist — Reproductive Medicine Unit, Quirónsalud Málaga",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.bio": "Performs in vitro fertilization and fertility treatments. Focuses on reproductive support and personalized patient care.",
+
+"people.doctors.qa-pascual-cardiology.name": "Dr. Alejandro Pascual Gutiérrez",
+"people.doctors.qa-pascual-cardiology.title": "Cardiologist — Quirónsalud Alicante",
+"people.doctors.qa-pascual-cardiology.bio": "Member of the comprehensive cardiology team at Quirónsalud Alicante. Provides diagnosis and treatment of heart disease.",
+
+"people.doctors.qa-hortelano-cardiology.name": "Dr. Ignacio Hortelano Moya",
+"people.doctors.qa-hortelano-cardiology.title": "Cardiologist — Quirónsalud Alicante",
+"people.doctors.qa-hortelano-cardiology.bio": "Specialist in cardiovascular diseases and preventive diagnostics. Focuses on heart health, arrhythmia management, and hypertension control.",
+  "people.doctors.qa-inigo-gastro.name": "Dra. Almudena Íñigo Chaves",
+"people.doctors.qa-inigo-gastro.title": "Gastroenterologist — Quirónsalud Alicante",
+"people.doctors.qa-inigo-gastro.bio": "Specialist in digestive system diseases and endoscopic procedures. Provides comprehensive gastroenterology care.",
+
+"people.doctors.qa-pascualmora-gastro.name": "Dr. Ángel Agustín Pascual Mora",
+"people.doctors.qa-pascualmora-gastro.title": "Gastroenterologist — Digestive Diseases Unit, Quirónsalud Alicante",
+"people.doctors.qa-pascualmora-gastro.bio": "Expert in digestive disorders and endoscopic treatments. Offers personalized management of gastrointestinal diseases.",
+
+"people.doctors.qa-roscomesana-gs.name": "Dr. Alejandro Ros Comesaña",
+"people.doctors.qa-roscomesana-gs.title": "General and Digestive Surgeon — Quirónsalud Alicante",
+"people.doctors.qa-roscomesana-gs.bio": "Performs general and digestive surgery with a focus on minimally invasive abdominal procedures.",
+
+"people.doctors.qa-farre-onco.name": "Dr. José Farré Alegre",
+"people.doctors.qa-farre-onco.title": "Surgical Oncologist — Quirónsalud Alicante",
+"people.doctors.qa-farre-onco.bio": "Specialist in oncologic surgery with a multidisciplinary approach to tumor treatment and postoperative care.",
+
+"people.doctors.qa-maehr-ortho.name": "Dr. Alban Maehr",
+"people.doctors.qa-maehr-ortho.title": "Orthopedic Surgeon — Quirónsalud Alicante",
+"people.doctors.qa-maehr-ortho.bio": "Specialist in traumatology and orthopedic surgery. Focuses on musculoskeletal injuries and joint reconstruction.",
+
+"people.doctors.qa-salvador-ortho.name": "Dr. Jorge Salvador Marín",
+"people.doctors.qa-salvador-ortho.title": "Orthopedic and Trauma Surgeon — Quirónsalud Alicante",
+"people.doctors.qa-salvador-ortho.bio": "Expert in orthopedic surgery and rehabilitation. Provides surgical care for fractures, sports injuries, and joint disorders.",
+
+"people.doctors.qa-hernandez-radiology.name": "Dra. Carmen Blanca Hernández Sastre",
+"people.doctors.qa-hernandez-radiology.title": "Head of Diagnostic Imaging — Quirónsalud Alicante",
+"people.doctors.qa-hernandez-radiology.bio": "Leads the diagnostic imaging service. Expert in radiodiagnosis, MRI, CT, and digital imaging technologies.",
+
+"people.doctors.qa-pla-radiology.name": "Dr. Fernando Pla Mingorance",
+"people.doctors.qa-pla-radiology.title": "Radiologist — Quirónsalud Alicante",
+"people.doctors.qa-pla-radiology.bio": "Specialist in magnetic resonance and advanced imaging techniques for accurate diagnostic assessment.",
+
+  "people.doctors.qa-maestre-neuro.name": "Dr. José Joaquín Maestre Gil",
+"people.doctors.qa-maestre-neuro.title": "Neurosurgeon — Quirónsalud Alicante",
+"people.doctors.qa-maestre-neuro.bio": "Member of the Neurosciences Unit specializing in brain and spinal surgery. Focuses on minimally invasive neurosurgical techniques.",
+
+"people.doctors.qa-puell-neuro.name": "Dr. Carlos Israel Puell Horta",
+"people.doctors.qa-puell-neuro.title": "Neurosurgeon — Quirónsalud Alicante",
+"people.doctors.qa-puell-neuro.bio": "Expert in neurosurgery and central nervous system tract disorders. Provides surgical management of brain and spinal pathologies.",
+
+"people.doctors.qa-mendoza-endocrinology.name": "Dr. Alejandro Óscar Mendoza",
+"people.doctors.qa-mendoza-endocrinology.title": "Endocrinologist — Quirónsalud Alicante",
+"people.doctors.qa-mendoza-endocrinology.bio": "Specialist in endocrinology and nutrition. Provides diagnosis and management of hormonal and metabolic disorders.",
+
+"people.doctors.qa-cid-endocrinology.name": "Dr. Jorge Cid Pérez",
+"people.doctors.qa-cid-endocrinology.title": "Endocrinologist — Quirónsalud Alicante",
+"people.doctors.qa-cid-endocrinology.bio": "Specialist in diabetes, obesity, and metabolic diseases. Offers preventive and therapeutic endocrine care.",
+
+"people.doctors.sjd-mora-oncology.name": "Dr. Jaume Mora Graupera",
+"people.doctors.sjd-mora-oncology.title": "Pediatric Oncologist — Hospital Sant Joan de Déu Barcelona",
+"people.doctors.sjd-mora-oncology.bio": "Director of Pediatric Oncology. Researcher in childhood tumorigenesis and precision therapies for rare cancers.",
+
+"people.doctors.sjd-rives-hematology.name": "Dra. Susana Rives Sola",
+"people.doctors.sjd-rives-hematology.title": "Pediatric Hematologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-rives-hematology.bio": "Specialist in pediatric hematologic disorders and immune deficiencies. Leads innovative therapies for childhood leukemia.",
+
+"people.doctors.sjd-hinojosa-neurosurgery.name": "Dr. José Hinojosa Mena-Bernal",
+"people.doctors.sjd-hinojosa-neurosurgery.title": "Pediatric Neurosurgeon — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-hinojosa-neurosurgery.bio": "Specialist in pediatric neuro-oncology, tethered cord, and craniofacial surgery. Performs advanced microsurgical procedures.",
+
+"people.doctors.sjd-fons-neurology.name": "Dra. Maria Carme Fons Estupiñà",
+"people.doctors.sjd-fons-neurology.title": "Pediatric Neurologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-fons-neurology.bio": "Pediatric neurologist specializing in developmental disorders, epilepsy, and neurogenetic diseases."
+,
+
+  "people.doctors.sjd-prada-cardiology.name": "Dr. Fredy Hermógenes Prada Martínez",
+"people.doctors.sjd-prada-cardiology.title": "Pediatric Cardiologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-prada-cardiology.bio": "Specialist in congenital heart diseases and long-term pediatric cardiac follow-up. Provides advanced pediatric cardiology care.",
+
+"people.doctors.sjd-sarquella-cardiology.name": "Dra. Georgia Sarquella Brugada",
+"people.doctors.sjd-sarquella-cardiology.title": "Pediatric Cardiologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-sarquella-cardiology.bio": "Expert in pediatric arrhythmias and congenital cardiology. Member of the Brugada family, pioneers in inherited heart rhythm disorders.",
+
+"people.doctors.sjd-parri-surgery.name": "Dr. Francisco José Parri Ferrandis",
+"people.doctors.sjd-parri-surgery.title": "Pediatric and Pediatric Plastic Surgeon — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-parri-surgery.bio": "Specialist in pediatric surgery and reconstructive procedures for congenital malformations. Focuses on minimally invasive techniques.",
+
+"people.doctors.sjd-krauel-surgery.name": "Dr. Lucas Krauel Giménez-Salinas",
+"people.doctors.sjd-krauel-surgery.title": "Pediatric Surgeon — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-krauel-surgery.bio": "Expert in pediatric oncology surgery and minimally invasive techniques. Leads innovative programs in pediatric surgical oncology.",
+
+"people.doctors.sjd-carrasco-surgery.name": "Dra. Rosalía Carrasco Torrents",
+"people.doctors.sjd-carrasco-surgery.title": "Pediatric Thoracic and Plastic Surgeon — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-carrasco-surgery.bio": "Specialist in pediatric thoracic and reconstructive surgery. Focuses on congenital malformations and oncologic procedures.",
+
+"people.doctors.sjd-garciaapu-urology.name": "Dr. Luis García Aparicio",
+"people.doctors.sjd-garciaapu-urology.title": "Pediatric Urologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-garciaapu-urology.bio": "Specialist in pediatric urology treating hydronephrosis, vesicoureteral reflux, and hypospadias. Performs minimally invasive procedures.",
+
+"people.doctors.sjd-galofontecha-ortho.name": "Dr. César Galo García Fontecha",
+"people.doctors.sjd-galofontecha-ortho.title": "Pediatric Orthopedic Surgeon and Traumatologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-galofontecha-ortho.bio": "Expert in pediatric orthopedics and trauma. Focuses on limb deformities, musculoskeletal disorders, and scoliosis correction.",
+
+"people.doctors.sjd-alberti-otorhinolaryngology.name": "Dra. Anna Albertí Casas",
+"people.doctors.sjd-alberti-otorhinolaryngology.title": "Pediatric ENT (Otolaryngologist) — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-alberti-otorhinolaryngology.bio": "Pediatric ENT specialist with expertise in auditory, airway, and craniofacial pathologies. Provides multidisciplinary ENT care.",
+
+  "people.doctors.sjd-alsina-immunology.name": "Dra. Laia Alsina Manrique de Lara",
+"people.doctors.sjd-alsina-immunology.title": "Pediatric Immunologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-alsina-immunology.bio": "Clinical pediatric immunologist specializing in immune and autoimmune diseases. Leads research in primary immunodeficiencies.",
+
+"people.doctors.sjd-climent-neurophysiology.name": "Dra. Jana Climent",
+"people.doctors.sjd-climent-neurophysiology.title": "Clinical Neurophysiologist and Developmental Specialist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-climent-neurophysiology.bio": "Specialist in pediatric neurophysiology and developmental neurodiagnostics, focusing on early detection of neurodevelopmental disorders.",
+
+"people.doctors.sjd-colome-neuropsychology.name": "Dra. Roser Colomé Roura",
+"people.doctors.sjd-colome-neuropsychology.title": "Pediatric Neuropsychologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-colome-neuropsychology.bio": "Expert in cognitive development, learning disorders, and pediatric neuropsychological evaluation.",
+
+"people.doctors.sjd-cols-pulmonology.name": "Dra. Maria Cols Roig",
+"people.doctors.sjd-cols-pulmonology.title": "Pediatric Pulmonologist — Sant Joan de Déu Barcelona",
+"people.doctors.sjd-cols-pulmonology.bio": "Specialist in pediatric respiratory medicine and chronic lung diseases. Provides comprehensive care for asthma and rare pulmonary disorders.",
+
+"people.doctors.hqb-llado-neurology.name": "Dra. Ana Lladó Carbó",
+"people.doctors.hqb-llado-neurology.title": "Head of Neurology — Quirónsalud Barcelona",
+"people.doctors.hqb-llado-neurology.bio": "Head of Neurology at Quirónsalud Barcelona. Specialist in stroke, multiple sclerosis, and neurodegenerative disorders.",
+
+"people.doctors.hqb-garcia-pascual-neurology.name": "Dra. Marta García Pascual",
+"people.doctors.hqb-garcia-pascual-neurology.title": "Neurologist — Quirónsalud Barcelona",
+"people.doctors.hqb-garcia-pascual-neurology.bio": "Specialist in epilepsy and demyelinating diseases of the central nervous system. Provides advanced neurological diagnostics.",
+
+"people.doctors.hqb-hernandez-neurophysiology.name": "Dra. María Hernández Villalba",
+"people.doctors.hqb-hernandez-neurophysiology.title": "Clinical Neurophysiologist — Quirónsalud Barcelona",
+"people.doctors.hqb-hernandez-neurophysiology.bio": "Expert in EEG, EMG, and sleep studies. Member of the Clinical Neurophysiology Department providing electrophysiological diagnostics.",
+
+"people.doctors.hqb-martinez-neurophysiology.name": "Dr. David Martínez Díaz",
+"people.doctors.hqb-martinez-neurophysiology.title": "Neurophysiologist — Quirónsalud Barcelona",
+"people.doctors.hqb-martinez-neurophysiology.bio": "Performs neurophysiological diagnostics for epilepsy, neuropathies, and sleep disorders. Focuses on precise functional mapping.",
+
+"people.doctors.hqb-gispert-psychiatry.name": "Dra. Eva Gispert Dalmau",
+"people.doctors.hqb-gispert-psychiatry.title": "Psychiatrist — Quirónsalud Barcelona",
+"people.doctors.hqb-gispert-psychiatry.bio": "Specialist in adult psychiatry focusing on depression, anxiety, and affective disorders. Provides evidence-based mental health care.",
+
+"people.doctors.hqb-sanchez-psychiatry.name": "Dra. Montserrat Sánchez Hernández",
+"people.doctors.hqb-sanchez-psychiatry.title": "Child and Adolescent Psychiatrist — Quirónsalud Barcelona",
+"people.doctors.hqb-sanchez-psychiatry.bio": "Expert in child and adolescent psychiatry, specializing in ADHD, autism spectrum disorders, and emotional development.",
+
+"people.doctors.hqb-girbau-dermatology.name": "Dra. Montserrat Girbau",
+"people.doctors.hqb-girbau-dermatology.title": "Head of Dermatology — Quirónsalud Barcelona",
+"people.doctors.hqb-girbau-dermatology.bio": "Head of Dermatology. Specialist in dermatologic surgery and inflammatory skin diseases such as psoriasis and atopic dermatitis.",
+
+  "people.doctors.hqb-sierra-dermatology.name": "Dra. Cristina Sierra Giralt",
+"people.doctors.hqb-sierra-dermatology.title": "Dermatologist — Quirónsalud Barcelona",
+"people.doctors.hqb-sierra-dermatology.bio": "Specialist in aesthetic dermatology, laser therapy, and skin rejuvenation. Provides advanced cosmetic and medical skin care.",
+
+"people.doctors.hqb-rodriguez-pulmonology.name": "Dra. María Rodríguez Marín",
+"people.doctors.hqb-rodriguez-pulmonology.title": "Pulmonologist — Quirónsalud Barcelona",
+"people.doctors.hqb-rodriguez-pulmonology.bio": "Expert in respiratory diseases, asthma, and sleep-related breathing disorders. Provides pulmonary function and sleep studies.",
+
+"people.doctors.hqb-vilaseca-pulmonology.name": "Dr. Sergi Vilaseca Requena",
+"people.doctors.hqb-vilaseca-pulmonology.title": "Pulmonologist — Quirónsalud Barcelona",
+"people.doctors.hqb-vilaseca-pulmonology.bio": "Specialist in COPD, chronic bronchitis, and respiratory rehabilitation. Offers long-term management of pulmonary conditions.",
+
+"people.doctors.hqb-becerra-epileptology.name": "Dr. José Becerra Fernández",
+"people.doctors.hqb-becerra-epileptology.title": "Neurologist — Epileptology Unit, Quirónsalud Barcelona",
+"people.doctors.hqb-becerra-epileptology.bio": "Specialist in clinical epileptology, EEG monitoring, and epilepsy surgery. Focuses on refractory and complex seizure disorders.",
+
+"people.doctors.hqb-rodriguez-epileptology.name": "Dra. Ana Rodríguez Pérez",
+"people.doctors.hqb-rodriguez-epileptology.title": "Neurologist — Pediatric and Adult Epileptology, Quirónsalud Barcelona",
+"people.doctors.hqb-rodriguez-epileptology.bio": "Provides comprehensive treatment for complex epilepsy and neurophysiological diagnostics across pediatric and adult cases.",
+
+"people.doctors.hqb-minguez-hematology.name": "Dra. Gloria Minguez",
+"people.doctors.hqb-minguez-hematology.title": "Hematologist — Quirónsalud Barcelona",
+"people.doctors.hqb-minguez-hematology.bio": "Specialist in clinical hematology, leukemias, and blood disorders. Collaborates with IOB Institute of Oncology on integrative care.",
+
+"people.doctors.hqb-dominguez-hematology.name": "Dr. Alberto Domínguez García",
+"people.doctors.hqb-dominguez-hematology.title": "Hematologist — Oncohematology Unit, Quirónsalud Barcelona",
+"people.doctors.hqb-dominguez-hematology.bio": "Expert in lymphomas, multiple myeloma, and malignant hematologic diseases. Focuses on personalized oncohematologic therapies.",
+
+"people.doctors.hqb-lloveras-nuclear.name": "Dr. José Lloveras Rubio",
+"people.doctors.hqb-lloveras-nuclear.title": "Head of Nuclear Medicine — Quirónsalud Barcelona",
+"people.doctors.hqb-lloveras-nuclear.bio": "Head of Nuclear Medicine. Responsible for PET-CT and advanced functional imaging for oncology and metabolic diagnostics.",
+
+  "people.doctors.hqb-escalona-nuclear.name": "Dra. María Escalona García",
+"people.doctors.hqb-escalona-nuclear.title": "Specialist in Nuclear Medicine — Quirónsalud Barcelona",
+"people.doctors.hqb-escalona-nuclear.bio": "Expert in molecular imaging and radiopharmaceutical therapy management (I-131, Lu-177, Ga-68). Focuses on functional diagnostic imaging.",
+
+"people.doctors.hqb-torreblanca-ophthalmology.name": "Dr. José María Torreblanca",
+"people.doctors.hqb-torreblanca-ophthalmology.title": "Ophthalmologist — Retina and Cataract Surgery, Quirónsalud Barcelona",
+"people.doctors.hqb-torreblanca-ophthalmology.bio": "Specialist in retinal and cataract surgery. Provides advanced diagnostic imaging and microsurgical vision treatments.",
+
+"people.doctors.hqb-perez-montes-ophthalmology.name": "Dra. María Pérez Montes",
+"people.doctors.hqb-perez-montes-ophthalmology.title": "Ophthalmologist — Cornea and Glaucoma Specialist, Quirónsalud Barcelona",
+"people.doctors.hqb-perez-montes-ophthalmology.bio": "Expert in corneal surgery and chronic glaucoma management. Performs refractive and ocular surface reconstruction procedures.",
+
+"people.doctors.hqb-ferrandez-nephrology.name": "Dr. Francesc Ferrández López",
+"people.doctors.hqb-ferrandez-nephrology.title": "Nephrologist — Quirónsalud Barcelona",
+"people.doctors.hqb-ferrandez-nephrology.bio": "Specialist in clinical nephrology, hypertension, and chronic kidney disease. Provides preventive and renal replacement care.",
+
+"people.doctors.hqb-gomez-nephrology.name": "Dra. Ana Gómez Ortiz",
+"people.doctors.hqb-gomez-nephrology.title": "Nephrologist — Quirónsalud Barcelona",
+"people.doctors.hqb-gomez-nephrology.bio": "Focuses on renal insufficiency, nephropathies, and post-transplant patient follow-up. Provides multidisciplinary renal care.",
+
+"people.doctors.hqb-lledo-urology.name": "Dr. Eusebio Lledó García",
+"people.doctors.hqb-lledo-urology.title": "Head of Urology — Quirónsalud Barcelona",
+"people.doctors.hqb-lledo-urology.bio": "Head of the Urology Department. Expert in laparoscopic surgery, onco-urology, and andrology. Performs complex prostate and kidney procedures.",
+
+"people.doctors.hqb-caballero-urology.name": "Dr. Jorge Caballero García",
+"people.doctors.hqb-caballero-urology.title": "Urologist — Minimally Invasive Surgery, Quirónsalud Barcelona",
+"people.doctors.hqb-caballero-urology.bio": "Specialist in prostate surgery and minimally invasive urologic techniques. Focuses on precision and patient recovery.",
+
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.name": "Dr. Adolfo López Gómez",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.title": "Head of Gynecology and Obstetrics — Quirónsalud Seville",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.bio": "Leads the Department of Gynecology and Obstetrics. Specialist in fertility disorders, laparoscopic surgery, and management of high-risk pregnancies.",
+
+"people.doctors.seville-agustina-moreno-martos-gynecology.name": "Dra. Agustina Moreno Martos",
+"people.doctors.seville-agustina-moreno-martos-gynecology.title": "Gynecologist — Quirónsalud Seville",
+"people.doctors.seville-agustina-moreno-martos-gynecology.bio": "Specialist in reproductive medicine and female hormonal disorders. Provides personalized infertility treatment and advanced gynecologic care.",
+
+"people.doctors.seville-adrian-revello-bustos-cardiology.name": "Dr. Adrián Revelló Bustos",
+"people.doctors.seville-adrian-revello-bustos-cardiology.title": "Cardiologist — Quirónsalud Seville",
+"people.doctors.seville-adrian-revello-bustos-cardiology.bio": "Specialist in interventional cardiology and ischemic heart disease. Performs diagnostic catheterization, angioplasty, and preventive cardiology programs.",
+
+"people.doctors.seville-javier-marquez-cardiology.name": "Dr. Javier Márquez",
+"people.doctors.seville-javier-marquez-cardiology.title": "Interventional Cardiologist — Quirónsalud Seville",
+"people.doctors.seville-javier-marquez-cardiology.bio": "Expert in coronary interventions, cardiac imaging, and rhythm management. Focuses on angioplasty and hypertension treatment.",
+
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.name": "Dra. Aguas Santas Sánchez Rull",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.title": "Ophthalmologist — Quirónsalud Seville",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.bio": "Specialist in cataract, glaucoma, and refractive surgery. Provides advanced ophthalmic diagnostics and corneal disease treatment.",
+
+"people.doctors.seville-miguel-fernandez-ophthalmology.name": "Dr. Miguel Fernández",
+"people.doctors.seville-miguel-fernandez-ophthalmology.title": "Ophthalmologist — Quirónsalud Seville",
+"people.doctors.seville-miguel-fernandez-ophthalmology.bio": "Focuses on retinal and macular disorders, glaucoma, and diabetic retinopathy. Performs laser and microsurgical eye procedures.",
+
+"people.doctors.seville-abdul-razack-general-surgery.name": "Dr. Abdul Razack",
+"people.doctors.seville-abdul-razack-general-surgery.title": "General and Digestive Surgeon — Quirónsalud Seville",
+"people.doctors.seville-abdul-razack-general-surgery.bio": "Performs laparoscopic and minimally invasive procedures for gallbladder, hernia, and gastrointestinal diseases.",
+
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.name": "Dr. Alberto Del Valle Arévalo",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.title": "General Surgeon — Quirónsalud Seville",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.bio": "Specialist in minimally invasive abdominal and digestive surgery. Works within multidisciplinary teams for complex surgical cases.",
+
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.name": "Dr. Abraham García Mendoza",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.title": "Orthopedic and Trauma Surgeon — Quirónsalud Seville",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.bio": "Specialist in joint replacement, arthroscopy, and sports traumatology. Provides surgical and conservative treatment for musculoskeletal injuries.",
+
+"people.doctors.seville-clara-martinez-orthopedics.name": "Dra. Clara Martínez",
+"people.doctors.seville-clara-martinez-orthopedics.title": "Orthopedic Surgeon — Quirónsalud Seville",
+"people.doctors.seville-clara-martinez-orthopedics.bio": "Treats fractures, ligament injuries, and sports trauma. Experienced in both pediatric and adult orthopedics with focus on functional recovery.",
+
+"people.doctors.seville-maria-jose-lirola-pediatrics.name": "Dra. María José Lirola",
+"people.doctors.seville-maria-jose-lirola-pediatrics.title": "Head of Pediatrics — Quirónsalud Seville",
+"people.doctors.seville-maria-jose-lirola-pediatrics.bio": "Leads pediatric services within the Materno-Infantil Unit. Specialist in preventive pediatrics, allergies, and chronic disease management.",
+
+"people.doctors.seville-ana-garcia-pediatrics.name": "Dra. Ana García",
+"people.doctors.seville-ana-garcia-pediatrics.title": "Pediatrician — Quirónsalud Seville",
+"people.doctors.seville-ana-garcia-pediatrics.bio": "Provides neonatal and developmental care. Focuses on respiratory infections, child nutrition, and preventive vaccination programs.",
+
+"people.doctors.seville-carlos-ruiz-oncology.name": "Dr. Carlos Ruiz",
+"people.doctors.seville-carlos-ruiz-oncology.title": "Oncologist — Quirónsalud Seville",
+"people.doctors.seville-carlos-ruiz-oncology.bio": "Expert in chemotherapy, immunotherapy, and targeted cancer treatment. Designs personalized care plans for solid tumor patients.",
+
+"people.doctors.seville-laura-gomez-oncology.name": "Dra. Laura Gómez",
+"people.doctors.seville-laura-gomez-oncology.title": "Medical Oncologist — Quirónsalud Seville",
+"people.doctors.seville-laura-gomez-oncology.bio": "Specializes in breast and gastrointestinal oncology. Provides multidisciplinary cancer management and long-term patient follow-up.",
+
+"people.doctors.seville-ricardo-martin-neurosurgery.name": "Dr. Ricardo Martín",
+"people.doctors.seville-ricardo-martin-neurosurgery.title": "Neurosurgeon — Quirónsalud Seville",
+"people.doctors.seville-ricardo-martin-neurosurgery.bio": "Performs brain and spine microsurgery for tumors, herniated discs, and nerve compression. Applies advanced neurosurgical techniques.",
+
+"people.doctors.seville-isabel-martinez-neurosurgery.name": "Dra. Isabel Martínez",
+"people.doctors.seville-isabel-martinez-neurosurgery.title": "Neurosurgeon — Quirónsalud Seville",
+"people.doctors.seville-isabel-martinez-neurosurgery.bio": "Specialist in spine and peripheral nerve surgery. Provides multidisciplinary care for traumatic and degenerative neurological conditions.",
+
+"people.doctors.seville-javier-sanchez-urology.name": "Dr. Javier Sánchez",
+"people.doctors.seville-javier-sanchez-urology.title": "Urologist — Quirónsalud Seville",
+"people.doctors.seville-javier-sanchez-urology.bio": "Specialist in prostate and urinary tract disorders. Performs endoscopic and minimally invasive urologic surgery for optimal recovery.",
+
+"people.doctors.seville-marta-lopez-urology.name": "Dra. Marta López",
+"people.doctors.seville-marta-lopez-urology.title": "Urologist — Quirónsalud Seville",
+"people.doctors.seville-marta-lopez-urology.bio": "Specialist in kidney and bladder diseases, including stone management and female urology. Performs diagnostic and functional ultrasound studies.",
+
+"people.doctors.seville-antonio-castro-dermatology.name": "Dr. Antonio Castro",
+"people.doctors.seville-antonio-castro-dermatology.title": "Dermatologist — Quirónsalud Seville",
+"people.doctors.seville-antonio-castro-dermatology.bio": "Treats chronic skin conditions such as psoriasis, eczema, and dermatitis. Experienced in dermatosurgery, mole mapping, and skin cancer screening.",
+
+"people.doctors.seville-silvia-garcia-dermatology.name": "Dra. Silvia García",
+"people.doctors.seville-silvia-garcia-dermatology.title": "Dermatologist — Quirónsalud Seville",
+"people.doctors.seville-silvia-garcia-dermatology.bio": "Specialist in aesthetic dermatology and laser therapy. Provides treatments for acne, pigmentation, scars, and skin rejuvenation.",
+
+"people.doctors.seville-diego-rodriguez-gastro.name": "Dr. Diego Rodríguez",
+"people.doctors.seville-diego-rodriguez-gastro.title": "Gastroenterologist — Quirónsalud Seville",
+"people.doctors.seville-diego-rodriguez-gastro.bio": "Specialist in digestive tract and liver disorders. Performs endoscopy, colonoscopy, and management of reflux and inflammatory bowel disease.",
+
+"people.doctors.seville-noelia-martin-gastro.name": "Dra. Noelia Martín",
+"people.doctors.seville-noelia-martin-gastro.title": "Gastroenterologist — Quirónsalud Seville",
+"people.doctors.seville-noelia-martin-gastro.bio": "Focuses on hepatology and pancreatic disorders. Experienced in metabolic-liver diseases and advanced endoscopic diagnostics.",
+
+"people.doctors.seville-fernando-ruiz-endocrinology.name": "Dr. Fernando Ruiz",
+"people.doctors.seville-fernando-ruiz-endocrinology.title": "Endocrinologist — Quirónsalud Seville",
+"people.doctors.seville-fernando-ruiz-endocrinology.bio": "Expert in diabetes, thyroid disease, and obesity management. Provides hormonal balance therapy and preventive endocrine consultations.",
+
+"people.doctors.seville-maria-gonzalez-endocrinology.name": "Dra. María González",
+"people.doctors.seville-maria-gonzalez-endocrinology.title": "Endocrinologist — Quirónsalud Seville",
+"people.doctors.seville-maria-gonzalez-endocrinology.bio": "Specialist in metabolic, thyroid, and pituitary disorders. Offers personalized nutrition and hormonal therapy for endocrine health."
+
 }

@@ -34,49 +34,514 @@
   "country.spain.pitch.badge3": "مساعدة في المستندات",
   "country.spain.pitch.cta": "الاتصال بالمنسّق",
 
-  "dict.city.madrid.name": "مدريد",
+   "dict.city.madrid.name": "مدريد",
   "dict.city.barcelona.name": "برشلونة",
   "dict.city.valencia.name": "فالنسيا",
-  "dict.city.malaga.name": "ملقة",
-  "dict.city.alicante.name": "أليكانتي",
+  "dict.city.malaga.name": "مالقة",
+  "dict.city.alicante.name": "اليكانتي",
+  "dict.city.seville.name": "إشبيلية",
+  "dict.city.bilbao.name": "بيلباو",
 
-  "dict.clinic.quironsalud-madrid.name": "Quirónsalud مدريد",
-  "dict.clinic.quironsalud-barcelona.name": "Quirónsalud برشلونة",
-  "dict.clinic.quironsalud-valencia.name": "Quirónsalud فالنسيا",
-  "dict.clinic.quironsalud-malaga.name": "Quirónsalud ملقة",
-  "dict.clinic.quironsalud-alicante.name": "Quirónsalud أليكانتي",
-  "dict.clinic.sant-joan-deu-barcelona.name": "Sant Joan de Déu برشلونة",
+  "dict.clinic.quironsalud-madrid.name": "كيرونسالود مدريد",
+  "dict.clinic.quironsalud-barcelona.name": "كيرونسالود برشلونة",
+  "dict.clinic.quironsalud-valencia.name": "كيرونسالود فالنسيا",
+  "dict.clinic.quironsalud-malaga.name": "كيرونسالود مالقة",
+  "dict.clinic.quironsalud-alicante.name": "كيرونسالود أليكانتي",
+  "dict.clinic.quironsalud-seville.name": "كيرونسالود إشبيلية",
+  "dict.clinic.quironsalud-bilbao.name": "كيرونسالود بيلباو",
+  "dict.clinic.sant-joan-deu-barcelona.name": "مستشفى سانت جوان دي ديو برشلونة",
+  "dict.clinic.iob-institute-oncology-barcelona.name": "معهد IOB لعلاج الأورام برشلونة",
+  "dict.clinic.quironsalud-valdemoro.name": "كيرونسالود فالديمورو",
+  "dict.clinic.quironsalud-san-jose.name": "كيرونسالود سان خوسيه",
+  "dict.clinic.quironsalud-olympia.name": "مركز أولمبيا الطبي مدريد",
 
-  "dict.dept.cardiology.name": "أمراض القلب",
-  "dict.dept.oncology.name": "الأورام",
+  "dict.dept.cardiology.name": "طب القلب",
+  "dict.dept.oncology.name": "علم الأورام",
+  "dict.dept.hematology.name": "أمراض الدم",
+  "dict.dept.oncohematology.name": "أورام الدم",
   "dict.dept.neurosurgery.name": "جراحة الأعصاب",
-  "dict.dept.ivf.name": "أطفال الأنابيب والخصوبة",
-  "dict.dept.orthopedics.name": "جراحة العظام",
-  "dict.dept.gastro.name": "أمراض الجهاز الهضمي",
+  "dict.dept.neurology.name": "طب الأعصاب",
+  "dict.dept.neurophysiology.name": "علم وظائف الأعصاب",
+  "dict.dept.neuropsychology.name": "علم النفس العصبي",
+  "dict.dept.psychiatry.name": "الطب النفسي",
+  "dict.dept.pulmonology.name": "أمراض الرئة",
+  "dict.dept.dermatology.name": "الأمراض الجلدية",
   "dict.dept.endocrinology.name": "الغدد الصماء",
+  "dict.dept.gastro.name": "أمراض الجهاز الهضمي",
   "dict.dept.general-surgery.name": "الجراحة العامة",
+  "dict.dept.surgery.name": "الجراحة",
+  "dict.dept.plastic-surgery.name": "جراحة التجميل",
+  "dict.dept.thoracic-surgery.name": "جراحة الصدر",
+  "dict.dept.orthopedics.name": "جراحة العظام",
+  "dict.dept.traumatology.name": "طب الإصابات",
   "dict.dept.transplant.name": "زراعة الأعضاء",
-  "dict.dept.radiology.name": "الأشعة",
-  "dict.dept.radiation-oncology.name": "الأورام الإشعاعية",
+  "dict.dept.urology.name": "جراحة المسالك البولية",
+  "dict.dept.nephrology.name": "أمراض الكلى",
+  "dict.dept.ivf.name": "الإخصاب في المختبر وطب الإنجاب",
+  "dict.dept.obstetrics.name": "طب التوليد",
   "dict.dept.pediatrics.name": "طب الأطفال",
+  "dict.dept.immunology.name": "علم المناعة",
+  "dict.dept.allergology.name": "علم الحساسية",
+  "dict.dept.rheumatology.name": "أمراض الروماتيزم",
+  "dict.dept.rehabilitation.name": "إعادة التأهيل",
+  "dict.dept.radiology.name": "الأشعة",
+  "dict.dept.radiation-oncology.name": "العلاج الإشعاعي للأورام",
+  "dict.dept.nuclear-medicine.name": "الطب النووي",
+  "dict.dept.internal-medicine.name": "الطب الباطني",
+  "dict.dept.ophthalmology.name": "طب العيون",
+  "dict.dept.otolaryngology.name": "طب الأنف والأذن والحنجرة",
+  "dict.dept.dentistry.name": "طب الأسنان",
+  "dict.dept.aesthetic-medicine.name": "الطب التجميلي",
+  "dict.dept.genetics.name": "علم الوراثة",
 
-  "people.doctors.quironsalud-madrid-cardiology-slot.name": "سيُضاف قريبًا — Quirónsalud، أمراض القلب (مدريد)",
-  "people.doctors.quironsalud-madrid-cardiology-slot.title": "مثال: رئيس قسم أمراض القلب",
-  "people.doctors.quironsalud-madrid-cardiology-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+  "people.doctors.huqm-cabrera-cardiology.name": "الدكتور خوسيه أنخيل كابريرا رودريغيز",
+"people.doctors.huqm-cabrera-cardiology.title": "رئيس قسم أمراض القلب — مستشفى كيرونسالود الجامعي مدريد",
+"people.doctors.huqm-cabrera-cardiology.bio": "خبير في الفيزيولوجيا الكهربية للقلب، متخصص في استئصال الرجفان الأذيني. يشرف على أقسام أمراض القلب في كيرونسالود مدريد وروبر خوان برافو ومركز أوليمبيا الطبي.",
 
-  "people.doctors.quironsalud-barcelona-oncology-slot.name": "سيُضاف قريبًا — Quirónsalud، الأورام (برشلونة)",
-  "people.doctors.quironsalud-barcelona-oncology-slot.title": "مثال: مدير قسم الأورام",
-  "people.doctors.quironsalud-barcelona-oncology-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.huqm-datino-cardiology.name": "الدكتور توماس داتينو رومانينيغا",
+"people.doctors.huqm-datino-cardiology.title": "طبيب قلب — وحدة اضطرابات النظم، كيرونسالود مدريد",
+"people.doctors.huqm-datino-cardiology.bio": "متخصص في الفيزيولوجيا الكهربية للقلب واستئصال اضطرابات النظم المعقدة بالقسطرة، مع تركيز على تصحيح الإيقاع بطرق طفيفة التوغل.",
 
-  "people.doctors.quironsalud-valencia-orthopedics-slot.name": "سيُضاف قريبًا — Quirónsalud، جراحة العظام (فالنسيا)",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.title": "مثال: رئيس جراحة العظام",
-  "people.doctors.quironsalud-valencia-orthopedics-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.huqm-gonzalez-cortijo-oncology.name": "الدكتورة لوسيا غونثاليث كورتّيجو",
+"people.doctors.huqm-gonzalez-cortijo-oncology.title": "رئيسة قسم الأورام — مستشفى كيرونسالود الجامعي مدريد",
+"people.doctors.huqm-gonzalez-cortijo-oncology.bio": "تشرف على القسم متعدد التخصصات لعلاج الأورام. خبيرة في سرطان الثدي والبحوث السريرية والبروتوكولات العلاجية المخصصة.",
 
-  "people.doctors.quironsalud-malaga-ivf-slot.name": "سيُضاف قريبًا — Quirónsalud، أطفال الأنابيب (ملقة)",
-  "people.doctors.quironsalud-malaga-ivf-slot.title": "مثال: قائد برنامج أطفال الأنابيب",
-  "people.doctors.quironsalud-malaga-ivf-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية.",
+"people.doctors.huqm-boni-oncology.name": "الدكتورة فالنتينا بوني",
+"people.doctors.huqm-boni-oncology.title": "طبيبة أورام — وحدة التجارب السريرية للمرحلة الأولى، كيرونسالود مدريد",
+"people.doctors.huqm-boni-oncology.bio": "متخصصة في تطوير الأدوية السرطانية في المراحل المبكرة والتجارب الأولى على البشر، تركز على العلاجات الموجهة والمناعية.",
 
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.name": "سيُضاف قريبًا — Sant Joan de Déu، طب الأطفال (برشلونة)",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.title": "مثال: رئيس قسم طب الأطفال",
-  "people.doctors.sant-joan-deu-barcelona-pediatrics-slot.bio": "سيرة مؤقتة. استبدلها بنبذة موجزة بالعربية."
+"people.doctors.huqm-gil-robles-neurosurgery.name": "الدكتور سانتياغو خيل روبليس",
+"people.doctors.huqm-gil-robles-neurosurgery.title": "رئيس قسم جراحة الأعصاب — مستشفى كيرونسالود الجامعي مدريد",
+"people.doctors.huqm-gil-robles-neurosurgery.bio": "جراح أعصاب معترف به دولياً، متخصص في جراحة أورام الدماغ. رائد في رسم خرائط الدماغ أثناء العمليات والجراحة أثناء اليقظة.",
+
+"people.doctors.huqm-ley-neurosurgery.name": "الدكتور لويس لي أورزايز",
+"people.doctors.huqm-ley-neurosurgery.title": "استشاري جراحة الأعصاب — كيرونسالود مدريد",
+"people.doctors.huqm-ley-neurosurgery.bio": "يجري جراحات متقدمة في الدماغ والعمود الفقري. خبير في التقنيات طفيفة التوغل وعلاج إصابات الجهاز العصبي.",
+
+"people.doctors.huqm-tabuenca-ortho.name": "الدكتور خوسيه تابوينكا دومورتييه",
+"people.doctors.huqm-tabuenca-ortho.title": "رئيس قسم جراحة العظام والكسور — كيرونسالود مدريد",
+"people.doctors.huqm-tabuenca-ortho.bio": "يدير قسم جراحة العظام والكسور، متخصص في جراحة الورك والركبة والكتف واليد والقدم والكاحل.",
+
+"people.doctors.huqm-trigo-ortho.name": "الدكتور لويس تريغو لاهوث",
+"people.doctors.huqm-trigo-ortho.title": "جراح عظام — وحدة الكتف والمرفق، كيرونسالود مدريد",
+"people.doctors.huqm-trigo-ortho.bio": "خبير في الجراحة المنظارية وإعادة بناء مفصل الكتف والمرفق. يركز على إصابات الرياضيين واستعادة المفاصل.",
+"people.doctors.huqm-juzgado-gastro.name": "الدكتور دييغو خوسغادو دي لوكاس",
+"people.doctors.huqm-juzgado-gastro.title": "رئيس قسم أمراض الجهاز الهضمي والمناظير — مستشفى كيرونسالود الجامعي مدريد",
+"people.doctors.huqm-juzgado-gastro.bio": "يشرف على قسم أمراض الجهاز الهضمي والمناظير. خبير في المناظير المتقدمة، تشخيص FibroScan، وإدارة أمراض الكبد.",
+
+"people.doctors.huqm-vazquez-sequeiros-gastro.name": "الدكتور إنريكي فاثكيث سيكويروس",
+"people.doctors.huqm-vazquez-sequeiros-gastro.title": "نائب رئيس قسم أمراض الجهاز الهضمي — كيرونسالود مدريد",
+"people.doctors.huqm-vazquez-sequeiros-gastro.bio": "متخصص في التنظير العلاجي والتدخلات المعقدة في القنوات الصفراوية والبنكرياس. يجري إجراءات ERCP وEUS والتدخلات العلاجية.",
+
+"people.doctors.huqm-jodar-endo.name": "الدكتور إستيبان خوردار خيمينـو",
+"people.doctors.huqm-jodar-endo.title": "رئيس قسم الغدد الصماء والسكري والتغذية — كيرونسالود مدريد",
+"people.doctors.huqm-jodar-endo.bio": "يشرف على قسم الغدد الصماء. خبير في علاج السكري والسمنة واضطرابات الغدة الدرقية. يطور برامج تعليمية واستقلابية تركز على المريض.",
+
+"people.doctors.huqm-perez-arroyo-endo.name": "الدكتورة ماريا بياتريس بيريث أرويو",
+"people.doctors.huqm-perez-arroyo-endo.title": "نائبة رئيس قسم الغدد الصماء — كيرونسالود مدريد",
+"people.doctors.huqm-perez-arroyo-endo.bio": "تركز على إدارة مرض السكري والعلاج الغذائي والتعليم العلاجي. تعمل ضمن فرق متعددة التخصصات لرعاية الغدد الصماء.",
+
+"people.doctors.huqm-merello-gs.name": "الدكتور خيسوس ميريو غودينو",
+"people.doctors.huqm-merello-gs.title": "رئيس قسم الجراحة العامة — كيرونسالود مدريد",
+"people.doctors.huqm-merello-gs.bio": "يشرف على قسم الجراحة العامة. متخصص في جراحة الجهاز الهضمي والجراحة التنظيرية والإجراءات البطنية المعقدة.",
+
+"people.doctors.huqm-fernandez-luengas-gs.name": "الدكتور دافيد فيرنانديث لوينغاس",
+"people.doctors.huqm-fernandez-luengas-gs.title": "جراح عام وجراح سمنة — كيرونسالود مدريد",
+"people.doctors.huqm-fernandez-luengas-gs.bio": "يجري جراحات تنظيرية متقدمة وجراحات السمنة. يركز على العلاج الطفيف التوغل لاضطرابات الجهاز الهضمي والسمنة.",
+
+"people.doctors.huqm-delgado-neph-transplant.name": "الدكتور رامون ديلغادو ليو",
+"people.doctors.huqm-delgado-neph-transplant.title": "رئيس قسم أمراض الكلى — كيرونسالود مدريد",
+"people.doctors.huqm-delgado-neph-transplant.bio": "يشرف على قسم أمراض الكلى. خبير في العلاج التعويضي الكلوي وزراعة الكلى وإدارة أمراض الكلى المزمنة.",
+
+"people.doctors.huqm-praga-neph-transplant.name": "الدكتور مانويل براغا تيرينتي",
+"people.doctors.huqm-praga-neph-transplant.title": "استشاري أمراض الكلى — كيرونسالود مدريد",
+"people.doctors.huqm-praga-neph-transplant.bio": "متخصص في أمراض الكلى المزمنة، والتهاب الكبيبات الكلوية، والرعاية طويلة الأمد بعد الزراعة. يشرف على برامج متابعة متقدمة لأمراض الكلى.",
+"people.doctors.huqm-martinez-vega-radiology.name": "الدكتور فيسنتي مارتينيث دي فيغا",
+"people.doctors.huqm-martinez-vega-radiology.title": "رئيس قسم التصوير التشخيصي — مستشفى كيرونسالود الجامعي مدريد",
+"people.doctors.huqm-martinez-vega-radiology.bio": "يشرف على قسم التصوير التشخيصي. خبير في التصوير بالرنين المغناطيسي والتصوير المقطعي والتشخيص الموجه بالصور للحالات المعقدة.",
+
+"people.doctors.huqm-casasco-vir.name": "الدكتور ألفريدو كاساسكو",
+"people.doctors.huqm-casasco-vir.title": "أخصائي الأشعة التداخلية — كيرونسالود مدريد",
+"people.doctors.huqm-casasco-vir.bio": "يجري الإجراءات داخل الأوعية الدموية والإنصمام. متخصص في التدخلات طفيفة التوغل الموجهة بالصور.",
+
+"people.doctors.huqm-del-cerro-radonco.name": "الدكتورة إيليا ديل سيرّو بينيالفر",
+"people.doctors.huqm-del-cerro-radonco.title": "رئيسة قسم علاج الأورام بالإشعاع — كيرونسالود مدريد",
+"people.doctors.huqm-del-cerro-radonco.bio": "خبيرة في العلاج الإشعاعي الخارجي والمعالجة الكثبية. تدير برامج العلاج باستخدام منصة المسرّع الخطي TrueBeam.",
+
+"people.doctors.huqm-diaz-gavela-radonco.name": "الدكتورة آنا أورورا دياز غافيلا",
+"people.doctors.huqm-diaz-gavela-radonco.title": "نائبة رئيس قسم علاج الأورام بالإشعاع — كيرونسالود مدريد",
+"people.doctors.huqm-diaz-gavela-radonco.bio": "متخصصة في تقنيات العلاج الإشعاعي الدقيق لضمان توصيل الجرعات المستهدفة مع حماية الأنسجة السليمة.",
+
+"people.doctors.huqm-cabanas-pediatrics.name": "الدكتور فرناندو كابانياس غونثاليث",
+"people.doctors.huqm-cabanas-pediatrics.title": "رئيس قسم طب الأطفال — كيرونسالود مدريد",
+"people.doctors.huqm-cabanas-pediatrics.bio": "يشرف على أقسام طب الأطفال وحديثي الولادة. خبير في العناية المركزة لحديثي الولادة، والتشخيص قبل الولادة، وحالات الطوارئ لدى الأطفال.",
+
+"people.doctors.huqm-pellicer-neonatology.name": "الدكتورة أديلينا بيلّيثير مارتينيث",
+"people.doctors.huqm-pellicer-neonatology.title": "نائبة رئيس قسم حديثي الولادة — كيرونسالود مدريد",
+"people.doctors.huqm-pellicer-neonatology.bio": "تنظم عمل وحدة العناية المركزة لحديثي الولادة وتدير الرعاية المعقدة للرضع الخدج. خبيرة في أمراض حديثي الولادة.",
+
+"people.doctors.huqm-gosalvez-ivf.name": "الدكتور أنطونيو غوسالفيس فيغا",
+"people.doctors.huqm-gosalvez-ivf.title": "مدير وحدة الإخصاب المساعد — كيرونسالود مدريد",
+"people.doctors.huqm-gosalvez-ivf.bio": "يدير برامج أطفال الأنابيب في كيرونسالود مدريد وسان خوسيه. طبيب نساء وتوليد متخصص في طب الإنجاب والخصوبة والتبرع بالبويضات.",
+
+"people.doctors.hqv-merenciano-cardiology.name": "الدكتور هيكتور مانويل ميرينسيانو غونثاليث",
+"people.doctors.hqv-merenciano-cardiology.title": "طبيب قلب — كيرونسالود فالنسيا",
+"people.doctors.hqv-merenciano-cardiology.bio": "متخصص في أمراض القلب السريرية وتخطيط صدى القلب وعلاج فشل القلب. يقدم رعاية شاملة للقلب والأوعية الدموية.",
+
+"people.doctors.hqv-ferrero-arrhythmia.name": "الدكتور أنخيل فيريرو دي لوما أوسوريو",
+"people.doctors.hqv-ferrero-arrhythmia.title": "اختصاصي الفيزيولوجيا الكهربية للقلب — وحدة اضطرابات النظم وأجهزة تنظيم ضربات القلب، كيرونسالود فالنسيا",
+"people.doctors.hqv-ferrero-arrhythmia.bio": "خبير في تشخيص وعلاج اضطرابات نظم القلب. يجري عمليات الاستئصال وزراعة أجهزة مثل منظمات ضربات القلب وأجهزة إزالة الرجفان.",
+
+"people.doctors.hqv-sempere-gastro.name": "الدكتور خافيير سيمبيريه غارسيا أركييس",
+"people.doctors.hqv-sempere-gastro.title": "اختصاصي أمراض الجهاز الهضمي — قسم أمراض الجهاز الهضمي، كيرونسالود فالنسيا",
+"people.doctors.hqv-sempere-gastro.bio": "متخصص في التنظير الهضمي وأمراض الأمعاء والاضطرابات المزمنة للجهاز الهضمي. يقدم تشخيصات تنظيرية متقدمة.",
+"people.doctors.hqv-sanchiz-gastro.name": "الدكتور فيسنتي سانتشيث سولير",
+"people.doctors.hqv-sanchiz-gastro.title": "اختصاصي أمراض الجهاز الهضمي — كيرونسالود فالنسيا",
+"people.doctors.hqv-sanchiz-gastro.bio": "متخصص في أمراض الكبد والجهاز الهضمي. يقدم رعاية متقدمة في التنظير وتشخيص أمراض الكبد.",
+
+"people.doctors.hqv-flor-gs.name": "الدكتور بلاس فلور لورينتي",
+"people.doctors.hqv-flor-gs.title": "جراح عام وجهاز هضمي — كيرونسالود فالنسيا",
+"people.doctors.hqv-flor-gs.bio": "يجري عمليات في الجهاز الهضمي والبطن باستخدام تقنيات طفيفة التوغل والمناظير.",
+
+"people.doctors.hqv-paya-gs.name": "الدكتورة كارمن بايا لورينتي",
+"people.doctors.hqv-paya-gs.title": "جراحة عامة — كيرونسالود فالنسيا",
+"people.doctors.hqv-paya-gs.bio": "متخصصة في الجراحة البطنية والهضمية ولديها خبرة في الإجراءات التنظيرية المتقدمة.",
+
+"people.doctors.hqv-marti-radiology.name": "الدكتور لويس مارتي بونماتي",
+"people.doctors.hqv-marti-radiology.title": "رئيس قسم الأشعة — كيرونسالود فالنسيا",
+"people.doctors.hqv-marti-radiology.bio": "يشرف على قسم الأشعة. خبير معترف به دوليًا في التصوير بالرنين المغناطيسي والتصوير المقطعي والتشخيص الموجه بالصور.",
+
+"people.doctors.hqm-agustin-cataldo-cardiology.name": "الدكتور أغوستين كاتالدو",
+"people.doctors.hqm-agustin-cataldo-cardiology.title": "طبيب قلب — كيرونسالود مالقة",
+"people.doctors.hqm-agustin-cataldo-cardiology.bio": "متخصص في أمراض القلب السريرية وتشخيص القلب غير الجراحي. يقدم رعاية قلبية شاملة تركز على المريض.",
+
+"people.doctors.hqm-alberto-barrera-cardiology.name": "الدكتور ألبرتو باريرا كورديرو",
+"people.doctors.hqm-alberto-barrera-cardiology.title": "طبيب قلب — كيرونسالود مالقة",
+"people.doctors.hqm-alberto-barrera-cardiology.bio": "خبير في تخطيط صدى القلب وإدارة أمراض القلب. يركز على التشخيص المبكر والوقاية من أمراض القلب.",
+
+"people.doctors.hqm-jose-antonio-trujillo-gs.name": "الدكتور خوسيه أنطونيو تروخيو رويث",
+"people.doctors.hqm-jose-antonio-trujillo-gs.title": "جراح عام وجهاز هضمي — كيرونسالود مالقة",
+"people.doctors.hqm-jose-antonio-trujillo-gs.bio": "متخصص في الجراحة العامة والهضمية مع تركيز على التقنيات طفيفة التوغل. عضو في الفريق الإداري للمستشفى.",
+
+"people.doctors.hqm-cesar-ramirez-gs.name": "الدكتور سيسار بابلو راميريث بلازا",
+"people.doctors.hqm-cesar-ramirez-gs.title": "جراح أورام وجراح عام — كيرونسالود مالقة",
+"people.doctors.hqm-cesar-ramirez-gs.bio": "يجري جراحات الأورام في القولون والمستقيم والغدة الدرقية. عضو بارز في قسم الجراحة بمستشفى كيرونسالود مالقة.",
+"people.doctors.hqm-alba-castano-radiology.name": "الدكتورة ألبا ماريا كاستانيو راميريث",
+"people.doctors.hqm-alba-castano-radiology.title": "أخصائية أشعة — التصوير التشخيصي، كيرونسالود مالقة",
+"people.doctors.hqm-alba-castano-radiology.bio": "متخصصة في الأشعة التشخيصية وخبيرة في تصوير الأورام وتفسير التصوير بالرنين المغناطيسي المتقدم.",
+
+"people.doctors.hqm-alba-merchan-radiology.name": "الدكتورة ألبا ميرتشان بايث",
+"people.doctors.hqm-alba-merchan-radiology.title": "أخصائية أشعة — كيرونسالود مالقة",
+"people.doctors.hqm-alba-merchan-radiology.bio": "خبيرة في التصوير بالرنين المغناطيسي (MRI) والتصوير المقطعي (CT). تقدم خدمات تشخيصية شاملة.",
+
+"people.doctors.hqm-beatriz-medina-endocrinology.name": "الدكتورة بياتريس مدينا أوليفاريس",
+"people.doctors.hqm-beatriz-medina-endocrinology.title": "أخصائية الغدد الصماء — كيرونسالود مالقة",
+"people.doctors.hqm-beatriz-medina-endocrinology.bio": "متخصصة في الغدد الصماء والتغذية السريرية. تركز على علاج السكري واضطرابات الغدة الدرقية والصحة الأيضية.",
+
+"people.doctors.hqm-carmen-hardy-endocrinology.name": "الدكتورة كارمن ماريا هاردي أنيون",
+"people.doctors.hqm-carmen-hardy-endocrinology.title": "أخصائية الغدد الصماء — كيرونسالود مالقة",
+"people.doctors.hqm-carmen-hardy-endocrinology.bio": "خبيرة في التمثيل الغذائي والاضطرابات الهرمونية المعقدة. تقدم علاجًا هرمونيًا وغذائيًا مخصصًا في مالقة.",
+
+"people.doctors.hqm-juan-luis-alcazar-ivf.name": "الدكتور خوان لويس ألكاثار",
+"people.doctors.hqm-juan-luis-alcazar-ivf.title": "طبيب نساء وتوليد واختصاصي أطفال الأنابيب — كيرونسالود مالقة",
+"people.doctors.hqm-juan-luis-alcazar-ivf.bio": "يشرف على برامج الإخصاب المساعد وعلاج العقم. خبير في تقنيات IVF وICSI وأساليب التكاثر المتقدمة.",
+
+"people.doctors.hqm-luis-alonso-pacheco-ivf.name": "الدكتور لويس ألونسو باتشيكو",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.title": "اختصاصي أطفال الأنابيب — وحدة الطب الإنجابي، كيرونسالود مالقة",
+"people.doctors.hqm-luis-alonso-pacheco-ivf.bio": "يجري عمليات الإخصاب في المختبر وعلاجات الخصوبة. يركز على الدعم الشخصي ورعاية المرضى.",
+
+"people.doctors.qa-pascual-cardiology.name": "الدكتور أليخاندرو باسكوال غوتييريث",
+"people.doctors.qa-pascual-cardiology.title": "طبيب قلب — كيرونسالود أليكانتي",
+"people.doctors.qa-pascual-cardiology.bio": "عضو في فريق أمراض القلب في كيرونسالود أليكانتي. يقدم تشخيصًا وعلاجًا شاملًا لأمراض القلب.",
+
+"people.doctors.qa-hortelano-cardiology.name": "الدكتور إغناسيو هورتيلانو مويا",
+"people.doctors.qa-hortelano-cardiology.title": "طبيب قلب — كيرونسالود أليكانتي",
+"people.doctors.qa-hortelano-cardiology.bio": "متخصص في أمراض القلب والأوعية الدموية والتشخيص الوقائي. يركز على صحة القلب وعلاج اضطرابات النظم وارتفاع ضغط الدم.",
+"people.doctors.qa-inigo-gastro.name": "الدكتورة ألمودينا إينيو تشافيث",
+"people.doctors.qa-inigo-gastro.title": "اختصاصية أمراض الجهاز الهضمي — كيرونسالود أليكانتي",
+"people.doctors.qa-inigo-gastro.bio": "متخصصة في أمراض الجهاز الهضمي والإجراءات التنظيرية. تقدم رعاية شاملة في أمراض الجهاز الهضمي.",
+
+"people.doctors.qa-pascualmora-gastro.name": "الدكتور أنخيل أغوستين باسكوال مورا",
+"people.doctors.qa-pascualmora-gastro.title": "اختصاصي أمراض الجهاز الهضمي — وحدة أمراض الجهاز الهضمي، كيرونسالود أليكانتي",
+"people.doctors.qa-pascualmora-gastro.bio": "خبير في اضطرابات الجهاز الهضمي والعلاجات التنظيرية. يقدم إدارة شخصية لأمراض الجهاز الهضمي.",
+
+"people.doctors.qa-roscomesana-gs.name": "الدكتور أليخاندرو روس كوميسانيا",
+"people.doctors.qa-roscomesana-gs.title": "جراح عام وجهاز هضمي — كيرونسالود أليكانتي",
+"people.doctors.qa-roscomesana-gs.bio": "يجري عمليات عامة وهضمية مع التركيز على الإجراءات البطنية طفيفة التوغل.",
+
+"people.doctors.qa-farre-onco.name": "الدكتور خوسيه فارّي أليغري",
+"people.doctors.qa-farre-onco.title": "جراح أورام — كيرونسالود أليكانتي",
+"people.doctors.qa-farre-onco.bio": "متخصص في الجراحة الأورام ويعتمد نهجًا متعدد التخصصات في علاج الأورام والرعاية بعد العمليات.",
+
+"people.doctors.qa-maehr-ortho.name": "الدكتور ألبان ماهر",
+"people.doctors.qa-maehr-ortho.title": "جراح عظام — كيرونسالود أليكانتي",
+"people.doctors.qa-maehr-ortho.bio": "متخصص في جراحة العظام والكسور. يركز على إصابات الجهاز العضلي الهيكلي وإعادة بناء المفاصل.",
+
+"people.doctors.qa-salvador-ortho.name": "الدكتور خورخي سالفادور مارين",
+"people.doctors.qa-salvador-ortho.title": "جراح عظام وإصابات — كيرونسالود أليكانتي",
+"people.doctors.qa-salvador-ortho.bio": "خبير في جراحة العظام وإعادة التأهيل. يقدم رعاية جراحية للكسور والإصابات الرياضية واضطرابات المفاصل.",
+
+"people.doctors.qa-hernandez-radiology.name": "الدكتورة كارمن بلانكا إيرنانديث ساستري",
+"people.doctors.qa-hernandez-radiology.title": "رئيسة قسم التصوير التشخيصي — كيرونسالود أليكانتي",
+"people.doctors.qa-hernandez-radiology.bio": "تشرف على قسم التصوير التشخيصي. خبيرة في التشخيص الإشعاعي، والتصوير بالرنين المغناطيسي، والتصوير المقطعي، والتقنيات الرقمية.",
+
+"people.doctors.qa-pla-radiology.name": "الدكتور فرناندو بلا مينغورانثي",
+"people.doctors.qa-pla-radiology.title": "أخصائي أشعة — كيرونسالود أليكانتي",
+"people.doctors.qa-pla-radiology.bio": "متخصص في التصوير بالرنين المغناطيسي والتقنيات المتقدمة للتصوير التشخيصي الدقيق.",
+"people.doctors.qa-maestre-neuro.name": "الدكتور خوسيه خواكين مايستري خيل",
+"people.doctors.qa-maestre-neuro.title": "جرّاح أعصاب — كيرونسالود أليكانتي",
+"people.doctors.qa-maestre-neuro.bio": "عضو في وحدة علوم الأعصاب، متخصص في جراحة الدماغ والعمود الفقري. يركز على التقنيات العصبية الجراحية طفيفة التوغل.",
+
+"people.doctors.qa-puell-neuro.name": "الدكتور كارلوس إسرائيل بويل أورطا",
+"people.doctors.qa-puell-neuro.title": "جرّاح أعصاب — كيرونسالود أليكانتي",
+"people.doctors.qa-puell-neuro.bio": "خبير في جراحة الأعصاب واضطرابات الجهاز العصبي المركزي. يقدم علاجًا جراحيًا لأمراض الدماغ والعمود الفقري.",
+
+"people.doctors.qa-mendoza-endocrinology.name": "الدكتور أليخاندرو أوسكار ميندوزا",
+"people.doctors.qa-mendoza-endocrinology.title": "اختصاصي الغدد الصماء — كيرونسالود أليكانتي",
+"people.doctors.qa-mendoza-endocrinology.bio": "متخصص في الغدد الصماء والتغذية. يقدم تشخيصًا وعلاجًا للاضطرابات الهرمونية والتمثيل الغذائي.",
+
+"people.doctors.qa-cid-endocrinology.name": "الدكتور خورخي سيد بيريث",
+"people.doctors.qa-cid-endocrinology.title": "اختصاصي الغدد الصماء — كيرونسالود أليكانتي",
+"people.doctors.qa-cid-endocrinology.bio": "متخصص في السكري والسمنة والأمراض الأيضية. يقدم رعاية وقائية وعلاجية للاضطرابات الهرمونية.",
+
+"people.doctors.sjd-mora-oncology.name": "الدكتور خاومي مورا غراوبيرا",
+"people.doctors.sjd-mora-oncology.title": "اختصاصي أورام الأطفال — مستشفى سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-mora-oncology.bio": "مدير قسم أورام الأطفال. باحث في تكوين الأورام لدى الأطفال والعلاجات الدقيقة للسرطانات النادرة.",
+
+"people.doctors.sjd-rives-hematology.name": "الدكتورة سوزانا ريفيث سولا",
+"people.doctors.sjd-rives-hematology.title": "اختصاصية أمراض الدم للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-rives-hematology.bio": "متخصصة في أمراض الدم ونقص المناعة لدى الأطفال. تقود العلاجات المبتكرة لسرطان الدم الطفولي.",
+
+"people.doctors.sjd-hinojosa-neurosurgery.name": "الدكتور خوسيه هينوخوسا مينا برنال",
+"people.doctors.sjd-hinojosa-neurosurgery.title": "جرّاح أعصاب أطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-hinojosa-neurosurgery.bio": "متخصص في جراحة أورام الدماغ للأطفال، والحبل الشوكي المثبت، وجراحة الجمجمة والوجه. يجري عمليات مجهرية متقدمة.",
+
+"people.doctors.sjd-fons-neurology.name": "الدكتورة ماريا كارمي فونز إستوبينيا",
+"people.doctors.sjd-fons-neurology.title": "اختصاصية طب الأعصاب للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-fons-neurology.bio": "متخصصة في اضطرابات النمو والصرع والأمراض العصبية الجينية لدى الأطفال.",
+"people.doctors.sjd-prada-cardiology.name": "الدكتور فريدي هيرموخينيس برادا مارتينيث",
+"people.doctors.sjd-prada-cardiology.title": "اختصاصي أمراض القلب للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-prada-cardiology.bio": "متخصص في أمراض القلب الخلقية والمتابعة القلبية طويلة الأمد للأطفال. يقدم رعاية قلبية متقدمة للأطفال.",
+
+"people.doctors.sjd-sarquella-cardiology.name": "الدكتورة جورجيا سركييا بروغادا",
+"people.doctors.sjd-sarquella-cardiology.title": "اختصاصية أمراض القلب للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-sarquella-cardiology.bio": "خبيرة في اضطرابات نظم القلب لدى الأطفال وأمراض القلب الخلقية. من عائلة بروغادا الرائدة في أمراض نظم القلب الوراثية.",
+
+"people.doctors.sjd-parri-surgery.name": "الدكتور فرانسيسكو خوسيه باري فيرانديس",
+"people.doctors.sjd-parri-surgery.title": "جراح أطفال وجراح تجميلي — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-parri-surgery.bio": "متخصص في جراحة الأطفال والإجراءات الترميمية للعيوب الخلقية. يركز على التقنيات الجراحية طفيفة التوغل.",
+
+"people.doctors.sjd-krauel-surgery.name": "الدكتور لوكاس كراويل خيمينيث ساليناس",
+"people.doctors.sjd-krauel-surgery.title": "جراح أطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-krauel-surgery.bio": "خبير في جراحة أورام الأطفال والتقنيات طفيفة التوغل. يقود برامج مبتكرة في جراحة الأورام للأطفال.",
+
+"people.doctors.sjd-carrasco-surgery.name": "الدكتورة روساليا كراسكو تورينتس",
+"people.doctors.sjd-carrasco-surgery.title": "جراحة صدرية وتجميلية للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-carrasco-surgery.bio": "متخصصة في جراحة الصدر والترميم لدى الأطفال. تركز على التشوهات الخلقية والإجراءات الجراحية للأورام.",
+
+"people.doctors.sjd-garciaapu-urology.name": "الدكتور لويس غارسيا أباريسيو",
+"people.doctors.sjd-garciaapu-urology.title": "اختصاصي جراحة المسالك البولية للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-garciaapu-urology.bio": "متخصص في جراحة المسالك البولية للأطفال، يعالج الاستسقاء الكلوي، والارتجاع المثاني الحالبي، والاحليل التحتي. يجري عمليات طفيفة التوغل.",
+
+"people.doctors.sjd-galofontecha-ortho.name": "الدكتور سيسار غالو غارسيا فونتيتشا",
+"people.doctors.sjd-galofontecha-ortho.title": "جرّاح عظام وإصابات أطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-galofontecha-ortho.bio": "خبير في جراحة العظام للأطفال والإصابات. يركز على تشوهات الأطراف واضطرابات العضلات والعظام وتصحيح الجنف.",
+
+"people.doctors.sjd-alberti-otorhinolaryngology.name": "الدكتورة آنا ألبيرتي كاساس",
+"people.doctors.sjd-alberti-otorhinolaryngology.title": "اختصاصية أنف وأذن وحنجرة للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-alberti-otorhinolaryngology.bio": "متخصصة في طب الأنف والأذن والحنجرة للأطفال بخبرة في أمراض السمع والمجاري التنفسية وتشوهات الوجه والجمجمة. تقدم رعاية متعددة التخصصات في هذا المجال.",
+"people.doctors.sjd-alsina-immunology.name": "الدكتورة لايا ألسينا مانريك دي لارا",
+"people.doctors.sjd-alsina-immunology.title": "اختصاصية مناعة الأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-alsina-immunology.bio": "اختصاصية مناعة سريرية للأطفال متخصصة في أمراض المناعة الذاتية والاضطرابات المناعية. تقود الأبحاث في نقص المناعة الأولي.",
+
+"people.doctors.sjd-climent-neurophysiology.name": "الدكتورة جينا كليمنت",
+"people.doctors.sjd-climent-neurophysiology.title": "اختصاصية في علم الأعصاب السريري والنمو — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-climent-neurophysiology.bio": "متخصصة في الفسيولوجيا العصبية للأطفال وتشخيص النمو العصبي، تركز على الكشف المبكر عن الاضطرابات العصبية النمائية.",
+
+"people.doctors.sjd-colome-neuropsychology.name": "الدكتورة روسر كولومي رورا",
+"people.doctors.sjd-colome-neuropsychology.title": "اختصاصية علم النفس العصبي للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-colome-neuropsychology.bio": "خبيرة في النمو المعرفي واضطرابات التعلم والتقييم العصبي النفسي للأطفال.",
+
+"people.doctors.sjd-cols-pulmonology.name": "الدكتورة ماريا كولس رويغ",
+"people.doctors.sjd-cols-pulmonology.title": "اختصاصية أمراض الرئة للأطفال — سانت خوان دي ديو برشلونة",
+"people.doctors.sjd-cols-pulmonology.bio": "متخصصة في طب الجهاز التنفسي للأطفال والأمراض الرئوية المزمنة. تقدم رعاية شاملة للربو واضطرابات الرئة النادرة.",
+
+"people.doctors.hqb-llado-neurology.name": "الدكتورة آنا لادّو كاربّو",
+"people.doctors.hqb-llado-neurology.title": "رئيسة قسم الأعصاب — كيرونسالود برشلونة",
+"people.doctors.hqb-llado-neurology.bio": "رئيسة قسم الأعصاب في كيرونسالود برشلونة. متخصصة في السكتات الدماغية والتصلب المتعدد والأمراض التنكسية العصبية.",
+
+"people.doctors.hqb-garcia-pascual-neurology.name": "الدكتورة مارتا غارسيا باسكوال",
+"people.doctors.hqb-garcia-pascual-neurology.title": "اختصاصية أعصاب — كيرونسالود برشلونة",
+"people.doctors.hqb-garcia-pascual-neurology.bio": "متخصصة في الصرع والأمراض المزيلة للميالين في الجهاز العصبي المركزي. تقدم تشخيصًا عصبيًا متقدمًا.",
+
+"people.doctors.hqb-hernandez-neurophysiology.name": "الدكتورة ماريا إيرنانديث فيلالبا",
+"people.doctors.hqb-hernandez-neurophysiology.title": "اختصاصية في علم الأعصاب السريري — كيرونسالود برشلونة",
+"people.doctors.hqb-hernandez-neurophysiology.bio": "خبيرة في تخطيط الدماغ (EEG) وتخطيط العضلات (EMG) ودراسات النوم. عضوة في قسم الفسيولوجيا العصبية السريرية.",
+
+"people.doctors.hqb-martinez-neurophysiology.name": "الدكتور دافيد مارتينيث دياث",
+"people.doctors.hqb-martinez-neurophysiology.title": "اختصاصي في علم الأعصاب الفسيولوجي — كيرونسالود برشلونة",
+"people.doctors.hqb-martinez-neurophysiology.bio": "يجري تشخيصًا عصبيًا فسيولوجيًا للصرع والاعتلالات العصبية واضطرابات النوم. يركز على رسم خرائط وظيفية دقيقة.",
+
+"people.doctors.hqb-gispert-psychiatry.name": "الدكتورة إيفا غيسبيرت دالماو",
+"people.doctors.hqb-gispert-psychiatry.title": "اختصاصية الطب النفسي — كيرونسالود برشلونة",
+"people.doctors.hqb-gispert-psychiatry.bio": "متخصصة في الطب النفسي للبالغين، تركز على الاكتئاب والقلق واضطرابات المزاج. تقدم رعاية نفسية قائمة على الأدلة.",
+
+"people.doctors.hqb-sanchez-psychiatry.name": "الدكتورة مونتسيرات سانشيث إيرنانديث",
+"people.doctors.hqb-sanchez-psychiatry.title": "اختصاصية طب نفسي للأطفال والمراهقين — كيرونسالود برشلونة",
+"people.doctors.hqb-sanchez-psychiatry.bio": "خبيرة في الطب النفسي للأطفال والمراهقين، متخصصة في اضطراب فرط الحركة ونقص الانتباه والتوحد والنمو العاطفي.",
+
+"people.doctors.hqb-girbau-dermatology.name": "الدكتورة مونتسيرات خيرباو",
+"people.doctors.hqb-girbau-dermatology.title": "رئيسة قسم الأمراض الجلدية — كيرونسالود برشلونة",
+"people.doctors.hqb-girbau-dermatology.bio": "رئيسة قسم الأمراض الجلدية. متخصصة في الجراحة الجلدية والأمراض الالتهابية مثل الصدفية والتهاب الجلد التأتبي.",
+"people.doctors.hqb-sierra-dermatology.name": "الدكتورة كريستينا سيرا جيرالت",
+"people.doctors.hqb-sierra-dermatology.title": "اختصاصية أمراض جلدية — كيرونسالود برشلونة",
+"people.doctors.hqb-sierra-dermatology.bio": "متخصصة في الجلدية التجميلية، العلاج بالليزر وتجديد البشرة. تقدم رعاية جلدية طبية وتجميلية متقدمة.",
+
+"people.doctors.hqb-rodriguez-pulmonology.name": "الدكتورة ماريا رودريغيث مارين",
+"people.doctors.hqb-rodriguez-pulmonology.title": "اختصاصية أمراض الرئة — كيرونسالود برشلونة",
+"people.doctors.hqb-rodriguez-pulmonology.bio": "خبيرة في أمراض الجهاز التنفسي والربو واضطرابات التنفس المرتبطة بالنوم. تجري اختبارات وظائف الرئة ودراسات النوم.",
+
+"people.doctors.hqb-vilaseca-pulmonology.name": "الدكتور سيرجي فيلاسكا ريكونا",
+"people.doctors.hqb-vilaseca-pulmonology.title": "اختصاصي أمراض الرئة — كيرونسالود برشلونة",
+"people.doctors.hqb-vilaseca-pulmonology.bio": "متخصص في مرض الانسداد الرئوي المزمن والتهاب الشعب الهوائية المزمن وإعادة التأهيل التنفسي. يقدم متابعة طويلة الأمد للأمراض الرئوية.",
+
+"people.doctors.hqb-becerra-epileptology.name": "الدكتور خوسيه بيثيرا فرنانديث",
+"people.doctors.hqb-becerra-epileptology.title": "اختصاصي أعصاب — وحدة الصرع، كيرونسالود برشلونة",
+"people.doctors.hqb-becerra-epileptology.bio": "متخصص في الصرع السريري ورصد تخطيط الدماغ (EEG) وجراحة الصرع. يركز على النوبات المعقدة والمقاومة للعلاج.",
+
+"people.doctors.hqb-rodriguez-epileptology.name": "الدكتورة آنا رودريغيث بيريث",
+"people.doctors.hqb-rodriguez-epileptology.title": "اختصاصية أعصاب — الصرع لدى الأطفال والبالغين، كيرونسالود برشلونة",
+"people.doctors.hqb-rodriguez-epileptology.bio": "تقدم علاجًا شاملاً للصرع المعقد وتشخيصًا عصبيًا فيزيولوجيًا للحالات لدى الأطفال والبالغين.",
+
+"people.doctors.hqb-minguez-hematology.name": "الدكتورة غلوريا مينغيث",
+"people.doctors.hqb-minguez-hematology.title": "اختصاصية أمراض الدم — كيرونسالود برشلونة",
+"people.doctors.hqb-minguez-hematology.bio": "متخصصة في أمراض الدم السريرية وسرطانات الدم واضطرابات الدم. تتعاون مع معهد الأورام IOB لتقديم رعاية تكاملية.",
+
+"people.doctors.hqb-dominguez-hematology.name": "الدكتور ألبرتو دومينغيث غارسيا",
+"people.doctors.hqb-dominguez-hematology.title": "اختصاصي أمراض الدم — وحدة أمراض الدم والأورام، كيرونسالود برشلونة",
+"people.doctors.hqb-dominguez-hematology.bio": "خبير في اللمفومات والمايلوما المتعددة والأمراض الدموية الخبيثة. يركز على علاجات شخصية في أمراض الدم والأورام.",
+
+"people.doctors.hqb-lloveras-nuclear.name": "الدكتور خوسيه ليويراس روبيو",
+"people.doctors.hqb-lloveras-nuclear.title": "رئيس قسم الطب النووي — كيرونسالود برشلونة",
+"people.doctors.hqb-lloveras-nuclear.bio": "يقود قسم الطب النووي. مسؤول عن PET-CT والتصوير الوظيفي المتقدم للتشخيصات الأورامية والأيضية.",
+"people.doctors.hqb-escalona-nuclear.name": "الدكتورة ماريا إسكالونا غارسيا",
+"people.doctors.hqb-escalona-nuclear.title": "اختصاصية الطب النووي — كيرونسالود برشلونة",
+"people.doctors.hqb-escalona-nuclear.bio": "خبيرة في التصوير الجزيئي وإدارة العلاج الإشعاعي الدوائي (I-131، Lu-177، Ga-68). تركز على التصوير التشخيصي الوظيفي.",
+
+"people.doctors.hqb-torreblanca-ophthalmology.name": "الدكتور خوسيه ماريا تورّيبلانكا",
+"people.doctors.hqb-torreblanca-ophthalmology.title": "اختصاصي طب العيون — جراحة الشبكية وإزالة الماء الأبيض، كيرونسالود برشلونة",
+"people.doctors.hqb-torreblanca-ophthalmology.bio": "متخصص في جراحة الشبكية والماء الأبيض. يقدم تشخيصات متقدمة وعلاجات ميكروجراحية للبصر.",
+
+"people.doctors.hqb-perez-montes-ophthalmology.name": "الدكتورة ماريا بيريث مونتيس",
+"people.doctors.hqb-perez-montes-ophthalmology.title": "اختصاصية طب العيون — القرنية والجلوكوما، كيرونسالود برشلونة",
+"people.doctors.hqb-perez-montes-ophthalmology.bio": "خبيرة في جراحة القرنية وإدارة الجلوكوما المزمنة. تجري عمليات تصحيح البصر وإعادة بناء سطح العين.",
+
+"people.doctors.hqb-ferrandez-nephrology.name": "الدكتور فرانسيسك فيرّانديث لوبيث",
+"people.doctors.hqb-ferrandez-nephrology.title": "اختصاصي أمراض الكلى — كيرونسالود برشلونة",
+"people.doctors.hqb-ferrandez-nephrology.bio": "متخصص في أمراض الكلى السريرية وارتفاع ضغط الدم والفشل الكلوي المزمن. يقدم رعاية وقائية وعلاج بديل للكلى.",
+
+"people.doctors.hqb-gomez-nephrology.name": "الدكتورة آنا غوميث أورتيث",
+"people.doctors.hqb-gomez-nephrology.title": "اختصاصية أمراض الكلى — كيرونسالود برشلونة",
+"people.doctors.hqb-gomez-nephrology.bio": "تركز على الفشل الكلوي وأمراض الكلى ومتابعة ما بعد زراعة الكلى. تقدم رعاية متعددة التخصصات لأمراض الكلى.",
+
+"people.doctors.hqb-lledo-urology.name": "الدكتور إوسيبّيو ييدو غارسيا",
+"people.doctors.hqb-lledo-urology.title": "رئيس قسم جراحة المسالك البولية — كيرونسالود برشلونة",
+"people.doctors.hqb-lledo-urology.bio": "رئيس قسم جراحة المسالك البولية. خبير في الجراحة بالمنظار وأورام الجهاز البولي والذكورة. يجري عمليات معقدة للبروستاتا والكلى.",
+
+"people.doctors.hqb-caballero-urology.name": "الدكتور خورخي كاباييرو غارسيا",
+"people.doctors.hqb-caballero-urology.title": "اختصاصي جراحة المسالك البولية — الجراحة طفيفة التوغل، كيرونسالود برشلونة",
+"people.doctors.hqb-caballero-urology.bio": "متخصص في جراحة البروستاتا والتقنيات البولية طفيفة التوغل. يركز على الدقة وسرعة تعافي المريض.",
+
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.name": "الدكتور أدولفو لوبيث غوميث",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.title": "رئيس قسم أمراض النساء والتوليد — كيرونسالود إشبيلية",
+"people.doctors.seville-adolfo-lopez-gomez-gynecology.bio": "يقود قسم أمراض النساء والتوليد. متخصص في اضطرابات الخصوبة والجراحة بالمنظار وإدارة حالات الحمل عالية الخطورة.",
+"people.doctors.seville-agustina-moreno-martos-gynecology.name": "الدكتورة أغوستينا مورينو مارتوس",
+"people.doctors.seville-agustina-moreno-martos-gynecology.title": "اختصاصية أمراض النساء — كيرونسالود إشبيلية",
+"people.doctors.seville-agustina-moreno-martos-gynecology.bio": "متخصصة في طب الإنجاب واضطرابات الهرمونات الأنثوية. تقدم علاجًا مخصصًا للعقم ورعاية نسائية متقدمة.",
+
+"people.doctors.seville-adrian-revello-bustos-cardiology.name": "الدكتور أدريان ريفييو بوستوس",
+"people.doctors.seville-adrian-revello-bustos-cardiology.title": "اختصاصي أمراض القلب — كيرونسالود إشبيلية",
+"people.doctors.seville-adrian-revello-bustos-cardiology.bio": "متخصص في أمراض القلب التداخلية وأمراض الشرايين التاجية. يجري القسطرة التشخيصية، رأب الأوعية، وبرامج الوقاية القلبية.",
+
+"people.doctors.seville-javier-marquez-cardiology.name": "الدكتور خافيير ماركيز",
+"people.doctors.seville-javier-marquez-cardiology.title": "اختصاصي أمراض القلب التداخلية — كيرونسالود إشبيلية",
+"people.doctors.seville-javier-marquez-cardiology.bio": "خبير في التدخلات التاجية والتصوير القلبي وإدارة اضطرابات النبض. يركز على رأب الأوعية وعلاج ارتفاع ضغط الدم.",
+
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.name": "الدكتورة أغواس سانتاس سانشيث رول",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.title": "اختصاصية طب العيون — كيرونسالود إشبيلية",
+"people.doctors.seville-aguas-santas-sanchez-rull-ophthalmology.bio": "متخصصة في جراحة الماء الأبيض، الجلوكوما، وتصحيح الإبصار. تقدم تشخيصات متقدمة وعلاج أمراض القرنية.",
+
+"people.doctors.seville-miguel-fernandez-ophthalmology.name": "الدكتور ميغيل فرنانديث",
+"people.doctors.seville-miguel-fernandez-ophthalmology.title": "اختصاصي طب العيون — كيرونسالود إشبيلية",
+"people.doctors.seville-miguel-fernandez-ophthalmology.bio": "يركز على أمراض الشبكية والبقعة والجلوكوما واعتلال الشبكية السكري. يجري عمليات ليزر وجراحات دقيقة للعين.",
+
+"people.doctors.seville-abdul-razack-general-surgery.name": "الدكتور عبد الرزاق",
+"people.doctors.seville-abdul-razack-general-surgery.title": "جراح عام وجهاز هضمي — كيرونسالود إشبيلية",
+"people.doctors.seville-abdul-razack-general-surgery.bio": "يجري عمليات بالمنظار وجراحات طفيفة التوغل لعلاج أمراض المرارة والفتق والجهاز الهضمي.",
+
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.name": "الدكتور ألبرتو ديل بايي أريفالو",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.title": "جراح عام — كيرونسالود إشبيلية",
+"people.doctors.seville-alberto-del-valle-arevalo-general-surgery.bio": "متخصص في الجراحة البطنية والهضمية طفيفة التوغل. يعمل ضمن فرق متعددة التخصصات في الحالات الجراحية المعقدة.",
+
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.name": "الدكتور أبراهام غارسيا مندوثا",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.title": "اختصاصي جراحة العظام والإصابات — كيرونسالود إشبيلية",
+"people.doctors.seville-abraham-garcia-mendoza-orthopedics.bio": "متخصص في استبدال المفاصل، تنظير المفاصل، وإصابات الطب الرياضي. يقدم علاجًا جراحيًا ومحافظًا لإصابات الجهاز العضلي الهيكلي.",
+"people.doctors.seville-clara-martinez-orthopedics.name": "الدكتورة كلارا مارتينيث",
+"people.doctors.seville-clara-martinez-orthopedics.title": "اختصاصية جراحة العظام — كيرونسالود إشبيلية",
+"people.doctors.seville-clara-martinez-orthopedics.bio": "تعالج الكسور وإصابات الأربطة وإصابات الرياضة. لديها خبرة في جراحة العظام للأطفال والبالغين مع تركيز على استعادة الوظائف الحركية.",
+
+"people.doctors.seville-maria-jose-lirola-pediatrics.name": "الدكتورة ماريا خوسيه ليرولا",
+"people.doctors.seville-maria-jose-lirola-pediatrics.title": "رئيسة قسم طب الأطفال — كيرونسالود إشبيلية",
+"people.doctors.seville-maria-jose-lirola-pediatrics.bio": "ترأس خدمات طب الأطفال ضمن وحدة الأم والطفل. متخصصة في طب الأطفال الوقائي، الحساسية، وإدارة الأمراض المزمنة.",
+
+"people.doctors.seville-ana-garcia-pediatrics.name": "الدكتورة آنا غارسيا",
+"people.doctors.seville-ana-garcia-pediatrics.title": "طبيبة أطفال — كيرونسالود إشبيلية",
+"people.doctors.seville-ana-garcia-pediatrics.bio": "توفر الرعاية لحديثي الولادة والأطفال أثناء النمو. تركز على التهابات الجهاز التنفسي، تغذية الأطفال وبرامج التطعيم الوقائية.",
+
+"people.doctors.seville-carlos-ruiz-oncology.name": "الدكتور كارلوس رويث",
+"people.doctors.seville-carlos-ruiz-oncology.title": "اختصاصي أورام — كيرونسالود إشبيلية",
+"people.doctors.seville-carlos-ruiz-oncology.bio": "خبير في العلاج الكيميائي والمناعي والعلاج الموجّه للسرطان. يضع خطط علاج شخصية لمرضى الأورام الصلبة.",
+
+"people.doctors.seville-laura-gomez-oncology.name": "الدكتورة لورا غوميث",
+"people.doctors.seville-laura-gomez-oncology.title": "اختصاصية أورام طبية — كيرونسالود إشبيلية",
+"people.doctors.seville-laura-gomez-oncology.bio": "متخصصة في أورام الثدي والجهاز الهضمي. تقدم علاجًا متعدد التخصصات ومتابعة طويلة الأمد للمرضى.",
+
+"people.doctors.seville-ricardo-martin-neurosurgery.name": "الدكتور ريكاردو مارتين",
+"people.doctors.seville-ricardo-martin-neurosurgery.title": "اختصاصي جراحة الأعصاب — كيرونسالود إشبيلية",
+"people.doctors.seville-ricardo-martin-neurosurgery.bio": "يجري جراحات دقيقة للدماغ والعمود الفقري لعلاج الأورام والانزلاقات والضغط العصبي. يستخدم أحدث التقنيات العصبية الجراحية.",
+
+"people.doctors.seville-isabel-martinez-neurosurgery.name": "الدكتورة إيزابيل مارتينيث",
+"people.doctors.seville-isabel-martinez-neurosurgery.title": "اختصاصية جراحة الأعصاب — كيرونسالود إشبيلية",
+"people.doctors.seville-isabel-martinez-neurosurgery.bio": "متخصصة في جراحة العمود الفقري والأعصاب الطرفية. تقدم رعاية شاملة للحالات العصبية الناتجة عن الإصابات أو الأمراض التنكسية.",
+
+"people.doctors.seville-javier-sanchez-urology.name": "الدكتور خافيير سانشيث",
+"people.doctors.seville-javier-sanchez-urology.title": "اختصاصي جراحة المسالك البولية — كيرونسالود إشبيلية",
+"people.doctors.seville-javier-sanchez-urology.bio": "متخصص في أمراض البروستاتا والجهاز البولي. يجري عمليات تنظيرية وجراحات طفيفة التوغل لضمان تعافٍ أمثل.",
+"people.doctors.seville-marta-lopez-urology.name": "الدكتورة مارتا لوبيث",
+"people.doctors.seville-marta-lopez-urology.title": "اختصاصية جراحة المسالك البولية — كيرونسالود إشبيلية",
+"people.doctors.seville-marta-lopez-urology.bio": "متخصصة في أمراض الكلى والمثانة، بما في ذلك إدارة الحصوات والمسالك البولية النسائية. تجري فحوصات الموجات فوق الصوتية التشخيصية والوظيفية.",
+
+"people.doctors.seville-antonio-castro-dermatology.name": "الدكتور أنطونيو كاسترو",
+"people.doctors.seville-antonio-castro-dermatology.title": "اختصاصي الأمراض الجلدية — كيرونسالود إشبيلية",
+"people.doctors.seville-antonio-castro-dermatology.bio": "يعالج الأمراض الجلدية المزمنة مثل الصدفية والأكزيما والتهاب الجلد. خبير في الجراحة الجلدية ورسم الشامات والكشف المبكر عن سرطان الجلد.",
+
+"people.doctors.seville-silvia-garcia-dermatology.name": "الدكتورة سيلفيا غارسيا",
+"people.doctors.seville-silvia-garcia-dermatology.title": "اختصاصية الأمراض الجلدية — كيرونسالود إشبيلية",
+"people.doctors.seville-silvia-garcia-dermatology.bio": "متخصصة في الجلدية التجميلية والعلاج بالليزر. تقدم علاجات لحب الشباب، التصبغات، الندبات وتجديد البشرة.",
+
+"people.doctors.seville-diego-rodriguez-gastro.name": "الدكتور دييغو رودريغيث",
+"people.doctors.seville-diego-rodriguez-gastro.title": "اختصاصي أمراض الجهاز الهضمي — كيرونسالود إشبيلية",
+"people.doctors.seville-diego-rodriguez-gastro.bio": "متخصص في أمراض الجهاز الهضمي والكبد. يجري تنظيرًا داخليًا، وتنظير القولون، ويعالج الارتجاع وأمراض الأمعاء الالتهابية.",
+
+"people.doctors.seville-noelia-martin-gastro.name": "الدكتورة نوِيليا مارتين",
+"people.doctors.seville-noelia-martin-gastro.title": "اختصاصية أمراض الجهاز الهضمي — كيرونسالود إشبيلية",
+"people.doctors.seville-noelia-martin-gastro.bio": "تركز على أمراض الكبد والبنكرياس. لديها خبرة في الأمراض الأيضية الكبدية والتشخيص بالمنظار المتقدم.",
+
+"people.doctors.seville-fernando-ruiz-endocrinology.name": "الدكتور فرناندو رويث",
+"people.doctors.seville-fernando-ruiz-endocrinology.title": "اختصاصي الغدد الصماء — كيرونسالود إشبيلية",
+"people.doctors.seville-fernando-ruiz-endocrinology.bio": "خبير في علاج السكري وأمراض الغدة الدرقية والسمنة. يقدم العلاج الهرموني واستشارات وقائية في الغدد الصماء.",
+
+"people.doctors.seville-maria-gonzalez-endocrinology.name": "الدكتورة ماريا غونثاليث",
+"people.doctors.seville-maria-gonzalez-endocrinology.title": "اختصاصية الغدد الصماء — كيرونسالود إشبيلية",
+"people.doctors.seville-maria-gonzalez-endocrinology.bio": "متخصصة في اضطرابات الأيض والغدة الدرقية والغدة النخامية. تقدم علاجًا شخصيًا بالتغذية والهرمونات لصحة الغدد الصماء."
 }

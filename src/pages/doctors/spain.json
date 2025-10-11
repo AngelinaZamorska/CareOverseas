@@ -1,59 +1,400 @@
 {
   "doctors": [
+    { "id": "huqm-cabrera-cardiology", "name": "Dr. José Ángel Cabrera Rodríguez", "deptId": "cardiology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["cardiology", "head of service", "arrhythmias", "AF ablation"] },
+  { "id": "huqm-datino-cardiology", "name": "Dr. Tomás Datino Romaniega", "deptId": "cardiology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["cardiology", "electrophysiology", "arrhythmias"] },
+
+  { "id": "huqm-gonzalez-cortijo-oncology", "name": "Dr. Lucía González Cortijo", "deptId": "oncology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["medical oncology", "head of service", "breast cancer", "clinical trials"] },
+  { "id": "huqm-boni-oncology", "name": "Dr. Valentina Boni", "deptId": "oncology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["medical oncology", "phase I trials", "early drugs"] },
+
+  { "id": "huqm-gil-robles-neurosurgery", "name": "Dr. Santiago Gil-Robles", "deptId": "neurosurgery", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["neurosurgery", "head of service", "brain tumors"] },
+  { "id": "huqm-ley-neurosurgery", "name": "Dr. Luis Ley Urzaiz", "deptId": "neurosurgery", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["neurosurgery", "spine", "cranial"] },
+
+  { "id": "huqm-tabuenca-ortho", "name": "Dr. Jose Tabuenca Dumortier", "deptId": "orthopedics", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["orthopedics", "head of service", "traumatology"] },
+  { "id": "huqm-trigo-ortho", "name": "Dr. Luis Trigo Lahoz", "deptId": "orthopedics", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["orthopedics", "shoulder", "elbow"] },
+
+  { "id": "huqm-juzgado-gastro", "name": "Dr. Diego Juzgado de Lucas", "deptId": "gastro", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["gastroenterology", "head of service", "endoscopy", "FibroScan"] },
+  { "id": "huqm-vazquez-sequeiros-gastro", "name": "Dr. Enrique Vázquez Sequeiros", "deptId": "gastro", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["gastroenterology", "advanced endoscopy"] },
+
+  { "id": "huqm-jodar-endo", "name": "Dr. Esteban Jódar Gimeno", "deptId": "endocrinology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["endocrinology", "head of service", "diabetes", "thyroid"] },
+  { "id": "huqm-perez-arroyo-endo", "name": "Dr. Mª Beatriz Pérez Arroyo", "deptId": "endocrinology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["endocrinology", "associate head", "diabetes education"] },
+
+  { "id": "huqm-merello-gs", "name": "Dr. Jesús Merello Godino", "deptId": "general-surgery", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["general surgery", "head of service", "GI surgery"] },
+  { "id": "huqm-fernandez-luengas-gs", "name": "Dr. David Fernández Luengas", "deptId": "general-surgery", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["general surgery", "minimally invasive", "bariatric"] },
+
+  { "id": "huqm-delgado-neph-transplant", "name": "Dr. Ramón Delgado Lillo", "deptId": "transplant", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["nephrology", "renal transplant care", "dialysis"] },
+  { "id": "huqm-praga-neph-transplant", "name": "Dr. Manuel Praga Terente", "deptId": "transplant", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["nephrology", "kidney disease", "transplant follow-up"] },
+
+  { "id": "huqm-martinez-vega-radiology", "name": "Dr. Vicente Martínez de Vega", "deptId": "radiology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["radiology", "head of service", "MRI", "CT"] },
+  { "id": "huqm-casasco-vir", "name": "Dr. Alfredo Casasco", "deptId": "radiology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["interventional radiology", "embolization"] },
+
+  { "id": "huqm-del-cerro-radonco", "name": "Dr. Elia del Cerro Peñalver", "deptId": "radiation-oncology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["radiation oncology", "head of service", "linear accelerator", "brachytherapy"] },
+  { "id": "huqm-diaz-gavela-radonco", "name": "Dr. Ana Aurora Díaz Gavela", "deptId": "radiation-oncology", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["radiation oncology", "associate head", "TrueBeam"] },
+
+  { "id": "huqm-cabanas-pediatrics", "name": "Dr. Fernando Cabañas González", "deptId": "pediatrics", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["pediatrics", "head of service", "neonatology", "PICU"] },
+  { "id": "huqm-pellicer-neonatology", "name": "Dr. Adelina Pellicer Martínez", "deptId": "pediatrics", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["neonatology", "associate head", "NICU"] },
+
+  { "id": "huqm-gosalvez-ivf", "name": "Dr. Antonio Gosálvez Vega", "deptId": "ivf", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["IVF", "assisted reproduction", "unit director"] },
+  { "id": "huqm-pastor-ivf", "name": "Dr. Paula Pastor Vargas", "deptId": "ivf", "clinicId": "quironsalud-madrid", "cityId": "madrid", "keywords": ["IVF", "obstetrics", "clinical care"] },
+  { "id": "hqb-vinolas-cardiology", "name": "Dr. Xavier Viñolas Prat", "deptId": "cardiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["cardiology", "head of service", "arrhythmias", "pacemakers"] },
+  { "id": "hqb-garcia-del-blanco-cardiology", "name": "Dr. Bruno García del Blanco", "deptId": "cardiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["interventional cardiology", "coronary intervention"] },
+
+  { "id": "hqb-tabernero-oncology", "name": "Prof. Josep Tabernero", "deptId": "oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["medical oncology", "IOB head", "GI cancers", "clinical research"] },
+  { "id": "hqb-felip-oncology", "name": "Dr. Enriqueta Felip", "deptId": "oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["medical oncology", "lung cancer", "thoracic tumors"] },
+
+  { "id": "hqb-clavel-neurosurgery", "name": "Dr. Pablo Clavel", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "head of service", "spine surgery"] },
+  { "id": "hqb-català-neurosurgery", "name": "Dr. Ignasi Català", "deptId": "neurosurgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurosurgery", "brain & spine"] },
+
+  { "id": "hqb-cugat-orthopedics", "name": "Dr. Ramon Cugat", "deptId": "orthopedics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["orthopedics", "head of service", "sports knee", "arthroscopy"] },
+  { "id": "hqb-nardi-orthopedics", "name": "Dr. Joan Nardi Vilardaga", "deptId": "orthopedics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["orthopedics", "co-head", "hip", "knee"] },
+
+  { "id": "hqb-azpiroz-gastro", "name": "Dr. Fernando Azpiroz", "deptId": "gastro", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["gastroenterology", "unit lead", "motility", "manometry"] },
+  { "id": "hqb-armengol-endoscopy", "name": "Dr. Jordi Armengol Bertroli", "deptId": "gastro", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["digestive endoscopy", "ERCP", "EGD"] },
+
+  { "id": "hqb-burgos-endocrinology", "name": "Dr. Rosa Burgos Peláez", "deptId": "endocrinology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["endocrinology", "head of service", "nutrition", "diabetes"] },
+  { "id": "hqb-pelayo-endocrinology", "name": "Dr. Manuel Jesús Pelayo", "deptId": "endocrinology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["endocrinology", "diabetes", "thyroid"] },
+
+  { "id": "hqb-delacy-general-surgery", "name": "Prof. Antonio de Lacy", "deptId": "general-surgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["general surgery", "GI surgery", "minimally invasive"] },
+  { "id": "hqb-balsells-general-surgery", "name": "Dr. Joaquim Balsells", "deptId": "general-surgery", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["general surgery", "colorectal", "abdominal wall"] },
+
+  { "id": "hqb-azpiroz-transplant", "name": "Dr. Fernando Azpiroz", "deptId": "transplant", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["hepatology", "post-transplant care", "GI motility"] },
+  { "id": "hqb-esteban-transplant", "name": "Dr. Rafael Esteban Mur", "deptId": "transplant", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["internal medicine", "hepatology", "transplant follow-up"] },
+
+  { "id": "hqb-romera-radiology", "name": "Dr. Nadine Romera", "deptId": "radiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["diagnostic imaging", "thoracic & abdominal", "oncologic imaging"] },
+  { "id": "hqb-guri-radiology", "name": "Dr. Xavier Gurí", "deptId": "radiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["diagnostic imaging", "MRI", "CT"] },
+
+  { "id": "hqb-puertas-radonc", "name": "Dr. Enrique Puertas Calvo", "deptId": "radiation-oncology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["radiation oncology", "head of service", "external beam"] },
+
+  { "id": "hqb-boix-pediatrics", "name": "Dr. Héctor Boix", "deptId": "pediatrics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pediatrics", "head of service", "neonatology"] },
+  { "id": "hqb-vives-pediatrics", "name": "Dr. Isabel Vives", "deptId": "pediatrics", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pediatrics", "infectious diseases", "outpatient clinic"] },
+
+  { "id": "hqb-aurell-ivf", "name": "Dr. Ramón Aurell", "deptId": "ivf", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["IVF", "medical director", "assisted reproduction"] },
+  { "id": "hqb-llado-neurology", "name": "Dr. Ana Lladó Carbo", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurology", "head of service", "neurodegenerative", "stroke"] },
+  { "id": "hqb-garcia-pascual-neurology", "name": "Dr. Marta García Pascual", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurology", "epilepsy", "multiple sclerosis"] },
+
+  { "id": "hqb-hernandez-neurophysiology", "name": "Dr. María Hernández Villalba", "deptId": "neurophysiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurophysiology", "EEG", "EMG"] },
+  { "id": "hqb-martinez-neurophysiology", "name": "Dr. David Martínez Díaz", "deptId": "neurophysiology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["neurophysiology", "sleep disorders", "epilepsy"] },
+
+  { "id": "hqb-gispert-psychiatry", "name": "Dr. Eva Gispert Dalmau", "deptId": "psychiatry", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["psychiatry", "adult", "depression", "anxiety"] },
+  { "id": "hqb-sanchez-psychiatry", "name": "Dr. Montserrat Sánchez Hernández", "deptId": "psychiatry", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["psychiatry", "child", "ADHD", "autism"] },
+
+  { "id": "hqb-girbau-dermatology", "name": "Dr. Montserrat Girbau", "deptId": "dermatology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["dermatology", "head of service", "skin surgery"] },
+  { "id": "hqb-sierra-dermatology", "name": "Dr. Cristina Sierra Giralt", "deptId": "dermatology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["dermatology", "aesthetic", "laser"] },
+
+  { "id": "hqb-rodriguez-pulmonology", "name": "Dr. María Rodríguez Marín", "deptId": "pulmonology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pulmonology", "asthma", "sleep apnea"] },
+  { "id": "hqb-vilaseca-pulmonology", "name": "Dr. Sergi Vilaseca Requena", "deptId": "pulmonology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["pulmonology", "COPD", "respiratory medicine"] },
+  { "id": "hqb-becerra-epileptology", "name": "Dr. José Becerra Fernández", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["epileptology", "neurology", "EEG", "epilepsy surgery"] },
+  { "id": "hqb-rodriguez-epileptology", "name": "Dr. Ana Rodríguez Pérez", "deptId": "neurology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["epileptology", "neurology", "neurophysiology", "child epilepsy"] },
+
+  { "id": "hqb-minguez-hematology", "name": "Dr. Gloria Minguez", "deptId": "hematology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["hematology", "oncology", "blood disorders"] },
+  { "id": "hqb-dominguez-hematology", "name": "Dr. Alberto Domínguez García", "deptId": "hematology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["hematology", "transfusion medicine", "lymphoma"] },
+
+
+  { "id": "hqb-lloveras-nuclear", "name": "Dr. José Lloveras Rubio", "deptId": "nuclear-medicine", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["nuclear medicine", "PET-CT", "molecular imaging"] },
+  { "id": "hqb-escalona-nuclear", "name": "Dr. María Escalona García", "deptId": "nuclear-medicine", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["nuclear medicine", "thyroid imaging", "radiopharmaceuticals"] },
+  { "id": "hqb-torreblanca-ophthalmology", "name": "Dr. José María Torreblanca", "deptId": "ophthalmology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["ophthalmology", "retina", "cataract"] },
+  { "id": "hqb-perez-montes-ophthalmology", "name": "Dr. María Pérez Montes", "deptId": "ophthalmology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["ophthalmology", "cornea", "glaucoma"] },
+
+ 
+  { "id": "hqb-ferrandez-nephrology", "name": "Dr. Francesc Ferrández López", "deptId": "nephrology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["nephrology", "kidney disease", "hypertension"] },
+  { "id": "hqb-gomez-nephrology", "name": "Dr. Ana Gómez Ortiz", "deptId": "nephrology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["nephrology", "renal failure", "transplant follow-up"] },
+
+ 
+  { "id": "hqb-lledo-urology", "name": "Dr. Eusebio Lledó García", "deptId": "urology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["urology", "laparoscopic", "oncology", "andrology"] },
+  { "id": "hqb-caballero-urology", "name": "Dr. Jorge Caballero García", "deptId": "urology", "clinicId": "quironsalud-barcelona", "cityId": "barcelona", "keywords": ["urology", "prostate", "minimally invasive"] },
+  { "id": "hqv-merenciano-cardiology", "name": "Dr. Héctor Manuel Merenciano González", "deptId": "cardiology", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["cardiology", "heart", "clinical cardiology"] },
+  { "id": "hqv-ferrero-arrhythmia", "name": "Dr. Ángel Ferrero De Loma Osorio", "deptId": "cardiology", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["arrhythmia", "electrophysiology", "pacemaker"] },
+
+  { "id": "hqv-sempere-gastro", "name": "Dr. Javier Sempere García-Argüelles", "deptId": "gastro", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["gastroenterology", "digestive", "endoscopy"] },
+  { "id": "hqv-sanchiz-gastro", "name": "Dr. Vicente Sanchiz Soler", "deptId": "gastro", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["gastroenterology", "GI", "hepatology"] },
+
+  { "id": "hqv-flor-gs", "name": "Dr. Blas Flor Lorente", "deptId": "general-surgery", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["general surgery", "GI surgery"] },
+  { "id": "hqv-paya-gs", "name": "Dr. Carmen Payá Llorente", "deptId": "general-surgery", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["general surgery", "abdominal surgery"] },
+
+  { "id": "hqv-marti-radiology", "name": "Dr. Luis Marti-Bonmati", "deptId": "radiology", "clinicId": "quironsalud-valencia", "cityId": "valencia", "keywords": ["radiology", "imaging", "diagnostic"] },
+  { "id": "hqm-agustin-cataldo-cardiology", "name": "Dr. Agustín Cataldo", "deptId": "cardiology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["cardiology", "adjunto"] },
+  { "id": "hqm-alberto-barrera-cardiology", "name": "Dr. Alberto Barrera Cordero", "deptId": "cardiology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["cardiology", "clinical"] },
+
+  { "id": "hqm-jose-antonio-trujillo-gs", "name": "Dr. José Antonio Trujillo Ruíz", "deptId": "general-surgery", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["general surgery", "digestive"] },
+  { "id": "hqm-cesar-ramirez-gs", "name": "Dr. César Pablo Ramírez Plaza", "deptId": "general-surgery", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["general surgery", "oncologic"] },
+
+  { "id": "hqm-alba-castano-radiology", "name": "Dra. Alba María Castaño Ramírez", "deptId": "radiology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["radiology", "diagnostic imaging"] },
+  { "id": "hqm-alba-merchan-radiology", "name": "Dra. Alba Merchán Páez", "deptId": "radiology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["radiology", "diagnostic imaging"] },
+
+  { "id": "hqm-beatriz-medina-endocrinology", "name": "Dra. Beatriz Medina Olivares", "deptId": "endocrinology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["endocrinology", "nutrition"] },
+  { "id": "hqm-carmen-hardy-endocrinology", "name": "Dra. Carmen María Hardy Añón", "deptId": "endocrinology", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["endocrinology", "nutritional"] },
+
+  { "id": "hqm-juan-luis-alcazar-ivf", "name": "Dr. Juan Luis Alcázar", "deptId": "ivf", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["IVF", "gynecology", "reproduction"] },
+  { "id": "hqm-luis-alonso-pacheco-ivf", "name": "Dr. Luis Alonso Pacheco", "deptId": "ivf", "clinicId": "quironsalud-malaga", "cityId": "malaga", "keywords": ["IVF", "reproduction"] },
+
+  { "id": "qa-pascual-cardiology", "name": "Dr. Alejandro Pascual Gutiérrez", "deptId": "cardiology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["cardiology", "heart", "cardiología"] },
+  { "id": "qa-hortelano-cardiology", "name": "Dr. Ignacio Hortelano Moya", "deptId": "cardiology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["cardiology", "cardio"] },
+
+
+  { "id": "qa-inigo-gastro", "name": "Dra. Almudena Íñigo Chaves", "deptId": "gastro", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["gastroenterology", "digestive"] },
+  { "id": "qa-pascualmora-gastro", "name": "Dr. Ángel Agustín Pascual Mora", "deptId": "gastro", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["gastroenterology", "digestive"] },
+
+ 
+  { "id": "qa-roscomesana-gs", "name": "Dr. Alejandro Ros Comesaña", "deptId": "general-surgery", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["general surgery", "digestive"] },
+  { "id": "qa-farre-onco", "name": "Dr. José Farré Alegre", "deptId": "oncology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["surgical oncology"] },
+
+
+  { "id": "qa-maehr-ortho", "name": "Dr. Alban Maehr", "deptId": "orthopedics", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["orthopedics", "traumatology"] },
+  { "id": "qa-salvador-ortho", "name": "Dr. Jorge Salvador Marín", "deptId": "orthopedics", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["orthopedics", "traumatology"] },
+
+  
+  { "id": "qa-hernandez-radiology", "name": "Dra. Carmen Blanca Hernández Sastre", "deptId": "radiology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["radiology", "imaging"] },
+  { "id": "qa-pla-radiology", "name": "Dr. Fernando Pla Mingorance", "deptId": "radiology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["radiology", "imaging"] },
+
+  
+  { "id": "qa-maestre-neuro", "name": "Dr. José Joaquín Maestre Gil", "deptId": "neurosurgery", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["neurosurgery", "neuro"] },
+  { "id": "qa-puell-neuro", "name": "Dr. Carlos Israel Puell Horta", "deptId": "neurosurgery", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["neurosurgery", "neuro"] },
+
+  
+  { "id": "qa-mendoza-endocrinology", "name": "Dr. Alejandro Óscar Mendoza", "deptId": "endocrinology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["endocrinology", "nutrition"] },
+  { "id": "qa-cid-endocrinology", "name": "Dr. Jorge Cid Pérez", "deptId": "endocrinology", "clinicId": "quironsalud-alicante", "cityId": "alicante", "keywords": ["endocrinology", "diabetes"] },
+  { "id": "sjd-mora-oncology", "name": "Dr. Jaume Mora Graupera", "deptId": "oncology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric oncology", "cancer", "oncología infantil"] },
+  { "id": "sjd-rives-hematology", "name": "Dra. Susana Rives Sola", "deptId": "hematology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric hematology", "hematología infantil"] },
+
+  { "id": "sjd-hinojosa-neurosurgery", "name": "Dr. José Hinojosa Mena-Bernal", "deptId": "neurosurgery", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric neurosurgery", "neurocirugía infantil"] },
+
+  { "id": "sjd-fons-neurology", "name": "Dra. Maria Carme Fons Estupiñà", "deptId": "neurology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric neurology", "neurología infantil"] },
+
+  { "id": "sjd-prada-cardiology", "name": "Dr. Fredy Hermógenes Prada Martínez", "deptId": "cardiology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric cardiology", "cardiopatía congénita"] },
+  { "id": "sjd-sarquella-cardiology", "name": "Dra. Georgia Sarquella Brugada", "deptId": "cardiology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric cardiology", "arrhythmia"] },
+
+  { "id": "sjd-parri-surgery", "name": "Dr. Francisco José Parri Ferrandis", "deptId": "general-surgery", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric surgery", "cirugía infantil"] },
+  { "id": "sjd-krauel-surgery", "name": "Dr. Lucas Krauel Giménez-Salinas", "deptId": "general-surgery", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric surgery", "oncology"] },
+
+  { "id": "sjd-carrasco-surgery", "name": "Dra. Rosalía Carrasco Torrents", "deptId": "general-surgery", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric surgery", "thoracic", "malformations"] },
+
+  { "id": "sjd-garciaapu-urology", "name": "Dr. Luis García Aparicio", "deptId": "urology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric urology", "hipospadias", "reflux"] },
+
+  { "id": "sjd-galofontecha-ortho", "name": "Dr. César Galo García Fontecha", "deptId": "orthopedics", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric orthopedics", "traumatology infantil"] },
+
+  { "id": "sjd-alberti-otorhinolaryngology", "name": "Dr. Anna Albertí Casas", "deptId": "otolaryngology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric ENT", "otorinolaringología infantil"] },
+
+  { "id": "sjd-alsina-immunology", "name": "Dra. Laia Alsina Manrique de Lara", "deptId": "immunology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric immunology", "inmunología infantil"] },
+
+  { "id": "sjd-climent-neurophysiology", "name": "Dra. Jana Climent", "deptId": "neurophysiology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["neurophysiology", "neurodesarrollo"] },
+  { "id": "sjd-colome-neuropsychology", "name": "Dra. Roser Colomé Roura", "deptId": "neuropsychology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["neuropsychology", "development"] },
+
+  
+  { "id": "sjd-cols-pulmonology", "name": "Dra. Maria Cols Roig", "deptId": "pulmonology", "clinicId": "sant-joan-deu-barcelona", "cityId": "barcelona", "keywords": ["pediatric pulmonology", "neumología infantil"] },
+  {
+      "id": "seville-adolfo-lopez-gomez-gynecology",
+      "name": "Dr. Adolfo López Gómez",
+      "deptId": "gynecology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["gynecology", "obstetrics", "women health"]
+    },
     {
-      "id": "quironsalud-madrid-cardiology-slot",
-      "name": "—",
+      "id": "seville-agustina-moreno-martos-gynecology",
+      "name": "Dra. Agustina Moreno Martos",
+      "deptId": "gynecology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["gynecology", "reproductive medicine"]
+    },
+
+    {
+      "id": "seville-adrian-revello-bustos-cardiology",
+      "name": "Dr. Adrián Revelló Bustos",
       "deptId": "cardiology",
-      "clinicId": "quironsalud-madrid",
-      "cityId": "madrid",
-      "keywords": ["cardiology", "heart"]
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["cardiology", "heart disease"]
     },
     {
-      "id": "quironsalud-barcelona-oncology-slot",
-      "name": "—",
-      "deptId": "oncology",
-      "clinicId": "quironsalud-barcelona",
-      "cityId": "barcelona",
-      "keywords": ["oncology", "chemotherapy"]
+      "id": "seville-javier-marquez-cardiology",
+      "name": "Dr. Javier Márquez",
+      "deptId": "cardiology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["cardiology", "interventional cardiology"]
+    },
+
+    {
+      "id": "seville-aguas-santas-sanchez-rull-ophthalmology",
+      "name": "Dra. Aguas Santas Sánchez Rull",
+      "deptId": "ophthalmology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["ophthalmology", "eye surgery"]
     },
     {
-      "id": "quironsalud-valencia-orthopedics-slot",
-      "name": "—",
+      "id": "seville-miguel-fernandez-ophthalmology",
+      "name": "Dr. Miguel Fernández",
+      "deptId": "ophthalmology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["ophthalmology", "retina", "glaucoma"]
+    },
+
+    {
+      "id": "seville-abdul-razack-general-surgery",
+      "name": "Dr. Abdul Razack",
+      "deptId": "general-surgery",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["general surgery", "digestive surgery"]
+    },
+    {
+      "id": "seville-alberto-del-valle-arévalo-general-surgery",
+      "name": "Dr. Alberto Del Valle Arévalo",
+      "deptId": "general-surgery",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["general surgery", "minimally invasive"]
+    },
+
+    {
+      "id": "seville-abraham-garcia-mendoza-orthopedics",
+      "name": "Dr. Abraham García Mendoza",
       "deptId": "orthopedics",
-      "clinicId": "quironsalud-valencia",
-      "cityId": "valencia",
-      "keywords": ["orthopedics", "joint"]
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["orthopedics", "traumatology"]
     },
     {
-      "id": "quironsalud-malaga-ivf-slot",
-      "name": "—",
-      "deptId": "ivf",
-      "clinicId": "quironsalud-malaga",
-      "cityId": "malaga",
-      "keywords": ["ivf", "fertility"]
+      "id": "seville-clara-martinez-orthopedics",
+      "name": "Dra. Clara Martínez",
+      "deptId": "orthopedics",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["orthopedics", "sports injuries"]
     },
+
     {
-      "id": "sant-joan-deu-barcelona-pediatrics-slot",
-      "name": "—",
+      "id": "seville-maria-jose-lirola-pediatrics",
+      "name": "Dra. María José Lirola",
       "deptId": "pediatrics",
-      "clinicId": "sant-joan-deu-barcelona",
-      "cityId": "barcelona",
-      "keywords": ["pediatrics", "children"]
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["pediatrics", "child health"]
+    },
+    {
+      "id": "seville-ana-garcia-pediatrics",
+      "name": "Dra. Ana García",
+      "deptId": "pediatrics",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["pediatrics", "neonatology"]
+    },
+
+    {
+      "id": "seville-carlos-ruiz-oncology",
+      "name": "Dr. Carlos Ruiz",
+      "deptId": "oncology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["oncology", "cancer treatment"]
+    },
+    {
+      "id": "seville-laura-gomez-oncology",
+      "name": "Dra. Laura Gómez",
+      "deptId": "oncology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["oncology", "medical oncology"]
+    },
+
+    {
+      "id": "seville-ricardo-martin-neurosurgery",
+      "name": "Dr. Ricardo Martín",
+      "deptId": "neurosurgery",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["neurosurgery", "brain surgery"]
+    },
+    {
+      "id": "seville-isabel-martinez-neurosurgery",
+      "name": "Dra. Isabel Martínez",
+      "deptId": "neurosurgery",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["neurosurgery", "spine surgery"]
+    },
+
+    {
+      "id": "seville-javier-sanchez-urology",
+      "name": "Dr. Javier Sánchez",
+      "deptId": "urology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["urology", "urinary tract"]
+    },
+    {
+      "id": "seville-marta-lopez-urology",
+      "name": "Dra. Marta López",
+      "deptId": "urology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["urology", "kidney", "bladder"]
+    },
+
+    {
+      "id": "seville-antonio-castro-dermatology",
+      "name": "Dr. Antonio Castro",
+      "deptId": "dermatology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["dermatology", "skin treatments"]
+    },
+    {
+      "id": "seville-silvia-garcia-dermatology",
+      "name": "Dra. Silvia García",
+      "deptId": "dermatology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["dermatology", "cosmetic derm"]
+    },
+
+    {
+      "id": "seville-diego-rodriguez-gastro",
+      "name": "Dr. Diego Rodríguez",
+      "deptId": "gastro",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["gastroenterology", "digestive disorders"]
+    },
+    {
+      "id": "seville-noelia-martin-gastro",
+      "name": "Dra. Noelia Martín",
+      "deptId": "gastro",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["gastroenterology", "hepatology"]
+    },
+
+    {
+      "id": "seville-fernando-ruiz-endocrinology",
+      "name": "Dr. Fernando Ruiz",
+      "deptId": "endocrinology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["endocrinology", "hormones"]
+    },
+    {
+      "id": "seville-maria-gonzalez-endocrinology",
+      "name": "Dra. María González",
+      "deptId": "endocrinology",
+      "clinicId": "quironsalud-seville",
+      "cityId": "seville",
+      "keywords": ["endocrinology", "diabetes"]
     }
   ],
   "departments": [
-    { "id": "cardiology" },
-    { "id": "oncology" },
-    { "id": "neurosurgery" },
-    { "id": "ivf" },
-    { "id": "orthopedics" },
-    { "id": "gastro" },
-    { "id": "endocrinology" },
-    { "id": "general-surgery" },
-    { "id": "transplant" },
-    { "id": "radiology" },
-    { "id": "radiation-oncology" },
-    { "id": "pediatrics" }
+    { "id": "hematology" },
+    { "id": "neurology" },
+    { "id": "neurophysiology" },
+    { "id": "psychiatry" },
+    { "id": "dermatology" },
+    { "id": "pulmonology" },
+    { "id": "ophthalmology" },
+    { "id": "nephrology" },
+    { "id": "urology" },
+    { "id": "nuclear-medicine" }
   ],
   "clinics": [
     { "id": "quironsalud-madrid",    "cityId": "madrid" },
@@ -61,13 +402,17 @@
     { "id": "quironsalud-valencia",  "cityId": "valencia" },
     { "id": "quironsalud-malaga",    "cityId": "malaga" },
     { "id": "quironsalud-alicante",  "cityId": "alicante" },
-    { "id": "sant-joan-deu-barcelona", "cityId": "barcelona" }
+
+    { "id": "quironsalud-seville", "cityId": "seville" }
+    
   ],
   "cities": [
     { "id": "madrid" },
     { "id": "barcelona" },
     { "id": "valencia" },
     { "id": "malaga" },
-    { "id": "alicante" }
+    { "id": "alicante" },
+    
+    { "id": "seville" }
   ]
 }
